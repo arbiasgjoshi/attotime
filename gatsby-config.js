@@ -1,21 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: "Attotime Landing Site ",
+    title: 'Attotime Landing Site ',
+    description: `Attotime Website`,
+    author: `Arbias Gjoshi`,
+    siteUrl: 'http://localhost:8000',
   },
   plugins: [
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        data: `@import "${__dirname}/src/styles/globals.scss";`,
+        additionalData: `@import "${__dirname}/src/styles/globals.scss";`,
       },
     },
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: "src/images/icon.png",
+        icon: 'src/images/icon.png',
       },
     },
     {
@@ -33,15 +36,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-preload-fonts`,
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/',
       },
-      __key: "images",
+      __key: 'images',
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
