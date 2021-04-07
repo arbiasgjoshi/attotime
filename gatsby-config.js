@@ -1,0 +1,65 @@
+module.exports = {
+  siteMetadata: {
+    title: "Attotime Landing Site ",
+  },
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        data: `@import "${__dirname}/src/styles/globals.scss";`,
+      },
+    },
+    "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
+    },
+    {
+      resolve: `gatsby-alias-imports`,
+      options: {
+        aliases: {
+          '@components': 'src/components',
+          '@images': 'src/images',
+          '@api': 'src/api',
+          '@hooks': 'src/hooks',
+          '@helpers': 'src/helpers',
+          '@styles': 'src/styles',
+          '@services': 'src/services',
+        },
+      },
+    },
+    `gatsby-plugin-preload-fonts`,
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/",
+      },
+      __key: "images",
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto:300,400,500,700`, // you can also specify font weights and styles
+        ],
+        display: 'swap',
+      },
+    },
+    `gatsby-plugin-meta-redirect`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          // include: /images/, // See below to configure properly
+        },
+      },
+    },
+  ],
+};

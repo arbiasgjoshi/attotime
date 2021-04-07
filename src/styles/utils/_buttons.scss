@@ -1,0 +1,38 @@
+.btn-default {
+  // TODO convert this one to a mixin instead of class based
+  @include flex-align(center, center);
+  @include transition(ease all 0.3s);
+  height: 5.4rem;
+  padding: 0 1rem;
+  border-radius: 3rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-weight: 600;
+
+  &.primary {
+    background-color: var(--primary-color);
+    width: 17.9rem;
+    border-radius: 2.5rem;
+    color: #fff;
+  }
+
+  &.next {
+    background-color: var(--primary-color);
+  }
+
+  &.cancel {
+    background-color: var(--tertiary-color);
+  }
+
+  &.publish {
+    background-color: var(--fourth-color);
+  }
+
+  &.active {
+    background-color: var(--primary-color);
+
+    > i:before {
+      color: #fff;
+    }
+  }
+}

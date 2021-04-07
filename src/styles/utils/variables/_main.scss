@@ -1,0 +1,74 @@
+:root {
+  // Colors - site
+  --primary-color: var(--color-2);
+  --secondary-color: var(--color-14);
+  --tertiary-color: var(--color-6);
+  --fourth-color: var(--color-15);
+  //   --primary-hover-color: var(--color-7);
+  //   --secondary-hover-color: var(--color-8);
+  //   --tertiary-hover-color: var(--color-9);
+
+  --primary-text-color: var(--color-2);
+  --secondary-text-color: var(--color-1);
+  --heading-base-color: var(--color-2);
+  --text-link-color: var(--color-13);
+
+  // Font
+  --main-font: 'Inter', sans-serif;
+
+  // Body Background Color
+  --body-background-color: var(--color-8);
+
+  // Spacing and sizes - site
+  --border-radius: 0.6rem;
+  --h1-size: 3.2rem;
+  --h2-size: 2.4rem;
+  --h3-size: 1.9rem;
+  --h4-size: 1.8rem;
+  --h5-size: 1.6rem;
+  --h6-size: 1.5rem;
+
+  --h1-line-height-size: 3.5rem;
+  --h2-line-height-size: 2.65rem;
+  --h3-line-height-size: 2.25rem;
+  --h4-line-height-size: 2.1rem;
+  --h5-line-height-size: 1.9rem;
+  --h6-line-height-size: 1.75rem;
+
+  --h1-font-weight: 700;
+  --h2-font-weight: 700;
+  --h3-font-weight: 600;
+  --h4-font-weight: 600;
+  --h5-font-weight: 500;
+  --h6-font-weight: 500;
+
+  --text-size: 1.6rem;
+  --desc-size: 0.9rem;
+  --h1-mobile-size: 2.6rem;
+  --h2-mobile-size: 2.2rem;
+  --h3-mobile-size: 1.6rem;
+  --h4-mobile-size: 1.3rem;
+  --h5-mobile-size: 1rem;
+  --h6-mobile-size: 0.8rem;
+
+  // Z-index
+  --modal-index: 300;
+  --navigation-index: 200;
+  --scroll-to-top-index: 100;
+  --cookie-consent-index: 200;
+  --search-form-index: 150;
+  --above-search-form-index: 151;
+
+  // Components
+  --nav-background-color: var(--color-4);
+  --nav-icon-color: var(--color-19);
+  --modal-overlay-color: rgba(0, 0, 0, 0.6);
+  --modal-background-color: white;
+  --scroll-to-top-bottom-offset: 2rem;
+  --card-box-shadow: 0 0.1rem 0.5rem 0.4rem rgba(0, 0, 0, 0.05);
+
+  // Cards Styling comes here
+  --border-radius-one: 0.6rem;
+  --border-radius-two: 1rem;
+  --border-color-one: 0.1rem solid var(--color-7);
+}
