@@ -8,31 +8,4 @@
   font-size: 1.7rem;
   line-height: 2rem;
   font-weight: 600;
-
-  &.primary {
-    background-color: var(--primary-color);
-    width: 17.9rem;
-    border-radius: 2.5rem;
-    color: #fff;
-  }
-
-  &.next {
-    background-color: var(--primary-color);
-  }
-
-  &.cancel {
-    background-color: var(--tertiary-color);
-  }
-
-  &.publish {
-    background-color: var(--fourth-color);
-  }
-
-  &.active {
-    background-color: var(--primary-color);
-
-    > i:before {
-      color: #fff;
-    }
-  }
 }

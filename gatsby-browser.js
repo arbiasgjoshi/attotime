@@ -5,10 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-import '@reach/dialog/styles.css';
-import '@reach/tooltip/styles.css';
-import '@brainhubeu/react-carousel/lib/style.css';
-import 'react-dropzone-uploader/dist/styles.css';
+import '@reach/dialog/styles.css'; 
 
 // Main Styling
 import './src/styles/utils/variables/_colors.scss';
