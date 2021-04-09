@@ -1,0 +1,10 @@
+.headerContainer {
+  background-color: #fff;
+  @include flex-align(center, center);
+  flex-direction: row;
+}
+
+.titleStyle {
+  font-size: 4rem;
+  line-height: 4.5rem;
+}
