@@ -1,8 +1,10 @@
 .headerContainer {
   background-color: #fff;
-  @include flex-align(center, center);
+  border: 1px solid blue;
+  height: 7.3rem;
+  @include flex-align(center, flex-start);
   flex-direction: row;
-  margin-bottom: 9rem;
+  margin-bottom: 7rem;
 }
 
 .titleStyle {

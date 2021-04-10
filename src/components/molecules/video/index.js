@@ -6,16 +6,22 @@ const Video = () => {
   return (
     <div className={imageContainer}>
       <StaticImage
-        className={videoBackground}
-        width={951}
-        height={485}
+        width={1120}
+        height={355}
         alt={'Video placeholder'}
-        src={'../../../images/video_placeholder.svg'}
+        src={'../../../images/video-background.svg'}
       />
       <StaticImage
+        className={videoBackground}
+        width={955}
+        height={489}
+        alt={'Video placeholder'}
+        src={'../../../images/video-placeholder.svg'}
+      />
+      <StaticImage
+        className={playerImage}
         width={120}
         height={120}
-        className={playerImage}
         alt={'Video player'}
         src={'../../../images/play_button.svg'}
       />

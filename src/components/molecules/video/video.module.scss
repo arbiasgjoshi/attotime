@@ -1,11 +1,19 @@
 .imageContainer {
+  display: flex;
   position: relative;
-  margin: 0 auto;
   padding: 4.5rem 0;
+  margin: 7rem 0;
 
   .videoBackground {
     border: 2px solid #efefef;
     border-radius: 16px;
+    margin: 0 auto;
+    position: absolute;
+    left: 8.9rem;
+    right: 8.9rem;
+    top: 0;
+    bottom: 0;
+    opacity: 0.2;
   }
 
   .playerImage {
