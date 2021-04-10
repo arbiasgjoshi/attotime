@@ -1,0 +1,9 @@
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 8rem;
+  margin-left: 2rem;
+  margin-right: 5.8rem;
+  margin-bottom: 20rem;
+}

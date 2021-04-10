@@ -4,6 +4,8 @@ import Video from '@components/molecules/video';
 import TimeTrackingCard from '@components/molecules/time-tracking-card';
 import CheckList from '@components/molecules/check-list';
 import ImageList from '@components/molecules/image-list';
+import ImageSlider from '@components/molecules/image-slider';
+import WorkCardList from '@components/organisms/work-card-list';
 import IconCardList from '@components/organisms/icon-card-list';
 import { container } from './time-tracking.module.scss';
 
@@ -104,6 +106,8 @@ const TimeTracking = () => {
         title={'Accurately track time from any location and any device'}
         subtitle={`Time-tracking options to suit your business' needs. In the office, in teams, at a job site, or on the move. Online or offline.`}
       />
+      <ImageSlider />
+      <WorkCardList />
     </div>
   );
 };
