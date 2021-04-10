@@ -7,15 +7,21 @@ import {
   smallParagraph,
 } from './time-tracking-card.module.scss';
 
-const TimeTrackingCard = () => {
+const TimeTrackingCard = ({
+  title,
+  subtitle,
+  paragraph,
+  hasParagraph = false,
+  showButton = false,
+}) => {
   return (
     <div className={container}>
       <div className={headerContainer}>
-        <p className={smallParagraph}>TIME TRACKING</p>
-        <h3 className={mainTitle}>Take the pain away from time tracking</h3>
-        <h5>An easy-to-use, accurate, and trustworthy time-tracking solution.</h5>
+        {hasParagraph && <p className={smallParagraph}>{paragraph}</p>}
+        <h3 className={mainTitle}>{title}</h3>
+        <h4>{subtitle}</h4>
       </div>
-      <Button btnText={'Start a Free Trial'} />
+      {showButton && <Button btnText={'Start a Free Trial'} />}
     </div>
   );
 };

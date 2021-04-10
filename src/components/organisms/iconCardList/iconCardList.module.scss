@@ -1,4 +1,6 @@
 .container {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20rem;
 }
