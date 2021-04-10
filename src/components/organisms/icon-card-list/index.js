@@ -1,6 +1,6 @@
 import React from 'react';
-import { container } from './iconCardList.module.scss';
-import IconCard from '@components/molecules/iconCard';
+import { container } from './icon-card-list.module.scss';
+import IconCard from '@components/molecules/icon-card';
 
 const IconCardList = ({ cardList }) => {
   return (

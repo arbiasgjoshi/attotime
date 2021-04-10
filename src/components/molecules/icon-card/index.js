@@ -1,5 +1,5 @@
 import React from 'react';
-import { container, iconWrapper, textWrapper } from './iconCard.module.scss';
+import { container, iconWrapper, textWrapper } from './icon-card.module.scss';
 
 const IconCard = ({ icon, alt, title, description }) => {
   return (

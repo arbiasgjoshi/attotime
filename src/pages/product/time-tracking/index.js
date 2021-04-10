@@ -2,9 +2,9 @@ import React from 'react';
 import Header from '@components/molecules/header';
 import Video from '@components/molecules/video';
 import TimeTrackingCard from '@components/molecules/time-tracking-card';
-import CheckList from '@components/molecules/checklist';
-import ImageList from '@components/molecules/imageList';
-import IconCardList from '@components/organisms/iconCardList';
+import CheckList from '@components/molecules/check-list';
+import ImageList from '@components/molecules/image-list';
+import IconCardList from '@components/organisms/icon-card-list';
 import { container } from './time-tracking.module.scss';
 
 import icon from '../../../images/easy-to-use.png';

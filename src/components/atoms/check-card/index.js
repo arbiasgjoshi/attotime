@@ -1,5 +1,5 @@
 import React from 'react';
-import { card, cardTitle, cardIcon, cardIconWrapper } from './checkCard.module.scss';
+import { card, cardTitle, cardIcon, cardIconWrapper } from './check-card.module.scss';
 import checkIcon from '../../../images/green_circle_tick.png';
 
 const CheckCard = ({ title }) => {

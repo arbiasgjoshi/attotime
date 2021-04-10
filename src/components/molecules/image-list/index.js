@@ -1,5 +1,5 @@
 import React from 'react';
-import { imageListContainer } from './imageList.module.scss';
+import { imageListContainer } from './image-list.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const ImageList = () => {

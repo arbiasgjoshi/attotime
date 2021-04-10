@@ -1,6 +1,6 @@
 import React from 'react';
-import CheckCard from '@components/atoms/checkCard';
-import { container } from './checkList.module.scss';
+import CheckCard from '@components/atoms/check-card';
+import { container } from './check-list.module.scss';
 
 const CheckList = () => {
   return (
