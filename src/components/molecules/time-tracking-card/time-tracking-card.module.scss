@@ -1,0 +1,20 @@
+.container {
+  text-align: center;
+  padding: 2rem 0;
+
+  .headerContainer {
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+
+    .smallParagraph {
+      color: var(--primary-color);
+      font-size: 1.8rem;
+      font-weight: 600;
+      padding-bottom: 1rem;
+    }
+
+    .mainTitle {
+      padding-bottom: 0.75rem;
+    }
+  }
+}

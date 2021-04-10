@@ -1,0 +1,24 @@
+.card {
+  display: flex;
+  font-weight: 700;
+
+  .cardIconWrapper {
+    padding: 1rem 1.6rem 1rem 0;
+  }
+
+  .cardIcon {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .cardTitle {
+    height: 6rem;
+    width: 40rem;
+    color: #000000;
+    font-family: Calibre;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+    line-height: 3rem;
+  }
+}
