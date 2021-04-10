@@ -2,13 +2,12 @@ import React from 'react';
 import CheckCard from '@components/atoms/check-card';
 import { container } from './check-list.module.scss';
 
-const CheckList = () => {
+const CheckList = ({ titleList }) => {
   return (
     <div className={container}>
-      <CheckCard title={'Keep track of time wherever your employees are'} />
-      <CheckCard title={'Reduce payroll costs and increase productivity'} />
-      <CheckCard title={'Track hours, breaks, time-off, and more'} />
-      <CheckCard title={'Increase the accuracy of job estimates'} />
+      {titleList.map((title, index) => (
+        <CheckCard key={index} title={title} />
+      ))}
     </div>
   );
 };

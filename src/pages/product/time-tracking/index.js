@@ -19,6 +19,7 @@ import icon6 from '../../../images/track-breaks.png';
 import icon7 from '../../../images/manage-overtime.png';
 import icon8 from '../../../images/switch-between-jobs.png';
 import icon9 from '../../../images/add-time-off.png';
+import OverviewAdmin from '../../../components/organisms/overview-admin';
 
 const TimeTracking = () => {
   const firstList = [
@@ -81,6 +82,13 @@ const TimeTracking = () => {
     },
   ];
 
+  const titleList = [
+    'Keep track of time wherever your employees are',
+    'Reduce payroll costs and increase productivity',
+    'Track hours, breaks, time-off, and more',
+    'Increase the accuracy of job estimates',
+  ];
+
   return (
     <div className={container}>
       <Header />
@@ -92,7 +100,7 @@ const TimeTracking = () => {
         subtitle={'An easy-to-use, accurate, and trustworthy time-tracking solution.'}
       />
       <Video />
-      <CheckList />
+      <CheckList titleList={titleList} />
       <ImageList />
       <IconCardList cardList={firstList} />
       <TimeTrackingCard
@@ -108,6 +116,7 @@ const TimeTracking = () => {
       />
       <ImageSlider />
       <WorkCardList />
+      <OverviewAdmin />
     </div>
   );
 };
