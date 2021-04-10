@@ -1,0 +1,17 @@
+.imageContainer {
+  position: relative;
+  margin: 0 auto;
+  padding: 4.5rem 0;
+
+  .videoBackground {
+    border: 2px solid #efefef;
+    border-radius: 16px;
+  }
+
+  .playerImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
