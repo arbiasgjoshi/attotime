@@ -1,6 +1,5 @@
 .container {
-  max-width: 35rem;
-
+  width: 100%;
   .iconWrapper {
     display: flex;
     justify-content: center;
@@ -10,6 +9,8 @@
   }
 
   .textWrapper {
+    max-width: 35rem;
+    margin: 0 auto;
     text-align: center;
 
     h4 {
