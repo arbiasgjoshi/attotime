@@ -5,8 +5,10 @@ import TimeTrackingCard from '@components/molecules/time-tracking-card';
 import CheckList from '@components/molecules/check-list';
 import ImageList from '@components/molecules/image-list';
 import ImageSlider from '@components/molecules/image-slider';
-import WorkCardList from '@components/organisms/work-card-list';
+import WorkList from '@components/organisms/work-list';
 import IconCardList from '@components/organisms/icon-card-list';
+import OverviewAdmin from '@components/organisms/overview-admin';
+import FeaturesList from '@components/organisms/features-list';
 import { container } from './time-tracking.module.scss';
 
 import icon from '../../../images/easy-to-use.png';
@@ -19,7 +21,19 @@ import icon6 from '../../../images/track-breaks.png';
 import icon7 from '../../../images/manage-overtime.png';
 import icon8 from '../../../images/switch-between-jobs.png';
 import icon9 from '../../../images/add-time-off.png';
-import OverviewAdmin from '../../../components/organisms/overview-admin';
+
+import icon10 from '../../../images/timer.png';
+import icon11 from '../../../images/flag.png';
+import icon12 from '../../../images/ringbell.png';
+import icon13 from '../../../images/m-logo.png';
+import icon14 from '../../../images/brightness.png';
+import icon15 from '../../../images/notes.png';
+import icon16 from '../../../images/overtime.png';
+import icon17 from '../../../images/coffe.png';
+import icon18 from '../../../images/bookmark.png';
+import icon19 from '../../../images/clock.png';
+import icon20 from '../../../images/browser.png';
+import icon21 from '../../../images/darkMode.png';
 
 const TimeTracking = () => {
   const firstList = [
@@ -89,6 +103,82 @@ const TimeTracking = () => {
     { title: 'Increase the accuracy of job estimates' },
   ];
 
+  const featureList = [
+    {
+      title: 'Managed Clock-in / Out',
+      description:
+        'Empower managers to clock-in and out on behalf of their team, instead of tracking time individually.',
+      logo: icon10,
+      alt: 'Clock in logo',
+    },
+    {
+      title: 'Geofencing',
+      description: `Restrict employees from clocking-in until they've arrived at a job site`,
+      logo: icon11,
+      alt: 'Geofencing Flag',
+    },
+    {
+      title: 'Smart Reminders',
+      description: `Remind employees to clock-in and out at their start and end time or when they're at a job site`,
+      logo: icon12,
+      alt: 'Ringbell reminder logo',
+    },
+    {
+      title: 'Manual Time Entries',
+      description: `Allow admins, managers, or employees the ability to add manual time entries to their timesheets.`,
+      logo: icon13,
+      alt: '',
+    },
+    {
+      title: 'Time Off',
+      description: `Add and categorize time off entries, specifying whether time off is paid or unpaid`,
+      logo: icon14,
+      alt: '',
+    },
+    {
+      title: 'Notes',
+      description: `Add notes to provide context to time entries, such as a work diary or job information`,
+      logo: icon15,
+      alt: '',
+    },
+    {
+      title: 'Overtime Rules',
+      description: `Set regular employee working hours per day/week and assign any extra hours to count as overtime.`,
+      logo: icon16,
+      alt: '',
+    },
+    {
+      title: 'Break Preferences',
+      description: `Decide if breaks are paid or unpaid, the amount of time to be deducted, and categorize them.`,
+      logo: icon17,
+      alt: '',
+    },
+    {
+      title: 'Job Codes',
+      description: `Categorize time tracked towards specific purposes such as per client, project, or type of work.`,
+      logo: icon18,
+      alt: '',
+    },
+    {
+      title: 'Rounded Clock-in / Out Times',
+      description: `Set clock-in and out times to be automatically rounded to an increment of your choice.`,
+      logo: icon19,
+      alt: '',
+    },
+    {
+      title: 'Fixed Time Zones',
+      description: `Automatically adjust your team's hours to a set time zone, regardless of their device's time zone.`,
+      logo: icon20,
+      alt: '',
+    },
+    {
+      title: 'Split Night-Shift Time Entries',
+      description: `Split time entries at midnight, with hours tracked after midnight counting for the following day.`,
+      logo: icon21,
+      alt: '',
+    },
+  ];
+
   return (
     <div className={container}>
       <Header />
@@ -115,8 +205,12 @@ const TimeTracking = () => {
         subtitle={`Time-tracking options to suit your business' needs. In the office, in teams, at a job site, or on the move. Online or offline.`}
       />
       <ImageSlider />
-      <WorkCardList />
+      <WorkList />
       <OverviewAdmin />
+      <FeaturesList
+        mainTitle={'Our full suite of time tracking features at a glance'}
+        list={featureList}
+      />
     </div>
   );
 };

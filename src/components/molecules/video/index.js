@@ -29,7 +29,7 @@ const Video = () => {
         width={120}
         height={120}
         alt={'Video player'}
-        src={'../../../images/play_button.svg'}
+        src={'../../../images/play-button.svg'}
       />
     </div>
   );
