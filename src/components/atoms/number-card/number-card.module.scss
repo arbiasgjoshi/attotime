@@ -1,0 +1,12 @@
+.container {
+  padding: 2.9rem 0 2.9rem 3.5rem;
+
+  .mainTitle {
+    font-size: 4.4rem;
+  }
+
+  &.border {
+    border-left: 0.3rem solid #efefef;
+    border-radius: 0.1rem;
+  }
+}

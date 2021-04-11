@@ -34,6 +34,7 @@ import icon18 from '../../../images/bookmark.png';
 import icon19 from '../../../images/clock.png';
 import icon20 from '../../../images/browser.png';
 import icon21 from '../../../images/darkMode.png';
+import GrowthNumbers from '../../../components/organisms/growth-numbers';
 
 const TimeTracking = () => {
   const firstList = [
@@ -211,6 +212,7 @@ const TimeTracking = () => {
         mainTitle={'Our full suite of time tracking features at a glance'}
         list={featureList}
       />
+      <GrowthNumbers />
     </div>
   );
 };

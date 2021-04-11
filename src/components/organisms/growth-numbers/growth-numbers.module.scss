@@ -1,0 +1,11 @@
+.container {
+  border-left: 0.3rem solid #efefef;
+  margin-bottom: 20rem;
+
+  .cardList {
+    margin-top: 6.6rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
