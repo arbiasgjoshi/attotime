@@ -5,4 +5,9 @@
   row-gap: 5rem;
   column-gap: 4.8rem;
   padding: 2.5rem 9rem;
+
+  &.hasDescr {
+    padding: 0;
+    column-gap: 2.8rem;
+  }
 }

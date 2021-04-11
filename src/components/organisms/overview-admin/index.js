@@ -5,10 +5,26 @@ import { container, textWrapper } from './overview-admin.module.scss';
 
 const OverviewAdmin = () => {
   const titleList = [
-    'Save time and focus on productive work',
-    'Win more bussiness with precise job estimates',
-    'Reduce payroll costs',
-    'Increase employee productivity',
+    {
+      title: 'Save time and focus on productive work',
+      description:
+        'Atto takes care of time-draining tasks like chasing down timesheets. Now your employees can spend less time on admin, and more time on real work.',
+    },
+    {
+      title: 'Win more bussiness with precise job estimates',
+      description:
+        'Using time tracking data from previous jobs, you can ensure that any bids you submit for similar jobs in the future are both profitable and competitive.',
+    },
+    {
+      title: 'Reduce payroll costs',
+      description:
+        'With precise time-tracking that captures activity to the nearest second, you only pay for hours actually spent on the job',
+    },
+    {
+      title: 'Increase employee productivity',
+      description:
+        'When you track hours and the clock is ticking, your employees naturally become more productive and aware of their time.',
+    },
   ];
 
   return (
@@ -20,7 +36,7 @@ const OverviewAdmin = () => {
         </h3>
       </div>
       <StaticImage src="../../../images/admin-board.svg" alt="Admin overview board" />
-      <CheckList titleList={titleList} />
+      <CheckList titleList={titleList} hasDescription />
     </div>
   );
 };

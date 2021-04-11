@@ -1,12 +1,17 @@
 import React from 'react';
-import CheckCard from '@components/atoms/check-card';
-import { container } from './check-list.module.scss';
+import CheckCard from '@components/molecules/check-card';
+import { container, hasDescr } from './check-list.module.scss';
 
-const CheckList = ({ titleList }) => {
+const CheckList = ({ titleList, hasDescription = false }) => {
   return (
-    <div className={container}>
-      {titleList.map((title, index) => (
-        <CheckCard key={index} title={title} />
+    <div className={`${container} ${hasDescription && hasDescr}`}>
+      {titleList.map(({ title, description }, index) => (
+        <CheckCard
+          key={index}
+          hasDescription={hasDescription}
+          title={title}
+          description={description}
+        />
       ))}
     </div>
   );
