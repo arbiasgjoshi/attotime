@@ -1,13 +1,13 @@
 import React from 'react';
-import { container, iconWrapper, textWrapper } from './icon-card.module.scss';
+import { container, iconWrapper, round, textWrapper, leftAligned } from './icon-card.module.scss';
 
-const IconCard = ({ icon, alt, title, description }) => {
+const IconCard = ({ icon, alt, title, description, isRound = false }) => {
   return (
     <div className={container}>
-      <div className={iconWrapper}>
+      <div className={`${iconWrapper} ${isRound && round}`}>
         <img alt={alt} src={icon} />
       </div>
-      <div className={textWrapper}>
+      <div className={`${textWrapper} ${isRound && leftAligned}`}>
         <h4>{title}</h4>
         <p>{description}</p>
       </div>

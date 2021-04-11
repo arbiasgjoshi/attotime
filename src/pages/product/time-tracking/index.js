@@ -9,6 +9,9 @@ import WorkList from '@components/organisms/work-list';
 import IconCardList from '@components/organisms/icon-card-list';
 import OverviewAdmin from '@components/organisms/overview-admin';
 import FeaturesList from '@components/organisms/features-list';
+import GrowthNumbers from '../../../components/organisms/growth-numbers';
+import CommonProblems from '../../../components/organisms/common-problems';
+
 import { container } from './time-tracking.module.scss';
 
 import icon from '../../../images/easy-to-use.png';
@@ -34,7 +37,6 @@ import icon18 from '../../../images/bookmark.png';
 import icon19 from '../../../images/clock.png';
 import icon20 from '../../../images/browser.png';
 import icon21 from '../../../images/darkMode.png';
-import GrowthNumbers from '../../../components/organisms/growth-numbers';
 
 const TimeTracking = () => {
   const firstList = [
@@ -213,6 +215,7 @@ const TimeTracking = () => {
         list={featureList}
       />
       <GrowthNumbers />
+      <CommonProblems />
     </div>
   );
 };
