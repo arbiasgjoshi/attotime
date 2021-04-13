@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #efefef;
+  height: 16rem;
+  width: 34rem;
+  margin: 0 2.4rem 2.4rem 0;
+  padding: 1.2rem 2rem 2.5rem 3.2rem;
+
+  .textContainer {
+    .cardNumber {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      color: #999999;
+    }
+
+    .cardTitle {
+      height: 4rem;
+      font-weight: 600;
+      font-size: 2.5rem;
+      letter-spacing: -0.05rem;
+      line-height: 4rem;
+    }
+  }
+
+  .imageWrapper {
+    padding: 1.2rem 1rem;
+  }
+}
