@@ -1,13 +1,97 @@
 {
   "title": "Attotime",
   "description": "",
-  "header": {},
+  "header": {
+    "nav_links": [
+      {
+        "name": "Product",
+        "url": "/product",
+        "subMenuLinks": [
+          {
+            "name": "Time Tracking",
+            "url": "/product/time-tracking"
+          },
+          {
+            "name": "Location Tracking",
+            "url": "/product/location-tracking"
+          },
+          {
+            "name": "Team Activity",
+            "url": "/product/team-activity"
+          },
+          {
+            "name": "Timesheets",
+            "url": "/product/timesheets"
+          }
+        ]
+      },
+      {
+        "name": "Why Atto",
+        "url": "/why-atto"
+      },
+      {
+        "name": "Industries",
+        "url": "/industries",
+        "subMenuLinks": [
+          {
+            "name": "Construction Companies",
+            "url": "/industries/time-tracking-for-construction-companies"
+          },
+          {
+            "name": "Landscaping",
+            "url": "/industries/time-tracking-for-landscaping"
+          },
+          {
+            "name": "Roofing",
+            "url": "/industries/time-tracking-for-roofing"
+          },
+          {
+            "name": "Painting",
+            "url": "/industries/time-tracking-for-painting"
+          },
+          {
+            "name": "Healthcare",
+            "url": "/industries/time-tracking-for-healthcare"
+          },
+          {
+            "name": "Plumbing and Heating",
+            "url": "/industries/time-tracking-for-plumbing-and-heating"
+          },
+          {
+            "name": "Cleaners",
+            "url": "/industries/time-tracking-for-cleaners"
+          },
+          {
+            "name": "Electricians",
+            "url": "/industries/time-tracking-for-electricians"
+          }
+        ]
+      },
+      {
+        "name": "Pricing",
+        "url": "/pricing"
+      },
+      {
+        "name": "Resources",
+        "url": "/resources"
+      }
+    ]
+  },
   "pages": {
     "homepage": {},
     "product-time-tracking": {},
     "product-location-tracking": {},
     "product-team-activty": {},
     "product-timesheets": {},
+    "industries": {},
+    "time-tracking-for-construction-companies": {},
+    "time-tracking-for-landscaping": {},
+    "time-tracking-for-roofing": {},
+    "time-tracking-for-painting": {},
+    "time-tracking-for-healthcare": {},
+    "time-tracking-for-plumbing-and-heating": {},
+    "time-tracking-for-cleaners": {},
+    "time-tracking-for-electricians": {},
     "time-card": {},
     "time-clock": {},
     "time-tracking": {},
