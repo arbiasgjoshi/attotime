@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  margin-bottom: 20rem;
+
+  .textContainer {
+    margin-top: 17.5rem;
+    flex-basis: 30%;
+  }
+
+  .serviceList {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+  }
+}

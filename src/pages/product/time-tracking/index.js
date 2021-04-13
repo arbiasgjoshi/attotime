@@ -9,8 +9,9 @@ import WorkList from '@components/organisms/work-list';
 import IconCardList from '@components/organisms/icon-card-list';
 import OverviewAdmin from '@components/organisms/overview-admin';
 import FeaturesList from '@components/organisms/features-list';
-import GrowthNumbers from '../../../components/organisms/growth-numbers';
-import CommonProblems from '../../../components/organisms/common-problems';
+import GrowthNumbers from '@components/organisms/growth-numbers';
+import CommonProblems from '@components/organisms/common-problems';
+import Services from '@components/organisms/services';
 
 import { container } from './time-tracking.module.scss';
 
@@ -182,6 +183,17 @@ const TimeTracking = () => {
     },
   ];
 
+  const serviceList = [
+    { title: 'Construction' },
+    { title: 'Painting' },
+    { title: 'Roofing' },
+    { title: 'Cleaning' },
+    { title: 'Electric' },
+    { title: 'Plumbing' },
+    { title: 'Landscaping' },
+    { title: 'Healthcare' },
+  ];
+
   return (
     <div className={container}>
       <Header />
@@ -216,6 +228,7 @@ const TimeTracking = () => {
       />
       <GrowthNumbers />
       <CommonProblems />
+      <Services title="Time Tracking solution for any industry" list={serviceList} />
     </div>
   );
 };
