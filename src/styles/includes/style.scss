@@ -29,6 +29,56 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.attoicon-healthcare {
+  &:before {
+    content: $attoicon-healthcare;
+  }
+}
+.attoicon-landscaping {
+  &:before {
+    content: $attoicon-landscaping;
+  }
+}
+.attoicon-electric {
+  &:before {
+    content: $attoicon-electric;
+  }
+}
+.attoicon-cleaning {
+  &:before {
+    content: $attoicon-cleaning;
+  }
+}
+.attoicon-roofing {
+  &:before {
+    content: $attoicon-roofing;
+  }
+}
+.attoicon-painting {
+  &:before {
+    content: $attoicon-painting;
+  }
+}
+.attoicon-verified {
+  &:before {
+    content: $attoicon-verified;
+  }
+}
+.attoicon-rounded-clock {
+  &:before {
+    content: $attoicon-rounded-clock;
+  }
+}
+.attoicon-time-off {
+  &:before {
+    content: $attoicon-time-off;
+  }
+}
+.attoicon-notification {
+  &:before {
+    content: $attoicon-notification;
+  }
+}
 .attoicon-play {
   &:before {
     content: $attoicon-play;
