@@ -44,7 +44,7 @@ const TimeTracking = () => {
       title: 'Easy to use',
       description: `Start tracking in a tap. Emplyees love using Atto because it's simple, intuitive, and requires no technical knowledge to use.`,
       alt: 'Easy to use',
-      icon: icon,
+      icon,
     },
     {
       title: 'Accurate',
@@ -188,30 +188,28 @@ const TimeTracking = () => {
       <TimeTrackingCard
         hasParagraph
         showButton
-        paragraph={'Time Tracking'}
-        title={'Take the pain away from time tracking'}
-        subtitle={'An easy-to-use, accurate, and trustworthy time-tracking solution.'}
+        paragraph="Time Tracking"
+        title="Take the pain away from time tracking"
+        subtitle="An easy-to-use, accurate, and trustworthy time-tracking solution."
       />
       <Video />
       <CheckList titleList={titleList} />
       <ImageList />
       <IconCardList cardList={firstList} />
       <TimeTrackingCard
-        title={'Start tracking time in a tap'}
-        subtitle={
-          'Say goodbye to employee estimates. Use the time clock to precisely capture work activity.'
-        }
+        title="Start tracking time in a tap"
+        subtitle="Say goodbye to employee estimates. Use the time clock to precisely capture work activity."
       />
       <IconCardList cardList={secondList} />
       <TimeTrackingCard
-        title={'Accurately track time from any location and any device'}
+        title="Accurately track time from any location and any device"
         subtitle={`Time-tracking options to suit your business' needs. In the office, in teams, at a job site, or on the move. Online or offline.`}
       />
       <ImageSlider />
       <WorkList />
       <OverviewAdmin />
       <FeaturesList
-        mainTitle={'Our full suite of time tracking features at a glance'}
+        mainTitle="Our full suite of time tracking features at a glance"
         list={featureList}
       />
       <GrowthNumbers />
