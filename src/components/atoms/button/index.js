@@ -1,12 +1,32 @@
 import React from 'react';
-import { buttonWrapper } from './button.module.scss';
+import PropTypes from 'prop-types';
 
-const Button = ({ btnText, disabled }) => {
+import { defaultBtn, tealStyle, trialStyle, wideStyle } from './button.module.scss';
+
+const Button = ({ btnText, disabled, btnStyle }) => {
+  const checkBtnStyle = () => {
+    let className = '';
+    if (btnStyle === 'teal') {
+      className += ` ${tealStyle}`;
+    }
+    if (btnStyle === 'trial') {
+      className += ` ${trialStyle}`;
+    }
+    if (btnStyle === 'wide') {
+      className += ` ${wideStyle}`;
+    }
+    return className;
+  };
   return (
-    <button className={buttonWrapper} type="submit" disabled={disabled}>
+    <button className={`${defaultBtn} ${checkBtnStyle()}`} type="submit" disabled={disabled}>
       {btnText}
     </button>
   );
 };
 
+Button.propTypes = {
+  btnText: PropTypes.string,
+  disabled: PropTypes.bool,
+  btnStyle: PropTypes.string,
+};
 export default Button;

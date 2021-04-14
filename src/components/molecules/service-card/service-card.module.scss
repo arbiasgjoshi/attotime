@@ -1,17 +1,17 @@
 .container {
-  display: flex;
-  align-items: center;
+  @include flex-align(center, flex-start);
   border: 1px solid #efefef;
   height: 16rem;
-  width: 34rem;
-  margin: 0 2.4rem 2.4rem 0;
-  padding: 1.2rem 2rem 2.5rem 3.2rem;
-
+  width: calc(50% - 2.4rem);
+  margin: 1.2rem;
+  padding: 0 2rem 0 3.2rem;
   .textContainer {
     .cardNumber {
       font-size: 1.5rem;
       line-height: 1.5rem;
       color: #999999;
+      margin-top: -1.7rem;
+      display: inline-flex;
     }
 
     .cardTitle {

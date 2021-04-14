@@ -1,13 +1,30 @@
 .headerContainer {
-  background-color: #fff;
-  border: 1px solid blue;
   height: 7.3rem;
   @include flex-align(center, flex-start);
   flex-direction: row;
+  padding: 1.3rem 0;
   margin-bottom: 7rem;
+
+  a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000;
+    margin-right: 3rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
-.titleStyle {
-  font-size: 4rem;
-  line-height: 4.5rem;
+.leftNav {
+  margin-right: 6.5rem;
+}
+
+.menuLinks {
+  @include flex-direction(row);
+}
+
+.rightNavButtons {
+  margin-left: auto;
 }
