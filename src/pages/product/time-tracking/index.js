@@ -6,6 +6,7 @@ import Title from '@components/molecules/title';
 import CheckList from '@components/molecules/check-list';
 import ImageList from '@components/molecules/image-list';
 import ImageSlider from '@components/molecules/image-slider';
+import LearnMoreCard from '@components/molecules/learn-more-card';
 import WorkList from '@components/organisms/work-list';
 import IconCardList from '@components/organisms/icon-card-list';
 import OverviewAdmin from '@components/organisms/overview-admin';
@@ -15,7 +16,7 @@ import CommonProblems from '@components/organisms/common-problems';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
 
-import { container } from './time-tracking.module.scss';
+import { container, learnMoreContainer } from './time-tracking.module.scss';
 import authorImage from '../../../images/authorImage.png';
 
 import icon from '../../../images/easy-to-use.png';
@@ -242,6 +243,20 @@ const TimeTracking = () => {
         title={`It doesn't end here!`}
         description="Learn more about what Atto can do for you"
       />
+      <div className={learnMoreContainer}>
+        <LearnMoreCard
+          title="GPS Location Tracking"
+          description="Increase the safety and accountability of your team with real-time updates on their location."
+        />
+        <LearnMoreCard
+          title="Team Activity"
+          description="Stay in the loop with what's happening - without needing to pick up the phone"
+        />
+        <LearnMoreCard
+          title="Timesheets"
+          description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        />
+      </div>
     </div>
   );
 };

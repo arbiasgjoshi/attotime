@@ -1,0 +1,34 @@
+.container {
+  width: 35rem;
+  height: 44rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--color-20);
+  box-sizing: border-box;
+
+  .iconWrapper {
+    height: 13rem;
+  }
+
+  .textWrapper {
+    text-align: center;
+
+    .cardTitle {
+      margin-bottom: 1.2rem;
+    }
+
+    .paragraphText {
+      height: 12rem;
+      width: 27rem;
+      color: #262626;
+      font-family: Calibre;
+      font-size: 2.2rem;
+      letter-spacing: 0;
+      line-height: 3rem;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+  }
+}

@@ -2,4 +2,10 @@
   max-width: 114rem;
   // margin: 0 15rem;
   margin: 0 auto;
+
+  .learnMoreContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
