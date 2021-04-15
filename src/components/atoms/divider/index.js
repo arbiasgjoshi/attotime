@@ -1,6 +1,8 @@
 import React from 'react';
-import { dividerContainer } from './divider.module.scss';
+import * as styles from './divider.module.scss';
 
-const Divider = () => <hr className={dividerContainer} />;
+const Divider = ({ className = '' }) => {
+  return <hr className={`${styles.dividerContainer} ${styles[className]}`} />;
+};
 
 export default Divider;

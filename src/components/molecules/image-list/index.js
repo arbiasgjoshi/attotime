@@ -1,9 +1,8 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { imageListContainer } from './image-list.module.scss';
 
 const ImageList = () => (
-  <div className={imageListContainer}>
+  <div>
     <StaticImage
       alt="Clock In"
       height={474}

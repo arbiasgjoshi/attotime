@@ -1,4 +1,5 @@
 import React from 'react';
+import Divider from '@components/atoms/divider';
 import Header from '@components/molecules/header';
 import Video from '@components/molecules/video';
 import MainTitleCard from '@components/molecules/main-title-card';
@@ -210,35 +211,45 @@ const TimeTracking = () => {
       />
       <Video />
       <CheckList titleList={titleList} />
+      <Divider />
       <ImageList />
+      <Divider className="smallest" />
       <IconCardList cardList={firstList} />
+      <Divider />
       <Title
         title="Start tracking time in a tap"
         description="Say goodbye to employee estimates. Use the time clock to precisely capture work activity."
       />
       <IconCardList cardList={secondList} />
+      <Divider />
       <Title
         title="Accurately track time from any location and any device"
         description={`Time-tracking options to suit your business' needs. In the office, in teams, at a job site, or on the move. Online or offline.`}
       />
       <ImageSlider />
       <WorkList />
-      <Title title="Lower costs, higher productivity. Less admin, more bussiness" />
+      <Divider />
+      <Title title={`Lower costs, higher productivity. Less admin, more bussiness`} />
       <OverviewAdmin />
-      <Title title="Our full suite of time tracking features at a glance" />
+      <Divider />
+      <Title title={`Our full suite of time tracking features at a glance`} />
       <FeaturesList
         mainTitle="Our full suite of time tracking features at a glance"
         list={featureList}
       />
       <GrowthNumbers />
+      <Divider />
       <Title title="Common problems, solved." />
       <CommonProblems />
+      <Divider />
       <Services title="Time Tracking solution for any industry" list={serviceList} />
+      <Divider />
       <Story
         img={authorImage}
         paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
         author="Robert Bennet - DPA Cleaning Services, Inc."
       />
+      <Divider />
       <Title
         title={`It doesn't end here!`}
         description="Learn more about what Atto can do for you"
