@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '@components/atoms/icon';
 import {
   container,
   textContainer,
@@ -7,14 +8,14 @@ import {
   imageWrapper,
 } from './service-card.module.scss';
 
-const ServiceCard = ({ index, title, img }) => (
+const ServiceCard = ({ index, title, img, size }) => (
   <div className={container}>
     <div className={textContainer}>
       <span className={cardNumber}>{`0${index}`}</span>
       <h4 className={cardTitle}>{title}</h4>
     </div>
     <div className={imageWrapper}>
-      <img src={img} alt={title} />
+      <Icon iconClass={img} fSize={size} />
     </div>
   </div>
 );

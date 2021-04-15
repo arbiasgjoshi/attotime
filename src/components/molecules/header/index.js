@@ -9,7 +9,7 @@ import { headerContainer, leftNav, menuLinks, rightNavButtons } from './header.m
 const HeaderComponent = ({ centered, logoType }) => (
   <header className={headerContainer}>
     <div className={leftNav}>
-      <StaticImage />
+      <StaticImage src="../../../images/logo@2x.png" quality={90} width={85} />
     </div>
     <div className={menuLinks}>
       <Link to="/product">Product</Link>

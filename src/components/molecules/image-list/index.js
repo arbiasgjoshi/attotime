@@ -5,9 +5,9 @@ const ImageList = () => (
   <div>
     <StaticImage
       alt="Clock In"
-      width={546}
       height={474}
-      src={'../../../images/time-tracking-clock.svg'}
+      quality={90}
+      src="../../../images/banner-image-2@2x.png"
     />
   </div>
 );
