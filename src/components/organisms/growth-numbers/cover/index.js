@@ -13,7 +13,8 @@ const Cover = () => (
       className={imageWrapper}
       width={746}
       height={400}
-      src="../../../../images/bussinessCover.svg"
+      quality={90}
+      src="../../../../images/trusted-img@2x.png"
     />
   </div>
 );

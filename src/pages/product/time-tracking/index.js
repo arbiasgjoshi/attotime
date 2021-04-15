@@ -188,14 +188,14 @@ const TimeTracking = () => {
   ];
 
   const serviceList = [
-    { title: 'Construction' },
-    { title: 'Painting' },
-    { title: 'Roofing' },
-    { title: 'Cleaning' },
-    { title: 'Electric' },
-    { title: 'Plumbing' },
-    { title: 'Landscaping' },
-    { title: 'Healthcare' },
+    { title: 'Construction', icon: 'construction', size: 6.5 },
+    { title: 'Painting', icon: 'painting', size: 7.4 },
+    { title: 'Roofing', icon: 'roofing', size: 7.5 },
+    { title: 'Cleaning', icon: 'cleaning', size: 8 },
+    { title: 'Electric', icon: 'electric', size: 7.5 },
+    { title: 'Plumbing', icon: '', size: 5 },
+    { title: 'Landscaping', icon: 'landscaping', size: 6.7 },
+    { title: 'Healthcare', icon: 'healthcare', size: 7.5 },
   ];
 
   return (
@@ -223,9 +223,9 @@ const TimeTracking = () => {
       />
       <ImageSlider />
       <WorkList />
-      <Title title={`Lower costs, higher productivity. Less admin, more bussiness`} />
+      <Title title="Lower costs, higher productivity. Less admin, more bussiness" />
       <OverviewAdmin />
-      <Title title={`Our full suite of time tracking features at a glance`} />
+      <Title title="Our full suite of time tracking features at a glance" />
       <FeaturesList
         mainTitle="Our full suite of time tracking features at a glance"
         list={featureList}

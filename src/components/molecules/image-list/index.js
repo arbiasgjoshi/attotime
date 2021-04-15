@@ -1,18 +1,16 @@
 import React from 'react';
-import { imageListContainer } from './image-list.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
+import { imageListContainer } from './image-list.module.scss';
 
-const ImageList = () => {
-  return (
-    <div className={imageListContainer}>
-      <StaticImage
-        alt="Clock In"
-        width={546}
-        height={474}
-        src={'../../../images/time-tracking-clock.svg'}
-      />
-    </div>
-  );
-};
+const ImageList = () => (
+  <div className={imageListContainer}>
+    <StaticImage
+      alt="Clock In"
+      height={474}
+      quality={90}
+      src="../../../images/banner-image-2@2x.png"
+    />
+  </div>
+);
 
 export default ImageList;
