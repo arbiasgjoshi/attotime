@@ -7,9 +7,9 @@ import {
   headerContainer,
   mainTitle,
   smallParagraph,
-} from './time-tracking-card.module.scss';
+} from './main-title-card.module.scss';
 
-const TimeTrackingCard = ({
+const MainTitleCard = ({
   title,
   subtitle,
   paragraph,
@@ -26,7 +26,7 @@ const TimeTrackingCard = ({
   </div>
 );
 
-TimeTrackingCard.propTypes = {
+MainTitleCard.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   paragraph: PropTypes.string,
@@ -34,4 +34,4 @@ TimeTrackingCard.propTypes = {
   showButton: PropTypes.bool,
 };
 
-export default TimeTrackingCard;
+export default MainTitleCard;

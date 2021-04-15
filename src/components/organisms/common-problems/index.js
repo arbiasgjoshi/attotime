@@ -9,7 +9,6 @@ import { container, list } from './common-problems.module.scss';
 const CommonProblems = () => {
   return (
     <div className={container}>
-      <h3>Common problems, solved.</h3>
       <div className={list}>
         <IconCard
           isRound

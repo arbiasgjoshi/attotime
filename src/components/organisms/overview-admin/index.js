@@ -1,7 +1,7 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import CheckList from '@components/molecules/check-list';
-import { container, textWrapper, imageWrapper } from './overview-admin.module.scss';
+import { container, imageWrapper } from './overview-admin.module.scss';
 
 const OverviewAdmin = () => {
   const titleList = [
@@ -29,12 +29,6 @@ const OverviewAdmin = () => {
 
   return (
     <div className={container}>
-      <div className={textWrapper}>
-        <h3>
-          <span>Lower Costs, higher productivity</span>
-          <span>Less admin, more bussiness.</span>
-        </h3>
-      </div>
       <div className={imageWrapper}>
         <StaticImage
           width={1140}

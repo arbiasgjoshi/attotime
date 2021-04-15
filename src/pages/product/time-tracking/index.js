@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from '@components/molecules/header';
 import Video from '@components/molecules/video';
-import TimeTrackingCard from '@components/molecules/time-tracking-card';
+import MainTitleCard from '@components/molecules/main-title-card';
+import Title from '@components/molecules/title';
 import CheckList from '@components/molecules/check-list';
 import ImageList from '@components/molecules/image-list';
 import ImageSlider from '@components/molecules/image-slider';
@@ -199,7 +200,7 @@ const TimeTracking = () => {
   return (
     <div className={container}>
       <Header />
-      <TimeTrackingCard
+      <MainTitleCard
         hasParagraph
         showButton
         paragraph="Time Tracking"
@@ -210,29 +211,36 @@ const TimeTracking = () => {
       <CheckList titleList={titleList} />
       <ImageList />
       <IconCardList cardList={firstList} />
-      <TimeTrackingCard
+      <Title
         title="Start tracking time in a tap"
-        subtitle="Say goodbye to employee estimates. Use the time clock to precisely capture work activity."
+        description="Say goodbye to employee estimates. Use the time clock to precisely capture work activity."
       />
       <IconCardList cardList={secondList} />
-      <TimeTrackingCard
+      <Title
         title="Accurately track time from any location and any device"
-        subtitle={`Time-tracking options to suit your business' needs. In the office, in teams, at a job site, or on the move. Online or offline.`}
+        description={`Time-tracking options to suit your business' needs. In the office, in teams, at a job site, or on the move. Online or offline.`}
       />
       <ImageSlider />
       <WorkList />
+      <Title title={`Lower costs, higher productivity. Less admin, more bussiness`} />
       <OverviewAdmin />
+      <Title title={`Our full suite of time tracking features at a glance`} />
       <FeaturesList
         mainTitle="Our full suite of time tracking features at a glance"
         list={featureList}
       />
       <GrowthNumbers />
+      <Title title="Common problems, solved." />
       <CommonProblems />
       <Services title="Time Tracking solution for any industry" list={serviceList} />
       <Story
         img={authorImage}
         paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
         author="Robert Bennet - DPA Cleaning Services, Inc."
+      />
+      <Title
+        title={`It doesn't end here!`}
+        description="Learn more about what Atto can do for you"
       />
     </div>
   );
