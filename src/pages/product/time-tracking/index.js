@@ -23,37 +23,37 @@ import GrowthNumbers from '@components/organisms/growth-numbers';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
 
-import authorImage from '../../../images/authorImage.png';
+import authorImage from '@images/authorImage.png';
 
-import logo1 from '../../../images/web-time-tracking.png';
-import logo2 from '../../../images/mobile-time-tracking.png';
-import logo3 from '../../../images/kiosk-time-tracking.png';
+import logo1 from '@images/web-time-tracking.png';
+import logo2 from '@images/mobile-time-tracking.png';
+import logo3 from '@images/kiosk-time-tracking.png';
 
-import icon from '../../../images/easy-to-use.png';
-import icon2 from '../../../images/accurate.png';
-import icon3 from '../../../images/trustworthy.png';
+import icon from '@images/easy-to-use.png';
+import icon2 from '@images/accurate.png';
+import icon3 from '@images/trustworthy.png';
 
-import icon4 from '../../../images/clock-in-out.png';
-import icon5 from '../../../images/write-notes.png';
-import icon6 from '../../../images/track-breaks.png';
-import icon7 from '../../../images/manage-overtime.png';
-import icon8 from '../../../images/switch-between-jobs.png';
-import icon9 from '../../../images/add-time-off.png';
+import icon4 from '@images/clock-in-out.png';
+import icon5 from '@images/write-notes.png';
+import icon6 from '@images/track-breaks.png';
+import icon7 from '@images/manage-overtime.png';
+import icon8 from '@images/switch-between-jobs.png';
+import icon9 from '@images/add-time-off.png';
 
-import icon10 from '../../../images/timer.png';
-import icon11 from '../../../images/flag.png';
-import icon12 from '../../../images/ringbell.png';
-import icon13 from '../../../images/m-logo.png';
-import icon14 from '../../../images/brightness.png';
-import icon15 from '../../../images/notes.png';
-import icon16 from '../../../images/overtime.png';
-import icon17 from '../../../images/coffe.png';
-import icon18 from '../../../images/bookmark.png';
-import icon19 from '../../../images/clock.png';
-import icon20 from '../../../images/browser.png';
-import icon21 from '../../../images/darkMode.png';
-import icon22 from '../../../images/employees_forget.png';
-import icon23 from '../../../images/out-of-battery.png';
+import icon10 from '@images/timer.png';
+import icon11 from '@images/flag.png';
+import icon12 from '@images/ringbell.png';
+import icon13 from '@images/m-logo.png';
+import icon14 from '@images/brightness.png';
+import icon15 from '@images/notes.png';
+import icon16 from '@images/overtime.png';
+import icon17 from '@images/coffe.png';
+import icon18 from '@images/bookmark.png';
+import icon19 from '@images/clock.png';
+import icon20 from '@images/browser.png';
+import icon21 from '@images/darkMode.png';
+import icon22 from '@images/employees_forget.png';
+import icon23 from '@images/out-of-battery.png';
 
 const TimeTracking = () => {
   const firstList = [
@@ -305,10 +305,7 @@ const TimeTracking = () => {
       </div>
       <Divider />
       <Title title={`Our full suite of time tracking features at a glance`} />
-      <FeaturesList
-        mainTitle="Our full suite of time tracking features at a glance"
-        list={featureList}
-      />
+      <FeaturesList list={featureList} />
       <GrowthNumbers />
       <Divider />
       <Title title="Common problems, solved." />
