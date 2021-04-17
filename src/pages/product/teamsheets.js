@@ -1,6 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const TeamSheets = () => <h1>Team Sheets Page</h1>;
+import HeaderComponent from '@components/molecules/header';
+import SEO from '@components/molecules/seo';
+import { FooterLinks } from '@locale/en.js';
+import FooterComponent from '@components/molecules/footer';
+
+import { container } from '@styles/main.module.scss';
+
+const TeamSheets = () => (
+  <div className={container}>
+    <SEO title="TeamSheets" />
+    <HeaderComponent />
+    <FooterComponent FooterLinks={FooterLinks} />
+  </div>
+);
 
 export default TeamSheets;

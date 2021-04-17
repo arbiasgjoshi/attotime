@@ -1,16 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import HeaderComponent from '@components/molecules/header';
+import SEO from '@components/molecules/seo';
+import { FooterLinks } from '@locale/en.js';
+import FooterComponent from '@components/molecules/footer';
+
+import { container } from '@styles/main.module.scss';
 
 const Home = () => (
-  <div className="root">
+  <div className={container}>
+    <SEO title="Attotime - Landing Page" />
     <HeaderComponent />
-    <h1>Title 1</h1>
-    <h2>Title 2</h2>
-    <h3>Title 3</h3>
-    <h4>Title 4</h4>
-    <h5>Title 5</h5>
+    <FooterComponent FooterLinks={FooterLinks} />
   </div>
 );
 

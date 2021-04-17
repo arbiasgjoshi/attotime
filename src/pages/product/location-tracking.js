@@ -1,6 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const LocationTracking = () => <h1>Location Tracking Page</h1>;
+import HeaderComponent from '@components/molecules/header';
+import SEO from '@components/molecules/seo';
+import { FooterLinks } from '@locale/en.js';
+import FooterComponent from '@components/molecules/footer';
+
+import { container } from '@styles/main.module.scss';
+
+const LocationTracking = () => (
+  <div className={container}>
+    <SEO title="Location Tracking" />
+    <HeaderComponent />
+    <FooterComponent FooterLinks={FooterLinks} />
+  </div>
+);
 
 export default LocationTracking;

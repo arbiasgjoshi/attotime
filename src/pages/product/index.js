@@ -1,6 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Home = () => <h1>Home Page</h1>;
+import HeaderComponent from '@components/molecules/header';
+import SEO from '@components/molecules/seo';
+import { FooterLinks } from '@locale/en.js';
+import FooterComponent from '@components/molecules/footer';
 
-export default Home;
+import { container } from '@styles/main.module.scss';
+
+const Product = () => (
+  <div className={container}>
+    <SEO title="Product Overview" />
+    <HeaderComponent />
+    <FooterComponent FooterLinks={FooterLinks} />
+  </div>
+);
+
+export default Product;
