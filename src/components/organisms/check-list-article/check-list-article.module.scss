@@ -14,6 +14,13 @@
     width: 50%;
     @include flex-direction(column);
     justify-content: center;
+
+    .descr2 {
+      color: #262626;
+      letter-spacing: -0.5px;
+      font-weight: 400;
+      margin-bottom: 4rem;
+    }
   }
 
   .imageWrapper {

@@ -157,7 +157,7 @@ const Timesheets = () => {
       <div>
         <StaticImage alt="Clock In" quality={90} src="../../../images/ready-made.svg" />
       </div>
-      <Divider className="smallest" />
+      <Divider className="medium" />
       <IconCardList cardList={firstList} />
       <Divider />
       <CheckListArticle
@@ -228,7 +228,7 @@ const Timesheets = () => {
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
         />
       </div>
-      <Divider className="smallest" />
+      <Divider className="medium" />
       <SubscribeBanner
         title="Sit back and relax with timesheets on-time, every time"
         placeholder="Type your email"
