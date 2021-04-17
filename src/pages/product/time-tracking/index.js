@@ -251,7 +251,7 @@ const TimeTracking = () => {
       <MainTitleCard
         hasParagraph
         showButton
-        paragraph={Intl.formatMessage({ id: 'pages.productTimeTracking.pageTagtitle' })}
+        paragraph="Time Tracking"
         title="Take the pain away from time tracking"
         subtitle="An easy-to-use, accurate, and trustworthy time-tracking solution."
       />
@@ -305,7 +305,7 @@ const TimeTracking = () => {
       </div>
       <Divider />
       <Title title="Lower costs, higher productivity. Less admin, more bussiness" />
-      <OverviewAdmin />
+      {/* <OverviewAdmin />  */}
       <Divider />
       <Title title="Our full suite of time tracking features at a glance" />
       <FeaturesList
