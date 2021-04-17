@@ -1,6 +1,11 @@
 import React from 'react';
+
 import Divider from '@components/atoms/divider';
+
+import SEO from '@components/molecules/seo';
+import { useIntl } from 'gatsby-plugin-intl';
 import Header from '@components/molecules/header';
+import Footer from '@components/molecules/footer';
 import Video from '@components/molecules/video';
 import MainTitleCard from '@components/molecules/main-title-card';
 import Title from '@components/molecules/title';
@@ -8,6 +13,7 @@ import CheckList from '@components/molecules/check-list';
 import ImageList from '@components/molecules/image-list';
 import ImageSlider from '@components/molecules/image-slider';
 import LearnMoreCard from '@components/molecules/learn-more-card';
+
 import WorkList from '@components/organisms/work-list';
 import IconCardList from '@components/organisms/icon-card-list';
 import OverviewAdmin from '@components/organisms/overview-admin';
@@ -17,9 +23,10 @@ import CommonProblems from '@components/organisms/common-problems';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
 
+import { FooterLinks } from '@locale/en.js';
 import { container, learnMoreContainer } from './time-tracking.module.scss';
-import authorImage from '../../../images/authorImage.png';
 
+import authorImage from '../../../images/authorImage.png';
 import icon from '../../../images/easy-to-use.png';
 import icon2 from '../../../images/accurate.png';
 import icon3 from '../../../images/trustworthy.png';
@@ -44,7 +51,11 @@ import icon19 from '../../../images/clock.png';
 import icon20 from '../../../images/browser.png';
 import icon21 from '../../../images/darkMode.png';
 
+// import localeData from '@locale/en';
+
 const TimeTracking = () => {
+  const Intl = useIntl();
+
   const firstList = [
     {
       title: 'Easy to use',
@@ -201,6 +212,7 @@ const TimeTracking = () => {
 
   return (
     <div className={container}>
+      <SEO title="Product - Time Tracking" />
       <Header />
       <MainTitleCard
         hasParagraph
@@ -229,10 +241,10 @@ const TimeTracking = () => {
       <ImageSlider />
       <WorkList />
       <Divider />
-      <Title title={`Lower costs, higher productivity. Less admin, more bussiness`} />
+      <Title title="Lower costs, higher productivity. Less admin, more bussiness" />
       <OverviewAdmin />
       <Divider />
-      <Title title={`Our full suite of time tracking features at a glance`} />
+      <Title title="Our full suite of time tracking features at a glance" />
       <FeaturesList
         mainTitle="Our full suite of time tracking features at a glance"
         list={featureList}
@@ -268,6 +280,7 @@ const TimeTracking = () => {
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
         />
       </div>
+      <Footer FooterLinks={FooterLinks} />
     </div>
   );
 };

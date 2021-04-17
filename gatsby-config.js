@@ -37,6 +37,7 @@ module.exports = {
           '@helpers': 'src/helpers',
           '@styles': 'src/styles',
           '@services': 'src/services',
+          '@locale': 'src/locale',
         },
       },
     },
@@ -67,6 +68,19 @@ module.exports = {
         rule: {
           // include: /images/, // See below to configure properly
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/intl`,
+        // supported language
+        languages: [`en`, `de`, `es`, `fr`],
+        // language file path
+        defaultLanguage: `en`,
+        // option to redirect to `/ko` when connecting `/`
+        redirect: true,
       },
     },
   ],

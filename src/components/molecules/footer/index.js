@@ -1,32 +1,62 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Link from '@reach/router';
+import { Link } from '@reach/router';
 // import DropDown from '@components/molecules/dropdown';
 
 import { StaticImage } from 'gatsby-plugin-image';
-import { leftFooterItems, footerLinksWrapper } from './footer.module.scss';
+import {
+  leftFooterItems,
+  footerLinksWrapper,
+  pageFooter,
+  footerTop,
+  footerBottom,
+  footerSitemap,
+  hasLine,
+  parentPath,
+  downloadApp,
+} from './footer.module.scss';
 
-const Footer = ({ footerLinks }) => (
-  <footer>
-    <div className={leftFooterItems}>
-      <StaticImage src="../../../images/logo@2x.png" quality={90} width={85} />
-      <p>A highly accurate time tracking solution for any company</p>
-    </div>
-    {footerLinks.map((section) => (
-      <div className={footerLinksWrapper}>
-        <h6>{section.parent}</h6>
-        {section.subMenuLinks.map((subMenu) => (
-          <Link to={subMenu.path} />
+const Footer = ({ FooterLinks }) => (
+  <footer className={pageFooter}>
+    <div className={footerTop}>
+      <div className={leftFooterItems}>
+        <StaticImage src="../../../images/logo@2x.png" alt="footer-logo" quality={90} width={85} />
+        <p>A highly accurate time tracking solution for any company</p>
+
+        <div>{/* TODO Dropdown here */}</div>
+      </div>
+      <div className={footerSitemap}>
+        {FooterLinks.map((section) => (
+          <div className={footerLinksWrapper}>
+            <Link className={parentPath} to={`${section.parentPath}`}>
+              {section.parent}
+            </Link>
+            {section.subMenuLinks.map((subMenu) => (
+              <Link to={`${subMenu.path}`} className={subMenu.hasLine && hasLine}>
+                {subMenu.name}
+              </Link>
+            ))}
+            {section.downloadApp && (
+              <div className={downloadApp}>
+                {section.downloadApp.map((app) => (
+                  <a href={app.href} target="_blank" rel="noreferrer">
+                    <i className={app.icon} />
+                    <p>{app.name}</p>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
       </div>
-    ))}
-    <p>© Specta Labs, Inc. Terms & Privacy</p>
+    </div>
+    <p className={footerBottom}>© Specta Labs, Inc. Terms & Privacy</p>
   </footer>
 );
 
 Footer.propTypes = {
-  footerLinks: PropTypes.shape(),
+  FooterLinks: PropTypes.shape(),
 };
 
 export default Footer;
