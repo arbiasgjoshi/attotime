@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { defaultBtn, tealStyle, trialStyle, wideStyle } from './button.module.scss';
+import { defaultBtn, tealStyle, trialStyle, wideStyle, roundStyle } from './button.module.scss';
 
 const Button = ({ btnText, disabled, btnStyle }) => {
   const checkBtnStyle = () => {
@@ -14,6 +14,9 @@ const Button = ({ btnText, disabled, btnStyle }) => {
     }
     if (btnStyle === 'wide') {
       className += ` ${wideStyle}`;
+    }
+    if (btnStyle === 'round') {
+      className += ` ${roundStyle}`;
     }
     return className;
   };

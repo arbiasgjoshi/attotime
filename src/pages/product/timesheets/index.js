@@ -14,6 +14,7 @@ import Title from '@components/molecules/title';
 import CheckList from '@components/molecules/check-list';
 import FeaturesList from '@components/organisms/features-list';
 import CheckListArticle from '@components/organisms/check-list-article';
+import SubscribeBanner from '@components/molecules/subscribe-banner';
 import IconCardList from '@components/organisms/icon-card-list';
 import GrowthNumbers from '@components/organisms/growth-numbers';
 import Story from '@components/organisms/story';
@@ -228,6 +229,13 @@ const Timesheets = () => {
         />
       </div>
       <Divider className="smallest" />
+      <SubscribeBanner
+        title="Sit back and relax with timesheets on-time, every time"
+        placeholder="Type your email"
+        checkItemOne="No credit card required"
+        checkItemTwo="14 day free trial"
+        checkItemThree="Cancel anytime"
+      />
       <Footer FooterLinks={FooterLinks} />
     </div>
   );

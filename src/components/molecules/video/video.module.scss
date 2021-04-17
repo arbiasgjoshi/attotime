@@ -20,10 +20,40 @@
     opacity: 0.2;
   }
 
-  .playerImage {
+  .imagePlayer {
+    @include flex-align(center, center);
     position: absolute;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0.5;
+    cursor: pointer;
+
+    i {
+      color: #00b9cb;
+      z-index: 100;
+
+      &:hover {
+        transition: 0.1s ease-in-out;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .watchButton {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    button {
+      background-color: #ffffff;
+      color: #000;
+      font-weight: 500;
+      box-shadow: 2px 6px 28px 0px rgba(0, 0, 0, 0.08);
+    }
   }
 }

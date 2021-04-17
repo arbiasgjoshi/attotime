@@ -3,12 +3,14 @@ import { container, learnMoreContainer } from './team-activity.module.scss';
 
 import Divider from '@components/atoms/divider';
 import Header from '@components/molecules/header';
+import Footer from '@components/molecules/footer';
 import Title from '@components/molecules/title';
 import MainTitleCard from '@components/molecules/main-title-card';
 import LearnMoreCard from '@components/molecules/learn-more-card';
 import Video from '@components/molecules/video';
 import CheckList from '@components/molecules/check-list';
 import Article from '@components/molecules/article';
+import SubscribeBanner from '@components/molecules/subscribe-banner';
 import FeaturesList from '@components/organisms/features-list';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
@@ -23,6 +25,8 @@ import icon2 from '@images/flag.png';
 import icon3 from '@images/ringbell.png';
 import icon4 from '@images/m-logo.png';
 import icon5 from '@images/brightness.png';
+
+import { FooterLinks } from '@locale/en.js';
 
 const TeamActivity = () => {
   const titleList = [
@@ -126,7 +130,6 @@ const TeamActivity = () => {
       <Title title="Our full suite of team activity features at a glance" />
       <FeaturesList list={featureList} />
       <Divider />
-      {/* here comes a photo  */}
       <Services title="Time Tracking solution for any industry" list={serviceList} />
       <Divider />
       <Story
@@ -153,6 +156,15 @@ const TeamActivity = () => {
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
         />
       </div>
+      <Divider />
+      <SubscribeBanner
+        title="Stay in control of what's happening with team activity updates!"
+        placeholder="Type your email"
+        checkItemOne="No credit card required"
+        checkItemTwo="14 day free trial"
+        checkItemThree="Cancel anytime"
+      />
+      <Footer FooterLinks={FooterLinks} />
     </div>
   );
 };
