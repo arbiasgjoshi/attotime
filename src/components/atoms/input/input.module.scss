@@ -1,0 +1,9 @@
+.defaultInput {
+  min-width: 29rem;
+  padding: 0 1.6rem;
+  height: 4.8rem;
+  @include flex-align(flex-start, center);
+  font-size: 1.8rem;
+  line-height: 3rem;
+  border-radius: 0.4rem;
+}

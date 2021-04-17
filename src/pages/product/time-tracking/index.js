@@ -21,6 +21,7 @@ import FeaturesList from '@components/organisms/features-list';
 import GrowthNumbers from '@components/organisms/growth-numbers';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
+import SubscribeBanner from '@components/molecules/subscribe-banner';
 
 import { FooterLinks } from '@locale/en.js';
 import authorImage from '@images/authorImage.png';
@@ -305,7 +306,7 @@ const TimeTracking = () => {
       </div>
       <Divider />
       <Title title="Lower costs, higher productivity. Less admin, more bussiness" />
-      {/* <OverviewAdmin />  */}
+      {/* <OverviewAdmin /> */}
       <Divider />
       <Title title="Our full suite of time tracking features at a glance" />
       <FeaturesList
@@ -366,6 +367,14 @@ const TimeTracking = () => {
         />
       </div>
       <Divider />
+      <SubscribeBanner
+        title="What are you waiting for? Time is ticking!"
+        placeholder="Type your email"
+        bannerImage
+        checkItemOne="No credit card required"
+        checkItemTwo="14 day free trial"
+        checkItemThree="Cancel anytime"
+      />
       <Footer FooterLinks={FooterLinks} />
     </div>
   );

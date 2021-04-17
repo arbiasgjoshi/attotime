@@ -1,24 +1,57 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
 
-import Input from '@components/atoms/input';
-import Button from '@components/atoms/button';
+import { StaticImage } from 'gatsby-plugin-image';
+import SubscribeForm from '@components/molecules/subscribe-form';
+import Icon from '@components/atoms/icon';
+import { bannerWrapper, checkItems, itemWrapper, hasImage, imgWrap } from './subscribe.module.scss';
 
-import { bannerWrapper, formWrapper } from './subscribe.module.scss';
-
-const SubscribeForm = ({ title, checkItemOne, checkItemTwo, checkItemThree }) => (
-  <div className={bannerWrapper}>
-    <h2>{title}</h2>
-    <div className={formWrapper}>
-      <Input placeholder="Type your email" />
-      <Button />
+const SubscribeBanner = ({
+  title,
+  placeholder,
+  bannerImage,
+  checkItemOne,
+  checkItemTwo,
+  checkItemThree,
+}) => (
+  <div className={`${bannerWrapper} ${bannerImage && hasImage}`}>
+    {bannerImage && (
+      <div className={imgWrap}>
+        <StaticImage
+          src="../../../images/subscribe-banner@2x.png"
+          alt="three phones"
+          width={1140}
+          height={470}
+          quality={95}
+        />
+      </div>
+    )}
+    <h3>{title}</h3>
+    <SubscribeForm placeholder={placeholder} />
+    <div className={checkItems}>
+      <div className={itemWrapper}>
+        <Icon iconClass="tick" />
+        <span>{checkItemOne}</span>
+      </div>
+      <div className={itemWrapper}>
+        <Icon iconClass="tick" />
+        <span>{checkItemTwo}</span>
+      </div>
+      <div className={itemWrapper}>
+        <Icon iconClass="tick" />
+        <span>{checkItemThree}</span>
+      </div>
     </div>
   </div>
 );
 
-SubscribeForm.propTypes = {
+SubscribeBanner.propTypes = {
   title: PropTypes.string,
+  bannerImage: PropTypes.bool,
+  placeholder: PropTypes.string,
+  checkItemOne: PropTypes.string,
+  checkItemTwo: PropTypes.string,
+  checkItemThree: PropTypes.string,
 };
 
-export default SubscribeForm;
+export default SubscribeBanner;

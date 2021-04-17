@@ -1,0 +1,8 @@
+.formWrapper {
+  @include flex-direction(row);
+  margin: 0 auto;
+
+  > input {
+    margin-right: 1.2rem;
+  }
+}
