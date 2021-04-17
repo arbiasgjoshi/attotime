@@ -8,7 +8,7 @@
 
   .cardIcon {
     height: 4rem;
-    width: 4rem;
+    min-width: 4rem;
   }
 
   .textWrapper {
@@ -16,8 +16,6 @@
     flex-direction: column;
 
     .cardTitle {
-      height: 6rem;
-      width: 40rem;
       color: #000000;
       font-size: 2.5rem;
       font-weight: 600;

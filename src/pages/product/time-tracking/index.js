@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { StaticImage } from 'gatsby-plugin-image';
+
 import Divider from '@components/atoms/divider';
 
 import SEO from '@components/molecules/seo';
@@ -8,48 +10,57 @@ import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
 import Video from '@components/molecules/video';
 import MainTitleCard from '@components/molecules/main-title-card';
+import FeatureCard from '@components/molecules/feature-card';
+import LearnMoreCard from '@components/molecules/learn-more-card';
+import IconCard from '@components/molecules/icon-card';
 import Title from '@components/molecules/title';
 import CheckList from '@components/molecules/check-list';
-import ImageList from '@components/molecules/image-list';
 import ImageSlider from '@components/molecules/image-slider';
-import LearnMoreCard from '@components/molecules/learn-more-card';
-
-import WorkList from '@components/organisms/work-list';
 import IconCardList from '@components/organisms/icon-card-list';
-import OverviewAdmin from '@components/organisms/overview-admin';
 import FeaturesList from '@components/organisms/features-list';
 import GrowthNumbers from '@components/organisms/growth-numbers';
-import CommonProblems from '@components/organisms/common-problems';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
 
 import { FooterLinks } from '@locale/en.js';
-import { container, learnMoreContainer } from './time-tracking.module.scss';
+import authorImage from '@images/authorImage.png';
 
-import authorImage from '../../../images/authorImage.png';
-import icon from '../../../images/easy-to-use.png';
-import icon2 from '../../../images/accurate.png';
-import icon3 from '../../../images/trustworthy.png';
+import logo1 from '@images/web-time-tracking.png';
+import logo2 from '@images/mobile-time-tracking.png';
+import logo3 from '@images/kiosk-time-tracking.png';
 
-import icon4 from '../../../images/clock-in-out.png';
-import icon5 from '../../../images/write-notes.png';
-import icon6 from '../../../images/track-breaks.png';
-import icon7 from '../../../images/manage-overtime.png';
-import icon8 from '../../../images/switch-between-jobs.png';
-import icon9 from '../../../images/add-time-off.png';
+import icon from '@images/easy-to-use.png';
+import icon2 from '@images/accurate.png';
+import icon3 from '@images/trustworthy.png';
 
-import icon10 from '../../../images/timer.png';
-import icon11 from '../../../images/flag.png';
-import icon12 from '../../../images/ringbell.png';
-import icon13 from '../../../images/m-logo.png';
-import icon14 from '../../../images/brightness.png';
-import icon15 from '../../../images/notes.png';
-import icon16 from '../../../images/overtime.png';
-import icon17 from '../../../images/coffe.png';
-import icon18 from '../../../images/bookmark.png';
-import icon19 from '../../../images/clock.png';
-import icon20 from '../../../images/browser.png';
-import icon21 from '../../../images/darkMode.png';
+import icon4 from '@images/clock-in-out.png';
+import icon5 from '@images/write-notes.png';
+import icon6 from '@images/track-breaks.png';
+import icon7 from '@images/manage-overtime.png';
+import icon8 from '@images/switch-between-jobs.png';
+import icon9 from '@images/add-time-off.png';
+
+import icon10 from '@images/timer.png';
+import icon11 from '@images/flag.png';
+import icon12 from '@images/ringbell.png';
+import icon13 from '@images/m-logo.png';
+import icon14 from '@images/brightness.png';
+import icon15 from '@images/notes.png';
+import icon16 from '@images/overtime.png';
+import icon17 from '@images/coffe.png';
+import icon18 from '@images/bookmark.png';
+import icon19 from '@images/clock.png';
+import icon20 from '@images/browser.png';
+import icon21 from '@images/darkMode.png';
+import icon22 from '@images/employees_forget.png';
+import icon23 from '@images/out-of-battery.png';
+
+import {
+  container,
+  learnMoreContainer,
+  workListContainer,
+  commonProblemsContainer,
+} from './time-tracking.module.scss';
 
 // import localeData from '@locale/en';
 
@@ -121,6 +132,29 @@ const TimeTracking = () => {
     { title: 'Reduce payroll costs and increase productivity' },
     { title: 'Track hours, breaks, time-off, and more' },
     { title: 'Increase the accuracy of job estimates' },
+  ];
+
+  const overviewAdminList = [
+    {
+      title: 'Save time and focus on productive work',
+      description:
+        'Atto takes care of time-draining tasks like chasing down timesheets. Now your employees can spend less time on admin, and more time on real work.',
+    },
+    {
+      title: 'Win more bussiness with precise job estimates',
+      description:
+        'Using time tracking data from previous jobs, you can ensure that any bids you submit for similar jobs in the future are both profitable and competitive.',
+    },
+    {
+      title: 'Reduce payroll costs',
+      description:
+        'With precise time-tracking that captures activity to the nearest second, you only pay for hours actually spent on the job',
+    },
+    {
+      title: 'Increase employee productivity',
+      description:
+        'When you track hours and the clock is ticking, your employees naturally become more productive and aware of their time.',
+    },
   ];
 
   const featureList = [
@@ -217,14 +251,21 @@ const TimeTracking = () => {
       <MainTitleCard
         hasParagraph
         showButton
-        paragraph="Time Tracking"
+        paragraph={Intl.formatMessage({ id: 'pages.productTimeTracking.pageTagtitle' })}
         title="Take the pain away from time tracking"
         subtitle="An easy-to-use, accurate, and trustworthy time-tracking solution."
       />
       <Video />
       <CheckList titleList={titleList} />
       <Divider />
-      <ImageList />
+      <div>
+        <StaticImage
+          alt="Clock In"
+          height={474}
+          quality={90}
+          src="../../../images/banner-image-2@2x.png"
+        />
+      </div>
       <Divider className="smallest" />
       <IconCardList cardList={firstList} />
       <Divider />
@@ -239,7 +280,29 @@ const TimeTracking = () => {
         description={`Time-tracking options to suit your business' needs. In the office, in teams, at a job site, or on the move. Online or offline.`}
       />
       <ImageSlider />
-      <WorkList />
+      <div className={workListContainer}>
+        <FeatureCard
+          isWorkCard
+          title="Work in the office via the Web Dashboard"
+          description="Log in to the Atto Dashboard and use the web-based time clock from your computer"
+          logo={logo1}
+          alt="Web time tracking"
+        />
+        <FeatureCard
+          isWorkCard
+          title="Work in go icon"
+          description="Log in to the Atto Dashboard and use the web-based time clock from your computer"
+          logo={logo2}
+          alt="Mobile time tracking"
+        />
+        <FeatureCard
+          isWorkCard
+          title="Work in job sites icon"
+          description="With the Time CLock Kiosk, employees can log in with a PIN, and track time with a single device"
+          logo={logo3}
+          alt="Kiosk time tracking"
+        />
+      </div>
       <Divider />
       <Title title="Lower costs, higher productivity. Less admin, more bussiness" />
       <OverviewAdmin />
@@ -252,7 +315,29 @@ const TimeTracking = () => {
       <GrowthNumbers />
       <Divider />
       <Title title="Common problems, solved." />
-      <CommonProblems />
+      <div className={commonProblemsContainer}>
+        <IconCard
+          isRound
+          icon={icon22}
+          alt="Employees forget"
+          title="Employees forget to track their time?"
+          description={`Not any more! With smart reminders, your employees are encouraged to clock-in/out when they're at a job site, and at their regular start and end time.`}
+        />
+        <IconCard
+          isRound
+          icon={icon23}
+          alt="Out of battery"
+          title="What if phone ran out of battery"
+          description="Not a problem! If an employee forgets their phone, or it runs out of battery, either they or a manager can add a manual time entry for your approval."
+        />
+        <IconCard
+          isRound
+          icon={icon23}
+          alt="Not sure if employees"
+          title={`Not sure if employees are where they're supposed to?`}
+          description={`Always be in the know! With geofencing, you can restrict employees from clocking-in until they're at a job site - increasing accountability and preventing innacurate time entries`}
+        />
+      </div>
       <Divider />
       <Services title="Time Tracking solution for any industry" list={serviceList} />
       <Divider />
@@ -280,6 +365,7 @@ const TimeTracking = () => {
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
         />
       </div>
+      <Divider />
       <Footer FooterLinks={FooterLinks} />
     </div>
   );
