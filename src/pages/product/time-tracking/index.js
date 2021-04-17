@@ -304,10 +304,10 @@ const TimeTracking = () => {
       <Divider />
       <Title title="Lower costs, higher productivity. Less admin, more bussiness" />
       <StaticImage
-        src={'../../../images/no-image.png'}
+        src={'../../../images/admin-panel.png'}
         alt="admin-panel-image"
         width={1140}
-        height={600}
+        height={616}
       />
       <Divider className={'smallest'} />
       <CheckList list={overviewAdminList} hasDescription />
