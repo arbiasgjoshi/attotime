@@ -1,9 +1,19 @@
 .card {
   display: flex;
   font-weight: 700;
+  align-items: center;
 
   .cardIconWrapper {
-    padding: 1rem 1.6rem 1rem 0;
+    margin-right: 1.6rem;
+
+    i {
+      width: 4rem;
+      height: 4rem;
+      background-color: rgba(0, 185, 203, 0.1);
+      @include flex-align(center, center);
+      border-radius: 100%;
+      color: #00b9cb;
+    }
   }
 
   .cardIcon {
@@ -39,6 +49,26 @@
       font-size: 2rem;
       letter-spacing: 0;
       line-height: 30px;
+    }
+  }
+
+  &.smallCardStyle {
+    align-items: flex-start;
+    .cardIconWrapper {
+      margin-right: 1rem;
+    }
+    i {
+      width: 2.4rem;
+      height: 2.4rem;
+      background-color: unset;
+    }
+
+    .textWrapper {
+      .cardTitle {
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 500;
+      }
     }
   }
 }

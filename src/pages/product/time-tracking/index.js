@@ -128,10 +128,10 @@ const TimeTracking = () => {
   ];
 
   const titleList = [
-    { title: 'Keep track of time wherever your employees are' },
-    { title: 'Reduce payroll costs and increase productivity' },
-    { title: 'Track hours, breaks, time-off, and more' },
-    { title: 'Increase the accuracy of job estimates' },
+    { title: 'Keep track of time wherever your employees are', id: '1asdd1a' },
+    { title: 'Reduce payroll costs and increase productivity', id: '1asdd1b' },
+    { title: 'Track hours, breaks, time-off, and more', id: '1asdd1c' },
+    { title: 'Increase the accuracy of job estimates', id: '1asdd1d' },
   ];
 
   const overviewAdminList = [
