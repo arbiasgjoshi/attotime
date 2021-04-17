@@ -303,13 +303,21 @@ const TimeTracking = () => {
       </div>
       <Divider />
       <Title title="Lower costs, higher productivity. Less admin, more bussiness" />
-      {/* <OverviewAdmin />  */}
+      <StaticImage
+        src={'../../../images/no-image.png'}
+        alt="admin-panel-image"
+        width={1140}
+        height={600}
+      />
+      <Divider className={'smallest'} />
+      <CheckList list={overviewAdminList} hasDescription />
       <Divider />
       <Title title="Our full suite of time tracking features at a glance" />
       <FeaturesList
         mainTitle="Our full suite of time tracking features at a glance"
         list={featureList}
       />
+      <Divider />
       <GrowthNumbers />
       <Divider />
       <Title title="Common problems, solved." />
