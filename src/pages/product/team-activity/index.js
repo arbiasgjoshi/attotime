@@ -92,7 +92,7 @@ const TeamActivity = () => {
         title="Stay in the loop with everything happening in real-time"
       />
       <Video />
-      <CheckList titleList={titleList} />
+      <CheckList list={titleList} />
       <Divider />
       <Title title="See where your team is, and what they're working on" />
       <Article

@@ -13,8 +13,8 @@ import {
   paragraph,
 } from './check-card.module.scss';
 
-const CheckCard = ({ title, hasDescription, description, smallStyle }) => (
-  <div className={`${card} ${smallStyle && smallCardStyle}`}>
+const CheckCard = ({ title, hasDescription, description, smallStyled }) => (
+  <div className={`${card} ${smallStyled && smallCardStyle}`}>
     <div className={cardIconWrapper}>
       <Icon iconClass="tick" />
     </div>

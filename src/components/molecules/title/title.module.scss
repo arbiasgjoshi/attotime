@@ -3,6 +3,15 @@
   text-align: center;
   margin-bottom: 8rem;
 
+  &.leftAligned {
+    text-align: left;
+    margin-bottom: 4rem;
+
+    .descriptionWrapper {
+      text-align: left;
+    }
+  }
+
   .titleWrapper {
     padding-bottom: 1.6rem;
   }

@@ -10,13 +10,14 @@ import Video from '@components/molecules/video';
 import Title from '@components/molecules/title';
 import CheckList from '@components/molecules/check-list';
 import FeaturesList from '@components/organisms/features-list';
-
+import CheckListArticle from '@components/organisms/check-list-article';
 import IconCardList from '@components/organisms/icon-card-list';
+
+import boostPhoto from '../../../images/boost_productivity.png';
 
 import icon from '@images/accurate.png';
 import icon2 from '@images/trustworthy.png';
 import icon3 from '@images/easy-to-use.png';
-
 import icon4 from '@images/timer.png';
 import icon5 from '@images/flag.png';
 import icon6 from '@images/ringbell.png';
@@ -32,6 +33,13 @@ const Timesheets = () => {
     { title: 'Save countless hours a week from your payroll process' },
     { title: 'Analyze every hour spent on the job' },
     { title: 'See how productive your employees are' },
+  ];
+
+  const checkLists2 = [
+    { title: 'Compare how long tasks take different employees or teams' },
+    { title: 'Spot employees that are struggling at work' },
+    { title: 'Identify bottlenecks that are slowing progress' },
+    { title: 'See if jobs are running on-time and on-budget' },
   ];
 
   const firstList = [
@@ -123,7 +131,7 @@ const Timesheets = () => {
         subtitle="Spend more time on the things that matter with timesheets filled painlessly and on-time."
       />
       <Video />
-      <CheckList titleList={checkLists} />
+      <CheckList list={checkLists} />
       <Divider />
       <Title
         title="Ready-made professional timesheets"
@@ -134,6 +142,13 @@ const Timesheets = () => {
       </div>
       <Divider className="smallest" />
       <IconCardList cardList={firstList} />
+      <Divider />
+      <CheckListArticle
+        title="Boost productivity with timesheet insights"
+        description="Work smarter, not longer. Use timesheet reports to filter all the work done by each employee, team, or towards specific category of job."
+        list={checkLists2}
+        image={boostPhoto}
+      />
       <Divider />
       {/* Here come 2 another small checklist with an image, until I find a solution I'm going to let this here  */}
       <Title title="Our full suite of timesheet features at a glance" />

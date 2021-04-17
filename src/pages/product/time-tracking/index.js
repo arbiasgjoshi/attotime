@@ -256,7 +256,7 @@ const TimeTracking = () => {
         subtitle="An easy-to-use, accurate, and trustworthy time-tracking solution."
       />
       <Video />
-      <CheckList titleList={titleList} />
+      <CheckList list={titleList} />
       <Divider />
       <div>
         <StaticImage
