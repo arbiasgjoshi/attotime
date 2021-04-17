@@ -4,6 +4,10 @@
   height: 0;
 
   &.smallest {
+    margin: 3.5rem 0;
+  }
+
+  &.medium {
     margin: 5rem 0;
   }
 }

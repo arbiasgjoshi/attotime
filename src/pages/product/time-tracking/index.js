@@ -265,7 +265,7 @@ const TimeTracking = () => {
           src="../../../images/banner-image-2@2x.png"
         />
       </div>
-      <Divider className="smallest" />
+      <Divider className="medium" />
       <IconCardList cardList={firstList} />
       <Divider />
       <Title
@@ -310,7 +310,7 @@ const TimeTracking = () => {
         width={1140}
         height={616}
       />
-      <Divider className="smallest" />
+      <Divider className="medium" />
       <CheckList list={overviewAdminList} hasDescription />
       <Divider />
       <Title title="Our full suite of time tracking features at a glance" />
