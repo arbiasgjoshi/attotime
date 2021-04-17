@@ -1,4 +1,16 @@
 .container {
   max-width: 114rem;
   margin: 0 auto;
+
+  .roundImagesContainer {
+    margin-top: -0.8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .learnMoreContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

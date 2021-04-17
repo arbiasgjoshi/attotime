@@ -1,19 +1,28 @@
 import React from 'react';
-import { container } from './timesheets.module.scss';
+import { container, roundImagesContainer, learnMoreContainer } from './timesheets.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
+import { FooterLinks } from '@locale/en.js';
 
 import Divider from '@components/atoms/divider';
-
 import Header from '@components/molecules/header';
+import Footer from '@components/molecules/footer';
 import MainTitleCard from '@components/molecules/main-title-card';
+import IconCard from '@components/molecules/icon-card';
+import LearnMoreCard from '@components/molecules/learn-more-card';
 import Video from '@components/molecules/video';
 import Title from '@components/molecules/title';
 import CheckList from '@components/molecules/check-list';
 import FeaturesList from '@components/organisms/features-list';
 import CheckListArticle from '@components/organisms/check-list-article';
 import IconCardList from '@components/organisms/icon-card-list';
+import GrowthNumbers from '@components/organisms/growth-numbers';
+import Story from '@components/organisms/story';
 
-import boostPhoto from '../../../images/boost_productivity.png';
+import photo1 from '../../../images/boost_productivity.png';
+import authorImage from '@images/authorImage.png';
+import noImage from '@images/no-image.png';
+import roundImage2 from '@images/syncWithPayroll2x.png';
+import roundImage3 from '@images/timesheets-inbox2x.png';
 
 import icon from '@images/accurate.png';
 import icon2 from '@images/trustworthy.png';
@@ -39,6 +48,13 @@ const Timesheets = () => {
     { title: 'Compare how long tasks take different employees or teams' },
     { title: 'Spot employees that are struggling at work' },
     { title: 'Identify bottlenecks that are slowing progress' },
+    { title: 'See if jobs are running on-time and on-budget' },
+  ];
+
+  const checkLists3 = [
+    { title: "Gain a better understanding of your employees' workdays" },
+    { title: 'See how long employees spend on breaks, jobs, and on the clock.' },
+    { title: 'Review timesheets quicker for faster approval and payroll' },
     { title: 'See if jobs are running on-time and on-budget' },
   ];
 
@@ -135,7 +151,7 @@ const Timesheets = () => {
       <Divider />
       <Title
         title="Ready-made professional timesheets"
-        description="Say goodbye to employee estimates. Use the time clock to precisely capture work activity."
+        description="Your employees' hours are instantly transformed into timesheet reports. View every hour worked from regular time to overtime. Create reports based on specific employees, teams, or job codes. And download and share them in a few clicks."
       />
       <div>
         <StaticImage alt="Clock In" quality={90} src="../../../images/ready-made.svg" />
@@ -147,13 +163,72 @@ const Timesheets = () => {
         title="Boost productivity with timesheet insights"
         description="Work smarter, not longer. Use timesheet reports to filter all the work done by each employee, team, or towards specific category of job."
         list={checkLists2}
-        image={boostPhoto}
+        image={photo1}
       />
       <Divider />
-      {/* Here come 2 another small checklist with an image, until I find a solution I'm going to let this here  */}
+      <CheckListArticle
+        title="Gain a clear understanding of your employyes' activity"
+        description="Atto uses employee' timesheet data to generate clear, simple timelines of everyone's daily activity. Now it's much easier to understand their working patterns, and far quicker to review timesheets."
+        list={checkLists3}
+        image={photo1}
+        isSwapped
+      />
+      <Divider />
       <Title title="Our full suite of timesheet features at a glance" />
       <FeaturesList list={featureList} />
       <Divider />
+      <GrowthNumbers />
+      <Divider />
+      <Title
+        title="Streamline the entrie payroll process"
+        description="Go from timesheets to payroll in no time at all. With Atto, you'll enjoy a streamlined payroll process that will save hours of admin every payday."
+      />
+      <div className={roundImagesContainer}>
+        <IconCard
+          isRound
+          icon={noImage}
+          alt="Estimate emp"
+          title="Estimate your Employees' Wages"
+          description={`Avoid unexpected wage bills. Assign pay rates to your employees and their estimated pay will be added to their timesheets.`}
+        />
+        <IconCard
+          isRound
+          icon={roundImage2}
+          alt="Sync"
+          title="Sync with Payroll and Accounting Software"
+          description="Integrate with Xero and QuickBooks Online to automatically sync timesheet data to your favorite payroll software."
+        />
+        <IconCard
+          isRound
+          icon={roundImage3}
+          alt="Timesheets on-time"
+          title={`Timesheets on-time and in your Inbox`}
+          description={`Schedule your employees' timesheets to be automatically emailed to you in line with your payroll schedule.`}
+        />
+      </div>
+      <Divider />
+      <Story
+        img={authorImage}
+        paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
+        author="Robert Bennet - DPA Cleaning Services, Inc."
+      />
+      <Divider />
+      <div className={learnMoreContainer}>
+        <LearnMoreCard
+          title="GPS Location Tracking"
+          description="Increase the safety and accountability of your team with real-time updates on their location."
+        />
+        <LearnMoreCard
+          title="Team Activity"
+          description="Stay in the loop with what's happening - without needing to pick up the phone"
+        />
+        <LearnMoreCard
+          title="Timesheets"
+          description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        />
+      </div>
+      <Divider className="smallest" />
+      <Footer FooterLinks={FooterLinks} />
     </div>
   );
 };
