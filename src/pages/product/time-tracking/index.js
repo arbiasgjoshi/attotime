@@ -1,9 +1,7 @@
 import React from 'react';
-
 import { StaticImage } from 'gatsby-plugin-image';
 
 import Divider from '@components/atoms/divider';
-
 import SEO from '@components/molecules/seo';
 import { useIntl } from 'gatsby-plugin-intl';
 import Header from '@components/molecules/header';
@@ -306,13 +304,21 @@ const TimeTracking = () => {
       </div>
       <Divider />
       <Title title="Lower costs, higher productivity. Less admin, more bussiness" />
-      {/* <OverviewAdmin /> */}
+      <StaticImage
+        src="../../../images/admin-panel.png"
+        alt="admin-panel-image"
+        width={1140}
+        height={616}
+      />
+      <Divider className="smallest" />
+      <CheckList list={overviewAdminList} hasDescription />
       <Divider />
       <Title title="Our full suite of time tracking features at a glance" />
       <FeaturesList
         mainTitle="Our full suite of time tracking features at a glance"
         list={featureList}
       />
+      <Divider />
       <GrowthNumbers />
       <Divider />
       <Title title="Common problems, solved." />
