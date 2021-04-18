@@ -273,7 +273,7 @@ const TimeTracking = () => {
         title="Start tracking time in a tap"
         description="Say goodbye to employee estimates. Use the time clock to precisely capture work activity."
       />
-      <IconCardList cardList={secondList} />
+      <IconCardList cardList={secondList} hasBigImages />
       <Divider />
       <Title
         title="Accurately track time from any location and any device"
