@@ -59,14 +59,14 @@ const LocationTracking = () => {
 
   return (
     <div className={container}>
-      <SEO title="Location Tracking" />
+      <SEO title="GPS Location Tracking" />
       <Header />
       <MainTitleCard
         title="Be in the right place, at the right time"
         subtitle="Increase the accountability and transparency of your team with real-time updates on their location"
         hasParagraph
         showButton
-        paragraph="Team Activity"
+        paragraph="GPS Location Tracking"
       />
       <Video />
       <CheckList list={checkList1} />

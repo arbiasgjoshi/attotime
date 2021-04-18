@@ -2,8 +2,10 @@
   width: 100%;
 
   .iconWrapper {
-    @include flex-align(center, center);
-    padding: 0.8rem 3rem 1.5rem 3rem;
+    @include flex-align(flex-end, center);
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
     margin-bottom: 3.5rem;
 
     &.round {
