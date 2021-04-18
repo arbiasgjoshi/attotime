@@ -8,6 +8,7 @@ import { FooterLinks } from '@locale/en.js';
 import Story from '@components/organisms/story';
 import IconCardList from '@components/organisms/icon-card-list';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
+import ProductCard from '@components/organisms/product-card';
 import GrowthNumbers from '@components/organisms/growth-numbers';
 import FooterComponent from '@components/molecules/footer';
 
@@ -20,8 +21,10 @@ import icon from '@images/easy-to-use.png';
 import icon2 from '@images/All_in_one@2x.png';
 import icon3 from '@images/Time_saving@2x.png';
 
-import image1 from '@images/stay-in-loop.png';
-import ProductCard from '../../components/organisms/product-card';
+import image1 from '@images/time-tracking-fingertips@2x.png';
+import image2 from '@images/know-where-is-team.png';
+import image3 from '@images/stay-in-loop.png';
+import image4 from '@images/relax-with-timesheets@2x.png';
 
 const Product = () => {
   const firstList = [
@@ -47,12 +50,45 @@ const Product = () => {
 
   const productList1 = [
     {
+      title: 'Eliminate timesheet estimates',
+      description: `Automated time-tracking means accurate entries and reduced payroll costs.`,
+    },
+    {
+      title: `Track time from any device, anytime, anywhere`,
+      description: `Keep track of time in the office, in teams, at a job site, or on the move.`,
+    },
+  ];
+
+  const productList2 = [
+    {
+      title: 'Avoid constant calls and check-ins',
+      description: `Instantly see where your team is and track the progress they're making.`,
+    },
+    {
+      title: `Increase team safety and accountability`,
+      description: `Verify your team is exactly where they should be all the time.`,
+    },
+  ];
+
+  const productList3 = [
+    {
       title: 'Never be in the dark about team progress',
       description: `Be informed of your team's work activity with instant notifications`,
     },
     {
       title: `Get greater insight into your employees' workdays`,
       description: `Be informed of your team's work activity with instant notifications`,
+    },
+  ];
+
+  const productList4 = [
+    {
+      title: 'Feel confident in your timesheet accuracy',
+      description: `Gain trust with accurate timesheets that are verified using location data.`,
+    },
+    {
+      title: `Streamline the payroll process`,
+      description: `Save hours of admin with payroll integrations and automatically emailed reports.`,
     },
   ];
 
@@ -69,11 +105,37 @@ const Product = () => {
       <IconCardList cardList={firstList} />
       <Divider />
       <ProductCard
+        productName="TIME TRACKING"
+        title="Accurate time tracking at your fingertips"
+        description="Track time from any device, anytime, and anywhere. See every minute on the clock, including work hours, breaks, and time-off."
+        list={productList1}
+        image={image1}
+      />
+      <Divider />
+      <ProductCard
+        productName="LOCATION TRACKING"
+        title="Know where your team is in real-time"
+        description="Get real-time updates on your entire team's locations and daily movements. Stay in control of your emplyees in the field."
+        list={productList2}
+        image={image2}
+        isSwapped
+      />
+      <Divider />
+      <ProductCard
         productName="TEAM ACTIVITY"
         title="Stay in the loop as work happens"
         description="View the work status of your team in a few taps, making team management far simpler and easier."
-        list={productList1}
-        image={image1}
+        list={productList3}
+        image={image3}
+      />
+      <Divider />
+      <ProductCard
+        productName="TIMESHEETS"
+        title="Relax with timesheets on time, every time"
+        description="Atto instanly generates timesheets for you so you never stress over misplace, late, or inaccurate timesheets again."
+        list={productList4}
+        image={image4}
+        isSwapped
       />
       <Divider />
       <GrowthNumbers />

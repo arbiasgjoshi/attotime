@@ -9,6 +9,7 @@ import {
   rightWrapper,
   learnMore,
   img,
+  swapped,
 } from './product-card.module.scss';
 
 import Title from '@components/molecules/title';
@@ -16,7 +17,7 @@ import CheckCard from '@components/molecules/check-card';
 
 const ProductCard = ({ productName, title, description, list, image, isSwapped }) => {
   return (
-    <div className={container}>
+    <div className={`${container} ${isSwapped && swapped}`}>
       <div className={leftWrapper}>
         <div className={textContainer}>
           <p className={prdName}>{productName}</p>

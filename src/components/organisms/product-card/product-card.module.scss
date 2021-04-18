@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
 
+  &.swapped {
+    flex-direction: row-reverse;
+  }
+
   .leftWrapper {
     width: 50%;
 
