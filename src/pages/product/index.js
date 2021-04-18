@@ -20,6 +20,9 @@ import icon from '@images/easy-to-use.png';
 import icon2 from '@images/All_in_one@2x.png';
 import icon3 from '@images/Time_saving@2x.png';
 
+import image1 from '@images/stay-in-loop.png';
+import ProductCard from '../../components/organisms/product-card';
+
 const Product = () => {
   const firstList = [
     {
@@ -42,6 +45,17 @@ const Product = () => {
     },
   ];
 
+  const productList1 = [
+    {
+      title: 'Never be in the dark about team progress',
+      description: `Be informed of your team's work activity with instant notifications`,
+    },
+    {
+      title: `Get greater insight into your employees' workdays`,
+      description: `Be informed of your team's work activity with instant notifications`,
+    },
+  ];
+
   return (
     <div className={container}>
       <SEO title="Product Overview" />
@@ -51,8 +65,16 @@ const Product = () => {
         subtitle="Don't let timesheets be a distraction. Focus on what matters and let us handle them for you."
       />
       <StaticImage src="../../images/no-image.png" alt="No image" width={1140} height={400} />
-      <Divider className="smallest" />
+      <Divider className="medium" />
       <IconCardList cardList={firstList} />
+      <Divider />
+      <ProductCard
+        productName="TEAM ACTIVITY"
+        title="Stay in the loop as work happens"
+        description="View the work status of your team in a few taps, making team management far simpler and easier."
+        list={productList1}
+        image={image1}
+      />
       <Divider />
       <GrowthNumbers />
       <Divider />

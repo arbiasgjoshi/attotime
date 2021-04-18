@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  .leftWrapper {
+    width: 50%;
+
+    .textContainer {
+      .prdName {
+        font-size: 2rem;
+        color: #00b9cb;
+      }
+    }
+
+    .learnMore {
+      font-size: 2.5rem;
+      line-height: 2rem;
+      font-weight: 500;
+      margin-top: 4rem;
+    }
+
+    .listContainer {
+      border-top: 1px solid #efefef;
+      border-bottom: 1px solid #efefef;
+
+      > div {
+        margin: 4rem 0;
+        align-items: flex-start;
+
+        h5 {
+          font-size: 2.5rem !important;
+          line-height: 3rem !important;
+        }
+
+        p {
+          font-size: 2.2rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .rightWrapper {
+    width: 40%;
+    @include flex-align(center, center);
+
+    .img {
+      width: 50rem;
+      height: 65rem;
+    }
+  }
+}
