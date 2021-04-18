@@ -23,6 +23,7 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 
 import { FooterLinks } from '@locale/en.js';
 import authorImage from '@images/authorImage.png';
+import noImage from '@images/no-image.png';
 
 import logo1 from '@images/web-time-tracking.png';
 import logo2 from '@images/mobile-time-tracking.png';
@@ -324,6 +325,7 @@ const TimeTracking = () => {
       <Title title="Common problems, solved." />
       <div className={commonProblemsContainer}>
         <IconCard
+          bigImage
           isRound
           icon={icon22}
           alt="Employees forget"
@@ -332,14 +334,16 @@ const TimeTracking = () => {
         />
         <IconCard
           isRound
+          bigImage
           icon={icon23}
           alt="Out of battery"
           title="What if phone ran out of battery"
           description="Not a problem! If an employee forgets their phone, or it runs out of battery, either they or a manager can add a manual time entry for your approval."
         />
         <IconCard
+          bigImage
           isRound
-          icon={icon23}
+          icon={noImage}
           alt="Not sure if employees"
           title={`Not sure if employees are where they're supposed to?`}
           description={`Always be in the know! With geofencing, you can restrict employees from clocking-in until they're at a job site - increasing accountability and preventing innacurate time entries`}

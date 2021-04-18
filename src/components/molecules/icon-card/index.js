@@ -1,10 +1,25 @@
 import React from 'react';
-import { container, iconWrapper, round, textWrapper, leftAligned } from './icon-card.module.scss';
+import {
+  container,
+  iconWrapper,
+  round,
+  textWrapper,
+  bigImageStyle,
+  leftAligned,
+} from './icon-card.module.scss';
 
-const IconCard = ({ icon, alt, title, description, noImage = false, isRound = false }) => (
+const IconCard = ({
+  icon,
+  alt,
+  bigImage = false,
+  title,
+  description,
+  noImage = false,
+  isRound = false,
+}) => (
   <div className={container}>
     {!noImage && (
-      <div className={`${iconWrapper} ${isRound && round}`}>
+      <div className={`${iconWrapper} ${isRound && round} ${bigImage && bigImageStyle}`}>
         <img alt={alt} src={icon} />
       </div>
     )}

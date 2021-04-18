@@ -17,6 +17,12 @@
         height: 25rem;
       }
     }
+
+    &.bigImageStyle {
+      @include flex-align(center, flex-start);
+      width: unset;
+      height: unset;
+    }
   }
 
   .textWrapper {

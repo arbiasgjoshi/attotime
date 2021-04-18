@@ -187,6 +187,7 @@ const Timesheets = () => {
       <div className={roundImagesContainer}>
         <IconCard
           isRound
+          bigImage
           icon={noImage}
           alt="Estimate emp"
           title="Estimate your Employees' Wages"
@@ -194,6 +195,7 @@ const Timesheets = () => {
         />
         <IconCard
           isRound
+          bigImage
           icon={roundImage2}
           alt="Sync"
           title="Sync with Payroll and Accounting Software"
@@ -201,6 +203,7 @@ const Timesheets = () => {
         />
         <IconCard
           isRound
+          bigImage
           icon={roundImage3}
           alt="Timesheets on-time"
           title={`Timesheets on-time and in your Inbox`}
