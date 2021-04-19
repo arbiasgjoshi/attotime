@@ -4,10 +4,18 @@ import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
 import SubscribeForm from '@components/molecules/subscribe-form';
 import Icon from '@components/atoms/icon';
-import { bannerWrapper, checkItems, itemWrapper, hasImage, imgWrap } from './subscribe.module.scss';
+import {
+  bannerWrapper,
+  textWrapper,
+  checkItems,
+  itemWrapper,
+  hasImage,
+  imgWrap,
+} from './subscribe.module.scss';
 
 const SubscribeBanner = ({
   title,
+  subtitle,
   placeholder,
   bannerImage,
   checkItemOne,
@@ -26,7 +34,10 @@ const SubscribeBanner = ({
         />
       </div>
     )}
-    <h3>{title}</h3>
+    <div className={textWrapper}>
+      <h3>{title}</h3>
+      {subtitle && <h5>{subtitle}</h5>}
+    </div>
     <SubscribeForm placeholder={placeholder} />
     <div className={checkItems}>
       <div className={itemWrapper}>
