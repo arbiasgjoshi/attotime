@@ -7,6 +7,7 @@ import {
   priceWrapper,
   contentWrapper,
 } from './package-card.module.scss';
+import PropTypes from 'prop-types';
 import Button from '@components/atoms/button';
 import CheckCard from '@components/molecules/check-card';
 
@@ -38,6 +39,16 @@ const PackageCard = ({ title, usersText, price, listTitle, list, contentText, bt
       </div>
     </div>
   );
+};
+
+PackageCard.propTypes = {
+  title: PropTypes.string,
+  usersText: PropTypes.string,
+  price: PropTypes.string,
+  list: PropTypes.arrayOf({}),
+  listTitle: PropTypes.string,
+  contentText: PropTypes.string,
+  btnText: PropTypes.string,
 };
 
 export default PackageCard;
