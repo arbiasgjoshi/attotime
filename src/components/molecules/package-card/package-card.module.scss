@@ -1,0 +1,65 @@
+.container {
+  @include flex-direction(column);
+  width: 48%;
+  padding: 3rem 5rem 6rem 5rem;
+  border: 1px solid #efefef;
+
+  .firstContainer {
+    @include flex-direction(column);
+    justify-content: flex-start;
+
+    .titleWrapper {
+      @include flex-align(center, space-between);
+      margin-bottom: 3rem;
+
+      > span {
+        color: #00b9cb;
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+    }
+
+    .contentWrapper {
+      display: flex;
+      align-items: center;
+      font-size: 2.2rem;
+      line-height: 3rem;
+      margin-bottom: 4.5rem;
+      min-height: 12rem;
+
+      .priceWrapper {
+        display: flex;
+        align-items: center;
+        font-size: 2.6rem;
+
+        > span {
+          padding: 0 1rem;
+          font-size: 8rem;
+          font-weight: 600;
+          letter-spacing: -1.33px;
+          line-height: 12rem;
+        }
+      }
+    }
+
+    > button {
+      background-color: #00b9cb;
+      font-size: 2rem;
+      width: 24rem;
+    }
+  }
+
+  .listWrapper {
+    margin-top: 5.5rem;
+
+    > div {
+      height: 4rem;
+      margin-top: 2rem;
+
+      h5 {
+        font-size: 2.2rem !important;
+        font-weight: 400 !important;
+      }
+    }
+  }
+}
