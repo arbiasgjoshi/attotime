@@ -3,3 +3,95 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.priceHeader {
+  @include flex-align(flex-start, space-between);
+
+  .rightSide {
+    .buttonContainer {
+      margin-top: 1rem;
+      display: flex;
+      height: 5rem;
+      width: 25.2rem;
+      border-radius: 2.5rem;
+      background-color: rgba(0, 185, 203, 0.1);
+
+      button {
+        width: 12.6rem;
+        box-sizing: border-box;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        line-height: 20px;
+        background-color: transparent;
+        color: #00b9cb;
+
+        &:focus {
+          color: #000000;
+          border: 2px solid #00b9cb;
+          border-radius: 2rem;
+          background-color: #ffffff;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.7rem;
+      margin-top: 1.6rem;
+      text-align: right;
+      color: #00b9cb;
+      padding-right: 2rem;
+    }
+  }
+}
+
+.featuresBanner {
+  position: relative;
+
+  button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 7.4rem;
+    width: 30rem;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    box-sizing: border-box;
+    border: 2px solid #efefef;
+    border-radius: 0.4rem;
+    background-color: #ffffff;
+  }
+}
+
+.questionsContainer {
+  margin: 0 12rem;
+
+  .list {
+    padding: 0 5rem;
+    margin-top: -1rem;
+    box-sizing: border-box;
+
+    .item {
+      padding: 2.3rem 3rem;
+      border-bottom: 2px solid #efefef;
+
+      &:first-child {
+        border-top: 2px solid #efefef;
+      }
+
+      h5 {
+        @include flex-align(center, space-between);
+
+        .plus {
+          height: 2.4rem;
+          width: 2.4rem;
+          @include flex-align(center, center);
+        }
+      }
+
+      p {
+        font-size: 2.2rem;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

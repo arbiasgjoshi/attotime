@@ -28,6 +28,11 @@
 .container {
   .logoWrapper {
     @include flex-align(center, center);
+
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 
   .textContainer {
