@@ -26,6 +26,22 @@
 }
 
 .container {
+  &.leftAligned {
+    .logoWrapper {
+      @include flex-align(center, flex-start);
+    }
+
+    .textContainer {
+      h5 {
+        text-align: left;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+
   .logoWrapper {
     @include flex-align(center, center);
 

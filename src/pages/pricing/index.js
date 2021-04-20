@@ -170,7 +170,7 @@ const Pricing = () => {
       />
       <Divider />
       <Title title="All our main features, included in one simple plan" />
-      <FeaturesList list={featureList} />
+      <FeaturesList isLeftAligned list={featureList} />
       <Divider />
       <StaticImage src="../../images/field_workers@2x.png" width={1140} height={460} />
       <Divider />
