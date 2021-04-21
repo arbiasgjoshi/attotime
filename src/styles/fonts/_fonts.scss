@@ -4,7 +4,7 @@
   src: url('/fonts/calibre-web-regular.eot?#iefix') format('embedded-opentype'),
     url('/fonts/calibre-web-regular.woff2') format('woff2'),
     url('/fonts/calibre-web-regular.woff') format('woff');
-  font-weight: var(--regular);
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -14,7 +14,7 @@
   src: url('/fonts/calibre-web-medium.eot?#iefix') format('embedded-opentype'),
     url('/fonts/calibre-web-medium.woff2') format('woff2'),
     url('/fonts/calibre-web-medium.woff') format('woff');
-  font-weight: var(--medium);
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -24,6 +24,6 @@
   src: url('/fonts/calibre-web-semibold.eot?#iefix') format('embedded-opentype'),
     url('/fonts/calibre-web-semibold.woff2') format('woff2'),
     url('/fonts/calibre-web-semibold.woff') format('woff');
-  font-weight: var(--semi-bold);
+  font-weight: 600;
   font-style: normal;
 }
