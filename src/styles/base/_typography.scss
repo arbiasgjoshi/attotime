@@ -7,8 +7,7 @@ $heading-sizes: (
   h6 var(--h6-size) var(--h6-mobile-size) var(--h6-font-weight) var(--h6-line-height-size)
 );
 
-$backup-fonts: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Noto Sans',
-  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$backup-fonts: sans-serif;
 
 html {
   font-size: 10px; // For easier rem calculations
@@ -22,6 +21,8 @@ body {
     size: var(--text-size);
     family: var(--main-font), $backup-fonts;
   }
+
+  // TODO check font size variables to be optimized in mobile
 
   @each $heading, $size, $mobileSize, $weight, $lineHeight in $heading-sizes {
     #{$heading},
