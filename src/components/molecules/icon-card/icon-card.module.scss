@@ -3,8 +3,8 @@
 
   .iconWrapper {
     @include flex-align(flex-end, center);
-    width: 8rem;
-    height: 8rem;
+    width: 12rem;
+    height: 12rem;
     margin: 0 auto;
     margin-bottom: 3.5rem;
 
@@ -35,12 +35,11 @@
       font-size: 3.2rem;
       font-weight: var(--semi-bold);
       letter-spacing: -0.5px;
-      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
     }
 
     p {
       font-size: 2.2rem;
-      line-height: 3rem;
       line-height: 3rem;
       color: var(--fifth-color);
     }

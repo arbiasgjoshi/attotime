@@ -18,14 +18,14 @@ const Video = () => (
       width={1120}
       height={355}
       alt="Video placeholder"
-      src="../../../images/video-background.svg"
+      src="../../../images/video-background@2x.png"
     />
     <StaticImage
       className={videoPlaceholder}
-      width={955}
-      height={489}
+      width={952}
+      height={485}
       alt="Video placeholder"
-      src="../../../images/video-placeholder.svg"
+      src="../../../images/video-placeholder@2x.png"
     />
     <div className={imagePlayer}>
       <Icon iconClass="play" fSize={11} />

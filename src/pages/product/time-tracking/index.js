@@ -57,6 +57,7 @@ import icon23 from '@images/out-of-battery.png';
 
 import {
   container,
+  checkListContainer,
   learnMoreContainer,
   workListContainer,
   commonProblemsContainer,
@@ -251,17 +252,19 @@ const TimeTracking = () => {
       <MainTitleCard
         hasParagraph
         showButton
-        paragraph="Time Tracking"
+        paragraph="TIME TRACKING"
         title="Take the pain away from time tracking"
         subtitle="An easy-to-use, accurate, and trustworthy time-tracking solution."
       />
       <Video />
-      <CheckList list={titleList} />
+      <div className={checkListContainer}>
+        <CheckList list={titleList} />
+      </div>
       <Divider />
       <div>
         <StaticImage
           alt="Clock In"
-          height={474}
+          height={502}
           quality={90}
           src="../../../images/banner-image-2@2x.png"
         />

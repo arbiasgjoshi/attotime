@@ -11,7 +11,7 @@ const Story = ({ img, paragraph, author }) => {
       <div className={paragraphContainer}>
         <img className={starsPic} src={stars} />
         <h4>{paragraph}</h4>
-        <span>{author}</span>
+        <h6>{author}</h6>
       </div>
     </div>
   );

@@ -9,18 +9,15 @@
 
     .smallParagraph {
       color: var(--primary-color);
-      font-size: 1.8rem;
-      font-weight: var(--semi-bold);
-      padding-bottom: 1.2rem;
+      margin-bottom: 1.2rem;
     }
 
     .mainTitle {
-      padding-bottom: 0.8rem;
+      margin-bottom: 0.8rem;
     }
 
     h4 {
       color: var(--fifth-color);
-      letter-spacing: -0.5px;
       text-align: center;
       font-weight: var(--regular);
     }

@@ -18,8 +18,8 @@ const MainTitleCard = ({
 }) => (
   <div className={container}>
     <div className={headerContainer}>
-      {hasParagraph && <p className={smallParagraph}>{paragraph}</p>}
-      <h1 className={mainTitle}>{title}</h1>
+      {hasParagraph && <h6 className={smallParagraph}>{paragraph}</h6>}
+      <h2 className={mainTitle}>{title}</h2>
       <h4>{subtitle}</h4>
     </div>
     {showButton && <Button btnText="Start a Free Trial" btnStyle="trial" />}

@@ -4,8 +4,8 @@ import { container, titleWrapper, descriptionWrapper, leftAligned } from './titl
 
 const Title = ({ title, description, leftAlign = false }) => (
   <div className={`${container} ${leftAlign && leftAligned}`}>
-    <h3 className={titleWrapper}>{title}</h3>
-    <h5 className={descriptionWrapper}>{description}</h5>
+    <h2 className={titleWrapper}>{title}</h2>
+    <h4 className={descriptionWrapper}>{description}</h4>
   </div>
 );
 
