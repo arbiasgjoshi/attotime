@@ -6,10 +6,13 @@ import {
   workCardContainer,
   logoWrapper,
   textContainer,
+  leftAligned,
 } from './feature-card.module.scss';
 
-const FeatureCard = ({ logo, alt, title, description, isWorkCard = false }) => (
-  <div className={`${isWorkCard ? workCardContainer : container}`}>
+const FeatureCard = ({ logo, alt, title, description, isLeftAligned, isWorkCard = false }) => (
+  <div
+    className={`${isWorkCard ? workCardContainer : container} ${isLeftAligned ? leftAligned : ''}`}
+  >
     <div className={logoWrapper}>
       <img alt={alt} src={logo} />
     </div>
