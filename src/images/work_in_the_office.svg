@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="378px" height="380px" viewBox="0 0 378 380" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="378px" height="380px" viewBox="0 0 378 380" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>56A32ACC-4AC7-4CD9-ABA1-0EA5685A5B27SVG</title>
     <defs>
         <rect id="path-1" x="0" y="0" width="378" height="380" rx="8"></rect>
@@ -30,7 +32,7 @@
                             <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
                             <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
                         </g>
-                        <text id="Rita-clocked-out-·-1" font-family="SFProText-Regular, SF Pro Text" font-size="14" font-weight="normal" line-spacing="24" fill="#262626">
+                        <text id="Rita-clocked-out-·-1" font-family="SFProText-Regular, SF Pro Text" font-size="14" font-weight="normal" line-spacing="24" fill="var(--fifth-color)">
                             <tspan x="36" y="37">Rita clocked out · 10 mins ago</tspan>
                         </text>
                         <g id="..." transform="translate(12.000000, 24.000000)" fill="#E05656">

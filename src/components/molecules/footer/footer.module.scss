@@ -27,17 +27,17 @@
     width: 16.5rem;
     @include flex-direction(column);
     .parentPath {
-      font-weight: 500;
-      color: #000;
+      font-weight: var(--medium);
+      color: var(--tertiary-color);
       font-size: 2rem;
       line-height: 3rem;
       margin-bottom: 2.4rem;
     }
 
     a {
-      font-weight: 400;
+      font-weight: var(--regular);
       text-decoration: none;
-      color: #000;
+      color: var(--tertiary-color);
       font-size: 1.8rem;
       line-height: 3rem;
 
@@ -54,7 +54,7 @@
       }
 
       &:hover {
-        color: #00b9cb;
+        color: var(--primary-color);
       }
     }
   }
@@ -80,7 +80,7 @@
       font-size: 1.5rem;
       line-height: 2.4rem;
       font-weight: normal;
-      color: #262626;
+      color: var(--fifth-color);
     }
   }
 }
@@ -88,6 +88,6 @@
 .footerBottom {
   font-size: 1.8rem;
   line-height: 3rem;
-  color: #000;
+  color: var(--tertiary-color);
   margin-top: 10.4rem;
 }

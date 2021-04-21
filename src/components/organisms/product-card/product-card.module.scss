@@ -12,14 +12,14 @@
     .textContainer {
       .prdName {
         font-size: 2rem;
-        color: #00b9cb;
+        color: var(--primary-color);
       }
     }
 
     .learnMore {
       font-size: 2.5rem;
       line-height: 2rem;
-      font-weight: 500;
+      font-weight: var(--medium);
       margin-top: 4rem;
     }
 
@@ -38,7 +38,7 @@
 
         p {
           font-size: 2.2rem;
-          font-weight: 400;
+          font-weight: var(--regular);
         }
       }
     }

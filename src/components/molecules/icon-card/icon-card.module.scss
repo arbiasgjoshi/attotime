@@ -33,7 +33,7 @@
     h4 {
       line-height: 4rem;
       font-size: 3.2rem;
-      font-weight: 600;
+      font-weight: var(--semi-bold);
       letter-spacing: -0.5px;
       padding-bottom: 1.5rem;
     }
@@ -42,7 +42,7 @@
       font-size: 2.2rem;
       line-height: 3rem;
       line-height: 3rem;
-      color: #262626;
+      color: var(--fifth-color);
     }
 
     &.leftAligned {

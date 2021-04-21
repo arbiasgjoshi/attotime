@@ -1,10 +1,16 @@
 $heading-sizes: (
-  h1 var(--h1-size) var(--h1-mobile-size) var(--h1-font-weight) var(--h1-line-height-size),
-  h2 var(--h2-size) var(--h2-mobile-size) var(--h2-font-weight) var(--h2-line-height-size),
-  h3 var(--h3-size) var(--h3-mobile-size) var(--h3-font-weight) var(--h3-line-height-size),
-  h4 var(--h4-size) var(--h4-mobile-size) var(--h4-font-weight) var(--h4-line-height-size),
-  h5 var(--h5-size) var(--h5-mobile-size) var(--h5-font-weight) var(--h5-line-height-size),
+  h1 var(--h1-size) var(--h1-mobile-size) var(--h1-font-weight) var(--h1-line-height-size)
+    var(--h1-mobile-line-height-size) var(--h1-letter-spacing),
+  h2 var(--h2-size) var(--h2-mobile-size) var(--h2-font-weight) var(--h2-line-height-size)
+    var(--h2-mobile-line-height-size) var(--h2-letter-spacing),
+  h3 var(--h3-size) var(--h3-mobile-size) var(--h3-font-weight) var(--h3-line-height-size)
+    var(--h3-mobile-line-height-size) var(--h3-letter-spacing),
+  h4 var(--h4-size) var(--h4-mobile-size) var(--h4-font-weight) var(--h4-line-height-size)
+    var(--h4-mobile-line-height-size) var(--h4-letter-spacing),
+  h5 var(--h5-size) var(--h5-mobile-size) var(--h5-font-weight) var(--h5-line-height-size)
+    var(--h5-mobile-line-height-size) var(--h5-letter-spacing),
   h6 var(--h6-size) var(--h6-mobile-size) var(--h6-font-weight) var(--h6-line-height-size)
+    var(--h6-mobile-line-height-size) var(--h6-letter-spacing)
 );
 
 $backup-fonts: sans-serif;
@@ -24,17 +30,22 @@ body {
 
   // TODO check font size variables to be optimized in mobile
 
-  @each $heading, $size, $mobileSize, $weight, $lineHeight in $heading-sizes {
+  @each $heading, $size, $mobileSize, $weight, $lineHeight, $mobileLineHeight,
+    $letterSpacing in $heading-sizes
+  {
     #{$heading},
     .#{$heading} {
       color: var(--heading-base-color);
       font-size: #{$mobileSize};
+      line-height: #{$mobileLineHeight};
+      font-weight: #{$weight};
       margin: 0;
 
       @include min(tablet) {
         font-size: #{$size};
-        font-weight: $weight;
-        line-height: $lineHeight;
+        font-weight: #{$weight};
+        line-height: #{$lineHeight};
+        letter-spacing: #{$letterSpacing};
       }
     }
   }

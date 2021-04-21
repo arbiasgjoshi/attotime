@@ -10,7 +10,7 @@
     .smallParagraph {
       color: var(--primary-color);
       font-size: 1.8rem;
-      font-weight: 600;
+      font-weight: var(--semi-bold);
       padding-bottom: 1.2rem;
     }
 
@@ -19,10 +19,10 @@
     }
 
     h4 {
-      color: #262626;
+      color: var(--fifth-color);
       letter-spacing: -0.5px;
       text-align: center;
-      font-weight: 400;
+      font-weight: var(--regular);
     }
   }
 }

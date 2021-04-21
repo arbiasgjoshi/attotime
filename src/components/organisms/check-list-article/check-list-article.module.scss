@@ -16,9 +16,9 @@
     justify-content: center;
 
     .descr2 {
-      color: #262626;
+      color: var(--fifth-color);
       letter-spacing: -0.5px;
-      font-weight: 400;
+      font-weight: var(--regular);
       margin-bottom: 4rem;
     }
   }

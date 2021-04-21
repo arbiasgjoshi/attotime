@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="378px" height="380px" viewBox="0 0 378 380" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="378px" height="380px" viewBox="0 0 378 380" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>0CFFFBBA-4004-4373-B187-5BD8FAD8C5AASVG</title>
     <defs>
         <rect id="path-1" x="0" y="0" width="378" height="380" rx="8"></rect>
@@ -28,7 +30,7 @@
                                 <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
                             </g>
                             <g id="Group-47" transform="translate(12.000000, 24.000000)">
-                                <text id="Dua-started-a-break" font-family="SFProText-Regular, SF Pro Text" font-size="14" font-weight="normal" line-spacing="24" fill="#262626">
+                                <text id="Dua-started-a-break" font-family="SFProText-Regular, SF Pro Text" font-size="14" font-weight="normal" line-spacing="24" fill="var(--fifth-color)">
                                     <tspan x="24" y="13">Dua started a break · 21 mins ago</tspan>
                                 </text>
                                 <g id="..." fill="#FBA345">

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="556px" height="474px" viewBox="0 0 556 474" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="556px" height="474px" viewBox="0 0 556 474" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>01FBD181-453B-4388-B2BD-DC88FF58A143SVG</title>
     <defs>
         <circle id="path-1" cx="65" cy="65" r="65"></circle>
@@ -183,7 +185,7 @@
                     <rect id="Rectangle" fill="#EFEFEF" x="69" y="17" width="123" height="2" rx="1"></rect>
                     <circle id="Status-Small---Yellow" fill="#06B879" cx="69" cy="18" r="2"></circle>
                     <rect id="Rectangle" fill="#06B879" x="16" y="17" width="53" height="2" rx="1"></rect>
-                    <text id="On-Break-·-35:23" font-family="SFProText-Regular, SF Pro Text" font-size="14" font-weight="normal" line-spacing="24" fill="#262626">
+                    <text id="On-Break-·-35:23" font-family="SFProText-Regular, SF Pro Text" font-size="14" font-weight="normal" line-spacing="24" fill="var(--fifth-color)">
                         <tspan x="40" y="47">On the clock  ·  30m</tspan>
                     </text>
                     <g id="..." transform="translate(16.000000, 34.000000)" fill="#06B879">

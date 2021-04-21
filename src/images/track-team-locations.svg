@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1140px" height="341px" viewBox="0 0 1140 341" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1140px" height="341px" viewBox="0 0 1140 341" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>1C326BD6-CBFE-444E-B1D6-BC520D9BB8DDSVG</title>
     <defs>
         <path d="M100,0 L920,0 C922.209139,-4.05812251e-16 924,1.790861 924,4 L924,170 C924,225.228475 879.228475,270 824,270 L4,270 C1.790861,270 2.705415e-16,268.209139 0,266 L0,100 C-6.76353751e-15,44.771525 44.771525,1.01453063e-14 100,0 Z" id="path-1"></path>
@@ -403,7 +405,7 @@
                         </g>
                         <g id="Group-59" filter="url(#filter-5)" transform="translate(179.000000, 0.000000)">
                             <path d="M0,20 L142.094444,20 L156.43759,5.65685425 C159.561785,2.53265992 164.627104,2.53265992 167.751299,5.65685425 L182.094444,20 L182.094444,20 L343,20 L343,176 L0,176 L0,20 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(171.500000, 88.000000) scale(-1, -1) translate(-171.500000, -88.000000) "></path>
-                            <text id="Martha-Mitchel" font-family="SFProDisplay-Semibold, SF Pro Display" font-size="16" font-weight="500" line-spacing="24" fill="#262626">
+                            <text id="Martha-Mitchel" font-family="SFProDisplay-Semibold, SF Pro Display" font-size="16" font-weight="500" line-spacing="24" fill="var(--fifth-color)">
                                 <tspan x="48" y="30">Martha Mitchel</tspan>
                             </text>
                             <text id="Clocked-in-at-8:02-a" font-family="SFProText-Medium, SF Pro Text" font-size="12" font-weight="400" line-spacing="16" fill="#999999">
@@ -412,7 +414,7 @@
                             <text id="Last-location-update" font-family="SFProText-Regular, SF Pro Text" font-size="12" font-weight="normal" line-spacing="16" fill="#999999">
                                 <tspan x="48" y="66">Last location update  ·  2m ago</tspan>
                             </text>
-                            <text id="Unis-Construction-Si" font-family="SFProText-Medium, SF Pro Text" font-size="14" font-weight="400" line-spacing="20" fill="#262626">
+                            <text id="Unis-Construction-Si" font-family="SFProText-Medium, SF Pro Text" font-size="14" font-weight="400" line-spacing="20" fill="var(--fifth-color)">
                                 <tspan x="48" y="84">Unis Construction Site</tspan>
                             </text>
                             <text id="Accuracy-·-13ft" font-family="SFProText-Regular, SF Pro Text" font-size="12" font-weight="normal" line-spacing="16" fill="#999999">

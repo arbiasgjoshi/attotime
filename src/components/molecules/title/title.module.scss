@@ -17,9 +17,9 @@
   }
 
   .descriptionWrapper {
-    color: #262626;
+    color: var(--fifth-color);
     letter-spacing: -0.5px;
     text-align: center;
-    font-weight: 400;
+    font-weight: var(--regular);
   }
 }

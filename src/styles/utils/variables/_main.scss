@@ -1,6 +1,11 @@
 :root {
   // Colors - site
   --primary-color: var(--color-1);
+  --secondary-color: var(--color-2);
+  --tertiary-color: var(--color-3);
+  --fourth-color: var(--color-white);
+  --fifth-color: var(--color-4);
+  --sixth-color: var(--color-5);
 
   // Font
   --main-font: 'Calibre';
@@ -10,6 +15,12 @@
 
   // Spacing and sizes - site
   --border-radius: 0.6rem;
+
+  // Font weights
+
+  --semi-bold: 600;
+  --medium: 500;
+  --regular: 400;
 
   --h1-size: 6rem;
   --h2-size: 6rem;
@@ -25,12 +36,12 @@
   --h5-line-height-size: 3rem;
   --h6-line-height-size: 2rem;
 
-  --h1-font-weight: 600;
-  --h2-font-weight: 600;
-  --h3-font-weight: 600;
-  --h4-font-weight: 600;
-  --h5-font-weight: 600;
-  --h6-font-weight: 600;
+  --h1-font-weight: var(--semi-bold);
+  --h2-font-weight: var(--semi-bold);
+  --h3-font-weight: var(--semi-bold);
+  --h4-font-weight: var(--semi-bold);
+  --h5-font-weight: var(--semi-bold);
+  --h6-font-weight: var(--semi-bold);
 
   --h1-letter-spacing: -0.1rem;
   --h2-letter-spacing: -0.1rem;
@@ -42,12 +53,19 @@
   --text-size: 1.6rem;
   --desc-size: 0.9rem;
 
-  --h1-mobile-size: 2.6rem;
-  --h2-mobile-size: 2.2rem;
-  --h3-mobile-size: 1.6rem;
-  --h4-mobile-size: 1.3rem;
-  --h5-mobile-size: 1rem;
-  --h6-mobile-size: 0.8rem;
+  --h1-mobile-size: calc(var(--h1-size) * 0.66667);
+  --h2-mobile-size: calc(var(--h2-size) * 0.66667);
+  --h3-mobile-size: calc(var(--h3-size) * 0.66667);
+  --h4-mobile-size: calc(var(--h4-size) * 0.66667);
+  --h5-mobile-size: calc(var(--h5-size) * 0.66667);
+  --h6-mobile-size: calc(var(--h6-size) * 0.66667);
+
+  --h1-mobile-line-height-size: calc(var(--h1-line-height-size) * 0.66667);
+  --h2-mobile-line-height-size: calc(var(--h2-line-height-size) * 0.66667);
+  --h3-mobile-line-height-size: calc(var(--h3-line-height-size) * 0.66667);
+  --h4-mobile-line-height-size: calc(var(--h4-line-height-size) * 0.66667);
+  --h5-mobile-line-height-size: calc(var(--h5-line-height-size) * 0.66667);
+  --h6-mobile-line-height-size: calc(var(--h6-line-height-size) * 0.66667);
 
   // Z-index
   --modal-index: 300;

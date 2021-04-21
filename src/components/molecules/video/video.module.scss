@@ -33,7 +33,7 @@
     cursor: pointer;
 
     i {
-      color: #00b9cb;
+      color: var(--primary-color);
       z-index: 100;
 
       &:hover {
@@ -51,8 +51,8 @@
 
     button {
       background-color: #ffffff;
-      color: #000;
-      font-weight: 500;
+      color: var(--tertiary-color);
+      font-weight: var(--medium);
       box-shadow: 2px 6px 28px 0px rgba(0, 0, 0, 0.08);
     }
   }

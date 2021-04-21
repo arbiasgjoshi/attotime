@@ -6,10 +6,12 @@
   margin-bottom: 7rem;
 
   a {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    line-height: 2rem;
     text-decoration: none;
-    color: #000;
+    color: var(--color-3);
     margin-right: 3rem;
+    letter-spacing: -0.05rem;
 
     &:last-child {
       margin-right: 0;

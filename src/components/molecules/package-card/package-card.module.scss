@@ -13,7 +13,7 @@
       margin-bottom: 3rem;
 
       > span {
-        color: #00b9cb;
+        color: var(--primary-color);
         font-size: 2rem;
         line-height: 2rem;
       }
@@ -35,7 +35,7 @@
         > span {
           padding: 0 1rem;
           font-size: 8rem;
-          font-weight: 600;
+          font-weight: var(--semi-bold);
           letter-spacing: -1.33px;
           line-height: 12rem;
         }
@@ -43,7 +43,7 @@
     }
 
     > button {
-      background-color: #00b9cb;
+      color: var(--primary-color);
       font-size: 2rem;
       width: 24rem;
     }
