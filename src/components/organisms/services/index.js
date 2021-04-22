@@ -5,7 +5,7 @@ import { container, textContainer, serviceList } from './services.module.scss';
 const Services = ({ title, list }) => (
   <div className={container}>
     <div className={textContainer}>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
     </div>
     <div className={serviceList}>
       {list?.map((service, index) => (

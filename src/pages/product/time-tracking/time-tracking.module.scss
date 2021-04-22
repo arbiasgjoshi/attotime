@@ -23,8 +23,8 @@
   }
 
   .commonProblemsContainer {
-    margin-top: -0.8rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 4.5rem;
   }
 }

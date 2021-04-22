@@ -1,9 +1,9 @@
 import React from 'react';
 import IconCard from '@components/molecules/icon-card';
-import { container } from './icon-card-list.module.scss';
+import { container, gapStyle } from './icon-card-list.module.scss';
 
 const IconCardList = ({ cardList, noImage, hasBigImages = false }) => (
-  <div className={container}>
+  <div className={`${container} ${hasBigImages && gapStyle}`}>
     {cardList.map((card, index) => (
       <IconCard
         key={index}
