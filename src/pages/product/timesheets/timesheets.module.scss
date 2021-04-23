@@ -2,6 +2,14 @@
   max-width: 114rem;
   margin: 0 auto;
 
+  .readyMadeTitle {
+    h4 {
+      font-size: 2.6rem;
+      line-height: 3rem;
+      letter-spacing: 0.05rem;
+    }
+  }
+
   .roundImagesContainer {
     margin-top: -0.8rem;
     display: grid;

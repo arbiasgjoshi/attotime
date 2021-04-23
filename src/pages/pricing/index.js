@@ -124,7 +124,7 @@ const Pricing = () => {
       <SEO title="Pricing" />
       <HeaderComponent />
       <div className={priceHeader}>
-        <h2>Pay-as-you-grow pricing</h2>
+        <h1>Pay-as-you-grow pricing</h1>
         <div className={rightSide}>
           <div className={buttonContainer}>
             <Button btnText="Monthly" btnStyle="round" />
@@ -133,7 +133,7 @@ const Pricing = () => {
           <p>Save 29%</p>
         </div>
       </div>
-      <Divider />
+      <Divider className="smallest" />
       <div className={packageWrapper}>
         <PackageCard
           title="Premium"

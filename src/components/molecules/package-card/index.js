@@ -26,7 +26,7 @@ const PackageCard = ({ title, usersText, price, listTitle, list, contentText, bt
               {`${contentText}`}
             </span>
           ) : (
-            <span>{contentText}</span>
+            <p>{contentText}</p>
           )}
         </div>
         <Button btnStyle="wide" btnText={btnText} />

@@ -13,8 +13,6 @@
       margin-bottom: 3rem;
 
       > span {
-        color: var(--primary-color);
-        font-size: 2rem;
         line-height: 2rem;
       }
     }
@@ -26,6 +24,10 @@
       line-height: 3rem;
       margin-bottom: 4.5rem;
       min-height: 12rem;
+
+      > p {
+        max-width: 23.3rem;
+      }
 
       .priceWrapper {
         display: flex;
@@ -43,7 +45,7 @@
     }
 
     > button {
-      color: var(--primary-color);
+      background-color: var(--primary-color);
       font-size: 2rem;
       width: 24rem;
     }

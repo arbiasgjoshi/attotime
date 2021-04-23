@@ -4,6 +4,7 @@ import {
   roundImagesContainer,
   checkListContainer,
   learnMoreContainer,
+  readyMadeTitle,
 } from './timesheets.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FooterLinks } from '@locale/en.js';
@@ -157,10 +158,12 @@ const Timesheets = () => {
         <CheckList list={checkLists} />
       </div>
       <Divider />
-      <Title
-        title="Ready-made professional timesheets"
-        description="Your employees' hours are instantly transformed into timesheet reports. View every hour worked from regular time to overtime. Create reports based on specific employees, teams, or job codes. And download and share them in a few clicks."
-      />
+      <div className={readyMadeTitle}>
+        <Title
+          title="Ready-made professional timesheets"
+          description="Your employees' hours are instantly transformed into timesheet reports. View every hour worked from regular time to overtime. Create reports based on specific employees, teams, or job codes. And download and share them in a few clicks."
+        />
+      </div>
       <div>
         <StaticImage alt="Clock In" quality={90} src="../../../images/ready-made.svg" />
       </div>

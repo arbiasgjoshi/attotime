@@ -10,7 +10,9 @@ $heading-sizes: (
   h5 var(--h5-size) var(--h5-mobile-size) var(--h5-font-weight) var(--h5-line-height-size)
     var(--h5-mobile-line-height-size) var(--h5-letter-spacing),
   h6 var(--h6-size) var(--h6-mobile-size) var(--h6-font-weight) var(--h6-line-height-size)
-    var(--h6-mobile-line-height-size) var(--h6-letter-spacing)
+    var(--h6-mobile-line-height-size) var(--h6-letter-spacing),
+  p var(--body-style-three) var(--body-style-three-mobile-size) var(--body-style-three-font-weight)
+    var(--body-style-three-line-height-size) var(--body-style-three-letter-spacing)
 );
 
 $backup-fonts: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Noto Sans',
@@ -50,9 +52,5 @@ body {
         letter-spacing: #{$letterSpacing};
       }
     }
-  }
-
-  p {
-    font-size: var(--desc-size);
   }
 }

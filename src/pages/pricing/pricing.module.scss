@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: -1.6rem;
 }
 
 .priceHeader {
@@ -36,10 +37,8 @@
     }
 
     p {
-      font-size: 1.7rem;
       margin-top: 1.6rem;
       text-align: right;
-      color: var(--primary-color);
       padding-right: 2rem;
     }
   }
