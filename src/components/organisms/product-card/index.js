@@ -8,13 +8,15 @@ import {
   firstWrapper,
   secondWrapper,
   imageContainer,
-  learnMore,
+  learnMoreContainer,
+  arrowIconContainer,
   img,
   swapped,
 } from './product-card.module.scss';
 
 import Title from '@components/molecules/title';
 import CheckCard from '@components/molecules/check-card';
+import arrowIcon from '@images/arrowForward@2x.png';
 
 const ProductCard = ({ productName, title, description, list, image, isSwapped }) => {
   return (
@@ -29,7 +31,12 @@ const ProductCard = ({ productName, title, description, list, image, isSwapped }
             <CheckCard title={item.title} hasDescription description={item.description} />
           ))}
         </div>
-        <p className={learnMore}>Learn More</p>
+        <div className={learnMoreContainer}>
+          <div className={arrowIconContainer}>
+            <img src={arrowIcon} alt={title} />
+          </div>
+          <p>Learn More</p>
+        </div>
       </div>
       <div className={secondWrapper}>
         <div className={imageContainer}>

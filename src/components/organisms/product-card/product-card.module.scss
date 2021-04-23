@@ -18,7 +18,7 @@
       }
 
       h2 {
-        margin: 1.2rem 1rem 0 0;
+        margin: 1.2rem 1rem 2rem 0;
       }
 
       h4 {
@@ -28,11 +28,23 @@
       }
     }
 
-    .learnMore {
-      font-size: 2.5rem;
-      line-height: 2rem;
-      font-weight: var(--medium);
+    .learnMoreContainer {
+      display: flex;
+      align-items: center;
       margin-top: 4rem;
+
+      .arrowIconContainer {
+        width: 2.4rem;
+        height: 2.4rem;
+        padding: 0.4rem;
+        margin-right: 1rem;
+      }
+
+      p {
+        font-size: 2.5rem;
+        line-height: 2rem;
+        font-weight: var(--medium);
+      }
     }
 
     .listContainer {
