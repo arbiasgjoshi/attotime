@@ -1,5 +1,10 @@
 import React from 'react';
-import { container, roundImagesContainer, learnMoreContainer } from './timesheets.module.scss';
+import {
+  container,
+  roundImagesContainer,
+  checkListContainer,
+  learnMoreContainer,
+} from './timesheets.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FooterLinks } from '@locale/en.js';
 
@@ -148,7 +153,9 @@ const Timesheets = () => {
         subtitle="Spend more time on the things that matter with timesheets filled painlessly and on-time."
       />
       <Video />
-      <CheckList list={checkLists} />
+      <div className={checkListContainer}>
+        <CheckList list={checkLists} />
+      </div>
       <Divider />
       <Title
         title="Ready-made professional timesheets"

@@ -10,11 +10,11 @@ import Video from '@components/molecules/video';
 import CheckList from '@components/molecules/check-list';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import CheckListArticle from '@components/organisms/check-list-article';
-import Story from '@components/organisms/story';
 import { FooterLinks } from '@locale/en.js';
 import Footer from '@components/molecules/footer';
 
 import { container } from '@styles/main.module.scss';
+import { checkListContainer } from './gps-location-tracking.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import noImage from '@images/no-image.png';
@@ -69,7 +69,9 @@ const LocationTracking = () => {
         paragraph="GPS Location Tracking"
       />
       <Video />
-      <CheckList list={checkList1} />
+      <div className={checkListContainer}>
+        <CheckList list={checkList1} />
+      </div>
       <Divider />
       <Title title="Track the locations of your entire team in real-time" />
       <StaticImage

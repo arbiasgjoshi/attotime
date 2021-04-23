@@ -5,6 +5,7 @@ import {
   swap,
   textWrapper,
   descr2,
+  secondBlock,
   imageWrapper,
   img,
 } from './check-list-article.module.scss';
@@ -18,8 +19,10 @@ const CheckListArticle = ({ title, description, description2, list, image, isSwa
       {description2 && <h5 className={descr2}>{description2}</h5>}
       <CheckList list={list} smallStyled />
     </div>
-    <div className={imageWrapper}>
-      <img className={img} src={image} />
+    <div className={secondBlock}>
+      <div className={imageWrapper}>
+        <img className={img} src={image} />
+      </div>
     </div>
   </div>
 );

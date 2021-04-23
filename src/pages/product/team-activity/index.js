@@ -1,5 +1,5 @@
 import React from 'react';
-import { container, learnMoreContainer } from './team-activity.module.scss';
+import { container, learnMoreContainer, checkListContainer } from './team-activity.module.scss';
 
 import Divider from '@components/atoms/divider';
 import Header from '@components/molecules/header';
@@ -96,7 +96,9 @@ const TeamActivity = () => {
         title="Stay in the loop with everything happening in real-time"
       />
       <Video />
-      <CheckList list={titleList} />
+      <div className={checkListContainer}>
+        <CheckList list={titleList} />
+      </div>
       <Divider />
       <Title title="See where your team is, and what they're working on" />
       <Article

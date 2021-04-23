@@ -14,8 +14,6 @@
     width: 50%;
 
     h3 {
-      letter-spacing: -0.075rem;
-      line-height: 4.8rem;
       margin-bottom: 1.6rem;
     }
 
@@ -25,12 +23,11 @@
     }
   }
 
-  .imageWrapper {
+  .secondBlock {
     width: 50%;
     padding: 7.5rem;
 
-    img {
-      height: auto;
+    .imageWrapper {
     }
   }
 }

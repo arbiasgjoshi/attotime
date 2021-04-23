@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { container, textWrapper, imageWrapper, swap } from './article.module.scss';
+import { container, textWrapper, imageWrapper, secondBlock, swap } from './article.module.scss';
 
 const Article = ({ title, description, image, isSwapped = false }) => {
   return (
@@ -9,8 +9,10 @@ const Article = ({ title, description, image, isSwapped = false }) => {
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-      <div className={imageWrapper}>
-        <img src={image} />
+      <div className={secondBlock}>
+        <div className={imageWrapper}>
+          <img src={image} />
+        </div>
       </div>
     </div>
   );

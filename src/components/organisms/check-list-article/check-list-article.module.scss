@@ -5,7 +5,7 @@
   &.swap {
     flex-direction: row-reverse;
 
-    .imageWrapper {
+    .secondBlock {
       justify-content: flex-start;
     }
   }
@@ -15,6 +15,13 @@
     @include flex-direction(column);
     justify-content: center;
 
+    h4 {
+      margin-top: 0.4rem;
+      font-size: 2.6rem;
+      line-height: 3rem;
+      letter-spacing: -0.5px;
+    }
+
     .descr2 {
       color: var(--fifth-color);
       letter-spacing: -0.5px;
@@ -23,13 +30,13 @@
     }
   }
 
-  .imageWrapper {
+  .secondBlock {
     width: 50%;
     @include flex-align(center, flex-end);
 
-    .img {
-      max-height: 56.2rem;
-      max-width: 42.5rem;
+    .imageWrapper {
+      height: 60rem;
+      max-width: 50rem;
     }
   }
 }

@@ -5,8 +5,9 @@ import {
   textContainer,
   prdName,
   listContainer,
-  leftWrapper,
-  rightWrapper,
+  firstWrapper,
+  secondWrapper,
+  imageContainer,
   learnMore,
   img,
   swapped,
@@ -18,7 +19,7 @@ import CheckCard from '@components/molecules/check-card';
 const ProductCard = ({ productName, title, description, list, image, isSwapped }) => {
   return (
     <div className={`${container} ${isSwapped && swapped}`}>
-      <div className={leftWrapper}>
+      <div className={firstWrapper}>
         <div className={textContainer}>
           <p className={prdName}>{productName}</p>
           <Title leftAlign title={title} description={description} />
@@ -30,8 +31,10 @@ const ProductCard = ({ productName, title, description, list, image, isSwapped }
         </div>
         <p className={learnMore}>Learn More</p>
       </div>
-      <div className={rightWrapper}>
-        <img className={img} src={image} />
+      <div className={secondWrapper}>
+        <div className={imageContainer}>
+          <img className={img} src={image} />
+        </div>
       </div>
     </div>
   );

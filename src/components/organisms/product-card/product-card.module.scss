@@ -6,13 +6,25 @@
     flex-direction: row-reverse;
   }
 
-  .leftWrapper {
+  .firstWrapper {
     width: 50%;
 
     .textContainer {
       .prdName {
         font-size: 2rem;
+        line-height: 2rem;
+        letter-spacing: -0.5px;
         color: var(--primary-color);
+      }
+
+      h2 {
+        margin: 1.2rem 1rem 0 0;
+      }
+
+      h4 {
+        font-size: 2.6rem;
+        line-height: 3rem;
+        letter-spacing: -0.5px;
       }
     }
 
@@ -44,11 +56,11 @@
     }
   }
 
-  .rightWrapper {
+  .secondWrapper {
     width: 40%;
     @include flex-align(center, center);
 
-    .img {
+    .imageContainer {
       width: 50rem;
       height: 65rem;
     }
