@@ -2,16 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { StaticImage } from 'gatsby-plugin-image';
-import SubscribeForm from '@components/molecules/subscribe-form';
-import Icon from '@components/atoms/icon';
-import {
-  bannerWrapper,
-  textWrapper,
-  checkItems,
-  itemWrapper,
-  hasImage,
-  imgWrap,
-} from './subscribe.module.scss';
+import { bannerWrapper, textWrapper, hasImage, imgWrap } from './subscribe.module.scss';
+import EmailForm from '../../atoms/email-form';
 
 const SubscribeBanner = ({
   title,
@@ -38,21 +30,12 @@ const SubscribeBanner = ({
       <h3>{title}</h3>
       {subtitle && <h5>{subtitle}</h5>}
     </div>
-    <SubscribeForm placeholder={placeholder} />
-    <div className={checkItems}>
-      <div className={itemWrapper}>
-        <Icon iconClass="tick" />
-        <span>{checkItemOne}</span>
-      </div>
-      <div className={itemWrapper}>
-        <Icon iconClass="tick" />
-        <span>{checkItemTwo}</span>
-      </div>
-      <div className={itemWrapper}>
-        <Icon iconClass="tick" />
-        <span>{checkItemThree}</span>
-      </div>
-    </div>
+    <EmailForm
+      placeholder={placeholder}
+      checkItemOne={checkItemOne}
+      checkItemTwo={checkItemTwo}
+      checkItemThree={checkItemThree}
+    />
   </div>
 );
 
