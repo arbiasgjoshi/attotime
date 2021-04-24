@@ -7,6 +7,8 @@ import Title from '@components/molecules/title';
 import MainTitleCard from '@components/molecules/main-title-card';
 import IconCardList from '@components/organisms/icon-card-list';
 import Video from '@components/molecules/video';
+import Story from '@components/organisms/story';
+import Cover from '@components/organisms/growth-numbers/cover';
 import CheckList from '@components/molecules/check-list';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import FeaturesList from '@components/organisms/features-list';
@@ -24,6 +26,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import noImage from '@images/no-image.png';
 import image1 from '@images/verify-your-team.png';
+import authorImage from '@images/authorImage.png';
 
 import icon1 from '@images/timer.png';
 import icon2 from '@images/flag.png';
@@ -201,6 +204,18 @@ const LocationTracking = () => {
       </div>
       <Divider />
       <FeaturesList list={featuresList} />
+      <Divider />
+      <Cover isSwapped />
+      <Divider />
+      <Title
+        title="A work hours tracker for any industry"
+        description="Atto helps all types of bussinesses across the world to manage their employee's time"
+      />
+      <Story
+        img={authorImage}
+        paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
+        author="Robert Bennet - DPA Cleaning Services, Inc."
+      />
       <Divider />
       <SubscribeBanner
         title="Stay in control of what's happening with team activity updates!"

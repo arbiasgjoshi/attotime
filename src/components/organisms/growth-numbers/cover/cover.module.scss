@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
 
+  &.swap {
+    flex-direction: row-reverse;
+  }
+
   .leftBox {
     @include flex-align(center, center);
     flex-direction: column;

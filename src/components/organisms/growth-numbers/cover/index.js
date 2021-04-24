@@ -1,8 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
-import { container, leftBox, iconWrapper, imageWrapper } from './cover.module.scss';
-const Cover = () => (
-  <div className={container}>
+import { container, swap, leftBox, iconWrapper, imageWrapper } from './cover.module.scss';
+
+const Cover = ({ isSwapped = false }) => (
+  <div className={`${container} ${isSwapped && swap}`}>
     <div className={leftBox}>
       <div className={iconWrapper}>
         <StaticImage width={48} height={57} src="../../../../images/verifiedShield.svg" />
@@ -18,5 +20,9 @@ const Cover = () => (
     />
   </div>
 );
+
+Cover.propTypes = {
+  isSwapped: PropTypes.bool,
+};
 
 export default Cover;
