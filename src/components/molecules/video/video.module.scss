@@ -1,15 +1,13 @@
 .imageContainer {
   display: flex;
+  justify-content: space-between;
   height: 48.9rem;
   position: relative;
   padding: 4.5rem 0;
   margin: 7rem 0;
 
-  .videoBackground {
-    width: 100%;
-  }
-
   .videoPlaceholder {
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.5);
     border: 2px solid #efefef;
     border-radius: 16px;
     margin: 0 auto;
@@ -18,7 +16,7 @@
     right: 8.9rem;
     top: 0;
     bottom: 0;
-    opacity: 0.2;
+    opacity: 0.25;
   }
 
   .imagePlayer {

@@ -159,8 +159,8 @@ const Pricing = () => {
         description={`30+ more features included in our Premium & Enterprise Plans`}
       />
       <div className={featuresBanner}>
-        <StaticImage src="../../images/video-background.svg" width={1140} height={328} />
-        <Button btnText="View All Features" btnStyle="wide" />
+        <StaticImage src="../../images/video-background@2x.png" width={1140} height={328} />
+        <Button btnText="View All Features" />
       </div>
       <Divider className="medium" />
       <Story

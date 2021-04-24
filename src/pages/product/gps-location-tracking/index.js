@@ -75,7 +75,8 @@ const LocationTracking = () => {
       <Divider />
       <Title title="Track the locations of your entire team in real-time" />
       <StaticImage
-        src="../../../images/track-team-locations.svg"
+        style={{ marginTop: '-3rem' }}
+        src="../../../images/track-team-locations@2x.png"
         alt="location of team"
         width={1140}
         height={312}

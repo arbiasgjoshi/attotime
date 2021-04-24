@@ -82,6 +82,7 @@
         @include flex-align(center, space-between);
 
         .plus {
+          cursor: pointer;
           height: 2.4rem;
           width: 2.4rem;
           @include flex-align(center, center);

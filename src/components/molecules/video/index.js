@@ -15,17 +15,24 @@ const Video = () => (
   <div className={imageContainer}>
     <StaticImage
       className={videoBackground}
-      width={1120}
-      height={355}
+      width={118}
+      height={301}
       alt="Video placeholder"
-      src="../../../images/video-background@2x.png"
+      src="../../../images/grey-copy@2x.png"
     />
     <StaticImage
       className={videoPlaceholder}
       width={952}
       height={485}
       alt="Video placeholder"
-      src="../../../images/video-placeholder@2x.png"
+      src="../../../images/video_placeholder@2x.png"
+    />
+    <StaticImage
+      className={videoBackground}
+      width={118}
+      height={301}
+      alt="Video placeholder"
+      src="../../../images/grey-copy@2x.png"
     />
     <div className={imagePlayer}>
       <Icon iconClass="play" fSize={11} />
