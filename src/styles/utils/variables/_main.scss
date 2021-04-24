@@ -40,6 +40,7 @@
   --h4-line-height-size: 4rem;
   --h5-line-height-size: 3rem;
   --h6-line-height-size: 2rem;
+
   --body-style-one-line-height-size: 4rem;
   --body-style-two-line-height-size: 3rem;
   --body-style-three-line-height-size: 3rem;
@@ -52,33 +53,37 @@
   --h4-font-weight: var(--semi-bold);
   --h5-font-weight: var(--semi-bold);
   --h6-font-weight: var(--semi-bold);
-  --body-style-one-font-weight: (var(--regular));
-  --body-style-two-font-weight: (var(--regular));
-  --body-style-three-font-weight: (var(--regular));
-  --body-style-four-font-weight: (var(--regular));
-  --body-style-five-font-weight: (var(--regular));
+
+  --body-style-one-font-weight: var(--regular);
+  --body-style-two-font-weight: var(--regular);
+  --body-style-three-font-weight: var(--regular);
+  --body-style-four-font-weight: var(--regular);
+  --body-style-five-font-weight: var(--regular);
 
   --h1-letter-spacing: -0.1rem;
   --h2-letter-spacing: -0.1rem;
   --h3-letter-spacing: -0.075rem;
   --h4-letter-spacing: -0.05rem;
-  --h5-letter-spacing: -0.05rem;
-  --h6-letter-spacing: -0.05rem;
+  --h5-letter-spacing: -0.025rem;
+  --h6-letter-spacing: 0;
+
   --body-style-one-letter-spacing: -0.05rem;
-  --body-style-two-letter-spacing: -0.05rem;
-  --body-style-three-letter-spacing: -0.05rem;
-  --body-style-four-letter-spacing: -0.05rem;
-  --body-style-five-letter-spacing: -0.05rem;
+  --body-style-two-letter-spacing: 0;
+  --body-style-three-letter-spacing: 0;
+  --body-style-four-letter-spacing: 0;
+  --body-style-five-letter-spacing: 0;
 
   --text-size: 1.6rem;
   --desc-size: 0.9rem;
 
+  // TODO Careful with mobile sizes, we will have new styles for these
   --h1-mobile-size: calc(var(--h1-size) * 0.66667);
   --h2-mobile-size: calc(var(--h2-size) * 0.66667);
   --h3-mobile-size: calc(var(--h3-size) * 0.66667);
   --h4-mobile-size: calc(var(--h4-size) * 0.66667);
   --h5-mobile-size: calc(var(--h5-size) * 0.66667);
   --h6-mobile-size: calc(var(--h6-size) * 0.66667);
+
   --body-style-one-mobile-size: calc(var(--body-style-one) * 0.66667);
   --body-style-two-mobile-size: calc(var(--body-style-two) * 0.66667);
   --body-style-three-mobile-size: calc(var(--body-style-three) * 0.66667);
@@ -91,6 +96,7 @@
   --h4-mobile-line-height-size: calc(var(--h4-line-height-size) * 0.66667);
   --h5-mobile-line-height-size: calc(var(--h5-line-height-size) * 0.66667);
   --h6-mobile-line-height-size: calc(var(--h6-line-height-size) * 0.66667);
+
   --body-style-one-mobile-size: calc(var(--body-style-one-line-height-size) * 0.66667);
   --body-style-two-mobile-size: calc(var(--body-style-two-line-height-size) * 0.66667);
   --body-style-three-mobile-size: calc(var(--body-style-three-line-height-size) * 0.66667);
