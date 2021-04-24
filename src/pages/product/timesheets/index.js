@@ -19,7 +19,7 @@ import Video from '@components/molecules/video';
 import Title from '@components/molecules/title';
 import CheckList from '@components/molecules/check-list';
 import FeaturesList from '@components/organisms/features-list';
-import CheckListArticle from '@components/organisms/check-list-article';
+import ListArticle from '@components/organisms/list-article';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import IconCardList from '@components/organisms/icon-card-list';
 import GrowthNumbers from '@components/organisms/growth-numbers';
@@ -170,14 +170,14 @@ const Timesheets = () => {
       <Divider className="medium" />
       <IconCardList cardList={firstList} />
       <Divider />
-      <CheckListArticle
+      <ListArticle
         title="Boost productivity with timesheet insights"
         description="Work smarter, not longer. Use timesheet reports to filter all the work done by each employee, team, or towards specific category of job."
         list={checkLists2}
         image={photo1}
       />
       <Divider />
-      <CheckListArticle
+      <ListArticle
         title="Gain a clear understanding of your employyes' activity"
         description="Atto uses employee' timesheet data to generate clear, simple timelines of everyone's daily activity. Now it's much easier to understand their working patterns, and far quicker to review timesheets."
         list={checkLists3}

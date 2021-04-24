@@ -130,7 +130,9 @@ const TeamActivity = () => {
       />
       <Divider />
       <Title title="Our full suite of team activity features at a glance" />
-      <FeaturesList list={featureList} />
+      <div style={{ marginTop: '10rem' }}>
+        <FeaturesList list={featureList} />
+      </div>
       <Divider />
       <Services title="Time Tracking solution for any industry" list={serviceList} />
       <Divider />

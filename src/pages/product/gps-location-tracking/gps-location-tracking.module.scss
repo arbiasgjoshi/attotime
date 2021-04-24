@@ -1,3 +1,22 @@
 .checkListContainer {
   margin: 0 8.5rem;
 }
+
+.privacyContainer {
+  display: flex;
+
+  > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
+
+    h5 {
+      margin: 0 !important;
+    }
+  }
+
+  .imageContainer {
+    width: 50%;
+    @include flex-align(flex-start, flex-end);
+  }
+}

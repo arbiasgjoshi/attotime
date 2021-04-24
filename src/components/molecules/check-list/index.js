@@ -7,7 +7,7 @@ import { container, hasDescr, smallCardStyle } from './check-list.module.scss';
 
 const CheckList = ({ list, hasDescription = false, smallStyled = false }) => (
   <div className={`${container} ${hasDescription && hasDescr} ${smallStyled && smallCardStyle}`}>
-    {list.map(({ title, description, id }) => (
+    {list?.map(({ title, description, id }) => (
       <CheckCard
         key={id}
         hasDescription={hasDescription}
@@ -20,7 +20,7 @@ const CheckList = ({ list, hasDescription = false, smallStyled = false }) => (
 );
 
 CheckList.propTypes = {
-  list: PropTypes.string,
+  list: PropTypes.string.isRequired,
   hasDescription: PropTypes.bool,
 };
 
