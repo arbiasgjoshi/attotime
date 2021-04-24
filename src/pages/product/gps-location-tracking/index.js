@@ -165,8 +165,9 @@ const LocationTracking = () => {
         style={{ marginTop: '-3rem' }}
         src="../../../images/track-team-locations@2x.png"
         alt="location of team"
-        width={1140}
-        height={312}
+        width={1056}
+        height={316}
+        quality={95}
       />
       <Divider className="smallest" />
       <IconCardList noImage cardList={cardList} />
