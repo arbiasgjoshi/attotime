@@ -35,7 +35,7 @@ const ProductCard = ({ productName, title, description, list, image, isSwapped }
           <div className={arrowIconContainer}>
             <img src={arrowIcon} alt={title} />
           </div>
-          <p>Learn More</p>
+          <h5>Learn More</h5>
         </div>
       </div>
       <div className={secondWrapper}>
