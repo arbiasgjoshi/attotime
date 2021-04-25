@@ -4,10 +4,14 @@ import HeaderComponent from '@components/molecules/header';
 import SEO from '@components/molecules/seo';
 import { FooterLinks } from '@locale/en.js';
 import FooterComponent from '@components/molecules/footer';
+import Divider from '@components/atoms/divider';
 import Title from '@components/molecules/title';
 import MainTitle from '@components/molecules/main-title-card';
 import EmailForm from '@components/atoms/email-form';
+import FeatureTabs from '@components/organisms/feature-tabs';
 import { container } from '@styles/main.module.scss';
+
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Home = () => (
   <div className={container}>
@@ -24,6 +28,16 @@ const Home = () => (
       checkItemThree="Cancel anytime"
       style="homepage"
     />
+    <Divider className="smallest" />
+    <StaticImage
+      src={'../images/banner-image-2@2x.png'}
+      alt="Home banner image"
+      width={1140}
+      height={485}
+    />
+    <Divider medium />
+    {/* SLIDER */}
+    <FeatureTabs />
     <FooterComponent FooterLinks={FooterLinks} />
   </div>
 );

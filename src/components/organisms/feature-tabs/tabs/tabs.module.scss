@@ -1,0 +1,18 @@
+.container {
+  .listContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6.5rem;
+    height: 6.5rem;
+    border-bottom: 0.2rem solid #efefef;
+
+    .item {
+      cursor: pointer;
+
+      &.isActive {
+        color: #00b9cb;
+        border-bottom: 4px solid #00b9cb;
+      }
+    }
+  }
+}
