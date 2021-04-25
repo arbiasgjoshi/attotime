@@ -13,6 +13,7 @@ import CheckList from '@components/molecules/check-list';
 import MainTitle from '@components/molecules/main-title-card';
 import EmailForm from '@components/atoms/email-form';
 import FeatureTabs from '@components/organisms/feature-tabs';
+import FreeTrial from '@components/organisms/free-trial';
 import { container } from '@styles/main.module.scss';
 
 import { StaticImage } from 'gatsby-plugin-image';
@@ -26,6 +27,14 @@ const titleList = [
   { title: 'Cutting payroll costs with accurate time entries.', id: '1asdd1b' },
   { title: 'Staying in the loop without constan check-ins', id: '1asdd1c' },
   { title: 'Saving hours of admin with instanly-generated timesheets.', id: '1asdd1d' },
+];
+
+const checkList = [
+  { title: 'Avoid guesswork with accurate time-tracking' },
+  { title: 'Increase employee accountability and safety' },
+  { title: 'Stay in the loop without constant check-ins' },
+  { title: 'Enjoy hassle-free automated employee timesheets' },
+  { title: 'Streamline the entire payroll process' },
 ];
 
 const Home = () => (
@@ -94,12 +103,19 @@ const Home = () => (
       <Number title={'250 million+'} description="Minutes Tracked" />
     </div>
     <Divider />
+    <Title title="Hear what business owners say about Atto" />
+    <Divider className="medium" />
     <Story
       img={authorImage}
       paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
       author="Robert Bennet - DPA Cleaning Services, Inc."
     />
     <Divider />
+    <FreeTrial
+      title="No time to waste!"
+      description="Stay in control of your employees' time."
+      list={checkList}
+    />
     <FooterComponent FooterLinks={FooterLinks} />
   </div>
 );

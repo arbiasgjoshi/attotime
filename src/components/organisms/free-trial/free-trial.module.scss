@@ -1,0 +1,40 @@
+.container {
+  padding: 8.3rem 7rem 5.7rem 7rem;
+  background-color: #e6f8fa;
+  display: flex;
+
+  .firstBox {
+    width: 36rem;
+    margin-right: 10rem;
+
+    h4 {
+      margin-top: 1rem;
+      margin-bottom: 4.1rem;
+      font-weight: var(--regular);
+    }
+
+    > input {
+      width: 100%;
+      border: 2px solid #000000;
+      margin-bottom: 2rem;
+    }
+
+    > button {
+      width: 100%;
+    }
+  }
+
+  .listWrapper {
+    > div {
+      margin-bottom: 2rem;
+
+      > div {
+        margin-top: 0;
+      }
+
+      i {
+        background-color: transparent;
+      }
+    }
+  }
+}
