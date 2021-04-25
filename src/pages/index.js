@@ -12,6 +12,7 @@ import FeatureTabs from '@components/organisms/feature-tabs';
 import { container } from '@styles/main.module.scss';
 
 import { StaticImage } from 'gatsby-plugin-image';
+import CommentCard from '@components/molecules/comment-card';
 
 const Home = () => (
   <div className={container}>
@@ -35,7 +36,28 @@ const Home = () => (
       width={1140}
       height={485}
     />
-    <Divider medium />
+    <Divider className="medium" />
+    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <CommentCard
+        title={`Amazing for my business!`}
+        description={`Super convenient and easy to use, so happy I've found Atto! Highly reccomend`}
+        date="23 Jul"
+        author="Nita Ora"
+      />
+      <CommentCard
+        title={`Amazing for my business!`}
+        description={`Super convenient and easy to use, so happy I've found Atto! Highly reccomend`}
+        date="23 Jul"
+        author="Nita Ora"
+      />
+      <CommentCard
+        title={`Amazing for my business!`}
+        description={`Super convenient and easy to use, so happy I've found Atto! Highly reccomend`}
+        date="23 Jul"
+        author="Nita Ora"
+      />
+    </div>
+    <Divider className="medium" />
     {/* SLIDER */}
     <FeatureTabs />
     <FooterComponent FooterLinks={FooterLinks} />
