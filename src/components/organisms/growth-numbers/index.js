@@ -7,9 +7,9 @@ const GrowthNumbers = () => (
   <div className={container}>
     <Cover />
     <div className={cardList}>
-      <NumberCard title="150,000+" description="Employees have signed up" />
-      <NumberCard hasBorder title="10,000,000+" description="Hours tracked accurately" />
-      <NumberCard hasBorder title="500,000+" description="Jobs completed" />
+      <NumberCard hasPadding title="150,000+" description="Employees have signed up" />
+      <NumberCard hasPadding hasBorder title="10,000,000+" description="Hours tracked accurately" />
+      <NumberCard hasPadding hasBorder title="500,000+" description="Jobs completed" />
     </div>
   </div>
 );
