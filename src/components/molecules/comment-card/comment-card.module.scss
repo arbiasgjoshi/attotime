@@ -1,10 +1,16 @@
 .container {
-  width: 30rem;
   height: auto;
-  padding: 3.2rem;
   border-radius: 8px;
   background-color: #ffffff;
+  padding: 1.5rem;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+
+  @include min(tablet) {
+    margin: 0;
+    width: 30rem;
+    padding: 3.2rem;
+  }
 
   .starsWrapper {
     width: 100%;

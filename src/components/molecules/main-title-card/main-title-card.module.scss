@@ -1,8 +1,11 @@
 .container {
   text-align: center;
-  margin: 0 12rem;
   @include flex-direction(column);
   align-items: center;
+
+  @include min(tablet) {
+    margin: 0 12rem;
+  }
 
   .headerContainer {
     margin-bottom: 5rem;

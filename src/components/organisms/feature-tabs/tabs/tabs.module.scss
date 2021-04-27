@@ -2,9 +2,13 @@
   .listContainer {
     display: flex;
     justify-content: space-between;
-    padding: 0 6.5rem;
     height: 6.5rem;
     border-bottom: 0.2rem solid #efefef;
+    padding: 0 1rem;
+
+    @include min(tablet) {
+      padding: 0 6.5rem;
+    }
 
     .item {
       cursor: pointer;
