@@ -1,10 +1,15 @@
 .container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 4.5rem;
+  row-gap: 2rem;
 
-  &.gapStyle {
-    row-gap: 10rem;
+  @include min(tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4.5rem;
+    row-gap: 0;
+
+    &.gapStyle {
+      row-gap: 10rem;
+    }
   }
 }
