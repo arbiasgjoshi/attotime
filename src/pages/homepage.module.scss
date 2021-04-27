@@ -19,10 +19,17 @@
 .numbers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 0 3rem;
+  row-gap: 1rem;
+
+  > div:nth-child(even) {
+    text-align: right;
+  }
 
   @include min(tablet) {
     flex-direction: row;
     padding: 7.2rem 0;
+    row-gap: 0;
     display: flex;
     justify-content: space-between;
     border-top: 2px solid #e3e3e3;
