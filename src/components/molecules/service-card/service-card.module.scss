@@ -4,7 +4,12 @@
   height: 16rem;
   width: calc(50% - 2.4rem);
   margin: 1.2rem;
-  padding: 0 2rem 0 3.2rem;
+  padding: 0 1rem 0 0.7rem;
+
+  @include min(tablet) {
+    padding: 0 2rem 0 3.2rem;
+  }
+
   .textContainer {
     .cardNumber {
       font-size: 1.5rem;

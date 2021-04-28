@@ -1,11 +1,18 @@
 .container {
-  padding: 8.3rem 7rem 5.7rem 7rem;
   background-color: #e6f8fa;
-  display: flex;
+  @include flex-direction(column);
+
+  @include min(tablet) {
+    flex-direction: row;
+    padding: 8.3rem 7rem 5.7rem 7rem;
+  }
 
   .firstBox {
-    width: 36rem;
-    margin-right: 10rem;
+    padding: 0 4rem;
+    @include min(tablet) {
+      width: 36rem;
+      margin-right: 10rem;
+    }
 
     h4 {
       margin-top: 1rem;
@@ -25,8 +32,16 @@
   }
 
   .listWrapper {
+    padding: 0 4rem;
+
+    @include min(tablet) {
+      padding: 0;
+    }
+
     > div {
-      margin-bottom: 2rem;
+      @include min(tablet) {
+        margin-bottom: 2rem;
+      }
 
       > div {
         margin-top: 0;

@@ -1,10 +1,11 @@
 .container {
   max-width: 114rem;
-  // margin: 0 15rem;
   margin: 0 auto;
 
   .checkListContainer {
-    margin: 0 8.5rem;
+    @include min(tablet) {
+      margin: 0 8.5rem;
+    }
   }
 
   .learnMoreContainer {
@@ -12,20 +13,37 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include max(tablet) {
+      padding: 0 1rem;
+
+      > div {
+        margin-bottom: 1rem;
+      }
+    }
   }
 
   .workListContainer {
+    @include flex-direction(column);
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 8rem;
-    margin-left: 2rem;
-    margin-right: 5.8rem;
+
+    @include min(tablet) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 8rem;
+      margin-left: 2rem;
+      margin-right: 5.8rem;
+    }
   }
 
   .commonProblemsContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 4.5rem;
+    row-gap: 2rem;
+
+    @include min(tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 4.5rem;
+      row-gap: 0;
+    }
   }
 }

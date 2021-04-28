@@ -1,8 +1,10 @@
 .container {
   .featuresContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 3rem;
-    row-gap: 7rem;
+    @include min(tablet) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 3rem;
+      row-gap: 7rem;
+    }
   }
 }

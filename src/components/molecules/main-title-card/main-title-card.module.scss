@@ -1,11 +1,19 @@
 .container {
   text-align: center;
-  margin: 0 12rem;
   @include flex-direction(column);
   align-items: center;
+  margin: 0 1rem;
+
+  @include min(tablet) {
+    margin: 0 12rem;
+  }
 
   .headerContainer {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+
+    @include min(tablet) {
+      margin-bottom: 5rem;
+    }
 
     .smallParagraph {
       color: var(--primary-color);

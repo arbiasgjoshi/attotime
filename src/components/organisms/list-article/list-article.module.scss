@@ -1,9 +1,15 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  @include flex-direction(column);
+
+  @include min(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &.swap {
-    flex-direction: row-reverse;
+    @include min(tablet) {
+      flex-direction: row-reverse;
+    }
 
     .secondBlock {
       justify-content: flex-start;
@@ -11,9 +17,12 @@
   }
 
   .textWrapper {
-    width: 50%;
     @include flex-direction(column);
     justify-content: center;
+
+    @include min(tablet) {
+      width: 50%;
+    }
 
     h4 {
       margin-top: 0.4rem;
@@ -31,12 +40,20 @@
   }
 
   .secondBlock {
-    width: 50%;
     @include flex-align(center, flex-end);
 
+    @include min(tablet) {
+      width: 50%;
+    }
+
     .imageWrapper {
-      height: 60rem;
-      max-width: 50rem;
+      margin-top: 2rem;
+
+      @include min(tablet) {
+        margin-top: 0;
+        height: 60rem;
+        max-width: 50rem;
+      }
     }
   }
 }

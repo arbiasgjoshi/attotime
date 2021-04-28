@@ -1,21 +1,29 @@
 .container {
-  &.padded {
-    padding: 2.9rem 0 2.9rem 3.5rem;
+  margin: 0.75rem;
+
+  @include min(tablet) {
+    margin: 0;
   }
 
-  .mainTitle {
-    font-size: 4.4rem;
-  }
+  @include min(tablet) {
+    &.padded {
+      padding: 2.9rem 0 2.9rem 3.5rem;
+    }
 
-  &.border {
-    border-left: 0.3rem solid #efefef;
-    border-radius: 0.1rem;
-  }
+    .mainTitle {
+      font-size: 4.4rem;
+    }
 
-  h5 {
-    margin-top: 0.4rem;
-    font-size: var(--body-style-two);
-    font-weight: var(--body-style-two-font-weight);
-    line-height: var(--body-style-two-line-height-size);
+    &.border {
+      border-left: 0.3rem solid #efefef;
+      border-radius: 0.1rem;
+    }
+
+    h5 {
+      margin-top: 0.4rem;
+      font-size: var(--body-style-two);
+      font-weight: var(--body-style-two-font-weight);
+      line-height: var(--body-style-two-line-height-size);
+    }
   }
 }

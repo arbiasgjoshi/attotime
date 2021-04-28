@@ -1,15 +1,31 @@
 .container {
-  display: flex;
+  @include flex-direction(column);
   justify-content: space-between;
 
+  @include min(tablet) {
+    flex-direction: row;
+  }
+
   &.swapped {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+
+    @include min(tablet) {
+      flex-direction: row-reverse;
+    }
   }
 
   .firstWrapper {
-    width: 50%;
+    @include min(tablet) {
+      width: 50%;
+    }
 
     .textContainer {
+      margin: 1rem;
+
+      @include min(tablet) {
+        margin: 0;
+      }
+
       .prdName {
         font-size: 2rem;
         line-height: 2rem;
@@ -18,7 +34,9 @@
       }
 
       h2 {
-        margin: 1.2rem 1rem 2rem 0;
+        @include min(tablet) {
+          margin: 1.2rem 1rem 2rem 0;
+        }
       }
 
       h4 {
@@ -29,9 +47,14 @@
     }
 
     .learnMoreContainer {
+      margin-left: 2rem;
       display: flex;
       align-items: center;
       margin-top: 4rem;
+
+      @include min(tablet) {
+        margin-left: 0;
+      }
 
       .arrowIconContainer {
         width: 2.4rem;
@@ -62,12 +85,18 @@
   }
 
   .secondWrapper {
-    width: 40%;
+    @include min(tablet) {
+      width: 50%;
+    }
     @include flex-align(center, center);
 
     .imageContainer {
-      width: 50rem;
-      height: 65rem;
+      width: 22rem;
+
+      @include min(tablet) {
+        width: 50rem;
+        height: 65rem;
+      }
     }
   }
 }
