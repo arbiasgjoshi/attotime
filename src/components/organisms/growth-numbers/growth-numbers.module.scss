@@ -2,9 +2,16 @@
   border-left: 0.3rem solid #efefef;
 
   .cardList {
-    width: 100%;
-    margin-top: 6.6rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin: 3rem 0 0 0;
+
+    @include min(tablet) {
+      margin: 0;
+      text-align: left;
+      width: 100%;
+      margin-top: 6.6rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }

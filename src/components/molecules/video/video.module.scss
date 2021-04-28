@@ -4,7 +4,11 @@
   height: 48.9rem;
   position: relative;
   padding: 4.5rem 0;
-  margin: 7rem 0;
+  margin: 4rem 0;
+
+  @include min(tablet) {
+    margin: 7rem 0;
+  }
 
   .videoPlaceholder {
     box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.5);

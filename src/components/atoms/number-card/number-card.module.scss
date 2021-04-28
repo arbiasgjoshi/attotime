@@ -1,4 +1,6 @@
 .container {
+  margin: 0.75rem;
+
   @include min(tablet) {
     margin: 0;
   }

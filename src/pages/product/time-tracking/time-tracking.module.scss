@@ -13,15 +13,27 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include max(tablet) {
+      padding: 0 1rem;
+
+      > div {
+        margin-bottom: 1rem;
+      }
+    }
   }
 
   .workListContainer {
+    @include flex-direction(column);
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 8rem;
-    margin-left: 2rem;
-    margin-right: 5.8rem;
+
+    @include min(tablet) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 8rem;
+      margin-left: 2rem;
+      margin-right: 5.8rem;
+    }
   }
 
   .commonProblemsContainer {

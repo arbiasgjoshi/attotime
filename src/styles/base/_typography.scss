@@ -12,7 +12,8 @@ $heading-sizes: (
   h6 var(--h6-size) var(--h6-mobile-size) var(--h6-font-weight) var(--h6-line-height-size)
     var(--h6-mobile-line-height-size) var(--h6-letter-spacing),
   p var(--body-style-three) var(--body-style-three-mobile-size) var(--body-style-three-font-weight)
-    var(--body-style-three-line-height-size) var(--body-style-three-letter-spacing)
+    var(--body-style-three-line-height-size) var(--body-style-one-mobile-line-height)
+    var(--body-style-three-letter-spacing)
 );
 
 $backup-fonts: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Noto Sans',

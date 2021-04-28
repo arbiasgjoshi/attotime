@@ -4,8 +4,11 @@
 
   @include min(tablet) {
     flex-direction: row;
-    margin: 0 8rem;
     justify-content: space-between;
+  }
+
+  @include min(laptop) {
+    margin: 0 8rem;
   }
 }
 

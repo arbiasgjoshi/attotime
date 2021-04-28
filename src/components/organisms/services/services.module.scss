@@ -1,5 +1,11 @@
 .container {
-  display: flex;
+  @include flex-direction(column);
+  padding: 0 1rem;
+
+  @include min(tablet) {
+    padding: 0;
+    flex-direction: row;
+  }
 
   .textContainer {
     margin-top: 17.5rem;
