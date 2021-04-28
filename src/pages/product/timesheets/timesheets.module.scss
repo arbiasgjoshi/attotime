@@ -11,9 +11,19 @@
   }
 
   .roundImagesContainer {
-    margin-top: -0.8rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    > div {
+      margin-bottom: 2rem;
+    }
+
+    @include min(tablet) {
+      margin-top: -0.8rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      > div {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .learnMoreContainer {
@@ -23,6 +33,8 @@
   }
 
   .checkListContainer {
-    margin: 0 8.5rem;
+    @include min(tablet) {
+      margin: 0 8.5rem;
+    }
   }
 }

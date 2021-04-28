@@ -2,7 +2,11 @@
   width: 100%;
   text-align: center;
   padding: 0 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+
+  @include min(tablet) {
+    margin-bottom: 4rem;
+  }
 
   @include min(tablet) {
     padding: 0;
@@ -11,7 +15,10 @@
 
   &.leftAligned {
     text-align: left;
-    margin-bottom: 4rem;
+
+    @include min(tablet) {
+      margin-bottom: 4rem;
+    }
 
     .descriptionWrapper {
       text-align: left;
@@ -23,7 +30,11 @@
   }
 
   .descriptionWrapper {
-    text-align: center;
     font-weight: var(--regular);
+    text-align: left;
+
+    @include min(tablet) {
+      text-align: center;
+    }
   }
 }

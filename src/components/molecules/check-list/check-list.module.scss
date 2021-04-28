@@ -22,6 +22,10 @@
   }
 
   &.smallCardStyle {
-    padding: 0;
+    padding: 0 1rem;
+
+    @include min(tablet) {
+      padding: 0;
+    }
   }
 }
