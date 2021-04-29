@@ -9,6 +9,8 @@
   }
 
   .checkListContainer {
-    margin: 0 8.5rem;
+    @include min(tablet) {
+      margin: 0 8.5rem;
+    }
   }
 }

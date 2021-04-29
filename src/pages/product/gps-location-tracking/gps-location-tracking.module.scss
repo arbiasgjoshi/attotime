@@ -1,9 +1,15 @@
 .checkListContainer {
-  margin: 0 8.5rem;
+  @include min(tablet) {
+    margin: 0 8.5rem;
+  }
 }
 
 .privacyContainer {
-  display: flex;
+  @include flex-direction(column-reverse);
+
+  @include min(tablet) {
+    flex-direction: row;
+  }
 
   > div:nth-child(1) {
     display: flex;
@@ -16,7 +22,14 @@
   }
 
   .imageContainer {
-    width: 50%;
-    @include flex-align(flex-start, flex-end);
+    padding: 3rem;
+    margin-bottom: 2rem;
+
+    @include min(tablet) {
+      padding: 0;
+      margin: 0;
+      width: 50%;
+      @include flex-align(flex-start, flex-end);
+    }
   }
 }
