@@ -1,17 +1,30 @@
 .container {
-  display: flex;
+  @include flex-direction(column);
   align-items: center;
+  margin: 1rem;
+
+  @include min(tablet) {
+    flex-direction: row;
+    margin: 0;
+  }
 
   &.swap {
-    flex-direction: row-reverse;
+    @include min(tablet) {
+      flex-direction: row-reverse;
 
-    .textWrapper {
-      margin: 9rem 0 9rem 9rem;
+      .textWrapper {
+        margin: 9rem 0 9rem 9rem;
+      }
     }
   }
 
   .textWrapper {
-    width: 50%;
+    margin-bottom: 1rem;
+
+    @include min(tablet) {
+      margin: 0;
+      width: 50%;
+    }
 
     h3 {
       margin-bottom: 1.6rem;
@@ -23,8 +36,10 @@
   }
 
   .secondBlock {
-    width: 50%;
-    padding: 7.5rem;
+    @include min(tablet) {
+      width: 50%;
+      padding: 7.5rem;
+    }
 
     .imageWrapper {
     }
