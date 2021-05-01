@@ -21,15 +21,23 @@
   }
 
   &.hasImage {
-    margin-top: 35rem;
+    margin-top: 15rem;
+
+    @include min(tablet) {
+      margin-top: 35rem;
+    }
 
     .imgWrap {
       position: absolute;
       left: 0;
-      top: -35rem;
+      top: -18rem;
       max-width: 100%;
       height: auto;
       z-index: -1;
+
+      @include min(tablet) {
+        top: -35rem;
+      }
     }
   }
 }

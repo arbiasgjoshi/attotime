@@ -1,20 +1,38 @@
 .packageWrapper {
-  display: flex;
+  @include flex-direction(column);
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: -1.6rem;
+
+  @include min(tablet) {
+    flex-direction: row;
+  }
 }
 
 .priceHeader {
   @include flex-align(flex-start, space-between);
+  @include flex-direction(column);
+  text-align: center;
+
+  @include min(tablet) {
+    flex-direction: row;
+  }
 
   .rightSide {
+    @include max(tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
     .buttonContainer {
       margin-top: 1rem;
       display: flex;
       height: 5rem;
-      width: 25.2rem;
       border-radius: 2.5rem;
+      width: 25.2rem;
       background-color: rgba(0, 185, 203, 0.1);
 
       button {
@@ -39,7 +57,10 @@
     p {
       margin-top: 1.6rem;
       text-align: right;
-      padding-right: 2rem;
+
+      @include min(tablet) {
+        padding-right: 2rem;
+      }
     }
   }
 }
@@ -63,12 +84,19 @@
 }
 
 .questionsContainer {
-  margin: 0 12rem;
+  @include min(tablet) {
+    margin: 0 12rem;
+  }
 
   .list {
-    padding: 0 5rem;
-    margin-top: -1rem;
     box-sizing: border-box;
+    margin-bottom: 1rem;
+
+    @include min(tablet) {
+      padding: 0 5rem;
+      margin-top: -1rem;
+      margin-bottom: 0;
+    }
 
     .item {
       padding: 2.3rem 3rem;

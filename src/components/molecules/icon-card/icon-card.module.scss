@@ -20,9 +20,13 @@
     }
 
     &.bigImageStyle {
-      @include flex-align(center, flex-start);
+      @include flex-align(center, center);
       width: unset;
       height: unset;
+
+      @include min(tablet) {
+        justify-content: flex-start;
+      }
     }
   }
 
