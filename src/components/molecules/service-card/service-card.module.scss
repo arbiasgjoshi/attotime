@@ -1,45 +1,29 @@
 .container {
-  @include flex-align(center, flex-start);
-  @include flex-direction(column);
-  border: 1px solid #efefef;
-  height: 16rem;
-  width: calc(50% - 2.4rem);
-  margin: 1.2rem;
-  padding: 0 1rem 0 0.7rem;
+  @include flex-align(center, center);
+  border-radius: 4px;
+  background-color: #e6f8fa;
+  margin-bottom: 1rem;
+  height: 10rem;
+
   @include min(tablet) {
-    padding: 0 2rem 0 3.2rem;
-    flex-direction: row;
+    justify-content: flex-start;
+    height: 12.4rem;
+    width: 36.4rem;
+  }
+
+  .iconWrapper {
+    @include flex-align(center, center);
+    height: 6rem;
+    width: 6rem;
+    padding: 1.6rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
   }
 
   .textContainer {
-    .cardNumber {
-      font-size: 1.5rem;
-      line-height: 1.5rem;
-      color: #999999;
-      margin-top: -1.7rem;
-      display: inline-flex;
-    }
-
-    .cardTitle {
-      height: 4rem;
-      font-weight: var(--semi-bold);
-      font-size: 2.5rem;
-      letter-spacing: -0.05rem;
-      line-height: 4rem;
-    }
-  }
-
-  .imageWrapper {
-    width: 9rem;
-    height: 9rem;
-    @include flex-align(center, center);
-
-    @include min(tablet) {
-      margin-left: auto;
-    }
-
-    i {
-      color: #e5e5e5;
-    }
+    @include flex-align(center, flex-start);
+    height: 6rem;
+    max-width: 19rem;
+    width: calc(50% + 6.4rem);
   }
 }

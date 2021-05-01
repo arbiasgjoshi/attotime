@@ -1,24 +1,30 @@
 .container {
   @include flex-direction(column);
-  padding: 0 1rem;
+  margin: 1rem;
 
   @include min(tablet) {
-    padding: 0;
+    margin: 0;
     flex-direction: row;
-  }
-
-  .textContainer {
-    @include min(tablet) {
-      margin-top: 17.5rem;
-    }
-    flex-basis: 30%;
   }
 
   .serviceList {
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    flex-basis: 64%;
-    margin-left: auto;
+    flex-direction: column;
+
+    @include min(tablet) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      row-gap: 2.4rem;
+      column-gap: 2.4rem;
+    }
+  }
+
+  .middleCard {
+    @include max(tablet) {
+      display: none;
+    }
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 }

@@ -14,7 +14,17 @@ import MainTitle from '@components/molecules/main-title-card';
 import EmailForm from '@components/atoms/email-form';
 import FeatureTabs from '@components/organisms/feature-tabs';
 import FreeTrial from '@components/organisms/free-trial';
+import Services from '@components/organisms/services';
 import { container } from '@styles/main.module.scss';
+
+import icon1 from '@images/helmet@2x.png';
+import icon2 from '@images/leaf@2x.png';
+import icon3 from '@images/roof@2x.png';
+import icon4 from '@images/brush@2x.png';
+import icon5 from '@images/plus@2x.png';
+import icon6 from '@images/lightbulb@2x.png';
+import icon7 from '@images/plumbing@2x.png';
+import icon8 from '@images/dots@2x.png';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import CommentCard from '@components/molecules/comment-card';
@@ -35,6 +45,17 @@ const checkList = [
   { title: 'Stay in the loop without constant check-ins' },
   { title: 'Enjoy hassle-free automated employee timesheets' },
   { title: 'Streamline the entire payroll process' },
+];
+
+const serviceList = [
+  { title: 'Construction', icon: icon1 },
+  { title: 'Landscaping & Gardening', icon: icon2 },
+  { title: 'Roofing', icon: icon3 },
+  { title: 'Painting & Decorating', icon: icon4 },
+  { title: 'Healthcare & Medical', icon: icon5 },
+  { title: 'Electrical', icon: icon6 },
+  { title: 'Plumbing & Heating', icon: icon7 },
+  { title: 'Other industries', icon: icon8 },
 ];
 
 const Home = () => (
@@ -96,6 +117,7 @@ const Home = () => (
       title="See how Atto works with your industry"
       description="Atto helps all types of businesses across the world manage their employees' time."
     />
+    <Services list={serviceList} />
     <div className={numbers}>
       <Number title={'500,000+'} description="Timesheets Produced" />
       <Number title={'150,000+'} description="App Downloads" />
