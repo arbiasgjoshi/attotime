@@ -29,7 +29,7 @@ import icon8 from '@images/dots@2x.png';
 import { StaticImage } from 'gatsby-plugin-image';
 import CommentCard from '@components/molecules/comment-card';
 
-import { slider, checkListContainer, numbers } from './homepage.module.scss';
+import { slider, checkListContainer, numbers, story } from './homepage.module.scss';
 import authorImage from '@images/no-image.png';
 
 const titleList = [
@@ -127,11 +127,13 @@ const Home = () => (
     <Divider />
     <Title title="Hear what business owners say about Atto" />
     <Divider className="medium" />
-    <Story
-      img={authorImage}
-      paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
-      author="Robert Bennet - DPA Cleaning Services, Inc."
-    />
+    <div className={story}>
+      <Story
+        img={authorImage}
+        paragraph={`“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”`}
+        author="Robert Bennet - DPA Cleaning Services, Inc."
+      />
+    </div>
     <Divider />
     <FreeTrial
       title="No time to waste!"

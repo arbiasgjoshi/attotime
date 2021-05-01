@@ -40,3 +40,22 @@
     border-bottom: 2px solid #e3e3e3;
   }
 }
+
+.story {
+  > div {
+    margin: 0 9rem;
+    > div:first-child {
+      margin-right: 7rem;
+    }
+    h4 {
+      height: 24rem;
+      width: 60rem;
+      font-weight: normal;
+      font-family: Charter;
+      font-size: 5rem;
+      letter-spacing: -1px;
+      line-height: 6rem;
+      margin-bottom: 4rem !important;
+    }
+  }
+}
