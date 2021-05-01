@@ -1,22 +1,17 @@
 import React from 'react';
 import ServiceCard from '@components/molecules/service-card';
-import { container, textContainer, serviceList } from './services.module.scss';
+import { container, serviceList, middleCard } from './services.module.scss';
+import { StaticImage } from 'gatsby-plugin-image';
 
-const Services = ({ title, list }) => (
+const Services = ({ list }) => (
   <div className={container}>
-    <div className={textContainer}>
-      <h2>{title}</h2>
-    </div>
     <div className={serviceList}>
       {list?.map((service, index) => (
-        <ServiceCard
-          key={index}
-          index={index + 1}
-          title={service.title}
-          img={service.icon}
-          size={service.size}
-        />
+        <ServiceCard key={index} title={service.title} icon={service.icon} />
       ))}
+      <div className={middleCard}>
+        <StaticImage width={364} height={124} src="../../../images/no-image.png" />
+      </div>
     </div>
   </div>
 );

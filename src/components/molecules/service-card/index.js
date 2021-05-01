@@ -1,21 +1,13 @@
 import React from 'react';
-import Icon from '@components/atoms/icon';
-import {
-  container,
-  textContainer,
-  cardTitle,
-  cardNumber,
-  imageWrapper,
-} from './service-card.module.scss';
+import { container, iconWrapper, textContainer, cardTitle } from './service-card.module.scss';
 
-const ServiceCard = ({ index, title, img, size }) => (
+const ServiceCard = ({ title, icon }) => (
   <div className={container}>
-    <div className={textContainer}>
-      <span className={cardNumber}>{`0${index}`}</span>
-      <h4 className={cardTitle}>{title}</h4>
+    <div className={iconWrapper}>
+      <img src={icon} />
     </div>
-    <div className={imageWrapper}>
-      <Icon iconClass={img} fSize={size} />
+    <div className={textContainer}>
+      <h5 className={cardTitle}>{title}</h5>
     </div>
   </div>
 );

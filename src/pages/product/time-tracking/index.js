@@ -54,6 +54,14 @@ import icon20 from '@images/browser.png';
 import icon21 from '@images/darkMode.png';
 import icon22 from '@images/employees_forget.png';
 import icon23 from '@images/out-of-battery.png';
+import icon24 from '@images/helmet@2x.png';
+import icon25 from '@images/leaf@2x.png';
+import icon26 from '@images/roof@2x.png';
+import icon27 from '@images/brush@2x.png';
+import icon28 from '@images/plus@2x.png';
+import icon29 from '@images/lightbulb@2x.png';
+import icon30 from '@images/plumbing@2x.png';
+import icon31 from '@images/dots@2x.png';
 
 import {
   container,
@@ -235,14 +243,14 @@ const TimeTracking = () => {
   ];
 
   const serviceList = [
-    { title: 'Construction', icon: 'construction', size: 6.5 },
-    { title: 'Painting', icon: 'painting', size: 7.4 },
-    { title: 'Roofing', icon: 'roofing', size: 7.5 },
-    { title: 'Cleaning', icon: 'cleaning', size: 8 },
-    { title: 'Electric', icon: 'electric', size: 7.5 },
-    { title: 'Plumbing', icon: '', size: 5 },
-    { title: 'Landscaping', icon: 'landscaping', size: 6.7 },
-    { title: 'Healthcare', icon: 'healthcare', size: 7.5 },
+    { title: 'Construction', icon: icon24 },
+    { title: 'Landscaping & Gardening', icon: icon25 },
+    { title: 'Roofing', icon: icon26 },
+    { title: 'Painting & Decorating', icon: icon27 },
+    { title: 'Healthcare & Medical', icon: icon28 },
+    { title: 'Electrical', icon: icon29 },
+    { title: 'Plumbing & Heating', icon: icon30 },
+    { title: 'Other industries', icon: icon31 },
   ];
 
   return (
@@ -350,7 +358,11 @@ const TimeTracking = () => {
         />
       </div>
       <Divider />
-      <Services title="Time Tracking solution for any industry" list={serviceList} />
+      <Title
+        title="A work hours tracker for any industry"
+        description="Atto helps all types of businesses across the world to manage their employees' time"
+      />
+      <Services list={serviceList} />
       <Divider />
       <Story
         img={authorImage}

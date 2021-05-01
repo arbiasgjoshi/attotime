@@ -24,6 +24,7 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 import IconCardList from '@components/organisms/icon-card-list';
 import GrowthNumbers from '@components/organisms/growth-numbers';
 import Story from '@components/organisms/story';
+import Services from '@components/organisms/services';
 
 import photo1 from '../../../images/boost_productivity.png';
 import authorImage from '@images/authorImage.png';
@@ -42,6 +43,14 @@ import icon8 from '@images/brightness.png';
 import icon9 from '@images/m-logo.png';
 import icon10 from '@images/coffe.png';
 import icon11 from '@images/bookmark.png';
+import icon12 from '@images/helmet@2x.png';
+import icon13 from '@images/leaf@2x.png';
+import icon14 from '@images/roof@2x.png';
+import icon15 from '@images/brush@2x.png';
+import icon16 from '@images/plus@2x.png';
+import icon17 from '@images/lightbulb@2x.png';
+import icon18 from '@images/plumbing@2x.png';
+import icon19 from '@images/dots@2x.png';
 
 const Timesheets = () => {
   const checkLists = [
@@ -143,6 +152,17 @@ const Timesheets = () => {
     },
   ];
 
+  const serviceList = [
+    { title: 'Construction', icon: icon12 },
+    { title: 'Landscaping & Gardening', icon: icon13 },
+    { title: 'Roofing', icon: icon14 },
+    { title: 'Painting & Decorating', icon: icon15 },
+    { title: 'Healthcare & Medical', icon: icon16 },
+    { title: 'Electrical', icon: icon17 },
+    { title: 'Plumbing & Heating', icon: icon18 },
+    { title: 'Other industries', icon: icon19 },
+  ];
+
   return (
     <div className={container}>
       <Header />
@@ -220,6 +240,12 @@ const Timesheets = () => {
           description={`Schedule your employees' timesheets to be automatically emailed to you in line with your payroll schedule.`}
         />
       </div>
+      <Divider />
+      <Title
+        title="A work hours tracker for any industry"
+        description="Atto helps all types of businesses across the world to manage their employees' time"
+      />
+      <Services list={serviceList} />
       <Divider />
       <Story
         img={authorImage}

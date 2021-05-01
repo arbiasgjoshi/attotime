@@ -13,6 +13,7 @@ import CheckList from '@components/molecules/check-list';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import FeaturesList from '@components/organisms/features-list';
 import ListArticle from '@components/organisms/list-article';
+import Services from '@components/organisms/services';
 import { FooterLinks } from '@locale/en.js';
 import Footer from '@components/molecules/footer';
 
@@ -36,8 +37,27 @@ import icon5 from '@images/brightness.png';
 import icon7 from '@images/battery.png';
 import icon8 from '@images/coffe.png';
 import icon9 from '@images/bookmark.png';
+import icon10 from '@images/helmet@2x.png';
+import icon11 from '@images/leaf@2x.png';
+import icon12 from '@images/roof@2x.png';
+import icon13 from '@images/brush@2x.png';
+import icon14 from '@images/plus@2x.png';
+import icon15 from '@images/lightbulb@2x.png';
+import icon16 from '@images/plumbing@2x.png';
+import icon17 from '@images/dots@2x.png';
 
 const LocationTracking = () => {
+  const serviceList = [
+    { title: 'Construction', icon: icon10 },
+    { title: 'Landscaping & Gardening', icon: icon11 },
+    { title: 'Roofing', icon: icon12 },
+    { title: 'Painting & Decorating', icon: icon13 },
+    { title: 'Healthcare & Medical', icon: icon14 },
+    { title: 'Electrical', icon: icon15 },
+    { title: 'Plumbing & Heating', icon: icon16 },
+    { title: 'Other industries', icon: icon17 },
+  ];
+
   const checkList1 = [
     { title: `View any employee's status and location in a few taps` },
     { title: 'Increase team visibility, transparency, and accountability' },
@@ -212,6 +232,8 @@ const LocationTracking = () => {
         title="A work hours tracker for any industry"
         description="Atto helps all types of bussinesses across the world to manage their employee's time"
       />
+      <Services list={serviceList} />
+      <Divider />
       <Story
         img={authorImage}
         paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
