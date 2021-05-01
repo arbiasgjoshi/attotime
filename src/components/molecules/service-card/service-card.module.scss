@@ -1,13 +1,14 @@
 .container {
   @include flex-align(center, flex-start);
+  @include flex-direction(column);
   border: 1px solid #efefef;
   height: 16rem;
   width: calc(50% - 2.4rem);
   margin: 1.2rem;
   padding: 0 1rem 0 0.7rem;
-
   @include min(tablet) {
     padding: 0 2rem 0 3.2rem;
+    flex-direction: row;
   }
 
   .textContainer {
@@ -32,7 +33,10 @@
     width: 9rem;
     height: 9rem;
     @include flex-align(center, center);
-    margin-left: auto;
+
+    @include min(tablet) {
+      margin-left: auto;
+    }
 
     i {
       color: #e5e5e5;

@@ -3,9 +3,19 @@
   margin: 0 auto;
 
   .learnMoreContainer {
-    display: flex;
-    justify-content: space-between;
+    @include flex-align(center, center);
+    @include min(tablet) {
+      justify-content: space-between;
+    }
     flex-wrap: wrap;
+  }
+
+  .featuresStyle {
+    margin-top: 3rem;
+
+    @include min(tablet) {
+      margin-top: 10rem;
+    }
   }
 
   .checkListContainer {

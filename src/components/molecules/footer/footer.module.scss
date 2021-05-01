@@ -1,6 +1,9 @@
 .pageFooter {
   padding: 4rem 0 2rem;
-  margin-top: 6.9rem;
+
+  @include min(tablet) {
+    margin-top: 6.9rem;
+  }
 }
 
 .footerTop {
@@ -20,8 +23,12 @@
 
 .footerSitemap {
   flex-grow: 1;
-  @include flex-direction(row);
+  @include flex-direction(column);
   justify-content: space-between;
+
+  @include min(tablet) {
+    flex-direction: row;
+  }
 
   .footerLinksWrapper {
     width: 16.5rem;

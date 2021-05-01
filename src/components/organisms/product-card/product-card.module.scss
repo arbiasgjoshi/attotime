@@ -1,5 +1,5 @@
 .container {
-  @include flex-direction(column);
+  @include flex-direction(column-reverse);
   justify-content: space-between;
 
   @include min(tablet) {
@@ -50,10 +50,11 @@
       margin-left: 2rem;
       display: flex;
       align-items: center;
-      margin-top: 4rem;
+      margin-top: 1rem;
 
       @include min(tablet) {
         margin-left: 0;
+        margin-top: 4rem;
       }
 
       .arrowIconContainer {
@@ -73,8 +74,11 @@
       border-bottom: 1px solid #efefef;
 
       > div {
-        margin: 4rem 0;
         align-items: flex-start;
+
+        @include min(tablet) {
+          margin: 4rem 0;
+        }
 
         h5 {
           font-size: 2.5rem !important;

@@ -1,8 +1,8 @@
 .container {
-  @include flex-direction(column);
+  @include flex-direction(column-reverse);
 
   @include min(tablet) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
@@ -47,10 +47,10 @@
     }
 
     .imageWrapper {
-      margin-top: 2rem;
+      margin-bottom: 2rem;
 
       @include min(tablet) {
-        margin-top: 0;
+        margin-bottom: 0;
         height: 60rem;
         max-width: 50rem;
       }

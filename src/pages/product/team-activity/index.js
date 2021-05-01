@@ -1,5 +1,10 @@
 import React from 'react';
-import { container, learnMoreContainer, checkListContainer } from './team-activity.module.scss';
+import {
+  container,
+  learnMoreContainer,
+  checkListContainer,
+  featuresStyle,
+} from './team-activity.module.scss';
 
 import Divider from '@components/atoms/divider';
 import Header from '@components/molecules/header';
@@ -130,7 +135,7 @@ const TeamActivity = () => {
       />
       <Divider />
       <Title title="Our full suite of team activity features at a glance" />
-      <div style={{ marginTop: '10rem' }}>
+      <div className={featuresStyle}>
         <FeaturesList list={featureList} />
       </div>
       <Divider />
