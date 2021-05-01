@@ -27,9 +27,12 @@
   }
 
   .learnMoreContainer {
-    display: flex;
-    justify-content: space-between;
+    @include flex-align(center, center);
     flex-wrap: wrap;
+
+    @include min(tablet) {
+      justify-content: space-between;
+    }
   }
 
   .checkListContainer {
