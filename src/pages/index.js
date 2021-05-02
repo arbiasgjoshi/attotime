@@ -110,7 +110,9 @@ const Home = () => (
       title="Thousands of businesses have saved time using Atto"
       description="And it's not just time saved, but money and stress too."
     />
+    <Divider className="style3" />
     <Video />
+    <Divider className="style2" />
     <div className={checkListContainer}>
       <CheckList list={titleList} />
     </div>
@@ -120,6 +122,7 @@ const Home = () => (
       description="Atto helps all types of businesses across the world manage their employees’ time."
       maxDescriptionWidth={700}
     />
+    <Divider className="style2" />
     <Services list={serviceList} />
     <div className={numbers}>
       <Number title="500,000+" description="Timesheets Produced" />

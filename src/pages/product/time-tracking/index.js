@@ -62,6 +62,9 @@ import icon28 from '@images/plus@2x.png';
 import icon29 from '@images/lightbulb@2x.png';
 import icon30 from '@images/plumbing@2x.png';
 import icon31 from '@images/dots@2x.png';
+import icon32 from '@images/location@1x.png';
+import icon33 from '@images/profile@1x.png';
+import icon34 from '@images/timesheets@1x.png';
 
 import {
   container,
@@ -264,7 +267,9 @@ const TimeTracking = () => {
         title="Take the pain away from time tracking"
         subtitle="An easy-to-use, accurate, and trustworthy time-tracking solution."
       />
+      <Divider className="style2" />
       <Video />
+      <Divider className="style2" />
       <div className={checkListContainer}>
         <CheckList list={titleList} />
       </div>
@@ -285,6 +290,7 @@ const TimeTracking = () => {
         maxDescriptionWidth={800}
         description="Say goodbye to employee estimates. Use the time clock to precisely capture work activity."
       />
+      <Divider className="style7" />
       <IconCardList cardList={secondList} hasBigImages />
       <Divider />
       <Title
@@ -293,6 +299,7 @@ const TimeTracking = () => {
         title="Accurately track time from any location and any device"
         description="Time tracking options to suit your business’ needs. In the office, in teams, at a job site, or on the move. Online or offline."
       />
+      <Divider className="style7" />
       <ImageSlider />
       <div className={workListContainer}>
         <FeatureCard
@@ -319,6 +326,7 @@ const TimeTracking = () => {
       </div>
       <Divider />
       <Title maxWidth={860} title="Lower costs, higher productivity. Less admin, more business." />
+      <Divider className="style7" />
       <StaticImage
         src="../../../images/admin-panel.png"
         alt="admin-panel-image"
@@ -326,14 +334,16 @@ const TimeTracking = () => {
         height={616}
       />
       <Divider className="style3" />
-      <CheckList list={overviewAdminList} hasDescription />
+      <CheckList list={overviewAdminList} hasDescription cardStyle="big" />
       <Divider />
       <Title maxWidth={880} title="Our full suite of time tracking features at a glance" />
+      <Divider className="style3" />
       <FeaturesList list={featureList} />
       <Divider />
       <GrowthNumbers />
       <Divider />
       <Title title="Common problems, solved." />
+      <Divider className="style7" />
       <div className={commonProblemsContainer}>
         <IconCard
           bigImage
@@ -366,6 +376,7 @@ const TimeTracking = () => {
         description="Atto helps all types of businesses across the world to manage their employees' time"
         maxDescriptionWidth={700}
       />
+      <Divider className="style2" />
       <Services list={serviceList} />
       <Divider />
       <Story
@@ -378,18 +389,22 @@ const TimeTracking = () => {
         title={`It doesn't end here!`}
         description="Learn more about what Atto can do for you"
       />
+      <Divider className="style6" />
       <div className={learnMoreContainer}>
         <LearnMoreCard
           title="GPS Location Tracking"
           description="Increase the safety and accountability of your team with real-time updates on their location."
+          icon={icon32}
         />
         <LearnMoreCard
           title="Team Activity"
           description="Stay in the loop with what's happening - without needing to pick up the phone"
+          icon={icon33}
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+          icon={icon34}
         />
       </div>
       <Divider />

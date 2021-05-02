@@ -174,7 +174,9 @@ const Timesheets = () => {
         title="Timesheet reports without the hassle"
         subtitle="Spend more time on the things that matter with timesheets filled painlessly and on-time."
       />
+      <Divider className="style2" />
       <Video />
+      <Divider className="style2" />
       <div className={checkListContainer}>
         <CheckList list={checkLists} />
       </div>
@@ -185,6 +187,7 @@ const Timesheets = () => {
           description="Your employees' hours are instantly transformed into timesheet reports. View every hour worked from regular time to overtime. Create reports based on specific employees, teams, or job codes. And download and share them in a few clicks."
         />
       </div>
+      <Divider className="style3" />
       <div>
         <StaticImage alt="Clock In" quality={90} src="../../../images/ready-made.svg" />
       </div>
@@ -207,6 +210,7 @@ const Timesheets = () => {
       />
       <Divider />
       <Title title="Our full suite of timesheet features at a glance" />
+      <Divider className="style3" />
       <FeaturesList list={featureList} />
       <Divider />
       <GrowthNumbers />
@@ -216,6 +220,7 @@ const Timesheets = () => {
         description="Go from timesheets to payroll in no time at all. With Atto, you’ll enjoy a streamlined payroll process that will save hours of admin every payday."
         maxDescriptionWidth={1000}
       />
+      <Divider className="style2" />
       <div className={roundImagesContainer}>
         <IconCard
           isRound
@@ -248,6 +253,7 @@ const Timesheets = () => {
         description="Atto helps all types of businesses across the world to manage their employees' time"
         maxDescriptionWidth={700}
       />
+      <Divider className="style2" />
       <Services list={serviceList} />
       <Divider />
       <Story

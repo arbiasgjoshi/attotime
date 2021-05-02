@@ -1,13 +1,15 @@
 .card {
   display: flex;
-  align-items: center;
+  height: min-content;
 
   @include max(tablet) {
     margin: 0.5rem 0;
   }
 
-  .cardIconWrapper {
+  .iconWrapper {
     margin: 0.8rem 1.6rem 0 0;
+    height: 4rem;
+    width: 4rem;
 
     i {
       width: 4rem;
@@ -27,10 +29,7 @@
   .textWrapper {
     display: flex;
     flex-direction: column;
-
-    .cardTitle {
-      margin: 0.5rem 0;
-    }
+    justify-content: center;
 
     .paragraph {
       margin-top: 0.8rem;
@@ -39,7 +38,13 @@
     }
   }
 
-  &.smallCardStyle {
+  &.hasDescr {
+    .iconWrapper {
+      margin-top: 0;
+    }
+  }
+
+  &.small {
     align-items: flex-start;
     .cardIconWrapper {
       margin-right: 1rem;
@@ -55,6 +60,17 @@
         font-size: 2rem;
         line-height: 2rem;
         font-weight: var(--medium);
+      }
+    }
+  }
+
+  &.big {
+    .textWrapper {
+      .cardTitle {
+        max-width: 42rem;
+        font-size: 3.2rem;
+        line-height: 4rem;
+        letter-spacing: -0.05rem;
       }
     }
   }

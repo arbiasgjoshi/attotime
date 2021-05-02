@@ -5,6 +5,7 @@
   .learnMoreContainer {
     @include flex-align(center, center);
     @include min(tablet) {
+      margin-top: -0.5rem;
       justify-content: space-between;
     }
     flex-wrap: wrap;
@@ -14,7 +15,7 @@
     margin-top: 3rem;
 
     @include min(tablet) {
-      margin-top: 10rem;
+      margin-top: -1.5rem;
     }
   }
 
