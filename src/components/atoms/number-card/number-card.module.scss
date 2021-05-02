@@ -1,5 +1,7 @@
 .container {
   margin: 0.75rem;
+  width: 35rem;
+  height: 14rem;
 
   @include min(tablet) {
     margin: 0;
@@ -8,10 +10,6 @@
   @include min(tablet) {
     &.padded {
       padding: 2.9rem 0 2.9rem 3.5rem;
-    }
-
-    .mainTitle {
-      font-size: 4.4rem;
     }
 
     &.border {
