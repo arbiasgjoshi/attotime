@@ -13,5 +13,9 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
+
+    > div {
+      margin-right: 4.5rem;
+    }
   }
 }

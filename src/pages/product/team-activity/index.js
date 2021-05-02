@@ -105,15 +105,18 @@ const TeamActivity = () => {
       <MainTitleCard
         hasParagraph
         showButton
-        paragraph="Team Activity"
+        paragraph="TEAM ACTIVITY"
         title="Stay in the loop with everything happening in real-time"
       />
+      <Divider className="style2" />
       <Video />
+      <Divider className="style2" />
       <div className={checkListContainer}>
         <CheckList list={titleList} />
       </div>
       <Divider />
       <Title maxWidth={900} title="See where your team is, and what they're working on" />
+      <Divider className="style2" />
       <Article
         title="Never feel in the dark again with team activity updates"
         description="Find out what's going on in a few taps. Get real-time updates on your team's status and location. See who's on the clock, on break, or enjoying some time off."
@@ -143,6 +146,7 @@ const TeamActivity = () => {
       />
       <Divider />
       <Title maxWidth={880} title="Our full suite of team activity features at a glance" />
+      <Divider className="style3" />
       <div className={featuresStyle}>
         <FeaturesList list={featureList} />
       </div>
@@ -152,6 +156,7 @@ const TeamActivity = () => {
         description="Atto helps all types of businesses across the world to manage their employees' time"
         maxDescriptionWidth={700}
       />
+      <Divider className="style2" />
       <Services list={serviceList} />
       <Divider />
       <Story
@@ -164,6 +169,7 @@ const TeamActivity = () => {
         title={`It doesn't end here!`}
         description="Learn more about what Atto can do for you"
       />
+      <Divider className="style2" />
       <div className={learnMoreContainer}>
         <LearnMoreCard
           title="Time Tracking"

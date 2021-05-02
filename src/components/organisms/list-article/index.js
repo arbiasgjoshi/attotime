@@ -17,7 +17,7 @@ const ListArticle = ({ title, description, description2, list, image, isSwapped 
     <div className={textWrapper}>
       <Title title={title} description={description} leftAlign />
       {description2 && <h5 className={descr2}>{description2}</h5>}
-      <CheckList list={list} smallStyled />
+      <CheckList list={list} style="small" />
     </div>
     <div className={secondBlock}>
       <div className={imageWrapper}>
