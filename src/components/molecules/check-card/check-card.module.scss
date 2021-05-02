@@ -1,13 +1,15 @@
 .card {
   display: flex;
-  align-items: center;
+  height: min-content;
 
   @include max(tablet) {
     margin: 0.5rem 0;
   }
 
-  .cardIconWrapper {
+  .iconWrapper {
     margin: 0.8rem 1.6rem 0 0;
+    height: 4rem;
+    width: 4rem;
 
     i {
       width: 4rem;
@@ -27,6 +29,7 @@
   .textWrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     .cardTitle {
       margin: 0.5rem 0;

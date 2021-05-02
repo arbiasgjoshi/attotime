@@ -7,7 +7,7 @@ import {
   card,
   cardTitle,
   hasDescr,
-  cardIconWrapper,
+  iconWrapper,
   textWrapper,
   smallCardStyle,
   paragraph,
@@ -15,7 +15,7 @@ import {
 
 const CheckCard = ({ title, hasDescription, description, smallStyled }) => (
   <div className={`${card} ${smallStyled && smallCardStyle}`}>
-    <div className={cardIconWrapper}>
+    <div className={iconWrapper}>
       <Icon iconClass="tick" />
     </div>
     <div className={textWrapper}>
