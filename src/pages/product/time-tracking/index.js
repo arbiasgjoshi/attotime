@@ -99,7 +99,7 @@ const TimeTracking = () => {
 
   const secondList = [
     {
-      title: 'Clock-in and out',
+      title: 'Clock in and out',
       description: `Tap the giant pulsating clock in/out button to start tracking time.`,
       alt: 'Easy to use',
       icon: icon4,
