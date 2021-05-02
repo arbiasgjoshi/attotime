@@ -29,8 +29,8 @@ import icon8 from '@images/dots@2x.png';
 import { StaticImage } from 'gatsby-plugin-image';
 import CommentCard from '@components/molecules/comment-card';
 
-import { slider, checkListContainer, numbers, story } from './homepage.module.scss';
 import authorImage from '@images/no-image.png';
+import { slider, checkListContainer, numbers, story } from './homepage.module.scss';
 
 const titleList = [
   { title: 'No longer chasing timesheets.', id: '1asdd1a' },
