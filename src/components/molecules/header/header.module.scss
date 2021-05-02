@@ -6,7 +6,8 @@
   margin-bottom: 7rem;
   position: relative;
 
-  a {
+  .rightNavButtons > a,
+  .menuLinks > a {
     font-size: 2rem;
     line-height: 2rem;
     text-decoration: none;
@@ -37,7 +38,7 @@
 .menu {
   @include absolute(left 0 top 8.8rem);
   width: 100%;
-  min-height: 45rem;
+  // min-height: 45rem;
   background-color: #fff;
   z-index: 10;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
@@ -62,7 +63,19 @@
         }
       }
 
+      > hr {
+        height: 2px;
+        background-color: #efefef;
+        width: 100%;
+        opacity: 1;
+        border: 0;
+      }
+
       .subItems {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6rem;
+        row-gap: 4rem;
       }
     }
 
@@ -96,6 +109,68 @@
             color: #000;
           }
         }
+      }
+    }
+  }
+
+  .menuItems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6rem;
+    row-gap: 4rem;
+  }
+
+  .menuItem {
+    @include flex-direction(row);
+    align-items: center;
+    margin-right: 0;
+    // text-decoration: none;
+    color: #000;
+    .menuIcon {
+      min-width: 6rem;
+      width: 6rem;
+      height: 6rem;
+      @include flex-align(center, center);
+      transition: ease all 0.15s;
+      background-color: rgba(0, 185, 203, 0.1);
+      border-radius: 0.4rem;
+      margin-right: 1.6rem;
+
+      &.gray {
+      }
+    }
+
+    .menuItemDesc {
+      flex-grow: 1;
+      h6 {
+        margin-bottom: 0.4rem;
+        font-weight: 500;
+      }
+      p {
+        font-size: var(--body-style-five);
+        line-height: var(--body-style-five-line-height-size);
+        letter-spacing: var(--body-style-five-letter-spacing);
+        color: #999999;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      .menuIcon {
+        background-color: rgba(0, 185, 203, 0.35);
+      }
+    }
+  }
+
+  &.resourcesMenu {
+    left: 21rem;
+    width: unset;
+    .menuItems {
+      display: flex;
+      flex-direction: column;
+
+      .menuItem {
+        width: 27.6rem;
       }
     }
   }

@@ -21,6 +21,7 @@ import {
   featuredItems,
   featureLink,
   headerItem,
+  menuItems,
   menuItem,
   menuItemWrapper,
   resourcesMenu,
@@ -39,9 +40,9 @@ const HeaderComponent = ({ centered, logoType }) => {
       case 'product':
         return (
           <div className={menuSection}>
-            <div className={`${leftItems} ${contentPadding} `}>
+            <div className={`${leftItems} ${contentPadding}`}>
               <div className={mainItem}>
-                <Link className={`${headerItem} ${menuItemWrapper}`} to="/product">
+                <Link className={`${menuItem} ${menuItemWrapper}`} to="/product">
                   <div className={menuIcon}>
                     <Icon iconClass="random" />
                   </div>
@@ -54,7 +55,7 @@ const HeaderComponent = ({ centered, logoType }) => {
                   </div>
                 </Link>
               </div>
-              <Divider className="style5" />
+              <Divider className="style7" />
               <div className={subItems}>
                 <Link className={menuItem} to="/product/time-tracking">
                   <div className={menuIcon}>
@@ -74,7 +75,7 @@ const HeaderComponent = ({ centered, logoType }) => {
                     <p>Real-time updates on your team’s locations and movements</p>
                   </div>
                 </Link>
-                <Link className={menuItem} to="/">
+                <Link className={menuItem} to="/product/team-activity">
                   <div className={menuIcon}>
                     <Icon iconClass="random" />
                   </div>
@@ -83,7 +84,7 @@ const HeaderComponent = ({ centered, logoType }) => {
                     <p>Stay in the loop of your team’s progress as work happens</p>
                   </div>
                 </Link>
-                <Link className={menuItem} to="/">
+                <Link className={menuItem} to="/product/timesheets">
                   <div className={menuIcon}>
                     <Icon iconClass="random" />
                   </div>
@@ -132,19 +133,135 @@ const HeaderComponent = ({ centered, logoType }) => {
           </div>
         );
       case 'industries':
-        return <div className={`${menuSection} ${contentPadding}`} />;
+        return (
+          <div className={`${menuSection} ${contentPadding}`}>
+            <div className={menuItems}>
+              <Link className={menuItem} to="/industries/construction">
+                <div className={menuIcon}>
+                  <Icon iconClass="random" />
+                </div>
+                <div className={menuItemDesc}>
+                  <h6>Construction</h6>
+                  <p>Track your entire crew’s time and location in real-time.</p>
+                </div>
+              </Link>
+              <Link className={menuItem} to="/industries/painting-and-decorating">
+                <div className={menuIcon}>
+                  <Icon iconClass="random" />
+                </div>
+                <div className={menuItemDesc}>
+                  <h6>Painting & Decorating</h6>
+                  <p>Using paper timesheets is like watching paint dry.</p>
+                </div>
+              </Link>
+              <Link className={menuItem} to="/industries/healtchare-and-medical">
+                <div className={menuIcon}>
+                  <Icon iconClass="random" />
+                </div>
+                <div className={menuItemDesc}>
+                  <h6>Healthcare & Medical</h6>
+                  <p>Keep accurate time records while providing care.</p>
+                </div>
+              </Link>
+              <Link className={menuItem} to="/industries/plumbing-and-heating">
+                <div className={menuIcon}>
+                  <Icon iconClass="random" />
+                </div>
+                <div className={menuItemDesc}>
+                  <h6>Plumbing & Heating</h6>
+                  <p>All cisterns go! Get to work with accurate time tracking from Atto.</p>
+                </div>
+              </Link>
+              <Link className={menuItem} to="/industries/electrical">
+                <div className={menuIcon}>
+                  <Icon iconClass="random" />
+                </div>
+                <div className={menuItemDesc}>
+                  <h6>Electrical</h6>
+                  <p>Avoid a nasty shock by tracking work hours in real-time</p>
+                </div>
+              </Link>
+              <Link className={menuItem} to="/industries/landscaping">
+                <div className={menuIcon}>
+                  <Icon iconClass="random" />
+                </div>
+                <div className={menuItemDesc}>
+                  <h6>Landscaping</h6>
+                  <p>The grass is always greener for landscapers that use Atto.</p>
+                </div>
+              </Link>
+              <Link className={menuItem} to="/industries/roofing">
+                <div className={menuIcon}>
+                  <Icon iconClass="random" />
+                </div>
+                <div className={menuItemDesc}>
+                  <h6>Roofing</h6>
+                  <p>Keep accurate time records while working outdoors.</p>
+                </div>
+              </Link>
+              <Link className={menuItem} to="/industries/cleaning-and-maintenance">
+                <div className={menuIcon}>
+                  <Icon iconClass="random" />
+                </div>
+                <div className={menuItemDesc}>
+                  <h6>Cleaning & Maintenance</h6>
+                  <p>Let’s make it a clean sweep! Keep your time tracking tidy.</p>
+                </div>
+              </Link>
+              <Link className={menuItem} to="/industries/more">
+                <div className={menuIcon}>
+                  <Icon iconClass="random" />
+                </div>
+                <div className={menuItemDesc}>
+                  <h6>More industries</h6>
+                  <p>Security, Logistics, Government, Consulting, and many more…</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+        );
       case 'resources':
-        return <div className={`${menuSection} ${contentPadding}`} />;
+        return (
+          <div className={`${menuSection} ${resourcesMenu} ${contentPadding}`}>
+            <div className={menuItems}>
+              <Link className={menuItem} to="/resources/help-center">
+                <div className={menuIcon}>
+                  <Icon iconClass="random" />
+                </div>
+                <div className={menuItemDesc}>
+                  <h6>Help Center</h6>
+                  <p>Get answers to all of your questions in an instant</p>
+                </div>
+              </Link>
+              <Link className={menuItem} to="/industries/blog">
+                <div className={menuIcon}>
+                  <Icon iconClass="random" />
+                </div>
+                <div className={menuItemDesc}>
+                  <h6>Blog</h6>
+                  <p>Get helpful productivity tips from our blog</p>
+                </div>
+              </Link>
+              <Link className={menuItem} to="/industries/contact">
+                <div className={menuIcon}>
+                  <Icon iconClass="random" />
+                </div>
+                <div className={menuItemDesc}>
+                  <h6>Contact</h6>
+                  <p>Reach out to our support team to get answers to your questions</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+        );
       default:
         return null;
     }
   };
 
-  const leaveMenuItem = () => {
+  const leftMenu = () => {
     if (!overMenu) {
-      console.log('entering first here');
       setTimeout(() => {
-        console.log('entering then here');
         setHovered(false);
         setActiveItem(null);
       }, 500);
@@ -152,16 +269,11 @@ const HeaderComponent = ({ centered, logoType }) => {
   };
 
   const hasLeftMenu = () => {
-    console.log('left menu');
     setTimeout(() => {
       setOverMenu(false);
-      leaveMenuItem();
+      leftMenu();
     }, 500);
   };
-
-  // const aboveMainMenu = () => {
-
-  // }
 
   const menuClasses = (val) => {
     let menuClass = menu;
@@ -186,12 +298,12 @@ const HeaderComponent = ({ centered, logoType }) => {
         <div
           className={menuLinks}
           onMouseEnter={() => setAbove(true)}
-          onMouseLeave={() => leaveMenuItem()}
+          onMouseLeave={() => leftMenu()}
         >
           <Link to="/product" onMouseEnter={() => showMenu('product')}>
             Product
           </Link>
-          <Link to="/why-atto">Why Atto?</Link>
+          {/* <Link to="/why-atto">Why Atto?</Link> */}
           <Link to="/industries" onMouseEnter={() => showMenu('industries')}>
             Industries
           </Link>
