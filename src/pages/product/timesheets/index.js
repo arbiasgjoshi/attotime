@@ -213,7 +213,8 @@ const Timesheets = () => {
       <Divider />
       <Title
         title="Streamline the entrie payroll process"
-        description="Go from timesheets to payroll in no time at all. With Atto, you'll enjoy a streamlined payroll process that will save hours of admin every payday."
+        description="Go from timesheets to payroll in no time at all. With Atto, you’ll enjoy a streamlined payroll process that will save hours of admin every payday."
+        maxDescriptionWidth={1000}
       />
       <div className={roundImagesContainer}>
         <IconCard
@@ -245,6 +246,7 @@ const Timesheets = () => {
       <Title
         title="A work hours tracker for any industry"
         description="Atto helps all types of businesses across the world to manage their employees' time"
+        maxDescriptionWidth={700}
       />
       <Services list={serviceList} />
       <Divider />

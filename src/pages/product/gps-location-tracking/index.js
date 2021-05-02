@@ -180,7 +180,7 @@ const LocationTracking = () => {
         <CheckList list={checkList1} />
       </div>
       <Divider />
-      <Title title="Track the locations of your entire team in real-time" />
+      <Title maxWidth={920} title="Track the locations of your entire team in real-time" />
       <StaticImage
         style={{ marginTop: '-3rem' }}
         src="../../../images/track-team-locations@2x.png"
@@ -210,7 +210,8 @@ const LocationTracking = () => {
       <Divider />
       <Title
         title="Your privacy, our priority"
-        description="You always stay in complete control of location tracking, providing peace of mind your employees"
+        description="You always stay in complete control of location tracking, providing peace of mind to your employees."
+        maxDescriptionWidth={1040}
       />
       <div className={privacyContainer}>
         <CheckList list={checkList4} hasDescription />
@@ -231,6 +232,7 @@ const LocationTracking = () => {
       <Title
         title="A work hours tracker for any industry"
         description="Atto helps all types of bussinesses across the world to manage their employee's time"
+        maxDescriptionWidth={700}
       />
       <Services list={serviceList} />
       <Divider />
