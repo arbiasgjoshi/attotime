@@ -48,4 +48,22 @@
       margin-bottom: 5rem;
     }
   }
+
+  &.homepage {
+    margin: 0 9rem;
+
+    .imageContainer {
+      margin-right: 7rem;
+    }
+    h4 {
+      height: 24rem;
+      width: 60rem;
+      font-weight: normal;
+      font-family: Charter;
+      font-size: 5rem;
+      letter-spacing: -1px;
+      line-height: 6rem;
+      margin-bottom: 4rem !important;
+    }
+  }
 }

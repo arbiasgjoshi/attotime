@@ -127,13 +127,12 @@ const Home = () => (
     <Divider />
     <Title title="Hear what business owners say about Atto" />
     <Divider className="medium" />
-    <div className={story}>
-      <Story
-        img={authorImage}
-        paragraph={`“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”`}
-        author="Robert Bennet - DPA Cleaning Services, Inc."
-      />
-    </div>
+    <Story
+      className="homepage"
+      img={authorImage}
+      paragraph={`“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”`}
+      author="Robert Bennet - DPA Cleaning Services, Inc."
+    />
     <Divider />
     <FreeTrial
       title="No time to waste!"

@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { container, imageContainer, starsPic, paragraphContainer } from './story.module.scss';
+import * as styles from './story.module.scss';
 import stars from '../../../images/stars.png';
 
-const Story = ({ img, paragraph, author }) => {
+const Story = ({ img, paragraph, author, className = '' }) => {
   return (
-    <div className={container}>
-      <div className={imageContainer}>
+    <div className={`${styles.container} ${styles[className]}`}>
+      <div className={styles.imageContainer}>
         <img src={img} />
       </div>
-      <div className={paragraphContainer}>
-        <img className={starsPic} src={stars} />
+      <div className={styles.paragraphContainer}>
+        <img className={styles.starsPic} src={stars} />
         <h4>{paragraph}</h4>
         <h6>{author}</h6>
       </div>
