@@ -264,7 +264,9 @@ const TimeTracking = () => {
         title="Take the pain away from time tracking"
         subtitle="An easy-to-use, accurate, and trustworthy time-tracking solution."
       />
+      <Divider className="style2" />
       <Video />
+      <Divider className="style2" />
       <div className={checkListContainer}>
         <CheckList list={titleList} />
       </div>
@@ -285,6 +287,7 @@ const TimeTracking = () => {
         maxDescriptionWidth={800}
         description="Say goodbye to employee estimates. Use the time clock to precisely capture work activity."
       />
+      <Divider className="style7" />
       <IconCardList cardList={secondList} hasBigImages />
       <Divider />
       <Title
@@ -293,6 +296,7 @@ const TimeTracking = () => {
         title="Accurately track time from any location and any device"
         description="Time tracking options to suit your business’ needs. In the office, in teams, at a job site, or on the move. Online or offline."
       />
+      <Divider className="style7" />
       <ImageSlider />
       <div className={workListContainer}>
         <FeatureCard
@@ -319,6 +323,7 @@ const TimeTracking = () => {
       </div>
       <Divider />
       <Title maxWidth={860} title="Lower costs, higher productivity. Less admin, more business." />
+      <Divider className="style7" />
       <StaticImage
         src="../../../images/admin-panel.png"
         alt="admin-panel-image"
@@ -329,11 +334,13 @@ const TimeTracking = () => {
       <CheckList list={overviewAdminList} hasDescription cardStyle="big" />
       <Divider />
       <Title maxWidth={880} title="Our full suite of time tracking features at a glance" />
+      <Divider className="style3" />
       <FeaturesList list={featureList} />
       <Divider />
       <GrowthNumbers />
       <Divider />
       <Title title="Common problems, solved." />
+      <Divider className="style7" />
       <div className={commonProblemsContainer}>
         <IconCard
           bigImage
@@ -366,6 +373,7 @@ const TimeTracking = () => {
         description="Atto helps all types of businesses across the world to manage their employees' time"
         maxDescriptionWidth={700}
       />
+      <Divider className="style2" />
       <Services list={serviceList} />
       <Divider />
       <Story
@@ -378,6 +386,7 @@ const TimeTracking = () => {
         title={`It doesn't end here!`}
         description="Learn more about what Atto can do for you"
       />
+      <Divider className="style6" />
       <div className={learnMoreContainer}>
         <LearnMoreCard
           title="GPS Location Tracking"

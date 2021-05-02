@@ -173,14 +173,17 @@ const LocationTracking = () => {
         subtitle="Increase the accountability and transparency of your team with real-time updates on their location"
         hasParagraph
         showButton
-        paragraph="GPS Location Tracking"
+        paragraph="GPS LOCATION TRACKING"
       />
+      <Divider className="style2" />
       <Video />
+      <Divider className="style2" />
       <div className={checkListContainer}>
         <CheckList list={checkList1} />
       </div>
       <Divider />
       <Title maxWidth={920} title="Track the locations of your entire team in real-time" />
+      <Divider className="style5" />
       <StaticImage
         style={{ marginTop: '-3rem' }}
         src="../../../images/track-team-locations@2x.png"
@@ -213,6 +216,7 @@ const LocationTracking = () => {
         description="You always stay in complete control of location tracking, providing peace of mind to your employees."
         maxDescriptionWidth={1040}
       />
+      <Divider className="style6" />
       <div className={privacyContainer}>
         <CheckList list={checkList4} hasDescription />
         <div className={imageContainer}>
@@ -234,6 +238,7 @@ const LocationTracking = () => {
         description="Atto helps all types of bussinesses across the world to manage their employee's time"
         maxDescriptionWidth={700}
       />
+      <Divider className="style2" />
       <Services list={serviceList} />
       <Divider />
       <Story

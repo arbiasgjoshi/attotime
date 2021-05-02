@@ -5,12 +5,8 @@
   margin-bottom: 1rem;
 
   @include min(tablet) {
-    margin-bottom: 4rem;
-  }
-
-  @include min(tablet) {
     padding: 0;
-    margin-bottom: 8rem;
+    margin: 0;
   }
 
   &.leftAligned {
