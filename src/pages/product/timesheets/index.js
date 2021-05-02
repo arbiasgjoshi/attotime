@@ -167,9 +167,10 @@ const Timesheets = () => {
     <div className={container}>
       <Header />
       <MainTitleCard
+        maxParagraphWidth={760}
         hasParagraph
         showButton
-        paragraph="Timesheets"
+        paragraph="TIMESHEETS"
         title="Timesheet reports without the hassle"
         subtitle="Spend more time on the things that matter with timesheets filled painlessly and on-time."
       />
@@ -187,7 +188,7 @@ const Timesheets = () => {
       <div>
         <StaticImage alt="Clock In" quality={90} src="../../../images/ready-made.svg" />
       </div>
-      <Divider className="medium" />
+      <Divider className="style3" />
       <IconCardList cardList={firstList} />
       <Divider />
       <ListArticle
@@ -212,7 +213,8 @@ const Timesheets = () => {
       <Divider />
       <Title
         title="Streamline the entrie payroll process"
-        description="Go from timesheets to payroll in no time at all. With Atto, you'll enjoy a streamlined payroll process that will save hours of admin every payday."
+        description="Go from timesheets to payroll in no time at all. With Atto, you’ll enjoy a streamlined payroll process that will save hours of admin every payday."
+        maxDescriptionWidth={1000}
       />
       <div className={roundImagesContainer}>
         <IconCard
@@ -244,6 +246,7 @@ const Timesheets = () => {
       <Title
         title="A work hours tracker for any industry"
         description="Atto helps all types of businesses across the world to manage their employees' time"
+        maxDescriptionWidth={700}
       />
       <Services list={serviceList} />
       <Divider />
@@ -267,7 +270,7 @@ const Timesheets = () => {
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
         />
       </div>
-      <Divider className="medium" />
+      <Divider className="style3" />
       <SubscribeBanner
         title="Sit back and relax with timesheets on-time, every time"
         placeholder="Type your email"

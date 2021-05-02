@@ -99,7 +99,7 @@ const TimeTracking = () => {
 
   const secondList = [
     {
-      title: 'Clock-in and out',
+      title: 'Clock in and out',
       description: `Tap the giant pulsating clock in/out button to start tracking time.`,
       alt: 'Easy to use',
       icon: icon4,
@@ -277,18 +277,21 @@ const TimeTracking = () => {
           src="../../../images/banner-image-2@2x.png"
         />
       </div>
-      <Divider className="medium" />
+      <Divider className="style3" />
       <IconCardList cardList={firstList} />
       <Divider />
       <Title
         title="Start tracking time in a tap"
+        maxDescriptionWidth={800}
         description="Say goodbye to employee estimates. Use the time clock to precisely capture work activity."
       />
       <IconCardList cardList={secondList} hasBigImages />
       <Divider />
       <Title
+        maxWidth={950}
+        maxDescriptionWidth={800}
         title="Accurately track time from any location and any device"
-        description={`Time-tracking options to suit your business' needs. In the office, in teams, at a job site, or on the move. Online or offline.`}
+        description="Time tracking options to suit your business’ needs. In the office, in teams, at a job site, or on the move. Online or offline."
       />
       <ImageSlider />
       <div className={workListContainer}>
@@ -315,17 +318,17 @@ const TimeTracking = () => {
         />
       </div>
       <Divider />
-      <Title title="Lower costs, higher productivity. Less admin, more bussiness" />
+      <Title maxWidth={860} title="Lower costs, higher productivity. Less admin, more business." />
       <StaticImage
         src="../../../images/admin-panel.png"
         alt="admin-panel-image"
         width={1140}
         height={616}
       />
-      <Divider className="medium" />
+      <Divider className="style3" />
       <CheckList list={overviewAdminList} hasDescription />
       <Divider />
-      <Title title="Our full suite of time tracking features at a glance" />
+      <Title maxWidth={880} title="Our full suite of time tracking features at a glance" />
       <FeaturesList list={featureList} />
       <Divider />
       <GrowthNumbers />
@@ -361,6 +364,7 @@ const TimeTracking = () => {
       <Title
         title="A work hours tracker for any industry"
         description="Atto helps all types of businesses across the world to manage their employees' time"
+        maxDescriptionWidth={700}
       />
       <Services list={serviceList} />
       <Divider />

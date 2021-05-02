@@ -2,10 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { container, titleWrapper, descriptionWrapper, leftAligned } from './title.module.scss';
 
-const Title = ({ title, description, leftAlign = false }) => (
+const Title = ({ title, description, leftAlign = false, maxWidth, maxDescriptionWidth }) => (
   <div className={`${container} ${leftAlign && leftAligned}`}>
-    <h2 className={titleWrapper}>{title}</h2>
-    <h4 className={descriptionWrapper}>{description}</h4>
+    <h2 style={maxWidth && { maxWidth }} className={titleWrapper}>
+      {title}
+    </h2>
+    <h4
+      style={maxDescriptionWidth && { maxWidth: maxDescriptionWidth }}
+      className={descriptionWrapper}
+    >
+      {description}
+    </h4>
   </div>
 );
 

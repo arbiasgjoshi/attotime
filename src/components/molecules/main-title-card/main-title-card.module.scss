@@ -8,6 +8,10 @@
     margin: 0 12rem;
   }
 
+  button {
+    font-size: 2rem;
+  }
+
   .headerContainer {
     margin-bottom: 2rem;
 
@@ -18,6 +22,7 @@
     .smallParagraph {
       color: var(--primary-color);
       margin-bottom: 1.2rem;
+      font-weight: 500;
     }
 
     .mainTitle {
@@ -28,6 +33,7 @@
       color: var(--fifth-color);
       text-align: center;
       font-weight: var(--regular);
+      margin: auto;
     }
   }
 }

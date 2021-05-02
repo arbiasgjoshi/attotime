@@ -29,7 +29,7 @@ import icon8 from '@images/dots@2x.png';
 import { StaticImage } from 'gatsby-plugin-image';
 import CommentCard from '@components/molecules/comment-card';
 
-import { slider, checkListContainer, numbers } from './homepage.module.scss';
+import { slider, checkListContainer, numbers, story } from './homepage.module.scss';
 import authorImage from '@images/no-image.png';
 
 const titleList = [
@@ -73,14 +73,14 @@ const Home = () => (
       checkItemThree="Cancel anytime"
       style="homepage"
     />
-    <Divider className="smallest" />
+    <Divider className="style1" />
     <StaticImage
-      src={'../images/banner-image-2@2x.png'}
+      src="../images/banner-image-2@2x.png"
       alt="Home banner image"
       width={1140}
       height={485}
     />
-    <Divider className="large" />
+    <Divider className="style1" />
     <div className={slider}>
       <CommentCard
         title={`Amazing for my business!`}
@@ -89,22 +89,24 @@ const Home = () => (
         author="Nita Ora"
       />
       <CommentCard
-        title={`Amazing for my business!`}
-        description={`Super convenient and easy to use, so happy I've found Atto! Highly reccomend`}
-        date="23 Jul"
-        author="Nita Ora"
+        title={`A must have software`}
+        description={`I just love the ongoning improvements.`}
+        date="20 Jul"
+        author="James Stone"
       />
       <CommentCard
-        title={`Amazing for my business!`}
-        description={`Super convenient and easy to use, so happy I've found Atto! Highly reccomend`}
-        date="23 Jul"
-        author="Nita Ora"
+        title={`Everything you need`}
+        description={`Service is fabolous and it’s easy to use. My employees love it.`}
+        date="18 Jun"
+        author="Rich Mathews"
       />
     </div>
-    <Divider className="large" />
+    <Divider className="style4" />
     <FeatureTabs />
     <Divider />
     <Title
+      maxWidth={840}
+      maxDescriptionWidth={766}
       title="Thousands of businesses have saved time using Atto"
       description="And it's not just time saved, but money and stress too."
     />
@@ -115,21 +117,23 @@ const Home = () => (
     <Divider />
     <Title
       title="See how Atto works with your industry"
-      description="Atto helps all types of businesses across the world manage their employees' time."
+      description="Atto helps all types of businesses across the world manage their employees’ time."
+      maxDescriptionWidth={700}
     />
     <Services list={serviceList} />
     <div className={numbers}>
-      <Number title={'500,000+'} description="Timesheets Produced" />
-      <Number title={'150,000+'} description="App Downloads" />
-      <Number title={'10,000+'} description="Companies use Atto" />
-      <Number title={'250 million+'} description="Minutes Tracked" />
+      <Number title="500,000+" description="Timesheets Produced" />
+      <Number title="150,000+" description="App Downloads" />
+      <Number title="10,000+" description="Companies use Atto" />
+      <Number title="250 million+" description="Minutes Tracked" />
     </div>
     <Divider />
     <Title title="Hear what business owners say about Atto" />
-    <Divider className="medium" />
+    <Divider className="style3" />
     <Story
+      className="homepage"
       img={authorImage}
-      paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
+      paragraph={`“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”`}
       author="Robert Bennet - DPA Cleaning Services, Inc."
     />
     <Divider />

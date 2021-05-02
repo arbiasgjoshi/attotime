@@ -133,7 +133,7 @@ const Pricing = () => {
           <p>Save 29%</p>
         </div>
       </div>
-      <Divider className="smallest" />
+      <Divider className="style2" />
       <div className={packageWrapper}>
         <PackageCard
           title="Premium"

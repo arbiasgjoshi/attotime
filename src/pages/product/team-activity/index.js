@@ -113,7 +113,7 @@ const TeamActivity = () => {
         <CheckList list={titleList} />
       </div>
       <Divider />
-      <Title title="See where your team is, and what they're working on" />
+      <Title maxWidth={900} title="See where your team is, and what they're working on" />
       <Article
         title="Never feel in the dark again with team activity updates"
         description="Find out what's going on in a few taps. Get real-time updates on your team's status and location. See who's on the clock, on break, or enjoying some time off."
@@ -142,7 +142,7 @@ const TeamActivity = () => {
         image={image1}
       />
       <Divider />
-      <Title title="Our full suite of team activity features at a glance" />
+      <Title maxWidth={880} title="Our full suite of team activity features at a glance" />
       <div className={featuresStyle}>
         <FeaturesList list={featureList} />
       </div>
@@ -150,6 +150,7 @@ const TeamActivity = () => {
       <Title
         title="A work hours tracker for any industry"
         description="Atto helps all types of businesses across the world to manage their employees' time"
+        maxDescriptionWidth={700}
       />
       <Services list={serviceList} />
       <Divider />

@@ -1,21 +1,25 @@
 .dividerContainer {
   box-sizing: border-box;
-  display: inline-block;
   height: 0;
+  opacity: 0;
   margin: 2rem 0;
 
   @include min(tablet) {
     margin: 10rem 0;
 
-    &.smallest {
+    &.style1 {
+      margin: 2.2rem 0;
+    }
+
+    &.style2 {
       margin: 3.5rem 0;
     }
 
-    &.medium {
+    &.style3 {
       margin: 5rem 0;
     }
 
-    &.large {
+    &.style4 {
       margin: 7.5rem 0;
     }
   }
