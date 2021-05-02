@@ -97,11 +97,12 @@ const Product = () => {
       <SEO title="Product Overview" />
       <HeaderComponent />
       <MainTitleCard
-        title="Everything you need to keep track of your employees's time"
+        maxParagraphWidth={760}
+        title="Everything you need to keep track of your employees’ time"
         subtitle="Don't let timesheets be a distraction. Focus on what matters and let us handle them for you."
       />
       <StaticImage src="../../images/no-image.png" alt="No image" width={1140} height={400} />
-      <Divider className="medium" />
+      <Divider className="style3" />
       <IconCardList cardList={firstList} />
       <Divider />
       <ProductCard

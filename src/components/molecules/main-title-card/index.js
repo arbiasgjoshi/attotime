@@ -15,12 +15,14 @@ const MainTitleCard = ({
   paragraph,
   hasParagraph = false,
   showButton = false,
+  maxParagraphWidth = null,
+  maxWidth = null,
 }) => (
-  <div className={container}>
+  <div style={maxWidth && { maxWidth }} className={container}>
     <div className={headerContainer}>
       {hasParagraph && <h6 className={smallParagraph}>{paragraph}</h6>}
       <h1 className={mainTitle}>{title}</h1>
-      <h4>{subtitle}</h4>
+      <h4 style={maxParagraphWidth && { maxWidth: maxParagraphWidth }}>{subtitle}</h4>
     </div>
     {showButton && <Button btnText="Start a Free Trial" btnStyle="trial" />}
   </div>

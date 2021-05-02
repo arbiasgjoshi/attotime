@@ -73,14 +73,14 @@ const Home = () => (
       checkItemThree="Cancel anytime"
       style="homepage"
     />
-    <Divider className="smallest" />
+    <Divider className="style1" />
     <StaticImage
       src={'../images/banner-image-2@2x.png'}
       alt="Home banner image"
       width={1140}
       height={485}
     />
-    <Divider className="large" />
+    <Divider className="style1" />
     <div className={slider}>
       <CommentCard
         title={`Amazing for my business!`}
@@ -101,7 +101,7 @@ const Home = () => (
         author="Nita Ora"
       />
     </div>
-    <Divider className="large" />
+    <Divider className="style4" />
     <FeatureTabs />
     <Divider />
     <Title
@@ -126,7 +126,7 @@ const Home = () => (
     </div>
     <Divider />
     <Title title="Hear what business owners say about Atto" />
-    <Divider className="medium" />
+    <Divider className="style3" />
     <Story
       className="homepage"
       img={authorImage}

@@ -167,9 +167,10 @@ const Timesheets = () => {
     <div className={container}>
       <Header />
       <MainTitleCard
+        maxParagraphWidth={760}
         hasParagraph
         showButton
-        paragraph="Timesheets"
+        paragraph="TIMESHEETS"
         title="Timesheet reports without the hassle"
         subtitle="Spend more time on the things that matter with timesheets filled painlessly and on-time."
       />
@@ -187,7 +188,7 @@ const Timesheets = () => {
       <div>
         <StaticImage alt="Clock In" quality={90} src="../../../images/ready-made.svg" />
       </div>
-      <Divider className="medium" />
+      <Divider className="style3" />
       <IconCardList cardList={firstList} />
       <Divider />
       <ListArticle
@@ -267,7 +268,7 @@ const Timesheets = () => {
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
         />
       </div>
-      <Divider className="medium" />
+      <Divider className="style3" />
       <SubscribeBanner
         title="Sit back and relax with timesheets on-time, every time"
         placeholder="Type your email"

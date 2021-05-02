@@ -189,7 +189,7 @@ const LocationTracking = () => {
         height={316}
         quality={95}
       />
-      <Divider className="smallest" />
+      <Divider className="style2" />
       <IconCardList noImage cardList={cardList} />
       <Divider />
       <ListArticle
