@@ -26,6 +26,8 @@
 
     @include min(tablet) {
       padding: 0;
+      column-gap: 3.2rem;
+      row-gap: 4rem;
     }
   }
 }

@@ -28,7 +28,12 @@ const ProductCard = ({ productName, title, description, list, image, isSwapped }
         </div>
         <div className={listContainer}>
           {list?.map((item) => (
-            <CheckCard title={item.title} hasDescription description={item.description} />
+            <CheckCard
+              title={item.title}
+              hasDescription
+              description={item.description}
+              style="small"
+            />
           ))}
         </div>
         <div className={learnMoreContainer}>

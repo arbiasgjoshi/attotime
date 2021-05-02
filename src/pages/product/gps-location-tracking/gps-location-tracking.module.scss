@@ -16,8 +16,14 @@
     flex-direction: column;
     row-gap: 3.2rem;
 
+    > div {
+      > div:first-child {
+        margin-right: 2rem;
+      }
+    }
+
     h5 {
-      margin: 0 !important;
+      margin-top: 0.5rem;
     }
   }
 

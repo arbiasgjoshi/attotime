@@ -6,17 +6,9 @@
     flex-direction: row;
   }
 
-  &.swapped {
-    flex-direction: column-reverse;
-
-    @include min(tablet) {
-      flex-direction: row-reverse;
-    }
-  }
-
   .firstWrapper {
     @include min(tablet) {
-      width: 50%;
+      margin-right: 9rem;
     }
 
     .textContainer {
@@ -80,9 +72,19 @@
           margin: 4rem 0;
         }
 
+        > div:first-child {
+          width: unset;
+          margin-top: 0.3rem;
+        }
+
         h5 {
           font-size: 2.5rem !important;
           line-height: 3rem !important;
+          font-weight: 600 !important;
+        }
+
+        p {
+          height: initial;
         }
       }
     }
@@ -96,11 +98,25 @@
 
     .imageContainer {
       width: 22rem;
+      padding: 3rem; //this is here for now, needs to replace when we find a solution about positioning images dynamically.
 
       @include min(tablet) {
         width: 50rem;
         height: 65rem;
       }
+    }
+  }
+
+  &.swapped {
+    flex-direction: column-reverse;
+
+    @include min(tablet) {
+      flex-direction: row-reverse;
+    }
+
+    .firstWrapper {
+      margin: 0;
+      margin-left: 9rem;
     }
   }
 }
