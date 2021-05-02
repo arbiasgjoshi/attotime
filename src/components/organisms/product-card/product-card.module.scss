@@ -46,7 +46,6 @@
 
       @include min(tablet) {
         margin-left: 0;
-        margin-top: 4rem;
       }
 
       .arrowIconContainer {
@@ -117,6 +116,55 @@
     .firstWrapper {
       margin: 0;
       margin-left: 9rem;
+    }
+  }
+
+  &.homepage {
+    .firstWrapper {
+      @include flex-align(flex-start, center);
+      flex-direction: column;
+      .learnMoreContainer {
+        .arrowIconContainer {
+          display: none;
+        }
+
+        .arrow {
+          background: #000000;
+          height: 1.5px;
+          width: 32px;
+          margin-left: 2rem;
+          margin-top: 0.3rem;
+          position: relative;
+          cursor: pointer;
+
+          &:before,
+          &:after {
+            content: '';
+            background: #000000;
+            position: absolute;
+            height: 1.5px;
+            width: 13px;
+          }
+
+          &:before {
+            right: -3px;
+            bottom: -4px;
+            transform: rotate(-45deg);
+          }
+
+          &:after {
+            right: -3px;
+            top: -4px;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+
+    .secondWrapper {
+      .imageContainer {
+        padding: 0;
+      }
     }
   }
 }

@@ -1,7 +1,5 @@
 .container {
   margin: 0.75rem;
-  width: 35rem;
-  height: 14rem;
 
   @include min(tablet) {
     margin: 0;

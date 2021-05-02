@@ -1,51 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  container,
-  textContainer,
-  prdName,
-  listContainer,
-  firstWrapper,
-  secondWrapper,
-  imageContainer,
-  learnMoreContainer,
-  arrowIconContainer,
-  img,
-  swapped,
-} from './product-card.module.scss';
+import * as styles from './product-card.module.scss';
 
 import Title from '@components/molecules/title';
 import CheckCard from '@components/molecules/check-card';
 import arrowIcon from '@images/arrowForward@2x.png';
 
-const ProductCard = ({ productName, title, description, list, image, isSwapped }) => {
+const ProductCard = ({ productName, title, description, list, image, isSwapped, style = '' }) => {
   return (
-    <div className={`${container} ${isSwapped && swapped}`}>
-      <div className={firstWrapper}>
-        <div className={textContainer}>
-          <p className={prdName}>{productName}</p>
+    <div className={`${styles.container} ${isSwapped && styles.swapped} ${styles[style]}`}>
+      <div className={styles.firstWrapper}>
+        <div className={styles.textContainer}>
+          <p className={styles.prdName}>{productName}</p>
           <Title leftAlign title={title} description={description} />
         </div>
-        <div className={listContainer}>
-          {list?.map((item) => (
-            <CheckCard
-              title={item.title}
-              hasDescription
-              description={item.description}
-              style="small"
-            />
-          ))}
-        </div>
-        <div className={learnMoreContainer}>
-          <div className={arrowIconContainer}>
+        {list && (
+          <div className={styles.listContainer}>
+            {list?.map((item) => (
+              <CheckCard
+                title={item.title}
+                hasDescription
+                description={item.description}
+                style="small"
+              />
+            ))}
+          </div>
+        )}
+        <div className={styles.learnMoreContainer}>
+          <div className={styles.arrowIconContainer}>
             <img src={arrowIcon} alt={title} />
           </div>
           <h5>Learn More</h5>
+          {style === 'homepage' && <div className={styles.arrow}></div>}
         </div>
       </div>
-      <div className={secondWrapper}>
-        <div className={imageContainer}>
-          <img className={img} src={image} />
+      <div className={styles.secondWrapper}>
+        <div className={styles.imageContainer}>
+          <img className={styles.img} src={image} />
         </div>
       </div>
     </div>

@@ -124,6 +124,7 @@ const Home = () => (
     />
     <Divider className="style2" />
     <Services list={serviceList} />
+    <Divider className="style8" />
     <div className={numbers}>
       <Number title="500,000+" description="Timesheets Produced" />
       <Number title="150,000+" description="App Downloads" />

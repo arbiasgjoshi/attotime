@@ -28,6 +28,7 @@ const FeatureTabs = () => {
           description="Track time anytime and anywhere - on IOS, Android, the Web, and via the Time Clock Kiosk."
           image={image1}
           isSwapped
+          style="homepage"
         />
       </div>
       <div className={activeIndex === 1 ? content : inactive}>
@@ -36,6 +37,7 @@ const FeatureTabs = () => {
           description="Track job routes, work history, and employee` locations in real-time - increasing team safety and accountability."
           image={image2}
           isSwapped
+          style="homepage"
         />
       </div>
       <div className={activeIndex === 2 ? content : inactive}>
@@ -44,6 +46,7 @@ const FeatureTabs = () => {
           description="Get instantly notified of employee work activity - without needing to pick up the phone."
           image={image4}
           isSwapped
+          style="homepage"
         />
       </div>
       <div className={activeIndex === 3 ? content : inactive}>
@@ -52,6 +55,7 @@ const FeatureTabs = () => {
           description="Accurate, trustworthy, and insightful timesheets - that save hours from the payroll process."
           image={image3}
           isSwapped
+          style="homepage"
         />
       </div>
     </div>

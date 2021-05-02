@@ -7,12 +7,12 @@ const Title = ({ title, description, leftAlign = false, maxWidth, maxDescription
     <h2 style={maxWidth && { maxWidth }} className={titleWrapper}>
       {title}
     </h2>
-    <h4
+    <p
       style={maxDescriptionWidth && { maxWidth: maxDescriptionWidth }}
       className={descriptionWrapper}
     >
       {description}
-    </h4>
+    </p>
   </div>
 );
 

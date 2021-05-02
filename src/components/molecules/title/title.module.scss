@@ -9,6 +9,19 @@
     margin: 0;
   }
 
+  p {
+    font-size: var(--body-style-one-mobile-size);
+    line-height: var(--body-style-one-mobile-line-height);
+    letter-spacing: normal;
+
+    @include min(tablet) {
+      font-size: var(--body-style-one);
+      font-weight: var(--body-style-one-font-weight);
+      letter-spacing: -0.05rem;
+      line-height: var(--body-style-one-line-height-size);
+    }
+  }
+
   &.leftAligned {
     text-align: left;
 
