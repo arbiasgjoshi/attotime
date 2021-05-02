@@ -326,7 +326,7 @@ const TimeTracking = () => {
         height={616}
       />
       <Divider className="style3" />
-      <CheckList list={overviewAdminList} hasDescription />
+      <CheckList list={overviewAdminList} hasDescription cardStyle="big" />
       <Divider />
       <Title maxWidth={880} title="Our full suite of time tracking features at a glance" />
       <FeaturesList list={featureList} />

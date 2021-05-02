@@ -105,7 +105,7 @@ const TeamActivity = () => {
       <MainTitleCard
         hasParagraph
         showButton
-        paragraph="Team Activity"
+        paragraph="TEAM ACTIVITY"
         title="Stay in the loop with everything happening in real-time"
       />
       <Video />

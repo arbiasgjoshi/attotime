@@ -38,7 +38,13 @@
     }
   }
 
-  &.smallCardStyle {
+  &.hasDescr {
+    .iconWrapper {
+      margin-top: 0;
+    }
+  }
+
+  &.small {
     align-items: flex-start;
     .cardIconWrapper {
       margin-right: 1rem;
@@ -54,6 +60,17 @@
         font-size: 2rem;
         line-height: 2rem;
         font-weight: var(--medium);
+      }
+    }
+  }
+
+  &.big {
+    .textWrapper {
+      .cardTitle {
+        max-width: 42rem;
+        font-size: 3.2rem;
+        line-height: 4rem;
+        letter-spacing: -0.05rem;
       }
     }
   }
