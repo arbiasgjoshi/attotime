@@ -215,7 +215,7 @@ const LocationTracking = () => {
         description="You always stay in complete control of location tracking, providing peace of mind to your employees."
         maxDescriptionWidth={1040}
       />
-      <Divider className="style6" />
+      <Divider className="style3" />
       <div className={privacyContainer}>
         <CheckList list={checkList4} hasDescription />
         <div className={imageContainer}>
