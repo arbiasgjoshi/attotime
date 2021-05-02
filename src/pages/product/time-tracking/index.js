@@ -62,6 +62,9 @@ import icon28 from '@images/plus@2x.png';
 import icon29 from '@images/lightbulb@2x.png';
 import icon30 from '@images/plumbing@2x.png';
 import icon31 from '@images/dots@2x.png';
+import icon32 from '@images/location@1x.png';
+import icon33 from '@images/profile@1x.png';
+import icon34 from '@images/timesheets@1x.png';
 
 import {
   container,
@@ -391,14 +394,17 @@ const TimeTracking = () => {
         <LearnMoreCard
           title="GPS Location Tracking"
           description="Increase the safety and accountability of your team with real-time updates on their location."
+          icon={icon32}
         />
         <LearnMoreCard
           title="Team Activity"
           description="Stay in the loop with what's happening - without needing to pick up the phone"
+          icon={icon33}
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+          icon={icon34}
         />
       </div>
       <Divider />

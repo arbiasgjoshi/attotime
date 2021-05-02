@@ -8,8 +8,23 @@
   border: 2px solid var(--color-20);
   box-sizing: border-box;
 
+  &:hover {
+    background-color: #fafafa;
+    transition: 0.3s;
+    cursor: pointer;
+
+    button {
+      transition: 0.3s;
+      color: #ffffff;
+      background-color: #000;
+    }
+  }
+
   .iconWrapper {
-    height: 13rem;
+    @include flex-align(center, center);
+    width: 7rem;
+    height: 5rem;
+    margin: 6rem 14rem 2rem 14rem;
   }
 
   .textWrapper {
@@ -24,5 +39,14 @@
       width: 27rem;
       margin-bottom: 4rem;
     }
+  }
+
+  button {
+    background-color: transparent;
+    color: #000;
+    box-sizing: border-box;
+    border: 2px solid #efefef;
+    border-radius: 4px;
+    margin-bottom: 5rem;
   }
 }

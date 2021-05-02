@@ -12,7 +12,9 @@ import {
 const LearnMoreCard = ({ title, description, btnText, icon }) => {
   return (
     <div className={container}>
-      <div className={iconWrapper}></div>
+      <div className={iconWrapper}>
+        <img src={icon} />
+      </div>
       <div className={textWrapper}>
         <h5 className={cardTitle}>{title}</h5>
         <p className={paragraphText}>{description}</p>
