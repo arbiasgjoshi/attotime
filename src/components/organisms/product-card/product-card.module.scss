@@ -114,8 +114,10 @@
     }
 
     .firstWrapper {
-      margin: 0;
-      margin-left: 9rem;
+      @include min(tablet) {
+        margin: 0;
+        margin-left: 9rem;
+      }
     }
   }
 

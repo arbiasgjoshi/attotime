@@ -31,6 +31,7 @@ import CommentCard from '@components/molecules/comment-card';
 
 import authorImage from '@images/no-image.png';
 import { slider, checkListContainer, numbers, story } from './homepage.module.scss';
+import Carousel from '@components/molecules/carousel';
 
 const titleList = [
   { title: 'No longer chasing timesheets.', id: '1asdd1a' },
@@ -134,12 +135,26 @@ const Home = () => (
     <Divider />
     <Title title="Hear what business owners say about Atto" />
     <Divider className="style3" />
-    <Story
-      className="homepage"
-      img={authorImage}
-      paragraph={`“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”`}
-      author="Robert Bennet - DPA Cleaning Services, Inc."
-    />
+    <Carousel>
+      <Story
+        className="homepage"
+        img={authorImage}
+        paragraph={`“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”`}
+        author="Robert Bennet - DPA Cleaning Services, Inc."
+      />
+      <Story
+        className="homepage"
+        img={authorImage}
+        paragraph={`“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”`}
+        author="Robert Bennet - DPA Cleaning Services, Inc."
+      />
+      <Story
+        className="homepage"
+        img={authorImage}
+        paragraph={`“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”`}
+        author="Robert Bennet - DPA Cleaning Services, Inc."
+      />
+    </Carousel>
     <Divider />
     <FreeTrial
       title="No time to waste!"
