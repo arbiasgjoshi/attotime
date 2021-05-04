@@ -25,6 +25,7 @@ import authorImage from '@images/authorImage.png';
 import image1 from '@images/team-management-departments.png';
 import image2 from '@images/find-out.png';
 import image3 from '@images/eliminate-checks.png';
+import image4 from '@images/activity-updates@2x.png';
 
 import icon1 from '@images/timer.png';
 import icon2 from '@images/flag.png';
@@ -124,7 +125,7 @@ const TeamActivity = () => {
       <Article
         title="Never feel in the dark again with team activity updates"
         description="Find out what’s going on in a few taps. Get real-time updates on your team’s status and location. See who’s on the clock, on break, or enjoying some time off."
-        image={image1}
+        image={image4}
         maxWidth={500}
       />
       <Article
