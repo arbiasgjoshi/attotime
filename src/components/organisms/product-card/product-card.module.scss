@@ -146,18 +146,18 @@
             background: #000000;
             position: absolute;
             height: 1.5px;
-            width: 13px;
+            width: 7px;
           }
 
           &:before {
-            right: -3px;
-            bottom: -4px;
+            right: -1px;
+            bottom: -2px;
             transform: rotate(-45deg);
           }
 
           &:after {
-            right: -3px;
-            top: -4px;
+            right: -1px;
+            top: -2px;
             transform: rotate(45deg);
           }
         }
