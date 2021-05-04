@@ -41,7 +41,9 @@
     }
 
     h6 {
-      font-weight: var(--regular);
+      font-size: var(--body-style-three);
+      font-weight: var(--body-style-three-font-weight);
+      line-height: var(--body-style-three-line-height-size);
       text-align: left;
     }
 

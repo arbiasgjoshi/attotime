@@ -34,7 +34,7 @@ const FeatureTabs = () => {
       <div className={activeIndex === 1 ? content : inactive}>
         <ProductCard
           title="Be in control of your employees in the field"
-          description="Track job routes, work history, and employee` locations in real-time - increasing team safety and accountability."
+          description="Track job routes, work history, and employee’ locations in real-time – increasing team safety and accountability."
           image={image2}
           isSwapped
           style="homepage"

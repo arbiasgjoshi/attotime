@@ -30,7 +30,13 @@ import { StaticImage } from 'gatsby-plugin-image';
 import CommentCard from '@components/molecules/comment-card';
 
 import authorImage from '@images/no-image.png';
-import { slider, checkListContainer, numbers, story } from './homepage.module.scss';
+import {
+  slider,
+  sliderWrapper,
+  sliderText,
+  checkListContainer,
+  numbers,
+} from './homepage.module.scss';
 import Carousel from '@components/molecules/carousel';
 
 const titleList = [
@@ -81,26 +87,31 @@ const Home = () => (
       width={1140}
       height={485}
     />
-    <Divider className="style1" />
-    <div className={slider}>
-      <CommentCard
-        title={`Amazing for my business!`}
-        description={`Super convenient and easy to use, so happy I've found Atto! Highly reccomend`}
-        date="23 Jul"
-        author="Nita Ora"
-      />
-      <CommentCard
-        title={`A must have software`}
-        description={`I just love the ongoning improvements.`}
-        date="20 Jul"
-        author="James Stone"
-      />
-      <CommentCard
-        title={`Everything you need`}
-        description={`Service is fabolous and it’s easy to use. My employees love it.`}
-        date="18 Jun"
-        author="Rich Mathews"
-      />
+    <Divider className="style4" />
+    <div className={sliderWrapper}>
+      <div className={slider}>
+        <CommentCard
+          title={`Amazing for my business!`}
+          description={`Super convenient and easy to use, so happy I've found Atto! Highly reccomend`}
+          date="23 Jul"
+          author="Nita Ora"
+        />
+        <CommentCard
+          title={`A must have software`}
+          description={`I just love the ongoning improvements.`}
+          date="20 Jul"
+          author="James Stone"
+        />
+        <CommentCard
+          title={`Everything you need`}
+          description={`Service is fabolous and it’s easy to use. My employees love it.`}
+          date="18 Jun"
+          author="Rich Mathews"
+        />
+      </div>
+      <div className={sliderText}>
+        <span>Rated Excellent 5/5 over 1,200 reviews</span>
+      </div>
     </div>
     <Divider className="style4" />
     <FeatureTabs />
@@ -134,7 +145,7 @@ const Home = () => (
     </div>
     <Divider />
     <Title title="Hear what business owners say about Atto" />
-    <Divider className="style3" />
+    <Divider className="style9" />
     <Carousel>
       <Story
         className="homepage"

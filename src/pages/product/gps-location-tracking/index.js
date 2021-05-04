@@ -9,6 +9,7 @@ import IconCardList from '@components/organisms/icon-card-list';
 import Video from '@components/molecules/video';
 import Story from '@components/organisms/story';
 import Cover from '@components/organisms/growth-numbers/cover';
+import LearnMoreCard from '@components/molecules/learn-more-card';
 import CheckList from '@components/molecules/check-list';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import FeaturesList from '@components/organisms/features-list';
@@ -22,6 +23,7 @@ import {
   checkListContainer,
   privacyContainer,
   imageContainer,
+  learnMoreContainer,
 } from './gps-location-tracking.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 
@@ -45,6 +47,9 @@ import icon14 from '@images/plus@2x.png';
 import icon15 from '@images/lightbulb@2x.png';
 import icon16 from '@images/plumbing@2x.png';
 import icon17 from '@images/dots@2x.png';
+import icon18 from '@images/location@1x.png';
+import icon19 from '@images/profile@1x.png';
+import icon20 from '@images/timesheets@1x.png';
 
 const LocationTracking = () => {
   const serviceList = [
@@ -144,7 +149,7 @@ const LocationTracking = () => {
     {
       title: 'Privacy Controls',
       description:
-        'Stay in control of what gets tracked - real-time positions, clock in/out lcoations or nothing at all.',
+        'Stay in control of what gets tracked – real-time positions, clock in/out locations, or nothing at all.',
       logo: icon9,
     },
   ];
@@ -196,15 +201,15 @@ const LocationTracking = () => {
       <Divider />
       <ListArticle
         title="Keep track of your team's daily movements"
-        description="Atto's GPS location tracking generates simple map-based timelines of every employee's daily movements. This helps you visualize their workdays in a clear, simple-to-udnerstand fashion."
+        description="Atto’s GPS location tracking generates simple map-based timelines of every employee’s daily movements. This helps you visualize their workdays in a clear, simple-to-understand fashion."
         list={checkLists2}
         image={noImage}
       />
       <Divider />
       <ListArticle
         title="Verify your team is working at the right job site"
-        description="Increase your team's accountability by using geofencing to restrict them from clocking in until they're at a job site."
-        description2="Clock in/out locations are GPS stamped and job sites can be named so it's easy to read reports and check activity."
+        description="Increase your team’s accountability by using geofencing to restrict them from clocking in until they’re at a job site."
+        description2="Clock in/out locations are GPS stamped and job sites can be named so it’s easy to read reports and check activity."
         list={checkLists3}
         image={image1}
         isSwapped
@@ -228,6 +233,8 @@ const LocationTracking = () => {
         </div>
       </div>
       <Divider />
+      <Title title="Our full suite of location tracking features at a glance" maxWidth={880} />
+      <Divider className="style7" />
       <FeaturesList list={featuresList} />
       <Divider />
       <Cover isSwapped />
@@ -246,6 +253,29 @@ const LocationTracking = () => {
         author="Robert Bennet - DPA Cleaning Services, Inc."
       />
       <Divider />
+      <Title
+        title={`It doesn't end here!`}
+        description="Learn more about what Atto can do for you"
+      />
+      <Divider className="style6" />
+      <div className={learnMoreContainer}>
+        <LearnMoreCard
+          title="GPS Location Tracking"
+          description="Increase the safety and accountability of your team with real-time updates on their location."
+          icon={icon18}
+        />
+        <LearnMoreCard
+          title="Team Activity"
+          description="Stay in the loop with what's happening - without needing to pick up the phone"
+          icon={icon19}
+        />
+        <LearnMoreCard
+          title="Timesheets"
+          description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+          icon={icon20}
+        />
+      </div>
+      <Divider className="style3" />
       <SubscribeBanner
         title="Stay in control of what's happening with team activity updates!"
         placeholder="Type your email"
