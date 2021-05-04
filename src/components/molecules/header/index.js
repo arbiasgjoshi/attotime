@@ -6,6 +6,27 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Button from '@components/atoms/button';
 import Divider from '@components/atoms/divider';
 import Icon from '@components/atoms/icon';
+
+import ProductIcon from '@images/product-overview-logo.svg';
+import TimeTrackingIcon from '@images/time-tracking.svg';
+import LocationTrackingIcon from '@images/location-tracking-logo.svg';
+import TeamActivityLogo from '@images/team-activity-logo.svg';
+import TimesheetsLogo from '@images/timesheets-logo.svg';
+
+import ConstructionLogo from '@images/construction-industry-logo.svg';
+import PaintingLogo from '@images/painting-industry-logo.svg';
+import HealthcareLogo from '@images/healthcare-industry-logo.svg';
+import PlumbingLogo from '@images/plumbing-industry-logo.svg';
+import ElectrianLogo from '@images/electrician-industry-logo.svg';
+import LandscapingLogo from '@images/landscaping-industry-logo.svg';
+import RoofingLogo from '@images/roofing-industry-logo.svg';
+import CleaningLogo from '@images/cleaning-industry-logo.svg';
+import ThreeDots from '@images/three-dots.svg';
+
+import HelpCenterLogo from '@images/help-center-logo.svg';
+import BlogLogo from '@images/blog-menu-logo.svg';
+import ContactLogo from '@images/contact-menu-logo.svg';
+
 import {
   headerContainer,
   leftNav,
@@ -44,7 +65,7 @@ const HeaderComponent = ({ centered, logoType }) => {
               <div className={mainItem}>
                 <Link className={`${menuItem} ${menuItemWrapper}`} to="/product">
                   <div className={menuIcon}>
-                    <Icon iconClass="random" />
+                    <ProductIcon />
                   </div>
                   <div className={menuItemDesc}>
                     <h6>Product Overview</h6>
@@ -59,7 +80,7 @@ const HeaderComponent = ({ centered, logoType }) => {
               <div className={subItems}>
                 <Link className={menuItem} to="/product/time-tracking">
                   <div className={menuIcon}>
-                    <Icon iconClass="random" />
+                    <TimeTrackingIcon />
                   </div>
                   <div className={menuItemDesc}>
                     <h6>Time Tracking</h6>
@@ -68,7 +89,7 @@ const HeaderComponent = ({ centered, logoType }) => {
                 </Link>
                 <Link className={menuItem} to="/product/gps-location-tracking">
                   <div className={menuIcon}>
-                    <Icon iconClass="random" />
+                    <LocationTrackingIcon />
                   </div>
                   <div className={menuItemDesc}>
                     <h6>GPS Location Tracking</h6>
@@ -77,7 +98,7 @@ const HeaderComponent = ({ centered, logoType }) => {
                 </Link>
                 <Link className={menuItem} to="/product/team-activity">
                   <div className={menuIcon}>
-                    <Icon iconClass="random" />
+                    <TeamActivityLogo />
                   </div>
                   <div className={menuItemDesc}>
                     <h6>Team Activity</h6>
@@ -86,7 +107,7 @@ const HeaderComponent = ({ centered, logoType }) => {
                 </Link>
                 <Link className={menuItem} to="/product/timesheets">
                   <div className={menuIcon}>
-                    <Icon iconClass="random" />
+                    <TimesheetsLogo />
                   </div>
                   <div className={menuItemDesc}>
                     <h6>Timesheets</h6>
@@ -138,7 +159,7 @@ const HeaderComponent = ({ centered, logoType }) => {
             <div className={menuItems}>
               <Link className={menuItem} to="/industries/construction">
                 <div className={menuIcon}>
-                  <Icon iconClass="random" />
+                  <ConstructionLogo />
                 </div>
                 <div className={menuItemDesc}>
                   <h6>Construction</h6>
@@ -147,7 +168,7 @@ const HeaderComponent = ({ centered, logoType }) => {
               </Link>
               <Link className={menuItem} to="/industries/painting-and-decorating">
                 <div className={menuIcon}>
-                  <Icon iconClass="random" />
+                  <PaintingLogo />
                 </div>
                 <div className={menuItemDesc}>
                   <h6>Painting & Decorating</h6>
@@ -156,7 +177,7 @@ const HeaderComponent = ({ centered, logoType }) => {
               </Link>
               <Link className={menuItem} to="/industries/healtchare-and-medical">
                 <div className={menuIcon}>
-                  <Icon iconClass="random" />
+                  <HealthcareLogo />
                 </div>
                 <div className={menuItemDesc}>
                   <h6>Healthcare & Medical</h6>
@@ -165,7 +186,7 @@ const HeaderComponent = ({ centered, logoType }) => {
               </Link>
               <Link className={menuItem} to="/industries/plumbing-and-heating">
                 <div className={menuIcon}>
-                  <Icon iconClass="random" />
+                  <PlumbingLogo />
                 </div>
                 <div className={menuItemDesc}>
                   <h6>Plumbing & Heating</h6>
@@ -174,7 +195,7 @@ const HeaderComponent = ({ centered, logoType }) => {
               </Link>
               <Link className={menuItem} to="/industries/electrical">
                 <div className={menuIcon}>
-                  <Icon iconClass="random" />
+                  <ElectrianLogo />
                 </div>
                 <div className={menuItemDesc}>
                   <h6>Electrical</h6>
@@ -183,7 +204,7 @@ const HeaderComponent = ({ centered, logoType }) => {
               </Link>
               <Link className={menuItem} to="/industries/landscaping">
                 <div className={menuIcon}>
-                  <Icon iconClass="random" />
+                  <LandscapingLogo />
                 </div>
                 <div className={menuItemDesc}>
                   <h6>Landscaping</h6>
@@ -192,7 +213,7 @@ const HeaderComponent = ({ centered, logoType }) => {
               </Link>
               <Link className={menuItem} to="/industries/roofing">
                 <div className={menuIcon}>
-                  <Icon iconClass="random" />
+                  <RoofingLogo />
                 </div>
                 <div className={menuItemDesc}>
                   <h6>Roofing</h6>
@@ -201,7 +222,7 @@ const HeaderComponent = ({ centered, logoType }) => {
               </Link>
               <Link className={menuItem} to="/industries/cleaning-and-maintenance">
                 <div className={menuIcon}>
-                  <Icon iconClass="random" />
+                  <CleaningLogo />
                 </div>
                 <div className={menuItemDesc}>
                   <h6>Cleaning & Maintenance</h6>
@@ -210,7 +231,7 @@ const HeaderComponent = ({ centered, logoType }) => {
               </Link>
               <Link className={menuItem} to="/industries/more">
                 <div className={menuIcon}>
-                  <Icon iconClass="random" />
+                  <ThreeDots />
                 </div>
                 <div className={menuItemDesc}>
                   <h6>More industries</h6>
@@ -226,7 +247,7 @@ const HeaderComponent = ({ centered, logoType }) => {
             <div className={menuItems}>
               <Link className={menuItem} to="/resources/help-center">
                 <div className={menuIcon}>
-                  <Icon iconClass="random" />
+                  <HelpCenterLogo />
                 </div>
                 <div className={menuItemDesc}>
                   <h6>Help Center</h6>
@@ -235,7 +256,7 @@ const HeaderComponent = ({ centered, logoType }) => {
               </Link>
               <Link className={menuItem} to="/industries/blog">
                 <div className={menuIcon}>
-                  <Icon iconClass="random" />
+                  <BlogLogo />
                 </div>
                 <div className={menuItemDesc}>
                   <h6>Blog</h6>
@@ -244,7 +265,7 @@ const HeaderComponent = ({ centered, logoType }) => {
               </Link>
               <Link className={menuItem} to="/industries/contact">
                 <div className={menuIcon}>
-                  <Icon iconClass="random" />
+                  <ContactLogo />
                 </div>
                 <div className={menuItemDesc}>
                   <h6>Contact</h6>
