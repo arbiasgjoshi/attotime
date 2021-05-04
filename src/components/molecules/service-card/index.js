@@ -3,9 +3,7 @@ import { container, iconWrapper, textContainer, cardTitle } from './service-card
 
 const ServiceCard = ({ title, icon }) => (
   <div className={container}>
-    <div className={iconWrapper}>
-      <img src={icon} />
-    </div>
+    <div className={iconWrapper}>{icon}</div>
     <div className={textContainer}>
       <h5 className={cardTitle}>{title}</h5>
     </div>

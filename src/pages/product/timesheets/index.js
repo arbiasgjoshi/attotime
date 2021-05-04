@@ -43,17 +43,19 @@ import icon8 from '@images/brightness.png';
 import icon9 from '@images/m-logo.png';
 import icon10 from '@images/coffe.png';
 import icon11 from '@images/bookmark.png';
-import icon12 from '@images/helmet@2x.png';
-import icon13 from '@images/leaf@2x.png';
-import icon14 from '@images/roof@2x.png';
-import icon15 from '@images/brush@2x.png';
-import icon16 from '@images/plus@2x.png';
-import icon17 from '@images/lightbulb@2x.png';
-import icon18 from '@images/plumbing@2x.png';
-import icon19 from '@images/dots@2x.png';
 import icon20 from '@images/time-tracking-clock@1x.png';
 import icon21 from '@images/location@1x.png';
 import icon22 from '@images/profile@1x.png';
+
+import ConstructionLogo from '@images/construction-industry-logo.svg';
+import PaintingLogo from '@images/painting-industry-logo.svg';
+import HealthcareLogo from '@images/healthcare-industry-logo.svg';
+import PlumbingLogo from '@images/plumbing-industry-logo.svg';
+import ElectrianLogo from '@images/electrician-industry-logo.svg';
+import LandscapingLogo from '@images/landscaping-industry-logo.svg';
+import RoofingLogo from '@images/roofing-industry-logo.svg';
+import CleaningLogo from '@images/cleaning-industry-logo.svg';
+import ThreeDots from '@images/three-dots.svg';
 
 const Timesheets = () => {
   const checkLists = [
@@ -156,14 +158,14 @@ const Timesheets = () => {
   ];
 
   const serviceList = [
-    { title: 'Construction', icon: icon12 },
-    { title: 'Landscaping & Gardening', icon: icon13 },
-    { title: 'Roofing', icon: icon14 },
-    { title: 'Painting & Decorating', icon: icon15 },
-    { title: 'Healthcare & Medical', icon: icon16 },
-    { title: 'Electrical', icon: icon17 },
-    { title: 'Plumbing & Heating', icon: icon18 },
-    { title: 'Other industries', icon: icon19 },
+    { title: 'Construction', icon: <ConstructionLogo /> },
+    { title: 'Landscaping & Gardening', icon: <LandscapingLogo /> },
+    { title: 'Roofing', icon: <RoofingLogo /> },
+    { title: 'Painting & Decorating', icon: <PaintingLogo /> },
+    { title: 'Healthcare & Medical', icon: <HealthcareLogo /> },
+    { title: 'Electrical', icon: <ElectrianLogo /> },
+    { title: 'Plumbing & Heating', icon: <PlumbingLogo /> },
+    { title: 'Other industries', icon: <ThreeDots /> },
   ];
 
   return (
