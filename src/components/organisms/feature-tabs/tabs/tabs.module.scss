@@ -15,7 +15,16 @@
 
       &.isActive {
         color: #00b9cb;
-        border-bottom: 4px solid #00b9cb;
+        position: relative;
+
+        ::after {
+          display: block;
+          border: 2px solid #00b9cb;
+          content: '';
+          position: absolute;
+          top: 61px;
+          width: 100%;
+        }
       }
     }
   }

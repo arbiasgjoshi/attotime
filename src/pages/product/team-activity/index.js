@@ -14,6 +14,7 @@ import MainTitleCard from '@components/molecules/main-title-card';
 import LearnMoreCard from '@components/molecules/learn-more-card';
 import Video from '@components/molecules/video';
 import CheckList from '@components/molecules/check-list';
+import Cover from '@components/organisms/growth-numbers/cover';
 import Article from '@components/molecules/article';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import FeaturesList from '@components/organisms/features-list';
@@ -24,6 +25,7 @@ import authorImage from '@images/authorImage.png';
 import image1 from '@images/team-management-departments.png';
 import image2 from '@images/find-out.png';
 import image3 from '@images/eliminate-checks.png';
+import image4 from '@images/activity-updates@2x.png';
 
 import icon1 from '@images/timer.png';
 import icon2 from '@images/flag.png';
@@ -38,6 +40,9 @@ import icon10 from '@images/plus@2x.png';
 import icon11 from '@images/lightbulb@2x.png';
 import icon12 from '@images/plumbing@2x.png';
 import icon13 from '@images/dots@2x.png';
+import icon14 from '@images/time-tracking-clock@1x.png';
+import icon15 from '@images/profile@1x.png';
+import icon16 from '@images/timesheets@1x.png';
 
 import { FooterLinks } from '@locale/en.js';
 
@@ -120,7 +125,7 @@ const TeamActivity = () => {
       <Article
         title="Never feel in the dark again with team activity updates"
         description="Find out what’s going on in a few taps. Get real-time updates on your team’s status and location. See who’s on the clock, on break, or enjoying some time off."
-        image={image1}
+        image={image4}
         maxWidth={500}
       />
       <Article
@@ -156,9 +161,11 @@ const TeamActivity = () => {
         <FeaturesList list={featureList} />
       </div>
       <Divider />
+      <Cover isSwapped />
+      <Divider className="style10" />
       <Title
         title="A work hours tracker for any industry"
-        description="Atto helps all types of businesses across the world to manage their employees' time"
+        description="Atto helps all types of businesses across the world to manage their employees’ time."
         maxDescriptionWidth={700}
       />
       <Divider className="style2" />
@@ -178,20 +185,23 @@ const TeamActivity = () => {
       <div className={learnMoreContainer}>
         <LearnMoreCard
           title="Time Tracking"
+          icon={icon14}
           description="See exactly where your employees's time is going. Track work hours, breaks, overtime, time off, and more!"
         />
         <LearnMoreCard
           title="GPS Location Tracking"
           description="Increase the safety and accountability of your team with real-time updates on their location."
+          icon={icon15}
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+          icon={icon16}
         />
       </div>
       <Divider />
       <SubscribeBanner
-        title="Stay in control of what's happening with team activity updates!"
+        title="Stay in control of what's happening with team activity updates"
         placeholder="Type your email"
         checkItemOne="No credit card required"
         checkItemTwo="14 day free trial"
