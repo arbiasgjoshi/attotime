@@ -241,7 +241,7 @@ const LocationTracking = () => {
       <Divider />
       <Title
         title="A work hours tracker for any industry"
-        description="Atto helps all types of bussinesses across the world to manage their employee's time"
+        description="Atto helps all types of businesses across the world to manage their employees’ time."
         maxDescriptionWidth={700}
       />
       <Divider className="style2" />

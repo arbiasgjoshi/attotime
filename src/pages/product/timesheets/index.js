@@ -34,7 +34,7 @@ import roundImage3 from '@images/timesheets-inbox2x.png';
 
 import icon from '@images/accurate.png';
 import icon2 from '@images/trustworthy.png';
-import icon3 from '@images/easy-to-use.png';
+import icon3 from '@images/instantly-available@2x.png';
 import icon4 from '@images/timer.png';
 import icon5 from '@images/flag.png';
 import icon6 from '@images/ringbell.png';
@@ -51,6 +51,9 @@ import icon16 from '@images/plus@2x.png';
 import icon17 from '@images/lightbulb@2x.png';
 import icon18 from '@images/plumbing@2x.png';
 import icon19 from '@images/dots@2x.png';
+import icon20 from '@images/time-tracking-clock@1x.png';
+import icon21 from '@images/location@1x.png';
+import icon22 from '@images/profile@1x.png';
 
 const Timesheets = () => {
   const checkLists = [
@@ -184,7 +187,8 @@ const Timesheets = () => {
       <div className={readyMadeTitle}>
         <Title
           title="Ready-made professional timesheets"
-          description="Your employees' hours are instantly transformed into timesheet reports. View every hour worked from regular time to overtime. Create reports based on specific employees, teams, or job codes. And download and share them in a few clicks."
+          description="Your employees’ hours are instantly transformed into timesheet reports. View every hour worked from regular time to overtime. Create reports based on specific employees, teams, or job codes. And download and share them in a few clicks."
+          maxDescriptionWidth={980}
         />
       </div>
       <Divider className="style3" />
@@ -209,7 +213,7 @@ const Timesheets = () => {
         isSwapped
       />
       <Divider />
-      <Title title="Our full suite of timesheet features at a glance" />
+      <Title maxWidth={880} title="Our full suite of timesheet features at a glance" />
       <Divider className="style3" />
       <FeaturesList list={featureList} />
       <Divider />
@@ -262,18 +266,25 @@ const Timesheets = () => {
         author="Robert Bennet - DPA Cleaning Services, Inc."
       />
       <Divider />
+      <Title title="It doesn’t end here!" description="Learn more about what Atto can do for you" />
+      <Divider className="style2" />
       <div className={learnMoreContainer}>
         <LearnMoreCard
           title="GPS Location Tracking"
           description="Increase the safety and accountability of your team with real-time updates on their location."
+          icon={icon20}
         />
-        <LearnMoreCard
-          title="Team Activity"
-          description="Stay in the loop with what's happening - without needing to pick up the phone"
-        />
+
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+          icon={icon21}
+        />
+
+        <LearnMoreCard
+          title="Team Activity"
+          description="Stay in the loop with what's happening - without needing to pick up the phone"
+          icon={icon22}
         />
       </div>
       <Divider className="style3" />
