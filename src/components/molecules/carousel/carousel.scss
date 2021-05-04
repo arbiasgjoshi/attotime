@@ -1,6 +1,6 @@
 .carousel.carousel-slider {
   overflow: inherit;
-  min-height: 50rem;
+  // min-height: 50rem;
 }
 
 .carousel {
@@ -42,8 +42,10 @@
   }
 
   .control-dots {
+    bottom: -10rem;
     .dot {
       background-color: #e3e3e3;
+      box-shadow: none;
       border-radius: 50%;
       height: 1.2rem;
       width: 1.2rem;
@@ -63,4 +65,14 @@
   position: absolute;
   top: 0;
   bottom: 0;
+}
+
+.BrainhubCarousel {
+  &__trackContainer {
+    width: calc(100% - 12rem) !important;
+  }
+}
+
+.BrainhubCarouselItem {
+  align-items: unset !important;
 }

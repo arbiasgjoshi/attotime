@@ -30,6 +30,23 @@ import { StaticImage } from 'gatsby-plugin-image';
 import CommentCard from '@components/molecules/comment-card';
 
 import authorImage from '@images/no-image.png';
+import CarouselComponent from '@components/molecules/carousel';
+
+import ArrowRight from '@images/arrow-right.svg';
+import ArrowLeft from '@images/arrow-left.svg';
+
+import Carousel, { Dots, slidesToShowPlugin, arrowsPlugin } from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
+import '@components/molecules/carousel/carousel.scss';
+
+import {
+  btnWrapper,
+  leftAligned,
+  rightAligned,
+  disabled,
+  carouselWrapper,
+} from '@components/molecules/carousel/carousel.module.scss';
+
 import {
   slider,
   sliderWrapper,
@@ -37,7 +54,6 @@ import {
   checkListContainer,
   numbers,
 } from './homepage.module.scss';
-import Carousel from '@components/molecules/carousel';
 
 const titleList = [
   { title: 'No longer chasing timesheets.', id: '1asdd1a' },
@@ -89,26 +105,77 @@ const Home = () => (
     />
     <Divider className="style4" />
     <div className={sliderWrapper}>
-      <div className={slider}>
+      <Carousel
+        className={carouselWrapper}
+        // offset={30}
+        width={960}
+        // itemWidth={300}
+        plugins={[
+          {
+            resolve: arrowsPlugin,
+            options: {
+              arrowLeft: (
+                <button className={`${btnWrapper} ${leftAligned}`} type="button">
+                  <ArrowLeft />
+                </button>
+              ),
+              arrowLeftDisabled: (
+                <button className={`${btnWrapper} ${leftAligned} ${disabled}`} type="button">
+                  <ArrowLeft />
+                </button>
+              ),
+              arrowRight: (
+                <button className={`${btnWrapper} ${rightAligned}`} type="button">
+                  <ArrowRight />
+                </button>
+              ),
+              arrowRightDisabled: (
+                <button className={`${btnWrapper} ${rightAligned} ${disabled}`} type="button">
+                  <ArrowRight />
+                </button>
+              ),
+              addArrowClickHandler: true,
+            },
+          },
+          {
+            resolve: slidesToShowPlugin,
+            options: {
+              numberOfSlides: 3,
+            },
+          },
+        ]}
+      >
         <CommentCard
-          title={`Amazing for my business!`}
+          title="Amazing for my business!"
           description={`Super convenient and easy to use, so happy I've found Atto! Highly reccomend`}
           date="23 Jul"
           author="Nita Ora"
         />
         <CommentCard
-          title={`A must have software`}
-          description={`I just love the ongoning improvements.`}
+          title="A must have software"
+          description="I just love the ongoning improvements."
           date="20 Jul"
           author="James Stone"
         />
         <CommentCard
-          title={`Everything you need`}
-          description={`Service is fabolous and it’s easy to use. My employees love it.`}
+          title="Everything you need"
+          description="Service is fabolous and it’s easy to use. My employees love it."
           date="18 Jun"
           author="Rich Mathews"
         />
-      </div>
+        <CommentCard
+          title="A must have software"
+          description="I just love the ongoning improvements."
+          date="20 Jul"
+          author="James Stone"
+        />
+        <CommentCard
+          title="Everything you need"
+          description="Service is fabolous and it’s easy to use. My employees love it."
+          date="18 Jun"
+          author="Rich Mathews"
+        />
+      </Carousel>
       <div className={sliderText}>
         <span>Rated Excellent 5/5 over 1,200 reviews</span>
       </div>
@@ -146,26 +213,26 @@ const Home = () => (
     <Divider />
     <Title title="Hear what business owners say about Atto" />
     <Divider className="style9" />
-    <Carousel>
+    <CarouselComponent large>
       <Story
         className="homepage"
         img={authorImage}
-        paragraph={`“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”`}
+        paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
         author="Robert Bennet - DPA Cleaning Services, Inc."
       />
       <Story
         className="homepage"
         img={authorImage}
-        paragraph={`“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”`}
+        paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
         author="Robert Bennet - DPA Cleaning Services, Inc."
       />
       <Story
         className="homepage"
         img={authorImage}
-        paragraph={`“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”`}
+        paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
         author="Robert Bennet - DPA Cleaning Services, Inc."
       />
-    </Carousel>
+    </CarouselComponent>
     <Divider />
     <FreeTrial
       title="No time to waste!"

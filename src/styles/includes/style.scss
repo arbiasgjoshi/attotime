@@ -29,6 +29,16 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.attoicon-timesheets {
+  &:before {
+    content: $attoicon-timesheets;
+  }
+}
+.attoicon-close {
+  &:before {
+    content: $attoicon-close;
+  }
+}
 .attoicon-healthcare {
   &:before {
     content: $attoicon-healthcare;
@@ -87,5 +97,15 @@ i {
 .attoicon-tick {
   &:before {
     content: $attoicon-tick;
+  }
+}
+.attoicon-arrow-left {
+  &:before {
+    content: $attoicon-arrow-left;
+  }
+}
+.attoicon-arrow-right {
+  &:before {
+    content: $attoicon-arrow-right;
   }
 }
