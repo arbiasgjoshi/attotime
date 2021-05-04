@@ -4,6 +4,7 @@ import HeaderComponent from '@components/molecules/header';
 import MainTitleCard from '@components/molecules/main-title-card';
 import SEO from '@components/molecules/seo';
 import Divider from '@components/atoms/divider';
+import EmailForm from '@components/atoms/email-form';
 import { FooterLinks } from '@locale/en.js';
 import Story from '@components/organisms/story';
 import IconCardList from '@components/organisms/icon-card-list';
@@ -101,6 +102,14 @@ const Product = () => {
         title="Everything you need to keep track of your employees’ time"
         subtitle="Don't let timesheets be a distraction. Focus on what matters and let us handle them for you."
       />
+      <EmailForm
+        placeholder="Type your email"
+        checkItemOne="No credit card required"
+        checkItemTwo="14 day free trial"
+        checkItemThree="Cancel anytime"
+        style="productPage"
+      />
+      <Divider className="style2" />
       <StaticImage src="../../images/no-image.png" alt="No image" width={1140} height={400} />
       <Divider className="style3" />
       <IconCardList cardList={firstList} />
