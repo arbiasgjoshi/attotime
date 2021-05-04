@@ -238,7 +238,7 @@ const LocationTracking = () => {
       <FeaturesList list={featuresList} />
       <Divider />
       <Cover isSwapped />
-      <Divider />
+      <Divider className="style10" />
       <Title
         title="A work hours tracker for any industry"
         description="Atto helps all types of businesses across the world to manage their employees’ time."

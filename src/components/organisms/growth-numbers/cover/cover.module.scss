@@ -4,6 +4,10 @@
 
   &.swap {
     flex-direction: row-reverse;
+
+    .leftBox {
+      margin-left: 9.6rem;
+    }
   }
 
   .leftBox {

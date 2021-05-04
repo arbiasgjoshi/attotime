@@ -16,8 +16,10 @@
   }
 
   &.productPage {
+    color: #999999;
+
     > div input {
-      border: 2px solid #efefef;
+      border: 2px solid var(--color-20);
       border-radius: 4px;
     }
 

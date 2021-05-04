@@ -200,14 +200,14 @@ const Timesheets = () => {
       <Divider />
       <ListArticle
         title="Boost productivity with timesheet insights"
-        description="Work smarter, not longer. Use timesheet reports to filter all the work done by each employee, team, or towards specific category of job."
+        description="Work smarter, not longer. Use timesheet reports to filter all the work done by each employee, team, or towards a specific category of job."
         list={checkLists2}
         image={photo1}
       />
       <Divider />
       <ListArticle
         title="Gain a clear understanding of your employyes' activity"
-        description="Atto uses employee' timesheet data to generate clear, simple timelines of everyone's daily activity. Now it's much easier to understand their working patterns, and far quicker to review timesheets."
+        description="Atto uses employee’ timesheet data to generate clear, simple timelines of everyone’s daily activity. Now it’s much easier to understand their working patterns, and far quicker to review timesheets."
         list={checkLists3}
         image={photo1}
         isSwapped

@@ -4,6 +4,7 @@
   @include min(tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &.swap {
@@ -21,7 +22,7 @@
     justify-content: center;
 
     @include min(tablet) {
-      width: 50%;
+      width: 56rem;
     }
 
     p {
