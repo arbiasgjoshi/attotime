@@ -30,7 +30,7 @@ const ProductCard = ({ productName, title, description, list, image, isSwapped, 
           <div className={styles.arrowIconContainer}>
             <img src={arrowIcon} alt={title} />
           </div>
-          <h5>Learn More</h5>
+          <h5>Learn more</h5>
           {style === 'homepage' && <div className={styles.arrow}></div>}
         </div>
       </div>

@@ -15,6 +15,20 @@
     }
   }
 
+  &.productPage {
+    color: #999999;
+
+    > div input {
+      border: 2px solid var(--color-20);
+      border-radius: 4px;
+    }
+
+    > div button {
+      font-size: 2rem;
+      background-color: var(--color-1);
+    }
+  }
+
   .checkItems {
     @include flex-direction(column);
     margin: 0 2rem;

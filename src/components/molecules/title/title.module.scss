@@ -1,10 +1,10 @@
 .container {
   width: 100%;
-  text-align: center;
   padding: 0 1rem;
   margin-bottom: 1rem;
 
   @include min(tablet) {
+    text-align: center;
     padding: 0;
     margin: 0;
   }

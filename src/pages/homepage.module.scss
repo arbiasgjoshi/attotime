@@ -1,14 +1,24 @@
-.slider {
-  @include flex-direction(column);
-  margin: 0 1rem;
+.sliderWrapper {
+  .slider {
+    @include flex-direction(column);
+    margin: 0 1rem;
 
-  @include min(tablet) {
-    flex-direction: row;
-    justify-content: space-between;
+    @include min(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include min(laptop) {
+      margin: 0 8rem;
+    }
   }
 
-  @include min(laptop) {
-    margin: 0 8rem;
+  .sliderText {
+    margin-top: 2rem;
+    margin-left: 12.2rem;
+    font-size: var(--body-style-four);
+    line-height: var(--body-style-four-line-height-size);
+    font-weight: var(--body-style-four-font-weight);
   }
 }
 
@@ -25,10 +35,6 @@
   grid-template-columns: repeat(2, 1fr);
   padding: 0 3rem;
   row-gap: 1rem;
-
-  > div:nth-child(even) {
-    text-align: right;
-  }
 
   @include min(tablet) {
     flex-direction: row;

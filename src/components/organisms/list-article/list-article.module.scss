@@ -4,6 +4,7 @@
   @include min(tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &.swap {
@@ -21,20 +22,17 @@
     justify-content: center;
 
     @include min(tablet) {
-      width: 50%;
+      width: 56rem;
     }
 
-    h4 {
+    p {
       margin-top: 0.4rem;
-      font-size: 2.6rem;
-      line-height: 3rem;
+      font-size: var(--body-style-two);
+      line-height: var(--body-style-two-line-height-size);
       letter-spacing: -0.5px;
     }
 
     .descr2 {
-      color: var(--fifth-color);
-      letter-spacing: -0.5px;
-      font-weight: var(--regular);
       margin-bottom: 4rem;
     }
   }

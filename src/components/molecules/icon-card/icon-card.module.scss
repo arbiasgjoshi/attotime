@@ -41,6 +41,10 @@
 
     &.leftAligned {
       text-align: left;
+
+      h4 {
+        margin-bottom: 2rem;
+      }
     }
   }
 }

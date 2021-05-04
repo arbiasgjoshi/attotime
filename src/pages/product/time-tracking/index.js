@@ -351,7 +351,7 @@ const TimeTracking = () => {
           icon={icon22}
           alt="Employees forget"
           title="Employees forget to track their time?"
-          description={`Not any more! With smart reminders, your employees are encouraged to clock-in/out when they're at a job site, and at their regular start and end time.`}
+          description="Not any more! With smart reminders, your employees are encouraged to clock in/out when they’re at a job site, and at their regular start and end time."
         />
         <IconCard
           isRound
@@ -367,7 +367,7 @@ const TimeTracking = () => {
           icon={noImage}
           alt="Not sure if employees"
           title={`Not sure if employees are where they're supposed to?`}
-          description={`Always be in the know! With geofencing, you can restrict employees from clocking-in until they're at a job site - increasing accountability and preventing innacurate time entries`}
+          description={`Always be in the know! With geofencing, you can restrict employees from clocking in until they’re at a job site – increasing accountability and preventing inaccurate time entries.`}
         />
       </div>
       <Divider />

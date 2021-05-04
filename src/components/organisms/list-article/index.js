@@ -16,7 +16,7 @@ const ListArticle = ({ title, description, description2, list, image, isSwapped 
   <div className={`${container} ${isSwapped && swap}`}>
     <div className={textWrapper}>
       <Title title={title} description={description} leftAlign />
-      {description2 && <h5 className={descr2}>{description2}</h5>}
+      {description2 && <p className={descr2}>{description2}</p>}
       <CheckList list={list} cardStyle="small" />
     </div>
     <div className={secondBlock}>

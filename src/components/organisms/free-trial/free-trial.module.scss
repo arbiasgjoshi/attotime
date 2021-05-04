@@ -1,5 +1,6 @@
 .container {
   background-color: #e6f8fa;
+  padding: 0.5rem;
   @include flex-direction(column);
 
   @include min(tablet) {
@@ -52,12 +53,12 @@
   }
 
   .listWrapper {
-    height: 28rem;
-    width: 55rem;
-    margin: 1.1rem 0 0.3rem 0;
+    margin-top: 1.5rem;
 
     @include min(tablet) {
       padding: 0;
+      height: 28rem;
+      width: 55rem;
     }
 
     > div {
