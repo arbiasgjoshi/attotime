@@ -17,14 +17,15 @@ import FreeTrial from '@components/organisms/free-trial';
 import Services from '@components/organisms/services';
 import { container } from '@styles/main.module.scss';
 
-import icon1 from '@images/helmet@2x.png';
-import icon2 from '@images/leaf@2x.png';
-import icon3 from '@images/roof@2x.png';
-import icon4 from '@images/brush@2x.png';
-import icon5 from '@images/plus@2x.png';
-import icon6 from '@images/lightbulb@2x.png';
-import icon7 from '@images/plumbing@2x.png';
-import icon8 from '@images/dots@2x.png';
+import ConstructionLogo from '@images/construction-industry-logo.svg';
+import PaintingLogo from '@images/painting-industry-logo.svg';
+import HealthcareLogo from '@images/healthcare-industry-logo.svg';
+import PlumbingLogo from '@images/plumbing-industry-logo.svg';
+import ElectrianLogo from '@images/electrician-industry-logo.svg';
+import LandscapingLogo from '@images/landscaping-industry-logo.svg';
+import RoofingLogo from '@images/roofing-industry-logo.svg';
+import CleaningLogo from '@images/cleaning-industry-logo.svg';
+import ThreeDots from '@images/three-dots.svg';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import CommentCard from '@components/molecules/comment-card';
@@ -69,16 +70,15 @@ const checkList = [
   { title: 'Enjoy hassle-free automated employee timesheets' },
   { title: 'Streamline the entire payroll process' },
 ];
-
 const serviceList = [
-  { title: 'Construction', icon: icon1 },
-  { title: 'Landscaping & Gardening', icon: icon2 },
-  { title: 'Roofing', icon: icon3 },
-  { title: 'Painting & Decorating', icon: icon4 },
-  { title: 'Healthcare & Medical', icon: icon5 },
-  { title: 'Electrical', icon: icon6 },
-  { title: 'Plumbing & Heating', icon: icon7 },
-  { title: 'Other industries', icon: icon8 },
+  { title: 'Construction', icon: <ConstructionLogo /> },
+  { title: 'Landscaping & Gardening', icon: <LandscapingLogo /> },
+  { title: 'Roofing', icon: <RoofingLogo /> },
+  { title: 'Painting & Decorating', icon: <PaintingLogo /> },
+  { title: 'Healthcare & Medical', icon: <HealthcareLogo /> },
+  { title: 'Electrical', icon: <ElectrianLogo /> },
+  { title: 'Plumbing & Heating', icon: <PlumbingLogo /> },
+  { title: 'Other industries', icon: <ThreeDots /> },
 ];
 
 const Home = () => (
