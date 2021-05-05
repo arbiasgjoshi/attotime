@@ -195,7 +195,7 @@ const LocationTracking = () => {
         src="../../../images/track-team-locations@2x.png"
         alt="location of team"
         width={1139}
-        height={316}
+        height={340}
         quality={95}
       />
       <Divider className="style2" />

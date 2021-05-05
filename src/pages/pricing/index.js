@@ -15,7 +15,9 @@ import FeaturesList from '@components/organisms/features-list';
 import { container } from '@styles/main.module.scss';
 
 import authorImage2 from '@images/authorImage2.png';
+
 import { StaticImage } from 'gatsby-plugin-image';
+
 import TimesheetIcon from '@images/timesheets.svg';
 import LocationIcon from '@images/location.svg';
 import WageEstimateIcon from '@images/wage_estimates.svg';
@@ -181,7 +183,7 @@ const Pricing = () => {
       />
       <Divider className="style5" />
       <div className={featuresBanner}>
-        <StaticImage src="../../images/video-background@2x.png" width={1140} height={328} />
+        <StaticImage src="../../images/video-background@2x.png" width={1140} height={170} />
         <Button btnText="View All Features" />
       </div>
       <Divider className="medium" />
