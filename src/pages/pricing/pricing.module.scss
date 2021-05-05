@@ -1,3 +1,14 @@
+.behindMask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 54rem;
+  background-color: #f7f7f7;
+  border-bottom: 2px solid #efefef;
+  z-index: -1;
+}
+
 .packageWrapper {
   @include flex-direction(column);
   justify-content: space-between;
@@ -29,6 +40,7 @@
 
     .buttonContainer {
       margin-top: 1rem;
+      padding: 0.5rem;
       display: flex;
       height: 5rem;
       border-radius: 2.5rem;
@@ -36,20 +48,10 @@
       background-color: rgba(0, 185, 203, 0.1);
 
       button {
-        width: 12.6rem;
-        box-sizing: border-box;
-        font-weight: var(--medium);
-        letter-spacing: -0.5px;
-        line-height: 20px;
-        background-color: transparent;
-
-        color: var(--primary-color);
-
-        &:focus {
-          color: var(--tertiary-color);
+        &.activeStyle {
           border: 2px solid var(--primary-color);
-          border-radius: 2rem;
-          background-color: #ffffff;
+          background-color: #fff;
+          color: #000;
         }
       }
     }
