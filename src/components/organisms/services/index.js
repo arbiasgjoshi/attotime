@@ -7,7 +7,10 @@ const Services = ({ list }) => (
   <div className={container}>
     <div className={serviceList}>
       {list?.map((service, index) => (
-        <ServiceCard key={index} title={service.title} icon={service.icon} />
+        <>
+          <ServiceCard key={index} title={service.title} icon={service.icon} />
+          <div className={arrow}></div>
+        </>
       ))}
       <div className={middleCard}>
         <div className={iconContainer}>
