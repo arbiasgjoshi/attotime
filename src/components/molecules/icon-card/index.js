@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  container,
-  iconWrapper,
-  round,
-  textWrapper,
-  bigImageStyle,
-  leftAligned,
-} from './icon-card.module.scss';
+import * as styles from './icon-card.module.scss';
 
 const IconCard = ({
   icon,
@@ -16,14 +9,15 @@ const IconCard = ({
   description,
   noImage = false,
   isRound = false,
+  style = '',
 }) => (
-  <div className={container}>
+  <div className={`${styles.container} ${isRound && styles.round} ${styles[style]}`}>
     {!noImage && (
-      <div className={`${iconWrapper} ${isRound && round} ${bigImage && bigImageStyle}`}>
+      <div className={`${styles.iconWrapper} ${bigImage && styles.bigImageStyle}`}>
         <img alt={alt} src={icon} />
       </div>
     )}
-    <div className={`${textWrapper} ${isRound && leftAligned}`}>
+    <div className={styles.textWrapper}>
       <h4>{title}</h4>
       <p>{description}</p>
     </div>

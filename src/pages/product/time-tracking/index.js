@@ -293,7 +293,7 @@ const TimeTracking = () => {
         description="Say goodbye to employee estimates. Use the time clock to precisely capture work activity."
       />
       <Divider className="style7" />
-      <IconCardList cardList={secondList} hasBigImages />
+      <IconCardList cardList={secondList} hasBigImages style="smallerMargin" />
       <Divider />
       <Title
         maxWidth={950}

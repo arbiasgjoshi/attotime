@@ -30,7 +30,7 @@
     @include min(tablet) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      column-gap: 8rem;
+      column-gap: 8.1rem;
       margin-left: 2rem;
       width: calc(100% - 7.8rem);
     }

@@ -235,6 +235,7 @@ const Timesheets = () => {
           alt="Estimate emp"
           title="Estimate your Employees' Wages"
           description={`Avoid unexpected wage bills. Assign pay rates to your employees and their estimated pay will be added to their timesheets.`}
+          style="timesheetMargin"
         />
         <IconCard
           isRound
@@ -243,6 +244,7 @@ const Timesheets = () => {
           alt="Sync"
           title="Sync with Payroll and Accounting Software"
           description="Integrate with Xero and QuickBooks Online to automatically sync timesheet data to your favorite payroll software."
+          style="timesheetMargin"
         />
         <IconCard
           isRound
@@ -251,6 +253,7 @@ const Timesheets = () => {
           alt="Timesheets on-time"
           title={`Timesheets on-time and in your Inbox`}
           description={`Schedule your employees' timesheets to be automatically emailed to you in line with your payroll schedule.`}
+          style="timesheetMargin"
         />
       </div>
       <Divider />

@@ -6,18 +6,7 @@
     width: 12rem;
     height: 12rem;
     margin: 0 auto;
-    margin-bottom: 2.4rem;
-
-    &.round {
-      justify-content: flex-start;
-      padding: 0;
-      margin-bottom: 4rem;
-
-      img {
-        width: 25rem;
-        height: 25rem;
-      }
-    }
+    margin-bottom: 3.5rem;
 
     &.bigImageStyle {
       @include flex-align(center, center);
@@ -32,18 +21,51 @@
 
   .textWrapper {
     width: 35rem;
-    margin: 0 auto;
     text-align: center;
 
     h4 {
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &.round {
+    .iconWrapper {
+      justify-content: flex-start;
+      padding: 0;
+      margin-bottom: 4rem;
+
+      img {
+        width: 25rem;
+        height: 25rem;
+      }
     }
 
-    &.leftAligned {
+    .textWrapper {
       text-align: left;
+      margin-right: 4.5rem;
 
       h4 {
         margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &.smallerMargin {
+    .iconWrapper {
+      margin-bottom: 2.4rem;
+    }
+
+    .textWrapper {
+      h4 {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+
+  &.timesheetMargin {
+    .textWrapper {
+      h4 {
+        margin-bottom: 1.6rem;
       }
     }
   }

@@ -98,7 +98,6 @@
 
     .imageContainer {
       width: 22rem;
-      padding: 3rem; //this is here for now, needs to replace when we find a solution about positioning images dynamically.
 
       @include min(tablet) {
         width: 50rem;
