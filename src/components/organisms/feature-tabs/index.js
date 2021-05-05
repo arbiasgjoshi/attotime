@@ -29,6 +29,7 @@ const FeatureTabs = () => {
           image={image1}
           isSwapped
           style="homepage"
+          imagePadding="3.5rem 3.13rem 3.5rem 3.1rem"
         />
       </div>
       <div className={activeIndex === 1 ? content : inactive}>
@@ -47,6 +48,7 @@ const FeatureTabs = () => {
           image={image4}
           isSwapped
           style="homepage"
+          imagePadding="3.5rem 1.87rem 3.5rem 1.8rem"
         />
       </div>
       <div className={activeIndex === 3 ? content : inactive}>
@@ -56,6 +58,7 @@ const FeatureTabs = () => {
           image={image3}
           isSwapped
           style="homepage"
+          imagePadding="3.5rem 8.77rem 3.5rem 8.8rem"
         />
       </div>
     </div>
