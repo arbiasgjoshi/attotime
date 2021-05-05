@@ -25,9 +25,9 @@ import { FooterLinks } from '@locale/en.js';
 import authorImage from '@images/authorImage.png';
 import noImage from '@images/no-image.png';
 
-import logo1 from '@images/web-time-tracking.png';
-import logo2 from '@images/mobile-time-tracking.png';
-import logo3 from '@images/kiosk-time-tracking.png';
+import WebTracking from '@images/web-time-tracking.svg';
+import MobileTracking from '@images/mobile_time_tracking.svg';
+import KioskTracking from '@images/kiosk-time-tracking.svg';
 
 import icon from '@images/easy-to-use.png';
 import icon2 from '@images/accurate.png';
@@ -40,18 +40,18 @@ import icon7 from '@images/manage-overtime.png';
 import icon8 from '@images/switch-between-jobs.png';
 import icon9 from '@images/add-time-off.png';
 
-import icon10 from '@images/timer.png';
-import icon11 from '@images/flag.png';
-import icon12 from '@images/ringbell.png';
-import icon13 from '@images/m-logo.png';
-import icon14 from '@images/brightness.png';
-import icon15 from '@images/notes.png';
-import icon16 from '@images/overtime.png';
-import icon17 from '@images/coffe.png';
-import icon18 from '@images/bookmark.png';
-import icon19 from '@images/clock.png';
-import icon20 from '@images/browser.png';
-import icon21 from '@images/darkMode.png';
+import Timer from '@images/timer.svg';
+import Flag from '@images/flag.svg';
+import Ringbell from '@images/ringbell.svg';
+import MLogo from '@images/m-logo.svg';
+import Brightness from '@images/brightness.svg';
+import Notes from '@images/notes.svg';
+import Overtime from '@images/overtime.svg';
+import Coffe from '@images/coffe.svg';
+import Bookmark from '@images/bookmark.svg';
+import Clock from '@images/clock.svg';
+import Browser from '@images/browser.svg';
+import Darkmode from '@images/darkMode.svg';
 import icon22 from '@images/employees_forget.png';
 import icon23 from '@images/out-of-battery.png';
 import icon32 from '@images/location@1x.png';
@@ -176,73 +176,73 @@ const TimeTracking = () => {
       title: 'Managed Clock-in / Out',
       description:
         'Empower managers to clock-in and out on behalf of their team, instead of tracking time individually.',
-      logo: icon10,
+      logo: <Timer />,
       alt: 'Clock in logo',
     },
     {
       title: 'Geofencing',
       description: `Restrict employees from clocking-in until they've arrived at a job site`,
-      logo: icon11,
+      logo: <Flag />,
       alt: 'Geofencing Flag',
     },
     {
       title: 'Smart Reminders',
       description: `Remind employees to clock-in and out at their start and end time or when they're at a job site`,
-      logo: icon12,
+      logo: <Ringbell />,
       alt: 'Ringbell reminder logo',
     },
     {
       title: 'Manual Time Entries',
       description: `Allow admins, managers, or employees the ability to add manual time entries to their timesheets.`,
-      logo: icon13,
+      logo: <MLogo />,
       alt: '',
     },
     {
       title: 'Time Off',
       description: `Add and categorize time off entries, specifying whether time off is paid or unpaid`,
-      logo: icon14,
+      logo: <Brightness />,
       alt: '',
     },
     {
       title: 'Notes',
       description: `Add notes to provide context to time entries, such as a work diary or job information`,
-      logo: icon15,
+      logo: <Notes />,
       alt: '',
     },
     {
       title: 'Overtime Rules',
       description: `Set regular employee working hours per day/week and assign any extra hours to count as overtime.`,
-      logo: icon16,
+      logo: <Overtime />,
       alt: '',
     },
     {
       title: 'Break Preferences',
       description: `Decide if breaks are paid or unpaid, the amount of time to be deducted, and categorize them.`,
-      logo: icon17,
+      logo: <Coffe />,
       alt: '',
     },
     {
       title: 'Job Codes',
       description: `Categorize time tracked towards specific purposes such as per client, project, or type of work.`,
-      logo: icon18,
+      logo: <Bookmark />,
       alt: '',
     },
     {
       title: 'Rounded Clock-in / Out Times',
       description: `Set clock-in and out times to be automatically rounded to an increment of your choice.`,
-      logo: icon19,
+      logo: <Clock />,
       alt: '',
     },
     {
       title: 'Fixed Time Zones',
       description: `Automatically adjust your team's hours to a set time zone, regardless of their device's time zone.`,
-      logo: icon20,
+      logo: <Browser />,
       alt: '',
     },
     {
       title: 'Split Night-Shift Time Entries',
       description: `Split time entries at midnight, with hours tracked after midnight counting for the following day.`,
-      logo: icon21,
+      logo: <Darkmode />,
       alt: '',
     },
   ];
@@ -308,21 +308,21 @@ const TimeTracking = () => {
           isWorkCard
           title="Work in the office via the Web Dashboard"
           description="Log in to the Atto Dashboard and use the web-based time clock from your computer"
-          logo={logo1}
+          logo={<WebTracking />}
           alt="Web time tracking"
         />
         <FeatureCard
           isWorkCard
           title="Work in go icon"
           description="Log in to the Atto Dashboard and use the web-based time clock from your computer"
-          logo={logo2}
+          logo={<MobileTracking />}
           alt="Mobile time tracking"
         />
         <FeatureCard
           isWorkCard
           title="Work in job sites icon"
           description="With the Time CLock Kiosk, employees can log in with a PIN, and track time with a single device"
-          logo={logo3}
+          logo={<KioskTracking />}
           alt="Kiosk time tracking"
         />
       </div>

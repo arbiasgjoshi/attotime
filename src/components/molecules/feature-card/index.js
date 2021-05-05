@@ -13,9 +13,7 @@ const FeatureCard = ({ logo, alt, title, description, isLeftAligned, isWorkCard 
   <div
     className={`${isWorkCard ? workCardContainer : container} ${isLeftAligned ? leftAligned : ''}`}
   >
-    <div className={logoWrapper}>
-      <img alt={alt} src={logo} />
-    </div>
+    <div className={logoWrapper}>{logo}</div>
     <div className={textContainer}>
       <h5>{title}</h5>
       <p>{description}</p>

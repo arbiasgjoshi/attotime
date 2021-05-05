@@ -35,14 +35,14 @@ import roundImage3 from '@images/timesheets-inbox2x.png';
 import icon from '@images/accurate.png';
 import icon2 from '@images/trustworthy.png';
 import icon3 from '@images/instantly-available@2x.png';
-import icon4 from '@images/timer.png';
-import icon5 from '@images/flag.png';
-import icon6 from '@images/ringbell.png';
-import icon7 from '@images/battery.png';
-import icon8 from '@images/brightness.png';
-import icon9 from '@images/m-logo.png';
-import icon10 from '@images/coffe.png';
-import icon11 from '@images/bookmark.png';
+import Timer from '@images/timer.svg';
+import Flag from '@images/flag.svg';
+import Ringbell from '@images/ringbell.svg';
+import Battery from '@images/battery.svg';
+import Brightness from '@images/brightness.svg';
+import MLogo from '@images/m-logo.svg';
+import Coffe from '@images/coffe.svg';
+import Bookmark from '@images/bookmark.svg';
 import icon20 from '@images/time-tracking-clock@1x.png';
 import icon21 from '@images/location@1x.png';
 import icon22 from '@images/profile@1x.png';
@@ -104,55 +104,55 @@ const Timesheets = () => {
     {
       title: 'Comprehensive Timesheet Reports',
       description: `Get all the data you need including regular time, overtime, breaks, time off, and more.`,
-      logo: icon4,
+      logo: <Timer />,
       alt: 'Employee status logo',
     },
     {
       title: 'Scheduled Email Reports',
       description: `Schedule an email with your employees timesheets to coincide with your payroll schedule.`,
-      logo: icon5,
+      logo: <Flag />,
       alt: 'Geofencing Flag',
     },
     {
-      title: 'Timesheets by Employee , Team, Jobs',
+      title: 'Timesheets by Employee, Team, Jobs',
       description: `Generate timesheets based on work done by an employee, team, or toward a category of job.`,
-      logo: icon6,
+      logo: <Ringbell />,
       alt: 'Ringbell reminder logo',
     },
     {
       title: 'Wage Estimates And Pay Rates',
       description: `Assign pay rates to your employees and their estimated pay will be added to their timesheets.`,
-      logo: icon7,
+      logo: <Battery />,
       alt: 'Wage estimates',
     },
     {
       title: 'Download and Share',
       description: `Download any timesheet report as a PDF or CSV file in one click.`,
-      logo: icon8,
+      logo: <Brightness />,
       alt: '',
     },
     {
-      title: 'TImesheet Rounding',
+      title: 'Timesheet Rounding',
       description: `Set a rounding increment and clock in/out times are rounded automatically.`,
-      logo: icon5,
+      logo: <Flag />,
       alt: '',
     },
     {
       title: 'Time Entry Change History',
       description: `View any historic changes made to time entries by an employee or admin.`,
-      logo: icon9,
+      logo: <MLogo />,
       alt: '',
     },
     {
       title: 'Archive Employees',
       description: `View timesheets for employees even after they've left the company - vital for compliance purposes.`,
-      logo: icon10,
+      logo: <Coffe />,
       alt: '',
     },
     {
       title: 'Payroll Integrations',
       description: `Streamline your payroll with our QuickBooks Online and Xero integrations.`,
-      logo: icon11,
+      logo: <Bookmark />,
       alt: '',
     },
   ];

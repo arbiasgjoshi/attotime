@@ -4,7 +4,11 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 3rem;
-      row-gap: 4rem;
+      row-gap: 7rem;
+    }
+
+    &.pricing {
+      column-gap: 4.5rem;
     }
   }
 }

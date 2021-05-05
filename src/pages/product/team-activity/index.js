@@ -27,11 +27,12 @@ import image2 from '@images/find-out.png';
 import image3 from '@images/eliminate-checks.png';
 import image4 from '@images/activity-updates@2x.png';
 
-import icon1 from '@images/timer.png';
-import icon2 from '@images/flag.png';
-import icon3 from '@images/ringbell.png';
-import icon4 from '@images/m-logo.png';
-import icon5 from '@images/brightness.png';
+import Timer from '@images/timer.svg';
+import Flag from '@images/flag.svg';
+import Ringbell from '@images/ringbell.svg';
+import MLogo from '@images/m-logo.svg';
+import Brightness from '@images/brightness.svg';
+
 import icon14 from '@images/time-tracking-clock@1x.png';
 import icon15 from '@images/profile@1x.png';
 import icon16 from '@images/timesheets@1x.png';
@@ -60,37 +61,37 @@ const TeamActivity = () => {
     {
       title: 'Employee Status Overview',
       description: `Stay in control of your team's daily activity with real-time updates on their status and location.`,
-      logo: icon1,
+      logo: <Timer />,
       alt: 'Employee status logo',
     },
     {
       title: 'Daily Timeline',
       description: `See a clear, simple timeline view of every employee's daily activity.`,
-      logo: icon2,
+      logo: <Flag />,
       alt: 'Geofencing Flag',
     },
     {
       title: 'Departments',
       description: `Organize employees into departments based on their location, job site, or role.`,
-      logo: icon3,
+      logo: <Ringbell />,
       alt: 'Ringbell reminder logo',
     },
     {
       title: 'Filter and Search',
       description: `Filter teams based on their status, department, or simply search for their name`,
-      logo: icon4,
+      logo: <MLogo />,
       alt: '',
     },
     {
       title: 'Smart Notifications',
       description: `Get notified whenever an employee clock in or out, takes a break, or edits a time entry.`,
-      logo: icon5,
+      logo: <Brightness />,
       alt: '',
     },
     {
       title: 'Messaging*',
       description: `Allow employees to send messages and share photos 1-1 or in group chats`,
-      logo: icon2,
+      logo: <Flag />,
       alt: '',
     },
   ];

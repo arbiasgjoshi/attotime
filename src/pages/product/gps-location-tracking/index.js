@@ -31,14 +31,15 @@ import noImage from '@images/no-image.png';
 import image1 from '@images/verify-your-team.png';
 import authorImage from '@images/authorImage.png';
 
-import icon1 from '@images/timer.png';
-import icon2 from '@images/flag.png';
-import icon3 from '@images/ringbell.png';
-import icon4 from '@images/m-logo.png';
-import icon5 from '@images/brightness.png';
-import icon7 from '@images/battery.png';
-import icon8 from '@images/coffe.png';
-import icon9 from '@images/bookmark.png';
+import Timer from '@images/timer.svg';
+import Flag from '@images/flag.svg';
+import Ringbell from '@images/ringbell.svg';
+import MLogo from '@images/m-logo.svg';
+import Brightness from '@images/brightness.svg';
+import Coffe from '@images/coffe.svg';
+import Bookmark from '@images/bookmark.svg';
+import Battery from '@images/battery.svg';
+
 import icon18 from '@images/location@1x.png';
 import icon19 from '@images/profile@1x.png';
 import icon20 from '@images/timesheets@1x.png';
@@ -50,7 +51,6 @@ import PlumbingLogo from '@images/plumbing-industry-logo.svg';
 import ElectrianLogo from '@images/electrician-industry-logo.svg';
 import LandscapingLogo from '@images/landscaping-industry-logo.svg';
 import RoofingLogo from '@images/roofing-industry-logo.svg';
-import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
 
 const LocationTracking = () => {
@@ -107,52 +107,52 @@ const LocationTracking = () => {
     {
       title: 'Real-time Location Updates',
       description: 'See the location of your entire team of employees as they work in real-time.',
-      logo: icon1,
+      logo: <Timer />,
     },
     {
       title: 'Clock in/out Location History',
       description: 'View GPS time stamps of your employees clock in and clock out locations.',
-      logo: icon2,
+      logo: <Flag />,
     },
     {
       title: 'Named Job Sites',
       description:
         'Provide names for specific locations you operate from to make reporting easier.',
-      logo: icon3,
+      logo: <Ringbell />,
     },
     {
       title: 'Location History Tracking',
       description: `View your employees' location history throughout their entire day.`,
-      logo: icon4,
+      logo: <MLogo />,
     },
     {
       title: 'Customizable GPS Tracking',
       description:
         'Choose the specific employees and teams that require location tracking for their job.',
-      logo: icon5,
+      logo: <Brightness />,
     },
     {
       title: 'Geofencing',
       description: `Restrict employees from clocking in until they've arrived at a job site`,
-      logo: icon2,
+      logo: <Flag />,
     },
     {
       title: 'Built-in Battery Efficiency',
       description:
         'Never worry about your battery life being drained with battery-efficient GPS tracking technology.',
-      logo: icon7,
+      logo: <Battery />,
     },
     {
       title: 'Compatible with most mobiles',
       description:
         'Use location tracking with most Apple and Android devices - no special equipment necessary.',
-      logo: icon8,
+      logo: <Coffe />,
     },
     {
       title: 'Privacy Controls',
       description:
         'Stay in control of what gets tracked – real-time positions, clock in/out locations, or nothing at all.',
-      logo: icon9,
+      logo: <Bookmark />,
     },
   ];
 

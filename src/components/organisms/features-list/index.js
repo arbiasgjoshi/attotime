@@ -1,10 +1,10 @@
 import React from 'react';
 import FeatureCard from '@components/molecules/feature-card';
-import { container, featuresContainer } from './features-list.module.scss';
+import * as styles from './features-list.module.scss';
 
-const FeaturesList = ({ list, isLeftAligned }) => (
-  <div className={container}>
-    <div className={featuresContainer}>
+const FeaturesList = ({ list, isLeftAligned, style = '' }) => (
+  <div className={styles.container}>
+    <div className={`${styles.featuresContainer} ${styles[style]}`}>
       {list?.map(({ title, description, alt, logo }, index) => (
         <FeatureCard
           isLeftAligned={isLeftAligned}

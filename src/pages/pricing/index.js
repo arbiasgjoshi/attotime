@@ -27,15 +27,15 @@ import {
 
 import authorImage2 from '@images/authorImage2.png';
 import { StaticImage } from 'gatsby-plugin-image';
-import icon1 from '@images/timer.png';
-import icon2 from '@images/location@2x.png';
-import icon3 from '@images/profile@2x.png';
-import icon4 from '@images/timesheets@2x.png';
-import icon5 from '@images/wage_estimates@2x.png';
-import icon6 from '@images/job_costing@2x.png';
-import icon7 from '@images/mobile_time_tracking@2x.png';
-import icon8 from '@images/bookmark.png';
-import icon9 from '@images/help_support@2x.png';
+import TimesheetIcon from '@images/timesheets.svg';
+import LocationIcon from '@images/location.svg';
+import WageEstimateIcon from '@images/wage_estimates.svg';
+import JobCostIcon from '@images/job_costing.svg';
+import TimeTrackingIcon from '@images/timeTrackingAndroid.svg';
+import MobileTimeTracking from '@images/mobile_time_tracking.svg';
+import TenderIcon from '@images/tender.svg';
+import SupportIcon from '@images/help_support.svg';
+import ProfileIcon from '@images/profile.svg';
 
 const Pricing = () => {
   const checkList = [
@@ -67,55 +67,55 @@ const Pricing = () => {
       description:
         'Enjoy highly accurate, easy-to-use, and trustworthy time tracking, anytime and from anywhere.',
       alt: 'Clock logo',
-      logo: icon1,
+      logo: <TimeTrackingIcon />,
     },
     {
       title: 'GPS Location Tracking',
       description: `Increase the accountability and transparency of your team with real-time updates on their location`,
       alt: 'GPS icon',
-      logo: icon2,
+      logo: <LocationIcon />,
     },
     {
       title: 'Team Activity Insights',
       description: `See where your team is, and what they're working on - without back and forth phone calls.`,
       alt: 'profile pic',
-      logo: icon3,
+      logo: <ProfileIcon />,
     },
     {
       title: 'Automated Timesheets',
       description: `Spend more time on the things that matter with timesheets filled painlessly and on-time.`,
       alt: '',
-      logo: icon4,
+      logo: <TimesheetIcon />,
     },
     {
       title: 'Simplified Payroll',
       description: `Save hours from the payroll process with built-in integrations and automated email reports.`,
       alt: '',
-      logo: icon5,
+      logo: <WageEstimateIcon />,
     },
     {
       title: 'Professional Reports',
       description: `Download and share insightful custom reports into your team's activity on the clock.`,
       alt: '',
-      logo: icon6,
+      logo: <JobCostIcon />,
     },
     {
       title: 'Simple Time Clock',
       description: `Track time wherever your team is. In the office, at a job site, or on the go through Mobile, Web, and Kiosk Apps.`,
       alt: '',
-      logo: icon7,
+      logo: <MobileTimeTracking />,
     },
     {
       title: 'Jobs, Breaks, Notes',
       description: `Get more data on what your employees are up to with job codes, break hours, insightful notes, and more.`,
       alt: '',
-      logo: icon8,
+      logo: <TenderIcon />,
     },
     {
       title: 'Unlimited Support',
       description: `Get free unlimited help from our support team whenever you need it.`,
       alt: '',
-      logo: icon9,
+      logo: <SupportIcon />,
     },
   ];
 
@@ -170,7 +170,7 @@ const Pricing = () => {
       />
       <Divider />
       <Title title="All our main features, included in one simple plan" />
-      <FeaturesList isLeftAligned list={featureList} />
+      <FeaturesList isLeftAligned list={featureList} style="pricing" />
       <Divider />
       <StaticImage src="../../images/field_workers@2x.png" width={1140} height={460} />
       <Divider />
