@@ -1,4 +1,7 @@
 import React from 'react';
+
+import PropTypes from 'prop-types';
+
 import FeatureCard from '@components/molecules/feature-card';
 import { container, featuresContainer } from './features-list.module.scss';
 
@@ -18,5 +21,10 @@ const FeaturesList = ({ list, isLeftAligned }) => (
     </div>
   </div>
 );
+
+FeaturesList.propTypes = {
+  list: PropTypes.shape(),
+  isLeftAligned: PropTypes.bool,
+};
 
 export default FeaturesList;

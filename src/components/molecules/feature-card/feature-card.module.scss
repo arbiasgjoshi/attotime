@@ -28,8 +28,13 @@
   &.leftAligned {
     .logoWrapper {
       @include flex-align(center, flex-start);
-      width: 4rem;
+      width: 7rem;
       height: 4rem;
+
+      img {
+        max-height: 7rem;
+        width: auto;
+      }
     }
 
     .textContainer {

@@ -79,7 +79,6 @@ module.exports = {
         languages: [`en`, `de`, `es`, `fr`],
         // language file path
         defaultLanguage: `en`,
-        // option to redirect to `/ko` when connecting `/`
         redirect: true,
       },
     },
