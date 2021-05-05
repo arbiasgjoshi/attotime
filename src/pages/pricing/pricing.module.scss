@@ -13,7 +13,7 @@
   @include flex-direction(column);
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: -1.6rem;
+  margin-top: 5.7rem;
 
   @include min(tablet) {
     flex-direction: row;
@@ -21,7 +21,7 @@
 }
 
 .priceHeader {
-  @include flex-align(flex-start, space-between);
+  @include flex-align(center, space-between);
   @include flex-direction(column);
   text-align: center;
 
@@ -39,7 +39,7 @@
     }
 
     .buttonContainer {
-      margin-top: 1rem;
+      // margin-top: 1rem;
       padding: 0.5rem;
       display: flex;
       height: 5rem;
@@ -55,15 +55,21 @@
         }
       }
     }
+  }
+}
 
-    p {
-      margin-top: 1.6rem;
-      text-align: right;
-
-      @include min(tablet) {
-        padding-right: 2rem;
-      }
-    }
+p.discount {
+  margin-top: 1.1rem;
+  min-height: 2rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  width: 10rem;
+  text-align: center;
+  margin-left: auto;
+  font-size: 2rem;
+  line-height: 2rem;
+  @include min(tablet) {
+    margin-right: 1.5rem;
   }
 }
 

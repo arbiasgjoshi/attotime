@@ -10,6 +10,7 @@ import {
   priceWrapper,
   contentWrapper,
   greenSubtitle,
+  packageBtnWrap,
 } from './package-card.module.scss';
 
 const PackageCard = ({ title, usersText, price, listTitle, list, contentText, btnText }) => (
@@ -29,7 +30,9 @@ const PackageCard = ({ title, usersText, price, listTitle, list, contentText, bt
           <p>{contentText}</p>
         )}
       </div>
-      <Button btnStyle="wide" btnText={btnText} />
+      <div className={packageBtnWrap}>
+        <Button btnStyle="wide" btnText={btnText} />
+      </div>
     </div>
     <div className={listWrapper}>
       <h5>{listTitle}</h5>

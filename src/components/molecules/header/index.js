@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from '@reach/router';
+import { Link } from 'gatsby-plugin-intl';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import Button from '@components/atoms/button';
