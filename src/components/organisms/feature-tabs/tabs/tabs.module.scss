@@ -12,6 +12,7 @@
 
     .item {
       cursor: pointer;
+      position: relative;
 
       &.isActive {
         color: #00b9cb;
@@ -19,13 +20,25 @@
 
         ::after {
           display: block;
-          border: 2px solid #00b9cb;
+          border-bottom: 4px solid #00b9cb;
           content: '';
           position: absolute;
           top: 61px;
           width: 100%;
         }
       }
+    }
+
+    .sideBorder {
+      width: 0.2rem;
+      height: 2rem;
+      background-color: #efefef;
+      display: flex;
+      margin-top: 5px;
+    }
+
+    .sideBorder:last-child {
+      display: none;
     }
   }
 }

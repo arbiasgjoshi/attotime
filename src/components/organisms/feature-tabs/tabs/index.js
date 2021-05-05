@@ -7,6 +7,7 @@ import {
   content,
   isActive,
   item,
+  sideBorder,
 } from './tabs.module.scss';
 
 const Tabs = ({ list, handleClick, activeIndex }) => {
@@ -14,12 +15,15 @@ const Tabs = ({ list, handleClick, activeIndex }) => {
     <div className={container}>
       <div className={listContainer}>
         {list?.map((title, index) => (
-          <div
-            onClick={() => handleClick(index)}
-            className={`${item} ${index === activeIndex && isActive}`}
-          >
-            <h5 key={index}>{title}</h5>
-          </div>
+          <>
+            <div
+              onClick={() => handleClick(index)}
+              className={`${item} ${index === activeIndex && isActive}`}
+            >
+              <h5 key={index}>{title}</h5>
+            </div>
+            <span className={sideBorder}></span>
+          </>
         ))}
       </div>
     </div>
