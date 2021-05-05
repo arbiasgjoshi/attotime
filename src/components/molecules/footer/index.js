@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Link } from '@reach/router';
+import { Link } from 'gatsby-plugin-intl';
 // import DropDown from '@components/molecules/dropdown';
 
 import { StaticImage } from 'gatsby-plugin-image';

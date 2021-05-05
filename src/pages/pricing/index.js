@@ -35,6 +35,7 @@ import {
   questionsContainer,
   list,
   item,
+  discount,
   plus,
   behindMask,
 } from './pricing.module.scss';
@@ -146,10 +147,14 @@ const Pricing = () => {
               onBtnClick={() => setActive('annually')}
             />
           </div>
-          {active === 'annually' ? <p>Save 29%</p> : <p> </p>}
         </div>
       </div>
-      <Divider className="style2" />
+      {active === 'annually' ? (
+        <p className={discount}>Save 29%</p>
+      ) : (
+        <p className={discount}>&nbsp; </p>
+      )}
+      {/* <Divider className="style2" /> */}
       <div className={packageWrapper}>
         <PackageCard
           title="Premium"
@@ -180,6 +185,15 @@ const Pricing = () => {
         <Button btnText="View All Features" />
       </div>
       <Divider className="medium" />
+      <Title
+        title="Calculate your total team cost"
+        description="Simple pricing based on the number of users in your account"
+        maxWidth={900}
+        maxDescriptionwidth={900}
+      />
+
+      <Divider className="style2" />
+      <Divider className="style2" />
       <Story
         img={authorImage2}
         paragraph={`"Quote from an Enterprise level customer about how amazing Atto is and how it helps improve their bussiness"`}
@@ -190,7 +204,12 @@ const Pricing = () => {
       <Divider className="style3" />
       <FeaturesList isLeftAligned list={featureList} style="pricing" />
       <Divider />
-      <StaticImage src="../../images/field_workers@2x.png" width={1140} height={460} />
+      <StaticImage
+        src="../../images/time-tracking-for-field-workers@2x.png"
+        width={1140}
+        quality={100}
+        height={460}
+      />
       <Divider />
       <div className={questionsContainer}>
         <Title title="Frequently asked questions" />

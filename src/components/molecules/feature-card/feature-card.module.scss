@@ -33,7 +33,12 @@
     .logoWrapper {
       @include flex-align(center, flex-start);
       width: 7rem;
-      height: 5rem;
+      height: 4rem;
+
+      img {
+        max-height: 4rem;
+        width: auto;
+      }
     }
 
     .textContainer {

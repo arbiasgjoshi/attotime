@@ -1,52 +1,51 @@
 .dividerContainer {
   box-sizing: border-box;
-  height: 0;
-  opacity: 0;
+  height: 0.2rem;
   width: 100%;
-  // border: 0;
+  border: 0;
   margin: 2rem 0;
 
   @include min(tablet) {
     margin: 10rem 0;
 
     &.style1 {
-      margin: 2.2rem 0;
+      margin: 2.1rem 0;
     }
 
     &.style2 {
-      margin: 3.5rem 0;
+      margin: 3.4rem 0;
     }
 
     &.style3 {
-      margin: 5rem 0;
+      margin: 4.9rem 0;
     }
 
     &.style4 {
-      margin: 7.5rem 0;
+      margin: 7.4rem 0;
     }
 
     &.style5 {
-      margin: 2.5rem 0;
+      margin: 2.4rem 0;
     }
 
     &.style6 {
-      margin: 3.75rem 0;
+      margin: 3.65rem 0;
     }
 
     &.style7 {
-      margin: 4rem 0;
+      margin: 3.9rem 0;
     }
 
     &.style8 {
-      margin: 1.2rem 0;
+      margin: 1.1rem 0;
     }
 
     &.style9 {
-      margin: 4.75rem 0;
+      margin: 4.65rem 0;
     }
 
     &.style10 {
-      margin: 11.65rem 0;
+      margin: 11.55rem 0;
     }
   }
 }

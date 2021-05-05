@@ -20,6 +20,8 @@ Title.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   leftAlign: PropTypes.bool,
+  maxWidth: PropTypes.string,
+  maxDescriptionWidth: PropTypes.string,
 };
 
 export default Title;

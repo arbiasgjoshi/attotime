@@ -15,6 +15,7 @@ import FooterComponent from '@components/molecules/footer';
 
 import { container } from '@styles/main.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
+import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 
 import authorImage from '@images/authorImage.png';
 
@@ -33,7 +34,7 @@ const Product = () => {
       title: 'Simple',
       description: `Intuitive, easy-to-use software with no technical knowledge required.`,
       alt: 'Simple',
-      icon: icon,
+      icon,
     },
     {
       title: 'All-in-one',
@@ -110,7 +111,8 @@ const Product = () => {
         style="productPage"
       />
       <Divider className="style2" />
-      <StaticImage src="../../images/no-image.png" alt="No image" width={1140} height={400} />
+      {/* TODO This image requires some more fixing, need the PNG file */}
+      <ProductOverviewBanner />
       <Divider className="style3" />
       <IconCardList cardList={firstList} />
       <Divider />
