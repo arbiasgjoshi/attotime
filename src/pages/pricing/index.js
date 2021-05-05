@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import HeaderComponent from '@components/molecules/header';
 import SEO from '@components/molecules/seo';
@@ -13,17 +13,6 @@ import Story from '@components/organisms/story';
 import FeaturesList from '@components/organisms/features-list';
 
 import { container } from '@styles/main.module.scss';
-import {
-  packageWrapper,
-  priceHeader,
-  buttonContainer,
-  rightSide,
-  featuresBanner,
-  questionsContainer,
-  list,
-  item,
-  plus,
-} from './pricing.module.scss';
 
 import authorImage2 from '@images/authorImage2.png';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -37,7 +26,21 @@ import TenderIcon from '@images/tender.svg';
 import SupportIcon from '@images/help_support.svg';
 import ProfileIcon from '@images/profile.svg';
 
+import {
+  packageWrapper,
+  priceHeader,
+  buttonContainer,
+  rightSide,
+  featuresBanner,
+  questionsContainer,
+  list,
+  item,
+  plus,
+  behindMask,
+} from './pricing.module.scss';
+
 const Pricing = () => {
+  const [active, setActive] = useState('monthly');
   const checkList = [
     { title: 'Time Tracking' },
     { title: 'GPS Location Tracking' },
@@ -123,21 +126,34 @@ const Pricing = () => {
     <div className={container}>
       <SEO title="Pricing" />
       <HeaderComponent />
+      <span className={behindMask} />
       <div className={priceHeader}>
         <h1>Pay-as-you-grow pricing</h1>
         <div className={rightSide}>
           <div className={buttonContainer}>
-            <Button btnText="Monthly" btnStyle="round" />
-            <Button btnText="Annually" btnStyle="round" />
+            <Button
+              btnText="Monthly"
+              btnStyle="round"
+              pricing
+              activeClass={active === 'monthly'}
+              onBtnClick={() => setActive('monthly')}
+            />
+            <Button
+              btnText="Annually"
+              btnStyle="round"
+              pricing
+              activeClass={active === 'annually'}
+              onBtnClick={() => setActive('annually')}
+            />
           </div>
-          <p>Save 29%</p>
+          {active === 'annually' ? <p>Save 29%</p> : <p> </p>}
         </div>
       </div>
       <Divider className="style2" />
       <div className={packageWrapper}>
         <PackageCard
           title="Premium"
-          price={5}
+          price={active === 'annually' ? 4 : 5}
           list={checkList}
           listTitle="Includes"
           contentText="/ user / month"
@@ -150,14 +166,15 @@ const Pricing = () => {
           list={checkList2}
           contentText="Contact our sales team for a custom plan"
           usersText="100+ users"
-          btnText={'Contact Sales'}
+          btnText="Contact Sales"
         />
       </div>
       <Divider className="medium" />
       <Title
         title="That's not all!"
-        description={`30+ more features included in our Premium & Enterprise Plans`}
+        description="30+ more features included in our Premium & Enterprise Plans"
       />
+      <Divider className="style5" />
       <div className={featuresBanner}>
         <StaticImage src="../../images/video-background@2x.png" width={1140} height={328} />
         <Button btnText="View All Features" />
@@ -166,16 +183,18 @@ const Pricing = () => {
       <Story
         img={authorImage2}
         paragraph={`"Quote from an Enterprise level customer about how amazing Atto is and how it helps improve their bussiness"`}
-        author={`[Name of person],[Company Position],[Company Name]`}
+        author="[Name of person],[Company Position],[Company Name]"
       />
       <Divider />
-      <Title title="All our main features, included in one simple plan" />
+      <Title title="All our main features, included in one simple plan" maxWidth={900} />
+      <Divider className="style3" />
       <FeaturesList isLeftAligned list={featureList} style="pricing" />
       <Divider />
       <StaticImage src="../../images/field_workers@2x.png" width={1140} height={460} />
       <Divider />
       <div className={questionsContainer}>
         <Title title="Frequently asked questions" />
+        <Divider className="style2" />
         <div className={list}>
           <div className={item}>
             <h5>

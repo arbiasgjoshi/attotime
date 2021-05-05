@@ -1,9 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { defaultBtn, tealStyle, trialStyle, wideStyle, roundStyle } from './button.module.scss';
+import {
+  defaultBtn,
+  tealStyle,
+  trialStyle,
+  wideStyle,
+  roundStyle,
+  pricingStyle,
+  activeStyle,
+} from './button.module.scss';
 
-const Button = ({ btnText, disabled, btnStyle }) => {
+const Button = ({ btnText, disabled, btnStyle, pricing, activeClass, onBtnClick }) => {
   const checkBtnStyle = () => {
     let className = '';
     if (btnStyle === 'teal') {
@@ -18,10 +26,21 @@ const Button = ({ btnText, disabled, btnStyle }) => {
     if (btnStyle === 'round') {
       className += ` ${roundStyle}`;
     }
+    if (pricing) {
+      className += ` ${pricingStyle}`;
+    }
+    if (activeClass) {
+      className += ` ${activeStyle}`;
+    }
     return className;
   };
   return (
-    <button className={`${defaultBtn} ${checkBtnStyle()}`} type="submit" disabled={disabled}>
+    <button
+      className={`${defaultBtn} ${checkBtnStyle()}`}
+      type="submit"
+      disabled={disabled}
+      onClick={() => onBtnClick()}
+    >
       {btnText}
     </button>
   );
@@ -30,6 +49,9 @@ const Button = ({ btnText, disabled, btnStyle }) => {
 Button.propTypes = {
   btnText: PropTypes.string,
   disabled: PropTypes.bool,
+  pricing: PropTypes.bool,
   btnStyle: PropTypes.string,
+  onBtnClick: PropTypes.func,
+  activeClass: PropTypes.bool,
 };
 export default Button;

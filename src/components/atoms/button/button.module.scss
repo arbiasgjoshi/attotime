@@ -29,5 +29,22 @@
       width: 15rem;
       border-radius: 3rem;
     }
+
+    &.pricingStyle {
+      width: 12.6rem;
+      height: 4rem;
+      border: 2px solid transparent;
+      padding: 0.8rem 1.1rem;
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--primary-color);
+      background-color: transparent;
+
+      &.activeStyle {
+        border: 2px solid var(--primary-color);
+        background-color: #fff;
+        color: #000;
+      }
+    }
   }
 }
