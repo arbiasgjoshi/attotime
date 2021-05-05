@@ -29,11 +29,18 @@
       margin-bottom: 0.8rem;
     }
 
-    h4 {
-      color: var(--fifth-color);
+    .paragraphStyle {
+      font-size: var(--body-style-one-mobile-size);
+      line-height: var(--body-style-one-mobile-line-height);
+      font-weight: var(--body-style-one-font-weight);
       text-align: center;
-      font-weight: var(--regular);
       margin: auto;
+
+      @include min(tablet) {
+        font-size: var(--body-style-one);
+        letter-spacing: -0.5px;
+        line-height: var(--body-style-one-line-height-size);
+      }
     }
   }
 }

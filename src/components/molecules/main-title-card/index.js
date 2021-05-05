@@ -7,6 +7,7 @@ import {
   headerContainer,
   mainTitle,
   smallParagraph,
+  paragraphStyle,
 } from './main-title-card.module.scss';
 
 const MainTitleCard = ({
@@ -22,7 +23,9 @@ const MainTitleCard = ({
     <div className={headerContainer}>
       {hasParagraph && <h6 className={smallParagraph}>{paragraph}</h6>}
       <h1 className={mainTitle}>{title}</h1>
-      <h4 style={maxParagraphWidth && { maxWidth: maxParagraphWidth }}>{subtitle}</h4>
+      <p className={paragraphStyle} style={maxParagraphWidth && { maxWidth: maxParagraphWidth }}>
+        {subtitle}
+      </p>
     </div>
     {showButton && <Button btnText="Start a Free Trial" btnStyle="trial" />}
   </div>
