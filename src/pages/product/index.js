@@ -112,7 +112,7 @@ const Product = () => {
       />
       <Divider className="style2" />
       {/* TODO This image requires some more fixing, need the PNG file */}
-      <ProductOverviewBanner />
+      <ProductOverviewBanner style={{ marginLeft: '-4.3rem' }} />
       <Divider className="style3" />
       <IconCardList cardList={firstList} />
       <Divider />
