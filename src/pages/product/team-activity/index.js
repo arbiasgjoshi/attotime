@@ -34,7 +34,7 @@ import MLogo from '@images/m-logo.svg';
 import Brightness from '@images/brightness.svg';
 
 import icon14 from '@images/time-tracking-clock@1x.png';
-import icon15 from '@images/profile@1x.png';
+import icon15 from '@images/location@1x.png';
 import icon16 from '@images/timesheets@1x.png';
 
 import ConstructionLogo from '@images/construction-industry-logo.svg';
