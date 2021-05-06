@@ -147,7 +147,7 @@ const Home = () => (
       >
         <CommentCard
           title="Amazing for my business!"
-          description={`Super convenient and easy to use, so happy I've found Atto! Highly reccomend`}
+          description={`Super convenient and easy to use, so happy i’ve found Atto! Highly recommend.`}
           date="23 Jul"
           author="Nita Ora"
         />
@@ -187,7 +187,7 @@ const Home = () => (
       maxWidth={840}
       maxDescriptionWidth={766}
       title="Thousands of businesses have saved time using Atto"
-      description="And it's not just time saved, but money and stress too."
+      description="And it’s not just time saved, but money and stress too."
     />
     <Divider className="style3" />
     <Video />
@@ -236,7 +236,7 @@ const Home = () => (
     <Divider />
     <FreeTrial
       title="No time to waste!"
-      description="Stay in control of your employees' time."
+      description="Stay in control of your employees’ time."
       list={checkList}
     />
     <FooterComponent FooterLinks={FooterLinks} />

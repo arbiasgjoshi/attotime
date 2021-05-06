@@ -25,7 +25,7 @@ const FeatureTabs = () => {
       <div className={activeIndex === 0 ? content : inactive}>
         <ProductCard
           title="Simple time tracking with accurate time entries"
-          description="Track time anytime and anywhere - on IOS, Android, the Web, and via the Time Clock Kiosk."
+          description="Track time anytime and anywhere – on iOS, Android, the Web, and via the Time Clock Kiosk."
           image={image1}
           isSwapped
           style="homepage"
@@ -43,7 +43,7 @@ const FeatureTabs = () => {
       <div className={activeIndex === 2 ? content : inactive}>
         <ProductCard
           title="Stay in the loop of work activity throughout the day"
-          description="Get instantly notified of employee work activity - without needing to pick up the phone."
+          description="Get instantly notified of employee work activity – without needing to pick up the phone."
           image={image4}
           isSwapped
           style="homepage"
@@ -52,7 +52,7 @@ const FeatureTabs = () => {
       <div className={activeIndex === 3 ? content : inactive}>
         <ProductCard
           title="Automate your employees' timesheets"
-          description="Accurate, trustworthy, and insightful timesheets - that save hours from the payroll process."
+          description="Accurate, trustworthy, and insightful timesheets – that save hours from the payroll process."
           image={image3}
           isSwapped
           style="homepage"
