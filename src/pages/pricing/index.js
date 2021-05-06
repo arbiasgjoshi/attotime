@@ -77,13 +77,13 @@ const Pricing = () => {
     },
     {
       title: 'GPS Location Tracking',
-      description: `Increase the accountability and transparency of your team with real-time updates on their location`,
+      description: `Increase the accountability and transparency of your team with real-time updates on their location.`,
       alt: 'GPS icon',
       logo: <LocationIcon />,
     },
     {
       title: 'Team Activity Insights',
-      description: `See where your team is, and what they're working on - without back and forth phone calls.`,
+      description: `See where your team is, and what they’re working on – without back and forth phone calls.`,
       alt: 'profile pic',
       logo: <ProfileIcon />,
     },
@@ -101,7 +101,7 @@ const Pricing = () => {
     },
     {
       title: 'Professional Reports',
-      description: `Download and share insightful custom reports into your team's activity on the clock.`,
+      description: `Download and share insightful custom reports into your team’s activity on the clock.`,
       alt: '',
       logo: <JobCostIcon />,
     },
@@ -198,8 +198,8 @@ const Pricing = () => {
       <Divider className="style2" />
       <Story
         img={authorImage2}
-        paragraph={`"Quote from an Enterprise level customer about how amazing Atto is and how it helps improve their bussiness"`}
-        author="[Name of person],[Company Position],[Company Name]"
+        paragraph={`“Quote from an Enterprise level customer about how amazing Atto is and how it helps improve their business”`}
+        author="[Name of person], [Company Position], [Company Name]"
       />
       <Divider />
       <Title title="All our main features, included in one simple plan" maxWidth={900} />
@@ -222,24 +222,27 @@ const Pricing = () => {
               What happens at the end of my free trial? <span className={plus}>-</span>
             </h5>
             <p>
-              After your 14-day free trial ends, you'll be asked to purchase a subscription in order
-              to continue using Atto. As we don't require a credit card to sign up for our free
-              trial, you won't be charged unless you actively choose to subscribe.
+              After your 14-day free trial ends, you’ll be asked to purchase a subscription in order
+              to continue using Atto. As we don’t require a credit card to sign up for our free
+              trial, you won’t be charged unless you actively choose to subscribe.
             </p>
           </div>
           <div className={item}>
             <h5>
-              Are there any usage limits or add-on charges ? <span className={plus}>+</span>
+              Are there any usage limits or add-on charges?
+              <span className={plus}>+</span>
             </h5>
           </div>
           <div className={item}>
             <h5>
-              What payment options do you accept? <span className={plus}>+</span>
+              What payment options do you accept?
+              <span className={plus}>+</span>
             </h5>
           </div>
           <div className={item}>
             <h5>
-              I have a question that isn't answered <span className={plus}>+</span>
+              I have a question that isn’t answered
+              <span className={plus}>+</span>
             </h5>
           </div>
         </div>

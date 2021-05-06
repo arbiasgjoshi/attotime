@@ -39,7 +39,7 @@ const Product = () => {
     },
     {
       title: 'All-in-one',
-      description: `Combining everything you need to manage your team's time in one place.`,
+      description: `Combining everything you need to manage your team’s time in one place.`,
       alt: 'All-in-one',
       icon: icon2,
       imagePadding: '2.3rem 2rem 2.2rem 2rem',
@@ -67,7 +67,7 @@ const Product = () => {
   const productList2 = [
     {
       title: 'Avoid constant calls and check-ins',
-      description: `Instantly see where your team is and track the progress they're making.`,
+      description: `Instantly see where your team is and track the progress they’re making.`,
     },
     {
       title: `Increase team safety and accountability`,
@@ -78,11 +78,11 @@ const Product = () => {
   const productList3 = [
     {
       title: 'Never be in the dark about team progress',
-      description: `Be informed of your team's work activity with instant notifications`,
+      description: `Be informed of your team’s work activity with instant notifications.`,
     },
     {
-      title: `Get greater insight into your employees' workdays`,
-      description: `Be informed of your team's work activity with instant notifications`,
+      title: `Get greater insight into your employees’ workdays`,
+      description: `Check up on employee productivity with clear timelines of their workdays.`,
     },
   ];
 
@@ -131,7 +131,7 @@ const Product = () => {
       <ProductCard
         productName="LOCATION TRACKING"
         title="Know where your team is in real-time"
-        description="Get real-time updates on your entire team's locations and daily movements. Stay in control of your emplyees in the field."
+        description="Get real-time updates on your entire team’s locations and daily movements. Stay in control of your employees in the field."
         list={productList2}
         image={image2}
         isSwapped
@@ -149,7 +149,7 @@ const Product = () => {
       <ProductCard
         productName="TIMESHEETS"
         title="Relax with timesheets on time, every time"
-        description="Atto instanly generates timesheets for you so you never stress over misplace, late, or inaccurate timesheets again."
+        description="Atto instantly generates timesheets for you so you never stress over misplaced, late, or inaccurate timesheets again."
         list={productList4}
         image={image4}
         isSwapped

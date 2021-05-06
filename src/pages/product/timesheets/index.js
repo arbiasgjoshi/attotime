@@ -74,10 +74,9 @@ const Timesheets = () => {
   ];
 
   const checkLists3 = [
-    { title: "Gain a better understanding of your employees' workdays" },
+    { title: 'Gain a better understanding of your employees’ workdays' },
     { title: 'See how long employees spend on breaks, jobs, and on the clock.' },
     { title: 'Review timesheets quicker for faster approval and payroll' },
-    { title: 'See if jobs are running on-time and on-budget' },
   ];
 
   const firstList = [
@@ -95,7 +94,7 @@ const Timesheets = () => {
     },
     {
       title: 'Instantly Available',
-      description: `No longer wait until the end of the week to see hours worked. TImesheets are instantly generated so you can view them anytime.`,
+      description: `No longer wait until the end of the week to see hours worked. Timesheets are instantly generated so you can view them anytime.`,
       alt: 'Instantly Available',
       icon: icon3,
     },
@@ -110,7 +109,7 @@ const Timesheets = () => {
     },
     {
       title: 'Scheduled Email Reports',
-      description: `Schedule an email with your employees timesheets to coincide with your payroll schedule.`,
+      description: `Schedule an email with your employees’ timesheets to coincide with your payroll schedule.`,
       logo: <Flag />,
       alt: 'Geofencing Flag',
     },
@@ -146,7 +145,7 @@ const Timesheets = () => {
     },
     {
       title: 'Archive Employees',
-      description: `View timesheets for employees even after they've left the company - vital for compliance purposes.`,
+      description: `View timesheets for employees even after they’ve left the company – vital for compliance purposes.`,
       logo: <Coffe />,
       alt: '',
     },
@@ -210,7 +209,7 @@ const Timesheets = () => {
       />
       <Divider />
       <ListArticle
-        title="Gain a clear understanding of your employyes' activity"
+        title="Gain a clear understanding of your employees’ activity"
         description="Atto uses employee’ timesheet data to generate clear, simple timelines of everyone’s daily activity. Now it’s much easier to understand their working patterns, and far quicker to review timesheets."
         list={checkLists3}
         image={<Activity />}
@@ -277,20 +276,20 @@ const Timesheets = () => {
       <Divider className="style2" />
       <div className={learnMoreContainer}>
         <LearnMoreCard
-          title="GPS Location Tracking"
-          description="Increase the safety and accountability of your team with real-time updates on their location."
+          title="Time Tracking"
+          description="See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!"
           icon={icon20}
         />
 
         <LearnMoreCard
-          title="Timesheets"
-          description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+          title="GPS Location Tracking"
+          description="Increase the safety and accountability of your team with real-time updates on their location."
           icon={icon21}
         />
 
         <LearnMoreCard
           title="Team Activity"
-          description="Stay in the loop with what's happening - without needing to pick up the phone"
+          description="Stay in the loop with what’s happening – without having to pick up the phone."
           icon={icon22}
         />
       </div>
