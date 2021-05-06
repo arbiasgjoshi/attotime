@@ -35,7 +35,7 @@ const Product = () => {
       description: `Intuitive, easy-to-use software with no technical knowledge required.`,
       alt: 'Simple',
       icon,
-      imagePadding: '.8rem 3.1rem 3.5rem 3rem',
+      imagePadding: '.8rem 3.1rem 1.5rem 3rem',
     },
     {
       title: 'All-in-one',

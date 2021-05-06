@@ -1,6 +1,5 @@
 .container {
   @include flex-direction(column-reverse);
-  justify-content: space-between;
 
   @include min(tablet) {
     flex-direction: row;
@@ -9,6 +8,7 @@
   .firstWrapper {
     @include min(tablet) {
       margin-right: 9rem;
+      width: 54rem;
     }
 
     .textContainer {
@@ -32,9 +32,9 @@
         }
       }
 
-      h4 {
-        font-size: 2.6rem;
-        line-height: 3rem;
+      p {
+        font-size: var(--body-style-two);
+        line-height: var(--body-style-two-line-height-size);
         letter-spacing: -0.5px;
       }
     }
@@ -91,9 +91,6 @@
   }
 
   .secondWrapper {
-    @include min(tablet) {
-      width: 50%;
-    }
     @include flex-align(center, center);
 
     .imageContainer {
@@ -159,6 +156,19 @@
             top: -2px;
             transform: rotate(45deg);
           }
+        }
+      }
+
+      .textContainer {
+        h2 {
+          margin: 0;
+          margin-bottom: 2rem;
+        }
+        p {
+          font-size: var(--body-style-one);
+          line-height: var(--body-style-one-line-height-size);
+          font-weight: var(--body-style-one-font-weight);
+          letter-spacing: -0.5px;
         }
       }
     }
