@@ -46,6 +46,7 @@ import Bookmark from '@images/bookmark.svg';
 import icon20 from '@images/time-tracking-clock@1x.png';
 import icon21 from '@images/location@1x.png';
 import icon22 from '@images/profile@1x.png';
+import Activity from '@images/activitySVG.svg'; //TODO change svg when png is provided
 
 import ConstructionLogo from '@images/construction-industry-logo.svg';
 import PaintingLogo from '@images/painting-industry-logo.svg';
@@ -205,13 +206,14 @@ const Timesheets = () => {
         description="Work smarter, not longer. Use timesheet reports to filter all the work done by each employee, team, or towards a specific category of job."
         list={checkLists2}
         image={photo1}
+        imagePadding="2.9rem ​0.7rem 1.9rem 0.8rem"
       />
       <Divider />
       <ListArticle
         title="Gain a clear understanding of your employyes' activity"
         description="Atto uses employee’ timesheet data to generate clear, simple timelines of everyone’s daily activity. Now it’s much easier to understand their working patterns, and far quicker to review timesheets."
         list={checkLists3}
-        image={photo1}
+        image={<Activity />}
         isSwapped
       />
       <Divider />

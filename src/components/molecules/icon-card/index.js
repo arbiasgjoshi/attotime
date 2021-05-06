@@ -10,10 +10,14 @@ const IconCard = ({
   noImage = false,
   isRound = false,
   style = '',
+  imagePadding = '',
 }) => (
   <div className={`${styles.container} ${isRound && styles.round} ${styles[style]}`}>
     {!noImage && (
-      <div className={`${styles.iconWrapper} ${bigImage && styles.bigImageStyle}`}>
+      <div
+        style={{ padding: imagePadding }}
+        className={`${styles.iconWrapper} ${bigImage && styles.bigImageStyle}`}
+      >
         <img alt={alt} src={icon} />
       </div>
     )}

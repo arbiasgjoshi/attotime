@@ -12,6 +12,7 @@ const IconCardList = ({ cardList, noImage, hasBigImages = false, style = '' }) =
         description={card.description}
         alt={card.alt}
         icon={card.icon}
+        imagePadding={card.imagePadding}
         noImage={noImage}
         bigImage={hasBigImages}
         style={style}

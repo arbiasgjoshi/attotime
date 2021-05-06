@@ -29,6 +29,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import noImage from '@images/no-image.png';
 import image1 from '@images/verify-your-team.png';
+import DailyMovements from '@images/daily-movements.svg'; //TODO change svg when png is provided
 import authorImage from '@images/authorImage.png';
 
 import Timer from '@images/timer.svg';
@@ -205,7 +206,7 @@ const LocationTracking = () => {
         title="Keep track of your team's daily movements"
         description="Atto’s GPS location tracking generates simple map-based timelines of every employee’s daily movements. This helps you visualize their workdays in a clear, simple-to-understand fashion."
         list={checkLists2}
-        image={noImage}
+        image={<DailyMovements />}
       />
       <Divider />
       <ListArticle

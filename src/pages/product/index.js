@@ -35,18 +35,21 @@ const Product = () => {
       description: `Intuitive, easy-to-use software with no technical knowledge required.`,
       alt: 'Simple',
       icon,
+      imagePadding: '.8rem 3.1rem 3.5rem 3rem',
     },
     {
       title: 'All-in-one',
       description: `Combining everything you need to manage your team's time in one place.`,
       alt: 'All-in-one',
       icon: icon2,
+      imagePadding: '2.3rem 2rem 2.2rem 2rem',
     },
     {
       title: 'Time-Saving',
       description: `Using automation to save time and let your team focus on productive work.`,
       alt: 'Time Saving',
       icon: icon3,
+      imagePadding: '1.2rem 1.72rem 1.269rem 1.8rem',
     },
   ];
 
@@ -122,6 +125,7 @@ const Product = () => {
         description="Track time from any device, anytime, and anywhere. See every minute on the clock, including work hours, breaks, and time-off."
         list={productList1}
         image={image1}
+        imagePadding="3.5rem 3.1rem"
       />
       <Divider />
       <ProductCard
@@ -139,6 +143,7 @@ const Product = () => {
         description="View the work status of your team in a few taps, making team management far simpler and easier."
         list={productList3}
         image={image3}
+        imagePadding="3.5rem 1.87rem 3.5rem 1.8rem"
       />
       <Divider />
       <ProductCard
@@ -148,6 +153,7 @@ const Product = () => {
         list={productList4}
         image={image4}
         isSwapped
+        imagePadding="3.5rem 3.9rem"
       />
       <Divider />
       <GrowthNumbers />

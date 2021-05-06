@@ -6,7 +6,16 @@ import Title from '@components/molecules/title';
 import CheckCard from '@components/molecules/check-card';
 import arrowIcon from '@images/arrowForward@2x.png';
 
-const ProductCard = ({ productName, title, description, list, image, isSwapped, style = '' }) => {
+const ProductCard = ({
+  productName,
+  title,
+  description,
+  list,
+  image,
+  isSwapped,
+  style = '',
+  imagePadding = '',
+}) => {
   return (
     <div className={`${styles.container} ${isSwapped && styles.swapped} ${styles[style]}`}>
       <div className={styles.firstWrapper}>
@@ -35,7 +44,7 @@ const ProductCard = ({ productName, title, description, list, image, isSwapped, 
         </div>
       </div>
       <div className={styles.secondWrapper}>
-        <div className={styles.imageContainer}>
+        <div style={{ padding: imagePadding }} className={styles.imageContainer}>
           <img className={styles.img} src={image} />
         </div>
       </div>

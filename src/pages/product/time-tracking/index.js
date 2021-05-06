@@ -87,18 +87,21 @@ const TimeTracking = () => {
       description: `Start tracking in a tap. Emplyees love using Atto because it's simple, intuitive, and requires no technical knowledge to use.`,
       alt: 'Easy to use',
       icon,
+      imagePadding: '.8rem 3.1rem 1.5rem 3rem',
     },
     {
       title: 'Accurate',
       description: `No more end-of-week timesheet guesswork. Time gets tracked in real-time as employees work - with entries precise to the nearest second.`,
       alt: 'Accurate',
       icon: icon2,
+      imagePadding: '.8rem .6rem 1.9rem 2rem',
     },
     {
       title: 'Trustworthy',
       description: `Gain confidence in your time tracking data. TImesheets are verified using location data, so you can trust the validity of every time entry.`,
       alt: 'Trustworthy',
       icon: icon3,
+      imagePadding: '1.2rem 1rem',
     },
   ];
 
