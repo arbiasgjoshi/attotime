@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '@components/atoms/button';
+import { Link } from 'gatsby-plugin-intl';
 import {
   container,
   iconWrapper,
@@ -9,7 +10,7 @@ import {
   paragraphText,
 } from './learn-more-card.module.scss';
 
-const LearnMoreCard = ({ title, description, btnText, icon }) => {
+const LearnMoreCard = ({ title, description, btnText, icon, path = '/' }) => {
   return (
     <div className={container}>
       <div className={iconWrapper}>
@@ -19,7 +20,9 @@ const LearnMoreCard = ({ title, description, btnText, icon }) => {
         <h5 className={cardTitle}>{title}</h5>
         <p className={paragraphText}>{description}</p>
       </div>
-      <Button btnStyle="wide" btnText={btnText || 'Learn more'} />
+      <Link to={path}>
+        <Button btnStyle="wide" btnText={btnText || 'Learn more'} />
+      </Link>
     </div>
   );
 };
@@ -29,6 +32,7 @@ LearnMoreCard.propTypes = {
   description: PropTypes.string.isRequired,
   btnText: PropTypes.string,
   icon: PropTypes.string,
+  path: PropTypes.string,
 };
 
 export default LearnMoreCard;

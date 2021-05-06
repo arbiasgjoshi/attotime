@@ -29,6 +29,7 @@ const FeatureTabs = () => {
           image={image1}
           isSwapped
           style="homepage"
+          path="/product/time-tracking"
         />
       </div>
       <div className={activeIndex === 1 ? content : inactive}>
@@ -38,6 +39,7 @@ const FeatureTabs = () => {
           image={image2}
           isSwapped
           style="homepage"
+          path="/product/gps-location-tracking"
         />
       </div>
       <div className={activeIndex === 2 ? content : inactive}>
@@ -47,6 +49,7 @@ const FeatureTabs = () => {
           image={image4}
           isSwapped
           style="homepage"
+          path="/product/team-activity"
         />
       </div>
       <div className={activeIndex === 3 ? content : inactive}>
@@ -56,6 +59,7 @@ const FeatureTabs = () => {
           image={image3}
           isSwapped
           style="homepage"
+          path="/product/timesheets"
         />
       </div>
     </div>

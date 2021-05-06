@@ -194,16 +194,19 @@ const TeamActivity = () => {
           title="Time Tracking"
           icon={icon14}
           description="See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!"
+          path="/product/time-tracking"
         />
         <LearnMoreCard
           title="GPS Location Tracking"
           description="Increase the safety and accountability of your team with real-time updates on their location."
           icon={icon15}
+          path="/product/gps-location-tracking"
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
           icon={icon16}
+          path="/product/timesheets"
         />
       </div>
       <Divider />

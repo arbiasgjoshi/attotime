@@ -39,7 +39,7 @@ const Button = ({ btnText, disabled, btnStyle, pricing, activeClass, onBtnClick 
       className={`${defaultBtn} ${checkBtnStyle()}`}
       type="submit"
       disabled={disabled}
-      onClick={() => onBtnClick()}
+      onClick={() => onBtnClick && onBtnClick()}
     >
       {btnText}
     </button>

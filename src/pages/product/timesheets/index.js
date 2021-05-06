@@ -279,18 +279,21 @@ const Timesheets = () => {
           title="Time Tracking"
           description="See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!"
           icon={icon20}
+          path="/product/time-tracking"
         />
 
         <LearnMoreCard
           title="GPS Location Tracking"
           description="Increase the safety and accountability of your team with real-time updates on their location."
           icon={icon21}
+          path="/product/gps-location-tracking"
         />
 
         <LearnMoreCard
           title="Team Activity"
           description="Stay in the loop with what’s happening – without having to pick up the phone."
           icon={icon22}
+          path="/product/team-activity"
         />
       </div>
       <Divider className="style3" />

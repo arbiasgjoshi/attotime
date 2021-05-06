@@ -400,16 +400,19 @@ const TimeTracking = () => {
           title="GPS Location Tracking"
           description="Increase the safety and accountability of your team with real-time updates on their location."
           icon={icon32}
+          path="/product/gps-location-tracking"
         />
         <LearnMoreCard
           title="Team Activity"
           description="Stay in the loop with what's happening - without needing to pick up the phone"
           icon={icon33}
+          path="/product/team-activity"
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
           icon={icon34}
+          path="/product/timesheets"
         />
       </div>
       <Divider />

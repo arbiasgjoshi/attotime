@@ -1,4 +1,4 @@
-@import "~normalize.css/normalize.css";
+@import '~normalize.css/normalize.css';
 
 @mixin text-reset {
   word-break: break-word;
@@ -33,6 +33,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
+  color: #000;
 }
 
 button {
@@ -65,11 +66,11 @@ input {
 }
 
 // Remove "x" on text inputs
-input[type="text"]::-ms-clear,
-input[type="text"]::-ms-reveal,
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
+input[type='text']::-ms-clear,
+input[type='text']::-ms-reveal,
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
   display: none;
 }

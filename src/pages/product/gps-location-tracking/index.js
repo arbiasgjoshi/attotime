@@ -266,16 +266,19 @@ const LocationTracking = () => {
           title="Time Tracking"
           description="See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!."
           icon={icon18}
+          path="/product/time-tracking"
         />
         <LearnMoreCard
           title="Team Activity"
           description="Stay in the loop with what’s happening – without having to pick up the phone."
           icon={icon19}
+          path="/product/team-activity"
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
           icon={icon20}
+          path="/product/timesheets"
         />
       </div>
       <Divider className="style3" />

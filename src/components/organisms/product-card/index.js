@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import * as styles from './product-card.module.scss';
+import { Link } from 'gatsby-plugin-intl';
 
 import Title from '@components/molecules/title';
 import CheckCard from '@components/molecules/check-card';
@@ -15,6 +16,7 @@ const ProductCard = ({
   isSwapped,
   style = '',
   imagePadding = '',
+  path = '/',
 }) => {
   return (
     <div className={`${styles.container} ${isSwapped && styles.swapped} ${styles[style]}`}>
@@ -39,7 +41,9 @@ const ProductCard = ({
           <div className={styles.arrowIconContainer}>
             <img src={arrowIcon} alt={title} />
           </div>
-          <h5>Learn more</h5>
+          <h5>
+            <Link to={path}>Learn more</Link>
+          </h5>
           {style === 'homepage' && <div className={styles.arrow}></div>}
         </div>
       </div>

@@ -126,6 +126,7 @@ const Product = () => {
         list={productList1}
         image={image1}
         imagePadding="3.5rem 3.1rem"
+        path="/product/time-tracking"
       />
       <Divider />
       <ProductCard
@@ -135,6 +136,7 @@ const Product = () => {
         list={productList2}
         image={image2}
         isSwapped
+        path="/product/gps-location-tracking"
       />
       <Divider />
       <ProductCard
@@ -144,6 +146,7 @@ const Product = () => {
         list={productList3}
         image={image3}
         imagePadding="3.5rem 1.87rem 3.5rem 1.8rem"
+        path="/product/team-activity"
       />
       <Divider />
       <ProductCard
@@ -154,6 +157,7 @@ const Product = () => {
         image={image4}
         isSwapped
         imagePadding="3.5rem 3.9rem"
+        path="/product/timesheets"
       />
       <Divider />
       <GrowthNumbers />
