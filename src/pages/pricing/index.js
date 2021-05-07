@@ -34,13 +34,10 @@ import {
   buttonContainer,
   rightSide,
   featuresBanner,
-  questionsContainer,
-  list,
-  item,
   discount,
-  plus,
   behindMask,
 } from './pricing.module.scss';
+import Faq from '@components/organisms/faq';
 
 const Pricing = () => {
   const [active, setActive] = useState('monthly');
@@ -122,6 +119,33 @@ const Pricing = () => {
       description: `Get free unlimited help from our support team whenever you need it.`,
       alt: '',
       logo: <SupportIcon />,
+    },
+  ];
+
+  const faqList = [
+    {
+      title: 'What happens at the end of my free trial?',
+      paragraph:
+        'After your 14-day free trial ends, you’ll be asked to purchase a subscription in order to continue using Atto. As we don’t require a credit card to sign up for our free trial, you won’t be charged unless you actively choose to subscribe.',
+      toggled: true,
+    },
+    {
+      title: 'Are there any usage limits or add-on charges?',
+      paragraph:
+        'After your 14-day free trial ends, you’ll be asked to purchase a subscription in order to continue using Atto. As we don’t require a credit card to sign up for our free trial, you won’t be charged unless you actively choose to subscribe.',
+      toggled: false,
+    },
+    {
+      title: 'What payment options do you accept?',
+      paragraph:
+        'After your 14-day free trial ends, you’ll be asked to purchase a subscription in order to continue using Atto. As we don’t require a credit card to sign up for our free trial, you won’t be charged unless you actively choose to subscribe.',
+      toggled: false,
+    },
+    {
+      title: 'I have a question that isn’t answered',
+      paragraph:
+        'After your 14-day free trial ends, you’ll be asked to purchase a subscription in order to continue using Atto. As we don’t require a credit card to sign up for our free trial, you won’t be charged unless you actively choose to subscribe.',
+      toggled: false,
     },
   ];
 
@@ -213,41 +237,7 @@ const Pricing = () => {
         height={460}
       />
       <Divider />
-      <div className={questionsContainer}>
-        <Title title="Frequently asked questions" />
-        <Divider className="style2" />
-        <div className={list}>
-          <div className={item}>
-            <h5>
-              What happens at the end of my free trial? <span className={plus}>-</span>
-            </h5>
-            <p>
-              After your 14-day free trial ends, you’ll be asked to purchase a subscription in order
-              to continue using Atto. As we don’t require a credit card to sign up for our free
-              trial, you won’t be charged unless you actively choose to subscribe.
-            </p>
-          </div>
-          <div className={item}>
-            <h5>
-              Are there any usage limits or add-on charges?
-              <span className={plus}>+</span>
-            </h5>
-          </div>
-          <div className={item}>
-            <h5>
-              What payment options do you accept?
-              <span className={plus}>+</span>
-            </h5>
-          </div>
-          <div className={item}>
-            <h5>
-              I have a question that isn’t answered
-              <span className={plus}>+</span>
-            </h5>
-          </div>
-        </div>
-        <Divider />
-      </div>
+      <Faq list={faqList} />
       <SubscribeBanner
         bannerImage
         title="There's no time to waste!"
