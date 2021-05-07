@@ -34,7 +34,7 @@ import MLogo from '@images/m-logo.svg';
 import Brightness from '@images/brightness.svg';
 
 import icon14 from '@images/time-tracking-clock@1x.png';
-import icon15 from '@images/profile@1x.png';
+import icon15 from '@images/location@1x.png';
 import icon16 from '@images/timesheets@1x.png';
 
 import ConstructionLogo from '@images/construction-industry-logo.svg';
@@ -51,22 +51,22 @@ import { FooterLinks } from '@locale/en.js';
 
 const TeamActivity = () => {
   const titleList = [
-    { title: `View any employee's status and location in a few taps` },
+    { title: `View any employee’s status and location in a few taps` },
     { title: 'Increase team visibility, transparency, and accountability' },
-    { title: `See clear daily timelines of every employee's activity` },
+    { title: `See clear daily timelines of every employee’s activity` },
     { title: 'Make team management easier and less time-consuming' },
   ];
 
   const featureList = [
     {
       title: 'Employee Status Overview',
-      description: `Stay in control of your team's daily activity with real-time updates on their status and location.`,
+      description: `Stay in control of your team’s daily activity with real-time updates on their status and location.`,
       logo: <Timer />,
       alt: 'Employee status logo',
     },
     {
       title: 'Daily Timeline',
-      description: `See a clear, simple timeline view of every employee's daily activity.`,
+      description: `See a clear, simple timeline view of every employee’s daily activity.`,
       logo: <Flag />,
       alt: 'Geofencing Flag',
     },
@@ -78,19 +78,19 @@ const TeamActivity = () => {
     },
     {
       title: 'Filter and Search',
-      description: `Filter teams based on their status, department, or simply search for their name`,
+      description: `Filter teams based on their status, department, or simply search for their name.`,
       logo: <MLogo />,
       alt: '',
     },
     {
       title: 'Smart Notifications',
-      description: `Get notified whenever an employee clock in or out, takes a break, or edits a time entry.`,
+      description: `Get notified whenever an employee clocks in or out, takes a break, or edits a time entry.`,
       logo: <Brightness />,
       alt: '',
     },
     {
       title: 'Messaging*',
-      description: `Allow employees to send messages and share photos 1-1 or in group chats`,
+      description: `Allow employees to send messages and share photos 1-1 or in group chats.`,
       logo: <Flag />,
       alt: '',
     },
@@ -129,6 +129,7 @@ const TeamActivity = () => {
         description="Find out what’s going on in a few taps. Get real-time updates on your team’s status and location. See who’s on the clock, on break, or enjoying some time off."
         image={image4}
         maxWidth={500}
+        imagePadding="7.3rem 4.5rem"
       />
       <Article
         title="Simplify team management with departments"
@@ -136,12 +137,14 @@ const TeamActivity = () => {
         image={image1}
         isSwapped
         maxWidth={500}
+        imagePadding="4.4rem 5.9rem 4.3rem 5.3rem"
       />
       <Article
         title="Find out what any employee is up to in seconds"
         description="Stay in control of what’s happening. Filter your team based on their current status, the department they’re in, or by searching for their name. Make day-to-day decisions faster with all the information you need at your fingertips."
         image={image2}
         maxWidth={500}
+        imagePadding="3.3rem 4.2rem 2.4rem 10.7rem"
       />
       <Article
         title="Eliminate back and forth phone calls and constant check-ins"
@@ -149,12 +152,14 @@ const TeamActivity = () => {
         image={image3}
         isSwapped
         maxWidth={500}
+        imagePadding="5.6rem 5.5rem"
       />
       <Article
-        title="See your team's progress at the end of each day"
-        description="Check on your team's progress and productivity with clear timelines of everyone's daily activity. See how long they spend on breaks, jobs, and on the clock. Gain greater insight into their workdays, and use it to speed-up timesheet approvals."
+        title="See your team’s progress at the end of each day"
+        description="Check on your team’s progress and productivity with clear timelines of everyone’s daily activity. See how long they spend on breaks, jobs, and on the clock. Gain greater insight into their workdays, and use it to speed-up timesheet approvals."
         image={image1}
         maxWidth={500}
+        imagePadding="1.8rem 5.5rem"
       />
       <Divider />
       <Title maxWidth={880} title="Our full suite of team activity features at a glance" />
@@ -188,17 +193,20 @@ const TeamActivity = () => {
         <LearnMoreCard
           title="Time Tracking"
           icon={icon14}
-          description="See exactly where your employees's time is going. Track work hours, breaks, overtime, time off, and more!"
+          description="See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!"
+          path="/product/time-tracking"
         />
         <LearnMoreCard
           title="GPS Location Tracking"
           description="Increase the safety and accountability of your team with real-time updates on their location."
           icon={icon15}
+          path="/product/gps-location-tracking"
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
           icon={icon16}
+          path="/product/timesheets"
         />
       </div>
       <Divider />

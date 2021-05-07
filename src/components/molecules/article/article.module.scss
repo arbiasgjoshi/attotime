@@ -40,7 +40,6 @@
   .secondBlock {
     @include min(tablet) {
       width: 50%;
-      padding: 7.5rem;
     }
 
     .imageWrapper {

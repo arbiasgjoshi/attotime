@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import { Link } from 'gatsby-plugin-intl';
 // import DropDown from '@components/molecules/dropdown';
+import appStore from '../../../images/app-store@2x.png';
+import googlePlay from '../../../images/google-play@2x.png';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import {
@@ -41,8 +43,7 @@ const Footer = ({ FooterLinks }) => (
               <div className={downloadApp}>
                 {section.downloadApp.map((app) => (
                   <a href={app.href} target="_blank" rel="noreferrer">
-                    <i className={app.icon} />
-                    <p>{app.name}</p>
+                    <img src={app.src} />
                   </a>
                 ))}
               </div>

@@ -1,9 +1,10 @@
 import React from 'react';
 import IconCard from '@components/molecules/icon-card';
-import { container, gapStyle } from './icon-card-list.module.scss';
+import PropTypes from 'prop-types';
+import * as styles from './icon-card-list.module.scss';
 
-const IconCardList = ({ cardList, noImage, hasBigImages = false }) => (
-  <div className={`${container} ${hasBigImages && gapStyle}`}>
+const IconCardList = ({ cardList, noImage, hasBigImages = false, style = '' }) => (
+  <div className={`${styles.container} ${hasBigImages && styles.gapStyle}`}>
     {cardList.map((card, index) => (
       <IconCard
         key={index}
@@ -11,11 +12,20 @@ const IconCardList = ({ cardList, noImage, hasBigImages = false }) => (
         description={card.description}
         alt={card.alt}
         icon={card.icon}
+        imagePadding={card.imagePadding}
         noImage={noImage}
         bigImage={hasBigImages}
+        style={style}
       />
     ))}
   </div>
 );
+
+IconCardList.propTypes = {
+  cardList: PropTypes.arrayOf({}),
+  noImage: PropTypes.bool,
+  hasBigImages: PropTypes.bool,
+  style: PropTypes.string,
+};
 
 export default IconCardList;

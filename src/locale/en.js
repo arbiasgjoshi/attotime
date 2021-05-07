@@ -1,4 +1,6 @@
 export const placeholderData = {};
+import googlePlay from '../../src/images/google-play@2x.png';
+import appStore from '../../src/images/app-store@2x.png';
 
 export const FooterLinks = [
   {
@@ -128,12 +130,14 @@ export const FooterLinks = [
     downloadApp: [
       {
         name: 'App Store',
+        src: appStore,
         icon: 'apple',
         href: 'https://apps.apple.com/us/app/atto-employee-time-location/id1132847984?ls=1',
       },
 
       {
         name: 'Google Play',
+        src: googlePlay,
         icon: 'play',
         href: 'https://play.google.com/store/apps/details?id=tech.zetta.atto',
       },

@@ -84,21 +84,24 @@ const TimeTracking = () => {
   const firstList = [
     {
       title: 'Easy to use',
-      description: `Start tracking in a tap. Emplyees love using Atto because it's simple, intuitive, and requires no technical knowledge to use.`,
+      description: `Start tracking in a tap. Employees love using Atto because it’s simple, intuitive, and requires no technical knowledge to use.`,
       alt: 'Easy to use',
       icon,
+      imagePadding: '.8rem 3.1rem 1.5rem 3rem',
     },
     {
       title: 'Accurate',
-      description: `No more end-of-week timesheet guesswork. Time gets tracked in real-time as employees work - with entries precise to the nearest second.`,
+      description: `No more end-of-week timesheet guesswork. Time gets tracked in real-time as employees work – with entries precise to the nearest second.`,
       alt: 'Accurate',
       icon: icon2,
+      imagePadding: '.8rem .6rem 1.9rem 2rem',
     },
     {
       title: 'Trustworthy',
-      description: `Gain confidence in your time tracking data. TImesheets are verified using location data, so you can trust the validity of every time entry.`,
+      description: `Gain confidence in your time tracking data. Timesheets are verified using location data, so you can trust the validity of every time entry.`,
       alt: 'Trustworthy',
       icon: icon3,
+      imagePadding: '1.2rem 1rem',
     },
   ];
 
@@ -117,25 +120,25 @@ const TimeTracking = () => {
     },
     {
       title: 'Track Breaks',
-      description: `Track breaks and categorize them either paid or unpaid`,
+      description: `Track breaks and categorize them as either paid or unpaid.`,
       alt: 'track breaks',
       icon: icon6,
     },
     {
       title: 'Manage overtime',
-      description: `Decide if overtime should be tracked, and if so, whether it's calculated daily or weekly.`,
+      description: `Decide if overtime should be tracked, and if so, whether it’s calculated weekly, daily or daily double.`,
       alt: 'Manage overtime',
       icon: icon7,
     },
     {
       title: 'Switch between jobs',
-      description: `Use job codes to categorize time tracked towards specific purposes - for example for each client or type of job.`,
+      description: `Use job codes to categorize time tracked towards specific purposes – for example for each client or type of job.`,
       alt: 'Switch between jobs',
       icon: icon8,
     },
     {
       title: 'Add time off',
-      description: `Add time off such as vacations and sick leave to help managers understand who's available to work.`,
+      description: `Add time off such as vacations and sick leave to help managers understand who’s available to work.`,
       alt: 'Time off',
       icon: icon9,
     },
@@ -162,7 +165,7 @@ const TimeTracking = () => {
     {
       title: 'Reduce payroll costs',
       description:
-        'With precise time-tracking that captures activity to the nearest second, you only pay for hours actually spent on the job',
+        'With precise time tracking that captures activity to the nearest second, you only pay for hours actually spent on the job.',
     },
     {
       title: 'Increase employee productivity',
@@ -175,37 +178,37 @@ const TimeTracking = () => {
     {
       title: 'Managed Clock-in / Out',
       description:
-        'Empower managers to clock-in and out on behalf of their team, instead of tracking time individually.',
+        'Empower managers to clock in and out on behalf of their team, instead of tracking time individually.',
       logo: <Timer />,
       alt: 'Clock in logo',
     },
     {
       title: 'Geofencing',
-      description: `Restrict employees from clocking-in until they've arrived at a job site`,
+      description: `Restrict employees from clocking in until they’ve arrived at a job site.`,
       logo: <Flag />,
       alt: 'Geofencing Flag',
     },
     {
       title: 'Smart Reminders',
-      description: `Remind employees to clock-in and out at their start and end time or when they're at a job site`,
+      description: `Remind employees to clock in and out at their start and end time or when they’re at a job site.`,
       logo: <Ringbell />,
       alt: 'Ringbell reminder logo',
     },
     {
       title: 'Manual Time Entries',
-      description: `Allow admins, managers, or employees the ability to add manual time entries to their timesheets.`,
+      description: `Allow admins, managers, or employees the option to add manual time entries to their timesheets.`,
       logo: <MLogo />,
       alt: '',
     },
     {
       title: 'Time Off',
-      description: `Add and categorize time off entries, specifying whether time off is paid or unpaid`,
+      description: `Add and categorize time off entries, specifying whether time off is paid or unpaid.`,
       logo: <Brightness />,
       alt: '',
     },
     {
       title: 'Notes',
-      description: `Add notes to provide context to time entries, such as a work diary or job information`,
+      description: `Add notes to provide context to time entries, such as a work diary or job information.`,
       logo: <Notes />,
       alt: '',
     },
@@ -217,7 +220,7 @@ const TimeTracking = () => {
     },
     {
       title: 'Break Preferences',
-      description: `Decide if breaks are paid or unpaid, the amount of time to be deducted, and categorize them.`,
+      description: `Decide if breaks are paid or unpaid, the amount of time to be deducted, and categorize them.      `,
       logo: <Coffe />,
       alt: '',
     },
@@ -229,13 +232,13 @@ const TimeTracking = () => {
     },
     {
       title: 'Rounded Clock-in / Out Times',
-      description: `Set clock-in and out times to be automatically rounded to an increment of your choice.`,
+      description: `Set clock in and out times to be automatically rounded to an increment of your choice.`,
       logo: <Clock />,
       alt: '',
     },
     {
       title: 'Fixed Time Zones',
-      description: `Automatically adjust your team's hours to a set time zone, regardless of their device's time zone.`,
+      description: `Automatically adjust your team’s hours to a set time zone, regardless of their device’s time zone.`,
       logo: <Browser />,
       alt: '',
     },
@@ -293,7 +296,7 @@ const TimeTracking = () => {
         description="Say goodbye to employee estimates. Use the time clock to precisely capture work activity."
       />
       <Divider className="style7" />
-      <IconCardList cardList={secondList} hasBigImages />
+      <IconCardList cardList={secondList} hasBigImages style="smallerMargin" />
       <Divider />
       <Title
         maxWidth={950}
@@ -307,21 +310,21 @@ const TimeTracking = () => {
         <FeatureCard
           isWorkCard
           title="Work in the office via the Web Dashboard"
-          description="Log in to the Atto Dashboard and use the web-based time clock from your computer"
+          description="When at the office, track your time using Atto’s web-based time clock."
           logo={<WebTracking />}
           alt="Web time tracking"
         />
         <FeatureCard
           isWorkCard
-          title="Work in go icon"
-          description="Log in to the Atto Dashboard and use the web-based time clock from your computer"
+          title="Work on the go via the Mobile App"
+          description="Track time on the go with the Atto mobile app available on iOS and Android."
           logo={<MobileTracking />}
           alt="Mobile time tracking"
         />
         <FeatureCard
           isWorkCard
-          title="Work in job sites icon"
-          description="With the Time CLock Kiosk, employees can log in with a PIN, and track time with a single device"
+          title="Work at job sites via the Time Clock Kiosk"
+          description="Set up a time clock kiosk to enable your team to track time from a single device."
           logo={<KioskTracking />}
           alt="Kiosk time tracking"
         />
@@ -360,7 +363,7 @@ const TimeTracking = () => {
           bigImage
           icon={icon23}
           alt="Out of battery"
-          title="What if phone ran out of battery"
+          title="What if phone ran out of battery?"
           description="Not a problem! If an employee forgets their phone, or it runs out of battery, either they or a manager can add a manual time entry for your approval."
         />
         <IconCard
@@ -368,14 +371,14 @@ const TimeTracking = () => {
           isRound
           icon={noImage}
           alt="Not sure if employees"
-          title={`Not sure if employees are where they're supposed to?`}
+          title={`Not sure if employees are where they’re supposed to?`}
           description={`Always be in the know! With geofencing, you can restrict employees from clocking in until they’re at a job site – increasing accountability and preventing inaccurate time entries.`}
         />
       </div>
       <Divider />
       <Title
         title="A work hours tracker for any industry"
-        description="Atto helps all types of businesses across the world to manage their employees' time"
+        description="Atto helps all types of businesses across the world to manage their employees’ time."
         maxDescriptionWidth={700}
       />
       <Divider className="style2" />
@@ -397,16 +400,19 @@ const TimeTracking = () => {
           title="GPS Location Tracking"
           description="Increase the safety and accountability of your team with real-time updates on their location."
           icon={icon32}
+          path="/product/gps-location-tracking"
         />
         <LearnMoreCard
           title="Team Activity"
           description="Stay in the loop with what's happening - without needing to pick up the phone"
           icon={icon33}
+          path="/product/team-activity"
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
           icon={icon34}
+          path="/product/timesheets"
         />
       </div>
       <Divider />

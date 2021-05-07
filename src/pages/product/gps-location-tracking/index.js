@@ -29,6 +29,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import noImage from '@images/no-image.png';
 import image1 from '@images/verify-your-team.png';
+import DailyMovements from '@images/daily-movements.svg'; //TODO change svg when png is provided
 import authorImage from '@images/authorImage.png';
 
 import Timer from '@images/timer.svg';
@@ -73,7 +74,7 @@ const LocationTracking = () => {
   ];
 
   const checkLists2 = [
-    { title: `Gain a better understanding of your employees's workdays` },
+    { title: `Gain a better understanding of your employees’ workdays` },
     { title: 'Trace the routes taken and stops made while on the clock' },
     { title: `Check how efficient employees are at completing jobs` },
     { title: `Identify different activities easily with color-coded routes` },
@@ -82,14 +83,14 @@ const LocationTracking = () => {
   const checkLists3 = [
     { title: `Ensure only hours worked are accounted for` },
     { title: 'Encourage your team to never turn up late for a job' },
-    { title: `Prevent employees from "buddy punching"` },
+    { title: `Prevent employees from “buddy punching”` },
     { title: `Save payroll costs and reduce time wastage` },
   ];
 
   const checkList4 = [
     {
-      title: `Decide who's locations are tracked, and who's aren't`,
-      description: `Location tracking is completely optional. DOn't need it? Disable it! Atto gives you the power to decide which specific employees or teams require it.`,
+      title: `Decide who’s locations are tracked, and who’s aren’t`,
+      description: `Location tracking is completely optional. Don’t need it? Disable it! Atto gives you the power to decide which specific employees or teams require it.`,
     },
     {
       title: `Choose which type of location tracking to enable`,
@@ -99,7 +100,7 @@ const LocationTracking = () => {
     {
       title: `When work ends, so does location tracking`,
       description:
-        'Atto never tracks more than is absolutely neccesary. Whenever employees clock out, location tracking is turned off completely.',
+        'Atto never tracks more than is absolutely necessary. Whenever employees clock out, location tracking is turned off completely.',
     },
   ];
 
@@ -111,7 +112,7 @@ const LocationTracking = () => {
     },
     {
       title: 'Clock in/out Location History',
-      description: 'View GPS time stamps of your employees clock in and clock out locations.',
+      description: 'View GPS time stamps of your employees’ clock in and clock out locations.',
       logo: <Flag />,
     },
     {
@@ -122,7 +123,7 @@ const LocationTracking = () => {
     },
     {
       title: 'Location History Tracking',
-      description: `View your employees' location history throughout their entire day.`,
+      description: `View your employees’ location history throughout their entire day.`,
       logo: <MLogo />,
     },
     {
@@ -133,7 +134,7 @@ const LocationTracking = () => {
     },
     {
       title: 'Geofencing',
-      description: `Restrict employees from clocking in until they've arrived at a job site`,
+      description: `Restrict employees from clocking in until they’ve arrived at a job site.`,
       logo: <Flag />,
     },
     {
@@ -145,7 +146,7 @@ const LocationTracking = () => {
     {
       title: 'Compatible with most mobiles',
       description:
-        'Use location tracking with most Apple and Android devices - no special equipment necessary.',
+        'Use location tracking with most Apple and Android devices – no special equipment necessary.',
       logo: <Coffe />,
     },
     {
@@ -159,15 +160,15 @@ const LocationTracking = () => {
   const cardList = [
     {
       title: 'Boost Productivity',
-      description: `See who's nearest to a job site, and quickly deploy them - boosting efficiency and reducing costs.`,
+      description: `See who’s nearest to a job site, and quickly deploy them – boosting efficiency and reducing costs.`,
     },
     {
       title: 'Increase Visibility',
-      description: `Always know where your team is, and what they're working on without any back and forth phone calls.`,
+      description: `Always know where your team is, and what they’re working on without any back and forth phone calls.`,
     },
     {
       title: 'Improve Safety',
-      description: `Get peace of mind and help improve your team's safety as they work in the field and move from job site to job site.`,
+      description: `Get peace of mind and help improve your team’s safety as they work in the field and move from job site to job site.`,
     },
   ];
 
@@ -177,7 +178,7 @@ const LocationTracking = () => {
       <Header />
       <MainTitleCard
         title="Be in the right place, at the right time"
-        subtitle="Increase the accountability and transparency of your team with real-time updates on their location"
+        subtitle="Increase the accountability and transparency of your team with real-time updates on their location."
         hasParagraph
         showButton
         paragraph="GPS LOCATION TRACKING"
@@ -195,7 +196,7 @@ const LocationTracking = () => {
         src="../../../images/track-team-locations@2x.png"
         alt="location of team"
         width={1139}
-        height={316}
+        height={340}
         quality={95}
       />
       <Divider className="style2" />
@@ -205,7 +206,7 @@ const LocationTracking = () => {
         title="Keep track of your team's daily movements"
         description="Atto’s GPS location tracking generates simple map-based timelines of every employee’s daily movements. This helps you visualize their workdays in a clear, simple-to-understand fashion."
         list={checkLists2}
-        image={noImage}
+        image={<DailyMovements />}
       />
       <Divider />
       <ListArticle
@@ -218,7 +219,7 @@ const LocationTracking = () => {
       />
       <Divider />
       <Title
-        title="Your privacy, our priority"
+        title="Your privacy, our priority."
         description="You always stay in complete control of location tracking, providing peace of mind to your employees."
         maxDescriptionWidth={1040}
       />
@@ -252,7 +253,7 @@ const LocationTracking = () => {
       <Story
         img={authorImage}
         paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
-        author="Robert Bennet - DPA Cleaning Services, Inc."
+        author="Robert Bennett - DPA Cleaning Services, Inc."
       />
       <Divider />
       <Title
@@ -262,24 +263,27 @@ const LocationTracking = () => {
       <Divider className="style6" />
       <div className={learnMoreContainer}>
         <LearnMoreCard
-          title="GPS Location Tracking"
-          description="Increase the safety and accountability of your team with real-time updates on their location."
+          title="Time Tracking"
+          description="See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!."
           icon={icon18}
+          path="/product/time-tracking"
         />
         <LearnMoreCard
           title="Team Activity"
-          description="Stay in the loop with what's happening - without needing to pick up the phone"
+          description="Stay in the loop with what’s happening – without having to pick up the phone."
           icon={icon19}
+          path="/product/team-activity"
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
           icon={icon20}
+          path="/product/timesheets"
         />
       </div>
       <Divider className="style3" />
       <SubscribeBanner
-        title="Stay in control of what's happening with team activity updates!"
+        title="Near or far, stay in control of your team, wherever they are."
         placeholder="Type your email"
         checkItemOne="No credit card required"
         checkItemTwo="14 day free trial"

@@ -35,18 +35,21 @@ const Product = () => {
       description: `Intuitive, easy-to-use software with no technical knowledge required.`,
       alt: 'Simple',
       icon,
+      imagePadding: '.8rem 3.1rem 1.5rem 3rem',
     },
     {
       title: 'All-in-one',
-      description: `Combining everything you need to manage your team's time in one place.`,
+      description: `Combining everything you need to manage your team’s time in one place.`,
       alt: 'All-in-one',
       icon: icon2,
+      imagePadding: '2.3rem 2rem 2.2rem 2rem',
     },
     {
       title: 'Time-Saving',
       description: `Using automation to save time and let your team focus on productive work.`,
       alt: 'Time Saving',
       icon: icon3,
+      imagePadding: '1.2rem 1.72rem 1.269rem 1.8rem',
     },
   ];
 
@@ -64,7 +67,7 @@ const Product = () => {
   const productList2 = [
     {
       title: 'Avoid constant calls and check-ins',
-      description: `Instantly see where your team is and track the progress they're making.`,
+      description: `Instantly see where your team is and track the progress they’re making.`,
     },
     {
       title: `Increase team safety and accountability`,
@@ -75,11 +78,11 @@ const Product = () => {
   const productList3 = [
     {
       title: 'Never be in the dark about team progress',
-      description: `Be informed of your team's work activity with instant notifications`,
+      description: `Be informed of your team’s work activity with instant notifications.`,
     },
     {
-      title: `Get greater insight into your employees' workdays`,
-      description: `Be informed of your team's work activity with instant notifications`,
+      title: `Get greater insight into your employees’ workdays`,
+      description: `Check up on employee productivity with clear timelines of their workdays.`,
     },
   ];
 
@@ -112,7 +115,7 @@ const Product = () => {
       />
       <Divider className="style2" />
       {/* TODO This image requires some more fixing, need the PNG file */}
-      <ProductOverviewBanner />
+      <ProductOverviewBanner style={{ marginLeft: '-4.3rem' }} />
       <Divider className="style3" />
       <IconCardList cardList={firstList} />
       <Divider />
@@ -122,15 +125,18 @@ const Product = () => {
         description="Track time from any device, anytime, and anywhere. See every minute on the clock, including work hours, breaks, and time-off."
         list={productList1}
         image={image1}
+        imagePadding="3.5rem 3.1rem"
+        path="/product/time-tracking"
       />
       <Divider />
       <ProductCard
         productName="LOCATION TRACKING"
         title="Know where your team is in real-time"
-        description="Get real-time updates on your entire team's locations and daily movements. Stay in control of your emplyees in the field."
+        description="Get real-time updates on your entire team’s locations and daily movements. Stay in control of your employees in the field."
         list={productList2}
         image={image2}
         isSwapped
+        path="/product/gps-location-tracking"
       />
       <Divider />
       <ProductCard
@@ -139,15 +145,19 @@ const Product = () => {
         description="View the work status of your team in a few taps, making team management far simpler and easier."
         list={productList3}
         image={image3}
+        imagePadding="3.5rem 1.87rem 3.5rem 1.8rem"
+        path="/product/team-activity"
       />
       <Divider />
       <ProductCard
         productName="TIMESHEETS"
         title="Relax with timesheets on time, every time"
-        description="Atto instanly generates timesheets for you so you never stress over misplace, late, or inaccurate timesheets again."
+        description="Atto instantly generates timesheets for you so you never stress over misplaced, late, or inaccurate timesheets again."
         list={productList4}
         image={image4}
         isSwapped
+        imagePadding="3.5rem 3.9rem"
+        path="/product/timesheets"
       />
       <Divider />
       <GrowthNumbers />

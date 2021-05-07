@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { container, textWrapper, imageWrapper, secondBlock, swap } from './article.module.scss';
 
-const Article = ({ title, description, image, isSwapped = false, maxWidth }) => {
+const Article = ({ title, description, image, isSwapped = false, maxWidth, imagePadding = '' }) => {
   return (
     <div className={`${container} ${isSwapped && swap}`}>
       <div style={maxWidth && { maxWidth }} className={textWrapper}>
@@ -10,7 +10,7 @@ const Article = ({ title, description, image, isSwapped = false, maxWidth }) => 
         <p>{description}</p>
       </div>
       <div className={secondBlock}>
-        <div className={imageWrapper}>
+        <div style={{ padding: imagePadding }} className={imageWrapper}>
           <img src={image} />
         </div>
       </div>
@@ -23,7 +23,8 @@ Article.propTypes = {
   description: PropTypes.string,
   image: PropTypes.string,
   isSwapped: PropTypes.bool,
-  maxTitleWidth: PropTypes.number,
+  maxWidth: PropTypes.number,
+  imagePadding: PropTypes.string,
 };
 
 export default Article;

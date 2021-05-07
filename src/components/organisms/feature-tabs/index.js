@@ -25,11 +25,11 @@ const FeatureTabs = () => {
       <div className={activeIndex === 0 ? content : inactive}>
         <ProductCard
           title="Simple time tracking with accurate time entries"
-          description="Track time anytime and anywhere - on IOS, Android, the Web, and via the Time Clock Kiosk."
+          description="Track time anytime and anywhere – on iOS, Android, the Web, and via the Time Clock Kiosk."
           image={image1}
           isSwapped
           style="homepage"
-          imagePadding="3.5rem 3.13rem 3.5rem 3.1rem"
+          path="/product/time-tracking"
         />
       </div>
       <div className={activeIndex === 1 ? content : inactive}>
@@ -39,26 +39,27 @@ const FeatureTabs = () => {
           image={image2}
           isSwapped
           style="homepage"
+          path="/product/gps-location-tracking"
         />
       </div>
       <div className={activeIndex === 2 ? content : inactive}>
         <ProductCard
           title="Stay in the loop of work activity throughout the day"
-          description="Get instantly notified of employee work activity - without needing to pick up the phone."
+          description="Get instantly notified of employee work activity – without needing to pick up the phone."
           image={image4}
           isSwapped
           style="homepage"
-          imagePadding="3.5rem 1.87rem 3.5rem 1.8rem"
+          path="/product/team-activity"
         />
       </div>
       <div className={activeIndex === 3 ? content : inactive}>
         <ProductCard
           title="Automate your employees' timesheets"
-          description="Accurate, trustworthy, and insightful timesheets - that save hours from the payroll process."
+          description="Accurate, trustworthy, and insightful timesheets – that save hours from the payroll process."
           image={image3}
           isSwapped
           style="homepage"
-          imagePadding="3.5rem 8.77rem 3.5rem 8.8rem"
+          path="/product/timesheets"
         />
       </div>
     </div>

@@ -46,6 +46,7 @@ import Bookmark from '@images/bookmark.svg';
 import icon20 from '@images/time-tracking-clock@1x.png';
 import icon21 from '@images/location@1x.png';
 import icon22 from '@images/profile@1x.png';
+import Activity from '@images/activitySVG.svg'; //TODO change svg when png is provided
 
 import ConstructionLogo from '@images/construction-industry-logo.svg';
 import PaintingLogo from '@images/painting-industry-logo.svg';
@@ -73,10 +74,9 @@ const Timesheets = () => {
   ];
 
   const checkLists3 = [
-    { title: "Gain a better understanding of your employees' workdays" },
+    { title: 'Gain a better understanding of your employees’ workdays' },
     { title: 'See how long employees spend on breaks, jobs, and on the clock.' },
     { title: 'Review timesheets quicker for faster approval and payroll' },
-    { title: 'See if jobs are running on-time and on-budget' },
   ];
 
   const firstList = [
@@ -94,7 +94,7 @@ const Timesheets = () => {
     },
     {
       title: 'Instantly Available',
-      description: `No longer wait until the end of the week to see hours worked. TImesheets are instantly generated so you can view them anytime.`,
+      description: `No longer wait until the end of the week to see hours worked. Timesheets are instantly generated so you can view them anytime.`,
       alt: 'Instantly Available',
       icon: icon3,
     },
@@ -109,7 +109,7 @@ const Timesheets = () => {
     },
     {
       title: 'Scheduled Email Reports',
-      description: `Schedule an email with your employees timesheets to coincide with your payroll schedule.`,
+      description: `Schedule an email with your employees’ timesheets to coincide with your payroll schedule.`,
       logo: <Flag />,
       alt: 'Geofencing Flag',
     },
@@ -145,7 +145,7 @@ const Timesheets = () => {
     },
     {
       title: 'Archive Employees',
-      description: `View timesheets for employees even after they've left the company - vital for compliance purposes.`,
+      description: `View timesheets for employees even after they’ve left the company – vital for compliance purposes.`,
       logo: <Coffe />,
       alt: '',
     },
@@ -205,13 +205,14 @@ const Timesheets = () => {
         description="Work smarter, not longer. Use timesheet reports to filter all the work done by each employee, team, or towards a specific category of job."
         list={checkLists2}
         image={photo1}
+        imagePadding="2.9rem ​0.7rem 1.9rem 0.8rem"
       />
       <Divider />
       <ListArticle
-        title="Gain a clear understanding of your employyes' activity"
+        title="Gain a clear understanding of your employees’ activity"
         description="Atto uses employee’ timesheet data to generate clear, simple timelines of everyone’s daily activity. Now it’s much easier to understand their working patterns, and far quicker to review timesheets."
         list={checkLists3}
-        image={photo1}
+        image={<Activity />}
         isSwapped
       />
       <Divider />
@@ -235,6 +236,7 @@ const Timesheets = () => {
           alt="Estimate emp"
           title="Estimate your Employees' Wages"
           description={`Avoid unexpected wage bills. Assign pay rates to your employees and their estimated pay will be added to their timesheets.`}
+          style="timesheetMargin"
         />
         <IconCard
           isRound
@@ -243,6 +245,7 @@ const Timesheets = () => {
           alt="Sync"
           title="Sync with Payroll and Accounting Software"
           description="Integrate with Xero and QuickBooks Online to automatically sync timesheet data to your favorite payroll software."
+          style="timesheetMargin"
         />
         <IconCard
           isRound
@@ -251,6 +254,7 @@ const Timesheets = () => {
           alt="Timesheets on-time"
           title={`Timesheets on-time and in your Inbox`}
           description={`Schedule your employees' timesheets to be automatically emailed to you in line with your payroll schedule.`}
+          style="timesheetMargin"
         />
       </div>
       <Divider />
@@ -272,21 +276,24 @@ const Timesheets = () => {
       <Divider className="style2" />
       <div className={learnMoreContainer}>
         <LearnMoreCard
-          title="GPS Location Tracking"
-          description="Increase the safety and accountability of your team with real-time updates on their location."
+          title="Time Tracking"
+          description="See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!"
           icon={icon20}
+          path="/product/time-tracking"
         />
 
         <LearnMoreCard
-          title="Timesheets"
-          description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+          title="GPS Location Tracking"
+          description="Increase the safety and accountability of your team with real-time updates on their location."
           icon={icon21}
+          path="/product/gps-location-tracking"
         />
 
         <LearnMoreCard
           title="Team Activity"
-          description="Stay in the loop with what's happening - without needing to pick up the phone"
+          description="Stay in the loop with what’s happening – without having to pick up the phone."
           icon={icon22}
+          path="/product/team-activity"
         />
       </div>
       <Divider className="style3" />

@@ -1,6 +1,5 @@
 .container {
   @include flex-direction(column-reverse);
-  justify-content: space-between;
 
   @include min(tablet) {
     flex-direction: row;
@@ -9,6 +8,7 @@
   .firstWrapper {
     @include min(tablet) {
       margin-right: 9rem;
+      width: 54rem;
     }
 
     .textContainer {
@@ -32,9 +32,9 @@
         }
       }
 
-      h4 {
-        font-size: 2.6rem;
-        line-height: 3rem;
+      p {
+        font-size: var(--body-style-two);
+        line-height: var(--body-style-two-line-height-size);
         letter-spacing: -0.5px;
       }
     }
@@ -91,15 +91,10 @@
   }
 
   .secondWrapper {
-    @include min(tablet) {
-      width: 50rem;
-      height: 65rem;
-    }
     @include flex-align(center, center);
 
     .imageContainer {
       width: 22rem;
-      padding: 3rem; //this is here for now, needs to replace when we find a solution about positioning images dynamically.
 
       @include min(tablet) {
         width: 50rem;
@@ -167,6 +162,19 @@
             top: -2px;
             transform: rotate(45deg);
           }
+        }
+      }
+
+      .textContainer {
+        h2 {
+          margin: 0;
+          margin-bottom: 2rem;
+        }
+        p {
+          font-size: var(--body-style-one);
+          line-height: var(--body-style-one-line-height-size);
+          font-weight: var(--body-style-one-font-weight);
+          letter-spacing: -0.5px;
         }
       }
     }
