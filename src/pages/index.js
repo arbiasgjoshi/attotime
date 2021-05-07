@@ -28,28 +28,28 @@ import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
 
 import { StaticImage } from 'gatsby-plugin-image';
-import CommentCard from '@components/molecules/comment-card';
+// import CommentCard from '@components/molecules/comment-card';
 
 import authorImage from '@images/no-image.png';
 import CarouselComponent from '@components/molecules/carousel';
 
-import ArrowRight from '@images/arrow-right.svg';
-import ArrowLeft from '@images/arrow-left.svg';
+// import ArrowRight from '@images/arrow-right.svg';
+// import ArrowLeft from '@images/arrow-left.svg';
 
-import Carousel, { Dots, slidesToShowPlugin, arrowsPlugin } from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
-import '@components/molecules/carousel/carousel.scss';
+// import Carousel, { Dots, slidesToShowPlugin, arrowsPlugin } from '@brainhubeu/react-carousel';
+// import '@brainhubeu/react-carousel/lib/style.css';
+// import '@components/molecules/carousel/carousel.scss';
+
+// import {
+//   btnWrapper,
+//   leftAligned,
+//   rightAligned,
+//   disabled,
+//   carouselWrapper,
+// } from '@components/molecules/carousel/carousel.module.scss';
 
 import {
-  btnWrapper,
-  leftAligned,
-  rightAligned,
-  disabled,
-  carouselWrapper,
-} from '@components/molecules/carousel/carousel.module.scss';
-
-import {
-  slider,
+  // slider,
   sliderWrapper,
   sliderText,
   checkListContainer,
@@ -105,11 +105,9 @@ const Home = () => (
     />
     <Divider className="style4" />
     <div className={sliderWrapper}>
-      <Carousel
+      {/* <Carousel
         className={carouselWrapper}
-        // offset={30}
         width={960}
-        // itemWidth={300}
         plugins={[
           {
             resolve: arrowsPlugin,
@@ -147,7 +145,7 @@ const Home = () => (
       >
         <CommentCard
           title="Amazing for my business!"
-          description={`Super convenient and easy to use, so happy i’ve found Atto! Highly recommend.`}
+          description="Super convenient and easy to use, so happy i’ve found Atto! Highly recommend."
           date="23 Jul"
           author="Nita Ora"
         />
@@ -175,7 +173,7 @@ const Home = () => (
           date="18 Jun"
           author="Rich Mathews"
         />
-      </Carousel>
+      </Carousel> */}
       <div className={sliderText}>
         <span>Rated Excellent 5/5 over 1,200 reviews</span>
       </div>

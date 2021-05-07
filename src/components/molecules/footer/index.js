@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Link } from 'gatsby-plugin-intl';
-// import DropDown from '@components/molecules/dropdown';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import {
@@ -45,7 +44,7 @@ const Footer = ({ FooterLinks }) => (
               <div className={downloadApp}>
                 {section.downloadApp.map((app) => (
                   <a href={app.href} target="_blank" rel="noreferrer">
-                    <img src={app.src} />
+                    <img src={app.src} alt="Mobile" />
                   </a>
                 ))}
               </div>

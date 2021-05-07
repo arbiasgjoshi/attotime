@@ -40,9 +40,6 @@ import {
   mainItem,
   subItems,
   rightItems,
-  featuredItems,
-  featureLink,
-  headerItem,
   menuItems,
   menuItem,
   menuItemWrapper,
@@ -119,33 +116,33 @@ const HeaderComponent = ({ centered, logoType }) => {
             </div>
             <div className={rightItems}>
               <h6>More Features</h6>
-              <ul className={featuredItems}>
+              <ul>
                 <li>
-                  <Link className={featureLink} to="/">
+                  <Link to="/">
                     <Icon iconClass="long-arrow" />
                     Mobile Time Tracking
                   </Link>
                 </li>
                 <li>
-                  <Link className={featureLink} to="/">
+                  <Link to="/">
                     <Icon iconClass="long-arrow" />
                     Time Clock
                   </Link>
                 </li>
                 <li>
-                  <Link className={featureLink} to="/">
+                  <Link to="/">
                     <Icon iconClass="long-arrow" />
                     Time Card App
                   </Link>
                 </li>
                 <li>
-                  <Link className={featureLink} to="/">
+                  <Link to="/">
                     <Icon iconClass="long-arrow" />
                     Work Hours Tracker
                   </Link>
                 </li>
                 <li>
-                  <Link className={featureLink} to="/">
+                  <Link to="/">
                     <Icon iconClass="long-arrow" />
                     Accurate Reports
                   </Link>
