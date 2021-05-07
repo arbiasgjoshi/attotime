@@ -12,8 +12,6 @@
     flex-wrap: wrap;
 
     @include max(tablet) {
-      padding: 1rem;
-
       > div {
         margin-bottom: 1rem;
       }

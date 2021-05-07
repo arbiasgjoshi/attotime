@@ -1,4 +1,4 @@
-.container {
+.teamActivityContainer {
   max-width: 114rem;
   margin: 0 auto;
 
@@ -30,6 +30,12 @@
 
     @include min(tablet) {
       justify-content: space-between;
+    }
+
+    > div {
+      @include max(tablet) {
+        margin-bottom: 1rem;
+      }
     }
   }
 

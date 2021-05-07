@@ -14,6 +14,7 @@ import GrowthNumbers from '@components/organisms/growth-numbers';
 import FooterComponent from '@components/molecules/footer';
 
 import { container } from '@styles/main.module.scss';
+import { productContainer } from './product.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 
@@ -98,7 +99,7 @@ const Product = () => {
   ];
 
   return (
-    <div className={container}>
+    <div className={`${container} ${productContainer}`}>
       <SEO title="Product Overview" />
       <HeaderComponent />
       <MainTitleCard
@@ -115,7 +116,7 @@ const Product = () => {
       />
       <Divider className="style2" />
       {/* TODO This image requires some more fixing, need the PNG file */}
-      <ProductOverviewBanner style={{ marginLeft: '-4.3rem' }} />
+      <ProductOverviewBanner />
       <Divider className="style3" />
       <IconCardList cardList={firstList} />
       <Divider />

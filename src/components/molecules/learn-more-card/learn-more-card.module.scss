@@ -25,22 +25,31 @@
 
   .iconWrapper {
     @include flex-align(center, center);
-    width: 7rem;
-    height: 5rem;
     margin: 6rem 14rem 2rem 14rem;
+
+    @include min(tablet) {
+      width: 7rem;
+      height: 5rem;
+    }
   }
 
   .textWrapper {
+    padding: 1rem;
     text-align: center;
+
+    @include min(tablet) {
+    }
 
     .cardTitle {
       margin-bottom: 1.2rem;
     }
 
     .paragraphText {
-      height: 12rem;
-      width: 27rem;
-      margin-bottom: 4rem;
+      @include min(tablet) {
+        height: 12rem;
+        width: 27rem;
+        margin-bottom: 4rem;
+      }
     }
   }
 

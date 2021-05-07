@@ -4,11 +4,11 @@
   .iconWrapper {
     @include flex-align(flex-end, center);
     margin: 0 auto;
-    margin-bottom: 3.5rem;
 
     @include min(tablet) {
       width: 12rem;
       height: 12rem;
+      margin-bottom: 3.5rem;
     }
 
     &.bigImageStyle {
@@ -35,9 +35,13 @@
 
   &.round {
     .iconWrapper {
-      justify-content: flex-start;
       padding: 0;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
+
+      @include min(tablet) {
+        justify-content: flex-start;
+        margin-bottom: 4rem;
+      }
 
       img {
         width: 25rem;

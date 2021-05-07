@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  container,
+  teamActivityContainer,
   roundImagesContainer,
   checkListContainer,
   learnMoreContainer,
@@ -8,6 +8,7 @@ import {
 } from './timesheets.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FooterLinks } from '@locale/en.js';
+import { container } from '@styles/main.module.scss';
 
 import Divider from '@components/atoms/divider';
 import Header from '@components/molecules/header';
@@ -169,7 +170,7 @@ const Timesheets = () => {
   ];
 
   return (
-    <div className={container}>
+    <div className={`${container} ${teamActivityContainer}`}>
       <Header />
       <MainTitleCard
         maxParagraphWidth={760}
