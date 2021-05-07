@@ -14,27 +14,26 @@
   }
 
   .sliderText {
-    margin-top: 2rem;
-    margin-left: 12.2rem;
     font-size: var(--body-style-four);
     line-height: var(--body-style-four-line-height-size);
     font-weight: var(--body-style-four-font-weight);
+
+    @include min(tablet) {
+      margin-top: 2rem;
+      margin-left: 12.2rem;
+    }
   }
 }
 
 .checkListContainer {
-  margin: 0 0.5rem;
   @include min(tablet) {
     margin: 0 8.5rem;
   }
 }
 
 .numbers {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 0 3rem;
-  row-gap: 1rem;
+  @include flex-direction(column);
+  justify-content: center;
 
   @include min(tablet) {
     flex-direction: row;
@@ -47,6 +46,11 @@
   }
 
   > div {
-    width: 24rem;
+    text-align: center;
+
+    @include min(tablet) {
+      width: 24rem;
+      text-align: left;
+    }
   }
 }

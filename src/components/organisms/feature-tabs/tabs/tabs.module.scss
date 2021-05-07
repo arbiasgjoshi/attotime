@@ -1,11 +1,16 @@
 .container {
   .listContainer {
-    display: flex;
-    justify-content: space-between;
-    height: 6.5rem;
-    border-bottom: 0.2rem solid #efefef;
-    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
 
+    @include min(tablet) {
+      display: flex;
+      justify-content: space-between;
+      height: 6.5rem;
+      border-bottom: 0.2rem solid #efefef;
+    }
     @include min(tablet) {
       padding: 0 6.5rem;
     }
@@ -23,8 +28,11 @@
           border-bottom: 4px solid #00b9cb;
           content: '';
           position: absolute;
-          top: 61px;
           width: 100%;
+
+          @include min(tablet) {
+            top: 61px;
+          }
         }
       }
     }
@@ -35,6 +43,10 @@
       background-color: #efefef;
       display: flex;
       margin-top: 5px;
+
+      @include max(tablet) {
+        display: none;
+      }
     }
 
     .sideBorder:last-child {

@@ -20,6 +20,7 @@ import GrowthNumbers from '@components/organisms/growth-numbers';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
+import { container } from '@styles/main.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
 import authorImage from '@images/authorImage.png';
@@ -69,7 +70,7 @@ import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
 
 import {
-  container,
+  timeTrackingContainer,
   checkListContainer,
   learnMoreContainer,
   workListContainer,
@@ -262,7 +263,7 @@ const TimeTracking = () => {
   ];
 
   return (
-    <div className={container}>
+    <div className={`${container} ${timeTrackingContainer}`}>
       <SEO title="Product - Time Tracking" />
       <Header />
       <MainTitleCard

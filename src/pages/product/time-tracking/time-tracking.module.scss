@@ -1,7 +1,4 @@
-.container {
-  max-width: 114rem;
-  margin: 0 auto;
-
+.timeTrackingContainer {
   .checkListContainer {
     @include min(tablet) {
       margin: 0 8.5rem;
