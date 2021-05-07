@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 import { Link } from 'gatsby-plugin-intl';
 // import DropDown from '@components/molecules/dropdown';
-import appStore from '../../../images/app-store@2x.png';
-import googlePlay from '../../../images/google-play@2x.png';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import {
@@ -18,6 +16,7 @@ import {
   parentPath,
   downloadApp,
 } from './footer.module.scss';
+import CustomSelect from '../../atoms/custom-select';
 
 const Footer = ({ FooterLinks }) => (
   <footer className={pageFooter}>
@@ -26,7 +25,10 @@ const Footer = ({ FooterLinks }) => (
         <StaticImage src="../../../images/logo@2x.png" alt="footer-logo" quality={90} width={85} />
         <p>A highly accurate time tracking solution for any company</p>
 
-        <div>{/* TODO Dropdown here */}</div>
+        <div>
+          {/* TODO Dropdown here */}
+          <CustomSelect />
+        </div>
       </div>
       <div className={footerSitemap}>
         {FooterLinks.map((section) => (
