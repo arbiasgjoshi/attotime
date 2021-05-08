@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+import ArrowDown from '@images/arrow-down.svg';
+import { useIntl, changeLocale } from 'gatsby-plugin-intl';
 import {
   selectDropdown,
   invertedArrow,
@@ -9,11 +12,11 @@ import {
   option,
   backdropContainer,
 } from './custom-select.module.scss';
-import ArrowDown from '../../../images/arrow-down.svg';
 
 const CustomSelect = () => {
-  const [selected, setSelected] = useState('English');
+  const [selected, setSelected] = useState(null);
   const [open, setOpen] = useState(false);
+  const intl = useIntl();
 
   const languages = [
     {
@@ -42,17 +45,28 @@ const CustomSelect = () => {
     return defaultClass;
   };
 
-  const dropDownState = () => {
-    let dropdownClasses = optionsDropdown;
-    if (open) {
-      dropdownClasses += ` ${isOpened}`;
-    }
-    return dropdownClasses;
+  // const dropDownState = () => {
+  //   let dropdownClasses = optionsDropdown;
+  //   if (open) {
+  //     dropdownClasses += ` ${isOpened}`;
+  //   }
+  //   console.log('something fishy is going on here!!!!');
+  //   return dropdownClasses;
+  // };
+
+  const renderLocale = (val) => {
+    const currentItem = languages.filter((lang) => lang.name === val || lang.id === val);
+    setSelected(currentItem[0].name);
   };
 
   const toggleDropdown = () => {
     setOpen(!open);
   };
+
+  useEffect(() => {
+    // setSelected(intl.locale);
+    renderLocale(intl.locale);
+  }, []);
 
   return (
     <div
@@ -66,24 +80,22 @@ const CustomSelect = () => {
         <span>{selected}</span>
         <ArrowDown className={open ? invertedArrow : null} />
       </div>
-      <div className={dropDownState}>
+      <div className={`${optionsDropdown} ${open && isOpened}`}>
         {languages.map((lang) => (
-          <button
-            className={buttonClass(lang)}
-            onClick={() => setSelected(lang.name)}
-            type="button"
-          >
+          <button className={buttonClass(lang)} onClick={() => changeLocale(lang.id)} type="button">
             {lang.name}
           </button>
         ))}
       </div>
-      <div
-        className={backdropContainer}
-        onKeyDown={() => {}}
-        role="menu"
-        tabIndex="-1"
-        onClick={() => setOpen(false)}
-      />
+      {open && (
+        <div
+          className={backdropContainer}
+          onKeyDown={() => {}}
+          role="menu"
+          tabIndex="-1"
+          onClick={() => setOpen(false)}
+        />
+      )}
     </div>
   );
 };
