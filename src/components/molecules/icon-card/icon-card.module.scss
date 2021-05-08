@@ -3,10 +3,13 @@
 
   .iconWrapper {
     @include flex-align(flex-end, center);
-    width: 12rem;
-    height: 12rem;
     margin: 0 auto;
-    margin-bottom: 3.5rem;
+
+    @include min(tablet) {
+      width: 12rem;
+      height: 12rem;
+      margin-bottom: 3.5rem;
+    }
 
     &.bigImageStyle {
       @include flex-align(center, center);
@@ -20,8 +23,10 @@
   }
 
   .textWrapper {
-    width: 35rem;
-    text-align: center;
+    @include min(tablet) {
+      width: 35rem;
+      text-align: center;
+    }
 
     h4 {
       margin-bottom: 1.6rem;
@@ -30,9 +35,13 @@
 
   &.round {
     .iconWrapper {
-      justify-content: flex-start;
       padding: 0;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
+
+      @include min(tablet) {
+        justify-content: flex-start;
+        margin-bottom: 4rem;
+      }
 
       img {
         width: 25rem;

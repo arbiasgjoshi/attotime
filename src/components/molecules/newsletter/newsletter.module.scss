@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  box-sizing: border-box;
+  height: 281px;
+  width: 100%;
+  border: 10px solid #99e3ea;
+  background-color: #ffffff;
+
+  .leftWrapper {
+    @include flex-align(center, center);
+    margin-right: 5rem;
+    margin-left: 6rem;
+
+    h3 {
+      @include min(tablet) {
+      }
+    }
+  }
+
+  .formWrapper {
+    @include flex-align(center, center);
+    flex-direction: column;
+    p {
+      height: 2rem;
+      font-size: var(--body-style-four);
+      margin-bottom: 1.6rem;
+      width: 100%;
+    }
+
+    input {
+      border: 1px solid #000;
+    }
+  }
+}

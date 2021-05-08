@@ -12,12 +12,6 @@
     }
 
     .textContainer {
-      margin: 1rem;
-
-      @include min(tablet) {
-        margin: 0;
-      }
-
       .prdName {
         font-size: 2rem;
         line-height: 2rem;
@@ -40,14 +34,9 @@
     }
 
     .learnMoreContainer {
-      margin-left: 2rem;
       display: flex;
       align-items: center;
       margin-top: 1rem;
-
-      @include min(tablet) {
-        margin-left: 0;
-      }
 
       .arrowIconContainer {
         width: 2.4rem;

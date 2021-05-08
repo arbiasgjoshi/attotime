@@ -75,6 +75,7 @@ const serviceList = [
   { title: 'Landscaping & Gardening', icon: <LandscapingLogo /> },
   { title: 'Roofing', icon: <RoofingLogo /> },
   { title: 'Painting & Decorating', icon: <PaintingLogo /> },
+  { title: 'Cleaning & Maintenance', icon: <CleaningLogo /> },
   { title: 'Healthcare & Medical', icon: <HealthcareLogo /> },
   { title: 'Electrical', icon: <ElectrianLogo /> },
   { title: 'Plumbing & Heating', icon: <PlumbingLogo /> },

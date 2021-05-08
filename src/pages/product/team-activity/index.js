@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  container,
+  teamActivityContainer,
   learnMoreContainer,
   checkListContainer,
   featuresStyle,
@@ -20,6 +20,7 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 import FeaturesList from '@components/organisms/features-list';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
+import { container } from '@styles/main.module.scss';
 
 import authorImage from '@images/authorImage.png';
 import image1 from '@images/team-management-departments.png';
@@ -101,13 +102,14 @@ const TeamActivity = () => {
     { title: 'Landscaping & Gardening', icon: <LandscapingLogo /> },
     { title: 'Roofing', icon: <RoofingLogo /> },
     { title: 'Painting & Decorating', icon: <PaintingLogo /> },
+    { title: 'Cleaning & Maintenance', icon: <CleaningLogo /> },
     { title: 'Healthcare & Medical', icon: <HealthcareLogo /> },
     { title: 'Electrical', icon: <ElectrianLogo /> },
     { title: 'Plumbing & Heating', icon: <PlumbingLogo /> },
     { title: 'Other industries', icon: <ThreeDots /> },
   ];
   return (
-    <div className={container}>
+    <div className={`${teamActivityContainer} ${container}`}>
       <Header />
       <MainTitleCard
         hasParagraph

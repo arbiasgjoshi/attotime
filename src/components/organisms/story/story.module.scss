@@ -29,11 +29,6 @@
     flex-direction: column;
     max-width: 52.5rem;
     margin-top: 3rem;
-    padding: 0 2rem;
-
-    @include min(tablet) {
-      padding: 0;
-    }
 
     h4 {
       margin-bottom: 5rem;

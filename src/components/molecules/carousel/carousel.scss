@@ -55,7 +55,7 @@
 
       &.selected,
       &:hover {
-        background: #999999;
+        background: var(--gray);
       }
     }
   }

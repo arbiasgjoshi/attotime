@@ -12,8 +12,12 @@
   }
 
   .textWrapper {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     letter-spacing: -0.75px;
+
+    @include min(tablet) {
+      margin-bottom: 5rem;
+    }
 
     h3 {
       margin-bottom: 0.8rem;

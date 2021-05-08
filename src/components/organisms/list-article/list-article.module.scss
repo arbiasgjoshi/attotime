@@ -52,6 +52,13 @@
         height: 60rem;
         max-width: 50rem;
       }
+
+      > svg {
+        @include max(mobile) {
+          width: 100%;
+          height: auto;
+        }
+      }
     }
   }
 }
