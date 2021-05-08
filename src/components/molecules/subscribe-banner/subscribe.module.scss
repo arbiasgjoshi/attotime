@@ -40,4 +40,13 @@
       }
     }
   }
+
+  @include max(tablet) {
+    &.hasImage {
+      margin-top: 20rem;
+    }
+    .textWrapper {
+      margin-bottom: 2rem;
+    }
+  }
 }

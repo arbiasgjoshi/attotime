@@ -8,6 +8,29 @@
 
 .footerTop {
   @include flex-align(flex-start, flex-start);
+
+  @include max(mobile) {
+    @include flex-direction(column);
+    .leftFooterItems {
+      width: unset;
+
+      p {
+        margin-bottom: 2rem;
+      }
+
+      > div:last-child {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .footerSitemap {
+      width: 100%;
+      display: grid;
+      row-gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+    }
+  }
 }
 
 .leftFooterItems {

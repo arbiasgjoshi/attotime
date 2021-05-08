@@ -9,6 +9,7 @@ import {
   roundStyle,
   pricingStyle,
   activeStyle,
+  bigStyle,
 } from './button.module.scss';
 
 const Button = ({ btnText, disabled, btnStyle, pricing, activeClass, onBtnClick }) => {
@@ -25,6 +26,9 @@ const Button = ({ btnText, disabled, btnStyle, pricing, activeClass, onBtnClick 
     }
     if (btnStyle === 'round') {
       className += ` ${roundStyle}`;
+    }
+    if (btnStyle === 'big') {
+      className += ` ${bigStyle}`;
     }
     if (pricing) {
       className += ` ${pricingStyle}`;
