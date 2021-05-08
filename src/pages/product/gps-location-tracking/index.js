@@ -51,6 +51,7 @@ import HealthcareLogo from '@images/healthcare-industry-logo.svg';
 import PlumbingLogo from '@images/plumbing-industry-logo.svg';
 import ElectrianLogo from '@images/electrician-industry-logo.svg';
 import LandscapingLogo from '@images/landscaping-industry-logo.svg';
+import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import RoofingLogo from '@images/roofing-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
 
@@ -60,6 +61,7 @@ const LocationTracking = () => {
     { title: 'Landscaping & Gardening', icon: <LandscapingLogo /> },
     { title: 'Roofing', icon: <RoofingLogo /> },
     { title: 'Painting & Decorating', icon: <PaintingLogo /> },
+    { title: 'Cleaning & Maintenance', icon: <CleaningLogo /> },
     { title: 'Healthcare & Medical', icon: <HealthcareLogo /> },
     { title: 'Electrical', icon: <ElectrianLogo /> },
     { title: 'Plumbing & Heating', icon: <PlumbingLogo /> },

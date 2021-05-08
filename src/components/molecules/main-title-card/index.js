@@ -8,6 +8,8 @@ import {
   mainTitle,
   smallParagraph,
   paragraphStyle,
+  imageWrapper,
+  imageParagraphStyle,
 } from './main-title-card.module.scss';
 
 const MainTitleCard = ({
@@ -18,12 +20,22 @@ const MainTitleCard = ({
   showButton = false,
   maxParagraphWidth = null,
   maxWidth = null,
+  image = null,
 }) => (
   <div style={maxWidth && { maxWidth }} className={container}>
     <div className={headerContainer}>
       {hasParagraph && <h6 className={smallParagraph}>{paragraph}</h6>}
-      <h1 className={mainTitle}>{title}</h1>
-      <p className={paragraphStyle} style={maxParagraphWidth && { maxWidth: maxParagraphWidth }}>
+      {image ? (
+        <div className={imageWrapper}>
+          <img src={image} alt="Main title" />
+        </div>
+      ) : (
+        <h1 className={mainTitle}>{title}</h1>
+      )}
+      <p
+        className={`${paragraphStyle} ${image && imageParagraphStyle}`}
+        style={maxParagraphWidth && { maxWidth: maxParagraphWidth }}
+      >
         {subtitle}
       </p>
     </div>
