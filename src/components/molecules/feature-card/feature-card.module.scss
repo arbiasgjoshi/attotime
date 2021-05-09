@@ -23,10 +23,12 @@
 }
 
 .container {
-  margin: 1.5rem 1rem;
+  margin: 2rem auto;
+  width: 80%;
 
   @include min(tablet) {
     margin: 0;
+    width: 100%;
   }
 
   &.leftAligned {

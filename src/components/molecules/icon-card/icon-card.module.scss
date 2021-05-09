@@ -51,7 +51,14 @@
 
     .textWrapper {
       text-align: left;
-      margin-right: 4.5rem;
+
+      @include max(mobile) {
+        text-align: center;
+      }
+
+      @include min(desktop) {
+        margin-right: 4.5rem;
+      }
 
       h4 {
         margin-bottom: 2rem;

@@ -48,6 +48,21 @@
     }
   }
 
+  @include max(mobile) {
+    .paragraphContainer {
+      img {
+        margin: 0 auto 2rem;
+      }
+      h4 {
+        margin-bottom: 3rem;
+      }
+      h4,
+      h6 {
+        text-align: center;
+      }
+    }
+  }
+
   &.homepage {
     margin: 0 9rem;
 

@@ -27,12 +27,23 @@
         @include min(tablet) {
           margin: 1.2rem 1rem 2rem 0;
         }
+
+        @include max(mobile) {
+          margin: 1rem 1rem 1.5rem 0;
+        }
       }
 
       p {
         font-size: var(--body-style-two);
         line-height: var(--body-style-two-line-height-size);
         letter-spacing: -0.5px;
+      }
+
+      @include max(mobile) {
+        p {
+          font-size: var(--body-style-two-mobile-size);
+          line-height: var(--body-style-two-mobile-line-height);
+        }
       }
     }
 
@@ -50,6 +61,14 @@
 
       p {
         font-weight: var(--medium);
+      }
+
+      @include max(tablet) {
+        max-width: 90%;
+        margin: 0 auto;
+        > div {
+          margin-bottom: 3rem;
+        }
       }
     }
 
@@ -86,11 +105,13 @@
     @include flex-align(center, center);
 
     .imageContainer {
-      width: 22rem;
+      width: 90%;
+      margin: 2rem 0;
 
       @include min(tablet) {
         width: 50rem;
         height: 65rem;
+        margin: 0;
       }
     }
   }

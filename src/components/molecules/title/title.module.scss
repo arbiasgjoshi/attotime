@@ -30,11 +30,27 @@
     .descriptionWrapper {
       text-align: left;
     }
+
+    @include max(mobile) {
+      margin-bottom: 3rem;
+      text-align: center;
+
+      .descriptionWrapper {
+        text-align: center;
+
+        font-size: var(--body-style-two-mobile-size);
+        line-height: var(--body-style-two-mobile-line-height);
+      }
+    }
   }
 
   .titleWrapper {
     margin: auto;
     margin-bottom: 1.6rem;
+
+    @include max(tablet) {
+      text-align: center;
+    }
   }
 
   .descriptionWrapper {
@@ -44,6 +60,12 @@
 
     @include min(tablet) {
       text-align: center;
+    }
+    @include max(mobile) {
+      text-align: center;
+
+      font-size: var(--body-style-two-mobile-size);
+      line-height: var(--body-style-two-mobile-line-height);
     }
   }
 }

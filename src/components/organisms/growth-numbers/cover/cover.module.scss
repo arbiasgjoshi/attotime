@@ -28,4 +28,28 @@
     border-top-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
   }
+
+  @include max(mobile) {
+    flex-direction: column-reverse;
+    padding: 0 2rem;
+
+    &.swap {
+      flex-direction: column-reverse;
+
+      .leftBox {
+        margin-left: 0;
+      }
+    }
+
+    .imageWrapper {
+      border-top-left-radius: 5rem;
+      border-bottom-right-radius: 5rem;
+      margin-bottom: 3rem;
+    }
+
+    .leftBox {
+      margin-left: 0;
+      max-width: 100%;
+    }
+  }
 }

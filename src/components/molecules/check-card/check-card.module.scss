@@ -3,13 +3,14 @@
   height: min-content;
 
   @include max(tablet) {
-    margin: 0.5rem 0;
+    margin: 2.5rem 0;
   }
 
   .iconWrapper {
     margin-right: 1.6rem;
     height: 4rem;
     width: 4rem;
+    min-width: 4rem;
 
     i {
       width: 4rem;
@@ -35,6 +36,12 @@
       margin-top: 0.8rem;
       max-width: 50rem;
       height: 9rem;
+    }
+
+    @include max(mobile) {
+      .paragraph {
+        height: unset;
+      }
     }
   }
 
