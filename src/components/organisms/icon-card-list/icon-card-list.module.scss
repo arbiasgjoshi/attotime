@@ -4,6 +4,16 @@
   row-gap: 2rem;
 
   @include min(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+    row-gap: 3rem;
+
+    &.gapStyle {
+      row-gap: 8rem;
+    }
+  }
+
+  @include min(desktop) {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 4.5rem;
     row-gap: 0;

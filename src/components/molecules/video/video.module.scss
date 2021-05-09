@@ -3,24 +3,32 @@
   justify-content: space-between;
   height: 48.9rem;
   position: relative;
-  padding: 4.5rem 0;
-  margin: 4rem 0;
 
   @include min(tablet) {
     margin: 0;
+    padding: 4.5rem 0;
+  }
+
+  .videoBackground {
+    @include max(mobile) {
+      display: none;
+    }
   }
 
   .videoPlaceholder {
     box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.5);
     border: 2px solid #efefef;
     border-radius: 16px;
-    margin: 0 auto;
-    position: absolute;
-    left: 8.9rem;
-    right: 8.9rem;
-    top: 0;
-    bottom: 0;
     opacity: 0.25;
+
+    @include min(tablet) {
+      margin: 0 auto;
+      position: absolute;
+      left: 8.9rem;
+      right: 8.9rem;
+      top: 0;
+      bottom: 0;
+    }
   }
 
   .imagePlayer {

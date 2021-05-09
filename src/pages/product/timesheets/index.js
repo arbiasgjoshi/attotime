@@ -199,7 +199,7 @@ const Timesheets = () => {
         <StaticImage alt="Clock In" quality={90} src="../../../images/ready-made.svg" />
       </div>
       <Divider className="style3" />
-      <IconCardList cardList={firstList} />
+      <IconCardList cardList={firstList} style="smallTimesheetImages" />
       <Divider />
       <ListArticle
         title="Boost productivity with timesheet insights"

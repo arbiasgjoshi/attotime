@@ -21,10 +21,17 @@
   }
 
   .workListContainer {
-    @include flex-direction(column);
     width: 100%;
 
     @include min(tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 8.1rem;
+      margin-left: 2rem;
+      width: calc(100% - 7.8rem);
+    }
+
+    @include min(desktop) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 8.1rem;
@@ -42,6 +49,12 @@
     }
 
     @include min(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2.5rem;
+      row-gap: 2rem;
+    }
+
+    @include min(desktop) {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 4.5rem;
       row-gap: 0;

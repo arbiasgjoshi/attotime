@@ -6,6 +6,7 @@
     margin: 0 auto;
 
     @include min(tablet) {
+      max-width: 100%;
       width: 12rem;
       height: 12rem;
       margin-bottom: 3.5rem;
@@ -16,7 +17,7 @@
       width: unset;
       height: unset;
 
-      @include min(tablet) {
+      @include min(desktop) {
         justify-content: flex-start;
       }
     }
@@ -26,6 +27,7 @@
     @include min(tablet) {
       width: 35rem;
       text-align: center;
+      margin: 0 auto;
     }
 
     h4 {
@@ -82,6 +84,15 @@
     .textWrapper {
       h4 {
         margin-bottom: 1.6rem;
+      }
+    }
+  }
+
+  &.smallTimesheetImages {
+    .iconWrapper {
+      @include max(tablet) {
+        margin-bottom: 2rem;
+        max-width: 11rem;
       }
     }
   }

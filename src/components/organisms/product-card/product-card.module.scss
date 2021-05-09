@@ -9,7 +9,7 @@
   }
 
   .firstWrapper {
-    @include min(tablet) {
+    @include min(desktop) {
       margin-right: 9rem;
       width: 54rem;
     }
@@ -108,7 +108,7 @@
       width: 90%;
       margin: 2rem 0;
 
-      @include min(tablet) {
+      @include min(desktop) {
         width: 50rem;
         height: 65rem;
         margin: 0;
