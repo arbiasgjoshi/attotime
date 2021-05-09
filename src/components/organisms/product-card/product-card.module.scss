@@ -5,6 +5,9 @@
     flex-direction: row;
   }
 
+  @include max(mobile) {
+  }
+
   .firstWrapper {
     @include min(tablet) {
       margin-right: 9rem;
