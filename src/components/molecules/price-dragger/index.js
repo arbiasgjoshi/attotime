@@ -15,18 +15,14 @@ import '@styles/utils/_rcslider.scss';
 
 const PriceDragger = () => {
   const [val, setVal] = useState(1);
+
   const onDrag = (value) => {
     setVal(value);
   };
 
   return (
     <div className={draggerWrapper}>
-      <div
-        className={draggerResults}
-        style={{ marginLeft: `${val}rem` }}
-        draggable
-        onDrag={(someValue) => console.log(someValue)}
-      >
+      <div className={draggerResults} style={{ marginLeft: `${val}rem` }}>
         <h5>{val} Users</h5>
       </div>
       <Slider min={1} max={100} val={val} onChange={(v) => onDrag(v)} />
