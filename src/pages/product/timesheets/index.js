@@ -36,14 +36,17 @@ import roundImage3 from '@images/timesheets-inbox2x.png';
 import icon from '@images/accurate.png';
 import icon2 from '@images/trustworthy.png';
 import icon3 from '@images/instantly-available@2x.png';
-import Timer from '@images/timer.svg';
-import Flag from '@images/flag.svg';
-import Ringbell from '@images/ringbell.svg';
-import Battery from '@images/battery.svg';
-import Brightness from '@images/brightness.svg';
-import MLogo from '@images/m-logo.svg';
-import Coffe from '@images/coffe.svg';
-import Bookmark from '@images/bookmark.svg';
+
+import AllTimesheets from '@images/All_featres_TimesheetsAndroid.svg';
+import AllFeatureEmail from '@images/All_featres_emailAndroid.svg';
+import AvoidGuess from '@images/avoid_guesstimation.svg';
+import Wages from '@images/wages.svg';
+import Share from '@images/share.svg';
+import AllFeatresRounding from '@images/featres_rounding.svg';
+import ChangeHistory from '@images/change_history.svg';
+import ArchivedMembers from '@images/Archived_membersSVG.svg';
+import WageEstimate from '@images/Wage_estimatesSVG.svg';
+
 import icon20 from '@images/time-tracking-clock@1x.png';
 import icon21 from '@images/location@1x.png';
 import icon22 from '@images/profile@1x.png';
@@ -114,55 +117,55 @@ const Timesheets = () => {
     {
       title: 'Comprehensive Timesheet Reports',
       description: `Get all the data you need including regular time, overtime, breaks, time off, and more.`,
-      logo: <Timer />,
+      logo: <AllTimesheets />,
       alt: 'Employee status logo',
     },
     {
       title: 'Scheduled Email Reports',
       description: `Schedule an email with your employees’ timesheets to coincide with your payroll schedule.`,
-      logo: <Flag />,
+      logo: <AllFeatureEmail />,
       alt: 'Geofencing Flag',
     },
     {
       title: 'Timesheets by Employee, Team, Jobs',
       description: `Generate timesheets based on work done by an employee, team, or toward a category of job.`,
-      logo: <Ringbell />,
+      logo: <AvoidGuess />,
       alt: 'Ringbell reminder logo',
     },
     {
       title: 'Wage Estimates And Pay Rates',
       description: `Assign pay rates to your employees and their estimated pay will be added to their timesheets.`,
-      logo: <Battery />,
+      logo: <Wages />,
       alt: 'Wage estimates',
     },
     {
       title: 'Download and Share',
       description: `Download any timesheet report as a PDF or CSV file in one click.`,
-      logo: <Brightness />,
+      logo: <Share />,
       alt: '',
     },
     {
       title: 'Timesheet Rounding',
       description: `Set a rounding increment and clock in/out times are rounded automatically.`,
-      logo: <Flag />,
+      logo: <AllFeatresRounding />,
       alt: '',
     },
     {
       title: 'Time Entry Change History',
       description: `View any historic changes made to time entries by an employee or admin.`,
-      logo: <MLogo />,
+      logo: <ChangeHistory />,
       alt: '',
     },
     {
       title: 'Archive Employees',
       description: `View timesheets for employees even after they’ve left the company – vital for compliance purposes.`,
-      logo: <Coffe />,
+      logo: <ArchivedMembers />,
       alt: '',
     },
     {
       title: 'Payroll Integrations',
       description: `Streamline your payroll with our QuickBooks Online and Xero integrations.`,
-      logo: <Bookmark />,
+      logo: <WageEstimate />,
       alt: '',
     },
   ];
@@ -271,7 +274,7 @@ const Timesheets = () => {
       </div>
       <Divider />
       <Title
-        title="A work hours tracker for any industry"
+        title="Timesheets for any industry"
         description="Atto helps all types of businesses across the world to manage their employees' time"
         maxDescriptionWidth={700}
       />
@@ -284,7 +287,11 @@ const Timesheets = () => {
         author="Robert Bennet - DPA Cleaning Services, Inc."
       />
       <Divider />
-      <Title title="It doesn’t end here!" description="Learn more about what Atto can do for you" />
+      <Title
+        title="It doesn’t end here!"
+        marginBottom=".4rem"
+        description="Learn more about what Atto can do for you"
+      />
       <Divider className="style2" />
       <div className={learnMoreContainer}>
         <LearnMoreCard

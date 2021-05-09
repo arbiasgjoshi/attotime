@@ -403,7 +403,7 @@ const TimeTracking = () => {
       </div>
       <Divider />
       <Title
-        title="A work hours tracker for any industry"
+        title="Time tracking solutions for any industry"
         description="Atto helps all types of businesses across the world to manage their employees’ time."
         maxDescriptionWidth={700}
       />
@@ -419,6 +419,7 @@ const TimeTracking = () => {
       <Title
         title={`It doesn't end here!`}
         description="Learn more about what Atto can do for you"
+        marginBottom="4px"
       />
       <Divider className="style6" />
       <div className={learnMoreContainer}>

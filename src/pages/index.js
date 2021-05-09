@@ -188,6 +188,7 @@ const Home = () => (
       maxDescriptionWidth={766}
       title="Thousands of businesses have saved time using Atto"
       description="And it’s not just time saved, but money and stress too."
+      marginBottom="2rem"
     />
     <Divider className="style3" />
     <Video />

@@ -247,7 +247,7 @@ const LocationTracking = () => {
       <Cover isSwapped />
       <Divider className="style10" />
       <Title
-        title="A work hours tracker for any industry"
+        title="GPS location tracking for any industry"
         description="Atto helps all types of businesses across the world to manage their employees’ time."
         maxDescriptionWidth={700}
       />
