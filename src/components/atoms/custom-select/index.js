@@ -45,15 +45,6 @@ const CustomSelect = () => {
     return defaultClass;
   };
 
-  // const dropDownState = () => {
-  //   let dropdownClasses = optionsDropdown;
-  //   if (open) {
-  //     dropdownClasses += ` ${isOpened}`;
-  //   }
-  //   console.log('something fishy is going on here!!!!');
-  //   return dropdownClasses;
-  // };
-
   const renderLocale = (val) => {
     const currentItem = languages.filter((lang) => lang.name === val || lang.id === val);
     setSelected(currentItem[0].name);
@@ -64,7 +55,6 @@ const CustomSelect = () => {
   };
 
   useEffect(() => {
-    // setSelected(intl.locale);
     renderLocale(intl.locale);
   }, []);
 
