@@ -243,7 +243,7 @@ const HeaderComponent = ({ centered, logoType }) => {
         return (
           <div className={`${menuSection} ${resourcesMenu} ${contentPadding}`}>
             <div className={menuItems}>
-              <Link className={menuItem} to="/resources/help-center">
+              <Link className={menuItem} to="/help-center">
                 <div className={menuIcon}>
                   <HelpCenterLogo />
                 </div>
@@ -252,7 +252,7 @@ const HeaderComponent = ({ centered, logoType }) => {
                   <p>Get answers to all of your questions in an instant</p>
                 </div>
               </Link>
-              <Link className={menuItem} to="/industries/blog">
+              <Link className={menuItem} to="/blog">
                 <div className={menuIcon}>
                   <BlogLogo />
                 </div>
@@ -261,7 +261,7 @@ const HeaderComponent = ({ centered, logoType }) => {
                   <p>Get helpful productivity tips from our blog</p>
                 </div>
               </Link>
-              <Link className={menuItem} to="/industries/contact">
+              <Link className={menuItem} to="/contact">
                 <div className={menuIcon}>
                   <ContactLogo />
                 </div>
