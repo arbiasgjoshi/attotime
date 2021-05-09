@@ -118,7 +118,7 @@ const Product = () => {
       {/* TODO This image requires some more fixing, need the PNG file */}
       <ProductOverviewBanner />
       <Divider className="style3" />
-      <IconCardList cardList={firstList} />
+      <IconCardList cardList={firstList} style="smallTimesheetImages" />
       <Divider />
       <ProductCard
         productName="TIME TRACKING"

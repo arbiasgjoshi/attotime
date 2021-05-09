@@ -2,6 +2,7 @@ import { blogListWrapper } from './blog-list.module.scss';
 import List from './list';
 import Pagination from './pagination';
 import React, { useState } from 'react';
+import Divider from '@components/atoms/divider';
 
 const BlogList = ({ list }) => {
   const [blogs, setBlogs] = useState(list);
@@ -17,6 +18,7 @@ const BlogList = ({ list }) => {
   return (
     <div className={blogListWrapper}>
       <List list={currentPosts} />
+      <Divider className="style3" />
       <Pagination postsPerPage={blogsPerPage} totalPosts={blogs.length} paginate={paginate} />
     </div>
   );

@@ -66,9 +66,6 @@
       @include max(tablet) {
         max-width: 90%;
         margin: 0 auto;
-        > div {
-          margin-bottom: 3rem;
-        }
       }
     }
 

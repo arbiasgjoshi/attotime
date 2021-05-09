@@ -1,4 +1,6 @@
 import React from 'react';
+import { paginationWrapper, pagination } from './pagination.module.scss';
+import Button from '@components/atoms/button';
 
 const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
   const pageNumbers = [];
@@ -8,16 +10,20 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
   }
 
   return (
-    <nav>
-      <ul className="pagination">
+    <nav className={paginationWrapper}>
+      <Button btnText="Previous" />
+      <ul className={pagination}>
         {pageNumbers.map((number) => (
-          <li key={number} className="page-item">
-            <a onClick={() => paginate(number)} className="page-link">
-              {number}
-            </a>
-          </li>
+          <>
+            <li key={number} className="page-item">
+              <a onClick={() => paginate(number)} className="page-link">
+                {number}
+              </a>
+            </li>
+          </>
         ))}
       </ul>
+      <Button btnText="Next" />
     </nav>
   );
 };
