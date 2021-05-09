@@ -194,5 +194,11 @@
         padding: 0;
       }
     }
+
+    .imageContainer {
+      img {
+        max-height: 100%;
+      }
+    }
   }
 }
