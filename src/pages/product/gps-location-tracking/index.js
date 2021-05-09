@@ -218,6 +218,8 @@ const LocationTracking = () => {
         list={checkLists3}
         image={image1}
         isSwapped
+        imageWidth={500}
+        imageHeight={600}
       />
       <Divider />
       <Title
@@ -269,18 +271,24 @@ const LocationTracking = () => {
           description="See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!."
           icon={icon18}
           path="/product/time-tracking"
+          imageWidth={30}
+          imageHeight={34}
         />
         <LearnMoreCard
           title="Team Activity"
           description="Stay in the loop with what’s happening – without having to pick up the phone."
           icon={icon19}
           path="/product/team-activity"
+          imageWidth={42}
+          imageHeight={44}
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
           icon={icon20}
           path="/product/timesheets"
+          imageWidth={30}
+          imageHeight={33}
         />
       </div>
       <Divider className="style3" />

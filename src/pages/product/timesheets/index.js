@@ -86,18 +86,27 @@ const Timesheets = () => {
       description: `Eliminate employee guesswork, time wastage, and additional payroll costs. With accurate timesheets, you only pay for hours spent on the job.`,
       alt: 'Highly Accurate',
       icon,
+      imageWidth: 94,
+      imageHeight: 93,
+      imagePadding: '.8rem .6rem 1.9rem 2rem',
     },
     {
       title: 'Verified and Trustworthy',
       description: `Gain trust and confidence in your time tracking data. Timesheets are verified using location data, increasing employee accountability and transparency.`,
       alt: 'Verified and trustworthy',
       icon: icon2,
+      imageWidth: 100,
+      imageHeight: 96,
+      imagePadding: '1.2rem 1rem',
     },
     {
       title: 'Instantly Available',
       description: `No longer wait until the end of the week to see hours worked. Timesheets are instantly generated so you can view them anytime.`,
       alt: 'Instantly Available',
       icon: icon3,
+      imageWidth: 120,
+      imageHeight: 120,
+      imagePadding: '.6rem 0 0 .6rem',
     },
   ];
 
@@ -207,6 +216,8 @@ const Timesheets = () => {
         list={checkLists2}
         image={photo1}
         imagePadding="2.9rem ​0.7rem 1.9rem 0.8rem"
+        imageWidth={425}
+        imageHeight={562}
       />
       <Divider />
       <ListArticle

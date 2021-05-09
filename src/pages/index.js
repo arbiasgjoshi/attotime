@@ -103,7 +103,7 @@ const Home = () => (
       alt="Home banner image"
       width={1140}
       height={505}
-      quality={96}
+      // quality={96}
     />
     <Divider className="style4" />
     <div className={sliderWrapper}>

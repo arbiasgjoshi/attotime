@@ -17,6 +17,8 @@ const ProductCard = ({
   style = '',
   imagePadding = '',
   path = '/',
+  imageWidth,
+  imageHeight,
 }) => (
   <div className={`${styles.container} ${isSwapped && styles.swapped} ${styles[style]}`}>
     <div className={styles.firstWrapper}>
@@ -48,7 +50,13 @@ const ProductCard = ({
     </div>
     <div className={styles.secondWrapper}>
       <div style={{ padding: imagePadding }} className={styles.imageContainer}>
-        <img className={styles.img} src={image} alt={title} />
+        <img
+          width={imageWidth}
+          height={imageHeight}
+          className={styles.img}
+          src={image}
+          alt={title}
+        />
       </div>
     </div>
   </div>

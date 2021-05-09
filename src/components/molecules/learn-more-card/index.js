@@ -10,11 +10,19 @@ import {
   paragraphText,
 } from './learn-more-card.module.scss';
 
-const LearnMoreCard = ({ title, description, btnText, icon, path = '/' }) => {
+const LearnMoreCard = ({
+  title,
+  description,
+  btnText,
+  icon,
+  imageWidth,
+  imageHeight,
+  path = '/',
+}) => {
   return (
     <div className={container}>
       <div className={iconWrapper}>
-        <img src={icon} />
+        <img width={imageWidth} height={imageHeight} src={icon} />
       </div>
       <div className={textWrapper}>
         <h5 className={cardTitle}>{title}</h5>

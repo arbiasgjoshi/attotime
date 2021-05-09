@@ -20,10 +20,14 @@ const ListArticle = ({
   image,
   isSwapped,
   imagePadding = '',
+  imageHeight,
+  imageWidth,
 }) => {
   const [image2, setImage2] = useState(null); //TODO If we have svg and .img files coming in props. For now!
   useEffect(() => {
-    typeof image == 'string' ? setImage2(<img className={img} src={image} />) : setImage2(image);
+    typeof image == 'string'
+      ? setImage2(<img width={imageWidth} height={imageHeight} className={img} src={image} />)
+      : setImage2(image);
   }, []);
 
   return (

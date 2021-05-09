@@ -132,6 +132,8 @@ const TeamActivity = () => {
         image={image4}
         maxWidth={500}
         imagePadding="7.3rem 4.5rem"
+        imageWidth={400}
+        imageHeight={354}
       />
       <Article
         title="Simplify team management with departments"
@@ -140,6 +142,8 @@ const TeamActivity = () => {
         isSwapped
         maxWidth={500}
         imagePadding="4.4rem 5.9rem 4.3rem 5.3rem"
+        imageWidth={398}
+        imageHeight={413}
       />
       <Article
         title="Find out what any employee is up to in seconds"
@@ -147,6 +151,8 @@ const TeamActivity = () => {
         image={image2}
         maxWidth={500}
         imagePadding="3.3rem 4.2rem 2.4rem 10.7rem"
+        imageWidth={371}
+        imageHeight={443}
       />
       <Article
         title="Eliminate back and forth phone calls and constant check-ins"
@@ -155,6 +161,8 @@ const TeamActivity = () => {
         isSwapped
         maxWidth={500}
         imagePadding="5.6rem 5.5rem"
+        imageWidth={380}
+        imageHeight={388}
       />
       <Article
         title="See your team’s progress at the end of each day"
@@ -162,6 +170,8 @@ const TeamActivity = () => {
         image={image1}
         maxWidth={500}
         imagePadding="1.8rem 5.5rem"
+        imageWidth={400}
+        imageHeight={464}
       />
       <Divider />
       <Title maxWidth={880} title="Our full suite of team activity features at a glance" />
@@ -197,18 +207,24 @@ const TeamActivity = () => {
           icon={icon14}
           description="See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!"
           path="/product/time-tracking"
+          imageWidth={30}
+          imageHeight={34}
         />
         <LearnMoreCard
           title="GPS Location Tracking"
           description="Increase the safety and accountability of your team with real-time updates on their location."
           icon={icon15}
           path="/product/gps-location-tracking"
+          imageWidth={27}
+          imageHeight={32}
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
           icon={icon16}
           path="/product/timesheets"
+          imageWidth={30}
+          imageHeight={33}
         />
       </div>
       <Divider />

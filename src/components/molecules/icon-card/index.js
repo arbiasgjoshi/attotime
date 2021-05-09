@@ -11,6 +11,8 @@ const IconCard = ({
   isRound = false,
   style = '',
   imagePadding = '',
+  imageWidth,
+  imageHeight,
 }) => (
   <div className={`${styles.container} ${isRound && styles.round} ${styles[style]}`}>
     {!noImage && (
@@ -18,7 +20,7 @@ const IconCard = ({
         style={{ padding: imagePadding }}
         className={`${styles.iconWrapper} ${bigImage && styles.bigImageStyle}`}
       >
-        <img alt={alt} src={icon} />
+        <img width={imageWidth} height={imageHeight} alt={alt} src={icon} />
       </div>
     )}
     <div className={styles.textWrapper}>
