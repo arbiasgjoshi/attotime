@@ -18,7 +18,7 @@ const BlogList = ({ list }) => {
   return (
     <div className={blogListWrapper}>
       <List list={currentPosts} />
-      <Divider className="style3" />
+      <Divider className="style4" />
       <Pagination
         currentPage={currentPage}
         postsPerPage={blogsPerPage}

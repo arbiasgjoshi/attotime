@@ -18,6 +18,7 @@ import browser1 from '../../images/browser1.jpeg';
 import browser2 from '../../images/browser2.jpeg';
 import browser3 from '../../images/browser3.jpeg';
 import browser4 from '../../images/browser4.jpeg';
+import Title from '../../components/molecules/title';
 
 const list = ['All', 'Weekly Digest', 'Insights', 'Productivity', 'Timesheets', 'Team Management'];
 const blogList = [
@@ -62,6 +63,11 @@ const Blog = () => (
       ))}
     </div>
     <StaticImage width={1140} height={450} src="../../images/browser5.jpeg" />
+    <Title
+      maxWidth={780}
+      smallTitle="Published March 27, 2021 in Productivity   ·   2 min read   ·   by Nick Blackeye"
+      title="7 tips that will help you manage contracted jobs successfully"
+    />
     <Divider className="style4" />
     <BlogList list={blogList} />
     <Divider />
