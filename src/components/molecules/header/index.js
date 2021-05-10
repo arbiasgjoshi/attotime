@@ -48,11 +48,14 @@ import {
   menuItemDesc,
 } from './header.module.scss';
 
-const HeaderComponent = ({ centered, logoType }) => {
-  const [hovered, setHovered] = useState(false);
-  const [activeItem, setActiveItem] = useState(null);
-  const [aboveMainMenu, setAbove] = useState(false);
+const HeaderComponent = () => {
+  const [open, setOpen] = useState(false);
+
   const [overMenu, setOverMenu] = useState(false);
+  const [aboveMainMenu, setAbove] = useState(false);
+  const [activeItem, setActiveItem] = useState(null);
+
+  // FIXME There is a need for three states: opened menu, you're over the menu, you've left both the menu and main links;
 
   const viewMenuSections = (val) => {
     switch (val) {
@@ -281,7 +284,7 @@ const HeaderComponent = ({ centered, logoType }) => {
   const leftMenu = () => {
     if (!overMenu) {
       setTimeout(() => {
-        setHovered(false);
+        setOpen(false);
         setActiveItem(null);
       }, 500);
     }
@@ -304,7 +307,7 @@ const HeaderComponent = ({ centered, logoType }) => {
   };
 
   const showMenu = (val) => {
-    setHovered(true);
+    setOpen(true);
     setActiveItem(val);
   };
 
@@ -337,7 +340,7 @@ const HeaderComponent = ({ centered, logoType }) => {
             <Button btnText="Try for Free" btnStyle="teal" />
           </Link>
         </div>
-        {hovered && (
+        {open && (
           <div
             className={menuClasses(activeItem)}
             onMouseEnter={() => setOverMenu(true)}
@@ -350,4 +353,5 @@ const HeaderComponent = ({ centered, logoType }) => {
     </>
   );
 };
+
 export default HeaderComponent;
