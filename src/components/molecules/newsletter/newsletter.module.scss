@@ -15,8 +15,9 @@
   }
 
   .leftWrapper {
-    @include flex-align(center, center);
+    @include flex-align(center, flex-start);
     @include min(tablet) {
+      justify-content: center;
       margin-right: 5rem;
       margin-left: 6rem;
 
@@ -31,6 +32,12 @@
 
     > div {
       width: 100%;
+
+      > div {
+        @include max(tablet) {
+          margin: 0;
+        }
+      }
     }
 
     @include min(tablet) {
