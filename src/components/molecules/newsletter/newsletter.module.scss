@@ -1,25 +1,42 @@
 .container {
   display: flex;
+  flex-direction: column;
   box-sizing: border-box;
-  height: 281px;
-  width: 100%;
-  border: 10px solid #99e3ea;
   background-color: #ffffff;
+  border: 7px solid #99e3ea;
+  padding: 0.5rem;
+
+  @include min(tablet) {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    height: 281px;
+    border: 10px solid #99e3ea;
+  }
 
   .leftWrapper {
     @include flex-align(center, center);
-    margin-right: 5rem;
-    margin-left: 6rem;
+    @include min(tablet) {
+      margin-right: 5rem;
+      margin-left: 6rem;
 
-    h3 {
-      @include min(tablet) {
+      h3 {
       }
     }
   }
 
   .formWrapper {
-    @include flex-align(center, center);
+    @include flex-align(flex-start, center);
     flex-direction: column;
+
+    > div {
+      width: 100%;
+    }
+
+    @include min(tablet) {
+      align-items: center;
+    }
+
     p {
       height: 2rem;
       font-size: var(--body-style-four);

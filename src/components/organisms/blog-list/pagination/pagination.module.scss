@@ -1,6 +1,9 @@
 .paginationWrapper {
   @include flex-align(center, center);
-  margin: 0 29.7rem;
+
+  @include min(tablet) {
+    margin: 0 29.7rem;
+  }
 
   .pagination {
     margin: 0.4rem 4rem;
