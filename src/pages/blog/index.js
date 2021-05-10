@@ -61,7 +61,7 @@ const Blog = () => (
         <Button btnText={title} />
       ))}
     </div>
-    <StaticImage width={971} height={450} src="../../images/no-image.png" />
+    <StaticImage width={1140} height={450} src="../../images/browser5.jpeg" />
     <Divider className="style4" />
     <BlogList list={blogList} />
     <Divider />

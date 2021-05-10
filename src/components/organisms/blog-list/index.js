@@ -19,7 +19,12 @@ const BlogList = ({ list }) => {
     <div className={blogListWrapper}>
       <List list={currentPosts} />
       <Divider className="style3" />
-      <Pagination postsPerPage={blogsPerPage} totalPosts={blogs.length} paginate={paginate} />
+      <Pagination
+        currentPage={currentPage}
+        postsPerPage={blogsPerPage}
+        totalPosts={blogs.length}
+        paginate={paginate}
+      />
     </div>
   );
 };

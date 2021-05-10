@@ -1,9 +1,27 @@
 .paginationWrapper {
-  display: flex;
+  @include flex-align(center, center);
   margin: 0 29.7rem;
 
   .pagination {
-    width: 16rem;
+    margin: 0.4rem 4rem;
+    @include flex-align(center, center);
+
+    .pageLink {
+      width: 4rem;
+      height: 4rem;
+      @include flex-align(center, center);
+      font-size: 20px;
+
+      &.selected {
+        color: #00b9cb;
+      }
+    }
+
+    .pageLink:hover {
+      border-radius: 50%;
+      background-color: #e6f8fa;
+      color: #00b9cb;
+    }
   }
 
   button {
