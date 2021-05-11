@@ -185,7 +185,7 @@ const Product = () => {
       <Divider />
       <SubscribeBanner
         bannerImage
-        title="Stay in control of what's happening with team activity updates!"
+        title="Free up your time and focus on what really matters"
         placeholder="Type your email"
         checkItemOne="No credit card required"
         checkItemTwo="14 day free trial"

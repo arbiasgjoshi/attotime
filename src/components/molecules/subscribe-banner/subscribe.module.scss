@@ -19,8 +19,15 @@
       margin-bottom: 5rem;
     }
 
-    h3 {
+    h2 {
       margin-bottom: 0.8rem;
+    }
+
+    p {
+      font-size: var(--body-style-one);
+      line-height: var(--body-style-one-line-height-size);
+      font-weight: var(--body-style-one-font-weight);
+      letter-spacing: var(--body-style-one-letter-spacing);
     }
   }
 

@@ -13,6 +13,7 @@ const SubscribeBanner = ({
   checkItemOne,
   checkItemTwo,
   checkItemThree,
+  style = '',
 }) => (
   <div className={`${bannerWrapper} ${bannerImage && hasImage}`}>
     {bannerImage && (
@@ -27,8 +28,8 @@ const SubscribeBanner = ({
       </div>
     )}
     <div className={textWrapper}>
-      <h3>{title}</h3>
-      {subtitle && <h5>{subtitle}</h5>}
+      {style === 'pricing' ? <h2>{title}</h2> : <h3>{title}</h3>}
+      {subtitle && <p>{subtitle}</p>}
     </div>
     <EmailForm
       placeholder={placeholder}
