@@ -17,6 +17,7 @@
     @include min(tablet) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      column-gap: 4.5rem;
 
       > div {
         margin-bottom: 0;
