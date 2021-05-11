@@ -333,6 +333,7 @@ const TimeTracking = () => {
           description="When at the office, track your time using Atto’s web-based time clock."
           logo={<WebTracking />}
           alt="Web time tracking"
+          imagePadding=".8rem 2.9rem .797rem .1rem"
         />
         <FeatureCard
           isWorkCard
@@ -340,6 +341,7 @@ const TimeTracking = () => {
           description="Track time on the go with the Atto mobile app available on iOS and Android."
           logo={<MobileTracking />}
           alt="Mobile time tracking"
+          imagePadding=".5rem 3.24rem .587rem 0"
         />
         <FeatureCard
           isWorkCard
@@ -347,6 +349,7 @@ const TimeTracking = () => {
           description="Set up a time clock kiosk to enable your team to track time from a single device."
           logo={<KioskTracking />}
           alt="Kiosk time tracking"
+          imagePadding=".9rem 2.5rem .85rem .4rem"
         />
       </div>
       <Divider />
