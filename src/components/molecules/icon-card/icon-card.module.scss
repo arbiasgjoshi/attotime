@@ -53,13 +53,10 @@
 
     .textWrapper {
       text-align: left;
+      width: unset;
 
       @include max(mobile) {
         text-align: center;
-      }
-
-      @include min(desktop) {
-        margin-right: 4.5rem;
       }
 
       h4 {
