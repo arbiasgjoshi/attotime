@@ -57,6 +57,22 @@
   .footerLinksWrapper {
     width: 16.5rem;
     @include flex-direction(column);
+
+    .downloadBtn {
+      margin-top: 2rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+
+      @include min(tablet) {
+        margin-top: 4rem;
+      }
+
+      > h6 {
+        font-weight: 500;
+      }
+    }
+
     .parentPath {
       font-weight: var(--medium);
       color: var(--tertiary-color);
@@ -92,7 +108,10 @@
 }
 
 .downloadApp {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  @include min(tablet) {
+    margin-top: 2rem;
+  }
   a {
     @include flex-direction(row);
     align-items: center;

@@ -14,6 +14,7 @@ import {
   hasLine,
   parentPath,
   downloadApp,
+  downloadBtn,
 } from './footer.module.scss';
 import CustomSelect from '../../atoms/custom-select';
 
@@ -41,13 +42,18 @@ const Footer = ({ FooterLinks }) => (
               </Link>
             ))}
             {section.downloadApp && (
-              <div className={downloadApp}>
-                {section.downloadApp.map((app) => (
-                  <a href={app.href} target="_blank" rel="noreferrer">
-                    <img src={app.src} alt="Mobile" />
-                  </a>
-                ))}
-              </div>
+              <>
+                <Link className={downloadBtn}>
+                  <h6>Download</h6>
+                </Link>
+                <div className={downloadApp}>
+                  {section.downloadApp.map((app) => (
+                    <a href={app.href} target="_blank" rel="noreferrer">
+                      <img src={app.src} alt="Mobile" />
+                    </a>
+                  ))}
+                </div>
+              </>
             )}
           </div>
         ))}
