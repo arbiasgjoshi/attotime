@@ -15,11 +15,15 @@
     &.bigImageStyle {
       @include flex-align(center, center);
       width: unset;
-      height: unset;
+      height: 24.4rem;
 
       @include min(desktop) {
         justify-content: flex-start;
       }
+    }
+
+    img {
+      height: unset;
     }
   }
 
