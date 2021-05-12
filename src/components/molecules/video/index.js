@@ -4,35 +4,31 @@ import Icon from '@components/atoms/icon';
 import Button from '@components/atoms/button';
 
 import {
-  imageContainer,
+  videoContainer,
   videoBackground,
   videoPlaceholder,
+  rightAligned,
+  leftAligned,
   imagePlayer,
   watchButton,
 } from './video.module.scss';
 
 const Video = () => (
-  <div className={imageContainer}>
-    <StaticImage
-      className={videoBackground}
-      width={118}
-      height={301}
-      alt="Video placeholder"
-      src="../../../images/grey-copy@2x.png"
+  <div className={videoContainer}>
+    <span
+      className={`${videoBackground} ${leftAligned}`}
+      // src="../../../images/grey-copy@2x.png"
     />
     <StaticImage
       className={videoPlaceholder}
-      width={952}
-      height={485}
+      width={960}
+      height={489}
       alt="Video placeholder"
       src="../../../images/video_placeholder@2x.png"
     />
-    <StaticImage
-      className={videoBackground}
-      width={118}
-      height={301}
-      alt="Video placeholder"
-      src="../../../images/grey-copy@2x.png"
+    <span
+      className={`${videoBackground} ${rightAligned}`}
+      // src="../../../images/grey-copy@2x.png"
     />
     <div className={imagePlayer}>
       <Icon iconClass="play" fSize={11} />

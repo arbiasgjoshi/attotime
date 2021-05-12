@@ -2,7 +2,7 @@ import React from 'react';
 
 import HeaderComponent from '@components/molecules/header';
 import SEO from '@components/molecules/seo';
-import { FooterLinks } from '@locale/en.js';
+
 import FooterComponent from '@components/molecules/footer';
 import Divider from '@components/atoms/divider';
 import Title from '@components/molecules/title';
@@ -31,17 +31,12 @@ import Icon from '@components/atoms/icon';
 import { StaticImage } from 'gatsby-plugin-image';
 import CommentCard from '@components/molecules/comment-card';
 
-// import ArrowRight from '@images/arrow-right.svg';
-// import ArrowLeft from '@images/arrow-left.svg';
-
 import authorImage from '@images/no-image.png';
 import CarouselComponent from '@components/molecules/carousel';
 import Slider from 'react-slick';
 import '@styles/includes/slick-carousel.scss';
 
-// import Carousel, { Dots, slidesToShowPlugin, arrowsPlugin } from '@brainhubeu/react-carousel';
-// import '@brainhubeu/react-carousel/lib/style.css';
-// import '@components/molecules/carousel/carousel.scss';
+import { FooterLinks } from '@locale/en.js';
 
 import {
   btnWrapper,
@@ -105,54 +100,16 @@ const SamplePrevArrow = (props) => {
 };
 
 const settings = {
-  dots: true,
+  dots: false,
   infinite: false,
   speed: 500,
   vertical: false,
   slidesToShow: 3,
   slidesToScroll: 1,
-  // variableWidth: true,
   centerPadding: 0,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
 };
-
-// className={carouselWrapper}
-//         width={960}
-// plugins={[
-//   {
-//     resolve: arrowsPlugin,
-//     options: {
-//       arrowLeft: (
-//         <button className={`${btnWrapper} ${leftAligned}`} type="button">
-//           <ArrowLeft />
-//         </button>
-//       ),
-//       arrowLeftDisabled: (
-//         <button className={`${btnWrapper} ${leftAligned} ${disabled}`} type="button">
-//           <ArrowLeft />
-//         </button>
-//       ),
-//       arrowRight: (
-//         <button className={`${btnWrapper} ${rightAligned}`} type="button">
-//           <ArrowRight />
-//         </button>
-//       ),
-//       arrowRightDisabled: (
-//         <button className={`${btnWrapper} ${rightAligned} ${disabled}`} type="button">
-//           <ArrowRight />
-//         </button>
-//       ),
-//       addArrowClickHandler: true,
-//     },
-//   },
-//   {
-//     resolve: slidesToShowPlugin,
-//     options: {
-//       numberOfSlides: 3,
-//     },
-//   },
-// ]}
 
 const Home = () => (
   <div className={container}>
@@ -175,7 +132,7 @@ const Home = () => (
       alt="Home banner image"
       width={1140}
       height={505}
-      // quality={96}
+      quality={100}
     />
     <Divider className="style4" />
     <div className={sliderWrapper}>
