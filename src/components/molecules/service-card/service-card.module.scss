@@ -46,9 +46,14 @@
     position: absolute;
     cursor: pointer;
     margin-top: 0.25rem;
-    top: 6rem;
-    right: 2.1rem;
     opacity: 0;
+    top: 4.8rem;
+    right: 2.1rem;
+
+    @include min(tablet) {
+      top: 6rem;
+      right: 2.1rem;
+    }
 
     &:before,
     &:after {

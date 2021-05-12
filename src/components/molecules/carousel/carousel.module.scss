@@ -30,8 +30,16 @@
     left: 0;
   }
 
+  &.pulledLeft {
+    left: -5.5rem;
+  }
+
   &.rightAligned {
     right: 0;
+  }
+
+  &.pulledRight {
+    right: -5.5rem;
   }
 
   &.disabled {

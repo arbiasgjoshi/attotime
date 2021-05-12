@@ -1,12 +1,15 @@
 .container {
-  width: 35rem;
-  height: 44rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 2px solid var(--color-20);
   box-sizing: border-box;
+
+  @include min(tablet) {
+    width: 35rem;
+    height: 44rem;
+  }
 
   &:hover {
     background-color: #fafafa;
@@ -22,22 +25,31 @@
 
   .iconWrapper {
     @include flex-align(center, center);
-    width: 7rem;
-    height: 5rem;
     margin: 6rem 14rem 2rem 14rem;
+
+    @include min(tablet) {
+      width: 7rem;
+      height: 5rem;
+    }
   }
 
   .textWrapper {
+    padding: 1rem;
     text-align: center;
+
+    @include min(tablet) {
+    }
 
     .cardTitle {
       margin-bottom: 1.2rem;
     }
 
     .paragraphText {
-      height: 12rem;
-      width: 27rem;
-      margin-bottom: 4rem;
+      @include min(tablet) {
+        height: 12rem;
+        width: 27rem;
+        margin-bottom: 4rem;
+      }
     }
   }
 
@@ -48,5 +60,6 @@
     border: 2px solid #efefef;
     border-radius: 4px;
     margin-bottom: 5rem;
+    font-size: 2rem;
   }
 }

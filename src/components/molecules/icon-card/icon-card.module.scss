@@ -3,25 +3,32 @@
 
   .iconWrapper {
     @include flex-align(flex-end, center);
-    width: 12rem;
-    height: 12rem;
     margin: 0 auto;
-    margin-bottom: 3.5rem;
+
+    @include min(tablet) {
+      max-width: 100%;
+      width: 12rem;
+      height: 12rem;
+      margin-bottom: 3.5rem;
+    }
 
     &.bigImageStyle {
       @include flex-align(center, center);
       width: unset;
       height: unset;
 
-      @include min(tablet) {
+      @include min(desktop) {
         justify-content: flex-start;
       }
     }
   }
 
   .textWrapper {
-    width: 35rem;
-    text-align: center;
+    @include min(tablet) {
+      width: 35rem;
+      text-align: center;
+      margin: 0 auto;
+    }
 
     h4 {
       margin-bottom: 1.6rem;
@@ -30,9 +37,13 @@
 
   &.round {
     .iconWrapper {
-      justify-content: flex-start;
       padding: 0;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
+
+      @include min(tablet) {
+        justify-content: flex-start;
+        margin-bottom: 4rem;
+      }
 
       img {
         width: 25rem;
@@ -42,7 +53,11 @@
 
     .textWrapper {
       text-align: left;
-      margin-right: 4.5rem;
+      width: unset;
+
+      @include max(mobile) {
+        text-align: center;
+      }
 
       h4 {
         margin-bottom: 2rem;
@@ -66,6 +81,15 @@
     .textWrapper {
       h4 {
         margin-bottom: 1.6rem;
+      }
+    }
+  }
+
+  &.smallTimesheetImages {
+    .iconWrapper {
+      @include max(tablet) {
+        margin-bottom: 2rem;
+        max-width: 11rem;
       }
     }
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  container,
+  teamActivityContainer,
   roundImagesContainer,
   checkListContainer,
   learnMoreContainer,
@@ -8,6 +8,7 @@ import {
 } from './timesheets.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FooterLinks } from '@locale/en.js';
+import { container } from '@styles/main.module.scss';
 
 import Divider from '@components/atoms/divider';
 import Header from '@components/molecules/header';
@@ -35,14 +36,17 @@ import roundImage3 from '@images/timesheets-inbox2x.png';
 import icon from '@images/accurate.png';
 import icon2 from '@images/trustworthy.png';
 import icon3 from '@images/instantly-available@2x.png';
-import Timer from '@images/timer.svg';
-import Flag from '@images/flag.svg';
-import Ringbell from '@images/ringbell.svg';
-import Battery from '@images/battery.svg';
-import Brightness from '@images/brightness.svg';
-import MLogo from '@images/m-logo.svg';
-import Coffe from '@images/coffe.svg';
-import Bookmark from '@images/bookmark.svg';
+
+import AllTimesheets from '@images/All_featres_TimesheetsAndroid.svg';
+import AllFeatureEmail from '@images/All_featres_emailAndroid.svg';
+import AvoidGuess from '@images/avoid_guesstimation.svg';
+import Wages from '@images/wages.svg';
+import Share from '@images/share.svg';
+import AllFeatresRounding from '@images/featres_rounding.svg';
+import ChangeHistory from '@images/change_history.svg';
+import ArchivedMembers from '@images/Archived_membersSVG.svg';
+import WageEstimate from '@images/Wage_estimatesSVG.svg';
+
 import icon20 from '@images/time-tracking-clock@1x.png';
 import icon21 from '@images/location@1x.png';
 import icon22 from '@images/profile@1x.png';
@@ -85,18 +89,27 @@ const Timesheets = () => {
       description: `Eliminate employee guesswork, time wastage, and additional payroll costs. With accurate timesheets, you only pay for hours spent on the job.`,
       alt: 'Highly Accurate',
       icon,
+      imageWidth: 94,
+      imageHeight: 93,
+      imagePadding: '.8rem .6rem 1.9rem 2rem',
     },
     {
       title: 'Verified and Trustworthy',
       description: `Gain trust and confidence in your time tracking data. Timesheets are verified using location data, increasing employee accountability and transparency.`,
       alt: 'Verified and trustworthy',
       icon: icon2,
+      imageWidth: 100,
+      imageHeight: 96,
+      imagePadding: '1.2rem 1rem',
     },
     {
       title: 'Instantly Available',
       description: `No longer wait until the end of the week to see hours worked. Timesheets are instantly generated so you can view them anytime.`,
       alt: 'Instantly Available',
       icon: icon3,
+      imageWidth: 120,
+      imageHeight: 120,
+      imagePadding: '.6rem 0 0 .6rem',
     },
   ];
 
@@ -104,55 +117,55 @@ const Timesheets = () => {
     {
       title: 'Comprehensive Timesheet Reports',
       description: `Get all the data you need including regular time, overtime, breaks, time off, and more.`,
-      logo: <Timer />,
+      logo: <AllTimesheets />,
       alt: 'Employee status logo',
     },
     {
       title: 'Scheduled Email Reports',
       description: `Schedule an email with your employees’ timesheets to coincide with your payroll schedule.`,
-      logo: <Flag />,
+      logo: <AllFeatureEmail />,
       alt: 'Geofencing Flag',
     },
     {
       title: 'Timesheets by Employee, Team, Jobs',
       description: `Generate timesheets based on work done by an employee, team, or toward a category of job.`,
-      logo: <Ringbell />,
+      logo: <AvoidGuess />,
       alt: 'Ringbell reminder logo',
     },
     {
       title: 'Wage Estimates And Pay Rates',
       description: `Assign pay rates to your employees and their estimated pay will be added to their timesheets.`,
-      logo: <Battery />,
+      logo: <Wages />,
       alt: 'Wage estimates',
     },
     {
       title: 'Download and Share',
       description: `Download any timesheet report as a PDF or CSV file in one click.`,
-      logo: <Brightness />,
+      logo: <Share />,
       alt: '',
     },
     {
       title: 'Timesheet Rounding',
       description: `Set a rounding increment and clock in/out times are rounded automatically.`,
-      logo: <Flag />,
+      logo: <AllFeatresRounding />,
       alt: '',
     },
     {
       title: 'Time Entry Change History',
       description: `View any historic changes made to time entries by an employee or admin.`,
-      logo: <MLogo />,
+      logo: <ChangeHistory />,
       alt: '',
     },
     {
       title: 'Archive Employees',
       description: `View timesheets for employees even after they’ve left the company – vital for compliance purposes.`,
-      logo: <Coffe />,
+      logo: <ArchivedMembers />,
       alt: '',
     },
     {
       title: 'Payroll Integrations',
       description: `Streamline your payroll with our QuickBooks Online and Xero integrations.`,
-      logo: <Bookmark />,
+      logo: <WageEstimate />,
       alt: '',
     },
   ];
@@ -162,14 +175,14 @@ const Timesheets = () => {
     { title: 'Landscaping & Gardening', icon: <LandscapingLogo /> },
     { title: 'Roofing', icon: <RoofingLogo /> },
     { title: 'Painting & Decorating', icon: <PaintingLogo /> },
+    { title: 'Cleaning & Maintenance', icon: <CleaningLogo /> },
     { title: 'Healthcare & Medical', icon: <HealthcareLogo /> },
     { title: 'Electrical', icon: <ElectrianLogo /> },
     { title: 'Plumbing & Heating', icon: <PlumbingLogo /> },
     { title: 'Other industries', icon: <ThreeDots /> },
   ];
-
   return (
-    <div className={container}>
+    <div className={`${container} ${teamActivityContainer}`}>
       <Header />
       <MainTitleCard
         maxParagraphWidth={760}
@@ -198,7 +211,7 @@ const Timesheets = () => {
         <StaticImage alt="Clock In" quality={90} src="../../../images/ready-made.svg" />
       </div>
       <Divider className="style3" />
-      <IconCardList cardList={firstList} />
+      <IconCardList cardList={firstList} style="smallTimesheetImages" />
       <Divider />
       <ListArticle
         title="Boost productivity with timesheet insights"
@@ -206,6 +219,8 @@ const Timesheets = () => {
         list={checkLists2}
         image={photo1}
         imagePadding="2.9rem ​0.7rem 1.9rem 0.8rem"
+        imageWidth={425}
+        imageHeight={562}
       />
       <Divider />
       <ListArticle
@@ -259,7 +274,7 @@ const Timesheets = () => {
       </div>
       <Divider />
       <Title
-        title="A work hours tracker for any industry"
+        title="Timesheets for any industry"
         description="Atto helps all types of businesses across the world to manage their employees' time"
         maxDescriptionWidth={700}
       />
@@ -272,7 +287,11 @@ const Timesheets = () => {
         author="Robert Bennet - DPA Cleaning Services, Inc."
       />
       <Divider />
-      <Title title="It doesn’t end here!" description="Learn more about what Atto can do for you" />
+      <Title
+        title="It doesn’t end here!"
+        marginBottom=".4rem"
+        description="Learn more about what Atto can do for you"
+      />
       <Divider className="style2" />
       <div className={learnMoreContainer}>
         <LearnMoreCard

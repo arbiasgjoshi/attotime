@@ -31,6 +31,8 @@ const FeatureTabs = () => {
           style="homepage"
           path="/product/time-tracking"
           imagePadding="3.5rem 3.1rem"
+          imageWidth={438}
+          imageHeight={580}
         />
       </div>
       <div className={activeIndex === 1 ? content : inactive}>
@@ -41,6 +43,8 @@ const FeatureTabs = () => {
           isSwapped
           style="homepage"
           path="/product/gps-location-tracking"
+          imageWidth={500}
+          imageHeight={650}
         />
       </div>
       <div className={activeIndex === 2 ? content : inactive}>
@@ -52,6 +56,8 @@ const FeatureTabs = () => {
           style="homepage"
           path="/product/team-activity"
           imagePadding="3.5rem 1.8rem"
+          imageWidth={463}
+          imageHeight={580}
         />
       </div>
       <div className={activeIndex === 3 ? content : inactive}>
@@ -62,6 +68,8 @@ const FeatureTabs = () => {
           isSwapped
           style="homepage"
           path="/product/timesheets"
+          // imageWidth={324}
+          // imageHeight={580}
         />
       </div>
     </div>

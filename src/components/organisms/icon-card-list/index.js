@@ -15,6 +15,8 @@ const IconCardList = ({ cardList, noImage, hasBigImages = false, style = '' }) =
         imagePadding={card.imagePadding}
         noImage={noImage}
         bigImage={hasBigImages}
+        imageWidth={card.imageWidth}
+        imageHeight={card.imageHeight}
         style={style}
       />
     ))}

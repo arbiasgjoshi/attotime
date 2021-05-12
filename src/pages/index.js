@@ -2,7 +2,7 @@ import React from 'react';
 
 import HeaderComponent from '@components/molecules/header';
 import SEO from '@components/molecules/seo';
-import { FooterLinks } from '@locale/en.js';
+
 import FooterComponent from '@components/molecules/footer';
 import Divider from '@components/atoms/divider';
 import Title from '@components/molecules/title';
@@ -27,29 +27,26 @@ import RoofingLogo from '@images/roofing-industry-logo.svg';
 import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
 
+import Icon from '@components/atoms/icon';
 import { StaticImage } from 'gatsby-plugin-image';
 import CommentCard from '@components/molecules/comment-card';
 
 import authorImage from '@images/no-image.png';
 import CarouselComponent from '@components/molecules/carousel';
+import Slider from 'react-slick';
+import '@styles/includes/slick-carousel.scss';
 
-import ArrowRight from '@images/arrow-right.svg';
-import ArrowLeft from '@images/arrow-left.svg';
-
-import Carousel, { Dots, slidesToShowPlugin, arrowsPlugin } from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
-import '@components/molecules/carousel/carousel.scss';
+import { FooterLinks } from '@locale/en.js';
 
 import {
   btnWrapper,
-  leftAligned,
-  rightAligned,
-  disabled,
+  pulledLeft,
+  pulledRight,
   carouselWrapper,
 } from '@components/molecules/carousel/carousel.module.scss';
 
 import {
-  slider,
+  // slider,
   sliderWrapper,
   sliderText,
   checkListContainer,
@@ -75,11 +72,44 @@ const serviceList = [
   { title: 'Landscaping & Gardening', icon: <LandscapingLogo /> },
   { title: 'Roofing', icon: <RoofingLogo /> },
   { title: 'Painting & Decorating', icon: <PaintingLogo /> },
+  { title: 'Cleaning & Maintenance', icon: <CleaningLogo /> },
   { title: 'Healthcare & Medical', icon: <HealthcareLogo /> },
   { title: 'Electrical', icon: <ElectrianLogo /> },
   { title: 'Plumbing & Heating', icon: <PlumbingLogo /> },
   { title: 'Other industries', icon: <ThreeDots /> },
 ];
+
+const SampleNextArrow = (props) => {
+  // eslint-disable-next-line react/prop-types
+  const { onClick } = props;
+  return (
+    <button className={`${btnWrapper} ${pulledRight}`} onClick={onClick} type="button">
+      <Icon iconClass="arrow-right" fSize={1.2} />
+    </button>
+  );
+};
+
+const SamplePrevArrow = (props) => {
+  // eslint-disable-next-line react/prop-types
+  const { onClick } = props;
+  return (
+    <button className={`${btnWrapper} ${pulledLeft}`} onClick={onClick} type="button">
+      <Icon iconClass="arrow-left" fSize={1.2} />
+    </button>
+  );
+};
+
+const settings = {
+  dots: false,
+  infinite: false,
+  speed: 500,
+  vertical: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerPadding: 0,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
+};
 
 const Home = () => (
   <div className={container}>
@@ -101,81 +131,48 @@ const Home = () => (
       src="../images/banner-image-2@2x.png"
       alt="Home banner image"
       width={1140}
-      height={485}
+      height={505}
+      quality={100}
     />
     <Divider className="style4" />
     <div className={sliderWrapper}>
-      <Carousel
-        className={carouselWrapper}
-        // offset={30}
-        width={960}
-        // itemWidth={300}
-        plugins={[
-          {
-            resolve: arrowsPlugin,
-            options: {
-              arrowLeft: (
-                <button className={`${btnWrapper} ${leftAligned}`} type="button">
-                  <ArrowLeft />
-                </button>
-              ),
-              arrowLeftDisabled: (
-                <button className={`${btnWrapper} ${leftAligned} ${disabled}`} type="button">
-                  <ArrowLeft />
-                </button>
-              ),
-              arrowRight: (
-                <button className={`${btnWrapper} ${rightAligned}`} type="button">
-                  <ArrowRight />
-                </button>
-              ),
-              arrowRightDisabled: (
-                <button className={`${btnWrapper} ${rightAligned} ${disabled}`} type="button">
-                  <ArrowRight />
-                </button>
-              ),
-              addArrowClickHandler: true,
-            },
-          },
-          {
-            resolve: slidesToShowPlugin,
-            options: {
-              numberOfSlides: 3,
-            },
-          },
-        ]}
-      >
+      <Slider {...settings} className={carouselWrapper} width={960}>
         <CommentCard
           title="Amazing for my business!"
-          description={`Super convenient and easy to use, so happy i’ve found Atto! Highly recommend.`}
+          description="Super convenient and easy to use, so happy i’ve found Atto! Highly recommend."
           date="23 Jul"
           author="Nita Ora"
+          sliderItem
         />
         <CommentCard
           title="A must have software"
           description="I just love the ongoning improvements."
           date="20 Jul"
           author="James Stone"
+          sliderItem
         />
         <CommentCard
           title="Everything you need"
           description="Service is fabolous and it’s easy to use. My employees love it."
           date="18 Jun"
           author="Rich Mathews"
+          sliderItem
         />
         <CommentCard
           title="A must have software"
           description="I just love the ongoning improvements."
           date="20 Jul"
           author="James Stone"
+          sliderItem
         />
         <CommentCard
           title="Everything you need"
           description="Service is fabolous and it’s easy to use. My employees love it."
           date="18 Jun"
           author="Rich Mathews"
+          sliderItem
         />
-      </Carousel>
+      </Slider>
       <div className={sliderText}>
         <span>Rated Excellent 5/5 over 1,200 reviews</span>
       </div>
@@ -188,6 +185,7 @@ const Home = () => (
       maxDescriptionWidth={766}
       title="Thousands of businesses have saved time using Atto"
       description="And it’s not just time saved, but money and stress too."
+      marginBottom="2rem"
     />
     <Divider className="style3" />
     <Video />

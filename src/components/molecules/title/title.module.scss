@@ -1,15 +1,13 @@
 .container {
   width: 100%;
-  padding: 0 1rem;
   margin-bottom: 1rem;
 
   @include min(tablet) {
     text-align: center;
-    padding: 0;
     margin: 0;
   }
 
-  p {
+  .descriptionWrapper {
     font-size: var(--body-style-one-mobile-size);
     line-height: var(--body-style-one-mobile-line-height);
     letter-spacing: normal;
@@ -32,11 +30,41 @@
     .descriptionWrapper {
       text-align: left;
     }
+
+    @include max(mobile) {
+      margin-bottom: 3rem;
+      text-align: center;
+
+      .descriptionWrapper {
+        text-align: center;
+
+        font-size: var(--body-style-two-mobile-size);
+        line-height: var(--body-style-two-mobile-line-height);
+      }
+    }
+  }
+
+  .smallTitleStyle {
+    margin-top: 3.09rem;
+    margin-bottom: 1rem;
+    color: #999999;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 3rem;
   }
 
   .titleWrapper {
     margin: auto;
     margin-bottom: 1.6rem;
+
+    &.lighterTitle {
+      font-weight: var(--regular);
+      font-size: 5rem;
+    }
+
+    @include max(tablet) {
+      text-align: center;
+    }
   }
 
   .descriptionWrapper {
@@ -46,6 +74,12 @@
 
     @include min(tablet) {
       text-align: center;
+    }
+    @include max(mobile) {
+      text-align: center;
+
+      font-size: var(--body-style-two-mobile-size);
+      line-height: var(--body-style-two-mobile-line-height);
     }
   }
 }

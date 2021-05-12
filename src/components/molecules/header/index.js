@@ -40,9 +40,6 @@ import {
   mainItem,
   subItems,
   rightItems,
-  featuredItems,
-  featureLink,
-  headerItem,
   menuItems,
   menuItem,
   menuItemWrapper,
@@ -51,11 +48,14 @@ import {
   menuItemDesc,
 } from './header.module.scss';
 
-const HeaderComponent = ({ centered, logoType }) => {
-  const [hovered, setHovered] = useState(false);
-  const [activeItem, setActiveItem] = useState(null);
-  const [aboveMainMenu, setAbove] = useState(false);
+const HeaderComponent = () => {
+  const [open, setOpen] = useState(false);
+
   const [overMenu, setOverMenu] = useState(false);
+  const [aboveMainMenu, setAbove] = useState(false);
+  const [activeItem, setActiveItem] = useState(null);
+
+  // FIXME There is a need for three states: opened menu, you're over the menu, you've left both the menu and main links;
 
   const viewMenuSections = (val) => {
     switch (val) {
@@ -119,33 +119,33 @@ const HeaderComponent = ({ centered, logoType }) => {
             </div>
             <div className={rightItems}>
               <h6>More Features</h6>
-              <ul className={featuredItems}>
+              <ul>
                 <li>
-                  <Link className={featureLink} to="/">
+                  <Link to="/">
                     <Icon iconClass="long-arrow" />
                     Mobile Time Tracking
                   </Link>
                 </li>
                 <li>
-                  <Link className={featureLink} to="/">
+                  <Link to="/">
                     <Icon iconClass="long-arrow" />
                     Time Clock
                   </Link>
                 </li>
                 <li>
-                  <Link className={featureLink} to="/">
+                  <Link to="/">
                     <Icon iconClass="long-arrow" />
                     Time Card App
                   </Link>
                 </li>
                 <li>
-                  <Link className={featureLink} to="/">
+                  <Link to="/">
                     <Icon iconClass="long-arrow" />
                     Work Hours Tracker
                   </Link>
                 </li>
                 <li>
-                  <Link className={featureLink} to="/">
+                  <Link to="/">
                     <Icon iconClass="long-arrow" />
                     Accurate Reports
                   </Link>
@@ -246,7 +246,7 @@ const HeaderComponent = ({ centered, logoType }) => {
         return (
           <div className={`${menuSection} ${resourcesMenu} ${contentPadding}`}>
             <div className={menuItems}>
-              <Link className={menuItem} to="/resources/help-center">
+              <Link className={menuItem} to="/help-center">
                 <div className={menuIcon}>
                   <HelpCenterLogo />
                 </div>
@@ -255,7 +255,7 @@ const HeaderComponent = ({ centered, logoType }) => {
                   <p>Get answers to all of your questions in an instant</p>
                 </div>
               </Link>
-              <Link className={menuItem} to="/industries/blog">
+              <Link className={menuItem} to="/blog">
                 <div className={menuIcon}>
                   <BlogLogo />
                 </div>
@@ -264,7 +264,7 @@ const HeaderComponent = ({ centered, logoType }) => {
                   <p>Get helpful productivity tips from our blog</p>
                 </div>
               </Link>
-              <Link className={menuItem} to="/industries/contact">
+              <Link className={menuItem} to="/contact">
                 <div className={menuIcon}>
                   <ContactLogo />
                 </div>
@@ -284,7 +284,7 @@ const HeaderComponent = ({ centered, logoType }) => {
   const leftMenu = () => {
     if (!overMenu) {
       setTimeout(() => {
-        setHovered(false);
+        setOpen(false);
         setActiveItem(null);
       }, 500);
     }
@@ -307,7 +307,7 @@ const HeaderComponent = ({ centered, logoType }) => {
   };
 
   const showMenu = (val) => {
-    setHovered(true);
+    setOpen(true);
     setActiveItem(val);
   };
 
@@ -340,7 +340,7 @@ const HeaderComponent = ({ centered, logoType }) => {
             <Button btnText="Try for Free" btnStyle="teal" />
           </Link>
         </div>
-        {hovered && (
+        {open && (
           <div
             className={menuClasses(activeItem)}
             onMouseEnter={() => setOverMenu(true)}
@@ -353,4 +353,5 @@ const HeaderComponent = ({ centered, logoType }) => {
     </>
   );
 };
+
 export default HeaderComponent;

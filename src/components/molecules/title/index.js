@@ -1,10 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { container, titleWrapper, descriptionWrapper, leftAligned } from './title.module.scss';
+import {
+  container,
+  titleWrapper,
+  descriptionWrapper,
+  leftAligned,
+  smallTitleStyle,
+  lighterTitle,
+} from './title.module.scss';
 
-const Title = ({ title, description, leftAlign = false, maxWidth, maxDescriptionWidth }) => (
+const Title = ({
+  smallTitle,
+  title,
+  description,
+  leftAlign = false,
+  maxWidth = '',
+  marginBottom = '',
+  maxDescriptionWidth,
+}) => (
   <div className={`${container} ${leftAlign && leftAligned}`}>
-    <h2 style={maxWidth && { maxWidth }} className={titleWrapper}>
+    {smallTitle && <p className={smallTitleStyle}>{smallTitle}</p>}
+    <h2
+      style={{ maxWidth, marginBottom }}
+      className={`${titleWrapper} ${smallTitle && lighterTitle}`}
+    >
       {title}
     </h2>
     <p
@@ -17,6 +36,7 @@ const Title = ({ title, description, leftAlign = false, maxWidth, maxDescription
 );
 
 Title.propTypes = {
+  smallTitle: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   leftAlign: PropTypes.bool,

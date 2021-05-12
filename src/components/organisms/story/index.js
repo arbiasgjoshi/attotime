@@ -7,7 +7,7 @@ const Story = ({ img, paragraph, author, className = '' }) => {
   return (
     <div className={`${styles.container} ${styles[className]}`}>
       <div className={styles.imageContainer}>
-        <img src={img} />
+        <img width={250} height={400} src={img} />
       </div>
       <div className={styles.paragraphContainer}>
         <img className={styles.starsPic} src={stars} />

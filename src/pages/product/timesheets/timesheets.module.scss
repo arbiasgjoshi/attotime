@@ -1,4 +1,4 @@
-.container {
+.teamActivityContainer {
   max-width: 114rem;
   margin: 0 auto;
 
@@ -16,6 +16,16 @@
 
     @include min(tablet) {
       display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 4.5rem;
+
+      > div {
+        margin-bottom: 0;
+      }
+    }
+
+    @include min(desktop) {
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
 
       > div {
@@ -30,6 +40,20 @@
 
     @include min(tablet) {
       justify-content: space-between;
+    }
+
+    > div {
+      @include max(tablet) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    @include max(tablet) {
+      max-width: 90%;
+      margin: 0 auto;
+      > div {
+        margin-bottom: 3rem;
+      }
     }
   }
 

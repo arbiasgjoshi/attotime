@@ -16,7 +16,7 @@
   }
 
   &.productPage {
-    color: #999999;
+    color: var(--gray);
 
     > div input {
       border: 2px solid var(--color-20);

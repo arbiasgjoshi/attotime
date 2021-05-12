@@ -14,6 +14,7 @@ import GrowthNumbers from '@components/organisms/growth-numbers';
 import FooterComponent from '@components/molecules/footer';
 
 import { container } from '@styles/main.module.scss';
+import { productContainer } from './product.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 
@@ -35,6 +36,8 @@ const Product = () => {
       description: `Intuitive, easy-to-use software with no technical knowledge required.`,
       alt: 'Simple',
       icon,
+      imageWidth: 59,
+      imageHeight: 97,
       imagePadding: '.8rem 3.1rem 1.5rem 3rem',
     },
     {
@@ -42,6 +45,8 @@ const Product = () => {
       description: `Combining everything you need to manage your team’s time in one place.`,
       alt: 'All-in-one',
       icon: icon2,
+      imageWidth: 80,
+      imageHeight: 75,
       imagePadding: '2.3rem 2rem 2.2rem 2rem',
     },
     {
@@ -49,6 +54,8 @@ const Product = () => {
       description: `Using automation to save time and let your team focus on productive work.`,
       alt: 'Time Saving',
       icon: icon3,
+      imageWidth: 85,
+      imageHeight: 96,
       imagePadding: '1.2rem 1.72rem 1.269rem 1.8rem',
     },
   ];
@@ -98,7 +105,7 @@ const Product = () => {
   ];
 
   return (
-    <div className={container}>
+    <div className={`${container} ${productContainer}`}>
       <SEO title="Product Overview" />
       <HeaderComponent />
       <MainTitleCard
@@ -115,9 +122,9 @@ const Product = () => {
       />
       <Divider className="style2" />
       {/* TODO This image requires some more fixing, need the PNG file */}
-      <ProductOverviewBanner style={{ marginLeft: '-4.3rem' }} />
+      <ProductOverviewBanner />
       <Divider className="style3" />
-      <IconCardList cardList={firstList} />
+      <IconCardList cardList={firstList} style="smallTimesheetImages" />
       <Divider />
       <ProductCard
         productName="TIME TRACKING"
@@ -127,6 +134,8 @@ const Product = () => {
         image={image1}
         imagePadding="3.5rem 3.1rem"
         path="/product/time-tracking"
+        imageWidth={437}
+        imageHeight={580}
       />
       <Divider />
       <ProductCard
@@ -137,6 +146,8 @@ const Product = () => {
         image={image2}
         isSwapped
         path="/product/gps-location-tracking"
+        imageWidth={500}
+        imageHeight={650}
       />
       <Divider />
       <ProductCard
@@ -147,6 +158,8 @@ const Product = () => {
         image={image3}
         imagePadding="3.5rem 1.87rem 3.5rem 1.8rem"
         path="/product/team-activity"
+        imageWidth={463}
+        imageHeight={580}
       />
       <Divider />
       <ProductCard
@@ -156,8 +169,10 @@ const Product = () => {
         list={productList4}
         image={image4}
         isSwapped
-        imagePadding="3.5rem 3.9rem"
+        imagePadding="5.6rem 3.9rem 3.5rem 3.9rem"
         path="/product/timesheets"
+        imageWidth={408}
+        imageHeight={580}
       />
       <Divider />
       <GrowthNumbers />
@@ -170,7 +185,7 @@ const Product = () => {
       <Divider />
       <SubscribeBanner
         bannerImage
-        title="Stay in control of what's happening with team activity updates!"
+        title="Free up your time and focus on what really matters"
         placeholder="Type your email"
         checkItemOne="No credit card required"
         checkItemTwo="14 day free trial"

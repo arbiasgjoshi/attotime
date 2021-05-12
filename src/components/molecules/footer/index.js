@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Link } from 'gatsby-plugin-intl';
-// import DropDown from '@components/molecules/dropdown';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import {
@@ -32,21 +31,26 @@ const Footer = ({ FooterLinks }) => (
       </div>
       <div className={footerSitemap}>
         {FooterLinks.map((section) => (
-          <div className={footerLinksWrapper}>
+          <div className={footerLinksWrapper} key={section.id}>
             <Link className={parentPath} to={`${section.parentPath}`}>
               {section.parent}
             </Link>
             {section.subMenuLinks.map((subMenu) => (
-              <Link to={`${subMenu.path}`} className={subMenu.hasLine && hasLine}>
+              <Link
+                to={`${subMenu.path}`}
+                className={subMenu.hasLine ? hasLine : null}
+                key={subMenu.id}
+              >
                 {subMenu.name}
               </Link>
             ))}
             {section.downloadApp && (
               <div className={downloadApp}>
+                <h6>Download</h6>
                 {section.downloadApp.map((app) => (
-                  <a href={app.href} target="_blank" rel="noreferrer">
-                    <img src={app.src} />
-                  </a>
+                  <Link to={app.href} target="_blank" rel="noreferrer" key={app.id}>
+                    <img src={app.src} alt="Mobile" />
+                  </Link>
                 ))}
               </div>
             )}
@@ -59,7 +63,7 @@ const Footer = ({ FooterLinks }) => (
 );
 
 Footer.propTypes = {
-  FooterLinks: PropTypes.shape(),
+  FooterLinks: PropTypes.shape({}),
 };
 
 export default Footer;

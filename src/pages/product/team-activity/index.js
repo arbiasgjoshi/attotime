@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  container,
+  teamActivityContainer,
   learnMoreContainer,
   checkListContainer,
   featuresStyle,
@@ -20,6 +20,7 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 import FeaturesList from '@components/organisms/features-list';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
+import { container } from '@styles/main.module.scss';
 
 import authorImage from '@images/authorImage.png';
 import image1 from '@images/team-management-departments.png';
@@ -27,11 +28,12 @@ import image2 from '@images/find-out.png';
 import image3 from '@images/eliminate-checks.png';
 import image4 from '@images/activity-updates@2x.png';
 
-import Timer from '@images/timer.svg';
-import Flag from '@images/flag.svg';
-import Ringbell from '@images/ringbell.svg';
-import MLogo from '@images/m-logo.svg';
-import Brightness from '@images/brightness.svg';
+import Team from '@images/team.svg';
+import Timeline from '@images/timeline.svg';
+import Departments from '@images/departments.svg';
+import FilterAndSearch from '@images/filter-and-search.svg';
+import Notifications from '@images/notifications.svg';
+import Messaging from '@images/messaging.svg';
 
 import icon14 from '@images/time-tracking-clock@1x.png';
 import icon15 from '@images/location@1x.png';
@@ -61,37 +63,37 @@ const TeamActivity = () => {
     {
       title: 'Employee Status Overview',
       description: `Stay in control of your team’s daily activity with real-time updates on their status and location.`,
-      logo: <Timer />,
+      logo: <Team />,
       alt: 'Employee status logo',
     },
     {
       title: 'Daily Timeline',
       description: `See a clear, simple timeline view of every employee’s daily activity.`,
-      logo: <Flag />,
+      logo: <Timeline />,
       alt: 'Geofencing Flag',
     },
     {
       title: 'Departments',
       description: `Organize employees into departments based on their location, job site, or role.`,
-      logo: <Ringbell />,
+      logo: <Departments />,
       alt: 'Ringbell reminder logo',
     },
     {
       title: 'Filter and Search',
       description: `Filter teams based on their status, department, or simply search for their name.`,
-      logo: <MLogo />,
+      logo: <FilterAndSearch />,
       alt: '',
     },
     {
       title: 'Smart Notifications',
       description: `Get notified whenever an employee clocks in or out, takes a break, or edits a time entry.`,
-      logo: <Brightness />,
+      logo: <Notifications />,
       alt: '',
     },
     {
       title: 'Messaging*',
       description: `Allow employees to send messages and share photos 1-1 or in group chats.`,
-      logo: <Flag />,
+      logo: <Messaging />,
       alt: '',
     },
   ];
@@ -101,13 +103,14 @@ const TeamActivity = () => {
     { title: 'Landscaping & Gardening', icon: <LandscapingLogo /> },
     { title: 'Roofing', icon: <RoofingLogo /> },
     { title: 'Painting & Decorating', icon: <PaintingLogo /> },
+    { title: 'Cleaning & Maintenance', icon: <CleaningLogo /> },
     { title: 'Healthcare & Medical', icon: <HealthcareLogo /> },
     { title: 'Electrical', icon: <ElectrianLogo /> },
     { title: 'Plumbing & Heating', icon: <PlumbingLogo /> },
     { title: 'Other industries', icon: <ThreeDots /> },
   ];
   return (
-    <div className={container}>
+    <div className={`${teamActivityContainer} ${container}`}>
       <Header />
       <MainTitleCard
         hasParagraph
@@ -130,6 +133,8 @@ const TeamActivity = () => {
         image={image4}
         maxWidth={500}
         imagePadding="7.3rem 4.5rem"
+        imageWidth={400}
+        imageHeight={354}
       />
       <Article
         title="Simplify team management with departments"
@@ -138,6 +143,8 @@ const TeamActivity = () => {
         isSwapped
         maxWidth={500}
         imagePadding="4.4rem 5.9rem 4.3rem 5.3rem"
+        imageWidth={398}
+        imageHeight={413}
       />
       <Article
         title="Find out what any employee is up to in seconds"
@@ -145,6 +152,8 @@ const TeamActivity = () => {
         image={image2}
         maxWidth={500}
         imagePadding="3.3rem 4.2rem 2.4rem 10.7rem"
+        imageWidth={371}
+        imageHeight={443}
       />
       <Article
         title="Eliminate back and forth phone calls and constant check-ins"
@@ -153,6 +162,8 @@ const TeamActivity = () => {
         isSwapped
         maxWidth={500}
         imagePadding="5.6rem 5.5rem"
+        imageWidth={380}
+        imageHeight={388}
       />
       <Article
         title="See your team’s progress at the end of each day"
@@ -160,6 +171,8 @@ const TeamActivity = () => {
         image={image1}
         maxWidth={500}
         imagePadding="1.8rem 5.5rem"
+        imageWidth={400}
+        imageHeight={464}
       />
       <Divider />
       <Title maxWidth={880} title="Our full suite of team activity features at a glance" />
@@ -195,18 +208,24 @@ const TeamActivity = () => {
           icon={icon14}
           description="See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!"
           path="/product/time-tracking"
+          imageWidth={30}
+          imageHeight={34}
         />
         <LearnMoreCard
           title="GPS Location Tracking"
           description="Increase the safety and accountability of your team with real-time updates on their location."
           icon={icon15}
           path="/product/gps-location-tracking"
+          imageWidth={27}
+          imageHeight={32}
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
           icon={icon16}
           path="/product/timesheets"
+          imageWidth={30}
+          imageHeight={33}
         />
       </div>
       <Divider />

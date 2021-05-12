@@ -1,4 +1,4 @@
-.container {
+.teamActivityContainer {
   max-width: 114rem;
   margin: 0 auto;
 
@@ -9,6 +9,20 @@
       justify-content: space-between;
     }
     flex-wrap: wrap;
+
+    > div {
+      @include max(tablet) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    @include max(tablet) {
+      max-width: 90%;
+      margin: 0 auto;
+      > div {
+        margin-bottom: 3rem;
+      }
+    }
   }
 
   .featuresStyle {

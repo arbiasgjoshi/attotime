@@ -1,14 +1,12 @@
-@import 'variables';
+@import './variables.scss';
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?4y6pyv');
-  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?4y6pyv#iefix')
-      format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?4y6pyv') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?4y6pyv') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?4y6pyv##{$icomoon-font-family}')
-      format('svg');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -29,9 +27,236 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.attoicon-break {
+  &:before {
+    content: $attoicon-break;
+  }
+}
+.attoicon-departments {
+  &:before {
+    content: $attoicon-departments;
+  }
+}
+.attoicon-email {
+  &:before {
+    content: $attoicon-email;
+  }
+}
+.attoicon-jobs {
+  &:before {
+    content: $attoicon-jobs;
+  }
+}
+.attoicon-location-tracking {
+  &:before {
+    content: $attoicon-location-tracking;
+  }
+}
+.attoicon-manual-entries {
+  &:before {
+    content: $attoicon-manual-entries;
+  }
+}
+.attoicon-named-locations {
+  &:before {
+    content: $attoicon-named-locations;
+  }
+}
+.attoicon-night-shift {
+  &:before {
+    content: $attoicon-night-shift;
+  }
+}
+.attoicon-notes {
+  &:before {
+    content: $attoicon-notes;
+  }
+}
+.attoicon-overtime {
+  &:before {
+    content: $attoicon-overtime;
+  }
+}
+.attoicon-time-tracking1 {
+  &:before {
+    content: $attoicon-time-tracking1;
+  }
+}
 .attoicon-timesheets {
   &:before {
     content: $attoicon-timesheets;
+  }
+}
+.attoicon-timesheets-rounded1 {
+  &:before {
+    content: $attoicon-timesheets-rounded1;
+  }
+}
+.attoicon-sand-clock {
+  &:before {
+    content: $attoicon-sand-clock;
+  }
+}
+.attoicon-battery {
+  &:before {
+    content: $attoicon-battery;
+  }
+}
+.attoicon-crew {
+  &:before {
+    content: $attoicon-crew;
+  }
+}
+.attoicon-support {
+  &:before {
+    content: $attoicon-support;
+  }
+}
+.attoicon-help-support {
+  &:before {
+    content: $attoicon-help-support;
+  }
+}
+.attoicon-job-costing {
+  &:before {
+    content: $attoicon-job-costing;
+  }
+}
+.attoicon-kiosk {
+  &:before {
+    content: $attoicon-kiosk;
+  }
+}
+.attoicon-location-history {
+  &:before {
+    content: $attoicon-location-history;
+  }
+}
+.attoicon-mobile-tt {
+  &:before {
+    content: $attoicon-mobile-tt;
+  }
+}
+.attoicon-named-sites {
+  &:before {
+    content: $attoicon-named-sites;
+  }
+}
+.attoicon-privacy {
+  &:before {
+    content: $attoicon-privacy;
+  }
+}
+.attoicon-share {
+  &:before {
+    content: $attoicon-share;
+  }
+}
+.attoicon-team-activity {
+  &:before {
+    content: $attoicon-team-activity;
+  }
+}
+.attoicon-team {
+  &:before {
+    content: $attoicon-team;
+  }
+}
+.attoicon-profitable-bids {
+  &:before {
+    content: $attoicon-profitable-bids;
+  }
+}
+.attoicon-time-tracking {
+  &:before {
+    content: $attoicon-time-tracking;
+  }
+}
+.attoicon-timezone {
+  &:before {
+    content: $attoicon-timezone;
+  }
+}
+.attoicon-view-map {
+  &:before {
+    content: $attoicon-view-map;
+  }
+}
+.attoicon-wage-estimates {
+  &:before {
+    content: $attoicon-wage-estimates;
+  }
+}
+.attoicon-wage-estimates-bold {
+  &:before {
+    content: $attoicon-wage-estimates-bold;
+  }
+}
+.attoicon-wages .path1 {
+  &:before {
+    content: $attoicon-wages-path1;
+    color: rgb(38, 38, 38);
+  }
+}
+.attoicon-wages .path2 {
+  &:before {
+    content: $attoicon-wages-path2;
+    margin-left: -1em;
+    color: rgb(38, 38, 38);
+  }
+}
+.attoicon-wages .path3 {
+  &:before {
+    content: $attoicon-wages-path3;
+    margin-left: -1em;
+    color: rgb(38, 38, 38);
+  }
+}
+.attoicon-wages .path4 {
+  &:before {
+    content: $attoicon-wages-path4;
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+  }
+}
+.attoicon-web-tt {
+  &:before {
+    content: $attoicon-web-tt;
+  }
+}
+.attoicon-archive {
+  &:before {
+    content: $attoicon-archive;
+  }
+}
+.attoicon-time-entry-history {
+  &:before {
+    content: $attoicon-time-entry-history;
+  }
+}
+.attoicon-notifications {
+  &:before {
+    content: $attoicon-notifications;
+  }
+}
+.attoicon-filters {
+  &:before {
+    content: $attoicon-filters;
+  }
+}
+.attoicon-timeline {
+  &:before {
+    content: $attoicon-timeline;
+  }
+}
+.attoicon-customize {
+  &:before {
+    content: $attoicon-customize;
+  }
+}
+.attoicon-pto {
+  &:before {
+    content: $attoicon-pto;
   }
 }
 .attoicon-close {
@@ -107,5 +332,10 @@ i {
 .attoicon-arrow-right {
   &:before {
     content: $attoicon-arrow-right;
+  }
+}
+.attoicon-long-arrow {
+  &:before {
+    content: $attoicon-long-arrow;
   }
 }

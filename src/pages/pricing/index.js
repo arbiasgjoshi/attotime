@@ -11,11 +11,10 @@ import PackageCard from '@components/molecules/package-card';
 import Title from '@components/molecules/title';
 import Story from '@components/organisms/story';
 import FeaturesList from '@components/organisms/features-list';
+import PriceDragger from '@components/molecules/price-dragger';
 
 import { container } from '@styles/main.module.scss';
-
 import authorImage2 from '@images/authorImage2.png';
-
 import { StaticImage } from 'gatsby-plugin-image';
 
 import TimesheetIcon from '@images/timesheets.svg';
@@ -28,6 +27,7 @@ import TenderIcon from '@images/tender.svg';
 import SupportIcon from '@images/help_support.svg';
 import ProfileIcon from '@images/profile.svg';
 
+import Faq from '@components/organisms/faq';
 import {
   packageWrapper,
   priceHeader,
@@ -37,7 +37,6 @@ import {
   discount,
   behindMask,
 } from './pricing.module.scss';
-import Faq from '@components/organisms/faq';
 
 const Pricing = () => {
   const [active, setActive] = useState('monthly');
@@ -208,7 +207,7 @@ const Pricing = () => {
       <Divider className="style5" />
       <div className={featuresBanner}>
         <StaticImage src="../../images/video-background@2x.png" width={1140} height={170} />
-        <Button btnText="View All Features" />
+        <Button btnText="View All Features" btnStyle="big" />
       </div>
       <Divider className="medium" />
       <Title
@@ -217,13 +216,12 @@ const Pricing = () => {
         maxWidth={900}
         maxDescriptionwidth={900}
       />
-
-      <Divider className="style2" />
-      <Divider className="style2" />
+      <PriceDragger />
+      <Divider />
       <Story
         img={authorImage2}
-        paragraph={`“Quote from an Enterprise level customer about how amazing Atto is and how it helps improve their business”`}
-        author="[Name of person], [Company Position], [Company Name]"
+        paragraph="“Quote from an Enterprise level customer about how amazing Atto is and how it helps improve their business”"
+        author="Andrew Platonic, CEO, Scuable Inc."
       />
       <Divider />
       <Title title="All our main features, included in one simple plan" maxWidth={900} />
@@ -240,12 +238,13 @@ const Pricing = () => {
       <Faq list={faqList} />
       <SubscribeBanner
         bannerImage
-        title="There's no time to waste!"
+        title="There’s no time to waste!"
         subtitle="Try Atto, free for 14 days"
         placeholder="Type your email"
         checkItemOne="No credit card required"
         checkItemTwo="14 day free trial"
         checkItemThree="Cancel anytime"
+        style="pricing"
       />
       <FooterComponent FooterLinks={FooterLinks} />
     </div>

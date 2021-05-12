@@ -7,6 +7,13 @@
     margin: 0 auto;
   }
 
+  @include max(tablet) {
+    > button {
+      width: 100% !important;
+      margin-top: 1rem;
+    }
+  }
+
   > input {
     margin-right: 1.2rem;
   }

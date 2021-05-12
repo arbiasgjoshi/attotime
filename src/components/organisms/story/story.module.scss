@@ -27,13 +27,8 @@
   .paragraphContainer {
     display: flex;
     flex-direction: column;
-    max-width: 52.5rem;
+    max-width: 60.2rem;
     margin-top: 3rem;
-    padding: 0 2rem;
-
-    @include min(tablet) {
-      padding: 0;
-    }
 
     h4 {
       margin-bottom: 5rem;
@@ -50,6 +45,21 @@
     .starsPic {
       width: 19.2rem;
       margin-bottom: 5rem;
+    }
+  }
+
+  @include max(mobile) {
+    .paragraphContainer {
+      img {
+        margin: 0 auto 2rem;
+      }
+      h4 {
+        margin-bottom: 3rem;
+      }
+      h4,
+      h6 {
+        text-align: center;
+      }
     }
   }
 

@@ -54,6 +54,14 @@
           color: #000;
         }
       }
+
+      button:first-child {
+        margin-right: 1rem;
+
+        @include min(tablet) {
+          margin: 0;
+        }
+      }
     }
   }
 }

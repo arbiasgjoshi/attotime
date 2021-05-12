@@ -11,13 +11,34 @@
       width: 100%;
       margin-top: 6.6rem;
       display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include min(desktop) {
+      margin: 0;
+      text-align: left;
+      width: 100%;
+      margin-top: 6.6rem;
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
 
     > div {
-      margin-right: 4.5rem;
-      width: 35rem;
-      height: 14rem;
+      @include min(desktop) {
+        margin-right: 4.5rem;
+        width: 35rem;
+        height: 14rem;
+      }
+    }
+
+    @include max(mobile) {
+      display: grid;
+      padding: 0 2rem;
+      grid-template-columns: repeat(1, 1fr);
+
+      > div {
+        text-align: left;
+      }
     }
   }
 }

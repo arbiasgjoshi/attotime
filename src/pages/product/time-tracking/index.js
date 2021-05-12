@@ -20,6 +20,7 @@ import GrowthNumbers from '@components/organisms/growth-numbers';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
+import { container } from '@styles/main.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
 import authorImage from '@images/authorImage.png';
@@ -69,7 +70,7 @@ import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
 
 import {
-  container,
+  timeTrackingContainer,
   checkListContainer,
   learnMoreContainer,
   workListContainer,
@@ -88,6 +89,8 @@ const TimeTracking = () => {
       alt: 'Easy to use',
       icon,
       imagePadding: '.8rem 3.1rem 1.5rem 3rem',
+      imageWidth: 59,
+      imageHeight: 97,
     },
     {
       title: 'Accurate',
@@ -95,6 +98,8 @@ const TimeTracking = () => {
       alt: 'Accurate',
       icon: icon2,
       imagePadding: '.8rem .6rem 1.9rem 2rem',
+      imageWidth: 94,
+      imageHeight: 93,
     },
     {
       title: 'Trustworthy',
@@ -102,6 +107,8 @@ const TimeTracking = () => {
       alt: 'Trustworthy',
       icon: icon3,
       imagePadding: '1.2rem 1rem',
+      imageWidth: 100,
+      imageHeight: 96,
     },
   ];
 
@@ -111,36 +118,48 @@ const TimeTracking = () => {
       description: `Tap the giant pulsating clock in/out button to start tracking time.`,
       alt: 'Easy to use',
       icon: icon4,
+      imageWidth: 350,
+      imageHeight: 244,
     },
     {
       title: 'Write notes',
       description: `Add notes to your time tracking records, such as a work diary.`,
       alt: 'write notes',
       icon: icon5,
+      imageWidth: 350,
+      imageHeight: 244,
     },
     {
       title: 'Track Breaks',
       description: `Track breaks and categorize them as either paid or unpaid.`,
       alt: 'track breaks',
       icon: icon6,
+      imageWidth: 350,
+      imageHeight: 244,
     },
     {
       title: 'Manage overtime',
       description: `Decide if overtime should be tracked, and if so, whether it’s calculated weekly, daily or daily double.`,
       alt: 'Manage overtime',
       icon: icon7,
+      imageWidth: 350,
+      imageHeight: 244,
     },
     {
       title: 'Switch between jobs',
       description: `Use job codes to categorize time tracked towards specific purposes – for example for each client or type of job.`,
       alt: 'Switch between jobs',
       icon: icon8,
+      imageWidth: 350,
+      imageHeight: 244,
     },
     {
       title: 'Add time off',
       description: `Add time off such as vacations and sick leave to help managers understand who’s available to work.`,
       alt: 'Time off',
       icon: icon9,
+      imageWidth: 350,
+      imageHeight: 244,
     },
   ];
 
@@ -198,55 +217,55 @@ const TimeTracking = () => {
       title: 'Manual Time Entries',
       description: `Allow admins, managers, or employees the option to add manual time entries to their timesheets.`,
       logo: <MLogo />,
-      alt: '',
+      alt: 'Manual time entries',
     },
     {
       title: 'Time Off',
       description: `Add and categorize time off entries, specifying whether time off is paid or unpaid.`,
       logo: <Brightness />,
-      alt: '',
+      alt: 'time off',
     },
     {
       title: 'Notes',
       description: `Add notes to provide context to time entries, such as a work diary or job information.`,
       logo: <Notes />,
-      alt: '',
+      alt: 'notes ',
     },
     {
       title: 'Overtime Rules',
       description: `Set regular employee working hours per day/week and assign any extra hours to count as overtime.`,
       logo: <Overtime />,
-      alt: '',
+      alt: 'overtime',
     },
     {
       title: 'Break Preferences',
       description: `Decide if breaks are paid or unpaid, the amount of time to be deducted, and categorize them.      `,
       logo: <Coffe />,
-      alt: '',
+      alt: 'break coffe',
     },
     {
       title: 'Job Codes',
       description: `Categorize time tracked towards specific purposes such as per client, project, or type of work.`,
       logo: <Bookmark />,
-      alt: '',
+      alt: 'job codes',
     },
     {
       title: 'Rounded Clock-in / Out Times',
       description: `Set clock in and out times to be automatically rounded to an increment of your choice.`,
       logo: <Clock />,
-      alt: '',
+      alt: 'rounded clock in',
     },
     {
       title: 'Fixed Time Zones',
       description: `Automatically adjust your team’s hours to a set time zone, regardless of their device’s time zone.`,
       logo: <Browser />,
-      alt: '',
+      alt: 'fixed time zone',
     },
     {
       title: 'Split Night-Shift Time Entries',
       description: `Split time entries at midnight, with hours tracked after midnight counting for the following day.`,
       logo: <Darkmode />,
-      alt: '',
+      alt: 'split night shift',
     },
   ];
 
@@ -255,6 +274,7 @@ const TimeTracking = () => {
     { title: 'Landscaping & Gardening', icon: <LandscapingLogo /> },
     { title: 'Roofing', icon: <RoofingLogo /> },
     { title: 'Painting & Decorating', icon: <PaintingLogo /> },
+    { title: 'Cleaning & Maintenance', icon: <CleaningLogo /> },
     { title: 'Healthcare & Medical', icon: <HealthcareLogo /> },
     { title: 'Electrical', icon: <ElectrianLogo /> },
     { title: 'Plumbing & Heating', icon: <PlumbingLogo /> },
@@ -262,7 +282,7 @@ const TimeTracking = () => {
   ];
 
   return (
-    <div className={container}>
+    <div className={`${container} ${timeTrackingContainer}`}>
       <SEO title="Product - Time Tracking" />
       <Header />
       <MainTitleCard
@@ -313,6 +333,7 @@ const TimeTracking = () => {
           description="When at the office, track your time using Atto’s web-based time clock."
           logo={<WebTracking />}
           alt="Web time tracking"
+          imagePadding=".8rem 2.9rem .797rem .1rem"
         />
         <FeatureCard
           isWorkCard
@@ -320,6 +341,7 @@ const TimeTracking = () => {
           description="Track time on the go with the Atto mobile app available on iOS and Android."
           logo={<MobileTracking />}
           alt="Mobile time tracking"
+          imagePadding=".5rem 3.24rem .587rem 0"
         />
         <FeatureCard
           isWorkCard
@@ -327,6 +349,7 @@ const TimeTracking = () => {
           description="Set up a time clock kiosk to enable your team to track time from a single device."
           logo={<KioskTracking />}
           alt="Kiosk time tracking"
+          imagePadding=".9rem 2.5rem .85rem .4rem"
         />
       </div>
       <Divider />
@@ -353,6 +376,8 @@ const TimeTracking = () => {
         <IconCard
           bigImage
           isRound
+          imageWidth={250}
+          imageHeight={250}
           icon={icon22}
           alt="Employees forget"
           title="Employees forget to track their time?"
@@ -362,6 +387,8 @@ const TimeTracking = () => {
           isRound
           bigImage
           icon={icon23}
+          imageWidth={250}
+          imageHeight={250}
           alt="Out of battery"
           title="What if phone ran out of battery?"
           description="Not a problem! If an employee forgets their phone, or it runs out of battery, either they or a manager can add a manual time entry for your approval."
@@ -369,6 +396,8 @@ const TimeTracking = () => {
         <IconCard
           bigImage
           isRound
+          imageWidth={250}
+          imageHeight={250}
           icon={noImage}
           alt="Not sure if employees"
           title={`Not sure if employees are where they’re supposed to?`}
@@ -377,7 +406,7 @@ const TimeTracking = () => {
       </div>
       <Divider />
       <Title
-        title="A work hours tracker for any industry"
+        title="Time tracking solutions for any industry"
         description="Atto helps all types of businesses across the world to manage their employees’ time."
         maxDescriptionWidth={700}
       />
@@ -393,6 +422,7 @@ const TimeTracking = () => {
       <Title
         title={`It doesn't end here!`}
         description="Learn more about what Atto can do for you"
+        marginBottom="4px"
       />
       <Divider className="style6" />
       <div className={learnMoreContainer}>
@@ -401,18 +431,24 @@ const TimeTracking = () => {
           description="Increase the safety and accountability of your team with real-time updates on their location."
           icon={icon32}
           path="/product/gps-location-tracking"
+          imageWidth={27}
+          imageHeight={32}
         />
         <LearnMoreCard
           title="Team Activity"
           description="Stay in the loop with what's happening - without needing to pick up the phone"
           icon={icon33}
           path="/product/team-activity"
+          imageWidth={42}
+          imageHeight={44}
         />
         <LearnMoreCard
           title="Timesheets"
           description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
           icon={icon34}
           path="/product/timesheets"
+          imageWidth={30}
+          imageHeight={33}
         />
       </div>
       <Divider />

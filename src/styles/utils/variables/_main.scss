@@ -6,6 +6,7 @@
   --fourth-color: var(--color-white);
   --fifth-color: var(--color-4);
   --sixth-color: var(--color-5);
+  --gray: var(--color-22);
 
   // Font
   --main-font: 'Calibre';
@@ -79,29 +80,29 @@
   // TODO Careful with mobile sizes, we will have new styles for these
   --h1-mobile-size: calc(var(--h1-size) * 0.66667);
   --h2-mobile-size: calc(var(--h2-size) * 0.66667);
-  --h3-mobile-size: calc(var(--h3-size) * 0.66667);
-  --h4-mobile-size: calc(var(--h4-size) * 0.66667);
-  --h5-mobile-size: calc(var(--h5-size) * 0.66667);
-  --h6-mobile-size: calc(var(--h6-size) * 0.66667);
+  --h3-mobile-size: calc(var(--h3-size) * 0.75);
+  --h4-mobile-size: calc(var(--h4-size) * 0.75);
+  --h5-mobile-size: calc(var(--h5-size) * 0.8);
+  --h6-mobile-size: calc(var(--h6-size) * 0.8);
 
-  --body-style-one-mobile-size: calc(var(--body-style-one) * 0.66667);
-  --body-style-two-mobile-size: calc(var(--body-style-two) * 0.66667);
-  --body-style-three-mobile-size: calc(var(--body-style-three) * 0.66667);
-  --body-style-four-mobile-size: calc(var(--body-style-four) * 0.66667);
-  --body-style-five-mobile-size: calc(var(--body-style-five) * 0.66667);
+  --body-style-one-mobile-size: calc(var(--body-style-one) * 0.8);
+  --body-style-two-mobile-size: calc(var(--body-style-two) * 0.8);
+  --body-style-three-mobile-size: calc(var(--body-style-three) * 0.9);
+  --body-style-four-mobile-size: calc(var(--body-style-four) * 0.9);
+  --body-style-five-mobile-size: calc(var(--body-style-five) * 0.9);
 
   --h1-mobile-line-height-size: calc(var(--h1-line-height-size) * 0.66667);
   --h2-mobile-line-height-size: calc(var(--h2-line-height-size) * 0.66667);
-  --h3-mobile-line-height-size: calc(var(--h3-line-height-size) * 0.66667);
-  --h4-mobile-line-height-size: calc(var(--h4-line-height-size) * 0.66667);
-  --h5-mobile-line-height-size: calc(var(--h5-line-height-size) * 0.66667);
-  --h6-mobile-line-height-size: calc(var(--h6-line-height-size) * 0.66667);
+  --h3-mobile-line-height-size: calc(var(--h3-line-height-size) * 0.75);
+  --h4-mobile-line-height-size: calc(var(--h4-line-height-size) * 0.75);
+  --h5-mobile-line-height-size: calc(var(--h5-line-height-size) * 0.8);
+  --h6-mobile-line-height-size: calc(var(--h6-line-height-size) * 0.8);
 
-  --body-style-one-mobile-line-height: calc(var(--body-style-one-line-height-size) * 0.66667);
-  --body-style-two-mobile-line-height: calc(var(--body-style-two-line-height-size) * 0.66667);
-  --body-style-three-mobile-line-height: calc(var(--body-style-three-line-height-size) * 0.66667);
-  --body-style-four-mobile-line-height: calc(var(--body-style-four-line-height-size) * 0.66667);
-  --body-style-five-mobile-line-height: calc(var(--body-style-five-line-height-size) * 0.66667);
+  --body-style-one-mobile-line-height: calc(var(--body-style-one-line-height-size) * 0.8);
+  --body-style-two-mobile-line-height: calc(var(--body-style-two-line-height-size) * 0.8);
+  --body-style-three-mobile-line-height: calc(var(--body-style-three-line-height-size) * 0.9);
+  --body-style-four-mobile-line-height: calc(var(--body-style-four-line-height-size) * 0.9);
+  --body-style-five-mobile-line-height: calc(var(--body-style-five-line-height-size) * 0.9);
 
   // Z-index
   --modal-index: 300;
