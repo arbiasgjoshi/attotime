@@ -7,7 +7,12 @@ const Cover = ({ isSwapped = false }) => (
   <div className={`${container} ${isSwapped && swap}`}>
     <div className={leftBox}>
       <div className={iconWrapper}>
-        <StaticImage width={48} height={57} src="../../../../images/verifiedShield.svg" />
+        <StaticImage
+          quality={96}
+          width={48}
+          height={57}
+          src="../../../../images/verifiedShield.svg"
+        />
       </div>
       <h4>Trusted by thousands of bussinesses across 50+ countries globally.</h4>
     </div>
@@ -15,7 +20,7 @@ const Cover = ({ isSwapped = false }) => (
       className={imageWrapper}
       width={746}
       height={400}
-      quality={90}
+      quality={96}
       src="../../../../images/trusted-img@2x.png"
     />
   </div>

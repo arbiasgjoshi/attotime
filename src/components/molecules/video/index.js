@@ -23,6 +23,7 @@ const Video = () => (
       className={videoPlaceholder}
       width={960}
       height={489}
+      quality={96}
       alt="Video placeholder"
       src="../../../images/video_placeholder@2x.png"
     />

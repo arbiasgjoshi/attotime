@@ -62,7 +62,7 @@ const Blog = () => (
         <Button btnText={title} />
       ))}
     </div>
-    <StaticImage width={1140} height={450} src="../../images/browser5.jpeg" />
+    <StaticImage quality={96} width={1140} height={450} src="../../images/browser5.jpeg" />
     <Title
       maxWidth={780}
       smallTitle="Published March 27, 2021 in Productivity   ·   2 min read   ·   by Nick Blackeye"
