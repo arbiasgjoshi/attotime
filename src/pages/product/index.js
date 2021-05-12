@@ -122,7 +122,7 @@ const Product = () => {
       <ProductCard
         productName="TIME TRACKING"
         title="Accurate time tracking at your fingertips"
-        description="Track time from any device, anytime, and anywhere. See every minute on the clock, including work hours, breaks, and time-off."
+        description="Know where your employees’ time is going. See every minute on the clock including work hours, breaks, and time off."
         list={productList1}
         image={image1}
         imagePadding="3.5rem 3.1rem"

@@ -24,12 +24,13 @@ const FeatureTabs = () => {
       />
       <div className={activeIndex === 0 ? content : inactive}>
         <ProductCard
-          title="Simple time tracking with accurate time entries"
-          description="Track time anytime and anywhere – on iOS, Android, the Web, and via the Time Clock Kiosk."
+          title="Track time from any device, anytime, and anywhere"
+          description="Say goodbye to employee estimates. See every minute on the clock, including work hours, breaks, and time off."
           image={image1}
           isSwapped
           style="homepage"
           path="/product/time-tracking"
+          imagePadding="3.5rem 3.1rem"
         />
       </div>
       <div className={activeIndex === 1 ? content : inactive}>
@@ -50,6 +51,7 @@ const FeatureTabs = () => {
           isSwapped
           style="homepage"
           path="/product/team-activity"
+          imagePadding="3.5rem 1.8rem"
         />
       </div>
       <div className={activeIndex === 3 ? content : inactive}>
