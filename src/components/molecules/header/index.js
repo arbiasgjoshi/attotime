@@ -315,7 +315,7 @@ const HeaderComponent = () => {
     <>
       <header className={headerContainer}>
         <div className={leftNav}>
-          <StaticImage src="../../../images/logo@2x.png" quality={90} width={85} />
+          <StaticImage src="../../../images/logo@2x.png" quality={100} width={85} />
         </div>
         <div
           className={menuLinks}
