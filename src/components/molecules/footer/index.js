@@ -31,19 +31,23 @@ const Footer = ({ FooterLinks }) => (
       </div>
       <div className={footerSitemap}>
         {FooterLinks.map((section) => (
-          <div className={footerLinksWrapper}>
+          <div className={footerLinksWrapper} key={section.id}>
             <Link className={parentPath} to={`${section.parentPath}`}>
               {section.parent}
             </Link>
             {section.subMenuLinks.map((subMenu) => (
-              <Link to={`${subMenu.path}`} className={subMenu.hasLine && hasLine}>
+              <Link
+                to={`${subMenu.path}`}
+                className={subMenu.hasLine ? hasLine : null}
+                key={subMenu.id}
+              >
                 {subMenu.name}
               </Link>
             ))}
             {section.downloadApp && (
               <div className={downloadApp}>
                 {section.downloadApp.map((app) => (
-                  <a href={app.href} target="_blank" rel="noreferrer">
+                  <a href={app.href} target="_blank" rel="noreferrer" key={app.id}>
                     <img src={app.src} alt="Mobile" />
                   </a>
                 ))}
@@ -58,7 +62,7 @@ const Footer = ({ FooterLinks }) => (
 );
 
 Footer.propTypes = {
-  FooterLinks: PropTypes.shape(),
+  FooterLinks: PropTypes.shape({}),
 };
 
 export default Footer;

@@ -71,8 +71,13 @@ const CustomSelect = () => {
         <ArrowDown className={open ? invertedArrow : null} />
       </div>
       <div className={`${optionsDropdown} ${open && isOpened}`}>
-        {languages.map((lang) => (
-          <button className={buttonClass(lang)} onClick={() => changeLocale(lang.id)} type="button">
+        {languages.map((lang, ix) => (
+          <button
+            className={buttonClass(lang)}
+            onClick={() => changeLocale(lang.id)}
+            type="button"
+            key={ix}
+          >
             {lang.name}
           </button>
         ))}

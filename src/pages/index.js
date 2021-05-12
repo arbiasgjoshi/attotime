@@ -27,26 +27,28 @@ import RoofingLogo from '@images/roofing-industry-logo.svg';
 import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
 
+import Icon from '@components/atoms/icon';
 import { StaticImage } from 'gatsby-plugin-image';
-// import CommentCard from '@components/molecules/comment-card';
-
-import authorImage from '@images/no-image.png';
-import CarouselComponent from '@components/molecules/carousel';
+import CommentCard from '@components/molecules/comment-card';
 
 // import ArrowRight from '@images/arrow-right.svg';
 // import ArrowLeft from '@images/arrow-left.svg';
+
+import authorImage from '@images/no-image.png';
+import CarouselComponent from '@components/molecules/carousel';
+import Slider from 'react-slick';
+import '@styles/includes/slick-carousel.scss';
 
 // import Carousel, { Dots, slidesToShowPlugin, arrowsPlugin } from '@brainhubeu/react-carousel';
 // import '@brainhubeu/react-carousel/lib/style.css';
 // import '@components/molecules/carousel/carousel.scss';
 
-// import {
-//   btnWrapper,
-//   leftAligned,
-//   rightAligned,
-//   disabled,
-//   carouselWrapper,
-// } from '@components/molecules/carousel/carousel.module.scss';
+import {
+  btnWrapper,
+  pulledLeft,
+  pulledRight,
+  carouselWrapper,
+} from '@components/molecules/carousel/carousel.module.scss';
 
 import {
   // slider,
@@ -82,6 +84,76 @@ const serviceList = [
   { title: 'Other industries', icon: <ThreeDots /> },
 ];
 
+const SampleNextArrow = (props) => {
+  // eslint-disable-next-line react/prop-types
+  const { onClick } = props;
+  return (
+    <button className={`${btnWrapper} ${pulledRight}`} onClick={onClick} type="button">
+      <Icon iconClass="arrow-right" fSize={1.2} />
+    </button>
+  );
+};
+
+const SamplePrevArrow = (props) => {
+  // eslint-disable-next-line react/prop-types
+  const { onClick } = props;
+  return (
+    <button className={`${btnWrapper} ${pulledLeft}`} onClick={onClick} type="button">
+      <Icon iconClass="arrow-left" fSize={1.2} />
+    </button>
+  );
+};
+
+const settings = {
+  dots: true,
+  infinite: false,
+  speed: 500,
+  vertical: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  // variableWidth: true,
+  centerPadding: 0,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
+};
+
+// className={carouselWrapper}
+//         width={960}
+// plugins={[
+//   {
+//     resolve: arrowsPlugin,
+//     options: {
+//       arrowLeft: (
+//         <button className={`${btnWrapper} ${leftAligned}`} type="button">
+//           <ArrowLeft />
+//         </button>
+//       ),
+//       arrowLeftDisabled: (
+//         <button className={`${btnWrapper} ${leftAligned} ${disabled}`} type="button">
+//           <ArrowLeft />
+//         </button>
+//       ),
+//       arrowRight: (
+//         <button className={`${btnWrapper} ${rightAligned}`} type="button">
+//           <ArrowRight />
+//         </button>
+//       ),
+//       arrowRightDisabled: (
+//         <button className={`${btnWrapper} ${rightAligned} ${disabled}`} type="button">
+//           <ArrowRight />
+//         </button>
+//       ),
+//       addArrowClickHandler: true,
+//     },
+//   },
+//   {
+//     resolve: slidesToShowPlugin,
+//     options: {
+//       numberOfSlides: 3,
+//     },
+//   },
+// ]}
+
 const Home = () => (
   <div className={container}>
     <SEO title="Attotime - Landing Page" />
@@ -107,75 +179,43 @@ const Home = () => (
     />
     <Divider className="style4" />
     <div className={sliderWrapper}>
-      {/* <Carousel
-        className={carouselWrapper}
-        width={960}
-        plugins={[
-          {
-            resolve: arrowsPlugin,
-            options: {
-              arrowLeft: (
-                <button className={`${btnWrapper} ${leftAligned}`} type="button">
-                  <ArrowLeft />
-                </button>
-              ),
-              arrowLeftDisabled: (
-                <button className={`${btnWrapper} ${leftAligned} ${disabled}`} type="button">
-                  <ArrowLeft />
-                </button>
-              ),
-              arrowRight: (
-                <button className={`${btnWrapper} ${rightAligned}`} type="button">
-                  <ArrowRight />
-                </button>
-              ),
-              arrowRightDisabled: (
-                <button className={`${btnWrapper} ${rightAligned} ${disabled}`} type="button">
-                  <ArrowRight />
-                </button>
-              ),
-              addArrowClickHandler: true,
-            },
-          },
-          {
-            resolve: slidesToShowPlugin,
-            options: {
-              numberOfSlides: 3,
-            },
-          },
-        ]}
-      >
+      <Slider {...settings} className={carouselWrapper} width={960}>
         <CommentCard
           title="Amazing for my business!"
           description="Super convenient and easy to use, so happy i’ve found Atto! Highly recommend."
           date="23 Jul"
           author="Nita Ora"
+          sliderItem
         />
         <CommentCard
           title="A must have software"
           description="I just love the ongoning improvements."
           date="20 Jul"
           author="James Stone"
+          sliderItem
         />
         <CommentCard
           title="Everything you need"
           description="Service is fabolous and it’s easy to use. My employees love it."
           date="18 Jun"
           author="Rich Mathews"
+          sliderItem
         />
         <CommentCard
           title="A must have software"
           description="I just love the ongoning improvements."
           date="20 Jul"
           author="James Stone"
+          sliderItem
         />
         <CommentCard
           title="Everything you need"
           description="Service is fabolous and it’s easy to use. My employees love it."
           date="18 Jun"
           author="Rich Mathews"
+          sliderItem
         />
-      </Carousel> */}
+      </Slider>
       <div className={sliderText}>
         <span>Rated Excellent 5/5 over 1,200 reviews</span>
       </div>
