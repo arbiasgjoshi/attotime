@@ -92,11 +92,6 @@ i {
     content: $attoicon-timesheets-rounded1;
   }
 }
-.attoicon-timesheets-rounded {
-  &:before {
-    content: $attoicon-timesheets-rounded;
-  }
-}
 .attoicon-sand-clock {
   &:before {
     content: $attoicon-sand-clock;
@@ -337,5 +332,10 @@ i {
 .attoicon-arrow-right {
   &:before {
     content: $attoicon-arrow-right;
+  }
+}
+.attoicon-long-arrow {
+  &:before {
+    content: $attoicon-long-arrow;
   }
 }
