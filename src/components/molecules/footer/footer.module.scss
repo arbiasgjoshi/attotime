@@ -57,6 +57,22 @@
   .footerLinksWrapper {
     width: 16.5rem;
     @include flex-direction(column);
+
+    .downloadBtn {
+      margin-top: 2rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+
+      @include min(tablet) {
+        margin-top: 4rem;
+      }
+
+      > h6 {
+        font-weight: 500;
+      }
+    }
+
     .parentPath {
       font-weight: var(--medium);
       color: var(--tertiary-color);
@@ -92,14 +108,25 @@
 }
 
 .downloadApp {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  @include min(tablet) {
+    margin-top: 2rem;
+  }
+  h6 {
+    margin-bottom: 2rem;
+    line-height: 3rem;
+  }
   a {
     @include flex-direction(row);
     align-items: center;
     width: 100%;
     height: 4.8rem;
-    border: 2px solid #f7f7f7;
     margin-bottom: 1.2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     i {
       width: 2rem;
       height: 2.4rem;

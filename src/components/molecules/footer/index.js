@@ -46,10 +46,11 @@ const Footer = ({ FooterLinks }) => (
             ))}
             {section.downloadApp && (
               <div className={downloadApp}>
+                <h6>Download</h6>
                 {section.downloadApp.map((app) => (
-                  <a href={app.href} target="_blank" rel="noreferrer" key={app.id}>
+                  <Link to={app.href} target="_blank" rel="noreferrer" key={app.id}>
                     <img src={app.src} alt="Mobile" />
-                  </a>
+                  </Link>
                 ))}
               </div>
             )}

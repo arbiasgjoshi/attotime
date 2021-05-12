@@ -24,6 +24,7 @@
       }
 
       h2 {
+        margin-bottom: 2rem;
         @include max(mobile) {
           margin: 1rem 1rem 1.5rem 0;
         }
@@ -52,7 +53,8 @@
         width: 2.4rem;
         height: 2.4rem;
         padding: 0.4rem;
-        margin-right: 1rem;
+        margin: 0.3rem 1rem 0.1rem 0;
+        display: flex;
       }
 
       p {
@@ -66,8 +68,8 @@
     }
 
     .listContainer {
-      border-top: 1px solid #efefef;
-      border-bottom: 1px solid #efefef;
+      border-top: 2px solid #efefef;
+      border-bottom: 2px solid #efefef;
 
       > div {
         align-items: flex-start;

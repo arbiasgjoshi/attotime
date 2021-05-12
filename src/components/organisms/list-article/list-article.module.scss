@@ -35,6 +35,14 @@
     .descr2 {
       margin-bottom: 4rem;
     }
+
+    > div:last-child {
+      > div {
+        > div:first-child {
+          min-width: unset;
+        }
+      }
+    }
   }
 
   .secondBlock {

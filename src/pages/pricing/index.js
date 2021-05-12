@@ -238,12 +238,13 @@ const Pricing = () => {
       <Faq list={faqList} />
       <SubscribeBanner
         bannerImage
-        title="There's no time to waste!"
+        title="There’s no time to waste!"
         subtitle="Try Atto, free for 14 days"
         placeholder="Type your email"
         checkItemOne="No credit card required"
         checkItemTwo="14 day free trial"
         checkItemThree="Cancel anytime"
+        style="pricing"
       />
       <FooterComponent FooterLinks={FooterLinks} />
     </div>
