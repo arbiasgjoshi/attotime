@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import HeaderComponent from '@components/molecules/header';
 import SEO from '@components/molecules/seo';
@@ -11,8 +11,9 @@ import MainTitle from '@components/molecules/main-title-card';
 import BlogList from '@components/organisms/blog-list';
 import mainHeader from '@images/workwise_blog.png';
 import Newsletter from '@components/molecules/newsletter';
-import { buttonList } from './blog.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
+
+import { buttonList } from './blog.module.scss';
 
 import browser1 from '../../images/browser1.jpeg';
 import browser2 from '../../images/browser2.jpeg';
@@ -52,29 +53,38 @@ const blogList = [
   },
 ];
 
-const Blog = () => (
-  <div className={container}>
-    <SEO title="Attotime - Landing Page" />
-    <HeaderComponent />
-    <MainTitle image={mainHeader} subtitle="Thoughts and ideas on the future of work" />
-    <div className={buttonList}>
-      {list.map((title) => (
-        <Button btnText={title} />
-      ))}
+const Blog = () => {
+  const [activeItem, setActiveItem] = useState(null);
+
+  return (
+    <div className={container}>
+      <SEO title="Attotime - Landing Page" />
+      <HeaderComponent />
+      <MainTitle image={mainHeader} subtitle="Thoughts and ideas on the future of work" />
+      <div className={buttonList}>
+        {list.map((title, idx) => (
+          <Button
+            btnText={title}
+            key={idx}
+            btnStyle={activeItem === title ? 'activeBlogItem' : 'noStyle'}
+            onBtnClick={() => setActiveItem(title)}
+          />
+        ))}
+      </div>
+      <StaticImage quality={96} width={1140} height={450} src="../../images/browser5.jpeg" />
+      <Title
+        maxWidth={780}
+        smallTitle="Published March 27, 2021 in Productivity   ·   2 min read   ·   by Nick Blackeye"
+        title="7 tips that will help you manage contracted jobs successfully"
+      />
+      <Divider className="style4" />
+      <BlogList list={blogList} />
+      <Divider />
+      <Newsletter />
+      <Divider className="style2" />
+      <FooterComponent FooterLinks={FooterLinks} />
     </div>
-    <StaticImage quality={96} width={1140} height={450} src="../../images/browser5.jpeg" />
-    <Title
-      maxWidth={780}
-      smallTitle="Published March 27, 2021 in Productivity   ·   2 min read   ·   by Nick Blackeye"
-      title="7 tips that will help you manage contracted jobs successfully"
-    />
-    <Divider className="style4" />
-    <BlogList list={blogList} />
-    <Divider />
-    <Newsletter />
-    <Divider className="style2" />
-    <FooterComponent FooterLinks={FooterLinks} />
-  </div>
-);
+  );
+};
 
 export default Blog;

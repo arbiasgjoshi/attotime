@@ -4,6 +4,7 @@ import { Link } from 'gatsby-plugin-intl';
 
 import Title from '@components/molecules/title';
 import CheckCard from '@components/molecules/check-card';
+import Icon from '@components/atoms/icon';
 import arrowIcon from '@images/arrowForward@2x.png';
 import * as styles from './product-card.module.scss';
 
@@ -45,7 +46,7 @@ const ProductCard = ({
         <h5>
           <Link to={path}>Learn more</Link>
         </h5>
-        {style === 'homepage' && <div className={styles.arrow} />}
+        {style === 'homepage' && <Icon fSize={3} iconClass="long-arrow" />}
       </div>
     </div>
     <div className={styles.secondWrapper}>
