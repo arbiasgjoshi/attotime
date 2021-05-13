@@ -67,6 +67,12 @@
         font-weight: var(--medium);
       }
 
+      h5 a {
+        &:hover {
+          color: var(--color-1);
+        }
+      }
+
       @include max(tablet) {
         max-width: 90%;
         margin: 0 auto;
