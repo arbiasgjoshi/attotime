@@ -22,6 +22,7 @@ const ListArticle = ({
   imagePadding = '',
   imageHeight,
   imageWidth,
+  textMargin,
 }) => {
   const [image2, setImage2] = useState(null); //TODO If we have svg and .img files coming in props. For now!
   useEffect(() => {
@@ -32,15 +33,13 @@ const ListArticle = ({
 
   return (
     <div className={`${container} ${isSwapped && swap}`}>
-      <div className={textWrapper}>
+      <div style={{ margin: textMargin }} className={textWrapper}>
         <Title title={title} description={description} leftAlign />
         {description2 && <p className={descr2}>{description2}</p>}
         <CheckList list={list} cardStyle="small" />
       </div>
-      <div className={secondBlock}>
-        <div style={{ padding: imagePadding }} className={imageWrapper}>
-          {image2}
-        </div>
+      <div style={{ padding: imagePadding }} className={secondBlock}>
+        <div className={imageWrapper}>{image2}</div>
       </div>
     </div>
   );

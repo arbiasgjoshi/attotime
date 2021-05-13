@@ -48,11 +48,8 @@
   .secondBlock {
     @include flex-align(center, flex-end);
 
-    @include min(tablet) {
-      width: 50%;
-    }
-
     .imageWrapper {
+      @include flex-align(center, center);
       margin-bottom: 2rem;
 
       @include min(tablet) {
