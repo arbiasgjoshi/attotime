@@ -41,26 +41,26 @@ import {
 const Pricing = () => {
   const [active, setActive] = useState('monthly');
   const checkList = [
-    { title: 'Time Tracking' },
-    { title: 'GPS Location Tracking' },
-    { title: 'Team Activit Insights' },
-    { title: 'Timesheets' },
-    { title: 'Mobile Time Clock' },
-    { title: 'Job Codes, Breaks, Notes' },
-    { title: 'Time Off Tracking' },
-    { title: 'Wage Estimates and Pay Rates' },
-    { title: 'Payroll Integrations' },
-    { title: 'Unlimited Support' },
-    { title: '30+ More Features' },
+    { title: 'Time Tracking', noStyle: false },
+    { title: 'GPS Location Tracking', noStyle: false },
+    { title: 'Team Activit Insights', noStyle: false },
+    { title: 'Timesheets', noStyle: false },
+    { title: 'Mobile Time Clock', noStyle: false },
+    { title: 'Job Codes, Breaks, Notes', noStyle: false },
+    { title: 'Time Off Tracking', noStyle: false },
+    { title: 'Wage Estimates and Pay Rates', noStyle: false },
+    { title: 'Payroll Integrations', noStyle: false },
+    { title: 'Unlimited Support', noStyle: false },
+    { title: '30+ More Features', noStyle: true },
   ];
 
   const checkList2 = [
-    { title: 'Priority Support' },
-    { title: 'Concierge Onboarding' },
-    { title: 'Custom Implementation' },
-    { title: 'Custom Roles & Permissions' },
-    { title: 'Custom Integrations' },
-    { title: 'Api Access' },
+    { title: 'Priority Support', noStyle: false },
+    { title: 'Concierge Onboarding', noStyle: false },
+    { title: 'Custom Implementation', noStyle: false },
+    { title: 'Custom Roles & Permissions', noStyle: false },
+    { title: 'Custom Integrations', noStyle: false },
+    { title: 'Api Access', noStyle: false },
   ];
 
   const featureList = [
@@ -151,7 +151,7 @@ const Pricing = () => {
   return (
     <div className={container}>
       <SEO title="Pricing" />
-      <HeaderComponent />
+      <HeaderComponent headerStyle="pricingHeader" />
       <span className={behindMask} />
       <div className={priceHeader}>
         <h1>Pay-as-you-grow pricing</h1>
@@ -188,12 +188,14 @@ const Pricing = () => {
           listTitle="Includes"
           contentText="/ user / month"
           usersText="1-99 users"
+          hasGreyBg={false}
           btnText="Start 14-day Free Trial"
         />
         <PackageCard
           title="Enterprise"
           listTitle="Everything in Premium, plus"
           list={checkList2}
+          hasGreyBg
           contentText="Contact our sales team for a custom plan"
           usersText="100+ users"
           btnText="Contact Sales"

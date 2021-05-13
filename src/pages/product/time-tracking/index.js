@@ -296,7 +296,7 @@ const TimeTracking = () => {
       <Video />
       <Divider className="style2" />
       <div className={checkListContainer}>
-        <CheckList list={titleList} />
+        <CheckList list={titleList} cardStyle="centerAligned" />
       </div>
       <Divider />
       <div>

@@ -122,7 +122,7 @@ const TeamActivity = () => {
       <Video />
       <Divider className="style2" />
       <div className={checkListContainer}>
-        <CheckList list={titleList} />
+        <CheckList list={titleList} cardStyle="centerAligned" />
       </div>
       <Divider />
       <Title maxWidth={900} title="See where your team is, and what they're working on" />

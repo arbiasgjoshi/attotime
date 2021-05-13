@@ -20,6 +20,26 @@
       border-radius: 100%;
       color: var(--primary-color);
     }
+
+    &.greyStyle {
+      i {
+        background-color: #f7f7f7;
+      }
+    }
+  }
+
+  &.noStyle {
+    .iconWrapper {
+      i {
+        background-color: transparent;
+      }
+    }
+
+    .textWrapper {
+      h5 {
+        font-weight: 500 !important;
+      }
+    }
   }
 
   .cardIcon {
@@ -72,6 +92,10 @@
         letter-spacing: -0.5px;
       }
     }
+  }
+
+  &.centerAligned {
+    align-items: center;
   }
 
   &.big {

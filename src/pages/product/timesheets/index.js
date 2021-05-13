@@ -1,11 +1,4 @@
 import React from 'react';
-import {
-  teamActivityContainer,
-  roundImagesContainer,
-  checkListContainer,
-  learnMoreContainer,
-  readyMadeTitle,
-} from './timesheets.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FooterLinks } from '@locale/en.js';
 import { container } from '@styles/main.module.scss';
@@ -27,7 +20,6 @@ import GrowthNumbers from '@components/organisms/growth-numbers';
 import Story from '@components/organisms/story';
 import Services from '@components/organisms/services';
 
-import photo1 from '../../../images/boost_productivity.png';
 import authorImage from '@images/authorImage.png';
 import noImage from '@images/no-image.png';
 import roundImage2 from '@images/syncWithPayroll2x.png';
@@ -50,7 +42,7 @@ import WageEstimate from '@images/Wage_estimatesSVG.svg';
 import icon20 from '@images/time-tracking-clock@1x.png';
 import icon21 from '@images/location@1x.png';
 import icon22 from '@images/profile@1x.png';
-import Activity from '@images/activitySVG.svg'; //TODO change svg when png is provided
+import Activity from '@images/activitySVG.svg'; // TODO change svg when png is provided
 
 import ConstructionLogo from '@images/construction-industry-logo.svg';
 import PaintingLogo from '@images/painting-industry-logo.svg';
@@ -61,6 +53,14 @@ import LandscapingLogo from '@images/landscaping-industry-logo.svg';
 import RoofingLogo from '@images/roofing-industry-logo.svg';
 import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
+import photo1 from '../../../images/boost_productivity.png';
+import {
+  teamActivityContainer,
+  roundImagesContainer,
+  checkListContainer,
+  learnMoreContainer,
+  readyMadeTitle,
+} from './timesheets.module.scss';
 
 const Timesheets = () => {
   const checkLists = [
@@ -196,7 +196,7 @@ const Timesheets = () => {
       <Video />
       <Divider className="style2" />
       <div className={checkListContainer}>
-        <CheckList list={checkLists} />
+        <CheckList list={checkLists} cardStyle="centerAligned" />
       </div>
       <Divider />
       <div className={readyMadeTitle}>
@@ -250,7 +250,7 @@ const Timesheets = () => {
           icon={noImage}
           alt="Estimate emp"
           title="Estimate your Employees' Wages"
-          description={`Avoid unexpected wage bills. Assign pay rates to your employees and their estimated pay will be added to their timesheets.`}
+          description="Avoid unexpected wage bills. Assign pay rates to your employees and their estimated pay will be added to their timesheets."
           style="timesheetMargin"
         />
         <IconCard
@@ -267,7 +267,7 @@ const Timesheets = () => {
           bigImage
           icon={roundImage3}
           alt="Timesheets on-time"
-          title={`Timesheets on-time and in your Inbox`}
+          title="Timesheets on-time and in your Inbox"
           description={`Schedule your employees' timesheets to be automatically emailed to you in line with your payroll schedule.`}
           style="timesheetMargin"
         />

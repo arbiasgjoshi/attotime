@@ -13,7 +13,16 @@ import {
   packageBtnWrap,
 } from './package-card.module.scss';
 
-const PackageCard = ({ title, usersText, price, listTitle, list, contentText, btnText }) => (
+const PackageCard = ({
+  title,
+  usersText,
+  price,
+  listTitle,
+  list,
+  contentText,
+  btnText,
+  hasGreyBg,
+}) => (
   <div className={container}>
     <div className={firstContainer}>
       <div className={titleWrapper}>
@@ -36,8 +45,12 @@ const PackageCard = ({ title, usersText, price, listTitle, list, contentText, bt
     </div>
     <div className={listWrapper}>
       <h5>{listTitle}</h5>
-      {list?.map(({ title: checkTitle }) => (
-        <CheckCard style="pricingStyle" title={checkTitle} />
+      {list?.map(({ title: checkTitle, noStyle }) => (
+        <CheckCard
+          style={!noStyle ? 'pricingStyle' : 'noStyle'}
+          grey={hasGreyBg}
+          title={checkTitle}
+        />
       ))}
     </div>
   </div>
@@ -47,6 +60,7 @@ PackageCard.propTypes = {
   title: PropTypes.string,
   usersText: PropTypes.string,
   price: PropTypes.string,
+  hasGreyBg: PropTypes.bool,
   list: PropTypes.arrayOf({}),
   listTitle: PropTypes.string,
   contentText: PropTypes.string,
