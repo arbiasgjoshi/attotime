@@ -5,9 +5,10 @@ import Icon from '@components/atoms/icon';
 
 import * as styles from './check-card.module.scss';
 
-const CheckCard = ({ title, hasDescription, description, style = '' }) => (
+const CheckCard = ({ title, hasDescription, description, grey, style = '' }) => (
   <div className={`${styles.card} ${styles[style]} ${hasDescription && styles.hasDescr}`}>
-    <div className={`${styles.iconWrapper} `}>
+    {console.log(style)}
+    <div className={`${styles.iconWrapper} ${grey ? styles.greyStyle : null} `}>
       <Icon iconClass="tick" />
     </div>
     <div className={styles.textWrapper}>
@@ -20,6 +21,7 @@ const CheckCard = ({ title, hasDescription, description, style = '' }) => (
 CheckCard.propTypes = {
   title: PropTypes.string,
   hasDescription: PropTypes.bool,
+  grey: PropTypes.bool,
   description: PropTypes.string,
   style: PropTypes.string,
 };

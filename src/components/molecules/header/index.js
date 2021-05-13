@@ -47,9 +47,10 @@ import {
   resourcesMenu,
   menuIcon,
   menuItemDesc,
+  pricingStyle,
 } from './header.module.scss';
 
-const HeaderComponent = () => {
+const HeaderComponent = ({ headerStyle }) => {
   const [open, setOpen] = useState(false);
 
   const [overMenu, setOverMenu] = useState(false);
@@ -313,7 +314,7 @@ const HeaderComponent = () => {
   };
 
   return (
-    <header className={headerWrapper}>
+    <header className={`${headerWrapper} ${headerStyle && pricingStyle}`}>
       <div className={container}>
         <div className={leftNav}>
           <StaticImage src="../../../images/logo@2x.png" quality={100} width={85} />

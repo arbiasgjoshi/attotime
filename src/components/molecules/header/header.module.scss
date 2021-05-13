@@ -29,6 +29,10 @@
     flex-direction: row;
     position: relative;
   }
+
+  &.pricingStyle {
+    background-color: #f7f7f7;
+  }
 }
 
 .leftNav {

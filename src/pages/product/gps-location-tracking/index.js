@@ -19,17 +19,11 @@ import { FooterLinks } from '@locale/en.js';
 import Footer from '@components/molecules/footer';
 
 import { container } from '@styles/main.module.scss';
-import {
-  checkListContainer,
-  privacyContainer,
-  imageContainer,
-  learnMoreContainer,
-} from './gps-location-tracking.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import noImage from '@images/no-image.png';
 import image1 from '@images/verify-your-team.png';
-import DailyMovements from '@images/daily-movements.svg'; //TODO change svg when png is provided
+import DailyMovements from '@images/daily-movements.svg'; // TODO change svg when png is provided
 import authorImage from '@images/authorImage.png';
 
 import Timer from '@images/timer.svg';
@@ -54,6 +48,12 @@ import LandscapingLogo from '@images/landscaping-industry-logo.svg';
 import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import RoofingLogo from '@images/roofing-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
+import {
+  checkListContainer,
+  privacyContainer,
+  imageContainer,
+  learnMoreContainer,
+} from './gps-location-tracking.module.scss';
 
 const LocationTracking = () => {
   const serviceList = [
@@ -189,7 +189,7 @@ const LocationTracking = () => {
       <Video />
       <Divider className="style2" />
       <div className={checkListContainer}>
-        <CheckList list={checkList1} />
+        <CheckList list={checkList1} cardStyle="centerAligned" />
       </div>
       <Divider />
       <Title maxWidth={920} title="Track the locations of your entire team in real-time" />
@@ -232,7 +232,7 @@ const LocationTracking = () => {
         <CheckList list={checkList4} hasDescription />
         <div className={imageContainer}>
           <StaticImage
-            src={'../../../images/privacy-priority@2x.png'}
+            src="../../../images/privacy-priority@2x.png"
             width={455}
             height={500}
             alt="Your privacy,our priority"
