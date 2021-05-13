@@ -1,4 +1,5 @@
 .container {
+  padding-top: 14.3rem;
   @include max(tablet) {
     padding: 0 2rem;
   }

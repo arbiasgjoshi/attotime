@@ -29,7 +29,8 @@ import BlogLogo from '@images/blog-menu-logo.svg';
 import ContactLogo from '@images/contact-menu-logo.svg';
 
 import {
-  headerContainer,
+  headerWrapper,
+  container,
   leftNav,
   menuLinks,
   rightNavButtons,
@@ -122,31 +123,31 @@ const HeaderComponent = () => {
               <ul>
                 <li>
                   <Link to="/">
-                    <Icon iconClass="long-arrow" />
+                    <Icon iconClass="arrow-right" />
                     Mobile Time Tracking
                   </Link>
                 </li>
                 <li>
                   <Link to="/">
-                    <Icon iconClass="long-arrow" />
+                    <Icon iconClass="arrow-right" />
                     Time Clock
                   </Link>
                 </li>
                 <li>
                   <Link to="/">
-                    <Icon iconClass="long-arrow" />
+                    <Icon iconClass="arrow-right" />
                     Time Card App
                   </Link>
                 </li>
                 <li>
                   <Link to="/">
-                    <Icon iconClass="long-arrow" />
+                    <Icon iconClass="arrow-right" />
                     Work Hours Tracker
                   </Link>
                 </li>
                 <li>
                   <Link to="/">
-                    <Icon iconClass="long-arrow" />
+                    <Icon iconClass="arrow-right" />
                     Accurate Reports
                   </Link>
                 </li>
@@ -312,8 +313,8 @@ const HeaderComponent = () => {
   };
 
   return (
-    <>
-      <header className={headerContainer}>
+    <header className={headerWrapper}>
+      <div className={container}>
         <div className={leftNav}>
           <StaticImage src="../../../images/logo@2x.png" quality={100} width={85} />
         </div>
@@ -349,8 +350,8 @@ const HeaderComponent = () => {
             {viewMenuSections(activeItem)}
           </div>
         )}
-      </header>
-    </>
+      </div>
+    </header>
   );
 };
 
