@@ -150,39 +150,23 @@
       flex-direction: column;
       .learnMoreContainer {
         margin-top: 5rem;
+        //TODO Animation in here
+
+        &:hover {
+          flex-direction: row-reverse;
+          i {
+            margin-left: 0;
+            margin-right: 2rem;
+          }
+        }
+
         .arrowIconContainer {
           display: none;
         }
 
-        .arrow {
-          background: #000000;
-          height: 1.5px;
-          width: 32px;
+        i {
           margin-left: 2rem;
-          margin-top: 0.3rem;
-          position: relative;
-          cursor: pointer;
-
-          &:before,
-          &:after {
-            content: '';
-            background: #000000;
-            position: absolute;
-            height: 1.5px;
-            width: 7px;
-          }
-
-          &:before {
-            right: -1px;
-            bottom: -2px;
-            transform: rotate(-45deg);
-          }
-
-          &:after {
-            right: -1px;
-            top: -2px;
-            transform: rotate(45deg);
-          }
+          height: 2.4rem;
         }
       }
 
