@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import {
   defaultBtn,
   tealStyle,
-  trialStyle,
+  blackStyle,
+  grayStyle,
   wideStyle,
   roundStyle,
   pricingStyle,
@@ -19,8 +20,11 @@ const Button = ({ btnText, disabled, btnStyle, pricing, activeClass, onBtnClick 
     if (btnStyle === 'teal') {
       className += ` ${tealStyle}`;
     }
-    if (btnStyle === 'trial') {
-      className += ` ${trialStyle}`;
+    if (btnStyle === 'black') {
+      className += ` ${blackStyle}`;
+    }
+    if (btnStyle === 'gray') {
+      className += ` ${grayStyle}`;
     }
     if (btnStyle === 'wide') {
       className += ` ${wideStyle}`;

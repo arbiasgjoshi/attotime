@@ -40,7 +40,7 @@ const PackageCard = ({
         )}
       </div>
       <div className={packageBtnWrap}>
-        <Button btnStyle="wide" btnText={btnText} />
+        <Button btnStyle="teal" btnText={btnText} />
       </div>
     </div>
     <div className={listWrapper}>

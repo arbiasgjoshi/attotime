@@ -8,7 +8,7 @@ import { formWrapper } from './form.module.scss';
 const SubscribeForm = ({ placeholder }) => (
   <div className={formWrapper}>
     <Input placeholder={placeholder} />
-    <Button btnText="Start a Free Trial" btnStyle="trial" />
+    <Button btnText="Start a Free Trial" btnStyle="black" />
   </div>
 );
 

@@ -39,7 +39,7 @@ const MainTitleCard = ({
         {subtitle}
       </p>
     </div>
-    {showButton && <Button btnText="Start a Free Trial" btnStyle="trial" />}
+    {showButton && <Button btnText="Start a Free Trial" btnStyle="black" />}
   </div>
 );
 

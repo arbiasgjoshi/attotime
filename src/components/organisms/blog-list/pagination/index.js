@@ -23,7 +23,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
 
   return (
     <nav className={paginationWrapper}>
-      <Button btnText="Previous" onBtnClick={handlePrevious} />
+      <Button btnText="Previous" btnStyle="teal" onBtnClick={handlePrevious} />
       <ul className={pagination}>
         {pageNumbers.map((number) => (
           <>
@@ -38,7 +38,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
           </>
         ))}
       </ul>
-      <Button btnText="Next" onBtnClick={handleNext} />
+      <Button btnText="Next" btnStyle="teal" onBtnClick={handleNext} />
     </nav>
   );
 };

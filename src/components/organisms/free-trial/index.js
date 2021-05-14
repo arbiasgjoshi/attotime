@@ -13,7 +13,7 @@ const FreeTrial = ({ title, description, list = [] }) => {
         <h3>{title}</h3>
         <h4>{description}</h4>
         <Input placeholder={'Type your email'} />
-        <Button btnText="Start a Free Trial - 14 Days Free" btnStyle="trial" />
+        <Button btnText="Start a Free Trial - 14 Days Free" btnStyle="black" />
         <div className={ticksWrapper}>
           <div className={tickItem}>
             <Icon iconClass="tick" />
