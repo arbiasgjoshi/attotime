@@ -218,9 +218,7 @@ const Timesheets = () => {
         description="Work smarter, not longer. Use timesheet reports to filter all the work done by each employee, team, or towards a specific category of job."
         list={checkLists2}
         image={photo1}
-        imagePadding="2.9rem ​0.7rem 1.9rem 0.8rem"
-        imageWidth={425}
-        imageHeight={562}
+        textMargin="10.3 0"
       />
       <Divider />
       <ListArticle
@@ -229,6 +227,7 @@ const Timesheets = () => {
         list={checkLists3}
         image={<Activity />}
         isSwapped
+        textMargin="5.8rem 0"
       />
       <Divider />
       <Title maxWidth={880} title="Our full suite of timesheet features at a glance" />

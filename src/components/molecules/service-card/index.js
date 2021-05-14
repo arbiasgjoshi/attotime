@@ -1,10 +1,11 @@
 import React from 'react';
+import Icon from '@components/atoms/icon';
 import {
   container,
   iconWrapper,
   textContainer,
   cardTitle,
-  arrow,
+  arrowContainer,
 } from './service-card.module.scss';
 
 const ServiceCard = ({ title, icon }) => (
@@ -13,7 +14,9 @@ const ServiceCard = ({ title, icon }) => (
     <div className={textContainer}>
       <h5 className={cardTitle}>{title}</h5>
     </div>
-    <div className={arrow}></div>
+    <div className={arrowContainer}>
+      <Icon fSize={3} iconClass="long-arrow" />
+    </div>
   </div>
 );
 

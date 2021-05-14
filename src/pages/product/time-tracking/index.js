@@ -360,6 +360,7 @@ const TimeTracking = () => {
         alt="admin-panel-image"
         width={1140}
         height={616}
+        quality={96}
       />
       <Divider className="style3" />
       <CheckList list={overviewAdminList} hasDescription cardStyle="big" />
