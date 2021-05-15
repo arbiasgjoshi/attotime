@@ -1,33 +1,29 @@
 import React from 'react';
-import {
-  container,
-  listContainer,
-  contentContainer,
-  activeContent,
-  content,
-  isActive,
-  item,
-  sideBorder,
-} from './tabs.module.scss';
+import PropTypes from 'prop-types';
+import { container, listContainer, isActive, item, sideBorder } from './tabs.module.scss';
 
-const Tabs = ({ list, handleClick, activeIndex }) => {
-  return (
-    <div className={container}>
-      <div className={listContainer}>
-        {list?.map((title, index) => (
-          <>
-            <div
-              onClick={() => handleClick(index)}
-              className={`${item} ${index === activeIndex && isActive}`}
-            >
-              <h5 key={index}>{title}</h5>
-            </div>
-            <span className={sideBorder}></span>
-          </>
-        ))}
-      </div>
+const Tabs = ({ list, handleClick, activeIndex }) => (
+  <div className={container}>
+    <div className={listContainer}>
+      {list?.map((title, index) => (
+        <>
+          <div
+            onClick={() => handleClick(index)}
+            className={`${item} ${index === activeIndex && isActive}`}
+          >
+            <h5 key={index}>{title}</h5>
+          </div>
+          <span className={sideBorder}></span>
+        </>
+      ))}
     </div>
-  );
+  </div>
+);
+
+Tabs.propTypes = {
+  list: PropTypes.arrayOf({}),
+  handleClick: PropTypes.func,
+  activeIndex: PropTypes.string,
 };
 
 export default Tabs;
