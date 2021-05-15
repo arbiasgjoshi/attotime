@@ -1,9 +1,11 @@
 .container {
   .listContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
-    row-gap: 1rem;
+    @include max(mobile) {
+      @include flex-direction(column);
+
+      .item {
+      }
+    }
 
     @include min(tablet) {
       display: flex;
@@ -17,19 +19,28 @@
       cursor: pointer;
       position: relative;
 
-      &.isActive {
-        color: #00b9cb;
-        position: relative;
+      @include max(mobile) {
+        width: 100%;
+        height: 9.4rem;
+        @include flex-align(center, flex-start);
+        border-top: 2px solid #efefef;
+      }
 
-        ::after {
-          display: block;
-          border-bottom: 4px solid #00b9cb;
-          content: '';
-          position: absolute;
-          width: 100%;
+      @include min(tablet) {
+        &.isActive {
+          color: #00b9cb;
+          position: relative;
 
-          @include min(tablet) {
-            top: 61px;
+          ::after {
+            display: block;
+            border-bottom: 4px solid #00b9cb;
+            content: '';
+            position: absolute;
+            width: 100%;
+
+            @include min(tablet) {
+              top: 61px;
+            }
           }
         }
       }

@@ -26,6 +26,7 @@
       h2 {
         margin-bottom: 2rem;
         @include max(mobile) {
+          text-align: left;
           margin: 1rem 1rem 1.5rem 0;
         }
       }
@@ -39,8 +40,9 @@
 
       @include max(mobile) {
         p {
-          font-size: var(--body-style-two-mobile-size);
-          line-height: var(--body-style-two-mobile-line-height);
+          text-align: left;
+          font-size: var(--body-style-three-mobile-size);
+          line-height: var(--body-style-three-mobile-line-height);
         }
       }
     }
@@ -75,7 +77,6 @@
 
       @include max(tablet) {
         max-width: 90%;
-        margin: 0 auto;
       }
     }
 
@@ -149,7 +150,10 @@
       @include flex-align(flex-start, center);
       flex-direction: column;
       .learnMoreContainer {
-        margin-top: 5rem;
+        @include min(tablet) {
+          margin-top: 5rem;
+        }
+
         //TODO Animation in here
 
         &:hover {
@@ -179,10 +183,15 @@
           margin-bottom: 2rem;
         }
         p {
-          font-size: var(--body-style-one);
-          line-height: var(--body-style-one-line-height-size);
-          font-weight: var(--body-style-one-font-weight);
+          font-size: var(--body-style-three);
+          line-height: var(--body-style-three-line-height-size);
           letter-spacing: -0.5px;
+          font-weight: var(--body-style-one-font-weight);
+
+          @include min(tablet) {
+            font-size: var(--body-style-one);
+            line-height: var(--body-style-one-line-height-size);
+          }
         }
       }
     }
