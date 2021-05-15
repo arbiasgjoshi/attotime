@@ -7,19 +7,6 @@
     margin: 0;
   }
 
-  .descriptionWrapper {
-    font-size: var(--body-style-one-mobile-size);
-    line-height: var(--body-style-one-mobile-line-height);
-    letter-spacing: normal;
-
-    @include min(tablet) {
-      font-size: var(--body-style-one);
-      font-weight: var(--body-style-one-font-weight);
-      letter-spacing: -0.05rem;
-      line-height: var(--body-style-one-line-height-size);
-    }
-  }
-
   &.leftAligned {
     text-align: left;
 
@@ -69,17 +56,22 @@
 
   .descriptionWrapper {
     margin: auto;
+    font-size: var(--body-style-one-mobile-size);
     font-weight: var(--regular);
+    line-height: var(--body-style-one-mobile-line-height);
+    letter-spacing: normal;
     text-align: left;
+
+    @include max(mobile) {
+      text-align: center;
+    }
 
     @include min(tablet) {
       text-align: center;
-    }
-    @include max(mobile) {
-      text-align: center;
-
-      font-size: var(--body-style-two-mobile-size);
-      line-height: var(--body-style-two-mobile-line-height);
+      font-size: var(--body-style-one);
+      font-weight: var(--body-style-one-font-weight);
+      letter-spacing: -0.05rem;
+      line-height: var(--body-style-one-line-height-size);
     }
   }
 }

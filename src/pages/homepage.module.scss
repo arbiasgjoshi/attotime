@@ -25,8 +25,12 @@
 .numbers {
   @include flex-direction(column);
   justify-content: center;
+  margin: 0 6.6rem;
+  border-top: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
 
   @include min(tablet) {
+    margin: 0;
     flex-direction: row;
     padding: 7rem 0;
     row-gap: 0;
@@ -34,6 +38,12 @@
     justify-content: space-between;
     border-top: 2px solid #e3e3e3;
     border-bottom: 2px solid #e3e3e3;
+  }
+
+  h3 {
+    @include max(mobile) {
+      color: #00b9cb;
+    }
   }
 
   > div {

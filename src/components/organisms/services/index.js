@@ -1,7 +1,7 @@
 import React from 'react';
 import ServiceCard from '@components/molecules/service-card';
-import { container, serviceList, arrow } from './services.module.scss';
-import sparkIcon from '@images/spark@2x.png';
+import PropTypes from 'prop-types';
+import { container, serviceList } from './services.module.scss';
 
 const Services = ({ list }) => (
   <div className={container}>
@@ -12,5 +12,9 @@ const Services = ({ list }) => (
     </div>
   </div>
 );
+
+Services.propTypes = {
+  list: PropTypes.arrayOf({}),
+};
 
 export default Services;

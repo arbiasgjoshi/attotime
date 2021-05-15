@@ -91,10 +91,10 @@
   --body-style-four-mobile-size: calc(var(--body-style-four) * 0.9);
   --body-style-five-mobile-size: calc(var(--body-style-five) * 0.9);
 
-  --h1-mobile-line-height-size: calc(var(--h1-line-height-size) * 0.66667);
-  --h2-mobile-line-height-size: calc(var(--h2-line-height-size) * 0.66667);
-  --h3-mobile-line-height-size: calc(var(--h3-line-height-size) * 0.75);
-  --h4-mobile-line-height-size: calc(var(--h4-line-height-size) * 0.75);
+  --h1-mobile-line-height-size: var(--h3-line-height-size);
+  --h2-mobile-line-height-size: var(--h4-line-height-size);
+  --h3-mobile-line-height-size: var(--h5-line-height-size);
+  --h4-mobile-line-height-size: var(--h6-line-height-size);
   --h5-mobile-line-height-size: calc(var(--h5-line-height-size) * 0.8);
   --h6-mobile-line-height-size: calc(var(--h6-line-height-size) * 0.8);
 
