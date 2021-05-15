@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import {
   container,
   titleWrapper,
@@ -42,6 +43,7 @@ Title.propTypes = {
   leftAlign: PropTypes.bool,
   maxWidth: PropTypes.string,
   maxDescriptionWidth: PropTypes.string,
+  marginBottom: PropTypes.string,
 };
 
 export default Title;

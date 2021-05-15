@@ -7,7 +7,6 @@ import * as styles from './check-card.module.scss';
 
 const CheckCard = ({ title, hasDescription, description, grey, style = '' }) => (
   <div className={`${styles.card} ${styles[style]} ${hasDescription && styles.hasDescr}`}>
-    {console.log(style)}
     <div className={`${styles.iconWrapper} ${grey ? styles.greyStyle : null} `}>
       <Icon iconClass="tick" />
     </div>

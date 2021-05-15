@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { useIntl, changeLocale } from 'gatsby-plugin-intl';
 
 import ArrowDown from '@images/arrow-down.svg';
-import { useIntl, changeLocale } from 'gatsby-plugin-intl';
 import {
   selectDropdown,
   invertedArrow,

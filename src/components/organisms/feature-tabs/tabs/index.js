@@ -13,7 +13,7 @@ const Tabs = ({ list, handleClick, activeIndex }) => (
           >
             <h5 key={index}>{title}</h5>
           </div>
-          <span className={sideBorder}></span>
+          <span className={sideBorder} />
         </>
       ))}
     </div>

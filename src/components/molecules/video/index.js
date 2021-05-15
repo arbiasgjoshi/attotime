@@ -1,5 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+
 import Icon from '@components/atoms/icon';
 import Button from '@components/atoms/button';
 

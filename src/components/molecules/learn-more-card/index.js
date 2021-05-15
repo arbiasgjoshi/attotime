@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from '@components/atoms/button';
 import { Link } from 'gatsby-plugin-intl';
+
+import Button from '@components/atoms/button';
+
 import {
   container,
   iconWrapper,
@@ -18,22 +20,20 @@ const LearnMoreCard = ({
   imageWidth,
   imageHeight,
   path = '/',
-}) => {
-  return (
-    <div className={container}>
-      <div className={iconWrapper}>
-        <img width={imageWidth} height={imageHeight} src={icon} />
-      </div>
-      <div className={textWrapper}>
-        <h5 className={cardTitle}>{title}</h5>
-        <p className={paragraphText}>{description}</p>
-      </div>
-      <Link to={path}>
-        <Button btnStyle="wide" btnText={btnText || 'Learn more'} />
-      </Link>
+}) => (
+  <div className={container}>
+    <div className={iconWrapper}>
+      <img alt={`title${imageWidth}`} width={imageWidth} height={imageHeight} src={icon} />
     </div>
-  );
-};
+    <div className={textWrapper}>
+      <h5 className={cardTitle}>{title}</h5>
+      <p className={paragraphText}>{description}</p>
+    </div>
+    <Link to={path}>
+      <Button btnStyle="wide" btnText={btnText || 'Learn more'} />
+    </Link>
+  </div>
+);
 
 LearnMoreCard.propTypes = {
   title: PropTypes.string.isRequired,
@@ -41,6 +41,8 @@ LearnMoreCard.propTypes = {
   btnText: PropTypes.string,
   icon: PropTypes.string,
   path: PropTypes.string,
+  imageWidth: PropTypes.number,
+  imageHeight: PropTypes.number,
 };
 
 export default LearnMoreCard;

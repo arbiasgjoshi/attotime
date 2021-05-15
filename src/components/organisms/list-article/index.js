@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+
+import CheckList from '@components/molecules/check-list';
+import Title from '@components/molecules/title';
+
 import {
   container,
   swap,
@@ -9,8 +13,6 @@ import {
   imageWrapper,
   img,
 } from './list-article.module.scss';
-import CheckList from '@components/molecules/check-list';
-import Title from '@components/molecules/title';
 
 const ListArticle = ({
   title,
@@ -26,9 +28,19 @@ const ListArticle = ({
 }) => {
   const [image2, setImage2] = useState(null); //TODO If we have svg and .img files coming in props. For now!
   useEffect(() => {
-    typeof image == 'string'
-      ? setImage2(<img width={imageWidth} height={imageHeight} className={img} src={image} />)
-      : setImage2(image);
+    if (typeof image === 'string') {
+      setImage2(
+        <img
+          width={imageWidth}
+          alt={`title${imageHeight}`}
+          height={imageHeight}
+          className={img}
+          src={image}
+        />
+      );
+    } else {
+      setImage2(image);
+    }
   }, []);
 
   return (
@@ -49,10 +61,13 @@ ListArticle.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   description2: PropTypes.string,
-  list: PropTypes.array,
+  list: PropTypes.arrayOf({}),
   image: PropTypes.string,
   isSwapped: PropTypes.bool,
   imagePadding: PropTypes.string,
+  imageHeight: PropTypes.number,
+  imageWidth: PropTypes.number,
+  textMargin: PropTypes.string,
 };
 
 export default ListArticle;

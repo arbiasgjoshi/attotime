@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import * as styles from './icon-card.module.scss';
 
 const IconCard = ({
@@ -29,5 +31,19 @@ const IconCard = ({
     </div>
   </div>
 );
+
+IconCard.propTypes = {
+  icon: PropTypes.shape({}),
+  alt: PropTypes.string,
+  bigImage: PropTypes.bool,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  noImage: PropTypes.bool,
+  isRound: PropTypes.bool,
+  style: PropTypes.string,
+  imagePadding: PropTypes.string,
+  imageWidth: PropTypes.number,
+  imageHeight: PropTypes.number,
+};
 
 export default IconCard;

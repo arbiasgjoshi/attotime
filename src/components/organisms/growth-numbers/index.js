@@ -1,6 +1,8 @@
 import React from 'react';
+
 import NumberCard from '@components/atoms/number-card';
 import Cover from './cover';
+
 import { container, cardList } from './growth-numbers.module.scss';
 
 const GrowthNumbers = () => (

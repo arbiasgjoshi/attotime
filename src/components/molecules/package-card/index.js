@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import Button from '@components/atoms/button';
 import CheckCard from '@components/molecules/check-card';
+
 import {
   container,
   firstContainer,

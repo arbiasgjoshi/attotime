@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { Link } from 'gatsby-plugin-intl';
-
 import { StaticImage } from 'gatsby-plugin-image';
+
+import CustomSelect from '../../atoms/custom-select';
+
 import {
   leftFooterItems,
   footerLinksWrapper,
@@ -15,7 +16,6 @@ import {
   parentPath,
   downloadApp,
 } from './footer.module.scss';
-import CustomSelect from '../../atoms/custom-select';
 
 const Footer = ({ FooterLinks }) => (
   <footer className={pageFooter}>
@@ -63,7 +63,7 @@ const Footer = ({ FooterLinks }) => (
 );
 
 Footer.propTypes = {
-  FooterLinks: PropTypes.shape({}),
+  FooterLinks: PropTypes.arrayOf({}),
 };
 
 export default Footer;

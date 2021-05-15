@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+
 import ProductCard from '../product-card';
-import { container, content, inactive } from './feature-tabs.module.scss';
 import Tabs from './tabs';
 
 import image1 from '../../../images/time-tracking-fingertips@2x.png';
 import image2 from '../../../images/know-where-is-team.png';
 import image3 from '../../../images/boost_productivity.png';
 import image4 from '../../../images/stay-in-loop.png';
+
+import { container, content, inactive } from './feature-tabs.module.scss';
 
 const FeatureTabs = () => {
   const [activeIndex, setActiveIndex] = useState(0);

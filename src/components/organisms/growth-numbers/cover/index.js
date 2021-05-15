@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
+
 import { container, swap, leftBox, iconWrapper, imageWrapper } from './cover.module.scss';
 
 const Cover = ({ isSwapped = false }) => (

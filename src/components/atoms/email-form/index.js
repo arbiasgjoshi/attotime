@@ -1,6 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import SubscribeForm from '@components/molecules/subscribe-form';
 import Icon from '@components/atoms/icon';
+
 import * as styles from './email-form.module.scss';
 
 const EmailForm = ({ placeholder, checkItemOne, checkItemTwo, checkItemThree, style }) => (
@@ -22,5 +25,13 @@ const EmailForm = ({ placeholder, checkItemOne, checkItemTwo, checkItemThree, st
     </div>
   </div>
 );
+
+EmailForm.propTypes = {
+  placeholder: PropTypes.string,
+  checkItemOne: PropTypes.string,
+  checkItemTwo: PropTypes.string,
+  checkItemThree: PropTypes.string,
+  style: PropTypes.string,
+};
 
 export default EmailForm;

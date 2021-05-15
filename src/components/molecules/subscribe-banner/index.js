@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { StaticImage } from 'gatsby-plugin-image';
-import { bannerWrapper, textWrapper, hasImage, imgWrap } from './subscribe.module.scss';
+
 import EmailForm from '../../atoms/email-form';
+
+import { bannerWrapper, textWrapper, hasImage, imgWrap } from './subscribe.module.scss';
 
 const SubscribeBanner = ({
   title,
@@ -42,11 +43,13 @@ const SubscribeBanner = ({
 
 SubscribeBanner.propTypes = {
   title: PropTypes.string,
+  subtitle: PropTypes.string,
   bannerImage: PropTypes.bool,
   placeholder: PropTypes.string,
   checkItemOne: PropTypes.string,
   checkItemTwo: PropTypes.string,
   checkItemThree: PropTypes.string,
+  style: PropTypes.string,
 };
 
 export default SubscribeBanner;

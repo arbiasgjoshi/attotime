@@ -1,8 +1,8 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
 
 import CheckCard from '@components/molecules/check-card';
+
 import * as styles from './check-list.module.scss';
 
 const CheckList = ({ list, hasDescription = false, cardStyle = '' }) => (

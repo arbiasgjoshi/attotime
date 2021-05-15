@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-
+import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby-plugin-intl';
 
-import { StaticImage } from 'gatsby-plugin-image';
 import Button from '@components/atoms/button';
 import Divider from '@components/atoms/divider';
 import Icon from '@components/atoms/icon';
@@ -354,6 +353,10 @@ const HeaderComponent = ({ headerStyle }) => {
       </div>
     </header>
   );
+};
+
+HeaderComponent.propTypes = {
+  headerStyle: PropTypes.string,
 };
 
 export default HeaderComponent;

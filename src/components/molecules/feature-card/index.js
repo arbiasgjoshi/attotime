@@ -11,7 +11,6 @@ import {
 
 const FeatureCard = ({
   logo,
-  alt,
   title,
   description,
   isLeftAligned,
@@ -33,10 +32,11 @@ const FeatureCard = ({
 
 FeatureCard.propTypes = {
   logo: PropTypes.string,
-  alt: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
   isWorkCard: PropTypes.bool,
+  isLeftAligned: PropTypes.bool,
+  imagePadding: PropTypes.string,
 };
 
 export default FeatureCard;

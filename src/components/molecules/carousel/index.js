@@ -1,10 +1,7 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
-
 import { Carousel } from 'react-responsive-carousel';
 
-import Icon from '@components/atoms/icon';
 import ArrowRight from '@images/arrow-right.svg';
 import ArrowLeft from '@images/arrow-left.svg';
 

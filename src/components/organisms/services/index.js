@@ -1,6 +1,8 @@
 import React from 'react';
-import ServiceCard from '@components/molecules/service-card';
 import PropTypes from 'prop-types';
+
+import ServiceCard from '@components/molecules/service-card';
+
 import { container, serviceList } from './services.module.scss';
 
 const Services = ({ list }) => (

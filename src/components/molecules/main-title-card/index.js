@@ -1,6 +1,7 @@
 import React from 'react';
-import Button from '@components/atoms/button';
 import PropTypes from 'prop-types';
+
+import Button from '@components/atoms/button';
 
 import {
   container,
@@ -49,6 +50,9 @@ MainTitleCard.propTypes = {
   paragraph: PropTypes.string,
   hasParagraph: PropTypes.bool,
   showButton: PropTypes.bool,
+  maxParagraphWidth: PropTypes.number,
+  maxWidth: PropTypes.number,
+  image: PropTypes.shape({}),
 };
 
 export default MainTitleCard;

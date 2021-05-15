@@ -1,8 +1,11 @@
-import { blogListWrapper } from './blog-list.module.scss';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+
+import Divider from '@components/atoms/divider';
 import List from './list';
 import Pagination from './pagination';
-import React, { useState } from 'react';
-import Divider from '@components/atoms/divider';
+
+import { blogListWrapper } from './blog-list.module.scss';
 
 const BlogList = ({ list }) => {
   const [blogs, setBlogs] = useState(list);
@@ -27,6 +30,10 @@ const BlogList = ({ list }) => {
       />
     </div>
   );
+};
+
+BlogList.propTypes = {
+  list: PropTypes.arrayOf({}),
 };
 
 export default BlogList;

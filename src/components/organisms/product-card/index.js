@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby-plugin-intl';
 
+import Icon from '@components/atoms/icon';
 import Title from '@components/molecules/title';
 import CheckCard from '@components/molecules/check-card';
-import Icon from '@components/atoms/icon';
+
 import arrowIcon from '@images/arrowForward@2x.png';
+
 import * as styles from './product-card.module.scss';
 
 const ProductCard = ({
@@ -68,6 +70,10 @@ ProductCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   list: PropTypes.shape(),
+  image: PropTypes.shape({}),
+  path: PropTypes.string,
+  imageWidth: PropTypes.number,
+  imageHeight: PropTypes.number,
   isSwapped: PropTypes.bool,
   style: PropTypes.string,
   imagePadding: PropTypes.string,

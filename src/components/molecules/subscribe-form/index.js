@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Input from '@components/atoms/input';
 import Button from '@components/atoms/button';
@@ -11,5 +12,9 @@ const SubscribeForm = ({ placeholder }) => (
     <Button btnText="Start a Free Trial" btnStyle="black" />
   </div>
 );
+
+SubscribeForm.propTypes = {
+  placeholder: PropTypes.string,
+};
 
 export default SubscribeForm;

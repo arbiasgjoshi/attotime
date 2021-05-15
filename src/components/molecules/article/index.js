@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { container, textWrapper, imageWrapper, secondBlock, swap } from './article.module.scss';
 
 const Article = ({
@@ -11,21 +12,24 @@ const Article = ({
   imagePadding = '',
   imageHeight,
   imageWidth,
-}) => {
-  return (
-    <div className={`${container} ${isSwapped && swap}`}>
-      <div style={maxWidth && { maxWidth }} className={textWrapper}>
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-      <div className={secondBlock}>
-        <div style={{ padding: imagePadding }} className={imageWrapper}>
-          <img width={imageWidth} imageHeight={imageHeight} src={image} />
-        </div>
+}) => (
+  <div className={`${container} ${isSwapped && swap}`}>
+    <div style={maxWidth && { maxWidth }} className={textWrapper}>
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+    <div className={secondBlock}>
+      <div style={{ padding: imagePadding }} className={imageWrapper}>
+        <img
+          width={imageWidth}
+          alt={`title-${imageHeight}`}
+          imageHeight={imageHeight}
+          src={image}
+        />
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 Article.propTypes = {
   title: PropTypes.string,
@@ -34,6 +38,8 @@ Article.propTypes = {
   isSwapped: PropTypes.bool,
   maxWidth: PropTypes.number,
   imagePadding: PropTypes.string,
+  imageHeight: PropTypes.number,
+  imageWidth: PropTypes.number,
 };
 
 export default Article;

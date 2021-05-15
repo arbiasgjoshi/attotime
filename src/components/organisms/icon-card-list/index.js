@@ -1,6 +1,8 @@
 import React from 'react';
-import IconCard from '@components/molecules/icon-card';
 import PropTypes from 'prop-types';
+
+import IconCard from '@components/molecules/icon-card';
+
 import * as styles from './icon-card-list.module.scss';
 
 const IconCardList = ({ cardList, noImage, hasBigImages = false, style = '' }) => (

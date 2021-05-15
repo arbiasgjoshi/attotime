@@ -1,6 +1,9 @@
 import React from 'react';
-import { paginationWrapper, pagination, pageLink, selected } from './pagination.module.scss';
+import PropTypes from 'prop-types';
+
 import Button from '@components/atoms/button';
+
+import { paginationWrapper, pagination, pageLink, selected } from './pagination.module.scss';
 
 const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
   const pageNumbers = [];
@@ -41,6 +44,13 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
       <Button btnText="Next" btnStyle="teal" onBtnClick={handleNext} />
     </nav>
   );
+};
+
+Pagination.propTypes = {
+  postsPerPage: PropTypes.number,
+  totalPosts: PropTypes.number,
+  paginate: PropTypes.func,
+  currentPage: PropTypes.number,
 };
 
 export default Pagination;

@@ -1,5 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Icon from '@components/atoms/icon';
+
 import {
   container,
   iconWrapper,
@@ -19,5 +22,10 @@ const ServiceCard = ({ title, icon }) => (
     </div>
   </div>
 );
+
+ServiceCard.propTypes = {
+  title: PropTypes.string,
+  icon: PropTypes.shape({}),
+};
 
 export default ServiceCard;
