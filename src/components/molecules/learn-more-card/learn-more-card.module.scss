@@ -25,9 +25,10 @@
 
   .iconWrapper {
     @include flex-align(center, center);
-    margin: 6rem 14rem 2rem 14rem;
+    margin: 2rem 0;
 
     @include min(tablet) {
+      margin: 6rem 14rem 2rem 14rem;
       width: 7rem;
       height: 5rem;
     }

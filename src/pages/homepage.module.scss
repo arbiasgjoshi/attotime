@@ -49,3 +49,16 @@
     }
   }
 }
+
+.mobileImage {
+  margin: 4rem 0;
+  @include min(tablet) {
+    display: none;
+  }
+}
+
+.desktopImage {
+  @include max(tablet) {
+    display: none;
+  }
+}

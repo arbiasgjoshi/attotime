@@ -1,19 +1,23 @@
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
+import Slider from 'react-slick';
 
+import Icon from '@components/atoms/icon';
+import Divider from '@components/atoms/divider';
+import EmailForm from '@components/atoms/email-form';
+import Number from '@components/atoms/number-card';
 import HeaderComponent from '@components/molecules/header';
 import SEO from '@components/molecules/seo';
-
 import FooterComponent from '@components/molecules/footer';
-import Divider from '@components/atoms/divider';
 import Title from '@components/molecules/title';
-import Story from '@components/organisms/story';
-import Number from '@components/atoms/number-card';
 import MainTitle from '@components/molecules/main-title-card';
-import EmailForm from '@components/atoms/email-form';
+import CommentCard from '@components/molecules/comment-card';
+import CarouselComponent from '@components/molecules/carousel';
 import FeatureTabs from '@components/organisms/feature-tabs';
 import FreeTrial from '@components/organisms/free-trial';
+import Story from '@components/organisms/story';
 import Services from '@components/organisms/services';
-import { container } from '@styles/main.module.scss';
+import VideoCheckList from '@components/organisms/video-checklist';
 
 import ConstructionLogo from '@images/construction-industry-logo.svg';
 import PaintingLogo from '@images/painting-industry-logo.svg';
@@ -24,32 +28,25 @@ import LandscapingLogo from '@images/landscaping-industry-logo.svg';
 import RoofingLogo from '@images/roofing-industry-logo.svg';
 import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
-
-import Icon from '@components/atoms/icon';
-import { StaticImage } from 'gatsby-plugin-image';
-import CommentCard from '@components/molecules/comment-card';
-
 import authorImage from '@images/no-image.png';
-import CarouselComponent from '@components/molecules/carousel';
-import Slider from 'react-slick';
+
+import { container } from '@styles/main.module.scss';
 import '@styles/includes/slick-carousel.scss';
-
 import { FooterLinks } from '@locale/en.js';
-
 import {
   btnWrapper,
   pulledLeft,
   pulledRight,
   carouselWrapper,
 } from '@components/molecules/carousel/carousel.module.scss';
-
 import {
   // slider,
   sliderWrapper,
   sliderText,
   numbers,
+  mobileImage,
+  desktopImage,
 } from './homepage.module.scss';
-import VideoCheckList from '../components/organisms/video-checklist';
 
 const titleList = [
   { title: 'No longer chasing timesheets.', id: '1asdd1a' },
@@ -117,6 +114,13 @@ const Home = () => (
       title="Time tracking, simplified."
       subtitle="Atto is a simple all-in-one time-tracking and timesheet solution. Spend less time managing your business and more time getting work done."
     />
+    <StaticImage
+      src="../images/time-tracking-fingertips@2x.png"
+      alt="Home banner image"
+      height={505}
+      quality={95}
+      className={mobileImage}
+    />
     <EmailForm
       placeholder="Type your email"
       checkItemOne="No credit card required"
@@ -131,6 +135,7 @@ const Home = () => (
       width={1140}
       height={505}
       quality={95}
+      className={desktopImage}
     />
     <Divider className="style4" />
     <div className={sliderWrapper}>

@@ -4,8 +4,10 @@
 
   .readyMadeTitle {
     p {
-      font-size: 2.6rem;
-      line-height: 3rem;
+      @include min(tablet) {
+        font-size: 2.6rem;
+        line-height: 3rem;
+      }
     }
   }
 

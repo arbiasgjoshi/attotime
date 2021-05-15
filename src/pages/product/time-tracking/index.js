@@ -75,6 +75,8 @@ import {
   learnMoreContainer,
   workListContainer,
   commonProblemsContainer,
+  mobileImage,
+  desktopImage,
 } from './time-tracking.module.scss';
 
 // import localeData from '@locale/en';
@@ -298,6 +300,13 @@ const TimeTracking = () => {
       <div className={checkListContainer}>
         <CheckList list={titleList} cardStyle="centerAligned" />
       </div>
+      <StaticImage
+        src="../images/time-tracking-fingertips@2x.png"
+        alt="Home banner image"
+        height={505}
+        quality={95}
+        className={mobileImage}
+      />
       <Divider />
       <div>
         <StaticImage
@@ -305,6 +314,7 @@ const TimeTracking = () => {
           height={502}
           quality={90}
           src="../../../images/banner-image-2@2x.png"
+          className={desktopImage}
         />
       </div>
       <Divider className="style3" />

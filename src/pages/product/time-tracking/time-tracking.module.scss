@@ -65,4 +65,17 @@
       row-gap: 0;
     }
   }
+
+  .mobileImage {
+    margin-top: 2rem;
+    @include min(tablet) {
+      display: none;
+    }
+  }
+
+  .desktopImage {
+    @include max(tablet) {
+      display: none;
+    }
+  }
 }

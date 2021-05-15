@@ -38,11 +38,16 @@
   }
 
   .secondBlock {
+    margin-bottom: 2rem;
     @include min(tablet) {
       width: 50%;
+      margin-bottom: 0;
     }
 
     .imageWrapper {
+      @include max(tablet) {
+        padding: 0 !important;
+      }
     }
   }
 }

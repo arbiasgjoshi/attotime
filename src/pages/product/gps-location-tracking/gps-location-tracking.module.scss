@@ -62,3 +62,15 @@
     }
   }
 }
+
+.mobileImage {
+  @include min(tablet) {
+    display: none;
+  }
+}
+
+.desktopImage {
+  @include max(tablet) {
+    display: none;
+  }
+}

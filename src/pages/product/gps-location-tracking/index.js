@@ -53,6 +53,8 @@ import {
   privacyContainer,
   imageContainer,
   learnMoreContainer,
+  mobileImage,
+  desktopImage,
 } from './gps-location-tracking.module.scss';
 
 const LocationTracking = () => {
@@ -195,11 +197,19 @@ const LocationTracking = () => {
       <Title maxWidth={920} title="Track the locations of your entire team in real-time" />
       <Divider className="style5" />
       <StaticImage
+        src="../../../images/stay-in-loop.png"
+        alt="Stay in loop image"
+        height={505}
+        quality={95}
+        className={mobileImage}
+      />
+      <StaticImage
         src="../../../images/track-team-locations@2x.png"
         alt="location of team"
         width={1139}
         height={340}
         quality={95}
+        className={desktopImage}
       />
       <Divider className="style2" />
       <IconCardList noImage cardList={cardList} />
