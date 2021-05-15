@@ -1,0 +1,13 @@
+.container {
+  @include flex-direction(column-reverse);
+
+  @include min(mobile) {
+    flex-direction: column;
+  }
+
+  .checkListContainer {
+    @include min(tablet) {
+      margin: 0 8.5rem;
+    }
+  }
+}

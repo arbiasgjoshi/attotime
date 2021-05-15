@@ -16,12 +16,6 @@
   }
 }
 
-.checkListContainer {
-  @include min(tablet) {
-    margin: 0 8.5rem;
-  }
-}
-
 .numbers {
   @include flex-direction(column);
   justify-content: center;

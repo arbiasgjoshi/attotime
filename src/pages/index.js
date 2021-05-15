@@ -6,10 +6,8 @@ import SEO from '@components/molecules/seo';
 import FooterComponent from '@components/molecules/footer';
 import Divider from '@components/atoms/divider';
 import Title from '@components/molecules/title';
-import Video from '@components/molecules/video';
 import Story from '@components/organisms/story';
 import Number from '@components/atoms/number-card';
-import CheckList from '@components/molecules/check-list';
 import MainTitle from '@components/molecules/main-title-card';
 import EmailForm from '@components/atoms/email-form';
 import FeatureTabs from '@components/organisms/feature-tabs';
@@ -49,9 +47,9 @@ import {
   // slider,
   sliderWrapper,
   sliderText,
-  checkListContainer,
   numbers,
 } from './homepage.module.scss';
+import VideoCheckList from '../components/organisms/video-checklist';
 
 const titleList = [
   { title: 'No longer chasing timesheets.', id: '1asdd1a' },
@@ -188,11 +186,7 @@ const Home = () => (
       marginBottom="2rem"
     />
     <Divider className="style3" />
-    <Video />
-    <Divider className="style2" />
-    <div className={checkListContainer}>
-      <CheckList list={titleList} />
-    </div>
+    <VideoCheckList list={titleList} />
     <Divider />
     <Title
       title="See how Atto works with your industry"
