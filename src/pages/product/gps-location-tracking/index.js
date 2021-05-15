@@ -1,31 +1,29 @@
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import Header from '@components/molecules/header';
-import SEO from '@components/molecules/seo';
 import Divider from '@components/atoms/divider';
+import SEO from '@components/molecules/seo';
 import Title from '@components/molecules/title';
-import MainTitleCard from '@components/molecules/main-title-card';
-import IconCardList from '@components/organisms/icon-card-list';
-import Video from '@components/molecules/video';
-import Story from '@components/organisms/story';
-import Cover from '@components/organisms/growth-numbers/cover';
-import LearnMoreCard from '@components/molecules/learn-more-card';
+import Header from '@components/molecules/header';
+import Footer from '@components/molecules/footer';
 import CheckList from '@components/molecules/check-list';
+import MainTitleCard from '@components/molecules/main-title-card';
+import LearnMoreCard from '@components/molecules/learn-more-card';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
+import Story from '@components/organisms/story';
+import IconCardList from '@components/organisms/icon-card-list';
+import Cover from '@components/organisms/growth-numbers/cover';
 import FeaturesList from '@components/organisms/features-list';
 import ListArticle from '@components/organisms/list-article';
 import Services from '@components/organisms/services';
-import { FooterLinks } from '@locale/en.js';
-import Footer from '@components/molecules/footer';
+import VideoCheckList from '@components/organisms/video-checklist';
 
-import { container } from '@styles/main.module.scss';
-import { StaticImage } from 'gatsby-plugin-image';
+import { FooterLinks } from '@locale/en.js';
 
 import noImage from '@images/no-image.png';
 import image1 from '@images/verify-your-team.png';
-import DailyMovements from '@images/daily-movements.svg'; // TODO change svg when png is provided
 import authorImage from '@images/authorImage.png';
-
+import DailyMovements from '@images/daily-movements.svg'; // TODO change svg when png is provided
 import Timer from '@images/timer.svg';
 import Flag from '@images/flag.svg';
 import Ringbell from '@images/ringbell.svg';
@@ -48,8 +46,9 @@ import LandscapingLogo from '@images/landscaping-industry-logo.svg';
 import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import RoofingLogo from '@images/roofing-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
+
+import { container } from '@styles/main.module.scss';
 import {
-  checkListContainer,
   privacyContainer,
   imageContainer,
   learnMoreContainer,
@@ -188,11 +187,7 @@ const LocationTracking = () => {
         paragraph="GPS LOCATION TRACKING"
       />
       <Divider className="style2" />
-      <Video />
-      <Divider className="style2" />
-      <div className={checkListContainer}>
-        <CheckList list={checkList1} cardStyle="centerAligned" />
-      </div>
+      <VideoCheckList list={checkList1} cardStyle="centerAligned" />
       <Divider />
       <Title maxWidth={920} title="Track the locations of your entire team in real-time" />
       <Divider className="style5" />

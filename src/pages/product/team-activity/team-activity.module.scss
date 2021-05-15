@@ -32,10 +32,4 @@
       margin-top: -1.5rem;
     }
   }
-
-  .checkListContainer {
-    @include min(tablet) {
-      margin: 0 8.5rem;
-    }
-  }
 }

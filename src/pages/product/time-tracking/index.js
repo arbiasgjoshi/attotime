@@ -6,7 +6,7 @@ import SEO from '@components/molecules/seo';
 import { useIntl } from 'gatsby-plugin-intl';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
-import Video from '@components/molecules/video';
+import VideoCheckList from '@components/organisms/video-checklist';
 import MainTitleCard from '@components/molecules/main-title-card';
 import FeatureCard from '@components/molecules/feature-card';
 import LearnMoreCard from '@components/molecules/learn-more-card';
@@ -71,7 +71,6 @@ import ThreeDots from '@images/three-dots.svg';
 
 import {
   timeTrackingContainer,
-  checkListContainer,
   learnMoreContainer,
   workListContainer,
   commonProblemsContainer,
@@ -295,11 +294,7 @@ const TimeTracking = () => {
         subtitle="An easy-to-use, accurate, and trustworthy time-tracking solution."
       />
       <Divider className="style2" />
-      <Video />
-      <Divider className="style2" />
-      <div className={checkListContainer}>
-        <CheckList list={titleList} cardStyle="centerAligned" />
-      </div>
+      <VideoCheckList list={titleList} />
       <StaticImage
         src="../images/time-tracking-fingertips@2x.png"
         alt="Home banner image"
@@ -411,8 +406,8 @@ const TimeTracking = () => {
           imageHeight={250}
           icon={noImage}
           alt="Not sure if employees"
-          title={`Not sure if employees are where they’re supposed to?`}
-          description={`Always be in the know! With geofencing, you can restrict employees from clocking in until they’re at a job site – increasing accountability and preventing inaccurate time entries.`}
+          title="Not sure if employees are where they’re supposed to?"
+          description="Always be in the know! With geofencing, you can restrict employees from clocking in until they’re at a job site – increasing accountability and preventing inaccurate time entries."
         />
       </div>
       <Divider />

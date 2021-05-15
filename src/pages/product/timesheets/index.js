@@ -4,20 +4,19 @@ import { FooterLinks } from '@locale/en.js';
 import { container } from '@styles/main.module.scss';
 
 import Divider from '@components/atoms/divider';
+import Title from '@components/molecules/title';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
-import MainTitleCard from '@components/molecules/main-title-card';
 import IconCard from '@components/molecules/icon-card';
+import MainTitleCard from '@components/molecules/main-title-card';
 import LearnMoreCard from '@components/molecules/learn-more-card';
-import Video from '@components/molecules/video';
-import Title from '@components/molecules/title';
-import CheckList from '@components/molecules/check-list';
+import Story from '@components/organisms/story';
 import FeaturesList from '@components/organisms/features-list';
 import ListArticle from '@components/organisms/list-article';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import IconCardList from '@components/organisms/icon-card-list';
 import GrowthNumbers from '@components/organisms/growth-numbers';
-import Story from '@components/organisms/story';
+import VideoCheckList from '@components/organisms/video-checklist';
 import Services from '@components/organisms/services';
 
 import authorImage from '@images/authorImage.png';
@@ -193,11 +192,7 @@ const Timesheets = () => {
         subtitle="Spend more time on the things that matter with timesheets filled painlessly and on-time."
       />
       <Divider className="style2" />
-      <Video />
-      <Divider className="style2" />
-      <div className={checkListContainer}>
-        <CheckList list={checkLists} cardStyle="centerAligned" />
-      </div>
+      <VideoCheckList list={checkLists} />
       <Divider />
       <div className={readyMadeTitle}>
         <Title

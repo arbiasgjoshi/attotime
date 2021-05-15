@@ -1,26 +1,18 @@
-import React from 'react';
-import {
-  teamActivityContainer,
-  learnMoreContainer,
-  checkListContainer,
-  featuresStyle,
-} from './team-activity.module.scss';
-
 import Divider from '@components/atoms/divider';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
 import Title from '@components/molecules/title';
 import MainTitleCard from '@components/molecules/main-title-card';
 import LearnMoreCard from '@components/molecules/learn-more-card';
-import Video from '@components/molecules/video';
-import CheckList from '@components/molecules/check-list';
-import Cover from '@components/organisms/growth-numbers/cover';
-import Article from '@components/molecules/article';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
+import Article from '@components/molecules/article';
 import FeaturesList from '@components/organisms/features-list';
+import Cover from '@components/organisms/growth-numbers/cover';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
-import { container } from '@styles/main.module.scss';
+import VideoCheckList from '@components/organisms/video-checklist';
+
+import { FooterLinks } from '@locale/en.js';
 
 import authorImage from '@images/authorImage.png';
 import image1 from '@images/team-management-departments.png';
@@ -49,7 +41,13 @@ import RoofingLogo from '@images/roofing-industry-logo.svg';
 import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
 
-import { FooterLinks } from '@locale/en.js';
+import { container } from '@styles/main.module.scss';
+import React from 'react';
+import {
+  teamActivityContainer,
+  learnMoreContainer,
+  featuresStyle,
+} from './team-activity.module.scss';
 
 const TeamActivity = () => {
   const titleList = [
@@ -119,11 +117,7 @@ const TeamActivity = () => {
         title="Stay in the loop with everything happening in real-time"
       />
       <Divider className="style2" />
-      <Video />
-      <Divider className="style2" />
-      <div className={checkListContainer}>
-        <CheckList list={titleList} cardStyle="centerAligned" />
-      </div>
+      <VideoCheckList list={titleList} cardStyle="centerAligned" />
       <Divider />
       <Title maxWidth={900} title="See where your team is, and what they're working on" />
       <Divider className="style2" />
