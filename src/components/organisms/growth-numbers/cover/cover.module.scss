@@ -16,11 +16,20 @@
     margin-left: 3.5rem;
     max-width: 31.5rem;
 
+    @include max(tablet) {
+      text-align: center;
+    }
+
     .iconWrapper {
       width: 100%;
       margin-bottom: 2.2rem;
       display: flex;
       justify-content: flex-start;
+
+      @include max(tablet) {
+        justify-content: center;
+        margin-bottom: 1.8rem;
+      }
     }
   }
 

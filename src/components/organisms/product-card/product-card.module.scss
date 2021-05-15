@@ -84,6 +84,10 @@
       border-top: 2px solid #efefef;
       border-bottom: 2px solid #efefef;
 
+      @include max(tablet) {
+        padding-top: 3rem;
+      }
+
       > div {
         align-items: flex-start;
 
@@ -97,9 +101,11 @@
         }
 
         h5 {
-          font-size: 2.5rem !important;
-          line-height: 3rem !important;
-          font-weight: 600 !important;
+          @include min(tablet) {
+            font-size: 2.5rem !important;
+            line-height: 3rem !important;
+            font-weight: 600 !important;
+          }
         }
 
         p {

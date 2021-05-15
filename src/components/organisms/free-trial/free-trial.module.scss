@@ -41,7 +41,7 @@
 
     .ticksWrapper {
       display: flex;
-      margin: 2rem 2.1rem 4.2rem 2.1rem;
+      margin: 2rem 0 4.2rem 0rem;
 
       @include min(tablet) {
         margin: 1rem 3.4rem 0 2.5rem;

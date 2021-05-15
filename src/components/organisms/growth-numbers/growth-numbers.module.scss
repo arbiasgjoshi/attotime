@@ -1,5 +1,7 @@
 .container {
-  border-left: 0.3rem solid #efefef;
+  @include min(tablet) {
+    border-left: 0.3rem solid #efefef;
+  }
 
   .cardList {
     text-align: center;
@@ -37,7 +39,9 @@
       grid-template-columns: repeat(1, 1fr);
 
       > div {
-        text-align: left;
+        h3 {
+          color: #00b9cb;
+        }
       }
     }
   }
