@@ -30,23 +30,24 @@
   }
 
   .checkItems {
-    @include flex-direction(column);
-    margin: 0 2rem;
+    @include flex-direction(row);
+    margin: 0 2.1rem;
+    justify-content: space-between;
+    margin-top: 1.3rem;
 
     @include min(mobile) {
       flex-direction: row;
+      justify-content: center;
       margin-left: 0;
       margin-right: 0;
     }
 
-    justify-content: center;
-    margin-top: 1.3rem;
-
     .itemWrapper {
+      @include flex-align(center, flex-start);
       @include min(mobile) {
+        margin-left: 0;
         margin-right: 0.9rem;
       }
-      @include flex-align(center, flex-start);
       &:last-child {
         margin-right: 0;
       }
@@ -62,6 +63,12 @@
       span {
         font-size: 1.5rem;
         line-height: 1.5rem;
+      }
+
+      &:nth-child(2) {
+        @include max(mobile) {
+          display: none;
+        }
       }
     }
   }

@@ -1,7 +1,7 @@
 .container {
   padding-top: 14.3rem;
   @include max(tablet) {
-    padding: 0 2rem;
+    padding: 8rem 1.6rem;
   }
 
   max-width: 114rem;

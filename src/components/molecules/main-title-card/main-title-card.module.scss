@@ -2,7 +2,6 @@
   text-align: center;
   @include flex-direction(column);
   align-items: center;
-  margin: 0 1rem;
 
   @include min(tablet) {
     margin: 0 12rem;
@@ -26,9 +25,9 @@
     }
 
     .paragraphStyle {
-      font-size: var(--body-style-one-mobile-size);
-      line-height: var(--body-style-one-mobile-line-height);
-      font-weight: var(--body-style-one-font-weight);
+      font-size: var(--body-style-three);
+      line-height: var(--body-style-three-line-height-size);
+      font-weight: var(--body-style-three-font-weight);
       text-align: center;
       margin: auto;
 
