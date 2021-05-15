@@ -1,9 +1,10 @@
 .container {
   background-color: #e6f8fa;
-  padding: 0.5rem;
-  @include flex-direction(column);
+  padding: 6rem 1.8rem 0 1.8rem;
+  @include flex-direction(column-reverse);
 
   @include min(tablet) {
+    flex-direction: column;
     flex-direction: row;
     padding: 8.3rem 7rem 5.7rem 7rem;
   }
@@ -12,6 +13,14 @@
     @include min(tablet) {
       width: 36rem;
       margin-right: 10rem;
+    }
+
+    h3,
+    h4,
+    input {
+      @include max(tablet) {
+        display: none;
+      }
     }
 
     h4 {
@@ -32,7 +41,11 @@
 
     .ticksWrapper {
       display: flex;
-      margin: 1rem 3.4rem 0 2.5rem;
+      margin: 2rem 2.1rem 4.2rem 2.1rem;
+
+      @include min(tablet) {
+        margin: 1rem 3.4rem 0 2.5rem;
+      }
 
       .tickItem {
         display: flex;
@@ -53,9 +66,8 @@
   }
 
   .listWrapper {
-    margin-top: 1.5rem;
-
     @include min(tablet) {
+      margin-top: 1.5rem;
       padding: 0;
       height: 28rem;
       width: 55rem;
@@ -64,6 +76,10 @@
     > div {
       height: 4rem;
 
+      @include max(tablet) {
+        align-items: center;
+      }
+
       @include min(tablet) {
         margin-bottom: 2rem;
       }
@@ -71,6 +87,12 @@
       > div:first-child {
         margin-top: 0;
         margin: 0 1rem 0 0;
+
+        @include max(tablet) {
+          border-radius: 50%;
+          background-color: rgba(0, 185, 203, 0.1);
+          margin: 0 1.7rem 0 0;
+        }
 
         i {
           background-color: transparent;

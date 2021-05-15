@@ -95,7 +95,7 @@
   --h2-mobile-line-height-size: var(--h4-line-height-size);
   --h3-mobile-line-height-size: var(--h5-line-height-size);
   --h4-mobile-line-height-size: var(--h6-line-height-size);
-  --h5-mobile-line-height-size: calc(var(--h5-line-height-size) * 0.8);
+  --h5-mobile-line-height-size: var(--h6-line-height-size);
   --h6-mobile-line-height-size: calc(var(--h6-line-height-size) * 0.8);
 
   --body-style-one-mobile-line-height: var(--body-style-three-line-height-size);
