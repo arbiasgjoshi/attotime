@@ -1,0 +1,28 @@
+.contentContainer {
+  width: 62rem;
+
+  .specialParagraph {
+    padding-left: 5rem;
+    border-left: 3px solid #00b9cb;
+    font-size: 3rem;
+    font-style: italic;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+
+  h4 {
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    list-style: initial;
+    margin-left: 5rem;
+  }
+
+  p {
+    font-family: Charter;
+    font-size: 2.1rem;
+    letter-spacing: 0;
+    line-height: 3.2rem;
+  }
+}

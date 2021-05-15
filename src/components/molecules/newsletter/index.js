@@ -1,15 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import EmailForm from '@components/atoms/email-form';
 
-import { container, leftWrapper, formWrapper } from './newsletter.module.scss';
+import * as styles from './newsletter.module.scss';
 
-const NewsLetter = () => (
-  <div className={container}>
-    <div className={leftWrapper}>
+const NewsLetter = ({ style }) => (
+  <div className={`${styles.container} ${styles[style]}`}>
+    <div className={styles.leftWrapper}>
       <h3>Enjoying these posts?</h3>
     </div>
-    <div className={formWrapper}>
+    <div className={styles.formWrapper}>
       <p>Sign up for our newsletter</p>
       <EmailForm
         placeholder="Type your email"
@@ -21,5 +22,9 @@ const NewsLetter = () => (
     </div>
   </div>
 );
+
+NewsLetter.propTypes = {
+  style: PropTypes.string,
+};
 
 export default NewsLetter;
