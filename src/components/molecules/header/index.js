@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby-plugin-intl';
@@ -53,7 +53,8 @@ const HeaderComponent = ({ headerStyle }) => {
   const [open, setOpen] = useState(false);
 
   const [overMenu, setOverMenu] = useState(false);
-  const [aboveMainMenu, setAbove] = useState(false);
+  const [aboveLinks, setAbove] = useState(false);
+
   const [activeItem, setActiveItem] = useState(null);
 
   // FIXME There is a need for three states: opened menu, you're over the menu, you've left both the menu and main links;
@@ -282,22 +283,6 @@ const HeaderComponent = ({ headerStyle }) => {
     }
   };
 
-  const leftMenu = () => {
-    if (!overMenu) {
-      setTimeout(() => {
-        setOpen(false);
-        setActiveItem(null);
-      }, 500);
-    }
-  };
-
-  const hasLeftMenu = () => {
-    setTimeout(() => {
-      setOverMenu(false);
-      leftMenu();
-    }, 500);
-  };
-
   const menuClasses = (val) => {
     let menuClass = menu;
     if (val === 'resources') {
@@ -307,10 +292,27 @@ const HeaderComponent = ({ headerStyle }) => {
     return menuClass;
   };
 
+  // const checkMenuStatus = () => {};
+
+  const overMenuLinks = () => {
+    setOverMenu(true);
+    setAbove(false);
+  };
+
   const showMenu = (val) => {
     setOpen(true);
     setActiveItem(val);
   };
+
+  const menuStateConfig = () => {
+    if (!overMenu && !aboveLinks) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    menuStateConfig();
+  }, [overMenu, aboveLinks]);
 
   return (
     <header className={`${headerWrapper} ${headerStyle && pricingStyle}`}>
@@ -318,11 +320,7 @@ const HeaderComponent = ({ headerStyle }) => {
         <div className={leftNav}>
           <StaticImage src="../../../images/logo@2x.png" quality={100} width={85} />
         </div>
-        <div
-          className={menuLinks}
-          onMouseEnter={() => setAbove(true)}
-          onMouseLeave={() => leftMenu()}
-        >
+        <div className={menuLinks} onMouseEnter={() => setAbove(true)}>
           <Link to="/product" onMouseEnter={() => showMenu('product')}>
             Product
           </Link>
@@ -344,8 +342,8 @@ const HeaderComponent = ({ headerStyle }) => {
         {open && (
           <div
             className={menuClasses(activeItem)}
-            onMouseEnter={() => setOverMenu(true)}
-            onMouseLeave={() => hasLeftMenu()}
+            onMouseEnter={() => overMenuLinks()}
+            onMouseLeave={() => setOverMenu(false)}
           >
             {viewMenuSections(activeItem)}
           </div>
