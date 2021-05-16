@@ -1,12 +1,12 @@
 .formWrapper {
   @include flex-direction(column);
 
-  @include min(mobile) {
+  @include min(tablet) {
     flex-direction: row;
     margin: 0 auto;
   }
 
-  @include max(tablet) {
+  @include max(mobile) {
     > button {
       width: 100% !important;
       margin-top: 2rem;

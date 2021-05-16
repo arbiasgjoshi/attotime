@@ -63,6 +63,12 @@
 
   .mobileImage {
     margin-top: 2rem;
+    width: 100%;
+
+    > div {
+      max-width: 100% !important;
+    }
+
     @include min(tablet) {
       display: none;
     }
