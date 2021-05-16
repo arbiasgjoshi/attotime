@@ -108,7 +108,7 @@ const settings = {
 
 const Home = () => (
   <div className={container}>
-    <SEO title="Attotime - Landing Page" />
+    <SEO title="ATTO: Timesheets for Employees | Time & GPS Location Tracking" />
     <HeaderComponent />
     <MainTitle
       title="Time tracking, simplified."
