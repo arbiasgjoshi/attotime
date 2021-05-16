@@ -307,7 +307,7 @@ const TimeTracking = () => {
         <StaticImage
           alt="Clock In"
           height={502}
-          quality={90}
+          quality={95}
           src="../../../images/banner-image-2@2x.png"
           className={desktopImage}
         />

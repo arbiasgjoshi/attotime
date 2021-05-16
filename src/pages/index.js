@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Slider from 'react-slick';
 
@@ -97,147 +97,161 @@ const SamplePrevArrow = (props) => {
 const settings = {
   dots: false,
   infinite: false,
+  centerMode: true,
   speed: 500,
   vertical: false,
-  slidesToShow: 3,
   slidesToScroll: 1,
-  centerPadding: 0,
+  centerPadding: '20px',
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
 };
 
-const Home = () => (
-  <div className={container}>
-    <SEO title="ATTO: Timesheets for Employees | Time & GPS Location Tracking" />
-    <HeaderComponent />
-    <MainTitle
-      title="Time tracking, simplified."
-      subtitle="Atto is a simple all-in-one time-tracking and timesheet solution. Spend less time managing your business and more time getting work done."
-    />
-    <StaticImage
-      src="../images/time-tracking-fingertips@2x.png"
-      alt="Home banner image"
-      height={505}
-      quality={95}
-      className={mobileImage}
-    />
-    <EmailForm
-      placeholder="Type your email"
-      checkItemOne="No credit card required"
-      checkItemTwo="14 day free trial"
-      checkItemThree="Cancel anytime"
-      style="homepage"
-    />
-    <Divider className="style1" />
-    <StaticImage
-      src="../images/banner-image-2@2x.png"
-      alt="Home banner image"
-      width={1140}
-      height={505}
-      quality={95}
-      className={desktopImage}
-    />
-    <Divider className="style4" />
-    <div className={sliderWrapper}>
-      <Slider {...settings} className={carouselWrapper} width={960}>
-        <CommentCard
-          title="Amazing for my business!"
-          description="Super convenient and easy to use, so happy i’ve found Atto! Highly recommend."
-          date="23 Jul"
-          author="Nita Ora"
-          sliderItem
-        />
-        <CommentCard
-          title="A must have software"
-          description="I just love the ongoning improvements."
-          date="20 Jul"
-          author="James Stone"
-          sliderItem
-        />
-        <CommentCard
-          title="Everything you need"
-          description="Service is fabolous and it’s easy to use. My employees love it."
-          date="18 Jun"
-          author="Rich Mathews"
-          sliderItem
-        />
-        <CommentCard
-          title="A must have software"
-          description="I just love the ongoning improvements."
-          date="20 Jul"
-          author="James Stone"
-          sliderItem
-        />
-        <CommentCard
-          title="Everything you need"
-          description="Service is fabolous and it’s easy to use. My employees love it."
-          date="18 Jun"
-          author="Rich Mathews"
-          sliderItem
-        />
-      </Slider>
-      <div className={sliderText}>
-        <span>Rated Excellent 5/5 over 1,200 reviews</span>
+const Home = () => {
+  const [slides, setSlides] = useState(3);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setSlides(1);
+    } else if (window.innerWidth > 768 && window.innerWidth < 1024) {
+      setSlides(2);
+    } else {
+      setSlides(3);
+    }
+  }, []);
+
+  return (
+    <div className={container}>
+      <SEO title="ATTO: Timesheets for Employees | Time & GPS Location Tracking" />
+      <HeaderComponent />
+      <MainTitle
+        title="Time tracking, simplified."
+        subtitle="Atto is a simple all-in-one time-tracking and timesheet solution. Spend less time managing your business and more time getting work done."
+      />
+      <StaticImage
+        src="../images/time-tracking-fingertips@2x.png"
+        alt="Home banner image"
+        height={505}
+        quality={95}
+        className={mobileImage}
+      />
+      <EmailForm
+        placeholder="Type your email"
+        checkItemOne="No credit card required"
+        checkItemTwo="14 day free trial"
+        checkItemThree="Cancel anytime"
+        style="homepage"
+      />
+      <Divider className="style1" />
+      <StaticImage
+        src="../images/banner-image-2@2x.png"
+        alt="Home banner image"
+        width={1140}
+        height={505}
+        quality={95}
+        className={desktopImage}
+      />
+      <Divider className="style4" />
+      <div className={sliderWrapper}>
+        <Slider {...settings} slidesToShow={slides} className={carouselWrapper} width={960}>
+          <CommentCard
+            title="Amazing for my business!"
+            description="Super convenient and easy to use, so happy i’ve found Atto! Highly recommend."
+            date="23 Jul"
+            author="Nita Ora"
+            sliderItem
+          />
+          <CommentCard
+            title="A must have software"
+            description="I just love the ongoning improvements."
+            date="20 Jul"
+            author="James Stone"
+            sliderItem
+          />
+          <CommentCard
+            title="Everything you need"
+            description="Service is fabolous and it’s easy to use. My employees love it."
+            date="18 Jun"
+            author="Rich Mathews"
+            sliderItem
+          />
+          <CommentCard
+            title="A must have software"
+            description="I just love the ongoning improvements."
+            date="20 Jul"
+            author="James Stone"
+            sliderItem
+          />
+          <CommentCard
+            title="Everything you need"
+            description="Service is fabolous and it’s easy to use. My employees love it."
+            date="18 Jun"
+            author="Rich Mathews"
+            sliderItem
+          />
+        </Slider>
+        <div className={sliderText}>
+          <span>Rated Excellent 5/5 over 1,200 reviews</span>
+        </div>
       </div>
+      <Divider className="style4" />
+      <FeatureTabs />
+      <Divider />
+      <Title
+        maxWidth={840}
+        maxDescriptionWidth={766}
+        title="Thousands of businesses have saved time using Atto"
+        description="And it’s not just time saved, but money and stress too."
+        marginBottom="2rem"
+      />
+      <Divider className="style3" />
+      <VideoCheckList list={titleList} />
+      <Divider />
+      <Title
+        title="See how Atto works with your industry"
+        description="Atto helps all types of businesses across the world manage their employees’ time."
+        maxDescriptionWidth={700}
+      />
+      <Divider className="style2" />
+      <Services list={serviceList} />
+      <Divider className="style8" />
+      <div className={numbers}>
+        <Number title="500,000+" description="Timesheets Produced" />
+        <Number title="150,000+" description="App Downloads" />
+        <Number title="10,000+" description="Companies use Atto" />
+        <Number title="250 million+" description="Minutes Tracked" />
+      </div>
+      <Divider />
+      <Title title="Hear what business owners say about Atto" />
+      <Divider className="style9" />
+      <CarouselComponent large>
+        <Story
+          className="homepage"
+          img={authorImage}
+          paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
+          author="Robert Bennet - DPA Cleaning Services, Inc."
+        />
+        <Story
+          className="homepage"
+          img={authorImage}
+          paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
+          author="Robert Bennet - DPA Cleaning Services, Inc."
+        />
+        <Story
+          className="homepage"
+          img={authorImage}
+          paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
+          author="Robert Bennet - DPA Cleaning Services, Inc."
+        />
+      </CarouselComponent>
+      <Divider />
+      <FreeTrial
+        title="No time to waste!"
+        description="Stay in control of your employees’ time."
+        list={checkList}
+      />
+      <FooterComponent FooterLinks={FooterLinks} />
     </div>
-    <Divider className="style4" />
-    <FeatureTabs />
-    <Divider />
-    <Title
-      maxWidth={840}
-      maxDescriptionWidth={766}
-      title="Thousands of businesses have saved time using Atto"
-      description="And it’s not just time saved, but money and stress too."
-      marginBottom="2rem"
-    />
-    <Divider className="style3" />
-    <VideoCheckList list={titleList} />
-    <Divider />
-    <Title
-      title="See how Atto works with your industry"
-      description="Atto helps all types of businesses across the world manage their employees’ time."
-      maxDescriptionWidth={700}
-    />
-    <Divider className="style2" />
-    <Services list={serviceList} />
-    <Divider className="style8" />
-    <div className={numbers}>
-      <Number title="500,000+" description="Timesheets Produced" />
-      <Number title="150,000+" description="App Downloads" />
-      <Number title="10,000+" description="Companies use Atto" />
-      <Number title="250 million+" description="Minutes Tracked" />
-    </div>
-    <Divider />
-    <Title title="Hear what business owners say about Atto" />
-    <Divider className="style9" />
-    <CarouselComponent large>
-      <Story
-        className="homepage"
-        img={authorImage}
-        paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
-        author="Robert Bennet - DPA Cleaning Services, Inc."
-      />
-      <Story
-        className="homepage"
-        img={authorImage}
-        paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
-        author="Robert Bennet - DPA Cleaning Services, Inc."
-      />
-      <Story
-        className="homepage"
-        img={authorImage}
-        paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
-        author="Robert Bennet - DPA Cleaning Services, Inc."
-      />
-    </CarouselComponent>
-    <Divider />
-    <FreeTrial
-      title="No time to waste!"
-      description="Stay in control of your employees’ time."
-      list={checkList}
-    />
-    <FooterComponent FooterLinks={FooterLinks} />
-  </div>
-);
+  );
+};
 
 export default Home;

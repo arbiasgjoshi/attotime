@@ -8,8 +8,7 @@
 
   .imageContainer {
     width: 20rem;
-    display: flex;
-    align-items: center;
+    @include flex-align(center, center);
     align-self: center;
 
     @include min(mobile) {
@@ -27,8 +26,11 @@
   .paragraphContainer {
     display: flex;
     flex-direction: column;
-    max-width: 60.2rem;
     margin-top: 3rem;
+
+    @include min(tablet) {
+      max-width: 60.2rem;
+    }
 
     h4 {
       margin-bottom: 5rem;
@@ -64,20 +66,27 @@
   }
 
   &.homepage {
-    margin: 0 9rem;
+    @include min(tablet) {
+      margin: 0 9rem;
+    }
 
     .imageContainer {
-      margin-right: 7rem;
+      @include min(tablet) {
+        margin-right: 7rem;
+      }
     }
     h4 {
       height: 24rem;
-      width: 60rem;
       font-weight: normal;
       font-family: Charter;
-      font-size: 5rem;
-      letter-spacing: -1px;
-      line-height: 6rem;
-      margin-bottom: 4rem !important;
+
+      @include min(tablet) {
+        width: 60rem;
+        font-size: 5rem;
+        line-height: 6rem;
+        letter-spacing: -1px;
+        margin-bottom: 4rem !important;
+      }
     }
   }
 }

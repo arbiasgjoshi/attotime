@@ -3,6 +3,7 @@
 
   @include min(tablet) {
     flex-direction: row;
+    justify-content: center;
   }
 
   .serviceList {
