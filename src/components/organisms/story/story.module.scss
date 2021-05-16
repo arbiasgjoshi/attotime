@@ -8,8 +8,7 @@
 
   .imageContainer {
     width: 20rem;
-    display: flex;
-    align-items: center;
+    @include flex-align(center, center);
     align-self: center;
 
     @include min(mobile) {
@@ -27,8 +26,11 @@
   .paragraphContainer {
     display: flex;
     flex-direction: column;
-    max-width: 60.2rem;
     margin-top: 3rem;
+
+    @include min(tablet) {
+      max-width: 60.2rem;
+    }
 
     h4 {
       margin-bottom: 5rem;

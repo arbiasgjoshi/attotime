@@ -53,7 +53,7 @@
       font-size: 5rem;
     }
 
-    @include max(tablet) {
+    @include max(mobile) {
       text-align: center;
     }
   }
