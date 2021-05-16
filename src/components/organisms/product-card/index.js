@@ -45,10 +45,15 @@ const ProductCard = ({
         <div className={styles.arrowIconContainer}>
           <img src={arrowIcon} alt={title} />
         </div>
+        <span className={styles.leftArrow}>
+          {style === 'homepage' && <Icon fSize={3} iconClass="long-arrow" />}
+        </span>
         <h5>
           <Link to={path}>Learn more</Link>
         </h5>
-        {style === 'homepage' && <Icon fSize={3} iconClass="long-arrow" />}
+        <span className={styles.rightArrow}>
+          {style === 'homepage' && <Icon fSize={3} iconClass="long-arrow" />}
+        </span>
       </div>
     </div>
     <div className={styles.secondWrapper}>

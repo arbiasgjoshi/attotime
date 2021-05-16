@@ -1,3 +1,17 @@
+@keyframes animateArrow {
+  0% {
+    top: 0;
+    right: -10rem;
+  }
+  75% {
+    left: -10rem;
+    opacity: 1;
+  }
+  100% {
+    left: 0;
+  }
+}
+
 .container {
   @include flex-direction(column-reverse);
 
@@ -160,27 +174,57 @@
       @include flex-align(flex-start, center);
       flex-direction: column;
       .learnMoreContainer {
+        position: relative;
+        overflow: hidden;
+        padding-right: 5rem;
         @include min(tablet) {
           margin-top: 5rem;
         }
 
-        //TODO Animation in here
-
-        &:hover {
-          flex-direction: row-reverse;
-          i {
-            margin-left: 0;
-            margin-right: 2rem;
-          }
+        h5 {
+          transition: ease all 0.5s;
         }
 
         .arrowIconContainer {
           display: none;
         }
 
-        i {
+        .leftArrow {
+          opacity: 0;
+          margin-left: 1rem;
+          height: 3rem;
+          @include absolute(left -5rem top 0);
+          transition: ease all 0.5s;
+          width: 3rem;
+        }
+
+        .rightArrow {
           margin-left: 2rem;
-          height: 2.4rem;
+          height: 3rem;
+          @include absolute(right 0 top 0);
+          transition: ease all 0.5s;
+          width: 3rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+          h5 {
+            padding-left: 5rem;
+            a {
+              color: var(--primary-color);
+            }
+          }
+
+          .rightArrow {
+            right: -5rem;
+            opacity: 0;
+          }
+
+          .leftArrow {
+            left: 0;
+            opacity: 1;
+            transition-delay: 0.25s;
+          }
         }
       }
 
