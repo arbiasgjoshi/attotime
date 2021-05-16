@@ -20,6 +20,7 @@
   @include flex-direction(column);
   justify-content: center;
   margin: 0 6.6rem;
+  margin: 3rem 6.6rem 6rem 6.6rem;
   border-top: 2px solid #efefef;
   border-bottom: 2px solid #efefef;
 
@@ -51,7 +52,7 @@
 }
 
 .mobileImage {
-  margin: 4rem 0;
+  margin: 2rem 0 4rem 0;
   @include min(tablet) {
     display: none;
   }

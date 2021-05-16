@@ -122,6 +122,10 @@
       width: 90%;
       margin: 2rem 0;
 
+      @include max(tablet) {
+        padding: 0 !important;
+      }
+
       @include min(desktop) {
         width: 50rem;
         height: 65rem;

@@ -21,6 +21,10 @@
     @include flex-direction(column);
     justify-content: center;
 
+    @include max(tablet) {
+      margin: 0 !important;
+    }
+
     @include min(tablet) {
       width: 56rem;
     }

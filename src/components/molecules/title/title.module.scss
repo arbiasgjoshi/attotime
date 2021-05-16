@@ -44,6 +44,10 @@
     margin: auto;
     margin-bottom: 1.6rem;
 
+    @include max(tablet) {
+      margin-bottom: 1rem !important;
+    }
+
     &.lighterTitle {
       font-weight: var(--regular);
       font-size: 5rem;

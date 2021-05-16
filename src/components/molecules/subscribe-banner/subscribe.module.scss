@@ -15,6 +15,14 @@
     margin-bottom: 1rem;
     letter-spacing: -0.75px;
 
+    @include max(mobile) {
+      text-align: left;
+
+      h3 {
+        font-weight: 500;
+      }
+    }
+
     @include min(tablet) {
       margin-bottom: 5rem;
     }

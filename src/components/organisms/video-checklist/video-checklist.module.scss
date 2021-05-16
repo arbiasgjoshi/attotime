@@ -9,5 +9,12 @@
     @include min(tablet) {
       margin: 0 8.5rem;
     }
+    > div {
+      > div {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
