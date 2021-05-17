@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Collapsible from 'react-collapsible';
+import Icon from '@components/atoms/icon';
 
 import ProductCard from '../product-card';
 import Tabs from './tabs';
@@ -9,7 +10,13 @@ import image2 from '../../../images/know-where-is-team.png';
 import image3 from '../../../images/boost_productivity.png';
 import image4 from '../../../images/stay-in-loop.png';
 
-import { container, content, inactive, collapseDiv } from './feature-tabs.module.scss';
+import {
+  container,
+  content,
+  inactive,
+  collapseDiv,
+  triggerItemWrap,
+} from './feature-tabs.module.scss';
 
 const FeatureTabs = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -26,6 +33,13 @@ const FeatureTabs = () => {
     }
   };
 
+  const triggerItem = (val) => (
+    <div className={triggerItemWrap}>
+      <h5>{val}</h5>
+      <Icon iconClass="arrow-down" />
+    </div>
+  );
+
   return (
     <div className={container}>
       <Tabs
@@ -35,7 +49,7 @@ const FeatureTabs = () => {
       />
       <div className={getClassName(0)}>
         {isMobile() ? (
-          <Collapsible className={collapseDiv} trigger="Time Tracking">
+          <Collapsible className={collapseDiv} trigger={triggerItem('Time Tracking')}>
             <ProductCard
               title="Track time from any device, anytime, and anywhere"
               description="Say goodbye to employee estimates. See every minute on the clock, including work hours, breaks, and time off."
@@ -64,7 +78,7 @@ const FeatureTabs = () => {
       </div>
       <div className={getClassName(1)}>
         {isMobile() ? (
-          <Collapsible className={collapseDiv} trigger="GPS Location Tracking">
+          <Collapsible className={collapseDiv} trigger={triggerItem('GPS Location Tracking')}>
             <ProductCard
               title="Be in control of your employees in the field"
               description="Track job routes, work history, and employee’ locations in real-time – increasing team safety and accountability."
@@ -92,7 +106,7 @@ const FeatureTabs = () => {
 
       <div className={getClassName(2)}>
         {isMobile() ? (
-          <Collapsible className={collapseDiv} trigger="Team Activity">
+          <Collapsible className={collapseDiv} trigger={triggerItem('Team Activity')}>
             <ProductCard
               title="Stay in the loop of work activity throughout the day"
               description="Get instantly notified of employee work activity – without needing to pick up the phone."
@@ -122,7 +136,7 @@ const FeatureTabs = () => {
 
       <div className={getClassName(3)}>
         {isMobile() ? (
-          <Collapsible className={collapseDiv} trigger="Timesheets">
+          <Collapsible className={collapseDiv} trigger={triggerItem('Timesheets')}>
             <ProductCard
               title="Automate your employees' timesheets"
               description="Accurate, trustworthy, and insightful timesheets – that save hours from the payroll process."
