@@ -339,3 +339,13 @@ i {
     content: $attoicon-long-arrow;
   }
 }
+.attoicon-arrow-down {
+  &:before {
+    content: $attoicon-arrow-down;
+  }
+}
+.attoicon-arrow-up {
+  &:before {
+    content: $attoicon-arrow-up;
+  }
+}

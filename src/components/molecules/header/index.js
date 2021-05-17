@@ -26,17 +26,21 @@ import ThreeDots from '@images/three-dots.svg';
 import HelpCenterLogo from '@images/help-center-logo.svg';
 import BlogLogo from '@images/blog-menu-logo.svg';
 import ContactLogo from '@images/contact-menu-logo.svg';
+import Collapsible from 'react-collapsible';
 
 import {
   headerWrapper,
   container,
   leftNav,
   menuLinks,
+  login,
   rightNavButtons,
   menu,
   menuSection,
   contentPadding,
   leftItems,
+  notMobile,
+  mobile,
   mainItem,
   subItems,
   rightItems,
@@ -47,10 +51,21 @@ import {
   menuIcon,
   menuItemDesc,
   pricingStyle,
+  menuTrigger,
+  activeButton,
+  tiles1,
+  tiles2,
+  tiles3,
+  collapsibleMenu,
+  mobileButtons,
+  triggerItemWrap,
 } from './header.module.scss';
+
+import './collapsible.scss';
 
 const HeaderComponent = ({ headerStyle }) => {
   const [open, setOpen] = useState(false);
+  const [openMobile, setOpenMobile] = useState(false);
 
   const [overMenu, setOverMenu] = useState(false);
   const [aboveLinks, setAbove] = useState(false);
@@ -59,225 +74,232 @@ const HeaderComponent = ({ headerStyle }) => {
 
   // FIXME There is a need for three states: opened menu, you're over the menu, you've left both the menu and main links;
 
+  const productSection = () => (
+    <div className={menuSection}>
+      <div className={`${leftItems} ${contentPadding}`}>
+        <div className={mainItem}>
+          <Link className={`${menuItem} ${menuItemWrapper}`} to="/product">
+            <div className={menuIcon}>
+              <ProductIcon />
+            </div>
+            <div className={menuItemDesc}>
+              <h6 className={notMobile}>Product Overview</h6>
+              <h6 className={mobile}>Overview</h6>
+              <p>
+                Atto is a simple all-in-one time-tracking and timesheet solution. Spend less time
+                managing your business and more time getting work done.
+              </p>
+            </div>
+          </Link>
+        </div>
+        <Divider className="style7" />
+        <div className={subItems}>
+          <Link className={menuItem} to="/product/time-tracking">
+            <div className={menuIcon}>
+              <TimeTrackingIcon />
+            </div>
+            <div className={menuItemDesc}>
+              <h6>Time Tracking</h6>
+              <p>Accurate time tracking from any location and any device</p>
+            </div>
+          </Link>
+          <Link className={menuItem} to="/product/gps-location-tracking">
+            <div className={menuIcon}>
+              <LocationTrackingIcon />
+            </div>
+            <div className={menuItemDesc}>
+              <h6>GPS Location Tracking</h6>
+              <p>Real-time updates on your team’s locations and movements</p>
+            </div>
+          </Link>
+          <Link className={menuItem} to="/product/team-activity">
+            <div className={menuIcon}>
+              <TeamActivityLogo />
+            </div>
+            <div className={menuItemDesc}>
+              <h6>Team Activity</h6>
+              <p>Stay in the loop of your team’s progress as work happens</p>
+            </div>
+          </Link>
+          <Link className={menuItem} to="/product/timesheets">
+            <div className={menuIcon}>
+              <TimesheetsLogo />
+            </div>
+            <div className={menuItemDesc}>
+              <h6>Timesheets</h6>
+              <p>Accurate timesheet reports without the hassle</p>
+            </div>
+          </Link>
+        </div>
+      </div>
+      <div className={rightItems}>
+        <h6>More Features</h6>
+        <ul>
+          <li>
+            <Link to="/">
+              <Icon iconClass="arrow-right" />
+              Mobile Time Tracking
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <Icon iconClass="arrow-right" />
+              Time Clock
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <Icon iconClass="arrow-right" />
+              Time Card App
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <Icon iconClass="arrow-right" />
+              Work Hours Tracker
+            </Link>
+          </li>
+          <li>
+            <Link to="/">
+              <Icon iconClass="arrow-right" />
+              Accurate Reports
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+
+  const industriesSection = () => (
+    <div className={`${menuSection} ${contentPadding}`}>
+      <div className={menuItems}>
+        <Link className={menuItem} to="/industries/construction">
+          <div className={menuIcon}>
+            <ConstructionLogo />
+          </div>
+          <div className={menuItemDesc}>
+            <h6>Construction</h6>
+            <p>Track your entire crew’s time and location in real-time.</p>
+          </div>
+        </Link>
+        <Link className={menuItem} to="/industries/painting-and-decorating">
+          <div className={menuIcon}>
+            <PaintingLogo />
+          </div>
+          <div className={menuItemDesc}>
+            <h6>Painting & Decorating</h6>
+            <p>Using paper timesheets is like watching paint dry.</p>
+          </div>
+        </Link>
+        <Link className={menuItem} to="/industries/healtchare-and-medical">
+          <div className={menuIcon}>
+            <HealthcareLogo />
+          </div>
+          <div className={menuItemDesc}>
+            <h6>Healthcare & Medical</h6>
+            <p>Keep accurate time records while providing care.</p>
+          </div>
+        </Link>
+        <Link className={menuItem} to="/industries/plumbing-and-heating">
+          <div className={menuIcon}>
+            <PlumbingLogo />
+          </div>
+          <div className={menuItemDesc}>
+            <h6>Plumbing & Heating</h6>
+            <p>All cisterns go! Get to work with accurate time tracking from Atto.</p>
+          </div>
+        </Link>
+        <Link className={menuItem} to="/industries/electrical">
+          <div className={menuIcon}>
+            <ElectrianLogo />
+          </div>
+          <div className={menuItemDesc}>
+            <h6>Electrical</h6>
+            <p>Avoid a nasty shock by tracking work hours in real-time</p>
+          </div>
+        </Link>
+        <Link className={menuItem} to="/industries/landscaping">
+          <div className={menuIcon}>
+            <LandscapingLogo />
+          </div>
+          <div className={menuItemDesc}>
+            <h6>Landscaping</h6>
+            <p>The grass is always greener for landscapers that use Atto.</p>
+          </div>
+        </Link>
+        <Link className={menuItem} to="/industries/roofing">
+          <div className={menuIcon}>
+            <RoofingLogo />
+          </div>
+          <div className={menuItemDesc}>
+            <h6>Roofing</h6>
+            <p>Keep accurate time records while working outdoors.</p>
+          </div>
+        </Link>
+        <Link className={menuItem} to="/industries/cleaning-and-maintenance">
+          <div className={menuIcon}>
+            <CleaningLogo />
+          </div>
+          <div className={menuItemDesc}>
+            <h6>Cleaning & Maintenance</h6>
+            <p>Let’s make it a clean sweep! Keep your time tracking tidy.</p>
+          </div>
+        </Link>
+        <Link className={menuItem} to="/industries/more">
+          <div className={menuIcon}>
+            <ThreeDots />
+          </div>
+          <div className={menuItemDesc}>
+            <h6>More industries</h6>
+            <p>Security, Logistics, Government, Consulting, and many more…</p>
+          </div>
+        </Link>
+      </div>
+    </div>
+  );
+
+  const resourceSection = () => (
+    <div className={`${menuSection} ${resourcesMenu} ${contentPadding}`}>
+      <div className={menuItems}>
+        <Link className={menuItem} to="/help-center">
+          <div className={menuIcon}>
+            <HelpCenterLogo />
+          </div>
+          <div className={menuItemDesc}>
+            <h6>Help Center</h6>
+            <p>Get answers to all of your questions in an instant</p>
+          </div>
+        </Link>
+        <Link className={menuItem} to="/blog">
+          <div className={menuIcon}>
+            <BlogLogo />
+          </div>
+          <div className={menuItemDesc}>
+            <h6>Blog</h6>
+            <p>Get helpful productivity tips from our blog</p>
+          </div>
+        </Link>
+        <Link className={menuItem} to="/contact">
+          <div className={menuIcon}>
+            <ContactLogo />
+          </div>
+          <div className={menuItemDesc}>
+            <h6>Contact</h6>
+            <p>Reach out to our support team to get answers to your questions</p>
+          </div>
+        </Link>
+      </div>
+    </div>
+  );
+
   const viewMenuSections = (val) => {
     switch (val) {
       case 'product':
-        return (
-          <div className={menuSection}>
-            <div className={`${leftItems} ${contentPadding}`}>
-              <div className={mainItem}>
-                <Link className={`${menuItem} ${menuItemWrapper}`} to="/product">
-                  <div className={menuIcon}>
-                    <ProductIcon />
-                  </div>
-                  <div className={menuItemDesc}>
-                    <h6>Product Overview</h6>
-                    <p>
-                      Atto is a simple all-in-one time-tracking and timesheet solution. Spend less
-                      time managing your business and more time getting work done.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-              <Divider className="style7" />
-              <div className={subItems}>
-                <Link className={menuItem} to="/product/time-tracking">
-                  <div className={menuIcon}>
-                    <TimeTrackingIcon />
-                  </div>
-                  <div className={menuItemDesc}>
-                    <h6>Time Tracking</h6>
-                    <p>Accurate time tracking from any location and any device</p>
-                  </div>
-                </Link>
-                <Link className={menuItem} to="/product/gps-location-tracking">
-                  <div className={menuIcon}>
-                    <LocationTrackingIcon />
-                  </div>
-                  <div className={menuItemDesc}>
-                    <h6>GPS Location Tracking</h6>
-                    <p>Real-time updates on your team’s locations and movements</p>
-                  </div>
-                </Link>
-                <Link className={menuItem} to="/product/team-activity">
-                  <div className={menuIcon}>
-                    <TeamActivityLogo />
-                  </div>
-                  <div className={menuItemDesc}>
-                    <h6>Team Activity</h6>
-                    <p>Stay in the loop of your team’s progress as work happens</p>
-                  </div>
-                </Link>
-                <Link className={menuItem} to="/product/timesheets">
-                  <div className={menuIcon}>
-                    <TimesheetsLogo />
-                  </div>
-                  <div className={menuItemDesc}>
-                    <h6>Timesheets</h6>
-                    <p>Accurate timesheet reports without the hassle</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className={rightItems}>
-              <h6>More Features</h6>
-              <ul>
-                <li>
-                  <Link to="/">
-                    <Icon iconClass="arrow-right" />
-                    Mobile Time Tracking
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/">
-                    <Icon iconClass="arrow-right" />
-                    Time Clock
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/">
-                    <Icon iconClass="arrow-right" />
-                    Time Card App
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/">
-                    <Icon iconClass="arrow-right" />
-                    Work Hours Tracker
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/">
-                    <Icon iconClass="arrow-right" />
-                    Accurate Reports
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        );
+        return productSection();
       case 'industries':
-        return (
-          <div className={`${menuSection} ${contentPadding}`}>
-            <div className={menuItems}>
-              <Link className={menuItem} to="/industries/construction">
-                <div className={menuIcon}>
-                  <ConstructionLogo />
-                </div>
-                <div className={menuItemDesc}>
-                  <h6>Construction</h6>
-                  <p>Track your entire crew’s time and location in real-time.</p>
-                </div>
-              </Link>
-              <Link className={menuItem} to="/industries/painting-and-decorating">
-                <div className={menuIcon}>
-                  <PaintingLogo />
-                </div>
-                <div className={menuItemDesc}>
-                  <h6>Painting & Decorating</h6>
-                  <p>Using paper timesheets is like watching paint dry.</p>
-                </div>
-              </Link>
-              <Link className={menuItem} to="/industries/healtchare-and-medical">
-                <div className={menuIcon}>
-                  <HealthcareLogo />
-                </div>
-                <div className={menuItemDesc}>
-                  <h6>Healthcare & Medical</h6>
-                  <p>Keep accurate time records while providing care.</p>
-                </div>
-              </Link>
-              <Link className={menuItem} to="/industries/plumbing-and-heating">
-                <div className={menuIcon}>
-                  <PlumbingLogo />
-                </div>
-                <div className={menuItemDesc}>
-                  <h6>Plumbing & Heating</h6>
-                  <p>All cisterns go! Get to work with accurate time tracking from Atto.</p>
-                </div>
-              </Link>
-              <Link className={menuItem} to="/industries/electrical">
-                <div className={menuIcon}>
-                  <ElectrianLogo />
-                </div>
-                <div className={menuItemDesc}>
-                  <h6>Electrical</h6>
-                  <p>Avoid a nasty shock by tracking work hours in real-time</p>
-                </div>
-              </Link>
-              <Link className={menuItem} to="/industries/landscaping">
-                <div className={menuIcon}>
-                  <LandscapingLogo />
-                </div>
-                <div className={menuItemDesc}>
-                  <h6>Landscaping</h6>
-                  <p>The grass is always greener for landscapers that use Atto.</p>
-                </div>
-              </Link>
-              <Link className={menuItem} to="/industries/roofing">
-                <div className={menuIcon}>
-                  <RoofingLogo />
-                </div>
-                <div className={menuItemDesc}>
-                  <h6>Roofing</h6>
-                  <p>Keep accurate time records while working outdoors.</p>
-                </div>
-              </Link>
-              <Link className={menuItem} to="/industries/cleaning-and-maintenance">
-                <div className={menuIcon}>
-                  <CleaningLogo />
-                </div>
-                <div className={menuItemDesc}>
-                  <h6>Cleaning & Maintenance</h6>
-                  <p>Let’s make it a clean sweep! Keep your time tracking tidy.</p>
-                </div>
-              </Link>
-              <Link className={menuItem} to="/industries/more">
-                <div className={menuIcon}>
-                  <ThreeDots />
-                </div>
-                <div className={menuItemDesc}>
-                  <h6>More industries</h6>
-                  <p>Security, Logistics, Government, Consulting, and many more…</p>
-                </div>
-              </Link>
-            </div>
-          </div>
-        );
+        return industriesSection();
       case 'resources':
-        return (
-          <div className={`${menuSection} ${resourcesMenu} ${contentPadding}`}>
-            <div className={menuItems}>
-              <Link className={menuItem} to="/help-center">
-                <div className={menuIcon}>
-                  <HelpCenterLogo />
-                </div>
-                <div className={menuItemDesc}>
-                  <h6>Help Center</h6>
-                  <p>Get answers to all of your questions in an instant</p>
-                </div>
-              </Link>
-              <Link className={menuItem} to="/blog">
-                <div className={menuIcon}>
-                  <BlogLogo />
-                </div>
-                <div className={menuItemDesc}>
-                  <h6>Blog</h6>
-                  <p>Get helpful productivity tips from our blog</p>
-                </div>
-              </Link>
-              <Link className={menuItem} to="/contact">
-                <div className={menuIcon}>
-                  <ContactLogo />
-                </div>
-                <div className={menuItemDesc}>
-                  <h6>Contact</h6>
-                  <p>Reach out to our support team to get answers to your questions</p>
-                </div>
-              </Link>
-            </div>
-          </div>
-        );
+        return resourceSection();
       default:
         return null;
     }
@@ -293,6 +315,17 @@ const HeaderComponent = ({ headerStyle }) => {
   };
 
   // const checkMenuStatus = () => {};
+
+  const triggerItem = (val) => (
+    <div className={triggerItemWrap}>
+      <h5>{val}</h5>
+      <Icon iconClass="arrow-down" />
+    </div>
+  );
+
+  const toggleMenu = () => {
+    setOpenMobile(!openMobile);
+  };
 
   const overMenuLinks = () => {
     setOverMenu(true);
@@ -318,7 +351,9 @@ const HeaderComponent = ({ headerStyle }) => {
     <header className={`${headerWrapper} ${headerStyle && pricingStyle}`}>
       <div className={container}>
         <div className={leftNav}>
-          <StaticImage src="../../../images/logo@2x.png" quality={100} width={85} />
+          <Link to="/">
+            <StaticImage src="../../../images/logo@2x.png" quality={100} width={85} />
+          </Link>
         </div>
         <div className={menuLinks} onMouseEnter={() => setAbove(true)}>
           <Link to="/product" onMouseEnter={() => showMenu('product')}>
@@ -334,10 +369,21 @@ const HeaderComponent = ({ headerStyle }) => {
           </Link>
         </div>
         <div className={rightNavButtons}>
-          <Link to="/login">Log In</Link>
+          <Link to="/login" className={login}>
+            Log In
+          </Link>
           <Link to="/try-for-free">
             <Button btnText="Try for Free" btnStyle="teal" />
           </Link>
+          <button
+            className={`${menuTrigger} ${openMobile && activeButton} `}
+            type="button"
+            onClick={() => toggleMenu()}
+          >
+            <i className={tiles1} />
+            <i className={tiles2} />
+            <i className={tiles3} />
+          </button>
         </div>
         {open && (
           <div
@@ -346,6 +392,20 @@ const HeaderComponent = ({ headerStyle }) => {
             onMouseLeave={() => setOverMenu(false)}
           >
             {viewMenuSections(activeItem)}
+          </div>
+        )}
+        {openMobile && (
+          <div className={collapsibleMenu}>
+            <Collapsible trigger={triggerItem('Product')}>{productSection()}</Collapsible>
+            <Collapsible trigger={triggerItem('Industries')}>{industriesSection()}</Collapsible>
+            <Link to="/pricing">
+              <h5>Pricing</h5>
+            </Link>
+            <Collapsible trigger={triggerItem('Resources')}>{resourceSection()}</Collapsible>
+            <div className={mobileButtons}>
+              <Button btnStyle="gray" btnText="Log in" />
+              <Button btnStyle="teal" btnText="Start a Free 14-Day Trial" />
+            </div>
           </div>
         )}
       </div>
