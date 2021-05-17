@@ -1,5 +1,5 @@
 .container {
-  @include flex-align(center, center);
+  @include flex-align(center, flex-start);
   border-radius: 4px;
   box-sizing: border-box;
   background-color: #e6f8fa;
@@ -41,5 +41,17 @@
     height: 2.9rem;
     right: 2rem;
     opacity: 0;
+  }
+
+  @include max(tablet) {
+    height: 8rem;
+    padding: 1rem;
+    .textContainer {
+      max-width: unset;
+    }
+
+    .iconWrapper {
+      margin-left: 0;
+    }
   }
 }

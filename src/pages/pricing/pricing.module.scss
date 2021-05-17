@@ -54,6 +54,12 @@
           background-color: #fff;
           color: #000;
         }
+
+        @include max(tablet) {
+          height: 4rem;
+          font-size: 2rem;
+          width: 12.6rem;
+        }
       }
 
       button:first-child {
