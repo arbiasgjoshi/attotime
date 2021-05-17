@@ -27,13 +27,6 @@
   }
 
   &.blackStyle {
-    @include max(tablet) {
-      height: 7.4rem;
-      width: 100%;
-      font-size: 2.4rem !important;
-      letter-spacing: -0.5px;
-      line-height: 3rem;
-    }
     width: 18rem;
     max-width: 100%;
   }
@@ -49,25 +42,11 @@
   }
 
   &.wideStyle {
-    @include max(tablet) {
-      height: 7.4rem;
-      width: 100%;
-      font-size: 2.5rem;
-      letter-spacing: -0.5px;
-      line-height: 3rem;
-    }
     width: 22rem;
     max-width: 100%;
   }
 
   &.roundStyle {
-    @include max(tablet) {
-      height: 7.4rem;
-      width: 100%;
-      font-size: 2.5rem;
-      letter-spacing: -0.5px;
-      line-height: 3rem;
-    }
     width: 15rem;
     max-width: 100%;
     border-radius: 3rem;
@@ -110,5 +89,19 @@
     line-height: 4rem;
     font-weight: 500;
     letter-spacing: -0.05rem;
+  }
+
+  @include max(tablet) {
+    &.grayStyle,
+    &.wideStyle,
+    &.roundStyle,
+    &.blackStyle,
+    &.tealStyle {
+      height: 7.4rem;
+      width: 100%;
+      font-size: 2.5rem;
+      letter-spacing: -0.5px;
+      line-height: 3rem;
+    }
   }
 }
