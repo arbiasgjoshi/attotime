@@ -2,6 +2,7 @@
   padding-top: 14.3rem;
   @include max(tablet) {
     padding: 8rem 1.6rem;
+    overflow: hidden;
   }
 
   max-width: 114rem;
