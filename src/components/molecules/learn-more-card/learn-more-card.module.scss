@@ -62,5 +62,11 @@
     border-radius: 4px;
     margin-bottom: 5rem;
     font-size: 2rem;
+
+    @include max(mobile) {
+      height: unset !important;
+      width: 18rem !important;
+      font-size: 2rem !important;
+    }
   }
 }
