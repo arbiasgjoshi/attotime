@@ -1,4 +1,8 @@
 .container {
+  @include max(mobile) {
+    display: none;
+  }
+
   .listContainer {
     @include max(mobile) {
       @include flex-direction(column);
