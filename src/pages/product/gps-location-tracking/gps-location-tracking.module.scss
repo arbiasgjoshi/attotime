@@ -65,7 +65,7 @@
   }
 
   @include min(tablet) {
-    display: none;
+    display: none !important;
   }
 }
 

@@ -94,30 +94,44 @@ const SamplePrevArrow = (props) => {
   );
 };
 
-const settings = {
-  dots: false,
-  infinite: false,
-  centerMode: true,
-  speed: 500,
-  vertical: false,
-  slidesToScroll: 1,
-  centerPadding: '20px',
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
-};
-
 const Home = () => {
-  const [slides, setSlides] = useState(3);
+  const [settings, setSettings] = useState({
+    dots: false,
+    infinite: false,
+    centerMode: true,
+    speed: 500,
+    slidesToShow: 1,
+    vertical: false,
+    slidesToScroll: 1,
+    centerPadding: '20px',
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  });
 
   useEffect(() => {
     if (window.innerWidth < 768) {
-      setSlides(1);
+      setSettings({
+        ...settings,
+        slidesToShow: 1,
+      });
     } else if (window.innerWidth > 768 && window.innerWidth < 1024) {
-      setSlides(2);
+      setSettings({
+        ...settings,
+        slidesToShow: 2,
+        centerMode: false,
+        centerPadding: '0',
+      });
     } else {
-      setSlides(3);
+      setSettings({
+        ...settings,
+        slidesToShow: 3,
+        centerMode: false,
+        centerPadding: '0',
+      });
     }
   }, []);
+
+  console.log(`settings`, settings);
 
   return (
     <div className={container}>
@@ -152,7 +166,7 @@ const Home = () => {
       />
       <Divider className="style4" />
       <div className={sliderWrapper}>
-        <Slider {...settings} slidesToShow={slides} className={carouselWrapper} width={960}>
+        <Slider {...settings} className={carouselWrapper} width={960}>
           <CommentCard
             title="Amazing for my business!"
             description="Super convenient and easy to use, so happy i’ve found Atto! Highly recommend."
