@@ -131,8 +131,6 @@ const Home = () => {
     }
   }, []);
 
-  console.log(`settings`, settings);
-
   return (
     <div className={container}>
       <SEO title="ATTO: Timesheets for Employees | Time & GPS Location Tracking" />

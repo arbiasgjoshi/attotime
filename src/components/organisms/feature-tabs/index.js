@@ -28,7 +28,12 @@ const FeatureTabs = () => {
   const isMobile = () => typeof window !== 'undefined' && window.innerWidth < 768;
 
   const getClassName = (index) => {
-    return activeIndex === index ? content : inactive;
+    if (!isMobile()) {
+      console.log(`isMobile()`, isMobile());
+      return activeIndex === index ? content : inactive;
+    } else {
+      return '';
+    }
   };
 
   const triggerItem = (val) => (
@@ -45,7 +50,7 @@ const FeatureTabs = () => {
         activeIndex={activeIndex}
         list={['Time Tracking', 'GPS Location Tracking', 'Team Activity', 'Timesheets']}
       />
-      <div className={!isMobile() && getClassName(0)}>
+      <div className={getClassName(0)}>
         {isMobile() ? (
           <Collapsible className={collapseDiv} trigger={triggerItem('Time Tracking')}>
             <ProductCard
@@ -74,7 +79,7 @@ const FeatureTabs = () => {
           />
         )}
       </div>
-      <div className={!isMobile() && getClassName(1)}>
+      <div className={getClassName(1)}>
         {isMobile() ? (
           <Collapsible className={collapseDiv} trigger={triggerItem('GPS Location Tracking')}>
             <ProductCard
@@ -102,7 +107,7 @@ const FeatureTabs = () => {
         )}
       </div>
 
-      <div className={!isMobile() && getClassName(2)}>
+      <div className={getClassName(2)}>
         {isMobile() ? (
           <Collapsible className={collapseDiv} trigger={triggerItem('Team Activity')}>
             <ProductCard
