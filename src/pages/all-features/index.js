@@ -4,9 +4,8 @@ import PropTypes from 'prop-types';
 import HeaderComponent from '@components/molecules/header';
 import SEO from '@components/molecules/seo';
 import Divider from '@components/atoms/divider';
+
 import MainTitleCard from '@components/molecules/main-title-card';
-import HeartIcon from '@images/heart-icon@2x.png';
-import ContactForm from '@components/organisms/contact-form';
 
 import Faq from '@components/organisms/faq';
 import FooterComponent from '@components/molecules/footer';
@@ -14,24 +13,26 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 import { FooterLinks, faqList } from '@locale/en.js';
 
 import { container } from '@styles/main.module.scss';
-import { middleAlign } from './contact-page.module.scss';
 
-const Contact = () => {
-  const form = null;
+const AllFeaturesPage = () => {
+  const someVar = null;
   return (
     <div className={container}>
-      <SEO title="Contact Us" />
-      <HeaderComponent />
-      <div className={middleAlign}>
-        <img src={HeartIcon} width="75" height="75" alt="Heart" />
-      </div>
+      <SEO title="All features" />
+      <HeaderComponent headerStyle="pricingHeader" />
       <MainTitleCard
-        title="You're all that matters!"
-        subtitle="Get in touch. We’re ready to answer all your questions."
+        title="All features, at a glance"
+        maxParagraphWidth={620}
+        subtitle="Combining everything you need to manage your team in one place."
       />
-      <ContactForm />
       <Divider />
-      <Faq list={faqList} />
+      <h3>Time Tracking Features</h3>
+      <Divider />
+      <h3>Location Tracking Features</h3>
+      <Divider />
+      <h3>Team Activity Features</h3>
+      <Divider />
+      <h3>Timesheets Features</h3>
       <SubscribeBanner
         bannerImage
         title="There’s no time to waste!"
@@ -47,4 +48,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default AllFeaturesPage;
