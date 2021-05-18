@@ -12,6 +12,23 @@
     display: none;
   }
 
+  > div:not(.tabs) {
+    .productWrapper {
+      display: none;
+
+      @include min(tablet) {
+        display: block;
+      }
+    }
+  }
+
+  .collapseDiv {
+    display: none;
+    @include max(tablet) {
+      display: block;
+    }
+  }
+
   .triggerItemWrap {
     @include flex-direction(row);
     align-items: center;

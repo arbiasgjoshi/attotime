@@ -16,6 +16,7 @@ import {
   inactive,
   collapseDiv,
   triggerItemWrap,
+  productWrapper,
 } from './feature-tabs.module.scss';
 
 const FeatureTabs = () => {
@@ -29,7 +30,6 @@ const FeatureTabs = () => {
 
   const getClassName = (index) => {
     if (!isMobile()) {
-      console.log(`isMobile()`, isMobile());
       return activeIndex === index ? content : inactive;
     } else {
       return '';
@@ -51,21 +51,7 @@ const FeatureTabs = () => {
         list={['Time Tracking', 'GPS Location Tracking', 'Team Activity', 'Timesheets']}
       />
       <div className={getClassName(0)}>
-        {isMobile() ? (
-          <Collapsible className={collapseDiv} trigger={triggerItem('Time Tracking')}>
-            <ProductCard
-              title="Track time from any device, anytime, and anywhere"
-              description="Say goodbye to employee estimates. See every minute on the clock, including work hours, breaks, and time off."
-              image={image1}
-              isSwapped
-              style="homepage"
-              path="/product/time-tracking"
-              imagePadding="3.5rem 3.1rem"
-              imageWidth={438}
-              imageHeight={580}
-            />
-          </Collapsible>
-        ) : (
+        <Collapsible className={collapseDiv} trigger={triggerItem('Time Tracking')}>
           <ProductCard
             title="Track time from any device, anytime, and anywhere"
             description="Say goodbye to employee estimates. See every minute on the clock, including work hours, breaks, and time off."
@@ -77,23 +63,23 @@ const FeatureTabs = () => {
             imageWidth={438}
             imageHeight={580}
           />
-        )}
+        </Collapsible>
+        <div className={productWrapper}>
+          <ProductCard
+            title="Track time from any device, anytime, and anywhere"
+            description="Say goodbye to employee estimates. See every minute on the clock, including work hours, breaks, and time off."
+            image={image1}
+            isSwapped
+            style="homepage"
+            path="/product/time-tracking"
+            imagePadding="3.5rem 3.1rem"
+            imageWidth={438}
+            imageHeight={580}
+          />
+        </div>
       </div>
       <div className={getClassName(1)}>
-        {isMobile() ? (
-          <Collapsible className={collapseDiv} trigger={triggerItem('GPS Location Tracking')}>
-            <ProductCard
-              title="Be in control of your employees in the field"
-              description="Track job routes, work history, and employee’ locations in real-time – increasing team safety and accountability."
-              image={image2}
-              isSwapped
-              style="homepage"
-              path="/product/gps-location-tracking"
-              imageWidth={500}
-              imageHeight={650}
-            />
-          </Collapsible>
-        ) : (
+        <Collapsible className={collapseDiv} trigger={triggerItem('GPS Location Tracking')}>
           <ProductCard
             title="Be in control of your employees in the field"
             description="Track job routes, work history, and employee’ locations in real-time – increasing team safety and accountability."
@@ -104,25 +90,23 @@ const FeatureTabs = () => {
             imageWidth={500}
             imageHeight={650}
           />
-        )}
+        </Collapsible>
+        <div className={productWrapper}>
+          <ProductCard
+            title="Be in control of your employees in the field"
+            description="Track job routes, work history, and employee’ locations in real-time – increasing team safety and accountability."
+            image={image2}
+            isSwapped
+            style="homepage"
+            path="/product/gps-location-tracking"
+            imageWidth={500}
+            imageHeight={650}
+          />
+        </div>
       </div>
 
       <div className={getClassName(2)}>
-        {isMobile() ? (
-          <Collapsible className={collapseDiv} trigger={triggerItem('Team Activity')}>
-            <ProductCard
-              title="Stay in the loop of work activity throughout the day"
-              description="Get instantly notified of employee work activity – without needing to pick up the phone."
-              image={image4}
-              isSwapped
-              style="homepage"
-              path="/product/team-activity"
-              imagePadding="3.5rem 1.8rem"
-              imageWidth={463}
-              imageHeight={580}
-            />
-          </Collapsible>
-        ) : (
+        <Collapsible className={collapseDiv} trigger={triggerItem('Team Activity')}>
           <ProductCard
             title="Stay in the loop of work activity throughout the day"
             description="Get instantly notified of employee work activity – without needing to pick up the phone."
@@ -134,24 +118,24 @@ const FeatureTabs = () => {
             imageWidth={463}
             imageHeight={580}
           />
-        )}
+        </Collapsible>
+        <div className={productWrapper}>
+          <ProductCard
+            title="Stay in the loop of work activity throughout the day"
+            description="Get instantly notified of employee work activity – without needing to pick up the phone."
+            image={image4}
+            isSwapped
+            style="homepage"
+            path="/product/team-activity"
+            imagePadding="3.5rem 1.8rem"
+            imageWidth={463}
+            imageHeight={580}
+          />
+        </div>
       </div>
 
       <div className={getClassName(3)}>
-        {isMobile() ? (
-          <Collapsible className={collapseDiv} trigger={triggerItem('Timesheets')}>
-            <ProductCard
-              title="Automate your employees' timesheets"
-              description="Accurate, trustworthy, and insightful timesheets – that save hours from the payroll process."
-              image={image3}
-              isSwapped
-              style="homepage"
-              path="/product/timesheets"
-              // imageWidth={324}
-              // imageHeight={580}
-            />
-          </Collapsible>
-        ) : (
+        <Collapsible className={collapseDiv} trigger={triggerItem('Timesheets')}>
           <ProductCard
             title="Automate your employees' timesheets"
             description="Accurate, trustworthy, and insightful timesheets – that save hours from the payroll process."
@@ -162,7 +146,19 @@ const FeatureTabs = () => {
             // imageWidth={324}
             // imageHeight={580}
           />
-        )}
+        </Collapsible>
+        <div className={productWrapper}>
+          <ProductCard
+            title="Automate your employees' timesheets"
+            description="Accurate, trustworthy, and insightful timesheets – that save hours from the payroll process."
+            image={image3}
+            isSwapped
+            style="homepage"
+            path="/product/timesheets"
+            // imageWidth={324}
+            // imageHeight={580}
+          />
+        </div>
       </div>
     </div>
   );
