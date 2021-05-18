@@ -1,25 +1,20 @@
 .container {
   .content {
-    margin-top: 3rem;
-    > div h4 {
-      font-size: 3.2rem !important;
-      line-height: 4rem !important;
-      letter-spacing: -0.05rem;
+    display: none;
+    @include min(tablet) {
+      display: block;
+      margin-top: 3rem;
+
+      > div h4 {
+        font-size: 3.2rem !important;
+        line-height: 4rem !important;
+        letter-spacing: -0.05rem;
+      }
     }
   }
 
   .inactive {
     display: none;
-  }
-
-  > div:not(.tabs) {
-    .productWrapper {
-      display: none;
-
-      @include min(tablet) {
-        display: block;
-      }
-    }
   }
 
   .collapseDiv {
