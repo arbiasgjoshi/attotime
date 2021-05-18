@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        additionalData: `@import "${__dirname}/src/styles/globals.scss";`,
+        additionalData: `@import "./src/styles/globals.scss";`,
         cssLoaderOptions: {
           modules: {
             exportLocalsConvention: 'camelCaseOnly',
