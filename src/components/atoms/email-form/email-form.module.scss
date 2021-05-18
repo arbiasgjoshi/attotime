@@ -17,6 +17,10 @@
     > div input {
       border: 2px solid var(--color-20);
       border-radius: 4px;
+
+      &:focus {
+        border-color: var(--primary-color);
+      }
     }
 
     > div button {

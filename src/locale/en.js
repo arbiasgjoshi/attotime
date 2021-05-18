@@ -1,6 +1,7 @@
+import googlePlay from '../images/google-play@2x.png';
+import appStore from '../images/app-store@2x.png';
+
 export const placeholderData = {};
-import googlePlay from '../../src/images/google-play@2x.png';
-import appStore from '../../src/images/app-store@2x.png';
 
 export const FooterLinks = [
   {
@@ -168,5 +169,32 @@ export const FooterLinks = [
         href: 'https://play.google.com/store/apps/details?id=tech.zetta.atto',
       },
     ],
+  },
+];
+
+export const faqList = [
+  {
+    title: 'What happens at the end of my free trial?',
+    paragraph:
+      'After your 14-day free trial ends, you’ll be asked to purchase a subscription in order to continue using Atto. As we don’t require a credit card to sign up for our free trial, you won’t be charged unless you actively choose to subscribe.',
+    toggled: true,
+  },
+  {
+    title: 'Are there any usage limits or add-on charges?',
+    paragraph:
+      'After your 14-day free trial ends, you’ll be asked to purchase a subscription in order to continue using Atto. As we don’t require a credit card to sign up for our free trial, you won’t be charged unless you actively choose to subscribe.',
+    toggled: false,
+  },
+  {
+    title: 'What payment options do you accept?',
+    paragraph:
+      'After your 14-day free trial ends, you’ll be asked to purchase a subscription in order to continue using Atto. As we don’t require a credit card to sign up for our free trial, you won’t be charged unless you actively choose to subscribe.',
+    toggled: false,
+  },
+  {
+    title: 'I have a question that isn’t answered',
+    paragraph:
+      'After your 14-day free trial ends, you’ll be asked to purchase a subscription in order to continue using Atto. As we don’t require a credit card to sign up for our free trial, you won’t be charged unless you actively choose to subscribe.',
+    toggled: false,
   },
 ];

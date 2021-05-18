@@ -15,5 +15,10 @@
 
   > input {
     margin-right: 1.2rem;
+
+    &:focus {
+      box-shadow: 0 0 5px 5px rgba(0, 185, 203, 0.15);
+      border-color: var(--primary-color);
+    }
   }
 }
