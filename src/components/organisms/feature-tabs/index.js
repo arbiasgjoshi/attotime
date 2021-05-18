@@ -27,9 +27,13 @@ const FeatureTabs = () => {
 
   const isMobile = () => typeof window !== 'undefined' && window.innerWidth < 768;
 
+  console.log(`isMobile`, isMobile());
+
   const getClassName = (index) => {
     if (!isMobile()) {
       return activeIndex === index ? content : inactive;
+    } else {
+      return '';
     }
   };
 
