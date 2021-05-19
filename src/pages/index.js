@@ -18,6 +18,7 @@ import FreeTrial from '@components/organisms/free-trial';
 import Story from '@components/organisms/story';
 import Services from '@components/organisms/services';
 import VideoCheckList from '@components/organisms/video-checklist';
+import Modal from '@components/molecules/modal';
 
 import ConstructionLogo from '@images/construction-industry-logo.svg';
 import PaintingLogo from '@images/painting-industry-logo.svg';

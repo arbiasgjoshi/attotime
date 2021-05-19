@@ -6,6 +6,7 @@ import { Link } from 'gatsby-plugin-intl';
 import Button from '@components/atoms/button';
 import Divider from '@components/atoms/divider';
 import Icon from '@components/atoms/icon';
+import Modal from '@components/molecules/modal';
 
 import ProductIcon from '@images/product-overview-logo.svg';
 import TimeTrackingIcon from '@images/time-tracking.svg';
@@ -71,6 +72,10 @@ const HeaderComponent = ({ headerStyle }) => {
   const [aboveLinks, setAbove] = useState(false);
 
   const [activeItem, setActiveItem] = useState(null);
+
+  const [showDialog, setShowDialog] = React.useState(false);
+  const openModal = () => setShowDialog(true);
+  const closeModal = () => setShowDialog(false);
 
   // FIXME There is a need for three states: opened menu, you're over the menu, you've left both the menu and main links;
 
@@ -349,6 +354,7 @@ const HeaderComponent = ({ headerStyle }) => {
 
   return (
     <header className={`${headerWrapper} ${headerStyle && pricingStyle}`}>
+      <Modal close={closeModal} showDialog={showDialog} />
       <div className={container}>
         <div className={leftNav}>
           <Link to="/">
@@ -372,9 +378,9 @@ const HeaderComponent = ({ headerStyle }) => {
           <Link to="/login" className={login}>
             Log In
           </Link>
-          <Link to="/try-for-free">
-            <Button btnText="Try for Free" btnStyle="teal" />
-          </Link>
+          <a>
+            <Button onBtnClick={openModal} btnText="Try for Free" btnStyle="teal" />
+          </a>
           <button
             className={`${menuTrigger} ${openMobile && activeButton} `}
             type="button"
