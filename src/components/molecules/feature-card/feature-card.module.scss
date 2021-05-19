@@ -81,4 +81,27 @@
       margin-bottom: 0.8rem;
     }
   }
+
+  &.allFeaturesStyle {
+    .cardHeader {
+      display: flex;
+      margin-bottom: 1.3rem;
+
+      .logoWrapper {
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1.6rem;
+      }
+
+      h5 {
+        @include flex-align(center, center);
+      }
+    }
+
+    .textContainer {
+      text-align: left;
+      max-width: 36rem;
+      margin-left: 5.6rem;
+    }
+  }
 }

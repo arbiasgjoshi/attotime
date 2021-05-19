@@ -3,9 +3,18 @@ import PropTypes from 'prop-types';
 
 import HeaderComponent from '@components/molecules/header';
 import SEO from '@components/molecules/seo';
+import Title from '@components/molecules/title';
 import Divider from '@components/atoms/divider';
+import FeatureCard from '@components/molecules/feature-card';
 
 import MainTitleCard from '@components/molecules/main-title-card';
+
+import {
+  timeTrackingCards,
+  locationTrackingCards,
+  timesheetCards,
+  teamActivityCards,
+} from './data';
 
 import Faq from '@components/organisms/faq';
 import FooterComponent from '@components/molecules/footer';
@@ -13,6 +22,14 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 import { FooterLinks, faqList } from '@locale/en.js';
 
 import { container } from '@styles/main.module.scss';
+import {
+  cardListWrapper,
+  timeTrackingStyle,
+  locationTrackingStyle,
+  teamActivityStyle,
+  timesheetStyle,
+  cardWrapper,
+} from './all-features.module.scss';
 
 const AllFeaturesPage = () => {
   const someVar = null;
@@ -26,13 +43,74 @@ const AllFeaturesPage = () => {
         subtitle="Combining everything you need to manage your team in one place."
       />
       <Divider />
-      <h3>Time Tracking Features</h3>
-      <Divider />
-      <h3>Location Tracking Features</h3>
-      <Divider />
-      <h3>Team Activity Features</h3>
-      <Divider />
-      <h3>Timesheets Features</h3>
+      <Divider className="style3" />
+      <Title title="Time Tracking Features" />
+      <Divider className="style5" />
+      <div className={`${cardListWrapper} ${timeTrackingStyle}`}>
+        {timeTrackingCards.map(({ title, description, logo }) => {
+          return (
+            <div className={cardWrapper}>
+              <FeatureCard
+                style="all-features"
+                title={title}
+                description={description}
+                logo={logo}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <Divider className="style4" />
+      <Title title="Location Tracking Features" />
+      <Divider className="style5" />
+      <div className={`${cardListWrapper} ${locationTrackingStyle}`}>
+        {locationTrackingCards.map(({ title, description, logo }) => {
+          return (
+            <div className={cardWrapper}>
+              <FeatureCard
+                style="all-features"
+                title={title}
+                description={description}
+                logo={logo}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <Divider className="style4" />
+      <Title title="Team Activity Features" />
+      <Divider className="style5" />
+      <div className={`${cardListWrapper} ${teamActivityStyle}`}>
+        {teamActivityCards.map(({ title, description, logo }) => {
+          return (
+            <div className={cardWrapper}>
+              <FeatureCard
+                style="all-features"
+                title={title}
+                description={description}
+                logo={logo}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <Divider className="style4" />
+      <Title title="Timesheets Features" />
+      <Divider className="style5" />
+      <div className={`${cardListWrapper} ${timesheetStyle}`}>
+        {timesheetCards.map(({ title, description, logo }) => {
+          return (
+            <div className={cardWrapper}>
+              <FeatureCard
+                style="all-features"
+                title={title}
+                description={description}
+                logo={logo}
+              />
+            </div>
+          );
+        })}
+      </div>
       <SubscribeBanner
         bannerImage
         title="There’s no time to waste!"

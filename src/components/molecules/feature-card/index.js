@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 import {
   container,
+  cardHeader,
   workCardContainer,
+  allFeaturesStyle,
   logoWrapper,
   textContainer,
   leftAligned,
@@ -16,19 +18,45 @@ const FeatureCard = ({
   isLeftAligned,
   imagePadding,
   isWorkCard = false,
-}) => (
-  <div
-    className={`${isWorkCard ? workCardContainer : container} ${isLeftAligned ? leftAligned : ''}`}
-  >
-    <div style={imagePadding && { padding: imagePadding }} className={logoWrapper}>
-      {logo}
-    </div>
-    <div className={textContainer}>
-      <h5>{title}</h5>
-      <p>{description}</p>
-    </div>
-  </div>
-);
+  style = '',
+}) => {
+  const render = () => {
+    switch (style) {
+      case 'all-features':
+        return (
+          <div className={`${container} ${allFeaturesStyle}`}>
+            <div className={cardHeader}>
+              <div style={imagePadding && { padding: imagePadding }} className={logoWrapper}>
+                {logo}
+              </div>
+              <h5>{title}</h5>
+            </div>
+            <div className={textContainer}>
+              <p>{description}</p>
+            </div>
+          </div>
+        );
+      default:
+        return (
+          <div
+            className={`${isWorkCard ? workCardContainer : container} ${
+              isLeftAligned ? leftAligned : ''
+            }`}
+          >
+            <div style={imagePadding && { padding: imagePadding }} className={logoWrapper}>
+              {logo}
+            </div>
+            <div className={textContainer}>
+              <h5>{title}</h5>
+              <p>{description}</p>
+            </div>
+          </div>
+        );
+    }
+  };
+
+  return render();
+};
 
 FeatureCard.propTypes = {
   logo: PropTypes.string,
