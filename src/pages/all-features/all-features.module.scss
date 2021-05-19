@@ -13,6 +13,11 @@
   @include flex-direction(column);
   border: 2px solid #efefef;
   border-radius: 2rem;
+  padding: 2rem;
+
+  @include max(tablet) {
+    margin-top: 6.7rem;
+  }
 
   @include min(tablet) {
     display: grid;
@@ -51,12 +56,20 @@
     }
 
     &:nth-child(2) {
-      border-top: none;
+      @include min(tablet) {
+        border-top: none;
+      }
     }
 
-    &:nth-last-child(2):nth-child(even) {
-      border-bottom: 2px solid #efefef;
+    &.emptyCard {
+      @include max(mobile) {
+        display: none;
+      }
     }
+
+    // &:nth-last-child(2):nth-child(even) {
+    //   border-bottom: 2px solid #efefef;
+    // }
   }
 
   &.timeTrackingStyle,

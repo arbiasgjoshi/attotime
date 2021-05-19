@@ -28,6 +28,7 @@ import {
   teamActivityStyle,
   timesheetStyle,
   cardWrapper,
+  emptyCard,
   behindMask,
 } from './all-features.module.scss';
 
@@ -94,8 +95,8 @@ const AllFeaturesPage = () => {
         <Title title="Timesheets Features" />
         <Divider className="style5" />
         <div className={`${cardListWrapper} ${timesheetStyle}`}>
-          {timesheetCards.map(({ title, description, logo }) => (
-            <div className={cardWrapper}>
+          {timesheetCards.map(({ title, description, logo, empty }) => (
+            <div className={`${cardWrapper} ${empty && emptyCard}`}>
               <FeatureCard
                 style="all-features"
                 title={title}

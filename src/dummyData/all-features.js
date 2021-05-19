@@ -274,4 +274,11 @@ export const timesheetCards = [
     logo: <ArchivedMembers />,
     alt: '',
   },
+  {
+    title: '',
+    description: '',
+    logo: '',
+    alt: '',
+    empty: true,
+  },
 ];
