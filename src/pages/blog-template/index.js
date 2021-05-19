@@ -54,7 +54,6 @@ const BlogTemplate = () => (
     <div className={contentWrapper}>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         <TableOfContent list={titleList} />
-        <TableOfContent list={titleList} />
       </div>
       <Content />
     </div>

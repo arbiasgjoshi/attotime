@@ -1,6 +1,10 @@
 .contentContainer {
-  width: 29rem;
-  margin-bottom: 95rem; //fornow
+  width: 100%;
+  @include min(desktop) {
+    position: sticky;
+    width: 29rem;
+    top: 93px;
+  }
 
   h6 {
     margin-bottom: 4rem;

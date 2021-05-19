@@ -69,10 +69,11 @@ const Content = () => (
       feel lost.
     </p>
     <Divider className="style5" />
-    <p className={specialParagraph}>
-      “ 69 percent of employees are more likely to stay with a company for three years if they
-      experienced great onboarding. ”
-    </p>
+    <blockquote>
+      “69 percent of employees are more likely to stay with a company for three years if they
+      experienced great onboarding.”
+      <span>Society for Human Resource Management</span>
+    </blockquote>
     <Divider className="style5" />
     <p>
       In a great post discussing setting expectations in a new contract relationship, setting a
