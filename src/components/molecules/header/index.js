@@ -73,7 +73,7 @@ const HeaderComponent = ({ headerStyle }) => {
 
   const [activeItem, setActiveItem] = useState(null);
 
-  const [showDialog, setShowDialog] = React.useState(false);
+  const [showDialog, setShowDialog] = useState(false);
   const openModal = () => setShowDialog(true);
   const closeModal = () => setShowDialog(false);
 
