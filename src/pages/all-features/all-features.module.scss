@@ -1,24 +1,38 @@
 .cardListWrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  @include flex-direction(column);
   border: 2px solid #efefef;
-  padding: 5rem;
   border-radius: 2rem;
+
+  @include min(tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem;
+  }
 
   .cardWrapper {
     border-top: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
     border-right: 2px solid #efefef;
-    padding: 4rem 0;
+    padding: 2rem 0;
+
+    @include min(tablet) {
+      padding: 4rem 0;
+    }
 
     &:nth-child(odd) {
-      padding-right: 3.2rem;
-      padding-left: 3.1rem;
+      padding-left: 1rem;
+      @include min(tablet) {
+        padding-right: 3.2rem;
+        padding-left: 3.1rem;
+      }
     }
 
     &:nth-child(even) {
       border-right: none;
-      padding-left: 4rem;
+      padding-left: 1rem;
+      @include min(tablet) {
+        padding-left: 4rem;
+      }
     }
 
     &:nth-child(1) {

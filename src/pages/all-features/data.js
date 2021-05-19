@@ -12,7 +12,6 @@ import Clock from '@images/clock.svg';
 import Browser from '@images/browser.svg';
 import Darkmode from '@images/darkMode.svg';
 
-import Location from '@images/location.svg';
 import LocationClock from '@images/clock-location.svg';
 import House from '@images/house.svg';
 import Settings from '@images/settings.svg';
@@ -124,7 +123,7 @@ export const locationTrackingCards = [
   {
     title: 'Real-time Location Updates',
     description: 'See the location of your entire team of employees as they work in real-time.',
-    logo: <Location />,
+    logo: <LocationClock />,
     alt: '',
   },
   {
