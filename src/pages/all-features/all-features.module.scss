@@ -21,9 +21,7 @@
   }
 
   .cardWrapper {
-    border-top: 1px solid #efefef;
-    border-bottom: 1px solid #efefef;
-    border-right: 2px solid #efefef;
+    border-top: 2px solid #efefef;
     padding: 2rem 0;
 
     @include min(tablet) {
@@ -32,6 +30,7 @@
 
     &:nth-child(odd) {
       padding-left: 1rem;
+
       @include min(tablet) {
         padding-right: 3.2rem;
         padding-left: 3.1rem;
@@ -43,6 +42,7 @@
       padding-left: 1rem;
       @include min(tablet) {
         padding-left: 4rem;
+        border-left: 2px solid #efefef;
       }
     }
 
@@ -52,6 +52,10 @@
 
     &:nth-child(2) {
       border-top: none;
+    }
+
+    &:nth-last-child(2):nth-child(even) {
+      border-bottom: 2px solid #efefef;
     }
   }
 

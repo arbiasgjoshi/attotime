@@ -9,19 +9,18 @@ import FeatureCard from '@components/molecules/feature-card';
 
 import MainTitleCard from '@components/molecules/main-title-card';
 
-import {
-  timeTrackingCards,
-  locationTrackingCards,
-  timesheetCards,
-  teamActivityCards,
-} from '../../dummyData/all-features';
-
 import Faq from '@components/organisms/faq';
 import FooterComponent from '@components/molecules/footer';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import { FooterLinks, faqList } from '@locale/en.js';
 
 import { container } from '@styles/main.module.scss';
+import {
+  timeTrackingCards,
+  locationTrackingCards,
+  timesheetCards,
+  teamActivityCards,
+} from '../../dummyData/all-features';
 import {
   cardListWrapper,
   timeTrackingStyle,
@@ -50,69 +49,61 @@ const AllFeaturesPage = () => {
         <Title title="Time Tracking Features" />
         <Divider className="style5" />
         <div className={`${cardListWrapper} ${timeTrackingStyle}`}>
-          {timeTrackingCards.map(({ title, description, logo }) => {
-            return (
-              <div className={cardWrapper}>
-                <FeatureCard
-                  style="all-features"
-                  title={title}
-                  description={description}
-                  logo={logo}
-                />
-              </div>
-            );
-          })}
+          {timeTrackingCards.map(({ title, description, logo }) => (
+            <div className={cardWrapper}>
+              <FeatureCard
+                style="all-features"
+                title={title}
+                description={description}
+                logo={logo}
+              />
+            </div>
+          ))}
         </div>
         <Divider className="style4" />
         <Title title="Location Tracking Features" />
         <Divider className="style5" />
         <div className={`${cardListWrapper} ${locationTrackingStyle}`}>
-          {locationTrackingCards.map(({ title, description, logo }) => {
-            return (
-              <div className={cardWrapper}>
-                <FeatureCard
-                  style="all-features"
-                  title={title}
-                  description={description}
-                  logo={logo}
-                />
-              </div>
-            );
-          })}
+          {locationTrackingCards.map(({ title, description, logo }) => (
+            <div className={cardWrapper}>
+              <FeatureCard
+                style="all-features"
+                title={title}
+                description={description}
+                logo={logo}
+              />
+            </div>
+          ))}
         </div>
         <Divider className="style4" />
         <Title title="Team Activity Features" />
         <Divider className="style5" />
         <div className={`${cardListWrapper} ${teamActivityStyle}`}>
-          {teamActivityCards.map(({ title, description, logo }) => {
-            return (
-              <div className={cardWrapper}>
-                <FeatureCard
-                  style="all-features"
-                  title={title}
-                  description={description}
-                  logo={logo}
-                />
-              </div>
-            );
-          })}
+          {teamActivityCards.map(({ title, description, logo }) => (
+            <div className={cardWrapper}>
+              <FeatureCard
+                style="all-features"
+                title={title}
+                description={description}
+                logo={logo}
+              />
+            </div>
+          ))}
         </div>
         <Divider className="style4" />
         <Title title="Timesheets Features" />
         <Divider className="style5" />
         <div className={`${cardListWrapper} ${timesheetStyle}`}>
-          {timesheetCards.map(({ title, description, logo }) => {
-            return (
-              <div className={cardWrapper}>
-                <FeatureCard
-                  style="all-features"
-                  title={title}
-                  description={description}
-                  logo={logo}
-                />
-              </div>
-            );
-          })}
+          {timesheetCards.map(({ title, description, logo }) => (
+            <div className={cardWrapper}>
+              <FeatureCard
+                style="all-features"
+                title={title}
+                description={description}
+                logo={logo}
+              />
+            </div>
+          ))}
         </div>
         <SubscribeBanner
           bannerImage
