@@ -32,6 +32,7 @@ module.exports = {
         aliases: {
           '@components': 'src/components',
           '@images': 'src/images',
+          '@data': 'src/data',
           '@api': 'src/api',
           '@hooks': 'src/hooks',
           '@helpers': 'src/helpers',

@@ -20,7 +20,7 @@ import {
   locationTrackingCards,
   timesheetCards,
   teamActivityCards,
-} from '../../dummyData/all-features';
+} from '../../data/all-features';
 import {
   cardListWrapper,
   timeTrackingStyle,

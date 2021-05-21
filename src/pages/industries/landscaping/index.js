@@ -2,10 +2,10 @@ import React from 'react';
 
 import Divider from '@components/atoms/divider';
 import SEO from '@components/molecules/seo';
+import Title from '@components/molecules/title';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
 import Story from '@components/organisms/story';
-import MainTitleCard from '@components/molecules/main-title-card';
 
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import { container } from '@styles/main.module.scss';
@@ -17,9 +17,11 @@ import { FooterLinks } from '@locale/en.js';
 
 const Landscaping = () => (
   <div className={`${container}`}>
-    <SEO title="Time Tracking Landscaping" />
+    <SEO title="Landscaping Industries" />
     <Header />
     <Divider />
+    <Title title="Built with landscaping companies in mind" maxWidth={600} />
+    <Divider className="style2" />
     <Story
       img={authorImage}
       paragraph={`"So perfectly simplistic. I work in construction so employees can all be in different places. 
@@ -28,7 +30,7 @@ const Landscaping = () => (
     />
     <Divider />
     <SubscribeBanner
-      title="What are you waiting for? Time is ticking!"
+      title="Help your business blossom with accurate time tracking from Atto"
       placeholder="Type your email"
       bannerImage
       checkItemOne="No credit card required"

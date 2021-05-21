@@ -1,17 +1,3 @@
-import React from 'react';
-
-import Divider from '@components/atoms/divider';
-import SEO from '@components/molecules/seo';
-import Header from '@components/molecules/header';
-import Footer from '@components/molecules/footer';
-import Story from '@components/organisms/story';
-import MainTitleCard from '@components/molecules/main-title-card';
-
-import SubscribeBanner from '@components/molecules/subscribe-banner';
-import { container } from '@styles/main.module.scss';
-import authorImage from '@images/authorImage.png';
-
-import { FooterLinks } from '@locale/en.js';
 import icon1 from '@images/clock-in-out.png';
 import icon2 from '@images/write-notes.png';
 import icon3 from '@images/track-breaks.png';
@@ -19,9 +5,7 @@ import icon4 from '@images/manage-overtime.png';
 import icon5 from '@images/switch-between-jobs.png';
 import icon6 from '@images/add-time-off.png';
 
-// import localeData from '@locale/en';
-
-const secondList = [
+export const firstList = [
   {
     title: 'Clock in and out',
     description: `Tap the giant pulsating clock in/out button to start tracking time.`,
@@ -71,30 +55,3 @@ const secondList = [
     imageHeight: 244,
   },
 ];
-
-const Painting = () => (
-  <div className={`${container}`}>
-    <SEO title="Time Tracking Painting" />
-    <Header />
-    <Divider />
-    <Story
-      img={authorImage}
-      paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
-      author="Robert Bennet - DPA Cleaning Services, Inc."
-    />
-    <Divider />
-    <IconCardList cardList={secondList} hasBigImages style="smallerMargin" />
-    <Divider />
-    <SubscribeBanner
-      title="Using paper timesheets is like watching paint dry. Try Atto instead!"
-      placeholder="Type your email"
-      bannerImage
-      checkItemOne="No credit card required"
-      checkItemTwo="14 day free trial"
-      checkItemThree="Cancel anytime"
-    />
-    <Footer FooterLinks={FooterLinks} />
-  </div>
-);
-
-export default Painting;
