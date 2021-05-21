@@ -9,11 +9,14 @@ import Story from '@components/organisms/story';
 import Article from '@components/molecules/article';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import IconCardList from '@components/organisms/icon-card-list';
+import IndustryMainCard from '@components/organisms/industry-main-card';
 
 import authorImage from '@images/authorImage.png';
 import image1 from '@images/no-image.png';
+import image2 from '@images/time-tracking-roofing@2x.png';
 
 import { container } from '@styles/main.module.scss';
+import { checkList1 } from '@data/industries/construction.js';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
@@ -24,6 +27,12 @@ const Roofing = () => (
   <div className={`${container}`}>
     <SEO title="Roofing Industries" />
     <Header />
+    <IndustryMainCard
+      smallTitle="ATTO FOR ROOFING"
+      title="Time Tracking for Roofing Companies"
+      list={checkList1}
+      image={image2}
+    />
     <Divider />
     <Title title="Built with Roofing companies in mind" maxWidth={600} />
     <Divider className="style2" />
