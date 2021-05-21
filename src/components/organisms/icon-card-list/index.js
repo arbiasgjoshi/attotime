@@ -7,7 +7,7 @@ import * as styles from './icon-card-list.module.scss';
 
 const IconCardList = ({ cardList, noImage, hasBigImages = false, style = '' }) => (
   <div className={`${styles.container} ${hasBigImages && styles.gapStyle}`}>
-    {cardList.map((card, index) => (
+    {cardList?.map((card, index) => (
       <IconCard
         key={index}
         title={card.title}
