@@ -9,11 +9,14 @@ import Article from '@components/molecules/article';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import Story from '@components/organisms/story';
 import IconCardList from '@components/organisms/icon-card-list';
+import IndustryMainCard from '@components/organisms/industry-main-card';
 
 import authorImage from '@images/authorImage.png';
 import { container } from '@styles/main.module.scss';
+import { checkList1 } from '@data/industries/construction.js';
 
 import image1 from '@images/no-image.png';
+import image2 from '@images/time-tracking-plumbing@2x.png';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
@@ -22,8 +25,14 @@ import { firstList } from '@data/industries/roofing.js';
 
 const PlumbingAndHeating = () => (
   <div className={`${container}`}>
-    <SEO title="PlumbingAndHeating Industries" />
+    <SEO title="Plumbing And Heating Industries" />
     <Header />
+    <IndustryMainCard
+      smallTitle="ATTO FOR PLUMBERS AND HEATING ENGINEERS"
+      title="Time Tracking for Plumbing and Heating Companies"
+      list={checkList1}
+      image={image2}
+    />
     <Divider className="style2" />
     <Story
       img={authorImage}

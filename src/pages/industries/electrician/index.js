@@ -9,14 +9,17 @@ import Article from '@components/molecules/article';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import Story from '@components/organisms/story';
 import IconCardList from '@components/organisms/icon-card-list';
+import IndustryMainCard from '@components/organisms/industry-main-card';
 
 import authorImage from '@images/authorImage.png';
 import { container } from '@styles/main.module.scss';
 
 import image1 from '@images/no-image.png';
+import image2 from '@images/time-tracking-electricians@2x.png';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
+import { checkList1 } from '@data/industries/construction.js';
 
 // import localeData from '@locale/en';
 
@@ -24,6 +27,12 @@ const Electrician = () => (
   <div className={`${container}`}>
     <SEO title="Electrician Industries" />
     <Header />
+    <IndustryMainCard
+      smallTitle="ATTO FOR ELECTRICIANS"
+      title="Time Tracking for Electricians"
+      list={checkList1}
+      image={image2}
+    />
     <Title title="Built with Electrician companies in mind" maxWidth={600} />
     <Divider className="style2" />
     <Story

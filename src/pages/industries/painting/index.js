@@ -8,13 +8,16 @@ import Footer from '@components/molecules/footer';
 import Article from '@components/molecules/article';
 import Story from '@components/organisms/story';
 import IconCardList from '@components/organisms/icon-card-list';
+import IndustryMainCard from '@components/organisms/industry-main-card';
 
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import { container } from '@styles/main.module.scss';
 import authorImage from '@images/authorImage.png';
 
 import image1 from '@images/no-image.png';
+import image2 from '@images/time-tracking-painting@2x.png';
 
+import { checkList1 } from '@data/industries/construction.js';
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
 
@@ -24,6 +27,12 @@ const Painting = () => (
   <div className={`${container}`}>
     <SEO title="Painting Industries" />
     <Header />
+    <IndustryMainCard
+      smallTitle="ATTO FOR PAINTERS AND DECORATORS"
+      title="Time Tracking for Painting and Decorating Companies"
+      list={checkList1}
+      image={image2}
+    />
     <Divider />
     <Title title="Built with Painting companies in mind" maxWidth={600} />
     <Divider className="style2" />

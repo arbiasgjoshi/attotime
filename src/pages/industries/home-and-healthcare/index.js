@@ -9,9 +9,13 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 import Article from '@components/molecules/article';
 import Story from '@components/organisms/story';
 import IconCardList from '@components/organisms/icon-card-list';
+import IndustryMainCard from '@components/organisms/industry-main-card';
 
 import authorImage from '@images/authorImage.png';
+import image2 from '@images/time-tracking-healthcare@2x.png';
+
 import { container } from '@styles/main.module.scss';
+import { checkList1 } from '@data/industries/construction.js';
 
 import image1 from '@images/no-image.png';
 
@@ -24,6 +28,12 @@ const HomeHealthcare = () => (
   <div className={`${container}`}>
     <SEO title="Home and Healthcare Industries" />
     <Header />
+    <IndustryMainCard
+      smallTitle="ATTO FOR HOME HEALTHCARE"
+      title="Time Tracking Software for Home Healthcare Providers"
+      list={checkList1}
+      image={image2}
+    />
     <Divider className="style2" />
     <Story
       img={authorImage}

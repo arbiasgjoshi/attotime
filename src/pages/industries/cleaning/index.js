@@ -9,11 +9,14 @@ import Article from '@components/molecules/article';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import Story from '@components/organisms/story';
 import IconCardList from '@components/organisms/icon-card-list';
+import IndustryMainCard from '@components/organisms/industry-main-card';
 
 import authorImage from '@images/authorImage.png';
 import { container } from '@styles/main.module.scss';
+import { checkList1 } from '@data/industries/construction.js';
 
 import image1 from '@images/no-image.png';
+import image2 from '@images/time-tracking-cleaning@2x.png';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
@@ -24,6 +27,12 @@ const Cleaning = () => (
   <div className={`${container}`}>
     <SEO title="Cleaning Industries" />
     <Header />
+    <IndustryMainCard
+      smallTitle="ATTO FOR CLEANERS"
+      title="Time Tracking for Cleaning Companies"
+      list={checkList1}
+      image={image2}
+    />
     <Title title="Built with Cleaning companies in mind" maxWidth={600} />
     <Divider className="style2" />
     <Story
