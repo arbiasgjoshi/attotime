@@ -1,0 +1,55 @@
+.titleContainer {
+  display: flex;
+  margin-bottom: 3.5rem;
+
+  .oldWayTitle {
+    color: #e05656;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: 74px;
+    margin-right: 13.4rem;
+  }
+
+  .newWayTitle {
+    color: #00b9cb;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: 74px;
+  }
+}
+
+.container {
+  @include flex-align(flex-start, space-between);
+  border: 2px solid #efefef;
+  border-radius: 20px;
+  padding: 5rem;
+
+  .oldListStyle,
+  .newListStyle {
+    > div {
+      height: 12rem;
+      padding: 3rem 4rem;
+      border-bottom: 2px solid #efefef;
+      align-items: center;
+
+      &:last-child {
+        border: none;
+      }
+
+      h5 {
+        font-size: var(--h6-size);
+        line-height: var(--h6-line-height-size);
+      }
+    }
+  }
+
+  .oldListStyle {
+    width: 50%;
+    border-right: 1px solid #efefef;
+  }
+
+  .newListStyle {
+    width: 50%;
+    border-left: 1px solid #efefef;
+  }
+}

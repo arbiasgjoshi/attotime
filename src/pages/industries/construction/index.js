@@ -19,12 +19,15 @@ import {
   accordionList1,
   accordionList2,
   accordionList3,
+  oldList,
+  newList,
 } from '@data/industries/construction.js';
 
 import { FooterLinks } from '@locale/en.js';
 import ReviewCard from '../../../components/molecules/review-box';
 import { StaticImage } from 'gatsby-plugin-image';
 import AccordionArticle from '../../../components/organisms/accordion-article';
+import OldVsNew from '../../../components/organisms/old-vs-new';
 
 // import localeData from '@locale/en';
 
@@ -88,6 +91,8 @@ const Construction = () => (
       />
       <Divider className="style2" />
       <Title title="Built with construction companies in mind" maxWidth={600} />
+      <Divider className="style2" />
+      <OldVsNew oldList={oldList} newList={newList} />
       <Divider className="style2" />
       <Story
         img={authorImage}
