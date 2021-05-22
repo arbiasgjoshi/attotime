@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  &.swap {
+    @include flex-direction(row-reverse);
+  }
+
+  .firstBox {
+    max-width: 68rem;
+    .titleContainer {
+      margin-bottom: 5rem;
+    }
+
+    .listStyle {
+      .triggerItemWrap {
+        @include flex-direction(row);
+        align-items: center;
+        width: 100%;
+        h5 {
+          letter-spacing: -0.05rem;
+          width: 100%;
+          margin: 2.3rem 5.6rem 2.3rem 1.8rem;
+        }
+        > i {
+          font-size: 2.4rem;
+          width: 2.4rem;
+          height: 2.4rem;
+          transition: ease all 0.15s;
+        }
+      }
+
+      p {
+        margin: 0 7.2rem 3.2rem 1.8rem;
+      }
+    }
+
+    .listStyle:last-child {
+      > div {
+        &:last-child {
+          border-bottom: 2px solid #efefef;
+        }
+      }
+    }
+  }
+
+  .secondBox {
+    max-width: 40rem;
+    @include flex-align(center, center);
+  }
+}
