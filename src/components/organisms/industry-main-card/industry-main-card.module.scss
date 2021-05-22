@@ -1,11 +1,19 @@
 .container {
-  display: flex;
+  @include flex-direction(column-reverse);
+  @include min(tablet) {
+    flex-direction: row;
+  }
 
   .firstBox {
     max-width: 60rem;
 
+    @include min(tablet) {
+      margin: 7.3rem 4rem 7.4rem 0;
+    }
+
     .smallTitleStyle {
       color: var(--primary-color);
+      line-height: var(--h6-line-height-size);
     }
 
     h1 {
@@ -30,7 +38,7 @@
         }
 
         h5 {
-          font-size: 2.1rem;
+          font-size: var(--body-style-three);
         }
       }
     }
@@ -50,6 +58,5 @@
 
   .secondBox {
     max-width: 50rem;
-    margin-left: 4rem;
   }
 }
