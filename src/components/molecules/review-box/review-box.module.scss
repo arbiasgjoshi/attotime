@@ -1,0 +1,29 @@
+.container {
+  @include flex-direction(column);
+  max-width: 36rem;
+  text-align: center;
+
+  .topBox {
+    border: 2px solid #efefef;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+
+    > h4 {
+      margin: 5rem 0 3.2rem 0;
+      height: 12rem;
+      @include flex-align(center, center);
+    }
+
+    > p {
+      margin: 5.9rem 0 3.7rem 0;
+    }
+  }
+
+  p {
+    color: var(--color-22);
+    font-size: var(--body-style-four);
+    font-weight: var(--body-style-four-font-weight);
+    line-height: var(--body-style-four-line-height-size);
+    letter-spacing: var(--body-style-four-letter-spacing);
+  }
+}
