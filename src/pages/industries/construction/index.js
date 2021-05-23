@@ -1,4 +1,5 @@
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import Divider from '@components/atoms/divider';
 import SEO from '@components/molecules/seo';
@@ -8,11 +9,15 @@ import Footer from '@components/molecules/footer';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import Story from '@components/organisms/story';
 import IndustryMainCard from '@components/organisms/industry-main-card';
+import Steps from '@components/organisms/steps';
+import AccordionArticle from '@components/organisms/accordion-article';
+import OldVsNew from '@components/organisms/old-vs-new';
+import ReviewCards from '@components/organisms/review-cards';
 
 import authorImage from '@images/authorImage.png';
 import image2 from '@images/time-tracking-construction@2x.png';
 
-import { reviewCards, background, topImage, bottomImage } from './construction.module.scss';
+import { background, topImage, bottomImage } from './construction.module.scss';
 import { container } from '@styles/main.module.scss';
 import {
   checkList1,
@@ -21,13 +26,10 @@ import {
   accordionList3,
   oldList,
   newList,
+  steps,
 } from '@data/industries/construction.js';
 
 import { FooterLinks } from '@locale/en.js';
-import ReviewCard from '../../../components/molecules/review-box';
-import { StaticImage } from 'gatsby-plugin-image';
-import AccordionArticle from '../../../components/organisms/accordion-article';
-import OldVsNew from '../../../components/organisms/old-vs-new';
 
 // import localeData from '@locale/en';
 
@@ -47,23 +49,7 @@ const Construction = () => (
         image={image2}
       />
       <Divider className="style4" />
-      <div className={reviewCards}>
-        <ReviewCard
-          title={`"A must-have for your organization"`}
-          rating="5 / 5"
-          job="Hightlight Construction Group"
-        />
-        <ReviewCard
-          title={`"A must-have for your organization"`}
-          rating="5 / 5"
-          job="Hightlight Construction Group"
-        />
-        <ReviewCard
-          title={`"A must-have for your organization"`}
-          rating="5 / 5"
-          job="Hightlight Construction Group"
-        />
-      </div>
+      <ReviewCards />
       <Divider className="style12" />
       <Title
         title="Say goodbye to paper timesheets"
@@ -101,6 +87,16 @@ const Construction = () => (
         author="Jack Thomas – Vision Building & Development"
       />
       <Divider />
+      <Title
+        title="Get everything set up in 3 simple steps"
+        description="Atto is designed to be the easiest time-tracking app to use.
+         There’s absolutely no technical knowledge required."
+        maxWidth={932}
+        maxDescriptionWidth={750}
+      />
+      <Divider className="style1" />
+      <Steps list={steps} />
+      <Divider className="style4" />
       <SubscribeBanner
         title="Ready to put Atto to work on your construction sites?"
         placeholder="Type your email"

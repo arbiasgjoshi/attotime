@@ -1,0 +1,21 @@
+.container {
+  @include flex-direction(column);
+  @include flex-align(center, flex-start);
+
+  .imageContainer {
+    @include flex-align(center, center);
+    max-width: 18rem;
+    max-height: 12rem;
+  }
+
+  .textContainer {
+    margin-top: 3.3rem;
+    text-align: center;
+
+    p {
+      margin: 0.8rem 2rem 1.7rem 2rem;
+      font-size: var(--body-style-three);
+      line-height: var(--body-style-three-line-height-size);
+    }
+  }
+}

@@ -84,3 +84,22 @@ export const newList = [
   'You can log in to Atto and see where all your crew are in real-time.',
   'Time tracking data is verified, and timesheets are generated automatically. All you have to do is input the data from Atto into your payroll system.',
 ];
+
+export const steps = [
+  {
+    image: '',
+    title: '1. Download Atto',
+    description: 'Download Atto and create an account. Available on the web, iOS and Android.',
+  },
+  {
+    image: '',
+    title: '2. Invite team members',
+    description:
+      'Invite your field workers, site managers, and sub-contractors via email or invite link.',
+  },
+  {
+    image: '',
+    title: '3. Ready to go!',
+    description: 'Once they download Atto, you’re ready to go!',
+  },
+];
