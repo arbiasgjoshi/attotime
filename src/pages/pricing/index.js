@@ -209,7 +209,7 @@ const Pricing = () => {
       <Divider className="style5" />
       <div className={featuresBanner}>
         <StaticImage
-          src="../../images/video-background@2x.png"
+          src="../../images/view-all-features@2x.png"
           width={1140}
           quality={96}
           height={170}
