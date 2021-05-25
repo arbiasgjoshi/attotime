@@ -14,10 +14,19 @@ import IndustryMainCard from '@components/organisms/industry-main-card';
 import AccordionArticle from '@components/organisms/accordion-article';
 import OldVsNew from '@components/organisms/old-vs-new';
 import Steps from '@components/organisms/steps';
+import ImagesBox from '@components/organisms/images-box';
 
-import authorImage from '@images/authorImage.png';
-import image1 from '@images/no-image.png';
 import image2 from '@images/time-tracking-roofing@2x.png';
+import authorImage from '@images/roofing-author@2x.png';
+import image3 from '@images/roofing-accordion1.png';
+import image4 from '@images/roofing-accordion2.png';
+import image5 from '@images/roofing-accordion3.png';
+import image6 from '@images/roofing-accordion4.png';
+
+import boxImage1 from '@images/roofing-box-one@2x.png';
+import boxImage2 from '@images/roofing-box-two@2x.png';
+import boxImage3 from '@images/roofing-box-three@2x.png';
+import boxImage4 from '@images/roofing-box-four@2x.png';
 
 import { container } from '@styles/main.module.scss';
 import { background } from './roofing.module.scss';
@@ -60,7 +69,7 @@ const Roofing = () => (
       <Article
         title="Get helpful reminders so your roofers never forget to clock in!"
         description="When your roofers are in the middle of a job, it can be easy to lose track of time. That’s why whenever they enter or leave a job site, and at their normal start and end time, we’ll remind them to clock in and out. And if they happen to forget, they can add a manual time entry for you to review later."
-        image={image1}
+        image={image3}
         maxWidth={500}
         imagePadding="7.3rem 4.5rem"
         imageWidth={400}
@@ -69,7 +78,7 @@ const Roofing = () => (
       <Article
         title="Entrust your supervisor to track your roofing crew’s time"
         description="Tiling large buildings or doing commercial and industrial roofing jobs require lots of your roofers to work together. Instead of having each contractor track their time individually, your on-the-job supervisor can use Atto to clock-in and out on their behalf."
-        image={image1}
+        image={image4}
         isSwapped
         maxWidth={500}
         imagePadding="7.3rem 4.5rem"
@@ -80,12 +89,14 @@ const Roofing = () => (
       <AccordionArticle
         title="Keep track of your roofing contractors as they work throughout the day"
         list={accordionList1}
+        image={image5}
       />
       <Divider />
       <AccordionArticle
         title="Everything you need to keep roofing jobs on schedule and on budget"
         list={accordionList2}
         isSwapped
+        image={image6}
       />
       <Divider className="style11" />
       <Title
@@ -96,12 +107,19 @@ const Roofing = () => (
       <OldVsNew oldList={oldList} newList={newList} />
       <Divider />
       <StaticImage src="../../../images/paper_timesheets@2x.png" />
+      <Divider className="style3" />
+
+      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      <Divider />
+      <Title
+        title="Get everything set up in 3 simple steps"
+        description="Atto is designed to be the easiest time-tracking app to use.
+         There’s absolutely no technical knowledge required."
+        maxWidth={932}
+        maxDescriptionWidth={750}
+      />
       <Divider className="style1" />
       <Steps list={steps} />
-      <Divider />
-      <Divider />
-      <Divider />
-      <Divider />
       <Divider />
       <SubscribeBanner
         title="Time tracking for roofing companies? We’re on top of it!"

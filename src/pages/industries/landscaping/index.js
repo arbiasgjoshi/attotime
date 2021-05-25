@@ -13,10 +13,19 @@ import Steps from '@components/organisms/steps';
 import AccordionArticle from '@components/organisms/accordion-article';
 import OldVsNew from '@components/organisms/old-vs-new';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
+import ImagesBox from '@components/organisms/images-box';
 
 import { container } from '@styles/main.module.scss';
-import authorImage from '@images/authorImage.png';
+import authorImage from '@images/landscaping-author@2x.png';
 import image2 from '@images/time-tracking-landscaping@2x.png';
+import image3 from '@images/landscaping-accordion1.png';
+import image4 from '@images/landscaping-accordion2.png';
+import image5 from '@images/landscaping-accordion3.png';
+
+import boxImage1 from '@images/landscaping-box-one@2x.png';
+import boxImage2 from '@images/landscaping-box-two@2x.png';
+import boxImage3 from '@images/landscaping-box-three@2x.png';
+import boxImage4 from '@images/landscaping-box-four@2x.png';
 
 import { FooterLinks } from '@locale/en.js';
 import {
@@ -58,16 +67,24 @@ const Landscaping = () => (
       />
       <Divider className="style3" />
       <StaticImage src="../../../images/paper_timesheets@2x.png" />
-      <Divider className="style2" />
-      <AccordionArticle title="Keep track of everything happening outdoors" list={accordionList1} />
+      <Divider className="style3" />
+      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
       <Divider />
       <AccordionArticle
+        image={image3}
+        title="Keep track of everything happening outdoors"
+        list={accordionList1}
+      />
+      <Divider />
+      <AccordionArticle
+        image={image4}
         title="Increase the safety and accountability of your landscaping crew with real-time GPS location tracking"
         list={accordionList2}
         isSwapped
       />
       <Divider />
       <AccordionArticle
+        image={image5}
         title="All the reports you need to keep landscaping jobs on schedule and on budget"
         list={accordionList3}
       />
