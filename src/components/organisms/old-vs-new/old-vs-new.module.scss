@@ -1,36 +1,55 @@
 .titleContainer {
   display: flex;
-  margin-bottom: 3.5rem;
+
+  @include min(tablet) {
+    margin-bottom: 3.5rem;
+  }
 
   .oldWayTitle {
     color: #e05656;
     font-size: 38px;
     letter-spacing: 0;
-    line-height: 74px;
-    margin-right: 13.4rem;
+
+    @include min(tablet) {
+      margin-right: 13.4rem;
+      line-height: 74px;
+    }
   }
 
   .newWayTitle {
     color: #00b9cb;
-    font-size: 38px;
     letter-spacing: 0;
-    line-height: 74px;
+    font-size: 38px;
+
+    @include min(tablet) {
+      line-height: 74px;
+    }
   }
 }
 
 .container {
   @include flex-align(flex-start, space-between);
+  flex-direction: column;
   border: 2px solid #efefef;
   border-radius: 20px;
-  padding: 5rem;
+
+  @include min(tablet) {
+    padding: 5rem;
+    flex-direction: row;
+  }
 
   .oldListStyle,
   .newListStyle {
     > div {
-      height: 12rem;
-      padding: 3rem 4rem;
       border-bottom: 2px solid #efefef;
       align-items: center;
+      padding: 1rem;
+      margin-bottom: 0;
+
+      @include min(tablet) {
+        height: 12rem;
+        padding: 3rem 4rem;
+      }
 
       &:last-child {
         border: none;
@@ -44,12 +63,16 @@
   }
 
   .oldListStyle {
-    width: 50%;
-    border-right: 1px solid #efefef;
+    @include min(tablet) {
+      width: 50%;
+      border-right: 1px solid #efefef;
+    }
   }
 
   .newListStyle {
-    width: 50%;
-    border-left: 1px solid #efefef;
+    @include min(tablet) {
+      border-left: 1px solid #efefef;
+      width: 50%;
+    }
   }
 }
