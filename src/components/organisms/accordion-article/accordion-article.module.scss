@@ -1,9 +1,15 @@
 .container {
-  display: flex;
-  justify-content: space-between;
+  @include flex-direction(column-reverse);
+
+  @include min(tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   &.swap {
-    @include flex-direction(row-reverse);
+    @include min(tablet) {
+      @include flex-direction(row-reverse);
+    }
   }
 
   .firstBox {
@@ -17,11 +23,18 @@
         @include flex-direction(row);
         align-items: center;
         width: 100%;
+
         h5 {
           letter-spacing: -0.05rem;
           width: 100%;
-          margin: 2.3rem 5.6rem 2.3rem 1.8rem;
+
+          margin: 0 2rem 0 1rem;
+
+          @include min(tablet) {
+            margin: 2.3rem 5.6rem 2.3rem 1.8rem;
+          }
         }
+
         > i {
           font-size: 2.4rem;
           width: 2.4rem;
@@ -31,7 +44,11 @@
       }
 
       p {
-        margin: 0 7.2rem 3.2rem 1.8rem;
+        margin: 2rem 1rem;
+
+        @include min(tablet) {
+          margin: 0 7.2rem 3.2rem 1.8rem;
+        }
       }
     }
 
