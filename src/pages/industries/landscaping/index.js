@@ -24,10 +24,9 @@ import {
   accordionList1,
   accordionList2,
   accordionList3,
-  oldList,
-  newList,
-  steps,
 } from '@data/industries/landscaping.js';
+
+import { oldList, newList, steps } from '@data/industries';
 
 import { background, topImage, bottomImage } from './landscaping.module.scss';
 

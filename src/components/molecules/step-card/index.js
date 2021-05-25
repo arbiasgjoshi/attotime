@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import { container, imageContainer, textContainer } from './step-card.module.scss';
 
-const Step = ({ image, title, description }) => (
+const Step = ({ image, title, description, imagePadding }) => (
   <div className={container}>
-    <div className={imageContainer}>
+    <div style={{ padding: imagePadding }} className={imageContainer}>
       <img width={65} height={82} src={image} alt="" />
     </div>
     <div className={textContainer}>

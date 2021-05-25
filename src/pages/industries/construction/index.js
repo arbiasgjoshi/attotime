@@ -33,10 +33,9 @@ import {
   accordionList1,
   accordionList2,
   accordionList3,
-  oldList,
-  newList,
-  steps,
 } from '@data/industries/construction.js';
+
+import { steps, oldList, newList } from '@data/industries';
 
 import { FooterLinks } from '@locale/en.js';
 

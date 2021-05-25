@@ -22,15 +22,8 @@ import image2 from '@images/time-tracking-roofing@2x.png';
 import { container } from '@styles/main.module.scss';
 import { background } from './roofing.module.scss';
 
-import {
-  checkList1,
-  oldList,
-  newList,
-  firstList,
-  accordionList1,
-  accordionList2,
-  steps,
-} from '@data/industries/roofing.js';
+import { oldList, newList, steps } from '@data/industries';
+import { checkList1, firstList, accordionList1, accordionList2 } from '@data/industries/roofing.js';
 
 import { FooterLinks } from '@locale/en.js';
 

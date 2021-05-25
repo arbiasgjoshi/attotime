@@ -21,14 +21,8 @@ import authorImage from '@images/authorImage.png';
 import image1 from '@images/no-image.png';
 import image2 from '@images/time-tracking-painting@2x.png';
 
-import {
-  checkList1,
-  oldList,
-  newList,
-  accordionList1,
-  accordionList2,
-  steps,
-} from '@data/industries/painting.js';
+import { checkList1, accordionList1, accordionList2 } from '@data/industries/painting.js';
+import { oldList, newList, steps } from '@data/industries';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';

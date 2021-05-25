@@ -19,12 +19,11 @@ import authorImage from '@images/authorImage.png';
 import { container } from '@styles/main.module.scss';
 import {
   checkList1,
-  oldList,
-  newList,
   accordionList1,
   accordionList2,
-  steps,
 } from '@data/industries/plumbing-and-heating.js';
+
+import { oldList, newList, steps } from '@data/industries';
 
 import image1 from '@images/no-image.png';
 import image2 from '@images/time-tracking-plumbing@2x.png';

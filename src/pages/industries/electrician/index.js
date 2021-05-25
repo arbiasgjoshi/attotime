@@ -24,14 +24,8 @@ import image2 from '@images/time-tracking-electricians@2x.png';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
-import {
-  checkList1,
-  oldList,
-  newList,
-  accordionList1,
-  accordionList2,
-  steps,
-} from '@data/industries/electrician.js';
+import { checkList1, accordionList1, accordionList2 } from '@data/industries/electrician.js';
+import { oldList, newList, steps } from '@data/industries';
 
 // import localeData from '@locale/en';
 
@@ -124,7 +118,6 @@ const Electrician = () => (
       <SubscribeBanner
         title="Keep track of all your electricians in the field with Atto"
         placeholder="Type your email"
-        bannerImage
         checkItemOne="No credit card required"
         checkItemTwo="14 day free trial"
         checkItemThree="Cancel anytime"

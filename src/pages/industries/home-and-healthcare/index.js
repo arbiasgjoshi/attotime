@@ -23,14 +23,8 @@ import { background } from './home-and-healthcare.module.scss';
 
 import image1 from '@images/no-image.png';
 
-import {
-  checkList1,
-  oldList,
-  newList,
-  accordionList1,
-  accordionList2,
-  steps,
-} from '@data/industries/roofing.js';
+import { checkList1, accordionList1, accordionList2 } from '@data/industries/roofing.js';
+import { oldList, newList, steps } from '@data/industries';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
