@@ -1,4 +1,8 @@
 .reviewCards {
-  display: flex;
-  justify-content: space-between;
+  @include flex-direction(column);
+
+  @include min(tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

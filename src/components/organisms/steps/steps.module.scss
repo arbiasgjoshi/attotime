@@ -3,9 +3,13 @@
   flex-direction: column;
 
   .listContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 3rem;
+    @include flex-direction(column);
+
+    @include min(tablet) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 3rem;
+    }
   }
 
   > button {
