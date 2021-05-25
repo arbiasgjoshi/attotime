@@ -13,9 +13,18 @@ import Steps from '@components/organisms/steps';
 import AccordionArticle from '@components/organisms/accordion-article';
 import OldVsNew from '@components/organisms/old-vs-new';
 import ReviewCards from '@components/organisms/review-cards';
+import ImagesBox from '@components/organisms/images-box';
 
-import authorImage from '@images/authorImage.png';
+import authorImage from '@images/construction-minds@2x.png';
 import image2 from '@images/time-tracking-construction@2x.png';
+import image3 from '@images/still_want_to_use_it@2x.png';
+import image4 from '@images/guarante-on-site@2x.png';
+import image5 from '@images/wage-estimates@2x.png';
+
+import boxImage1 from '@images/construction-daily-timeline@2x.png';
+import boxImage2 from '@images/construction-location@2x.png';
+import boxImage3 from '@images/construction-timesheets@2x.png';
+import boxImage4 from '@images/construction-time-tracking@2x.png';
 
 import { background, topImage, bottomImage } from './construction.module.scss';
 import { container } from '@styles/main.module.scss';
@@ -59,26 +68,34 @@ const Construction = () => (
       />
       <Divider className="style3" />
       <StaticImage src="../../../images/paper_timesheets@2x.png" />
-      <Divider className="style2" />
+      <Divider className="style3" />
+      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      <Divider />
       <AccordionArticle
         title="Keep track of everything happening in the field"
         list={accordionList1}
+        image={image3}
+        imagePadding="6.1rem 0"
       />
       <Divider />
       <AccordionArticle
         title="Increase the safety and accountability of your crew with real-time GPS location tracking"
         list={accordionList2}
+        image={image4}
         isSwapped
+        imagePadding="2.1rem 0 10.1rem 0"
       />
       <Divider />
       <AccordionArticle
         title="All the reports you need to keep construction jobs on schedule and on budget"
         list={accordionList3}
+        image={image5}
+        imagePadding="6.8rem 0"
       />
+      <Divider className="style3" />
+      <OldVsNew oldList={oldList} newList={newList} />
       <Divider className="style2" />
       <Title title="Built with construction companies in mind" maxWidth={600} />
-      <Divider className="style2" />
-      <OldVsNew oldList={oldList} newList={newList} />
       <Divider className="style2" />
       <Story
         img={authorImage}

@@ -14,9 +14,7 @@ import {
   listStyle,
 } from './accordion-article.module.scss';
 
-import noImage from '@images/no-image.png';
-
-const AccordionArticle = ({ title, list, image, isSwapped }) => {
+const AccordionArticle = ({ title, list, image, isSwapped, imagePadding }) => {
   const triggerItem = (val) => (
     <div className={triggerItemWrap}>
       <h5>{val}</h5>
@@ -39,8 +37,8 @@ const AccordionArticle = ({ title, list, image, isSwapped }) => {
         </div>
       </div>
       <div className={secondBox}>
-        <div className={imageWrapper}>
-          <img src={noImage} />
+        <div style={{ padding: imagePadding }} className={imageWrapper}>
+          <img src={image} />
         </div>
       </div>
     </div>
