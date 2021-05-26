@@ -20,6 +20,7 @@
 
     .listStyle {
       .triggerItemWrap {
+        cursor: pointer;
         @include flex-direction(row);
         align-items: center;
         width: 100%;

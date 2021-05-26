@@ -27,21 +27,21 @@ import boxImage2 from '@images/electrician-box-two@2x.png';
 import boxImage3 from '@images/electrician-box-three@2x.png';
 import boxImage4 from '@images/electrician-box-four@2x.png';
 import { container } from '@styles/main.module.scss';
-import { background } from './electrician.module.scss';
 
-import image1 from '@images/no-image.png';
+// import image1 from '@images/no-image.png';
 import image2 from '@images/time-tracking-electricians@2x.png';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
 import { checkList1, accordionList1, accordionList2 } from '@data/industries/electrician.js';
 import { oldList, newList, steps } from '@data/industries';
+import { background } from './electrician.module.scss';
 
 // import localeData from '@locale/en';
 
 const Electrician = () => (
   <>
-    <div className={background}></div>
+    <div className={background} />
     <div className={`${container}`}>
       <SEO title="Electrician Industries" />
       <Header />

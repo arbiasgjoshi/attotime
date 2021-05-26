@@ -196,7 +196,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <p>Using paper timesheets is like watching paint dry.</p>
           </div>
         </Link>
-        <Link className={menuItem} to="/industries/healtchare-and-medical">
+        <Link className={menuItem} to="/industries/healthcare-and-medical">
           <div className={menuIcon}>
             <HealthcareLogo />
           </div>
@@ -250,7 +250,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <p>Let’s make it a clean sweep! Keep your time tracking tidy.</p>
           </div>
         </Link>
-        <Link className={menuItem} to="/industries/more">
+        <Link className={menuItem} to="/all-features">
           <div className={menuIcon}>
             <ThreeDots />
           </div>

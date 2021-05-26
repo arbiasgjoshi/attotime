@@ -9,6 +9,11 @@
     // padding: 4.5rem 0;
   }
 
+  .maskOverlay {
+    @include flex-direction(row);
+    width: 100%;
+  }
+
   .videoBackground {
     @include absolute(top 9.4rem);
     background-image: url('@images/grey-copy@2x.png');
