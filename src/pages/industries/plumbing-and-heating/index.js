@@ -14,8 +14,19 @@ import IndustryMainCard from '@components/organisms/industry-main-card';
 import AccordionArticle from '@components/organisms/accordion-article';
 import OldVsNew from '@components/organisms/old-vs-new';
 import Steps from '@components/organisms/steps';
+import ImagesBox from '@components/organisms/images-box';
 
-import authorImage from '@images/authorImage.png';
+import authorImage from '@images/plumbing-author@2x.png';
+import image3 from '@images/plumbing-accordion1.png';
+import image4 from '@images/plumbing-accordion2.png';
+import image5 from '@images/plumbing-accordion3.png';
+import image6 from '@images/plumbing-accordion4.png';
+
+import boxImage1 from '@images/plumbing-box-one@2x.png';
+import boxImage2 from '@images/plumbing-box-two@2x.png';
+import boxImage3 from '@images/plumbing-box-three@2x.png';
+import boxImage4 from '@images/plumbing-box-four@2x.png';
+
 import { container } from '@styles/main.module.scss';
 import {
   checkList1,
@@ -67,7 +78,7 @@ const PlumbingAndHeating = () => (
       <Article
         title="Get helpful reminders so your plumbers never forget to clock in!"
         description="When dealing with burst pipes and emergency call-outs, it’s easy to lose track of time. That’s why when your plumbers enter or leave a job site, and at their normal start and end time, we’ll remind them to clock in and out. And if they happen to forget, they can add a manual time entry for you to review later."
-        image={image1}
+        image={image3}
         maxWidth={500}
         imagePadding="7.3rem 4.5rem"
         imageWidth={400}
@@ -76,7 +87,7 @@ const PlumbingAndHeating = () => (
       <Article
         title="Entrust your on-site manager to track your plumbers’ time"
         description="Dealing with commercial or industrial plumbing jobs that require multiple plumbers on-site? Instead of having each plumber track their time individually, your on-the-job manager can clock in and out on all of your plumbers’ behalf."
-        image={image1}
+        image={image4}
         isSwapped
         maxWidth={500}
         imagePadding="7.3rem 4.5rem"
@@ -87,12 +98,14 @@ const PlumbingAndHeating = () => (
       <AccordionArticle
         title="Keep track of your plumbers as they make their way to different call-outs throughout the day"
         list={accordionList1}
+        image={image5}
       />
       <Divider />
       <AccordionArticle
         title="Keep track of your plumbers as they make their way to different call-outs throughout the day"
         list={accordionList2}
         isSwapped
+        image={image6}
       />
       <Divider className="style11" />
       <Title
@@ -105,12 +118,18 @@ const PlumbingAndHeating = () => (
       <OldVsNew oldList={oldList} newList={newList} />
       <Divider />
       <StaticImage src="../../../images/paper_timesheets@2x.png" />
+      <Divider className="style3" />
+      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      <Divider />
+      <Title
+        title="Get everything set up in 3 simple steps"
+        description="Atto is designed to be the easiest time-tracking app to use.
+         There’s absolutely no technical knowledge required."
+        maxWidth={932}
+        maxDescriptionWidth={750}
+      />
       <Divider className="style1" />
       <Steps list={steps} />
-      <Divider />
-      <Divider />
-      <Divider />
-      <Divider />
       <Divider />
       <SubscribeBanner
         title="All cisterns go! Get to work with accurate time tracking from Atto."

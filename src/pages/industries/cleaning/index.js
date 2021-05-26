@@ -14,14 +14,23 @@ import IndustryMainCard from '@components/organisms/industry-main-card';
 import AccordionArticle from '@components/organisms/accordion-article';
 import OldVsNew from '@components/organisms/old-vs-new';
 import Steps from '@components/organisms/steps';
+import ImagesBox from '@components/organisms/images-box';
 
-import authorImage from '@images/authorImage.png';
 import { container } from '@styles/main.module.scss';
 import { checkList1, accordionList1, accordionList2 } from '@data/industries/cleaning.js';
 import { oldList, newList, steps } from '@data/industries';
 
-import image1 from '@images/no-image.png';
 import image2 from '@images/time-tracking-cleaning@2x.png';
+import authorImage from '@images/cleaning-author@2x.png';
+import image3 from '@images/cleaning-accordion1.png';
+import image4 from '@images/cleaning-accordion2.png';
+import image5 from '@images/cleaning-accordion3.png';
+import image6 from '@images/cleaning-accordion4.png';
+
+import boxImage1 from '@images/cleaning-box-one@2x.png';
+import boxImage2 from '@images/cleaning-box-two@2x.png';
+import boxImage3 from '@images/cleaning-box-three@2x.png';
+import boxImage4 from '@images/cleaning-box-four@2x.png';
 
 import { background } from './cleaning.module.scss';
 
@@ -62,7 +71,7 @@ const Cleaning = () => (
       <Article
         title="Get helpful reminders so your plumbers never forget to clock in!"
         description="When dealing with burst pipes and emergency call-outs, it’s easy to lose track of time. That’s why when your plumbers enter or leave a job site, and at their normal start and end time, we’ll remind them to clock in and out. And if they happen to forget, they can add a manual time entry for you to review later."
-        image={image1}
+        image={image3}
         maxWidth={500}
         imagePadding="7.3rem 4.5rem"
         imageWidth={400}
@@ -71,7 +80,7 @@ const Cleaning = () => (
       <Article
         title="Entrust managers to track your cleaners’ time"
         description="Dealing with commercial or industrial cleaning jobs that require lots of cleaners? Instead of having each cleaner track their time individually, your on-the-job manager can clock in and out on your cleaner’s behalf."
-        image={image1}
+        image={image4}
         isSwapped
         maxWidth={500}
         imagePadding="7.3rem 4.5rem"
@@ -82,12 +91,14 @@ const Cleaning = () => (
       <AccordionArticle
         title="Keep track of your cleaners as they make their way to every client throughout the day"
         list={accordionList1}
+        image={image5}
       />
       <Divider />
       <AccordionArticle
         title="Everything you need to keep cleaning jobs on schedule and on budget"
         list={accordionList2}
         isSwapped
+        image={image6}
       />
       <Divider className="style11" />
       <Title
@@ -100,12 +111,18 @@ const Cleaning = () => (
       <OldVsNew oldList={oldList} newList={newList} />
       <Divider />
       <StaticImage src="../../../images/paper_timesheets@2x.png" />
+      <Divider className="style3" />
+      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      <Divider />
+      <Title
+        title="Get everything set up in 3 simple steps"
+        description="Atto is designed to be the easiest time-tracking app to use.
+         There’s absolutely no technical knowledge required."
+        maxWidth={932}
+        maxDescriptionWidth={750}
+      />
       <Divider className="style1" />
       <Steps list={steps} />
-      <Divider />
-      <Divider />
-      <Divider />
-      <Divider />
       <Divider />
       <SubscribeBanner
         title="Let’s make it a clean sweep! Keep your time tracking tidy with Atto"

@@ -14,8 +14,18 @@ import IndustryMainCard from '@components/organisms/industry-main-card';
 import AccordionArticle from '@components/organisms/accordion-article';
 import OldVsNew from '@components/organisms/old-vs-new';
 import Steps from '@components/organisms/steps';
+import ImagesBox from '@components/organisms/images-box';
 
-import authorImage from '@images/authorImage.png';
+import authorImage from '@images/electrician-author@2x.png';
+import image3 from '@images/electrician-accordion1.png';
+import image4 from '@images/electrician-accordion2.png';
+import image5 from '@images/electrician-accordion3.png';
+import image6 from '@images/electrician-accordion4.png';
+
+import boxImage1 from '@images/electrician-box-one@2x.png';
+import boxImage2 from '@images/electrician-box-two@2x.png';
+import boxImage3 from '@images/electrician-box-three@2x.png';
+import boxImage4 from '@images/electrician-box-four@2x.png';
 import { container } from '@styles/main.module.scss';
 import { background } from './electrician.module.scss';
 
@@ -62,7 +72,7 @@ const Electrician = () => (
         title="Buzz your electricians with helpful reminders so they don’t forget to clock in!"
         description="Handling electricity requires full focus and concentration, so it’s easy to lose track of time. That’s why whenever your electricians enter or leave a job site, and at their normal start and end time, we’ll remind them to clock in and out. 
         And if they do happen to forget, they can add a manual time entry for you to review later."
-        image={image1}
+        image={image3}
         maxWidth={500}
         imagePadding="7.3rem 4.5rem"
         imageWidth={400}
@@ -71,7 +81,7 @@ const Electrician = () => (
       <Article
         title="Give on-site supervisors the power to track your electricians’ time"
         description="Wiring an entire building? Dealing with a commercial job that requires multiple electricians on-site? Instead of having each of them track their time individually, your on-site supervisor can clock-in and out on all of your electricians’ behalf."
-        image={image1}
+        image={image4}
         isSwapped
         maxWidth={500}
         imagePadding="7.3rem 4.5rem"
@@ -82,12 +92,14 @@ const Electrician = () => (
       <AccordionArticle
         title="Keep track of your electricians as they make their way to different call-outs throughout the day"
         list={accordionList1}
+        image={image5}
       />
       <Divider />
       <AccordionArticle
         title="Everything you need to keep electrical jobs on schedule and on budget"
         list={accordionList2}
         isSwapped
+        image={image6}
       />
       <Divider className="style11" />
       <Title
@@ -100,6 +112,9 @@ const Electrician = () => (
       <OldVsNew oldList={oldList} newList={newList} />
       <Divider />
       <StaticImage src="../../../images/paper_timesheets@2x.png" />
+      <Divider className="style3" />
+      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      <Divider />
       <Divider className="style1" />
       <Title
         title="Get everything set up in 3 simple steps"
@@ -110,10 +125,6 @@ const Electrician = () => (
       />
       <Divider className="style5" />
       <Steps list={steps} />
-      <Divider />
-      <Divider />
-      <Divider />
-      <Divider />
       <Divider />
       <SubscribeBanner
         title="Keep track of all your electricians in the field with Atto"
