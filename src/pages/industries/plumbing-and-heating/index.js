@@ -27,29 +27,25 @@ import boxImage2 from '@images/plumbing-box-two@2x.png';
 import boxImage3 from '@images/plumbing-box-three@2x.png';
 import boxImage4 from '@images/plumbing-box-four@2x.png';
 
-import { container } from '@styles/main.module.scss';
+import image1 from '@images/no-image.png';
+import { container, industryPadding } from '@styles/main.module.scss';
 import {
   checkList1,
   accordionList1,
   accordionList2,
 } from '@data/industries/plumbing-and-heating.js';
-
 import { oldList, newList, steps } from '@data/industries';
-
-import image1 from '@images/no-image.png';
 import image2 from '@images/time-tracking-plumbing@2x.png';
-
-import { background } from './plumbing-and-heating.module.scss';
-
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
+import { background } from './plumbing-and-heating.module.scss';
 
 // import localeData from '@locale/en';
 
 const PlumbingAndHeating = () => (
   <>
-    <div className={background}></div>
-    <div className={`${container}`}>
+    <div className={background} />
+    <div className={`${container} ${industryPadding}`}>
       <SEO title="Plumbing And Heating Industries" />
       <Header />
       <IndustryMainCard
@@ -72,7 +68,7 @@ const PlumbingAndHeating = () => (
         maxWidth={920}
         maxDescriptionWidth={800}
       />
-      <Divider />
+      <Divider className="centenary" />
       <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
       <Divider />
       <Article

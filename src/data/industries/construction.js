@@ -29,16 +29,19 @@ export const accordionList1 = [
 export const accordionList2 = [
   {
     title: 'Guarantee your crew is on-site before they clock in',
+    icon: '',
     description:
       'Ensure that only hours worked are accounted for. With Atto, you can set the locations of your job sites and restrict workers from clocking in unless they’re within the site perimeter.',
   },
   {
     title: 'See where all your workers are in real-time',
+    icon: '',
     description:
       'Ensure that only hours worked are accounted for. With Atto, you can set the locations of your job sites and restrict workers from clocking in unless they’re within the site perimeter.',
   },
   {
     title: 'Get a daily summary of each worker’s movements',
+    icon: '',
     description:
       'Ensure that only hours worked are accounted for. With Atto, you can set the locations of your job sites and restrict workers from clocking in unless they’re within the site perimeter.',
   },
@@ -47,21 +50,25 @@ export const accordionList2 = [
 export const accordionList3 = [
   {
     title: 'Keep projects on budget with wage estimates',
+    icon: '',
     description:
       'Construction projects run on tight margins, so it’s important to keep control of your costs. With Atto, you can add individual pay rates to calculate each worker’s estimated wages based on the hours they track. What’s more, you can add more than one pay rate per worker, so that your estimates will still be accurate – even if their rate changes.',
   },
   {
     title: 'Check how much each team and job is costing you',
+    icon: '',
     description:
       'Ensure that only hours worked are accounted for. With Atto, you can set the locations of your job sites and restrict workers from clocking in unless they’re within the site perimeter.',
   },
   {
     title: 'Save hours on payroll admin with automated timesheets',
+    icon: '',
     description:
       'Ensure that only hours worked are accounted for. With Atto, you can set the locations of your job sites and restrict workers from clocking in unless they’re within the site perimeter.',
   },
   {
     title: 'Tender more accurate and profitable bids for future work',
+    icon: '',
     description:
       'Ensure that only hours worked are accounted for. With Atto, you can set the locations of your job sites and restrict workers from clocking in unless they’re within the site perimeter.',
   },

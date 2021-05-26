@@ -28,20 +28,16 @@ import boxImage2 from '@images/roofing-box-two@2x.png';
 import boxImage3 from '@images/roofing-box-three@2x.png';
 import boxImage4 from '@images/roofing-box-four@2x.png';
 
-import { container } from '@styles/main.module.scss';
-import { background } from './roofing.module.scss';
-
 import { oldList, newList, steps } from '@data/industries';
 import { checkList1, firstList, accordionList1, accordionList2 } from '@data/industries/roofing.js';
-
 import { FooterLinks } from '@locale/en.js';
+import { container, industryPadding, noPadding, background } from '@styles/main.module.scss';
 
 // import localeData from '@locale/en';
 
 const Roofing = () => (
   <>
-    <div className={background}></div>
-    <div className={`${container}`}>
+    <div className={`${container} ${industryPadding}`}>
       <SEO title="Roofing Industries" />
       <Header />
       <IndustryMainCard
@@ -71,9 +67,9 @@ const Roofing = () => (
         description="When your roofers are in the middle of a job, it can be easy to lose track of time. That’s why whenever they enter or leave a job site, and at their normal start and end time, we’ll remind them to clock in and out. And if they happen to forget, they can add a manual time entry for you to review later."
         image={image3}
         maxWidth={500}
-        imagePadding="7.3rem 4.5rem"
-        imageWidth={400}
-        imageHeight={354}
+        imagePadding="6rem 0"
+        imageWidth={550}
+        imageHeight={380}
       />
       <Divider className="style3" />
       <Article
@@ -82,23 +78,26 @@ const Roofing = () => (
         image={image4}
         isSwapped
         maxWidth={500}
-        imagePadding="7.3rem 4.5rem"
-        imageWidth={400}
-        imageHeight={354}
+        imagePadding="3.8rem 5.8rem 6rem 0"
+        imageWidth={550}
+        imageHeight={500}
       />
       <Divider className="style4" />
-      <AccordionArticle
+      <Title
         title="Keep track of your roofing contractors as they work throughout the day"
-        list={accordionList1}
-        image={image5}
+        maxWidth={920}
+        notCentered
       />
+      <Divider className="style3" />
+      <AccordionArticle list={accordionList1} image={image5} />
       <Divider />
-      <AccordionArticle
+      <Title
         title="Everything you need to keep roofing jobs on schedule and on budget"
-        list={accordionList2}
-        isSwapped
-        image={image6}
+        maxWidth={920}
+        notCentered
       />
+      <Divider className="style3" />
+      <AccordionArticle list={accordionList2} isSwapped image={image6} />
       <Divider className="style12" />
       <Title
         title="Say goodbye to paper timesheets!"
@@ -109,10 +108,15 @@ const Roofing = () => (
       <Divider className="style5" />
       <OldVsNew oldList={oldList} newList={newList} />
       <Divider />
-      <StaticImage src="../../../images/paper_timesheets@2x.png" />
-      <Divider className="style3" />
-
-      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+    </div>
+    <div className={background}>
+      <div className={`${container} ${noPadding}`}>
+        <StaticImage src="../../../images/paper_timesheets@2x.png" />
+        <Divider className="style3" />
+        <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      </div>
+    </div>
+    <div className={`${container} ${noPadding}`}>
       <Divider />
       <Title
         title="Get everything set up in 3 simple steps"

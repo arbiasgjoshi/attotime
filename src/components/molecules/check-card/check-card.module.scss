@@ -121,4 +121,13 @@
       }
     }
   }
+
+  &.oldListStyle {
+    .iconWrapper {
+      i {
+        background-color: rgba(224, 86, 86, 0.1);
+        color: #e05656;
+      }
+    }
+  }
 }

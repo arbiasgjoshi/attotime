@@ -5,6 +5,29 @@
     overflow: hidden;
   }
 
+  &.industryPadding {
+    padding-top: 7.3rem;
+  }
+
+  &.noPadding {
+    padding-top: 0;
+  }
+
   max-width: 114rem;
   margin: 0 auto;
+}
+
+.background {
+  position: relative;
+
+  &::after {
+    content: '';
+    top: 36rem;
+    left: 0;
+    z-index: -2;
+    position: absolute;
+    background-color: var(--secondary-color);
+    height: 112rem;
+    width: 100%;
+  }
 }

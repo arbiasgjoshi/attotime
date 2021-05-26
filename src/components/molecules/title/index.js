@@ -7,19 +7,21 @@ import {
   descriptionWrapper,
   leftAligned,
   smallTitleStyle,
+  notMiddleAligned,
   lighterTitle,
 } from './title.module.scss';
 
 const Title = ({
   smallTitle,
   title,
+  notCentered,
   description,
   leftAlign = false,
   maxWidth = '',
   marginBottom = '',
   maxDescriptionWidth,
 }) => (
-  <div className={`${container} ${leftAlign && leftAligned}`}>
+  <div className={`${container} ${leftAlign && leftAligned} ${notCentered && notMiddleAligned}`}>
     {smallTitle && <p className={smallTitleStyle}>{smallTitle}</p>}
     <h2
       style={{ maxWidth, marginBottom }}

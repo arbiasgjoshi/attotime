@@ -1,18 +1,40 @@
-.background {
-  z-index: -1;
-  top: 147rem;
-  position: absolute;
-  background-color: var(--secondary-color);
-  height: 176.7rem;
-  width: 100%;
-
-  .topImage {
-    top: -57px;
+.greenBackground {
+  position: relative;
+  margin-top: 6rem;
+  padding-top: 10.9rem;
+  &::before {
+    content: '';
     width: 100%;
+    height: calc(100% - 593px);
+    background-color: var(--secondary-color);
+    @include absolute(left 0 top 0);
+    z-index: -1;
+  }
+  position: relative;
+
+  .topImageMask {
+    @include absolute(top -6rem left 0);
+    height: 6rem;
+    width: 100%;
+    background-size: cover;
+    background-position: top center;
+
+    > div {
+      width: 100%;
+      height: 100%;
+    }
   }
 
-  .bottomImage {
-    top: 170.3rem;
+  .bottomImageMask {
+    @include absolute(bottom 50rem left 0);
+    height: 9.3rem;
     width: 100%;
+    background-size: cover;
+    background-position: top center;
+
+    > div {
+      width: 100%;
+      height: 100%;
+    }
   }
 }

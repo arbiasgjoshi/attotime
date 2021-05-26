@@ -1,0 +1,24 @@
+.Collapsible {
+  min-height: unset;
+  &__trigger {
+    width: 100%;
+    @include flex-direction(row);
+    align-items: center;
+    justify-content: space-between;
+    position: inherit;
+    min-height: 7.6rem;
+    height: unset;
+    top: unset;
+    left: unset;
+
+    &.is-open {
+      > div > i {
+        transform: rotateX(180deg);
+      }
+    }
+  }
+
+  &__contentOuter {
+    padding-top: 0;
+  }
+}

@@ -27,3 +27,15 @@
   font-weight: 600;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Spicy Pumpkin';
+  src: url('/fonts/Spicy-Pumpkin-400.eot');
+  src: url('/fonts/Spicy-Pumpkin-400.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Spicy-Pumpkin-400.woff2') format('woff2'),
+    url('/fonts/Spicy-Pumpkin-400.woff') format('woff'),
+    url('/fonts/Spicy-Pumpkin-400.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

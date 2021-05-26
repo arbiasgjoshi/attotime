@@ -15,7 +15,6 @@ import OldVsNew from '@components/organisms/old-vs-new';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import ImagesBox from '@components/organisms/images-box';
 
-import { container } from '@styles/main.module.scss';
 import authorImage from '@images/landscaping-author@2x.png';
 import image2 from '@images/time-tracking-landscaping@2x.png';
 import image3 from '@images/landscaping-accordion1.png';
@@ -36,18 +35,19 @@ import {
 } from '@data/industries/landscaping.js';
 
 import { oldList, newList, steps } from '@data/industries';
-
-import { background, topImage, bottomImage } from './landscaping.module.scss';
+import { container, industryPadding, noPadding } from '@styles/main.module.scss';
+// import { background, topImage, bottomImage } from './landscaping.module.scss';
+import {
+  topImageMask,
+  bottomImageMask,
+  greenBackground,
+} from '../construction/construction.module.scss';
 
 // import localeData from '@locale/en';
 
 const Landscaping = () => (
   <>
-    <div className={background}>
-      <StaticImage className={topImage} src="../../../images/upper_shape.svg" />
-      <StaticImage className={bottomImage} src="../../../images/lower_shape.svg" />
-    </div>
-    <div className={`${container}`}>
+    <div className={`${container} ${industryPadding}`}>
       <SEO title="Landscaping Industries" />
       <Header />
       <IndustryMainCard
@@ -59,21 +59,37 @@ const Landscaping = () => (
       <Divider className="style4" />
       <ReviewCards />
       <Divider className="style12" />
-      <Title
-        title="The grass is always greener with Atto"
-        description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for landscaping companies"
-        maxWidth={1040}
-        maxDescriptionWidth={900}
-      />
-      <Divider className="style3" />
-      <StaticImage src="../../../images/paper_timesheets@2x.png" />
-      <Divider className="style3" />
-      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+    </div>
+    <div className={greenBackground}>
+      <div className={topImageMask}>
+        <StaticImage src="../../../images/upper_shape.svg" />
+      </div>
+      <div className={bottomImageMask}>
+        <StaticImage src="../../../images/lower_shape.svg" />
+      </div>
+      <div className={`${container} ${noPadding}`}>
+        <Title
+          title="Say goodbye to paper timesheets"
+          description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for construction companies"
+          maxWidth={1040}
+          maxDescriptionWidth={900}
+        />
+        <Divider className="style3" />
+        <StaticImage src="../../../images/paper_timesheets@2x.png" />
+        <Divider className="style3" />
+        <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      </div>
+    </div>
+    <div className={`${container} ${noPadding}`}>
       <Divider />
       <AccordionArticle
         image={image3}
         title="Keep track of everything happening outdoors"
         list={accordionList1}
+        imageWidth={360}
+        imageHeight={498}
+        imagePadding="6.1rem 3rem 6.1rem 1rem"
+        boxHeight="62rem"
       />
       <Divider />
       <AccordionArticle
@@ -81,14 +97,22 @@ const Landscaping = () => (
         title="Increase the safety and accountability of your landscaping crew with real-time GPS location tracking"
         list={accordionList2}
         isSwapped
+        imageWidth={360}
+        imageHeight={498}
+        imagePadding="2.1rem 2.8rem 10.1rem"
+        boxHeight="62rem"
       />
       <Divider />
       <AccordionArticle
         image={image5}
         title="All the reports you need to keep landscaping jobs on schedule and on budget"
         list={accordionList3}
+        imageWidth={360}
+        imageHeight={498}
+        imagePadding="5.3rem 0"
+        boxHeight="62rem"
       />
-      <Divider className="style2" />
+      <Divider className="style4" />
       <OldVsNew oldList={oldList} newList={newList} />
       <Divider />
       <Title title="Built with landscaping companies in mind" maxWidth={600} />

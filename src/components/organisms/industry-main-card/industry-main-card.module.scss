@@ -1,14 +1,17 @@
 .container {
+  height: 73rem;
+  align-items: center;
   @include flex-direction(column-reverse);
   @include min(tablet) {
     flex-direction: row;
+    // padding-bottom: 6.6rem;
   }
 
   .firstBox {
     max-width: 60rem;
 
     @include min(tablet) {
-      margin: 7.3rem 4rem 7.4rem 0;
+      margin: 3.6rem 4rem 3.6rem 0;
     }
 
     .smallTitleStyle {
@@ -33,12 +36,14 @@
               width: 2.8rem;
               height: 2.8rem;
               margin-right: 1.4rem;
+              font-size: 1rem;
             }
           }
         }
 
         h5 {
           font-size: var(--body-style-three);
+          font-weight: 400;
         }
       }
     }

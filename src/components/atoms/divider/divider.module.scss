@@ -8,6 +8,10 @@
   @include min(tablet) {
     margin: 9.9rem 0;
 
+    &.centenary {
+      margin: 5.4rem 0;
+    }
+
     &.style1 {
       margin: 2.1rem 0;
     }

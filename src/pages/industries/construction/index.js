@@ -26,8 +26,7 @@ import boxImage2 from '@images/construction-location@2x.png';
 import boxImage3 from '@images/construction-timesheets@2x.png';
 import boxImage4 from '@images/construction-time-tracking@2x.png';
 
-import { background, topImage, bottomImage } from './construction.module.scss';
-import { container } from '@styles/main.module.scss';
+import { container, industryPadding, noPadding } from '@styles/main.module.scss';
 import {
   checkList1,
   accordionList1,
@@ -38,16 +37,13 @@ import {
 import { steps, oldList, newList } from '@data/industries';
 
 import { FooterLinks } from '@locale/en.js';
+import { topImageMask, bottomImageMask, greenBackground } from './construction.module.scss';
 
 // import localeData from '@locale/en';
 
 const Construction = () => (
   <>
-    <div className={background}>
-      <StaticImage className={topImage} src="../../../images/upper_shape.svg" />
-      <StaticImage className={bottomImage} src="../../../images/lower_shape.svg" />
-    </div>
-    <div className={`${container}`}>
+    <div className={`${container} ${industryPadding}`}>
       <SEO title="Construction Industries" />
       <Header />
       <IndustryMainCard
@@ -56,19 +52,31 @@ const Construction = () => (
         list={checkList1}
         image={image2}
       />
-      <Divider className="style4" />
+      <Divider className="style3" />
       <ReviewCards />
       <Divider className="style12" />
-      <Title
-        title="Say goodbye to paper timesheets"
-        description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for construction companies"
-        maxWidth={1040}
-        maxDescriptionWidth={900}
-      />
-      <Divider className="style3" />
-      <StaticImage src="../../../images/paper_timesheets@2x.png" />
-      <Divider className="style3" />
-      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+    </div>
+    <div className={greenBackground}>
+      <div className={topImageMask}>
+        <StaticImage src="../../../images/upper_shape.svg" />
+      </div>
+      <div className={bottomImageMask}>
+        <StaticImage src="../../../images/lower_shape.svg" />
+      </div>
+      <div className={`${container} ${noPadding}`}>
+        <Title
+          title="Say goodbye to paper timesheets"
+          description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for construction companies"
+          maxWidth={1040}
+          maxDescriptionWidth={900}
+        />
+        <Divider className="style3" />
+        <StaticImage src="../../../images/paper_timesheets@2x.png" />
+        <Divider className="style3" />
+        <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      </div>
+    </div>
+    <div className={`${container} ${noPadding}`}>
       <Divider />
       <AccordionArticle
         title="Keep track of everything happening in the field"
@@ -89,7 +97,8 @@ const Construction = () => (
         title="All the reports you need to keep construction jobs on schedule and on budget"
         list={accordionList3}
         image={image5}
-        imagePadding="6.8rem 0"
+        imagePadding="5.3rem 0 3rem"
+        boxHeight="62rem"
       />
       <Divider className="style3" />
       <OldVsNew oldList={oldList} newList={newList} />

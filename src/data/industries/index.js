@@ -23,21 +23,27 @@ export const newList = [
 export const steps = [
   {
     image: step1,
+    width: 65,
+    height: 82,
     title: '1. Download Atto',
     description: 'Download Atto and create an account. Available on the web, iOS and Android.',
-    imagePadding: '1.9rem 5.7rem',
+    imagePadding: '',
   },
   {
     image: step2,
+    width: 77,
+    height: 77,
     title: '2. Invite team members',
     description:
       'Invite your field workers, site managers, and sub-contractors via email or invite link.',
-    imagePadding: '2.1rem 5.13rem',
+    imagePadding: '',
   },
   {
     image: step3,
+    width: 80,
+    height: 89,
     title: '3. Ready to go!',
     description: 'Once they download Atto, you’re ready to go!',
-    imagePadding: '1.6rem 5rem',
+    imagePadding: '',
   },
 ];

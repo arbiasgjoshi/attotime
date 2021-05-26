@@ -31,6 +31,15 @@
     }
   }
 
+  &.notMiddleAligned {
+    margin: 0;
+    text-align: left;
+
+    .titleWrapper {
+      margin: 0;
+    }
+  }
+
   .smallTitleStyle {
     margin-top: 3.09rem;
     margin-bottom: 1rem;

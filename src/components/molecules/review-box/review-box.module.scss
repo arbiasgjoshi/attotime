@@ -4,8 +4,12 @@
   text-align: center;
 
   .topBox {
-    border: 2px solid #efefef;
-    border-radius: 2rem;
+    // border: 2px solid #efefef;
+    // border-radius: 2rem;
+    background-image: url('@images/review-badge@2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     margin-bottom: 3rem;
 
     > h4 {

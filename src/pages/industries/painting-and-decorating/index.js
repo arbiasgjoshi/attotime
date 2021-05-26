@@ -16,7 +16,6 @@ import Steps from '@components/organisms/steps';
 import ImagesBox from '@components/organisms/images-box';
 
 import SubscribeBanner from '@components/molecules/subscribe-banner';
-import { container } from '@styles/main.module.scss';
 import authorImage from '@images/painting-author@2x.png';
 import image1 from '@images/no-image.png';
 import image2 from '@images/time-tracking-painting@2x.png';
@@ -32,18 +31,15 @@ import boxImage4 from '@images/painting-box-four@2x.png';
 
 import { checkList1, accordionList1, accordionList2 } from '@data/industries/painting.js';
 import { oldList, newList, steps } from '@data/industries';
-
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
-
-import { background } from './painting.module.scss';
+import { container, industryPadding, noPadding, background } from '@styles/main.module.scss';
 
 // import localeData from '@locale/en';
 
 const Painting = () => (
   <>
-    <div className={background}></div>
-    <div className={`${container}`}>
+    <div className={`${container} ${industryPadding}`}>
       <SEO title="Painting Industries" />
       <Header />
       <IndustryMainCard
@@ -66,7 +62,7 @@ const Painting = () => (
         maxWidth={920}
         maxDescriptionWidth={800}
       />
-      <Divider className="style3" />
+      <Divider className="centenary" />
       <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
       <Divider />
       <Article
@@ -111,12 +107,18 @@ const Painting = () => (
         maxWidth={1040}
         maxDescriptionWidth={900}
       />
-      <Divider className="style5" />
+      <Divider className="centenary" />
       <OldVsNew oldList={oldList} newList={newList} />
       <Divider />
-      <StaticImage src="../../../images/paper_timesheets@2x.png" />
-      <Divider className="style3" />
-      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+    </div>
+    <div className={background}>
+      <div className={`${container} ${noPadding}`}>
+        <StaticImage src="../../../images/paper_timesheets@2x.png" />
+        <Divider className="style3" />
+        <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      </div>
+    </div>
+    <div className={`${container} ${noPadding}`}>
       <Divider />
       <Steps list={steps} />
       <Divider />

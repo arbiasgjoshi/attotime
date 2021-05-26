@@ -5,6 +5,11 @@
     @include flex-align(flex-end, center);
     margin: 0 auto;
 
+    > img {
+      max-height: 100%;
+      width: auto;
+    }
+
     @include min(tablet) {
       max-width: 100%;
       width: 12rem;
@@ -24,6 +29,8 @@
   }
 
   .textWrapper {
+    flex-grow: 1;
+    @include flex-direction(column);
     @include min(tablet) {
       width: 35rem;
       text-align: center;
@@ -32,6 +39,12 @@
 
     h4 {
       margin-bottom: 1.6rem;
+    }
+
+    p {
+      flex-grow: 1;
+      display: inline-flex;
+      align-items: center;
     }
   }
 
@@ -66,8 +79,12 @@
   }
 
   &.smallerMargin {
+    display: flex;
+    flex-direction: column;
+
     .iconWrapper {
       margin-bottom: 2.4rem;
+      height: 24.4rem;
     }
 
     .textWrapper {

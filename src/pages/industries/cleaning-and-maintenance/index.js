@@ -16,7 +16,7 @@ import OldVsNew from '@components/organisms/old-vs-new';
 import Steps from '@components/organisms/steps';
 import ImagesBox from '@components/organisms/images-box';
 
-import { container } from '@styles/main.module.scss';
+import { container, industryPadding } from '@styles/main.module.scss';
 import { checkList1, accordionList1, accordionList2 } from '@data/industries/cleaning.js';
 import { oldList, newList, steps } from '@data/industries';
 
@@ -32,17 +32,16 @@ import boxImage2 from '@images/cleaning-box-two@2x.png';
 import boxImage3 from '@images/cleaning-box-three@2x.png';
 import boxImage4 from '@images/cleaning-box-four@2x.png';
 
-import { background } from './cleaning.module.scss';
-
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
+import { background } from './cleaning.module.scss';
 
 // import localeData from '@locale/en';
 
 const Cleaning = () => (
   <>
-    <div className={background}></div>
-    <div className={`${container}`}>
+    <div className={background} />
+    <div className={`${container} ${industryPadding}`}>
       <SEO title="Cleaning Industries" />
       <Header />
       <IndustryMainCard

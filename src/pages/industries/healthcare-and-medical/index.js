@@ -28,23 +28,17 @@ import boxImage2 from '@images/healthcare-box-two@2x.png';
 import boxImage3 from '@images/healthcare-box-three@2x.png';
 import boxImage4 from '@images/healthcare-box-four@2x.png';
 
-import { container } from '@styles/main.module.scss';
-import { background } from './home-and-healthcare.module.scss';
-
-import image1 from '@images/no-image.png';
-
 import { checkList1, accordionList1, accordionList2 } from '@data/industries/roofing.js';
 import { oldList, newList, steps } from '@data/industries';
-
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
+import { container, industryPadding, noPadding, background } from '@styles/main.module.scss';
 
 // import localeData from '@locale/en';
 
 const HomeHealthcare = () => (
   <>
-    <div className={background}></div>
-    <div className={`${container}`}>
+    <div className={`${container} ${industryPadding}`}>
       <SEO title="Home and Healthcare Industries" />
       <Header />
       <IndustryMainCard
@@ -113,9 +107,15 @@ const HomeHealthcare = () => (
       <Divider className="style5" />
       <OldVsNew oldList={oldList} newList={newList} />
       <Divider />
-      <StaticImage src="../../../images/paper_timesheets@2x.png" />
-      <Divider className="style3" />
-      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+    </div>
+    <div className={background}>
+      <div className={`${container} ${noPadding}`}>
+        <StaticImage src="../../../images/paper_timesheets@2x.png" />
+        <Divider className="style3" />
+        <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      </div>
+    </div>
+    <div className={`${container} ${noPadding}`}>
       <Divider />
       <Title
         title="Get everything set up in 3 simple steps"
@@ -128,7 +128,7 @@ const HomeHealthcare = () => (
       <Steps list={steps} />
       <Divider />
       <SubscribeBanner
-        title="You provide quality care. We’ll provide quality time tracking software!"
+        title="Time tracking for roofing companies? We’re on top of it!"
         placeholder="Type your email"
         checkItemOne="No credit card required"
         checkItemTwo="14 day free trial"

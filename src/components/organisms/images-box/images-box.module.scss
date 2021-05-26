@@ -47,13 +47,7 @@
       margin-right: 5.4rem;
     }
 
-    .imageBox1,
-    .imageBox2,
-    .imageBox3 {
-    }
-
     .imageBox1 {
-      margin-bottom: 12.9rem;
       max-height: 88.2rem;
     }
 
@@ -64,7 +58,6 @@
     .imageBox3 {
       z-index: 1;
       margin-top: 8.6rem;
-      margin-bottom: 6.2rem;
       @include max(tablet) {
         display: none;
       }

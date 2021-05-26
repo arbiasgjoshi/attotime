@@ -26,7 +26,6 @@ import boxImage1 from '@images/electrician-box-one@2x.png';
 import boxImage2 from '@images/electrician-box-two@2x.png';
 import boxImage3 from '@images/electrician-box-three@2x.png';
 import boxImage4 from '@images/electrician-box-four@2x.png';
-import { container } from '@styles/main.module.scss';
 
 // import image1 from '@images/no-image.png';
 import image2 from '@images/time-tracking-electricians@2x.png';
@@ -35,14 +34,13 @@ import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
 import { checkList1, accordionList1, accordionList2 } from '@data/industries/electrician.js';
 import { oldList, newList, steps } from '@data/industries';
-import { background } from './electrician.module.scss';
+import { container, industryPadding, noPadding, background } from '@styles/main.module.scss';
 
 // import localeData from '@locale/en';
 
 const Electrician = () => (
   <>
-    <div className={background} />
-    <div className={`${container}`}>
+    <div className={`${container} ${industryPadding}`}>
       <SEO title="Electrician Industries" />
       <Header />
       <IndustryMainCard
@@ -112,11 +110,16 @@ const Electrician = () => (
       <Divider className="style5" />
       <OldVsNew oldList={oldList} newList={newList} />
       <Divider />
-      <StaticImage src="../../../images/paper_timesheets@2x.png" />
-      <Divider className="style3" />
-      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+    </div>
+    <div className={background}>
+      <div className={`${container} ${noPadding}`}>
+        <StaticImage src="../../../images/paper_timesheets@2x.png" />
+        <Divider className="style3" />
+        <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      </div>
+    </div>
+    <div className={`${container} ${noPadding}`}>
       <Divider />
-      <Divider className="style1" />
       <Title
         title="Get everything set up in 3 simple steps"
         description="Atto is designed to be the easiest time-tracking app to use.
@@ -124,11 +127,11 @@ const Electrician = () => (
         maxWidth={932}
         maxDescriptionWidth={750}
       />
-      <Divider className="style5" />
+      <Divider className="style1" />
       <Steps list={steps} />
       <Divider />
       <SubscribeBanner
-        title="Keep track of all your electricians in the field with Atto"
+        title="Time tracking for roofing companies? We’re on top of it!"
         placeholder="Type your email"
         checkItemOne="No credit card required"
         checkItemTwo="14 day free trial"
