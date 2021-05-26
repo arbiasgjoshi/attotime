@@ -5,7 +5,7 @@ import { Formik } from 'formik';
 import Button from '@components/atoms/button';
 import * as yup from 'yup';
 
-import { formWrapper, formRow, formBtn } from './contact-form.module.scss';
+import { formWrapper, formRow, formBtn, formMask } from './contact-form.module.scss';
 
 const ContactForm = () => {
   const validationSchema = yup.object().shape({
@@ -60,6 +60,7 @@ const ContactForm = () => {
             </div>
             <div className={formBtn}>
               <Button btnText="Send Message" btnStyle="formBtn" defaultBtn />
+              <span className={formMask} />
             </div>
           </form>
         )}
