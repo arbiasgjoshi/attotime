@@ -1,4 +1,7 @@
+import React from 'react';
+
 import Divider from '@components/atoms/divider';
+import SEO from '@components/molecules/seo';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
 import Title from '@components/molecules/title';
@@ -42,7 +45,6 @@ import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
 
 import { container } from '@styles/main.module.scss';
-import React from 'react';
 import {
   teamActivityContainer,
   learnMoreContainer,
@@ -109,6 +111,7 @@ const TeamActivity = () => {
   ];
   return (
     <div className={`${teamActivityContainer} ${container}`}>
+      <SEO title="Team Activity" />
       <Header />
       <MainTitleCard
         hasParagraph

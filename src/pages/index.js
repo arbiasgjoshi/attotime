@@ -202,9 +202,6 @@ const Home = () => {
             sliderItem
           />
         </Slider>
-        <div className={sliderText}>
-          <span>Rated Excellent 5/5 over 1,200 reviews</span>
-        </div>
       </div>
       <Divider className="style4" />
       <FeatureTabs />
@@ -217,7 +214,7 @@ const Home = () => {
         marginBottom="2rem"
       />
       <Divider className="style3" />
-      <VideoCheckList list={titleList} />
+      <VideoCheckList list={titleList} cardStyle="centerAligned" />
       <Divider />
       <Title
         title="See how Atto works with your industry"

@@ -294,7 +294,7 @@ const TimeTracking = () => {
         subtitle="An easy-to-use, accurate, and trustworthy time-tracking solution."
       />
       <Divider className="style2" />
-      <VideoCheckList list={titleList} />
+      <VideoCheckList list={titleList} cardStyle="centerAligned" />
       <StaticImage
         src="../images/time-tracking-fingertips@2x.png"
         alt="Home banner image"

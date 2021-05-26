@@ -187,6 +187,21 @@ $media-query-sizes: (
   }
 }
 
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+}
+
 @mixin blur($var) {
   -webkit-backdrop-filter: blur($var);
   backdrop-filter: blur($var);

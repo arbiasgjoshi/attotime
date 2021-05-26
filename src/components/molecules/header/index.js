@@ -47,6 +47,7 @@ import {
   rightItems,
   menuItems,
   menuItem,
+  activeMenuItem,
   menuItemWrapper,
   resourcesMenu,
   menuIcon,
@@ -83,7 +84,11 @@ const HeaderComponent = ({ headerStyle }) => {
     <div className={menuSection}>
       <div className={`${leftItems} ${contentPadding}`}>
         <div className={mainItem}>
-          <Link className={`${menuItem} ${menuItemWrapper}`} to="/product">
+          <Link
+            className={`${menuItem} ${menuItemWrapper}`}
+            to="/product"
+            activeClassName={activeMenuItem}
+          >
             <div className={menuIcon}>
               <ProductIcon />
             </div>
@@ -99,7 +104,7 @@ const HeaderComponent = ({ headerStyle }) => {
         </div>
         <Divider className="style7" />
         <div className={subItems}>
-          <Link className={menuItem} to="/product/time-tracking">
+          <Link className={menuItem} activeClassName={activeMenuItem} to="/product/time-tracking">
             <div className={menuIcon}>
               <TimeTrackingIcon />
             </div>
@@ -108,7 +113,11 @@ const HeaderComponent = ({ headerStyle }) => {
               <p>Accurate time tracking from any location and any device</p>
             </div>
           </Link>
-          <Link className={menuItem} to="/product/gps-location-tracking">
+          <Link
+            className={menuItem}
+            activeClassName={activeMenuItem}
+            to="/product/gps-location-tracking"
+          >
             <div className={menuIcon}>
               <LocationTrackingIcon />
             </div>
@@ -117,7 +126,7 @@ const HeaderComponent = ({ headerStyle }) => {
               <p>Real-time updates on your team’s locations and movements</p>
             </div>
           </Link>
-          <Link className={menuItem} to="/product/team-activity">
+          <Link className={menuItem} activeClassName={activeMenuItem} to="/product/team-activity">
             <div className={menuIcon}>
               <TeamActivityLogo />
             </div>
@@ -126,7 +135,7 @@ const HeaderComponent = ({ headerStyle }) => {
               <p>Stay in the loop of your team’s progress as work happens</p>
             </div>
           </Link>
-          <Link className={menuItem} to="/product/timesheets">
+          <Link className={menuItem} activeClassName={activeMenuItem} to="/product/timesheets">
             <div className={menuIcon}>
               <TimesheetsLogo />
             </div>
@@ -178,7 +187,7 @@ const HeaderComponent = ({ headerStyle }) => {
   const industriesSection = () => (
     <div className={`${menuSection} ${contentPadding}`}>
       <div className={menuItems}>
-        <Link className={menuItem} to="/industries/construction">
+        <Link className={menuItem} activeClassName={activeMenuItem} to="/industries/construction">
           <div className={menuIcon}>
             <ConstructionLogo />
           </div>
@@ -187,7 +196,11 @@ const HeaderComponent = ({ headerStyle }) => {
             <p>Track your entire crew’s time and location in real-time.</p>
           </div>
         </Link>
-        <Link className={menuItem} to="/industries/painting-and-decorating">
+        <Link
+          className={menuItem}
+          activeClassName={activeMenuItem}
+          to="/industries/painting-and-decorating"
+        >
           <div className={menuIcon}>
             <PaintingLogo />
           </div>
@@ -196,7 +209,11 @@ const HeaderComponent = ({ headerStyle }) => {
             <p>Using paper timesheets is like watching paint dry.</p>
           </div>
         </Link>
-        <Link className={menuItem} to="/industries/healthcare-and-medical">
+        <Link
+          className={menuItem}
+          activeClassName={activeMenuItem}
+          to="/industries/healthcare-and-medical"
+        >
           <div className={menuIcon}>
             <HealthcareLogo />
           </div>
@@ -205,7 +222,11 @@ const HeaderComponent = ({ headerStyle }) => {
             <p>Keep accurate time records while providing care.</p>
           </div>
         </Link>
-        <Link className={menuItem} to="/industries/plumbing-and-heating">
+        <Link
+          className={menuItem}
+          activeClassName={activeMenuItem}
+          to="/industries/plumbing-and-heating"
+        >
           <div className={menuIcon}>
             <PlumbingLogo />
           </div>
@@ -214,7 +235,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <p>All cisterns go! Get to work with accurate time tracking from Atto.</p>
           </div>
         </Link>
-        <Link className={menuItem} to="/industries/electrical">
+        <Link className={menuItem} activeClassName={activeMenuItem} to="/industries/electrical">
           <div className={menuIcon}>
             <ElectrianLogo />
           </div>
@@ -223,7 +244,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <p>Avoid a nasty shock by tracking work hours in real-time</p>
           </div>
         </Link>
-        <Link className={menuItem} to="/industries/landscaping">
+        <Link className={menuItem} activeClassName={activeMenuItem} to="/industries/landscaping">
           <div className={menuIcon}>
             <LandscapingLogo />
           </div>
@@ -232,7 +253,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <p>The grass is always greener for landscapers that use Atto.</p>
           </div>
         </Link>
-        <Link className={menuItem} to="/industries/roofing">
+        <Link className={menuItem} activeClassName={activeMenuItem} to="/industries/roofing">
           <div className={menuIcon}>
             <RoofingLogo />
           </div>
@@ -241,7 +262,11 @@ const HeaderComponent = ({ headerStyle }) => {
             <p>Keep accurate time records while working outdoors.</p>
           </div>
         </Link>
-        <Link className={menuItem} to="/industries/cleaning-and-maintenance">
+        <Link
+          className={menuItem}
+          activeClassName={activeMenuItem}
+          to="/industries/cleaning-and-maintenance"
+        >
           <div className={menuIcon}>
             <CleaningLogo />
           </div>
@@ -250,7 +275,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <p>Let’s make it a clean sweep! Keep your time tracking tidy.</p>
           </div>
         </Link>
-        <Link className={menuItem} to="/all-features">
+        <Link className={menuItem} activeClassName={activeMenuItem} to="/all-features">
           <div className={menuIcon}>
             <ThreeDots />
           </div>
@@ -266,7 +291,7 @@ const HeaderComponent = ({ headerStyle }) => {
   const resourceSection = () => (
     <div className={`${menuSection} ${resourcesMenu} ${contentPadding}`}>
       <div className={menuItems}>
-        <Link className={menuItem} to="/help-center">
+        <Link className={menuItem} activeClassName={activeMenuItem} to="/help-center">
           <div className={menuIcon}>
             <HelpCenterLogo />
           </div>
@@ -275,7 +300,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <p>Get answers to all of your questions in an instant</p>
           </div>
         </Link>
-        <Link className={menuItem} to="/blog">
+        <Link className={menuItem} activeClassName={activeMenuItem} to="/blog">
           <div className={menuIcon}>
             <BlogLogo />
           </div>
@@ -284,7 +309,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <p>Get helpful productivity tips from our blog</p>
           </div>
         </Link>
-        <Link className={menuItem} to="/contact">
+        <Link className={menuItem} activeClassName={activeMenuItem} to="/contact">
           <div className={menuIcon}>
             <ContactLogo />
           </div>
@@ -358,29 +383,40 @@ const HeaderComponent = ({ headerStyle }) => {
       <div className={container}>
         <div className={leftNav}>
           <Link to="/">
-            <StaticImage src="../../../images/logo@2x.png" quality={100} width={85} />
+            <StaticImage src="../../../images/logo@3x.png" quality={100} width={86} />
           </Link>
         </div>
         <div className={menuLinks} onMouseEnter={() => setAbove(true)}>
-          <Link to="/product" onMouseEnter={() => showMenu('product')}>
+          <Link
+            to="/product"
+            activeClassName={activeMenuItem}
+            onMouseEnter={() => showMenu('product')}
+          >
             Product
           </Link>
-          {/* <Link to="/why-atto">Why Atto?</Link> */}
-          <Link to="/industries" onMouseEnter={() => showMenu('industries')}>
+          <Link
+            to="/industries"
+            activeClassName={activeMenuItem}
+            onMouseEnter={() => showMenu('industries')}
+          >
             Industries
           </Link>
-          <Link to="/pricing">Pricing</Link>
-          <Link to="/resources" onMouseEnter={() => showMenu('resources')}>
+          <Link
+            to="/resources"
+            activeClassName={activeMenuItem}
+            onMouseEnter={() => showMenu('resources')}
+          >
             Resources
+          </Link>
+          <Link to="/pricing" activeClassName={activeMenuItem}>
+            Pricing
           </Link>
         </div>
         <div className={rightNavButtons}>
           <Link to="/login" className={login}>
             Log In
           </Link>
-          <a>
-            <Button onBtnClick={openModal} btnText="Try for Free" btnStyle="teal" />
-          </a>
+          <Button onBtnClick={openModal} btnText="Try for Free" btnStyle="teal" />
           <button
             className={`${menuTrigger} ${openMobile && activeButton} `}
             type="button"

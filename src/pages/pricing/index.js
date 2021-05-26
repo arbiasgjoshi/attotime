@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import HeaderComponent from '@components/molecules/header';
 import SEO from '@components/molecules/seo';
+import { Link } from 'gatsby-plugin-intl';
 import { FooterLinks } from '@locale/en.js';
 import Button from '@components/atoms/button';
 import Divider from '@components/atoms/divider';
@@ -214,7 +215,9 @@ const Pricing = () => {
           quality={96}
           height={170}
         />
-        <Button btnText="View All Features" btnStyle="big" />
+        <Link to="/all-features">
+          <Button btnText="View All Features" btnStyle="big" />
+        </Link>
       </div>
       <Divider className="medium" />
       <Title

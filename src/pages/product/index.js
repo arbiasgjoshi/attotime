@@ -120,10 +120,10 @@ const Product = () => {
         checkItemThree="Cancel anytime"
         style="productPage"
       />
-      <Divider className="style2" />
+      <Divider className="style0" />
       {/* TODO This image requires some more fixing, need the PNG file */}
       <ProductOverviewBanner />
-      <Divider className="style3" />
+      <Divider className="style31" />
       <IconCardList cardList={firstList} style="smallTimesheetImages" />
       <Divider />
       <ProductCard

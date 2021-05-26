@@ -22,7 +22,17 @@
   &.small {
     @include min(tablet) {
       column-gap: 3.2rem;
-      row-gap: 4rem;
+      row-gap: unset;
+      > div {
+        margin-bottom: 4rem;
+        &:nth-child(even) {
+          margin-right: 0;
+        }
+
+        &:nth-last-child(-n + 2) {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 

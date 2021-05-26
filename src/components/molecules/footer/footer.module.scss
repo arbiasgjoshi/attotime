@@ -153,4 +153,15 @@
   @include max(tablet) {
     margin-top: 2rem;
   }
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #666;
+
+    &:hover {
+      color: #666;
+    }
+  }
 }

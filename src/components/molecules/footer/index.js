@@ -21,7 +21,7 @@ const Footer = ({ FooterLinks }) => (
   <footer className={pageFooter}>
     <div className={footerTop}>
       <div className={leftFooterItems}>
-        <StaticImage src="../../../images/logo@2x.png" alt="footer-logo" quality={100} width={85} />
+        <StaticImage src="../../../images/logo@3x.png" alt="footer-logo" quality={100} width={86} />
         <p>A highly accurate time tracking solution for any company</p>
 
         <div>
@@ -58,7 +58,16 @@ const Footer = ({ FooterLinks }) => (
         ))}
       </div>
     </div>
-    <p className={footerBottom}>© Specta Labs, Inc. Terms & Privacy</p>
+    <p className={footerBottom}>
+      © Specta Labs, Inc.{' '}
+      <Link to="/terms" target="_blank">
+        Terms
+      </Link>{' '}
+      &{' '}
+      <Link to="/privacy" target="_blank">
+        Privacy
+      </Link>
+    </p>
   </footer>
 );
 

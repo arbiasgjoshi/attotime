@@ -1,6 +1,6 @@
 .headerWrapper {
   height: 7.3rem;
-  padding: 1.3rem 0;
+  padding: 1.25rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,17 +8,28 @@
   background-color: #fff;
   z-index: 99;
 
+  .menuLinks > a {
+    margin-right: 4rem;
+  }
+
   .rightNavButtons > a,
   .menuLinks > a {
     font-size: 2rem;
     line-height: 2rem;
     text-decoration: none;
     color: var(--color-3);
-    margin-right: 3rem;
+    font-weight: var(--medium);
     letter-spacing: -0.05rem;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &.activeMenuItem {
+      color: #666;
+      &:hover {
+        color: #666;
+      }
     }
   }
 
@@ -112,6 +123,11 @@
 
 .leftNav {
   margin-right: 6.5rem;
+  display: inline-flex;
+  a {
+    height: 2.9rem;
+    display: inline-block;
+  }
 }
 
 .menuLinks {
@@ -124,6 +140,16 @@
 
 .rightNavButtons {
   margin-left: auto;
+  @include flex-direction(row);
+  align-items: center;
+
+  a {
+    margin-right: 1.6rem;
+    transition: ease all 0.2s;
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
 }
 
 // Menu Styling and logic here

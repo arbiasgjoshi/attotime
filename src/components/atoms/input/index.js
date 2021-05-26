@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { defaultInput } from './input.module.scss';
+import { defaultInput, inputWrapper } from './input.module.scss';
 
 const Input = ({ type = 'text', placeholder = 'Enter here...' }) => (
-  <input type={type} placeholder={placeholder} className={defaultInput} />
+  <div className={inputWrapper}>
+    <input type={type} placeholder={placeholder} className={defaultInput} />
+  </div>
 );
 
 Input.propTypes = {

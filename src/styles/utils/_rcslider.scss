@@ -21,10 +21,12 @@
     transform: scale(0);
   }
 }
+
 .rc-slider {
   position: relative;
   height: 2.5rem;
-  // padding: 5px 0;
+  max-width: 100rem;
+  margin: 0 auto;
   width: 100%;
   border-radius: 0.4rem;
   @include flex-align(center, flex-start);

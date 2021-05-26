@@ -1,11 +1,10 @@
 .draggerWrapper {
   @include flex-direction(column);
-  max-width: 100rem;
-  margin: 0 auto;
-  width: 100%;
+  max-width: 100%;
+  width: 100rem;
   position: relative;
-  padding-top: 8rem;
-  margin-top: 2rem;
+  padding: 8rem 0 0;
+  margin: 2rem auto 0;
 
   @include max(tablet) {
     display: none;
@@ -21,6 +20,7 @@
   background: url('@images/bubble-icon.png') no-repeat center;
   background-size: 97% auto;
   height: 7rem;
+  cursor: grab;
 
   h5 {
     color: #000;
@@ -30,14 +30,22 @@
 
 .plansWrapper {
   @include flex-direction(row);
+  max-width: 100rem;
+  margin: 0 auto;
   justify-content: center;
+  background-image: url('@images/pricing-dots@2x.png');
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 7rem;
 
   .planCard {
     width: 33rem;
-    border: 0.2rem solid #efefef;
+    border: 0.2rem solid #090606;
+    background-color: #fff;
     border-radius: 0.8rem;
     padding: 3.6rem 4rem 3rem;
-    margin: 7rem 5rem 0;
+    margin: 0 5rem;
     @include flex-direction(column);
 
     h6 {

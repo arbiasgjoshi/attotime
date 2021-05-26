@@ -4,6 +4,7 @@ import { FooterLinks } from '@locale/en.js';
 import { container } from '@styles/main.module.scss';
 
 import Divider from '@components/atoms/divider';
+import SEO from '@components/molecules/seo';
 import Title from '@components/molecules/title';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
@@ -182,6 +183,7 @@ const Timesheets = () => {
   ];
   return (
     <div className={`${container} ${teamActivityContainer}`}>
+      <SEO title="Timesheets" />
       <Header />
       <MainTitleCard
         maxParagraphWidth={760}
@@ -192,7 +194,7 @@ const Timesheets = () => {
         subtitle="Spend more time on the things that matter with timesheets filled painlessly and on-time."
       />
       <Divider className="style2" />
-      <VideoCheckList list={checkLists} />
+      <VideoCheckList list={checkLists} cardStyle="centerAligned" />
       <Divider />
       <div className={readyMadeTitle}>
         <Title
