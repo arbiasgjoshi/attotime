@@ -52,7 +52,7 @@ const Painting = () => (
         list={checkList1}
         image={image2}
       />
-      <Divider className="style3" />
+      <Divider className="style4" />
       <Story
         img={authorImage}
         paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."
@@ -66,7 +66,7 @@ const Painting = () => (
         maxWidth={920}
         maxDescriptionWidth={800}
       />
-      <Divider />
+      <Divider className="style3" />
       <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
       <Divider />
       <Article
@@ -79,6 +79,7 @@ const Painting = () => (
         imageHeight={354}
         image={image3}
       />
+      <Divider className="style3" />
       <Article
         title="Entrust your supervisor to track your painting crew’s time"
         description="Tiling large buildings or doing commercial and industrial painting jobs require lots of your roofers to work together. Instead of having each contractor track their time individually, your on-the-job supervisor can use Atto to clock-in and out on their behalf."
@@ -90,20 +91,20 @@ const Painting = () => (
         imageHeight={354}
         image={image4}
       />
-      <Divider className="style3" />
+      <Divider className="style4" />
       <AccordionArticle
         title="Keep track of your painting and decorating crew as they work throughout the day"
         list={accordionList1}
         image={image5}
       />
-      <Divider />
+      <Divider className="style4" />
       <AccordionArticle
         title="Everything you need to keep painting and decorating jobs on schedule and on budget"
         list={accordionList2}
         image={image6}
         isSwapped
       />
-      <Divider className="style11" />
+      <Divider />
       <Title
         title="Say goodbye to paper timesheets!"
         description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for roofing companies"

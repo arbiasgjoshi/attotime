@@ -53,7 +53,7 @@ const HomeHealthcare = () => (
         list={checkList1}
         image={image2}
       />
-      <Divider className="style2" />
+      <Divider className="style4" />
       <Story
         img={authorImage}
         paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."
@@ -67,7 +67,7 @@ const HomeHealthcare = () => (
         maxWidth={920}
         maxDescriptionWidth={800}
       />
-      <Divider className="style2" />
+      <Divider className="style3" />
       <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
       <Divider />
       <Article
@@ -79,6 +79,7 @@ const HomeHealthcare = () => (
         imageWidth={400}
         imageHeight={354}
       />
+      <Divider className="style3" />
       <Article
         title="Entrust your senior caregivers to track everyone’s time"
         description="Some patients with complex needs, or larger caring jobs may require multiple caregivers to work together in the same home. Instead of having each caregiver track their time individually, your senior caregiver can use Atto to clock in and out on all of their behalfs."
@@ -102,7 +103,7 @@ const HomeHealthcare = () => (
         isSwapped
         image={image6}
       />
-      <Divider className="style11" />
+      <Divider className="style12" />
       <Title
         title="Say goodbye to paper timesheets!"
         description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for roofing companies"
@@ -116,6 +117,14 @@ const HomeHealthcare = () => (
       <Divider className="style3" />
       <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
       <Divider />
+      <Title
+        title="Get everything set up in 3 simple steps"
+        description="Atto is designed to be the easiest time-tracking app to use.
+         There’s absolutely no technical knowledge required."
+        maxWidth={932}
+        maxDescriptionWidth={750}
+      />
+      <Divider className="style1" />
       <Steps list={steps} />
       <Divider />
       <SubscribeBanner

@@ -89,10 +89,10 @@ const Landscaping = () => (
         list={accordionList3}
       />
       <Divider className="style2" />
-      <Title title="Built with landscaping companies in mind" maxWidth={600} />
-      <Divider className="style2" />
       <OldVsNew oldList={oldList} newList={newList} />
       <Divider />
+      <Title title="Built with landscaping companies in mind" maxWidth={600} />
+      <Divider className="style2" />
       <Story
         img={authorImage}
         paragraph={`"So perfectly simplistic. I work in construction so employees can all be in different places. 

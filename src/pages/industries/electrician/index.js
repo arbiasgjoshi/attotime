@@ -51,7 +51,7 @@ const Electrician = () => (
         list={checkList1}
         image={image2}
       />
-      <Divider className="style3" />
+      <Divider className="style4" />
       <Story
         img={authorImage}
         paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."
@@ -78,6 +78,7 @@ const Electrician = () => (
         imageWidth={400}
         imageHeight={354}
       />
+      <Divider className="style3" />
       <Article
         title="Give on-site supervisors the power to track your electricians’ time"
         description="Wiring an entire building? Dealing with a commercial job that requires multiple electricians on-site? Instead of having each of them track their time individually, your on-site supervisor can clock-in and out on all of your electricians’ behalf."

@@ -76,7 +76,7 @@ const Construction = () => (
         image={image3}
         imagePadding="6.1rem 0"
       />
-      <Divider />
+      <Divider className="style4" />
       <AccordionArticle
         title="Increase the safety and accountability of your crew with real-time GPS location tracking"
         list={accordionList2}
@@ -84,7 +84,7 @@ const Construction = () => (
         isSwapped
         imagePadding="2.1rem 0 10.1rem 0"
       />
-      <Divider />
+      <Divider className="style4" />
       <AccordionArticle
         title="All the reports you need to keep construction jobs on schedule and on budget"
         list={accordionList3}
@@ -93,7 +93,7 @@ const Construction = () => (
       />
       <Divider className="style3" />
       <OldVsNew oldList={oldList} newList={newList} />
-      <Divider className="style2" />
+      <Divider className="style4" />
       <Title title="Built with construction companies in mind" maxWidth={600} />
       <Divider className="style2" />
       <Story

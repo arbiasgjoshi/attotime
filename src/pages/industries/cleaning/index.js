@@ -51,7 +51,7 @@ const Cleaning = () => (
         list={checkList1}
         image={image2}
       />
-      <Divider className="style3" />
+      <Divider className="style4" />
       <Story
         img={authorImage}
         paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."
@@ -77,6 +77,7 @@ const Cleaning = () => (
         imageWidth={400}
         imageHeight={354}
       />
+      <Divider className="style3" />
       <Article
         title="Entrust managers to track your cleaners’ time"
         description="Dealing with commercial or industrial cleaning jobs that require lots of cleaners? Instead of having each cleaner track their time individually, your on-the-job manager can clock in and out on your cleaner’s behalf."

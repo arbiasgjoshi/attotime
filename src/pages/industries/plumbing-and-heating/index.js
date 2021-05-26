@@ -58,7 +58,7 @@ const PlumbingAndHeating = () => (
         list={checkList1}
         image={image2}
       />
-      <Divider className="style2" />
+      <Divider className="style4" />
       <Story
         img={authorImage}
         paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."
@@ -84,6 +84,7 @@ const PlumbingAndHeating = () => (
         imageWidth={400}
         imageHeight={354}
       />
+      <Divider className="style3" />
       <Article
         title="Entrust your on-site manager to track your plumbers’ time"
         description="Dealing with commercial or industrial plumbing jobs that require multiple plumbers on-site? Instead of having each plumber track their time individually, your on-the-job manager can clock in and out on all of your plumbers’ behalf."

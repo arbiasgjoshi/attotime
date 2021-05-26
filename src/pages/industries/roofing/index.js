@@ -50,7 +50,7 @@ const Roofing = () => (
         list={checkList1}
         image={image2}
       />
-      <Divider className="style3" />
+      <Divider className="style4" />
       <Story
         img={authorImage}
         paragraph="Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."
@@ -75,6 +75,7 @@ const Roofing = () => (
         imageWidth={400}
         imageHeight={354}
       />
+      <Divider className="style3" />
       <Article
         title="Entrust your supervisor to track your roofing crew’s time"
         description="Tiling large buildings or doing commercial and industrial roofing jobs require lots of your roofers to work together. Instead of having each contractor track their time individually, your on-the-job supervisor can use Atto to clock-in and out on their behalf."
@@ -85,7 +86,7 @@ const Roofing = () => (
         imageWidth={400}
         imageHeight={354}
       />
-      <Divider className="style3" />
+      <Divider className="style4" />
       <AccordionArticle
         title="Keep track of your roofing contractors as they work throughout the day"
         list={accordionList1}
@@ -98,7 +99,7 @@ const Roofing = () => (
         isSwapped
         image={image6}
       />
-      <Divider className="style11" />
+      <Divider className="style12" />
       <Title
         title="Say goodbye to paper timesheets!"
         description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for roofing companies"
