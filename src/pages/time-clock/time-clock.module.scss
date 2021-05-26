@@ -1,0 +1,25 @@
+.workListContainer {
+  width: 85%;
+  margin: 0 auto;
+
+  @include max(mobile) {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  @include min(tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8.1rem;
+    margin-left: 2rem;
+    width: calc(100% - 7.8rem);
+  }
+
+  @include min(desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8.1rem;
+    margin-left: 2rem;
+    width: calc(100% - 7.8rem);
+  }
+}
