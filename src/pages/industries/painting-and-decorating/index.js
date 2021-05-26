@@ -13,13 +13,22 @@ import IndustryMainCard from '@components/organisms/industry-main-card';
 import AccordionArticle from '@components/organisms/accordion-article';
 import OldVsNew from '@components/organisms/old-vs-new';
 import Steps from '@components/organisms/steps';
+import ImagesBox from '@components/organisms/images-box';
 
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import { container } from '@styles/main.module.scss';
-import authorImage from '@images/authorImage.png';
-
+import authorImage from '@images/painting-author@2x.png';
 import image1 from '@images/no-image.png';
 import image2 from '@images/time-tracking-painting@2x.png';
+import image3 from '@images/painting-accordion1.png';
+import image4 from '@images/painting-accordion2.png';
+import image5 from '@images/painting-accordion3.png';
+import image6 from '@images/painting-accordion4.png';
+
+import boxImage1 from '@images/painting-box-one@2x.png';
+import boxImage2 from '@images/painting-box-two@2x.png';
+import boxImage3 from '@images/painting-box-three@2x.png';
+import boxImage4 from '@images/painting-box-four@2x.png';
 
 import { checkList1, accordionList1, accordionList2 } from '@data/industries/painting.js';
 import { oldList, newList, steps } from '@data/industries';
@@ -68,6 +77,7 @@ const Painting = () => (
         imagePadding="7.3rem 4.5rem"
         imageWidth={400}
         imageHeight={354}
+        image={image3}
       />
       <Article
         title="Entrust your supervisor to track your painting crew’s time"
@@ -78,16 +88,19 @@ const Painting = () => (
         imagePadding="7.3rem 4.5rem"
         imageWidth={400}
         imageHeight={354}
+        image={image4}
       />
       <Divider className="style3" />
       <AccordionArticle
         title="Keep track of your painting and decorating crew as they work throughout the day"
         list={accordionList1}
+        image={image5}
       />
       <Divider />
       <AccordionArticle
         title="Everything you need to keep painting and decorating jobs on schedule and on budget"
         list={accordionList2}
+        image={image6}
         isSwapped
       />
       <Divider className="style11" />
@@ -101,11 +114,10 @@ const Painting = () => (
       <OldVsNew oldList={oldList} newList={newList} />
       <Divider />
       <StaticImage src="../../../images/paper_timesheets@2x.png" />
-      <Divider className="style1" />
+      <Divider className="style3" />
+      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      <Divider />
       <Steps list={steps} />
-      <Divider />
-      <Divider />
-      <Divider />
       <Divider />
       <SubscribeBanner
         title="Using paper timesheets is like watching paint dry. Try Atto instead!"

@@ -102,6 +102,8 @@ const Roofing = () => (
       <Title
         title="Say goodbye to paper timesheets!"
         description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for roofing companies"
+        maxWidth={1040}
+        maxDescriptionWidth={900}
       />
       <Divider className="style5" />
       <OldVsNew oldList={oldList} newList={newList} />
