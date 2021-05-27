@@ -10,12 +10,18 @@ import Story from '@components/organisms/story';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import IconCardList from '@components/organisms/icon-card-list';
 import Article from '@components/molecules/article';
+import LearnMoreCard from '@components/molecules/learn-more-card';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
 import image1 from '@images/time-clock-mobile@2x.png';
 
+import icon32 from '@images/location@1x.png';
+import icon33 from '@images/profile@1x.png';
+import icon34 from '@images/timesheets@1x.png';
+
 import { container } from '@styles/main.module.scss';
+import { learnMoreContainer } from './time-tracking-app.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
@@ -80,6 +86,46 @@ const TimeTrackingApp = () => (
     />
     <Divider />
     <StaticImage quality={90} src="../../images/time-tracking-app-image2.svg" alt="Field Workers" />
+    <Divider />
+    <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
+    <div className={learnMoreContainer}>
+      <LearnMoreCard
+        title="GPS Location Tracking"
+        description="Increase the safety and accountability of your team with real-time updates on their location."
+        icon={icon32}
+        path="/product/gps-location-tracking"
+        imageWidth={27}
+        imageHeight={32}
+        styling="smaller"
+      />
+      <LearnMoreCard
+        title="Team Activity"
+        description="Stay in the loop with what's happening - without needing to pick up the phone"
+        icon={icon33}
+        path="/product/team-activity"
+        imageWidth={42}
+        imageHeight={44}
+        styling="smaller"
+      />
+      <LearnMoreCard
+        title="Timesheets"
+        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        icon={icon34}
+        path="/product/timesheets"
+        imageWidth={30}
+        imageHeight={33}
+        styling="smaller"
+      />
+      <LearnMoreCard
+        title="Timesheets"
+        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        icon={icon34}
+        path="/product/timesheets"
+        imageWidth={30}
+        imageHeight={33}
+        styling="smaller"
+      />
+    </div>
     <Divider />
     <SubscribeBanner
       title="#1 Time Tracker. Free for 14 days"
