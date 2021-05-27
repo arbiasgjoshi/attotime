@@ -69,4 +69,16 @@
       font-size: 2rem !important;
     }
   }
+
+  &.smaller {
+    width: 27.6rem;
+
+    .textWrapper {
+      .paragraphText {
+        @include min(tablet) {
+          width: 22rem;
+        }
+      }
+    }
+  }
 }

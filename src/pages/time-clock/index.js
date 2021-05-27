@@ -10,6 +10,8 @@ import Footer from '@components/molecules/footer';
 import Story from '@components/organisms/story';
 import Article from '@components/molecules/article';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
+import TickCardList from '@components/organisms/tick-card-list';
+import LearnMoreCard from '@components/molecules/learn-more-card';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
@@ -18,10 +20,25 @@ import MobileTracking from '@images/mobile_time_tracking.svg';
 import KioskTracking from '@images/kiosk-time-tracking.svg';
 
 import { container } from '@styles/main.module.scss';
+import image1 from '@images/time-clock-mobile@2x.png';
+import image2 from '@images/give-managers-power@2x.png';
 
-import { workListContainer } from './time-clock.module.scss';
+import icon32 from '@images/location@1x.png';
+import icon33 from '@images/profile@1x.png';
+import icon34 from '@images/timesheets@1x.png';
+
+import { workListContainer, learnMoreContainer } from './time-clock.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
+
+const checkList = [
+  'Mobile, Web, and Kiosk Time Clock',
+  'Clock In/Out Reminders',
+  'Managed Clock In/Out',
+  'Work Activity Notifications',
+  'GPS Stamped Clock In/Out',
+  'Manual Time Entries',
+];
 
 // import localeData from '@locale/en';
 
@@ -32,7 +49,8 @@ const TimeClock = () => (
     <IndustryMainCard
       smallTitle="TIME CLOCK"
       title="A simple time clock app for accurate time tracking"
-      image={noImage}
+      image={image1}
+      description="With Atto’s time clock, you can track time from any device, from absolutely anywhere."
       styling="other"
     />
     <Divider />
@@ -40,7 +58,10 @@ const TimeClock = () => (
       img={authorImage}
       paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
     />
-    <Divider />
+    <Divider className="style4" />
+    <TickCardList list={checkList} />
+    <Divider className="style4" />
+    <Title title="Track time from any location, and any device" />
     <div className={workListContainer}>
       <FeatureCard
         isWorkCard
@@ -67,8 +88,11 @@ const TimeClock = () => (
         imagePadding=".9rem 2.5rem .85rem .4rem"
       />
     </div>
-    <Divider />
-    <Title title="An easy way for small businesses to keep track of their employees’s time." />
+    <Divider className="style2" />
+    <Title
+      title="An easy way for small businesses to keep track of their employees’s time."
+      maxWidth={900}
+    />
     <Divider />
     <Article
       title="Add notes, track breaks, assign jobs, and more!"
@@ -79,7 +103,7 @@ const TimeClock = () => (
     <Article
       title="Give managers the power to track employee time"
       description="Give managers the power to enforce accurate time-keeping. Using Atto, managers can clock in and out on behalf of employees – perfect for teams that start and finish at similar times. Plus, if a worker forgets their phone or it runs out of battery, managers can add manual time entries that are flagged for review."
-      image={noImage}
+      image={image2}
       isSwapped
     />
     <Divider />
@@ -108,6 +132,46 @@ const TimeClock = () => (
       image={noImage}
       isSwapped
     />
+    <Divider />
+    <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
+    <div className={learnMoreContainer}>
+      <LearnMoreCard
+        title="GPS Location Tracking"
+        description="Increase the safety and accountability of your team with real-time updates on their location."
+        icon={icon32}
+        path="/product/gps-location-tracking"
+        imageWidth={27}
+        imageHeight={32}
+        styling="smaller"
+      />
+      <LearnMoreCard
+        title="Team Activity"
+        description="Stay in the loop with what's happening - without needing to pick up the phone"
+        icon={icon33}
+        path="/product/team-activity"
+        imageWidth={42}
+        imageHeight={44}
+        styling="smaller"
+      />
+      <LearnMoreCard
+        title="Timesheets"
+        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        icon={icon34}
+        path="/product/timesheets"
+        imageWidth={30}
+        imageHeight={33}
+        styling="smaller"
+      />
+      <LearnMoreCard
+        title="Timesheets"
+        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        icon={icon34}
+        path="/product/timesheets"
+        imageWidth={30}
+        imageHeight={33}
+        styling="smaller"
+      />
+    </div>
     <Divider />
     <SubscribeBanner
       title="Let’s make it a clean sweep! Keep your time tracking tidy with Atto"

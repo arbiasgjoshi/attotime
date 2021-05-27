@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-sizing: border-box;
+  border: 2px solid #efefef;
+  border-radius: 2rem;
+
+  @include min(tablet) {
+    padding: 5rem;
+  }
+
+  .item {
+    // padding: 2.8rem 4rem 4.2rem 4rem;
+    display: flex;
+    height: 12.4rem;
+    padding: 0 4rem;
+    align-items: center;
+    border-bottom: 1px solid #efefef;
+
+    &:nth-child(odd) {
+      border-right: 1px solid #efefef;
+      padding-right: 3.1rem;
+    }
+  }
+}

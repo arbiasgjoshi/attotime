@@ -6,11 +6,12 @@ import CheckList from '@components/molecules/check-list';
 
 import * as styles from './industry-main-card.module.scss';
 
-const IndustryMainCard = ({ smallTitle, title, list, image, styling }) => (
+const IndustryMainCard = ({ smallTitle, title, description, list, image, styling }) => (
   <div className={`${styles.container} ${styles[styling]}`}>
     <div className={styles.firstBox}>
       <p className={styles.smallTitleStyle}>{smallTitle}</p>
-      <h1>{title}</h1>
+      <h1 className={description && styles.hasDescr}>{title}</h1>
+      {description && <p className={styles.descr}>{description}</p>}
       {list && (
         <div className={styles.listContainer}>
           <CheckList list={list} cardStyle="row" />

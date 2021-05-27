@@ -23,3 +23,10 @@
     width: calc(100% - 7.8rem);
   }
 }
+
+.learnMoreContainer {
+  display: grid;
+  margin-top: 6.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.2rem;
+}
