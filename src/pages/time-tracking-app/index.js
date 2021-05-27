@@ -13,11 +13,13 @@ import Article from '@components/molecules/article';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
+import image1 from '@images/time-clock-mobile@2x.png';
 
 import { container } from '@styles/main.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
+import { StaticImage } from 'gatsby-plugin-image';
 
 // import localeData from '@locale/en';
 
@@ -28,7 +30,8 @@ const TimeTrackingApp = () => (
     <IndustryMainCard
       smallTitle="TIME TRACKING APP"
       title="A highly accurate time tracking solution for any company"
-      image={noImage}
+      description="Clock in and out, keep notes, track breaks, assign job codes, add time off, and more!"
+      image={image1}
       styling="other"
     />
     <Divider />
@@ -37,11 +40,18 @@ const TimeTrackingApp = () => (
       paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
     />
     <Divider />
-    <Title title="An easy way for small businesses to keep track of their employees’s time." />
-    <Divider />
+    <Title
+      title="Time tracking for every part of your workers’ day"
+      description="Atto is an easy to use time-tracking solution. There’s absolutely no technical knowledge required."
+      maxWidth={920}
+      maxDescriptionWidth={800}
+    />
+    <Divider className="style2" />
     <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
     <Divider />
-    <Title title="Time tracking from any location, and for any type of worker" />
+    <StaticImage quality={90} src="../../images/field_workers.svg" alt="Field Workers" />
+    <Divider />
+    <Title title="Time tracking from any location, and for any type of worker" maxWidth={800} />
     <Divider />
     <Article
       title="Time tracking for mobile workers"
@@ -68,6 +78,8 @@ const TimeTrackingApp = () => (
       description="As soon as an employee enters or leaves a job site, or at their normal start and end time, Atto sends a reminder to clock-in and out. While with work activity alerts, you’ll be alerted when employees start tracking time every day."
       image={noImage}
     />
+    <Divider />
+    <StaticImage quality={90} src="../../images/time-tracking-app-image2.svg" alt="Field Workers" />
     <Divider />
     <SubscribeBanner
       title="#1 Time Tracker. Free for 14 days"
