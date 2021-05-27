@@ -1,0 +1,36 @@
+.container {
+  .secondBox {
+    .triggerItemWrap {
+      cursor: pointer;
+      @include flex-direction(row);
+      align-items: center;
+      width: 100%;
+
+      h5 {
+        letter-spacing: -0.05rem;
+        width: 100%;
+
+        margin: 0 2rem 0 1rem;
+
+        @include min(tablet) {
+          margin: 2.3rem 5.6rem 2.3rem 1.8rem;
+        }
+      }
+
+      > i {
+        font-size: 1.6rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        transition: ease all 0.15s;
+      }
+    }
+
+    p {
+      margin: 2rem 1rem;
+
+      @include min(tablet) {
+        margin: 0 7.2rem 3.2rem 5.8rem;
+      }
+    }
+  }
+}
