@@ -11,6 +11,8 @@
 
   .maskOverlay {
     @include flex-direction(row);
+    @include absolute(left 0 top 0);
+    z-index: 2;
     width: 100%;
   }
 
@@ -109,5 +111,9 @@
         transform: scale(1.05);
       }
     }
+  }
+
+  .videoPlayer {
+    margin: 0 auto;
   }
 }

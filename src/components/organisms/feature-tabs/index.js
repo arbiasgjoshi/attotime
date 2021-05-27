@@ -47,7 +47,11 @@ const FeatureTabs = () => {
         list={['Time Tracking', 'GPS Location Tracking', 'Team Activity', 'Timesheets']}
       />
       <>
-        <Collapsible className={collapseDiv} trigger={triggerItem('Time Tracking')}>
+        <Collapsible
+          className={collapseDiv}
+          trigger={triggerItem('Time Tracking')}
+          transitionTime={200}
+        >
           <ProductCard
             title="Track time from any device, anytime, and anywhere"
             description="Say goodbye to employee estimates. See every minute on the clock, including work hours, breaks, and time off."
@@ -75,7 +79,11 @@ const FeatureTabs = () => {
         </div>
       </>
       <>
-        <Collapsible className={collapseDiv} trigger={triggerItem('GPS Location Tracking')}>
+        <Collapsible
+          className={collapseDiv}
+          trigger={triggerItem('GPS Location Tracking')}
+          transitionTime={200}
+        >
           <ProductCard
             title="Be in control of your employees in the field"
             description="Track job routes, work history, and employee’ locations in real-time – increasing team safety and accountability."
@@ -102,7 +110,11 @@ const FeatureTabs = () => {
       </>
 
       <>
-        <Collapsible className={collapseDiv} trigger={triggerItem('Team Activity')}>
+        <Collapsible
+          className={collapseDiv}
+          trigger={triggerItem('Team Activity')}
+          transitionTime={200}
+        >
           <ProductCard
             title="Stay in the loop of work activity throughout the day"
             description="Get instantly notified of employee work activity – without needing to pick up the phone."
@@ -131,7 +143,11 @@ const FeatureTabs = () => {
       </>
 
       <>
-        <Collapsible className={collapseDiv} trigger={triggerItem('Timesheets')}>
+        <Collapsible
+          className={collapseDiv}
+          trigger={triggerItem('Timesheets')}
+          transitionTime={200}
+        >
           <ProductCard
             title="Automate your employees' timesheets"
             description="Accurate, trustworthy, and insightful timesheets – that save hours from the payroll process."

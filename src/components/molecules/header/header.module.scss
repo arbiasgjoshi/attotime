@@ -7,6 +7,7 @@
   width: 100%;
   background-color: #fff;
   z-index: 99;
+  transition: ease all 0.15s;
 
   .menuLinks > a {
     margin-right: 4rem;
@@ -43,6 +44,11 @@
 
   &.pricingStyle {
     background-color: #f7f7f7;
+  }
+
+  &.onScrollStyle {
+    background: #fff !important;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.15);
   }
 
   @include max(tablet) {

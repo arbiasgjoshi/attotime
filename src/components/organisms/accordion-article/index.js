@@ -44,7 +44,7 @@ const AccordionArticle = ({
         )}
         <div className={listStyle}>
           {list?.map(({ title, description }) => (
-            <Collapsible trigger={triggerItem(title)}>
+            <Collapsible trigger={triggerItem(title)} transitionTime={200}>
               <p>{description}</p>
             </Collapsible>
           ))}

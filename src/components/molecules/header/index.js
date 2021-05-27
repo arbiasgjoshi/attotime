@@ -7,6 +7,7 @@ import Button from '@components/atoms/button';
 import Divider from '@components/atoms/divider';
 import Icon from '@components/atoms/icon';
 import Modal from '@components/molecules/modal';
+import useScroll from 'react-use-scroll';
 
 import ProductIcon from '@images/product-overview-logo.svg';
 import TimeTrackingIcon from '@images/time-tracking.svg';
@@ -31,6 +32,7 @@ import Collapsible from 'react-collapsible';
 
 import {
   headerWrapper,
+  onScrollStyle,
   container,
   leftNav,
   menuLinks,
@@ -68,6 +70,7 @@ import './collapsible.scss';
 const HeaderComponent = ({ headerStyle }) => {
   const [open, setOpen] = useState(false);
   const [openMobile, setOpenMobile] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const [overMenu, setOverMenu] = useState(false);
   const [aboveLinks, setAbove] = useState(false);
@@ -77,6 +80,14 @@ const HeaderComponent = ({ headerStyle }) => {
   const [showDialog, setShowDialog] = useState(false);
   const openModal = () => setShowDialog(true);
   const closeModal = () => setShowDialog(false);
+
+  const scroll = useScroll();
+
+  const listentoScroll = () => (scroll === 0 ? setShadow(false) : setShadow(true));
+
+  useEffect(() => {
+    listentoScroll();
+  }, [scroll]);
 
   // FIXME There is a need for three states: opened menu, you're over the menu, you've left both the menu and main links;
 
@@ -378,7 +389,9 @@ const HeaderComponent = ({ headerStyle }) => {
   }, [overMenu, aboveLinks]);
 
   return (
-    <header className={`${headerWrapper} ${headerStyle && pricingStyle}`}>
+    <header
+      className={`${headerWrapper} ${headerStyle && pricingStyle} ${shadow && onScrollStyle}`}
+    >
       <Modal close={closeModal} showDialog={showDialog} />
       <div className={container}>
         <div className={leftNav}>
@@ -438,12 +451,18 @@ const HeaderComponent = ({ headerStyle }) => {
         )}
         {openMobile && (
           <div className={collapsibleMenu}>
-            <Collapsible trigger={triggerItem('Product')}>{productSection()}</Collapsible>
-            <Collapsible trigger={triggerItem('Industries')}>{industriesSection()}</Collapsible>
+            <Collapsible trigger={triggerItem('Product')} transitionTime={200}>
+              {productSection()}
+            </Collapsible>
+            <Collapsible trigger={triggerItem('Industries')} transitionTime={200}>
+              {industriesSection()}
+            </Collapsible>
             <Link to="/pricing">
               <h5>Pricing</h5>
             </Link>
-            <Collapsible trigger={triggerItem('Resources')}>{resourceSection()}</Collapsible>
+            <Collapsible trigger={triggerItem('Resources')} transitionTime={200}>
+              {resourceSection()}
+            </Collapsible>
             <div className={mobileButtons}>
               <Button btnStyle="gray" btnText="Log in" />
               <Button btnStyle="teal" btnText="Start a Free 14-Day Trial" />

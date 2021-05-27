@@ -9,7 +9,7 @@ const Services = ({ list }) => (
   <div className={container}>
     <div className={serviceList}>
       {list?.map((service, index) => (
-        <ServiceCard key={index} title={service.title} icon={service.icon} />
+        <ServiceCard key={index} title={service.title} url={service.url} icon={service.icon} />
       ))}
     </div>
   </div>

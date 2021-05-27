@@ -20,15 +20,7 @@ import Services from '@components/organisms/services';
 import VideoCheckList from '@components/organisms/video-checklist';
 import Modal from '@components/molecules/modal';
 
-import ConstructionLogo from '@images/construction-industry-logo.svg';
-import PaintingLogo from '@images/painting-industry-logo.svg';
-import HealthcareLogo from '@images/healthcare-industry-logo.svg';
-import PlumbingLogo from '@images/plumbing-industry-logo.svg';
-import ElectrianLogo from '@images/electrician-industry-logo.svg';
-import LandscapingLogo from '@images/landscaping-industry-logo.svg';
-import RoofingLogo from '@images/roofing-industry-logo.svg';
-import CleaningLogo from '@images/cleaning-industry-logo.svg';
-import ThreeDots from '@images/three-dots.svg';
+import { serviceList, checkList, titleList } from '@data/listed-data';
 import authorImage from '@images/no-image.png';
 
 import { container } from '@styles/main.module.scss';
@@ -48,32 +40,6 @@ import {
   mobileImage,
   desktopImage,
 } from './homepage.module.scss';
-
-const titleList = [
-  { title: 'No longer chasing timesheets.', id: '1asdd1a' },
-  { title: 'Cutting payroll costs with accurate time entries.', id: '1asdd1b' },
-  { title: 'Staying in the loop without constan check-ins', id: '1asdd1c' },
-  { title: 'Saving hours of admin with instanly-generated timesheets.', id: '1asdd1d' },
-];
-
-const checkList = [
-  { title: 'Avoid guesswork with accurate time-tracking' },
-  { title: 'Increase employee accountability and safety' },
-  { title: 'Stay in the loop without constant check-ins' },
-  { title: 'Enjoy hassle-free automated employee timesheets' },
-  { title: 'Streamline the entire payroll process' },
-];
-const serviceList = [
-  { title: 'Construction', icon: <ConstructionLogo /> },
-  { title: 'Landscaping & Gardening', icon: <LandscapingLogo /> },
-  { title: 'Roofing', icon: <RoofingLogo /> },
-  { title: 'Painting & Decorating', icon: <PaintingLogo /> },
-  { title: 'Cleaning & Maintenance', icon: <CleaningLogo /> },
-  { title: 'Healthcare & Medical', icon: <HealthcareLogo /> },
-  { title: 'Electrical', icon: <ElectrianLogo /> },
-  { title: 'Plumbing & Heating', icon: <PlumbingLogo /> },
-  { title: 'Other industries', icon: <ThreeDots /> },
-];
 
 const SampleNextArrow = (props) => {
   // eslint-disable-next-line react/prop-types

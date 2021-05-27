@@ -171,16 +171,33 @@ const Timesheets = () => {
   ];
 
   const serviceList = [
-    { title: 'Construction', icon: <ConstructionLogo /> },
-    { title: 'Landscaping & Gardening', icon: <LandscapingLogo /> },
-    { title: 'Roofing', icon: <RoofingLogo /> },
-    { title: 'Painting & Decorating', icon: <PaintingLogo /> },
-    { title: 'Cleaning & Maintenance', icon: <CleaningLogo /> },
-    { title: 'Healthcare & Medical', icon: <HealthcareLogo /> },
-    { title: 'Electrical', icon: <ElectrianLogo /> },
-    { title: 'Plumbing & Heating', icon: <PlumbingLogo /> },
-    { title: 'Other industries', icon: <ThreeDots /> },
+    { title: 'Construction', url: '/industries/construction', icon: <ConstructionLogo /> },
+    { title: 'Landscaping & Gardening', url: '/industries/landscaping', icon: <LandscapingLogo /> },
+    { title: 'Roofing', url: '/industries/roofing', icon: <RoofingLogo /> },
+    {
+      title: 'Painting & Decorating',
+      url: '/industries/painting-and-decorating',
+      icon: <PaintingLogo />,
+    },
+    {
+      title: 'Cleaning & Maintenance',
+      url: '/industries/cleaning-and-maintenance',
+      icon: <CleaningLogo />,
+    },
+    {
+      title: 'Healthcare & Medical',
+      url: '/industries/healthcare-and-medical',
+      icon: <HealthcareLogo />,
+    },
+    { title: 'Electrical', url: '/industries/electrical', icon: <ElectrianLogo /> },
+    {
+      title: 'Plumbing & Heating',
+      url: '/industries/plumbing-and-heating',
+      icon: <PlumbingLogo />,
+    },
+    { title: 'Other industries', url: '/industries/electrical', icon: <ThreeDots /> },
   ];
+
   return (
     <div className={`${container} ${teamActivityContainer}`}>
       <SEO title="Timesheets" />
