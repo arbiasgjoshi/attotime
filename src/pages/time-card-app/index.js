@@ -8,18 +8,38 @@ import IndustryMainCard from '@components/organisms/industry-main-card';
 import Footer from '@components/molecules/footer';
 import Story from '@components/organisms/story';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
-import IconCardList from '@components/organisms/icon-card-list';
+import LearnMoreCard from '@components/molecules/learn-more-card';
+import TickCardList from '@components/organisms/tick-card-list';
 import Article from '@components/molecules/article';
+import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
+import TimeTrackingIndustry from '@images/time-tracking-industrySVG.svg';
+import TimeTracking from '@images/time-tracking-field-workers.svg';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
+import image1 from '@images/time-clock-mobile@2x.png';
+
+import icon32 from '@images/location@1x.png';
+import icon33 from '@images/profile@1x.png';
+import icon34 from '@images/timesheets@1x.png';
 
 import { container } from '@styles/main.module.scss';
+
+import { learnMoreContainer } from './time-card-app.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
 
 // import localeData from '@locale/en';
+
+const checkList = [
+  'Mobile, Web, and Kiosk Time Clock',
+  'Clock In/Out Reminders',
+  'Managed Clock In/Out',
+  'Work Activity Notifications',
+  'GPS Stamped Clock In/Out',
+  'Manual Time Entries',
+];
 
 const TimeCardApp = () => (
   <div className={`${container}`}>
@@ -28,15 +48,26 @@ const TimeCardApp = () => (
     <IndustryMainCard
       smallTitle="TIME CARD APP"
       title="Track your employees hours with our simple time card app"
-      image={noImage}
+      image={image1}
       styling="other"
+      description="Clock in and out, track time on the job, and turn employee time card data into insightful reports."
     />
-    <Divider />
+    <Divider className="style4" />
+    <TickCardList list={checkList} />
+    <Divider className="style4" />
     <Story
       img={authorImage}
       paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
     />
     <Divider />
+    <Title
+      title="Get insights into your employees work with automated time card reports"
+      description="Your employees’ time card information is automatically turned into real-time reports. Use it to see how your team is spending their time on the clock and reduce the time to administer payroll."
+      maxWidth={920}
+      maxDescriptionWidth={800}
+    />
+    <Divider className="style3" />
+    <ProductOverviewBanner />
     <Article
       title="Get wage estimates from your employees’ time cards"
       description="Keep your company’s finances on track. After adding your employees’ pay rates, Atto automatically estimates your wage bill based on the hours on their time cards. What’s more, you can add more than one pay rate per employee so that your estimates remain accurate even if their rate changes."
@@ -56,8 +87,52 @@ const TimeCardApp = () => (
       image={noImage}
     />
     <Divider />
+    <TimeTrackingIndustry />
+    <Divider />
+    <TimeTracking />
+    <Divider />
+    <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
+    <div className={learnMoreContainer}>
+      <LearnMoreCard
+        title="GPS Location Tracking"
+        description="Increase the safety and accountability of your team with real-time updates on their location."
+        icon={icon32}
+        path="/product/gps-location-tracking"
+        imageWidth={27}
+        imageHeight={32}
+        styling="smaller"
+      />
+      <LearnMoreCard
+        title="Team Activity"
+        description="Stay in the loop with what's happening - without needing to pick up the phone"
+        icon={icon33}
+        path="/product/team-activity"
+        imageWidth={42}
+        imageHeight={44}
+        styling="smaller"
+      />
+      <LearnMoreCard
+        title="Timesheets"
+        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        icon={icon34}
+        path="/product/timesheets"
+        imageWidth={30}
+        imageHeight={33}
+        styling="smaller"
+      />
+      <LearnMoreCard
+        title="Timesheets"
+        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        icon={icon34}
+        path="/product/timesheets"
+        imageWidth={30}
+        imageHeight={33}
+        styling="smaller"
+      />
+    </div>
+    <Divider />
     <SubscribeBanner
-      title="#1 Time Tracker. Free for 14 days"
+      title="#1 Time Card App. Free for 14 days"
       placeholder="Type your email"
       checkItemOne="No credit card required"
       checkItemTwo="14 day free trial"
