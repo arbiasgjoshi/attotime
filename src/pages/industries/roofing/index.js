@@ -127,7 +127,7 @@ const Roofing = () => (
       />
       <Divider className="style1" />
       <Steps list={steps} />
-      <Divider />
+      <Divider className="style4" />
       <SubscribeBanner
         title="Time tracking for roofing companies? We’re on top of it!"
         placeholder="Type your email"

@@ -17,7 +17,7 @@ import ImagesBox from '@components/organisms/images-box';
 
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import authorImage from '@images/painting-author@2x.png';
-import image1 from '@images/no-image.png';
+// import image1 from '@images/no-image.png';
 import image2 from '@images/time-tracking-painting@2x.png';
 import image3 from '@images/painting-accordion1.png';
 import image4 from '@images/painting-accordion2.png';
@@ -68,7 +68,6 @@ const Painting = () => (
       <Article
         title="Allow your supervisor to track your painting crew’s time"
         description="Painting large properties or doing a commercial renovation requires your crew to work together. Instead of having each painter or decorator track their time individually, your on-the-job supervisor can use Atto to clock in and out on their behalf."
-        image={image1}
         maxWidth={500}
         imagePadding="7.3rem 4.5rem"
         imageWidth={400}
@@ -79,7 +78,6 @@ const Painting = () => (
       <Article
         title="Entrust your supervisor to track your painting crew’s time"
         description="Tiling large buildings or doing commercial and industrial painting jobs require lots of your roofers to work together. Instead of having each contractor track their time individually, your on-the-job supervisor can use Atto to clock-in and out on their behalf."
-        image={image1}
         isSwapped
         maxWidth={500}
         imagePadding="7.3rem 4.5rem"
@@ -121,7 +119,7 @@ const Painting = () => (
     <div className={`${container} ${noPadding}`}>
       <Divider />
       <Steps list={steps} />
-      <Divider />
+      <Divider className="style4" />
       <SubscribeBanner
         title="Using paper timesheets is like watching paint dry. Try Atto instead!"
         placeholder="Type your email"

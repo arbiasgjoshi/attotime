@@ -134,6 +134,13 @@ const Landscaping = () => (
       <Divider className="style1" />
       <Steps list={steps} />
       <Divider className="style4" />
+      <StaticImage
+        quality={90}
+        width={1140}
+        height={241}
+        style={{ marginBottom: '0.2rem' }}
+        src="../../../images/landscape-subscribe-banner.png"
+      />
       <SubscribeBanner
         title="Help your business blossom with accurate time tracking from Atto"
         placeholder="Type your email"

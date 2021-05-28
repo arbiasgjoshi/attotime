@@ -122,6 +122,13 @@ const Construction = () => (
       <Divider className="style1" />
       <Steps list={steps} />
       <Divider className="style4" />
+      <StaticImage
+        quality={90}
+        width={1140}
+        height={241}
+        style={{ marginBottom: '0.2rem' }}
+        src="../../../images/subscribe-banner-image.png"
+      />
       <SubscribeBanner
         title="Ready to put Atto to work on your construction sites?"
         placeholder="Type your email"

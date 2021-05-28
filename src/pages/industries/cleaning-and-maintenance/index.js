@@ -64,7 +64,7 @@ const Cleaning = () => (
         maxDescriptionWidth={800}
         description="Atto’s time tracking app is incredibly easy to use and allows you to see what all your cleaners are up to in real-time."
       />
-      <Divider />
+      <Divider className="centenary" />
       <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
       <Divider />
       <Article
@@ -123,7 +123,7 @@ const Cleaning = () => (
       />
       <Divider className="style1" />
       <Steps list={steps} />
-      <Divider />
+      <Divider className="style4" />
       <SubscribeBanner
         title="Let’s make it a clean sweep! Keep your time tracking tidy with Atto"
         placeholder="Type your email"

@@ -90,7 +90,7 @@ const HomeHealthcare = () => (
         list={accordionList1}
         image={image5}
       />
-      <Divider />
+      <Divider className="style4" />
       <AccordionArticle
         title="Everything you need to minimize admin and keep track of your budget"
         list={accordionList2}
@@ -126,9 +126,9 @@ const HomeHealthcare = () => (
       />
       <Divider className="style1" />
       <Steps list={steps} />
-      <Divider />
+      <Divider className="style4" />
       <SubscribeBanner
-        title="Time tracking for roofing companies? We’re on top of it!"
+        title="You provide quality care. We'll provide quality time tracking software"
         placeholder="Type your email"
         checkItemOne="No credit card required"
         checkItemTwo="14 day free trial"

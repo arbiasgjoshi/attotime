@@ -20,7 +20,9 @@
 
     .smallTitleStyle {
       color: var(--primary-color);
+      font-size: var(--h6-line-height-size);
       line-height: var(--h6-line-height-size);
+      letter-spacing: var(--body-style-one-letter-spacing);
     }
 
     .descr {
@@ -69,12 +71,17 @@
 
     .emailContainer {
       margin-top: 4rem;
+      max-width: 48.2rem;
+      width: 100%;
 
       > div {
         > div {
           margin-left: 0;
           margin-right: 0;
           justify-content: flex-start;
+          &:last-child {
+            justify-content: center;
+          }
         }
       }
     }

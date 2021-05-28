@@ -127,7 +127,7 @@ const PlumbingAndHeating = () => (
       />
       <Divider className="style1" />
       <Steps list={steps} />
-      <Divider />
+      <Divider className="style4" />
       <SubscribeBanner
         title="All cisterns go! Get to work with accurate time tracking from Atto."
         placeholder="Type your email"

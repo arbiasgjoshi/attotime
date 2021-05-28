@@ -63,7 +63,7 @@ const Electrician = () => (
         maxDescriptionWidth={800}
         description="With real-time activity tracking, you can check if your electricians are working, on a break, or enjoying some time off."
       />
-      <Divider />
+      <Divider className="centenary" />
       <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
       <Divider />
       <Article
@@ -129,9 +129,9 @@ const Electrician = () => (
       />
       <Divider className="style1" />
       <Steps list={steps} />
-      <Divider />
+      <Divider className="style4" />
       <SubscribeBanner
-        title="Time tracking for roofing companies? We’re on top of it!"
+        title="Keep track of all your electricians in the field with Atto"
         placeholder="Type your email"
         checkItemOne="No credit card required"
         checkItemTwo="14 day free trial"
