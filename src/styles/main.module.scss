@@ -31,3 +31,26 @@
     width: 100%;
   }
 }
+
+.oldVsNewGradient {
+  position: relative;
+
+  &::before {
+    content: '';
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+    @include absolute(left 0 top 0);
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+    @include absolute(left 0 bottom 0);
+    transform: scaleY(-1);
+    z-index: -1;
+  }
+}

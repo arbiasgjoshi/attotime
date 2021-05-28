@@ -31,7 +31,13 @@ import boxImage4 from '@images/roofing-box-four@2x.png';
 import { oldList, newList, steps } from '@data/industries';
 import { checkList1, firstList, accordionList1, accordionList2 } from '@data/industries/roofing.js';
 import { FooterLinks } from '@locale/en.js';
-import { container, industryPadding, noPadding, background } from '@styles/main.module.scss';
+import {
+  container,
+  industryPadding,
+  noPadding,
+  background,
+  oldVsNewGradient,
+} from '@styles/main.module.scss';
 
 // import localeData from '@locale/en';
 
@@ -105,9 +111,13 @@ const Roofing = () => (
         maxWidth={1040}
         maxDescriptionWidth={900}
       />
-      <Divider className="style5" />
-      <OldVsNew oldList={oldList} newList={newList} />
-      <Divider />
+    </div>
+    <div className={oldVsNewGradient}>
+      <div className={`${container} ${noPadding}`}>
+        <Divider className="style5" />
+        <OldVsNew oldList={oldList} newList={newList} />
+        <Divider />
+      </div>
     </div>
     <div className={background}>
       <div className={`${container} ${noPadding}`}>

@@ -26,7 +26,7 @@ import boxImage2 from '@images/construction-location@2x.png';
 import boxImage3 from '@images/construction-timesheets@2x.png';
 import boxImage4 from '@images/construction-time-tracking@2x.png';
 
-import { container, industryPadding, noPadding } from '@styles/main.module.scss';
+import { container, industryPadding, noPadding, oldVsNewGradient } from '@styles/main.module.scss';
 import {
   checkList1,
   accordionList1,
@@ -100,9 +100,15 @@ const Construction = () => (
         imagePadding="5.3rem 0 3rem"
         boxHeight="62rem"
       />
-      <Divider className="style3" />
-      <OldVsNew oldList={oldList} newList={newList} />
-      <Divider className="style4" />
+    </div>
+    <div className={oldVsNewGradient}>
+      <div className={`${container} ${noPadding}`}>
+        <Divider className="style5" />
+        <OldVsNew oldList={oldList} newList={newList} />
+        <Divider />
+      </div>
+    </div>
+    <div className={`${container} ${noPadding}`}>
       <Title title="Built with construction companies in mind" maxWidth={600} />
       <Divider className="style2" />
       <Story

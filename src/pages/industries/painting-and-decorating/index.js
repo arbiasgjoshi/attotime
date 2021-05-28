@@ -33,7 +33,13 @@ import { checkList1, accordionList1, accordionList2 } from '@data/industries/pai
 import { oldList, newList, steps } from '@data/industries';
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
-import { container, industryPadding, noPadding, background } from '@styles/main.module.scss';
+import {
+  container,
+  industryPadding,
+  noPadding,
+  background,
+  oldVsNewGradient,
+} from '@styles/main.module.scss';
 
 // import localeData from '@locale/en';
 
@@ -105,9 +111,13 @@ const Painting = () => (
         maxWidth={1040}
         maxDescriptionWidth={900}
       />
-      <Divider className="centenary" />
-      <OldVsNew oldList={oldList} newList={newList} />
-      <Divider />
+    </div>
+    <div className={oldVsNewGradient}>
+      <div className={`${container} ${noPadding}`}>
+        <Divider className="style5" />
+        <OldVsNew oldList={oldList} newList={newList} />
+        <Divider />
+      </div>
     </div>
     <div className={background}>
       <div className={`${container} ${noPadding}`}>

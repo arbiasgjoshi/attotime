@@ -16,7 +16,7 @@ import OldVsNew from '@components/organisms/old-vs-new';
 import Steps from '@components/organisms/steps';
 import ImagesBox from '@components/organisms/images-box';
 
-import { container, industryPadding } from '@styles/main.module.scss';
+import { container, industryPadding, noPadding, oldVsNewGradient } from '@styles/main.module.scss';
 import { checkList1, accordionList1, accordionList2 } from '@data/industries/cleaning.js';
 import { oldList, newList, steps } from '@data/industries';
 
@@ -107,9 +107,15 @@ const Cleaning = () => (
         maxWidth={1040}
         maxDescriptionWidth={900}
       />
-      <Divider className="style5" />
-      <OldVsNew oldList={oldList} newList={newList} />
-      <Divider />
+    </div>
+    <div className={oldVsNewGradient}>
+      <div className={`${container} ${noPadding}`}>
+        <Divider className="style5" />
+        <OldVsNew oldList={oldList} newList={newList} />
+        <Divider />
+      </div>
+    </div>
+    <div className={`${container} ${noPadding}`}>
       <StaticImage src="../../../images/paper_timesheets@2x.png" />
       <Divider className="style3" />
       <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />

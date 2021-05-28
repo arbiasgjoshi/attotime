@@ -75,7 +75,6 @@
 
       @include min(tablet) {
         height: 12rem;
-        padding: 3rem 4rem;
       }
 
       &:last-child {
@@ -94,6 +93,9 @@
     @include min(tablet) {
       width: 50%;
       border-right: 1px solid #efefef;
+      > div {
+        padding: 3rem 4rem 3rem 3.1rem;
+      }
     }
   }
 
@@ -101,6 +103,9 @@
     @include min(tablet) {
       border-left: 1px solid #efefef;
       width: 50%;
+      > div {
+        padding: 3rem 3.1rem 3rem 4rem;
+      }
     }
   }
 }

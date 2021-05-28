@@ -35,8 +35,7 @@ import {
 } from '@data/industries/landscaping.js';
 
 import { oldList, newList, steps } from '@data/industries';
-import { container, industryPadding, noPadding } from '@styles/main.module.scss';
-// import { background, topImage, bottomImage } from './landscaping.module.scss';
+import { container, industryPadding, noPadding, oldVsNewGradient } from '@styles/main.module.scss';
 import {
   topImageMask,
   bottomImageMask,
@@ -112,9 +111,15 @@ const Landscaping = () => (
         imagePadding="5.3rem 0"
         boxHeight="62rem"
       />
-      <Divider className="style4" />
-      <OldVsNew oldList={oldList} newList={newList} />
-      <Divider />
+    </div>
+    <div className={oldVsNewGradient}>
+      <div className={`${container} ${noPadding}`}>
+        <Divider className="style5" />
+        <OldVsNew oldList={oldList} newList={newList} />
+        <Divider />
+      </div>
+    </div>
+    <div className={`${container} ${noPadding}`}>
       <Title title="Built with landscaping companies in mind" maxWidth={600} />
       <Divider className="style2" />
       <Story
