@@ -18,6 +18,7 @@ import TimeTracking from '@images/time-tracking-field-workers.svg';
 import AnyDevice from '@components/organisms/any-device';
 import IconCardList from '@components/organisms/icon-card-list';
 import CommonQuestions from '@components/organisms/common-questions';
+import Services from '@components/organisms/services';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
@@ -27,84 +28,23 @@ import image2 from '@images/time-tracking-any-device.png';
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
-import WebTracking from '@images/web-time-tracking.svg';
-import MobileTracking from '@images/mobile_time_tracking.svg';
-import KioskTracking from '@images/kiosk-time-tracking.svg';
-import CrewTracking from '@images/crew-tracking.svg';
+import icon35 from '@images/time-tracking-clock@1x.png';
 
 import { container } from '@styles/main.module.scss';
 
 import { learnMoreContainer, buttonContainer } from './time-card-app.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
-import { firstList } from '@data/industries/roofing.js';
 
 // import localeData from '@locale/en';
+import {
+  checkList,
+  commonQuestionsList,
+  featureCardsList,
+  cardList,
+} from '../../data/third-phase/time-card-app';
 
-const checkList = [
-  'Mobile, Web, and Kiosk Time Clock',
-  'Clock In/Out Reminders',
-  'Managed Clock In/Out',
-  'Work Activity Notifications',
-  'GPS Stamped Clock In/Out',
-  'Manual Time Entries',
-];
-
-const commonQuestionsList = [
-  {
-    title: 'Can I prevent employees from editing their time card entries?',
-    description: 'Lorem Ipsum',
-  },
-  { title: 'Can I setup time card rounding?', description: '' },
-  {
-    title: 'What happens if an employee forgets to punch out from their time card?',
-    description: '',
-  },
-];
-
-const featureCardsList = [
-  {
-    title: 'Time Card App on Mobile',
-    description:
-      'Download the Atto app on either Android or iOS to track time and update your time card on the go.',
-    logo: <MobileTracking />,
-  },
-  {
-    title: 'On the Web',
-    description: 'When at the office, update your time card using Atto’s web-based time tracking.',
-    logo: <WebTracking />,
-  },
-  {
-    title: 'With Crew Functionality',
-    description: 'Entrust managers to update all of the team’s time cards on the their behalf.',
-    logo: <CrewTracking />,
-  },
-  {
-    title: 'Via the Time Clock Kiosk',
-    description:
-      'Set up a time clock kiosk to enable your team to update their time cards from a single device.',
-    logo: <KioskTracking />,
-  },
-];
-
-const cardList = [
-  {
-    title: 'See a summary of every hour on the clock',
-    description: `Atto’s real-time reports include every aspect of time on the job, including; regular time, overtime, time off, break time, and more.`,
-    alt: 'Easy to use',
-    // icon: icon1,
-  },
-  {
-    title: 'Email a report to coincide with payroll',
-    description: `Atto automatically emails you your employees’ time card report based on your payroll period. Alternatively, you can download reports as PDF/CSV files.`,
-    alt: 'Easy to use',
-  },
-  {
-    title: 'Get alerted about manual time entries',
-    description: `If an employee forgets to clock in/out and adds a manual time card entry, it is flagged for you to review and approve.`,
-    alt: 'Easy to use',
-  },
-];
+import { serviceList } from '../../data/third-phase/time-tracking-app';
 
 const TimeCardApp = () => (
   <div className={`${container}`}>
@@ -123,11 +63,12 @@ const TimeCardApp = () => (
     <Story
       img={authorImage}
       paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
+      author="Robert Bennett - DPA Cleaning Services, Inc."
     />
     <Divider />
     <AnyDevice
-      title="Time tracking from any device – offline, online, or on the go"
-      description="Whether you’re in the office or on the move, Atto has a time tracking solution for your needs."
+      title="Time card options to suit the needs of any business"
+      description="Whether your employees work in the office, or in the field, in teams, or alone, Atto has a solution."
       image={image2}
       list={featureCardsList}
       styling="moreCards"
@@ -168,6 +109,8 @@ const TimeCardApp = () => (
     />
     <Divider />
     <TimeTrackingIndustry />
+    <Divider className="style2" />
+    <Services list={serviceList} />
     <Divider />
     <CommonQuestions isSwapped list={commonQuestionsList} />
     <Divider />
@@ -176,8 +119,17 @@ const TimeCardApp = () => (
     <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
     <div className={learnMoreContainer}>
       <LearnMoreCard
+        title="Time Tracking"
+        description="Know where your time is going. Just tap a button to clock in and start tracking your time."
+        icon={icon35}
+        path="/product/time-tracking"
+        imageWidth={30}
+        imageHeight={33}
+        styling="smaller"
+      />
+      <LearnMoreCard
         title="GPS Location Tracking"
-        description="Increase the safety and accountability of your team with real-time updates on their location."
+        description="Get real-time updates on your team’s location. Ensure everyone is safe and productive."
         icon={icon32}
         path="/product/gps-location-tracking"
         imageWidth={27}
@@ -186,7 +138,7 @@ const TimeCardApp = () => (
       />
       <LearnMoreCard
         title="Team Activity"
-        description="Stay in the loop with what's happening - without needing to pick up the phone"
+        description="Find out instantly who’s on the clock, on break, or enjoying some time off."
         icon={icon33}
         path="/product/team-activity"
         imageWidth={42}
@@ -195,16 +147,7 @@ const TimeCardApp = () => (
       />
       <LearnMoreCard
         title="Timesheets"
-        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
-        icon={icon34}
-        path="/product/timesheets"
-        imageWidth={30}
-        imageHeight={33}
-        styling="smaller"
-      />
-      <LearnMoreCard
-        title="Timesheets"
-        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        description="Get accurate timesheet reports, including regular time, overtime, and paid time off."
         icon={icon34}
         path="/product/timesheets"
         imageWidth={30}
