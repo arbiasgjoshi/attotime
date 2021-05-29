@@ -12,29 +12,60 @@ import IconCardList from '@components/organisms/icon-card-list';
 import Article from '@components/molecules/article';
 import IconCard from '@components/molecules/icon-card';
 import OldVsNew from '@components/organisms/old-vs-new';
+import TickCardList from '@components/organisms/tick-card-list';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
+import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 
 import { container } from '@styles/main.module.scss';
-import * as styles from './employee-timesheet-app.scss';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
 import { oldList, newList } from '@data/industries';
+import { rndContainer } from './employee.module.scss';
 
 // import localeData from '@locale/en';
 
+const checkList = [
+  'Customizable Timesheet Reports',
+  'Employee, Team, and Job-based Timesheet Summaries',
+  'Built-in Wage Estimates',
+  'Export to Payroll',
+];
+
+const cardList = [
+  {
+    title: 'Maintain accurate timesheet records',
+    description: `Even if employees leave, Atto keeps a record of their timesheets available to view, helping with your compliance and record-keeping needs.`,
+    alt: 'Maintain accurate',
+    // icon: icon1,
+  },
+  {
+    title: 'View a summary of every hour on the clock',
+    description: `Atto’s timesheet reports include every aspect of time on the job, including; regular time, overtime, time off, break time, and more.`,
+    alt: 'Easy to use',
+  },
+  {
+    title: 'Get alerted about manual time entries',
+    description: `If employees forget to track their time, they can add manual time entries, which are flagged for you to review and approve.`,
+    alt: 'Easy to use',
+  },
+];
+
 const EmployeeTimesheetApp = () => (
   <div className={`${container}`}>
-    <SEO title="Time Clock" />
+    <SEO title="Employee Timesheet App" />
     <Header />
     <IndustryMainCard
       smallTitle="EMPLOYEE TIMESHEET APP"
       title="Streamline your payroll with our simple employee timesheet app"
+      description="Get accurate timesheet reports, including regular time, overtime, breaks, time off, and more."
       image={noImage}
       styling="other"
     />
+    <Divider />
+    <TickCardList list={checkList} />
     <Divider />
     <Title
       title="Record your work hours, breaks, time off, overtime, and more!"
@@ -56,6 +87,10 @@ const EmployeeTimesheetApp = () => (
       maxDescriptionWidth={800}
       maxWidth={920}
     />
+    <Divider className="style2" />
+    <ProductOverviewBanner />
+    <Divider className="style2" />
+    <IconCardList cardList={cardList} style="timeCard" />
     <Divider />
     <Article
       title="Get wage estimates from your employees’ timesheets"
@@ -79,9 +114,10 @@ const EmployeeTimesheetApp = () => (
     <Title
       title="From timesheets to payroll in no time at all"
       description="Using Atto can dramatically speed up the payroll process – no matter the payroll system you’re using."
+      maxDescriptionWidth={800}
     />
-    <Divider />
-    <div className={styles.roundImagesContainer}>
+    <Divider className="style2" />
+    <div className={rndContainer}>
       <IconCard
         bigImage
         isRound
@@ -89,8 +125,8 @@ const EmployeeTimesheetApp = () => (
         imageHeight={250}
         icon={noImage}
         alt="Employees forget"
-        title="Employees forget to track their time?"
-        description="Not any more! With smart reminders, your employees are encouraged to clock in/out when they’re at a job site, and at their regular start and end time."
+        title="Automatic email reports"
+        description="Atto automatically emails you your employees’ timesheets to coincide with your payroll period. Send it directly to your accountant or input the data into your payroll system."
       />
       <IconCard
         isRound
@@ -99,8 +135,8 @@ const EmployeeTimesheetApp = () => (
         imageWidth={250}
         imageHeight={250}
         alt="Out of battery"
-        title="What if phone ran out of battery?"
-        description="Not a problem! If an employee forgets their phone, or it runs out of battery, either they or a manager can add a manual time entry for your approval."
+        title="Export timesheets and timesheet data"
+        description="Download and export any timesheets and data as a PDF/CSV file – perfect for sharing with your admin team or importing into payroll software."
       />
       <IconCard
         bigImage
@@ -109,8 +145,8 @@ const EmployeeTimesheetApp = () => (
         imageHeight={250}
         icon={noImage}
         alt="Not sure if employees"
-        title="Not sure if employees are where they’re supposed to?"
-        description="Always be in the know! With geofencing, you can restrict employees from clocking in until they’re at a job site – increasing accountability and preventing inaccurate time entries."
+        title="Accounting integrations"
+        description="Atto integrates with Xero and QuickBooks Online to automatically sync timesheet data to your favorite payroll software."
       />
     </div>
     <Divider />
