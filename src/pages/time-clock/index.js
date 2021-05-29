@@ -25,18 +25,17 @@ import { container } from '@styles/main.module.scss';
 import image1 from '@images/time-clock-mobile@2x.png';
 import image2 from '@images/give-managers-power@2x.png';
 import boxImage1 from '@images/construction-daily-timeline@2x.png';
-import boxImage2 from '@images/time-clock-boxImage1.png';
+import boxImage2 from '@images/time-clock-boximage1.png';
 import boxImage3 from '@images/time-clock-boximage2.png';
 import boxImage4 from '@images/time-clock-boximage3.png';
 import boxImage5 from '@images/time-clock-boximage4.png';
 
+import { FooterLinks } from '@locale/en.js';
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
 
 import { workListContainer, learnMoreContainer } from './time-clock.module.scss';
-
-import { FooterLinks } from '@locale/en.js';
 
 import { checkList, commonQuestionsList } from '../../data/third-phase/time-clock.js';
 

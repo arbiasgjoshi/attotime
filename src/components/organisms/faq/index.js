@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import Title from '@components/molecules/title';
 import Icon from '@components/atoms/icon';
 import Divider from '@components/atoms/divider';
-import '@components/organisms/accordion-article/accordionCollapsible.scss';
+import { Tabbordion, TabPanel, TabLabel, TabContent } from 'react-tabbordion';
 
-import Collapsible from 'react-collapsible';
+// import '@components/organisms/accordion-article/accordionCollapsible.scss';
+// import Collapsible from 'react-collapsible';
+import 'rc-collapse/assets/index.css';
 
 import { questionsContainer, listStyle, triggerItemWrap } from './faq.module.scss';
 
@@ -23,10 +25,14 @@ const Faq = ({ list }) => {
       <Title title="Frequently asked questions" />
       <Divider className="style2" />
       <div className={listStyle}>
-        {list.map(({ title, paragraph }) => (
-          <Collapsible trigger={triggerItem(title)} transitionTime={200}>
+        {/* <Tabbordion>
+
+        </Tabbordion> */}
+        {list.map(({ title, paragraph }, index) => (
+          <>
+            {triggerItem(title)}
             <p>{paragraph}</p>
-          </Collapsible>
+          </>
         ))}
       </div>
       <Divider />
