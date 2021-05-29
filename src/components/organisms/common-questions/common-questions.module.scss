@@ -27,6 +27,7 @@
   }
 
   .secondBox {
+    width: 100%;
     .triggerItemWrap {
       cursor: pointer;
       @include flex-direction(row);

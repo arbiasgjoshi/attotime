@@ -21,6 +21,12 @@
     &.gapStyle {
       row-gap: 10rem;
     }
+
+    &.twoCards {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 6rem;
+      column-gap: 12rem;
+    }
   }
 
   @include max(tablet) {

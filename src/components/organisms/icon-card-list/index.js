@@ -6,7 +6,7 @@ import IconCard from '@components/molecules/icon-card';
 import * as styles from './icon-card-list.module.scss';
 
 const IconCardList = ({ cardList, noImage, hasBigImages = false, style = '' }) => (
-  <div className={`${styles.container} ${hasBigImages && styles.gapStyle}`}>
+  <div className={`${styles.container} ${hasBigImages && styles.gapStyle} ${styles[style]}`}>
     {cardList?.map((card, index) => (
       <IconCard
         key={index}

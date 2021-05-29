@@ -119,4 +119,21 @@
       text-align: left;
     }
   }
+
+  &.twoCards {
+    > div:first-child {
+      margin-left: 0;
+      margin-bottom: 3.5rem;
+    }
+    > div {
+      text-align: left;
+      margin: 0;
+
+      p {
+        font-size: var(--body-style-three);
+        font-weight: var(--body-style-three-font-weight);
+        line-height: var(--body-style-line-height);
+      }
+    }
+  }
 }

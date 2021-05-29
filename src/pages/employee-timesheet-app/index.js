@@ -13,17 +13,25 @@ import Article from '@components/molecules/article';
 import IconCard from '@components/molecules/icon-card';
 import OldVsNew from '@components/organisms/old-vs-new';
 import TickCardList from '@components/organisms/tick-card-list';
+import CommonQuestions from '@components/organisms/common-questions';
+import LearnMoreCard from '@components/molecules/learn-more-card';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
+import FieldWorkers from '@images/employee-timeline-field-workers.svg';
+import FieldWorkers2 from '@images/employee-timeline-field-workers2.svg';
+
+import icon32 from '@images/location@1x.png';
+import icon33 from '@images/profile@1x.png';
+import icon34 from '@images/timesheets@1x.png';
 
 import { container } from '@styles/main.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
 import { oldList, newList } from '@data/industries';
-import { rndContainer } from './employee.module.scss';
+import { rndContainer, learnMoreContainer } from './employee.module.scss';
 
 // import localeData from '@locale/en';
 
@@ -50,6 +58,22 @@ const cardList = [
     title: 'Get alerted about manual time entries',
     description: `If employees forget to track their time, they can add manual time entries, which are flagged for you to review and approve.`,
     alt: 'Easy to use',
+  },
+];
+
+const commonQuestionsList = [
+  {
+    title: 'Why is Atto the best timesheet app?',
+    description: 'Lorem Ipsum',
+  },
+  { title: 'Can I export timesheet data from Atto?', description: '' },
+  {
+    title: 'What are mobile timesheets?',
+    description: '',
+  },
+  {
+    title: 'Is Atto a free timesheet app?',
+    description: '',
   },
 ];
 
@@ -150,6 +174,8 @@ const EmployeeTimesheetApp = () => (
       />
     </div>
     <Divider />
+    <FieldWorkers />
+    <Divider />
     <Title
       title="Using paper timesheets? See the difference!"
       description="Atto’s employee timesheet app is an easier and more accurate time tracking solution for your business."
@@ -158,8 +184,53 @@ const EmployeeTimesheetApp = () => (
     <Divider />
     <OldVsNew oldList={oldList} newList={newList} />
     <Divider />
+    <CommonQuestions isSwapped list={commonQuestionsList} />
+    <Divider />
+    <FieldWorkers2 />
+    <Divider />
+    <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
+    <div className={learnMoreContainer}>
+      <LearnMoreCard
+        title="GPS Location Tracking"
+        description="Increase the safety and accountability of your team with real-time updates on their location."
+        icon={icon32}
+        path="/product/gps-location-tracking"
+        imageWidth={27}
+        imageHeight={32}
+        styling="smaller"
+      />
+      <LearnMoreCard
+        title="Team Activity"
+        description="Stay in the loop with what's happening - without needing to pick up the phone"
+        icon={icon33}
+        path="/product/team-activity"
+        imageWidth={42}
+        imageHeight={44}
+        styling="smaller"
+      />
+      <LearnMoreCard
+        title="Timesheets"
+        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        icon={icon34}
+        path="/product/timesheets"
+        imageWidth={30}
+        imageHeight={33}
+        styling="smaller"
+      />
+      <LearnMoreCard
+        title="Timesheets"
+        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        icon={icon34}
+        path="/product/timesheets"
+        imageWidth={30}
+        imageHeight={33}
+        styling="smaller"
+      />
+    </div>
+    <Divider />
     <SubscribeBanner
       title="Try Atto, completely free for 14 days"
+      subtitle="Do away with clunky spreadsheets and paper timesheets"
       placeholder="Type your email"
       checkItemOne="No credit card required"
       checkItemTwo="14 day free trial"
