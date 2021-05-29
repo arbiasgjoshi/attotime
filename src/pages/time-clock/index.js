@@ -19,6 +19,7 @@ import WebTracking from '@images/web-time-tracking.svg';
 import MobileTracking from '@images/mobile_time_tracking.svg';
 import KioskTracking from '@images/kiosk-time-tracking.svg';
 import ImagesBox from '@components/organisms/images-box';
+import CommonQuestions from '@components/organisms/common-questions';
 
 import { container } from '@styles/main.module.scss';
 import image1 from '@images/time-clock-mobile@2x.png';
@@ -44,6 +45,16 @@ const checkList = [
   'Work Activity Notifications',
   'GPS Stamped Clock In/Out',
   'Manual Time Entries',
+];
+
+const commonQuestionsList = [
+  { title: 'What is a Time Clock?', description: 'Lorem Ipsum' },
+  { title: 'How do I track my work hours?', description: '' },
+  { title: 'Can I use Atto’s Time Clock while offline?', description: '' },
+  {
+    title: 'What are the benefits of using an app-based Time Clock for my business?',
+    description: '',
+  },
 ];
 
 // import localeData from '@locale/en';
@@ -148,6 +159,8 @@ const TimeClock = () => (
       image5={boxImage5}
       styling="nonIndustry"
     />
+    <Divider />
+    <CommonQuestions list={commonQuestionsList} />
     <Divider />
     <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
     <div className={learnMoreContainer}>

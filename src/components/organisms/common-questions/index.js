@@ -1,19 +1,34 @@
 import React from 'react';
+import Collapsible from 'react-collapsible';
 
-import { container } from './common-questions.module.scss';
+import Icon from '@components/atoms/icon';
 
-const CommonQuestions = ({ title, list }) => {
+import Shield from '../../../images/verifiedShield.svg';
+
+import {
+  container,
+  triggerItemWrap,
+  imageContainer,
+  firstBox,
+  secondBox,
+} from './common-questions.module.scss';
+
+const CommonQuestions = ({ title = 'Common Questions', list }) => {
   const triggerItem = (val) => (
     <div className={triggerItemWrap}>
-      <img src={HeartIcon} width="40" height="40" alt="Heart" />
       <h5>{val}</h5>
-      <Icon iconClass="plus" />
+      <Icon iconClass="arrow-right" />
     </div>
   );
 
   return (
     <div className={container}>
-      <div className={firstBox}></div>
+      <div className={firstBox}>
+        <div className={imageContainer}>
+          <Shield />
+        </div>
+        <h2>{title}</h2>
+      </div>
       <div className={secondBox}>
         {list?.map(({ title, description }) => (
           <Collapsible trigger={triggerItem(title)}>
