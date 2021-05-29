@@ -113,10 +113,10 @@ const TimeTrackingApp = () => (
     <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
     <div className={learnMoreContainer}>
       <LearnMoreCard
-        title="Time Clock"
+        title="Time Tracking"
         description="With Atto’s time clock, you can track time from any device, from absolutely anywhere."
         icon={icon35}
-        path="/product/timesheets"
+        path="/product/time-tracking"
         imageWidth={30}
         imageHeight={33}
         styling="smaller"

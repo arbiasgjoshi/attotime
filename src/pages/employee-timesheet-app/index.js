@@ -15,6 +15,7 @@ import OldVsNew from '@components/organisms/old-vs-new';
 import TickCardList from '@components/organisms/tick-card-list';
 import CommonQuestions from '@components/organisms/common-questions';
 import LearnMoreCard from '@components/molecules/learn-more-card';
+import Services from '@components/organisms/services';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
@@ -25,57 +26,19 @@ import FieldWorkers2 from '@images/employee-timeline-field-workers2.svg';
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
+import icon35 from '@images/time-tracking-clock@1x.png';
 
 import { container } from '@styles/main.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
-import { firstList } from '@data/industries/roofing.js';
 import { oldList, newList } from '@data/industries';
 import { rndContainer, learnMoreContainer } from './employee.module.scss';
 
 // import localeData from '@locale/en';
 
-const checkList = [
-  'Customizable Timesheet Reports',
-  'Employee, Team, and Job-based Timesheet Summaries',
-  'Built-in Wage Estimates',
-  'Export to Payroll',
-];
+import { checkList, cardList, commonQuestionsList } from '@data/third-phase/employee-timesheet-app';
 
-const cardList = [
-  {
-    title: 'Maintain accurate timesheet records',
-    description: `Even if employees leave, Atto keeps a record of their timesheets available to view, helping with your compliance and record-keeping needs.`,
-    alt: 'Maintain accurate',
-    // icon: icon1,
-  },
-  {
-    title: 'View a summary of every hour on the clock',
-    description: `Atto’s timesheet reports include every aspect of time on the job, including; regular time, overtime, time off, break time, and more.`,
-    alt: 'Easy to use',
-  },
-  {
-    title: 'Get alerted about manual time entries',
-    description: `If employees forget to track their time, they can add manual time entries, which are flagged for you to review and approve.`,
-    alt: 'Easy to use',
-  },
-];
-
-const commonQuestionsList = [
-  {
-    title: 'Why is Atto the best timesheet app?',
-    description: 'Lorem Ipsum',
-  },
-  { title: 'Can I export timesheet data from Atto?', description: '' },
-  {
-    title: 'What are mobile timesheets?',
-    description: '',
-  },
-  {
-    title: 'Is Atto a free timesheet app?',
-    description: '',
-  },
-];
+import { firstList, serviceList } from '@data/third-phase/time-tracking-app';
 
 const EmployeeTimesheetApp = () => (
   <div className={`${container}`}>
@@ -103,6 +66,7 @@ const EmployeeTimesheetApp = () => (
     <Story
       img={authorImage}
       paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
+      author="Robert Bennett - DPA Cleaning Services, Inc."
     />
     <Divider />
     <Title
@@ -175,6 +139,8 @@ const EmployeeTimesheetApp = () => (
     </div>
     <Divider />
     <FieldWorkers />
+    <Divider className="style2" />
+    <Services list={serviceList} />
     <Divider />
     <Title
       title="Using paper timesheets? See the difference!"
@@ -191,8 +157,17 @@ const EmployeeTimesheetApp = () => (
     <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
     <div className={learnMoreContainer}>
       <LearnMoreCard
+        title="Time Tracking"
+        description="Know where your time is going. Just tap a button to clock in and start tracking your time."
+        icon={icon35}
+        path="/product/time-tracking"
+        imageWidth={30}
+        imageHeight={33}
+        styling="smaller"
+      />
+      <LearnMoreCard
         title="GPS Location Tracking"
-        description="Increase the safety and accountability of your team with real-time updates on their location."
+        description="Get real-time updates on your team’s location. Ensure everyone is safe and productive."
         icon={icon32}
         path="/product/gps-location-tracking"
         imageWidth={27}
@@ -201,7 +176,7 @@ const EmployeeTimesheetApp = () => (
       />
       <LearnMoreCard
         title="Team Activity"
-        description="Stay in the loop with what's happening - without needing to pick up the phone"
+        description="Find out instantly who’s on the clock, on break, or enjoying some time off."
         icon={icon33}
         path="/product/team-activity"
         imageWidth={42}
@@ -209,19 +184,10 @@ const EmployeeTimesheetApp = () => (
         styling="smaller"
       />
       <LearnMoreCard
-        title="Timesheets"
-        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        title="Work Hours Tracker"
+        description="Track your work hours, breaks, time off, overtime, and more!"
         icon={icon34}
-        path="/product/timesheets"
-        imageWidth={30}
-        imageHeight={33}
-        styling="smaller"
-      />
-      <LearnMoreCard
-        title="Timesheets"
-        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
-        icon={icon34}
-        path="/product/timesheets"
+        path="/work-hours-tracker"
         imageWidth={30}
         imageHeight={33}
         styling="smaller"
