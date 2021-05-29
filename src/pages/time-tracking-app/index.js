@@ -15,10 +15,14 @@ import LearnMoreCard from '@components/molecules/learn-more-card';
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
 import image1 from '@images/time-clock-mobile@2x.png';
+import image2 from '@images/time-tracking-any-device.png';
 
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
+import WebTracking from '@images/web-time-tracking.svg';
+import MobileTracking from '@images/mobile_time_tracking.svg';
+import KioskTracking from '@images/kiosk-time-tracking.svg';
 
 import { container } from '@styles/main.module.scss';
 import { learnMoreContainer } from './time-tracking-app.module.scss';
@@ -26,7 +30,26 @@ import { learnMoreContainer } from './time-tracking-app.module.scss';
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
 import { StaticImage } from 'gatsby-plugin-image';
+import AnyDevice from '../../components/organisms/any-device';
 
+const featureCardsList = [
+  {
+    title: 'Via our Mobile App',
+    description: 'Track time on the go with the Atto mobile app available on iOS and Android.',
+    logo: <MobileTracking />,
+  },
+  {
+    title: 'On the Web',
+    description: 'When at the office, track your time using Atto’s web-based time clock.',
+    logo: <WebTracking />,
+  },
+  {
+    title: 'Via the Time Clock Kiosk',
+    description:
+      'Set up a time clock kiosk to enable your team to track time from a single device.',
+    logo: <KioskTracking />,
+  },
+];
 // import localeData from '@locale/en';
 
 const TimeTrackingApp = () => (
@@ -56,6 +79,13 @@ const TimeTrackingApp = () => (
     <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
     <Divider />
     <StaticImage quality={90} src="../../images/field_workers.svg" alt="Field Workers" />
+    <Divider />
+    <AnyDevice
+      title="Time tracking from any device – offline, online, or on the go"
+      description="Whether you’re in the office or on the move, Atto has a time tracking solution for your needs."
+      image={image2}
+      list={featureCardsList}
+    />
     <Divider />
     <Title title="Time tracking from any location, and for any type of worker" maxWidth={800} />
     <Divider />
@@ -129,6 +159,7 @@ const TimeTrackingApp = () => (
     <Divider />
     <SubscribeBanner
       title="#1 Time Tracker. Free for 14 days"
+      subtitle="Clock in & out, write notes, track breaks, assign job codes, and more!"
       placeholder="Type your email"
       checkItemOne="No credit card required"
       checkItemTwo="14 day free trial"

@@ -203,7 +203,8 @@ const TimeClock = () => (
     </div>
     <Divider />
     <SubscribeBanner
-      title="Let’s make it a clean sweep! Keep your time tracking tidy with Atto"
+      title="Track time from anywhere"
+      subtitle="Ensure accurate time tracking wherever your employees are"
       placeholder="Type your email"
       bannerImage
       checkItemOne="No credit card required"
