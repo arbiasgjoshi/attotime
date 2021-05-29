@@ -54,4 +54,10 @@
       }
     }
   }
+
+  &.moreCards {
+    .secondRow {
+      margin: 0;
+    }
+  }
 }

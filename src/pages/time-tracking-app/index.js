@@ -11,6 +11,8 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 import IconCardList from '@components/organisms/icon-card-list';
 import Article from '@components/molecules/article';
 import LearnMoreCard from '@components/molecules/learn-more-card';
+import CommonQuestions from '@components/organisms/common-questions';
+import AnyDevice from '@components/organisms/any-device';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
@@ -30,7 +32,6 @@ import { learnMoreContainer } from './time-tracking-app.module.scss';
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
 import { StaticImage } from 'gatsby-plugin-image';
-import AnyDevice from '../../components/organisms/any-device';
 
 const featureCardsList = [
   {
@@ -50,11 +51,22 @@ const featureCardsList = [
     logo: <KioskTracking />,
   },
 ];
+
+const commonQuestionsList = [
+  { title: 'What is a Time Clock?', description: 'Lorem Ipsum' },
+  { title: 'How do I track my work hours?', description: '' },
+  { title: 'Can I use Atto’s Time Clock while offline?', description: '' },
+  {
+    title: 'What are the benefits of using an app-based Time Clock for my business?',
+    description: '',
+  },
+];
+
 // import localeData from '@locale/en';
 
 const TimeTrackingApp = () => (
   <div className={`${container}`}>
-    <SEO title="Time Clock" />
+    <SEO title="Time Tracking App" />
     <Header />
     <IndustryMainCard
       smallTitle="TIME TRACKING APP"
@@ -116,6 +128,8 @@ const TimeTrackingApp = () => (
     />
     <Divider />
     <StaticImage quality={90} src="../../images/time-tracking-app-image2.svg" alt="Field Workers" />
+    <Divider />
+    <CommonQuestions list={commonQuestionsList} />
     <Divider />
     <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
     <div className={learnMoreContainer}>

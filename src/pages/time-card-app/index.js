@@ -14,14 +14,20 @@ import Article from '@components/molecules/article';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 import TimeTrackingIndustry from '@images/time-tracking-industrySVG.svg';
 import TimeTracking from '@images/time-tracking-field-workers.svg';
+import AnyDevice from '@components/organisms/any-device';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
 import image1 from '@images/time-clock-mobile@2x.png';
+import image2 from '@images/time-tracking-any-device.png';
 
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
+import WebTracking from '@images/web-time-tracking.svg';
+import MobileTracking from '@images/mobile_time_tracking.svg';
+import KioskTracking from '@images/kiosk-time-tracking.svg';
+import CrewTracking from '@images/crew-tracking.svg';
 
 import { container } from '@styles/main.module.scss';
 
@@ -41,6 +47,31 @@ const checkList = [
   'Manual Time Entries',
 ];
 
+const featureCardsList = [
+  {
+    title: 'Time Card App on Mobile',
+    description:
+      'Download the Atto app on either Android or iOS to track time and update your time card on the go.',
+    logo: <MobileTracking />,
+  },
+  {
+    title: 'On the Web',
+    description: 'When at the office, update your time card using Atto’s web-based time tracking.',
+    logo: <WebTracking />,
+  },
+  {
+    title: 'With Crew Functionality',
+    description: 'Entrust managers to update all of the team’s time cards on the their behalf.',
+    logo: <CrewTracking />,
+  },
+  {
+    title: 'Via the Time Clock Kiosk',
+    description:
+      'Set up a time clock kiosk to enable your team to update their time cards from a single device.',
+    logo: <KioskTracking />,
+  },
+];
+
 const TimeCardApp = () => (
   <div className={`${container}`}>
     <SEO title="Time Clock" />
@@ -58,6 +89,14 @@ const TimeCardApp = () => (
     <Story
       img={authorImage}
       paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
+    />
+    <Divider />
+    <AnyDevice
+      title="Time tracking from any device – offline, online, or on the go"
+      description="Whether you’re in the office or on the move, Atto has a time tracking solution for your needs."
+      image={image2}
+      list={featureCardsList}
+      styling="moreCards"
     />
     <Divider />
     <Title
