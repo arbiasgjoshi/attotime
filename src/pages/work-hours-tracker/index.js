@@ -20,82 +20,26 @@ import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
 import image2 from '@images/time-tracking-any-device.png';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
-import WebTracking from '@images/web-time-tracking.svg';
-import MobileTracking from '@images/mobile_time_tracking.svg';
-import KioskTracking from '@images/kiosk-time-tracking.svg';
-import CrewTracking from '@images/crew-tracking.svg';
 import CommonQuestions from '@components/organisms/common-questions';
+import Services from '@components/organisms/services';
 
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
+import icon35 from '@images/time-tracking-clock@1x.png';
 
 import { container } from '@styles/main.module.scss';
 import { buttonContainer, learnMoreContainer } from './work-hours-tracker.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
-import { firstList } from '@data/industries/roofing.js';
+import { firstList, serviceList } from '@data/third-phase/time-tracking-app.js';
 
-const checkList = [
-  'Mobile, Web, Crew, and Kiosk Work Hours Trackers',
-  'Real-time GPS Location Tracking',
-  'Wage Estimates',
-  'Automated Timesheet Reports',
-];
-
-const commonQuestionsList = [
-  {
-    title: 'Who is the Atto work hours tracker built for?',
-    description: 'Lorem Ipsum',
-  },
-  { title: 'How do I use the work hours tracker?', description: '' },
-  {
-    title: 'Can I use the work hours tracker while offline?',
-    description: '',
-  },
-  {
-    title: 'What if my employees forget to clock in/out of the work hours tracker?',
-    description: '',
-  },
-];
-
-const featureCardsList = [
-  {
-    title: 'Time Card App on Mobile',
-    description: 'Track time on the go with the Atto mobile app available on iOS and Android.',
-    logo: <MobileTracking />,
-  },
-  {
-    title: 'On the Web',
-    description: 'When at the office, track your time using Atto’s web-based time clock.',
-    logo: <WebTracking />,
-  },
-  {
-    title: 'With Crew Functionality',
-    description: 'Entrust managers to clock in and out on all of the team’s behalf.',
-    logo: <CrewTracking />,
-  },
-  {
-    title: 'Via the Time Clock Kiosk',
-    description:
-      'Set up a time clock kiosk to enable your team to track time from a single device.',
-    logo: <KioskTracking />,
-  },
-];
-
-const cardList = [
-  {
-    title: 'See a summary of every hour on the clock',
-    description: `Atto’s real-time reports include every aspect of time on the job, including; regular time, overtime, time off, break time, and more.`,
-    alt: 'Easy to use',
-    // icon: icon1,
-  },
-  {
-    title: 'Email a report to coincide with payroll',
-    description: `Atto automatically emails you your employees’ time card report based on your payroll period. Alternatively, you can download reports as PDF/CSV files.`,
-    alt: 'Easy to use',
-  },
-];
+import {
+  checkList,
+  commonQuestionsList,
+  featureCardsList,
+  cardList,
+} from '@data/third-phase/work-hours.js';
 
 // import localeData from '@locale/en';
 
@@ -125,11 +69,12 @@ const WorkHoursTracker = () => (
     <Story
       img={authorImage}
       paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
+      author="Robert Bennett - DPA Cleaning Services, Inc."
     />
     <Divider />
     <AnyDevice
-      title="Time tracking from any device – offline, online, or on the go"
-      description="Whether you’re in the office or on the move, Atto has a time tracking solution for your needs."
+      title="A work hours tracker for every device, and every purpose"
+      description="Whether you use our app on the go, our web-based portal in the office, or our time clock kiosk when working in a central location – Atto has a work hours tracker for you."
       image={image2}
       list={featureCardsList}
       styling="moreCards"
@@ -149,6 +94,8 @@ const WorkHoursTracker = () => (
     <div className={buttonContainer}>
       <Button btnText="Find out more" />
     </div>
+    <Divider className="style4" />
+    <Services list={serviceList} />
     <Divider className="style3" />
     <Workhours />
     <Divider />
@@ -159,8 +106,17 @@ const WorkHoursTracker = () => (
     <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
     <div className={learnMoreContainer}>
       <LearnMoreCard
+        title="Time Tracking"
+        description="Know where your time is going. Just tap a button to clock in and start tracking your time."
+        icon={icon35}
+        path="/product/time-tracking"
+        imageWidth={30}
+        imageHeight={33}
+        styling="smaller"
+      />
+      <LearnMoreCard
         title="GPS Location Tracking"
-        description="Increase the safety and accountability of your team with real-time updates on their location."
+        description="Get real-time updates on your team’s location. Ensure everyone is safe and productive."
         icon={icon32}
         path="/product/gps-location-tracking"
         imageWidth={27}
@@ -169,7 +125,7 @@ const WorkHoursTracker = () => (
       />
       <LearnMoreCard
         title="Team Activity"
-        description="Stay in the loop with what's happening - without needing to pick up the phone"
+        description="Find out instantly who’s on the clock, on a break, or enjoying some time off."
         icon={icon33}
         path="/product/team-activity"
         imageWidth={42}
@@ -178,16 +134,7 @@ const WorkHoursTracker = () => (
       />
       <LearnMoreCard
         title="Timesheets"
-        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
-        icon={icon34}
-        path="/product/timesheets"
-        imageWidth={30}
-        imageHeight={33}
-        styling="smaller"
-      />
-      <LearnMoreCard
-        title="Timesheets"
-        description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+        description="Get accurate timesheet reports, including regular time, overtime, and time off."
         icon={icon34}
         path="/product/timesheets"
         imageWidth={30}
