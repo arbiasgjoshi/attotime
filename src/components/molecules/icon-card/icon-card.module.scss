@@ -110,4 +110,13 @@
       }
     }
   }
+
+  &.timeCard {
+    > div:first-child {
+      margin-left: 0;
+    }
+    > div {
+      text-align: left;
+    }
+  }
 }

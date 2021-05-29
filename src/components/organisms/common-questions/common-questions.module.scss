@@ -15,6 +15,17 @@
     }
   }
 
+  &.swap {
+    @include min(tablet) {
+      flex-direction: row-reverse;
+
+      .firstBox {
+        width: 26.7rem;
+        margin-left: 7.3rem;
+      }
+    }
+  }
+
   .secondBox {
     .triggerItemWrap {
       cursor: pointer;

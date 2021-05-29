@@ -11,9 +11,10 @@ import {
   imageContainer,
   firstBox,
   secondBox,
+  swap,
 } from './common-questions.module.scss';
 
-const CommonQuestions = ({ title = 'Common Questions', list }) => {
+const CommonQuestions = ({ title = 'Common Questions', list, isSwapped }) => {
   const triggerItem = (val) => (
     <div className={triggerItemWrap}>
       <h5>{val}</h5>
@@ -22,7 +23,7 @@ const CommonQuestions = ({ title = 'Common Questions', list }) => {
   );
 
   return (
-    <div className={container}>
+    <div className={`${container} ${isSwapped && swap}`}>
       <div className={firstBox}>
         <div className={imageContainer}>
           <Shield />

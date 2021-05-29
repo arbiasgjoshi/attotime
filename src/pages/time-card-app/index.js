@@ -2,6 +2,7 @@ import React from 'react';
 
 import SEO from '@components/molecules/seo';
 import Divider from '@components/atoms/divider';
+import Button from '@components/atoms/button';
 import Header from '@components/molecules/header';
 import Title from '@components/molecules/title';
 import IndustryMainCard from '@components/organisms/industry-main-card';
@@ -15,6 +16,8 @@ import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 import TimeTrackingIndustry from '@images/time-tracking-industrySVG.svg';
 import TimeTracking from '@images/time-tracking-field-workers.svg';
 import AnyDevice from '@components/organisms/any-device';
+import IconCardList from '@components/organisms/icon-card-list';
+import CommonQuestions from '@components/organisms/common-questions';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
@@ -31,7 +34,7 @@ import CrewTracking from '@images/crew-tracking.svg';
 
 import { container } from '@styles/main.module.scss';
 
-import { learnMoreContainer } from './time-card-app.module.scss';
+import { learnMoreContainer, buttonContainer } from './time-card-app.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
@@ -45,6 +48,18 @@ const checkList = [
   'Work Activity Notifications',
   'GPS Stamped Clock In/Out',
   'Manual Time Entries',
+];
+
+const commonQuestionsList = [
+  {
+    title: 'Can I prevent employees from editing their time card entries?',
+    description: 'Lorem Ipsum',
+  },
+  { title: 'Can I setup time card rounding?', description: '' },
+  {
+    title: 'What happens if an employee forgets to punch out from their time card?',
+    description: '',
+  },
 ];
 
 const featureCardsList = [
@@ -72,9 +87,28 @@ const featureCardsList = [
   },
 ];
 
+const cardList = [
+  {
+    title: 'See a summary of every hour on the clock',
+    description: `Atto’s real-time reports include every aspect of time on the job, including; regular time, overtime, time off, break time, and more.`,
+    alt: 'Easy to use',
+    // icon: icon1,
+  },
+  {
+    title: 'Email a report to coincide with payroll',
+    description: `Atto automatically emails you your employees’ time card report based on your payroll period. Alternatively, you can download reports as PDF/CSV files.`,
+    alt: 'Easy to use',
+  },
+  {
+    title: 'Get alerted about manual time entries',
+    description: `If an employee forgets to clock in/out and adds a manual time card entry, it is flagged for you to review and approve.`,
+    alt: 'Easy to use',
+  },
+];
+
 const TimeCardApp = () => (
   <div className={`${container}`}>
-    <SEO title="Time Clock" />
+    <SEO title="Time Card App" />
     <Header />
     <IndustryMainCard
       smallTitle="TIME CARD APP"
@@ -107,6 +141,13 @@ const TimeCardApp = () => (
     />
     <Divider className="style3" />
     <ProductOverviewBanner />
+    <Divider className="style2" />
+    <IconCardList cardList={cardList} style="timeCard" />
+    <Divider className="style4" />
+    <div className={buttonContainer}>
+      <Button btnText="Find out more" />
+    </div>
+    <Divider />
     <Article
       title="Get wage estimates from your employees’ time cards"
       description="Keep your company’s finances on track. After adding your employees’ pay rates, Atto automatically estimates your wage bill based on the hours on their time cards. What’s more, you can add more than one pay rate per employee so that your estimates remain accurate even if their rate changes."
@@ -127,6 +168,8 @@ const TimeCardApp = () => (
     />
     <Divider />
     <TimeTrackingIndustry />
+    <Divider />
+    <CommonQuestions isSwapped list={commonQuestionsList} />
     <Divider />
     <TimeTracking />
     <Divider />
@@ -172,6 +215,7 @@ const TimeCardApp = () => (
     <Divider />
     <SubscribeBanner
       title="#1 Time Card App. Free for 14 days"
+      subtitle="Use Atto to track your employees hours with ease"
       placeholder="Type your email"
       checkItemOne="No credit card required"
       checkItemTwo="14 day free trial"
