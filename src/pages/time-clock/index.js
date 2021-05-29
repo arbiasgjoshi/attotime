@@ -18,10 +18,16 @@ import authorImage from '@images/construction-minds@2x.png';
 import WebTracking from '@images/web-time-tracking.svg';
 import MobileTracking from '@images/mobile_time_tracking.svg';
 import KioskTracking from '@images/kiosk-time-tracking.svg';
+import ImagesBox from '@components/organisms/images-box';
 
 import { container } from '@styles/main.module.scss';
 import image1 from '@images/time-clock-mobile@2x.png';
 import image2 from '@images/give-managers-power@2x.png';
+import boxImage1 from '@images/construction-daily-timeline@2x.png';
+import boxImage2 from '@images/time-clock-boxImage1.png';
+import boxImage3 from '@images/time-clock-boximage2.png';
+import boxImage4 from '@images/time-clock-boximage3.png';
+import boxImage5 from '@images/time-clock-boximage4.png';
 
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
@@ -61,7 +67,7 @@ const TimeClock = () => (
     <Divider className="style4" />
     <TickCardList list={checkList} />
     <Divider className="style4" />
-    <Title title="Track time from any location, and any device" />
+    <Title maxWidth={700} title="Track time from any location, and any device" />
     <div className={workListContainer}>
       <FeatureCard
         isWorkCard
@@ -131,6 +137,16 @@ const TimeClock = () => (
       description="See how productive your employees are. At any time, you can check each employee’s real-time location and status. Additionally, Atto generates a map-based timeline to summarize each worker’s daily movements."
       image={noImage}
       isSwapped
+    />
+    <Divider />
+    <ImagesBox
+      title="Trusted by 10,000+ businesses across 50+ countries around the globe"
+      image1={boxImage1}
+      image2={boxImage2}
+      image3={boxImage3}
+      image4={boxImage4}
+      image5={boxImage5}
+      styling="nonIndustry"
     />
     <Divider />
     <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />

@@ -37,6 +37,17 @@
     }
   }
 
+  .secondtopImage {
+    z-index: -1;
+    position: absolute;
+    max-width: 73.6rem;
+    right: 0;
+    top: 51.7rem;
+    @include max(tablet) {
+      display: none;
+    }
+  }
+
   .imagesContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -60,6 +71,18 @@
       margin-top: 8.6rem;
       @include max(tablet) {
         display: none;
+      }
+    }
+  }
+
+  &.nonIndustry {
+    .imagesContainer {
+      .imageBox2 {
+        margin-top: 55rem;
+      }
+
+      .imageBox3 {
+        margin-top: 30rem;
       }
     }
   }

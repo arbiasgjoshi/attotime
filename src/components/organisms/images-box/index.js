@@ -1,41 +1,42 @@
 import React from 'react';
 
-import {
-  container,
-  textContainer,
-  iconWrapper,
-  textWrapper,
-  imagesContainer,
-  imageBox1,
-  imageBox2,
-  imageBox3,
-  topImage,
-} from './images-box.module.scss';
+import * as styles from './images-box.module.scss';
 
 import Shield from '../../../images/verifiedShield.svg';
 
-const ImagesBox = ({ title, image1, image2, image3, image4 }) => {
+const ImagesBox = ({
+  title = 'Trusted by thousands of construction businesses across 50+ countries',
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  styling = '',
+}) => {
   return (
-    <div className={container}>
-      <div className={textContainer}>
-        <div className={iconWrapper}>
+    <div className={`${styles.container} ${styles[styling]}`}>
+      <div className={styles.textContainer}>
+        <div className={styles.iconWrapper}>
           <Shield />
         </div>
-        <div className={textWrapper}>
-          <h4>Trusted by thousands of construction businesses across 50+ countries</h4>
+        <div className={styles.textWrapper}>
+          <h4>{title}</h4>
         </div>
       </div>
-      <div className={topImage}>
+      <div className={styles.topImage}>
         <img src={image4} />
       </div>
-      <div className={imagesContainer}>
-        <div className={imageBox1}>
+      <div className={styles.secondtopImage}>
+        <img src={image5} />
+      </div>
+      <div className={styles.imagesContainer}>
+        <div className={styles.imageBox1}>
           <img src={image1} />
         </div>
-        <div className={imageBox2}>
+        <div className={styles.imageBox2}>
           <img src={image2} />
         </div>
-        <div className={imageBox3}>
+        <div className={styles.imageBox3}>
           <img src={image3} />
         </div>
       </div>
