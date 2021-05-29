@@ -78,11 +78,15 @@
   &.nonIndustry {
     .imagesContainer {
       .imageBox2 {
-        margin-top: 55rem;
+        @include min(tablet) {
+          margin-top: 55rem;
+        }
       }
 
       .imageBox3 {
-        margin-top: 30rem;
+        @include min(tablet) {
+          margin-top: 30rem;
+        }
       }
     }
   }

@@ -38,24 +38,7 @@ import { workListContainer, learnMoreContainer } from './time-clock.module.scss'
 
 import { FooterLinks } from '@locale/en.js';
 
-const checkList = [
-  'Mobile, Web, and Kiosk Time Clock',
-  'Clock In/Out Reminders',
-  'Managed Clock In/Out',
-  'Work Activity Notifications',
-  'GPS Stamped Clock In/Out',
-  'Manual Time Entries',
-];
-
-const commonQuestionsList = [
-  { title: 'What is a Time Clock?', description: 'Lorem Ipsum' },
-  { title: 'How do I track my work hours?', description: '' },
-  { title: 'Can I use Atto’s Time Clock while offline?', description: '' },
-  {
-    title: 'What are the benefits of using an app-based Time Clock for my business?',
-    description: '',
-  },
-];
+import { checkList, commonQuestionsList } from '../../data/third-phase/time-clock.js';
 
 // import localeData from '@locale/en';
 
@@ -74,6 +57,7 @@ const TimeClock = () => (
     <Story
       img={authorImage}
       paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
+      author="Robert Bennett - DPA Cleaning Services, Inc."
     />
     <Divider className="style4" />
     <TickCardList list={checkList} />

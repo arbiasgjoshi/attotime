@@ -1,12 +1,12 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   box-sizing: border-box;
   border: 2px solid #efefef;
   border-radius: 2rem;
 
   @include min(tablet) {
     padding: 5rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .item {
@@ -20,6 +20,12 @@
     &:nth-child(odd) {
       border-right: 1px solid #efefef;
       padding-right: 3.1rem;
+    }
+
+    > div {
+      @include max(tablet) {
+        margin-bottom: 0;
+      }
     }
   }
 }
