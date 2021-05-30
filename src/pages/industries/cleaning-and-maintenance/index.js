@@ -16,7 +16,13 @@ import OldVsNew from '@components/organisms/old-vs-new';
 import Steps from '@components/organisms/steps';
 import ImagesBox from '@components/organisms/images-box';
 
-import { container, industryPadding, noPadding, oldVsNewGradient } from '@styles/main.module.scss';
+import {
+  container,
+  industryPadding,
+  noPadding,
+  oldVsNewGradient,
+  background,
+} from '@styles/main.module.scss';
 import { checkList1, accordionList1, accordionList2 } from '@data/industries/cleaning.js';
 import { oldList, newList, steps } from '@data/industries';
 
@@ -34,7 +40,6 @@ import boxImage4 from '@images/cleaning-box-four@2x.png';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
-import { background } from './cleaning.module.scss';
 
 // import localeData from '@locale/en';
 
@@ -115,30 +120,32 @@ const Cleaning = () => (
         <Divider />
       </div>
     </div>
-    <div className={`${container} ${noPadding}`}>
-      <StaticImage src="../../../images/paper_timesheets@2x.png" />
-      <Divider className="style3" />
-      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
-      <Divider />
-      <Title
-        title="Get everything set up in 3 simple steps"
-        description="Atto is designed to be the easiest time-tracking app to use.
-         There’s absolutely no technical knowledge required."
-        maxWidth={932}
-        maxDescriptionWidth={750}
-      />
-      <Divider className="style1" />
-      <Steps list={steps} />
-      <Divider className="style4" />
-      <SubscribeBanner
-        title="Let’s make it a clean sweep! Keep your time tracking tidy with Atto"
-        placeholder="Type your email"
-        checkItemOne="No credit card required"
-        checkItemTwo="14 day free trial"
-        checkItemThree="Cancel anytime"
-      />
-      <Footer FooterLinks={FooterLinks} />
+    <div className={background}>
+      <div className={`${container} ${noPadding}`}>
+        <StaticImage src="../../../images/paper_timesheets@2x.png" />
+        <Divider className="style3" />
+        <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      </div>
     </div>
+    <Divider />
+    <Title
+      title="Get everything set up in 3 simple steps"
+      description="Atto is designed to be the easiest time-tracking app to use.
+         There’s absolutely no technical knowledge required."
+      maxWidth={932}
+      maxDescriptionWidth={750}
+    />
+    <Divider className="style1" />
+    <Steps list={steps} />
+    <Divider className="style4" />
+    <SubscribeBanner
+      title="Let’s make it a clean sweep! Keep your time tracking tidy with Atto"
+      placeholder="Type your email"
+      checkItemOne="No credit card required"
+      checkItemTwo="14 day free trial"
+      checkItemThree="Cancel anytime"
+    />
+    <Footer FooterLinks={FooterLinks} />
   </>
 );
 

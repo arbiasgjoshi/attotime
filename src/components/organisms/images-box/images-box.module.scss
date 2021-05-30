@@ -61,6 +61,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    @include max(mobile) {
+      column-gap: 1.3rem;
+    }
+
     @include min(tablet) {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 3.2rem;
@@ -69,11 +73,14 @@
 
     .imageBox1 {
       max-height: 88.2rem;
+
+      @include max(mobile) {
+        display: none;
+        max-height: 35.3rem;
+      }
     }
 
     .imageBox2 {
-      margin-top: 4.7rem;
-
       @include min(tablet) {
         margin-top: 15.2rem;
       }
@@ -84,10 +91,7 @@
 
     .imageBox3 {
       z-index: 1;
-
-      @include max(mobile) {
-        display: none;
-      }
+      margin-top: 4.7rem;
 
       @include min(tablet) {
         margin-top: 0.6rem;
