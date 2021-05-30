@@ -7,7 +7,7 @@
   justify-content: center;
   padding: 2rem 1rem;
 
-  @include min(tablet) {
+  @include min(laptop) {
     padding: 11rem 17rem;
   }
 
