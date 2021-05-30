@@ -29,7 +29,11 @@
     }
 
     h3 {
-      margin-bottom: 1.6rem;
+      margin-bottom: 2rem;
+
+      @include min(tablet) {
+        margin-bottom: 1.6rem;
+      }
     }
 
     p {
@@ -38,10 +42,10 @@
   }
 
   .secondBlock {
-    margin-bottom: 2rem;
+    margin: 4rem 0;
     @include min(tablet) {
       width: 50%;
-      margin-bottom: 0;
+      margin: 0;
     }
 
     .imageWrapper {

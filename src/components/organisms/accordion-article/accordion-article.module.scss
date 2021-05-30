@@ -15,7 +15,7 @@
   .firstBox {
     max-width: 68rem;
     .titleContainer {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
 
       @include min(tablet) {
         margin-bottom: 5rem;
@@ -81,6 +81,10 @@
 
     > div {
       // min-height: 62rem;
+      @include max(mobile) {
+        padding: 4rem 0 !important; //because of inline-style
+        height: fit-content !important;
+      }
     }
   }
 }

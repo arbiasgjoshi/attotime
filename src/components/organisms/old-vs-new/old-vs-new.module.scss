@@ -73,11 +73,12 @@
     > div {
       border-bottom: 2px solid #efefef;
       align-items: center;
-      padding: 1rem;
+      padding: 3rem 2rem;
       margin-bottom: 0;
 
       @include min(tablet) {
         height: 12rem;
+        padding: 1rem;
       }
 
       &:last-child {
