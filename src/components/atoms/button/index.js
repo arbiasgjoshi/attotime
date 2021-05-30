@@ -10,11 +10,22 @@ import {
   roundStyle,
   pricingStyle,
   activeStyle,
+  hasMobileText,
   activeBlogItem,
   bigStyle,
+  mobileText,
+  desktopText,
 } from './button.module.scss';
 
-const Button = ({ btnText, disabled, btnStyle, pricing, activeClass, onBtnClick }) => {
+const Button = ({
+  btnText,
+  btnMobileText,
+  disabled,
+  btnStyle,
+  pricing,
+  activeClass,
+  onBtnClick,
+}) => {
   const checkBtnStyle = () => {
     let className = '';
     if (btnStyle === 'teal') {
@@ -44,6 +55,9 @@ const Button = ({ btnText, disabled, btnStyle, pricing, activeClass, onBtnClick 
     if (activeClass) {
       className += ` ${activeStyle}`;
     }
+    if (btnMobileText) {
+      className += ` ${hasMobileText}`;
+    }
     return className;
   };
   return (
@@ -53,13 +67,15 @@ const Button = ({ btnText, disabled, btnStyle, pricing, activeClass, onBtnClick 
       disabled={disabled}
       onClick={() => onBtnClick && onBtnClick()}
     >
-      {btnText}
+      <span className={desktopText}>{btnText}</span>
+      <span className={mobileText}>{btnMobileText}</span>
     </button>
   );
 };
 
 Button.propTypes = {
   btnText: PropTypes.string,
+  btnMobileText: PropTypes.string,
   disabled: PropTypes.bool,
   pricing: PropTypes.bool,
   btnStyle: PropTypes.string,

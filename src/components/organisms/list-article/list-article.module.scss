@@ -59,7 +59,7 @@
 
     .imageWrapper {
       @include flex-align(center, center);
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
 
       @include min(tablet) {
         margin-bottom: 0;

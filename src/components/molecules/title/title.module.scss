@@ -19,12 +19,11 @@
     }
 
     @include max(mobile) {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
       text-align: center;
 
       .descriptionWrapper {
-        text-align: center;
-
+        text-align: left;
         font-size: var(--body-style-two-mobile-size);
         line-height: var(--body-style-two-mobile-line-height);
       }
@@ -63,7 +62,7 @@
     }
 
     @include max(mobile) {
-      text-align: center;
+      text-align: left;
     }
   }
 
@@ -73,10 +72,10 @@
     font-weight: var(--regular);
     line-height: var(--body-style-one-mobile-line-height);
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
 
     @include max(mobile) {
-      text-align: center;
+      text-align: left;
     }
 
     @include min(tablet) {

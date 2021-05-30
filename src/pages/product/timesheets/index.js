@@ -222,7 +222,7 @@ const Timesheets = () => {
       </div>
       <Divider className="style3" />
       <div>
-        <StaticImage alt="Clock In" quality={90} src="../../../images/ready-made.svg" />
+        <StaticImage alt="Clock In" quality={95} src="../../../images/ready-made.svg" />
       </div>
       <Divider className="style3" />
       <IconCardList cardList={firstList} style="smallTimesheetImages" />

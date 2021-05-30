@@ -13,8 +13,7 @@ import ProductCard from '@components/organisms/product-card';
 import GrowthNumbers from '@components/organisms/growth-numbers';
 import FooterComponent from '@components/molecules/footer';
 
-import { container } from '@styles/main.module.scss';
-import { productContainer } from './product.module.scss';
+import { container, imageFormWrapper } from '@styles/main.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 
@@ -28,6 +27,7 @@ import image1 from '@images/time-tracking-fingertips@2x.png';
 import image2 from '@images/know-where-is-team.png';
 import image3 from '@images/stay-in-loop.png';
 import image4 from '@images/relax-with-timesheets@2x.png';
+import { productContainer } from './product.module.scss';
 
 const Product = () => {
   const firstList = [
@@ -113,16 +113,17 @@ const Product = () => {
         title="Everything you need to keep track of your employees’ time"
         subtitle="Don't let timesheets be a distraction. Focus on what matters and let us handle them for you."
       />
-      <EmailForm
-        placeholder="Type your email"
-        checkItemOne="No credit card required"
-        checkItemTwo="14 day free trial"
-        checkItemThree="Cancel anytime"
-        style="productPage"
-      />
-      <Divider className="style0" />
-      {/* TODO This image requires some more fixing, need the PNG file */}
-      <ProductOverviewBanner />
+      <div className={imageFormWrapper}>
+        <EmailForm
+          placeholder="Type your email"
+          checkItemOne="No credit card required"
+          checkItemTwo="14 day free trial"
+          checkItemThree="Cancel anytime"
+          style="productPage"
+        />
+        <Divider className="style0" />
+        <ProductOverviewBanner />
+      </div>
       <Divider className="style31" />
       <IconCardList cardList={firstList} style="smallTimesheetImages" />
       <Divider />

@@ -72,9 +72,9 @@ const LocationTracking = () => (
       className={mobileImage}
     />
     <StaticImage
-      src="../../../images/track-team-locations@2x.png"
+      src="../../../images/gps-location-tracking-two@2x.png"
       alt="location of team"
-      width={1139}
+      width={1140}
       height={340}
       quality={95}
       className={desktopImage}
@@ -113,6 +113,7 @@ const LocationTracking = () => (
           src="../../../images/privacy-priority@2x.png"
           width={455}
           height={500}
+          quality={90}
           alt="Your privacy,our priority"
         />
       </div>

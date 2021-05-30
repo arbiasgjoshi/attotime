@@ -313,6 +313,8 @@
 
     .leftItems {
       width: 100%;
+      padding: 2rem 0;
+
       hr {
         display: none;
       }
@@ -323,11 +325,15 @@
         row-gap: 2rem;
         column-gap: unset;
       }
+
+      .menuItem {
+        padding: 0;
+      }
     }
 
     .rightItems {
       background-color: #fff;
-      padding: 1rem 0 4rem 5.3rem;
+      padding: 1rem 0 4rem 4.5rem;
       width: 100%;
 
       > h6 {
