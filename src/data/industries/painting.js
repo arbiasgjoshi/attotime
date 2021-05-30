@@ -16,19 +16,19 @@ export const accordionList1 = [
     icon: '',
     title: 'Stop painters from clocking in until they’re ready to work',
     description:
-      'When a van breaks down, or a painter calls-in sick, you need to be able to deploy other workers to finish the job. Instantly, Atto shows you which of your painters and decorators are nearby and available to work – without having to call around.',
+      'If you’re reliant on paper timesheets, it’s hard to verify that your painters and decorators are turning up on-time. With Atto, you can set the location of any job site and restrict workers from clocking in until they’re physically present.',
   },
   {
     icon: '',
     title: 'Track the locations of your workers and the progress of paint jobs in real-time',
     description:
-      'When a van breaks down, or a painter calls-in sick, you need to be able to deploy other workers to finish the job. Instantly, Atto shows you which of your painters and decorators are nearby and available to work – without having to call around.',
+      'When your painting crew is dealing with different jobs in different locations, it can be hard to keep track of what’s going on. With Atto, you can track the live locations of your entire workforce. Check how long your crew has been working on each job. And, get notifications to inform you of their latest work activity.',
   },
   {
     icon: '',
     title: 'View a map-based timeline of your painters’ and decorators’ daily movements ',
     description:
-      'When a van breaks down, or a painter calls-in sick, you need to be able to deploy other workers to finish the job. Instantly, Atto shows you which of your painters and decorators are nearby and available to work – without having to call around.',
+      'Check how productive your painters’ are. Atto generates a map of each painter’s and decorator’s daily movements, providing a timeline of what they were up to while working. Use it to check how long was spent at each job, along with the routing they took while on the clock',
   },
 ];
 
@@ -43,25 +43,25 @@ export const accordionList2 = [
     icon: '',
     title: 'From painting to decorating, see how much work each team completed',
     description:
-      'Add your painters’ and decorators’ pay rates and automatically estimate their pay based on the hours they track. Now, there’ll be no more payroll surprises at the end of the week!',
+      'Want to check if a job is running to budget? Need to see how much your painters are costing you compared to your decorators? In a few taps, Atto generates timesheet summaries to show all the work done on a specific job, or by a specific team.',
   },
   {
     icon: '',
     title: 'Eliminate “guesstimates” to bill your customers more accurately',
     description:
-      'Add your painters’ and decorators’ pay rates and automatically estimate their pay based on the hours they track. Now, there’ll be no more payroll surprises at the end of the week!',
+      'When you charge your customers for hourly labor costs, relying on “guesstimated” job time can be costly. Not only might you under/overcharge them, but if an invoice is challenged, it’s hard to verify who’s in the right. With Atto, time records are precise and verified with location data, so you can confidently bill customers for every minute spent on the job',
   },
   {
     icon: '',
     title: 'Reduce the admin time taken to run your payroll',
     description:
-      'Add your painters’ and decorators’ pay rates and automatically estimate their pay based on the hours they track. Now, there’ll be no more payroll surprises at the end of the week!',
+      'To reduce admin time, Atto automatically emails you a timesheet report that coincides with your payroll period. Now all you need to do is input the data into your payroll system – saving hours from the process',
   },
   {
     icon: '',
     title: 'Win high-value jobs with more competitive quotes',
     description:
-      'Add your painters’ and decorators’ pay rates and automatically estimate their pay based on the hours they track. Now, there’ll be no more payroll surprises at the end of the week!',
+      'Your ability to estimate your labor costs impacts whether your job quotes are profitable and competitive. With Atto, you can check the time your painters’ and decorators’ took to complete similar jobs, and use it to create more precise quotes in the future',
   },
 ];
 

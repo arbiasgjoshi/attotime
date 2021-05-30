@@ -61,8 +61,11 @@
   border-radius: 20px;
 
   @include min(tablet) {
-    padding: 5rem;
     flex-direction: row;
+  }
+
+  @include min(laptop) {
+    padding: 5rem;
   }
 
   .oldListStyle,

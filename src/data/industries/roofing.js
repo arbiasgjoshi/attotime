@@ -74,19 +74,19 @@ export const accordionList1 = [
     icon: '',
     title: 'Stop roofers from clocking in until they’re ready to work',
     description:
-      'The unpredictability of the weather and employee absences mean you may need to change your plans at short notice. Atto allows you to instantly see which of your roofing contractors are nearby and available to work – without having to call around.',
+      'When you’re reliant on paper timesheets, it’s hard to verify that your roofers are turning up to jobs on-time. With Atto, you can set the location of any job site and restrict them from clocking in until they’re physically present.',
   },
   {
     icon: '',
     title: 'Track the locations of your roofers and the progress of roofing jobs in real-time',
     description:
-      'The unpredictability of the weather and employee absences mean you may need to change your plans at short notice. Atto allows you to instantly see which of your roofing contractors are nearby and available to work – without having to call around.',
+      'Installing solar panels, repairing leaks, fitting new roofs – when your roofing contractors are dealing with multiple jobs, it can be hard to keep track of what’s going on! With Atto, you can track the live locations of your entire workforce. Check how long your roofers have been working on each job. And, get notifications to inform you of their latest work activity.',
   },
   {
     icon: '',
     title: 'View a map-based timeline of your roofers’ movements',
     description:
-      'The unpredictability of the weather and employee absences mean you may need to change your plans at short notice. Atto allows you to instantly see which of your roofing contractors are nearby and available to work – without having to call around.',
+      'Check how productive your roofing contractors are. Atto generates a map of each roofers’ daily movements, providing a clear timeline of what they were up to while working. Use it to see how long was spent at each job, along with the routing they took while on the clock.',
   },
 ];
 
@@ -101,19 +101,19 @@ export const accordionList2 = [
     icon: '',
     title: 'From roof tilers to safety inspectors see how much work each team’s completed',
     description:
-      'Add your roofers’ pay rates and automatically estimate their wages based on the hours they track. Now, there’ll be no more payroll surprises at the end of the week!',
+      'Want to check if a job is running to budget? Need to see how much your tilers are costing you compared to your safety inspectors? In a few taps, Atto generates timesheet summaries to show all the work done on a specific job, or by a specific team.',
   },
   {
     icon: '',
     title: 'Reduce the admin time it takes to run your payroll',
     description:
-      'Add your roofers’ pay rates and automatically estimate their wages based on the hours they track. Now, there’ll be no more payroll surprises at the end of the week!',
+      'To reduce admin time, Atto automatically emails you a timesheet report that coincides with your payroll period. Now all you need to do is input the data into your payroll system – saving hours from the process.',
   },
   {
     icon: '',
     title: 'Win more roofing contracts with competitive quotes',
     description:
-      'Add your roofers’ pay rates and automatically estimate their wages based on the hours they track. Now, there’ll be no more payroll surprises at the end of the week!',
+      'Your ability to estimate your labor costs impacts whether your job quotes are profitable and competitive. With Atto, you can check the time your roofers took to complete similar jobs, and use it to produce more precise quotes in the future.',
   },
 ];
 

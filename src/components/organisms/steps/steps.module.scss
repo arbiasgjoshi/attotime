@@ -8,6 +8,9 @@
     @include min(tablet) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include min(laptop) {
       column-gap: 3rem;
     }
   }

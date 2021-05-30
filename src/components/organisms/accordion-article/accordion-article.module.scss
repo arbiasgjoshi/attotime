@@ -15,7 +15,11 @@
   .firstBox {
     max-width: 68rem;
     .titleContainer {
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
+
+      @include min(tablet) {
+        margin-bottom: 5rem;
+      }
     }
 
     .listStyle {
@@ -69,8 +73,12 @@
   }
 
   .secondBox {
-    max-width: 40rem;
     @include flex-align(flex-start, center);
+
+    @include min(tablet) {
+      max-width: 40rem;
+    }
+
     > div {
       // min-height: 62rem;
     }

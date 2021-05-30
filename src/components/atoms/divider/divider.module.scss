@@ -5,7 +5,7 @@
   border: 0;
   margin: 2rem 0;
 
-  @include min(tablet) {
+  @include min(laptop) {
     margin: 9.9rem 0;
 
     &.centenary {

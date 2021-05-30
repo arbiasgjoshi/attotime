@@ -1,7 +1,11 @@
 .greenBackground {
   position: relative;
-  margin-top: 6rem;
-  padding-top: 10.9rem;
+
+  @include min(tablet) {
+    margin-top: 6rem;
+    padding-top: 10.9rem;
+  }
+
   &::before {
     content: '';
     width: 100%;

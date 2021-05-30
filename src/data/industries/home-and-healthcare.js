@@ -16,19 +16,19 @@ export const accordionList1 = [
     icon: '',
     title: 'Prevent caregivers from clocking in until they’re ready to work',
     description:
-      'When caregivers are on sick leave, you need to make sure someone else can provide patient care at short notice. Atto allows you to quickly see who’s nearby and available to work – without having to call around.',
+      'When you’re reliant on paper timesheets, it’s hard to verify that your caregivers are turning up on-time. With Atto, you can set the location of any of your patient’s homes and restrict caregivers from clocking in until they’re physically present.',
   },
   {
     icon: '',
     title: 'Track the whereabouts of your caregivers during the day',
     description:
-      'When caregivers are on sick leave, you need to make sure someone else can provide patient care at short notice. Atto allows you to quickly see who’s nearby and available to work – without having to call around.',
+      'When your caregivers are providing care to multiple patients throughout the day, it can be hard to keep track of what’s going on! Luckily, Atto, lets you track the live locations of all your caregivers. Check how long they’ve been at each home. And, stay informed with reassuring notifications of their latest work activity.',
   },
   {
     icon: '',
     title: 'View map-based timelines of your caregivers’ movements ',
     description:
-      'When caregivers are on sick leave, you need to make sure someone else can provide patient care at short notice. Atto allows you to quickly see who’s nearby and available to work – without having to call around.',
+      'Check how productive your caregivers are. Atto generates a map of each caregivers’ daily movements, providing a clear timeline of what they were up to while working. Use it to see how long was spent with each patient, along with the routing they took while on the clock.',
   },
 ];
 
@@ -43,13 +43,13 @@ export const accordionList2 = [
     icon: '',
     title: 'Compare the costs and time of different teams and different jobs',
     description:
-      'Add your caregivers’ pay rates and automatically estimate their wages based on the hours they track. Now, there’ll be no more payroll surprises at the end of the week!',
+      'Need to check if a job is running to budget? Need to see how much time one team of caregivers are taking compared to another? In a few taps, Atto generates timesheet summaries to show all the work done on a specific job type, or by a specific team of caregivers.',
   },
   {
     icon: '',
     title: 'Spend less time on payroll, and more time with patients',
     description:
-      'Add your caregivers’ pay rates and automatically estimate their wages based on the hours they track. Now, there’ll be no more payroll surprises at the end of the week!',
+      'When it comes to payroll, Atto automatically emails you an easy-to-read timesheet report to coincide with payday. Now all you need to do is input the data into your payroll system – saving hours from the process.',
   },
 ];
 

@@ -131,4 +131,19 @@
       }
     }
   }
+
+  &.workHoursTracker {
+    margin-bottom: 2.8rem;
+
+    .iconWrapper {
+      margin-right: 1.8rem;
+    }
+
+    .textWrapper {
+      .paragraph {
+        height: fit-content;
+        margin-right: 2rem;
+      }
+    }
+  }
 }

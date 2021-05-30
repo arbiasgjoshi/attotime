@@ -1,11 +1,16 @@
 .container {
   @include flex-direction(column);
 
+  .firstBox {
+    margin: 0 0 1rem 1rem;
+  }
+
   @include min(tablet) {
     flex-direction: row;
 
     .firstBox {
       max-width: 34rem;
+      margin: 0;
 
       .imageContainer {
         width: 10.1rem;
