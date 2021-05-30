@@ -22,7 +22,9 @@
     }
 
     .textWrapper {
-      max-width: 36.5rem;
+      @include min(tablet) {
+        max-width: 36.5rem;
+      }
     }
   }
 

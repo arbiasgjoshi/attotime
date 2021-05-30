@@ -6,12 +6,19 @@
     @include flex-align(center, center);
     width: 18rem;
     height: 12rem;
-    margin-top: 2.4rem;
+
+    @include min(tablet) {
+      margin-top: 2.4rem;
+    }
   }
 
   .textContainer {
-    margin-top: 3.3rem;
+    margin-top: 2rem;
     text-align: center;
+
+    @include min(tablet) {
+      margin-top: 3.3rem;
+    }
 
     p {
       margin: 0.8rem 2rem 1.7rem 2rem;
