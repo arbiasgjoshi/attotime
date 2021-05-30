@@ -22,13 +22,19 @@
 
   &::after {
     content: '';
-    top: 36rem;
+    top: 9rem;
+    height: 26.6rem;
     left: 0;
     z-index: -2;
     position: absolute;
     background-color: var(--secondary-color);
-    height: 112rem;
+
     width: 100%;
+
+    @include min(tablet) {
+      top: 36rem;
+      height: 112rem;
+    }
   }
 }
 

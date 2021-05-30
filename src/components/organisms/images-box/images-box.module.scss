@@ -9,6 +9,12 @@
 
     @include max(mobile) {
       text-align: center;
+      margin-top: 27rem;
+      margin-bottom: 5rem;
+    }
+
+    @include custom-max(350) {
+      margin-top: 20rem;
     }
 
     .iconWrapper {
@@ -30,10 +36,6 @@
     z-index: -1;
     position: absolute;
     right: 0;
-
-    @include max(mobile) {
-      display: none;
-    }
 
     @include min(tablet) {
       max-width: 40rem;
@@ -92,7 +94,7 @@
       }
 
       @include min(laptop) {
-        margin-top: 8.6rem;
+        margin-top: 5.6rem;
       }
     }
   }
