@@ -46,7 +46,7 @@ const Video = ({ videoUrl }) => {
         </div>
       )}
       <div className={videoPlayer}>
-        <ReactPlayer url={videoUrl} playing={play} width={960} height={489} />
+        <ReactPlayer url={videoUrl} playing={play} width="100%" height="100%" />
       </div>
     </div>
   );

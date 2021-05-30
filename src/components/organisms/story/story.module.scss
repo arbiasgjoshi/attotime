@@ -66,6 +66,7 @@
   }
 
   &.homepage {
+    margin-bottom: 11rem;
     @include min(tablet) {
       margin: 0 9rem;
     }
@@ -76,12 +77,12 @@
       }
     }
     h4 {
-      height: 24rem;
       font-weight: normal;
       font-family: Charter;
 
       @include min(tablet) {
         width: 60rem;
+        height: 24rem;
         font-size: 5rem;
         line-height: 6rem;
         letter-spacing: -1px;

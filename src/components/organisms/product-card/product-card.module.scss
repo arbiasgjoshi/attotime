@@ -20,6 +20,10 @@
   }
 
   @include max(mobile) {
+    .secondWrapper {
+      order: -1;
+      margin-top: 4rem;
+    }
   }
 
   .firstWrapper {
@@ -92,6 +96,10 @@
 
       @include max(tablet) {
         max-width: 90%;
+
+        h5 {
+          line-height: 3rem;
+        }
       }
     }
 

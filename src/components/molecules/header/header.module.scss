@@ -242,6 +242,16 @@
       grid-template-columns: repeat(2, 1fr);
       column-gap: 6rem;
       row-gap: 4rem;
+
+      @include max(mobile) {
+        a:nth-child(2) {
+          order: 2;
+        }
+
+        a:nth-child(4) {
+          order: 3;
+        }
+      }
     }
   }
 
@@ -286,6 +296,13 @@
           &:hover {
             color: var(--primary-color);
           }
+
+          @include max(tablet) {
+            &:hover,
+            &:visited {
+              color: #000;
+            }
+          }
         }
       }
     }
@@ -296,10 +313,6 @@
 
     .leftItems {
       width: 100%;
-      padding: 2rem 0;
-    }
-
-    .leftItems {
       hr {
         display: none;
       }
@@ -314,11 +327,28 @@
 
     .rightItems {
       background-color: #fff;
-      padding: 1rem 0 4rem 4.5rem;
+      padding: 1rem 0 4rem 5.3rem;
       width: 100%;
 
       > h6 {
         display: none;
+      }
+    }
+
+    .menuItem {
+      padding: 0 0.8rem;
+      .menuItemDesc {
+        width: 20rem;
+        flex-grow: unset;
+      }
+      h6 {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
       }
     }
   }
@@ -372,6 +402,7 @@
     }
   }
 
+  &.activeMenuItem,
   &:hover {
     cursor: pointer;
     .menuIcon {
@@ -389,20 +420,24 @@
 }
 
 .collapsibleMenu {
-  // @include absolute(left 0 top 6.4rem);
   padding: 0 1.6rem;
   position: fixed;
   z-index: 1000;
   left: 0;
-  top: 6.4rem;
+  top: 6.1rem;
   background-color: #fff;
   width: 100%;
+  height: calc(100% - 6.1rem);
+  overflow: scroll;
+
   @include flex-direction(column);
 
   .triggerItemWrap {
     @include flex-direction(row);
     align-items: center;
     width: 100%;
+    padding: 0 0.8rem;
+
     h5 {
       font-size: 2.5rem;
       line-height: 3rem;
@@ -412,15 +447,17 @@
       width: 100%;
     }
     > i {
-      font-size: 2.4rem;
+      font-size: 1.6rem;
       width: 2.4rem;
       height: 2.4rem;
       transition: ease all 0.15s;
+      @include flex-align(center, center);
     }
   }
 
   > a {
     min-height: 9rem;
+    padding: 0 0.8rem;
     border-top: 2px solid #efefef;
     @include flex-align(center, flex-start);
 
@@ -439,5 +476,6 @@
     grid-template-columns: repeat(1, 1fr);
     row-gap: 1.6rem;
     padding: 2rem 0;
+    margin-top: auto;
   }
 }

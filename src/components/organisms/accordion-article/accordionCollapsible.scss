@@ -13,12 +13,12 @@
 
     &.is-open {
       > div > i {
-        transform: rotateX(180deg);
+        transform: rotate(180deg);
       }
     }
   }
 
   &__contentOuter {
-    padding-top: 0;
+    padding: 0 0.8rem;
   }
 }

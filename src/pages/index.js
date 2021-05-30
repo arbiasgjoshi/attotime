@@ -35,9 +35,9 @@ import {
 import {
   // slider,
   sliderWrapper,
-  sliderText,
   numbers,
   mobileImage,
+  mobileImageWrapper,
   desktopImage,
 } from './homepage.module.scss';
 
@@ -106,13 +106,15 @@ const Home = () => {
         title="Time tracking, simplified."
         subtitle="Atto is a simple all-in-one time-tracking and timesheet solution. Spend less time managing your business and more time getting work done."
       />
-      <StaticImage
-        src="../images/time-tracking-fingertips@2x.png"
-        alt="Home banner image"
-        height={505}
-        quality={95}
-        className={mobileImage}
-      />
+      <div className={mobileImageWrapper}>
+        <StaticImage
+          src="../images/homepage-banner-mobile@2x.png"
+          alt="Home banner image"
+          height={396}
+          quality={95}
+          className={mobileImage}
+        />
+      </div>
       <EmailForm
         placeholder="Type your email"
         checkItemOne="No credit card required"

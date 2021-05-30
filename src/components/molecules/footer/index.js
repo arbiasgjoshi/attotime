@@ -32,9 +32,7 @@ const Footer = ({ FooterLinks }) => (
       <div className={footerSitemap}>
         {FooterLinks.map((section) => (
           <div className={footerLinksWrapper} key={section.id}>
-            <Link className={parentPath} to={`${section.parentPath}`}>
-              {section.parent}
-            </Link>
+            <h5 className={parentPath}>{section.parent}</h5>
             {section.subMenuLinks.map((subMenu) => (
               <Link
                 to={`${subMenu.path}`}
@@ -46,7 +44,7 @@ const Footer = ({ FooterLinks }) => (
             ))}
             {section.downloadApp && (
               <div className={downloadApp}>
-                <h6>Download</h6>
+                <h5 className={parentPath}>Download</h5>
                 {section.downloadApp.map((app) => (
                   <Link to={app.href} target="_blank" rel="noreferrer" key={app.id}>
                     <img src={app.src} alt="Mobile" />

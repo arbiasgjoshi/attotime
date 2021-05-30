@@ -1,3 +1,13 @@
+.mobileOnly {
+  display: none;
+
+  @include max(tablet) {
+    display: block;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+
 .container {
   background-color: #e6f8fa;
   padding: 6rem 1.8rem 0 1.8rem;
@@ -13,14 +23,6 @@
     @include min(tablet) {
       width: 36rem;
       margin-right: 10rem;
-    }
-
-    h3,
-    h4,
-    input {
-      @include max(tablet) {
-        display: none;
-      }
     }
 
     h4 {
@@ -71,6 +73,15 @@
       .tickItem:first-child {
         margin-right: 2.4rem;
       }
+
+      @include max(mobile) {
+        justify-content: space-between;
+
+        .tickItem {
+          margin: 0;
+          align-items: center;
+        }
+      }
     }
   }
 
@@ -111,6 +122,14 @@
       > div:last-child {
         width: 100%;
       }
+    }
+  }
+
+  @include max(tablet) {
+    h3,
+    h4,
+    input {
+      display: none;
     }
   }
 }

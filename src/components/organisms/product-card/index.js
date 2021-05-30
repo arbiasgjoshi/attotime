@@ -26,7 +26,7 @@ const ProductCard = ({
   <div className={`${styles.container} ${isSwapped && styles.swapped} ${styles[style]}`}>
     <div className={styles.firstWrapper}>
       <div className={styles.textContainer}>
-        <p className={styles.prdName}>{productName}</p>
+        {productName && <p className={styles.prdName}>{productName}</p>}
         <Title leftAlign title={title} description={description} />
       </div>
       {list && (

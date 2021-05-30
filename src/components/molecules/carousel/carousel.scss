@@ -64,6 +64,11 @@
         background: var(--gray);
       }
     }
+
+    @include max(mobile) {
+      bottom: 6rem;
+      margin: 0;
+    }
   }
 }
 

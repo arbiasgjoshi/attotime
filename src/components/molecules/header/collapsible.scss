@@ -14,7 +14,11 @@
 
     &.is-open {
       > div > i {
-        transform: rotateX(180deg);
+        transform: rotate(180deg);
+      }
+
+      > div > h5 {
+        color: var(--primary-color);
       }
     }
   }

@@ -104,12 +104,17 @@ const HeaderComponent = ({ headerStyle }) => {
               <ProductIcon />
             </div>
             <div className={menuItemDesc}>
-              <h6 className={notMobile}>Product Overview</h6>
-              <h6 className={mobile}>Overview</h6>
-              <p>
-                Atto is a simple all-in-one time-tracking and timesheet solution. Spend less time
-                managing your business and more time getting work done.
-              </p>
+              <div className={notMobile}>
+                <h6>Product Overview</h6>
+                <p>
+                  Atto is a simple all-in-one time-tracking and timesheet solution. Spend less time
+                  managing your business and more time getting work done.
+                </p>
+              </div>
+              <div className={mobile}>
+                <h6>Overview</h6>
+                <p>Atto is a simple all-in-one time-tracking and timesheet solution.</p>
+              </div>
             </div>
           </Link>
         </div>
