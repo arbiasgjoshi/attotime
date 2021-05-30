@@ -7,7 +7,7 @@
     margin-bottom: 4rem;
     margin-top: 3.1rem;
 
-    @include max(tablet) {
+    @include max(mobile) {
       text-align: center;
     }
 
@@ -16,26 +16,31 @@
       width: 5.2rem;
       height: 6.2rem;
 
-      @include max(tablet) {
+      @include max(mobile) {
         align-self: center;
       }
     }
 
     .textWrapper {
-      @include min(tablet) {
-        max-width: 36.5rem;
-      }
+      max-width: 36.5rem;
     }
   }
 
   .topImage {
     z-index: -1;
     position: absolute;
-    max-width: 73.6rem;
     right: 0;
 
-    @include max(tablet) {
+    @include max(mobile) {
       display: none;
+    }
+
+    @include min(tablet) {
+      max-width: 40rem;
+    }
+
+    @include min(laptop) {
+      max-width: 73.6rem;
     }
   }
 
@@ -45,7 +50,7 @@
     max-width: 73.6rem;
     right: 0;
     top: 51.7rem;
-    @include max(tablet) {
+    @include max(mobile) {
       display: none;
     }
   }
@@ -65,14 +70,29 @@
     }
 
     .imageBox2 {
-      margin-top: 22.2rem;
+      margin-top: 4.7rem;
+
+      @include min(tablet) {
+        margin-top: 15.2rem;
+      }
+      @include min(laptop) {
+        margin-top: 22.2rem;
+      }
     }
 
     .imageBox3 {
       z-index: 1;
-      margin-top: 8.6rem;
-      @include max(tablet) {
+
+      @include max(mobile) {
         display: none;
+      }
+
+      @include min(tablet) {
+        margin-top: 0.6rem;
+      }
+
+      @include min(laptop) {
+        margin-top: 8.6rem;
       }
     }
   }
