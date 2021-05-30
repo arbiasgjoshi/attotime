@@ -68,6 +68,13 @@
   --h5-letter-spacing: -0.025rem;
   --h6-letter-spacing: 0;
 
+  --h1-mobile-letter-spacing: -0.05rem;
+  --h2-mobile-letter-spacing: -0.05rem;
+  --h3-mobile-letter-spacing: -0.05rem;
+  --h4-mobile-letter-spacing: -0.05rem;
+  --h5-mobile-letter-spacing: -0.025rem;
+  --h6-mobile-letter-spacing: 0;
+
   --body-style-one-letter-spacing: -0.05rem;
   --body-style-two-letter-spacing: 0;
   --body-style-three-letter-spacing: 0;
@@ -94,7 +101,7 @@
   --h1-mobile-line-height-size: var(--h3-line-height-size);
   --h2-mobile-line-height-size: var(--h4-line-height-size);
   --h3-mobile-line-height-size: var(--h5-line-height-size);
-  --h4-mobile-line-height-size: var(--body-style-one-line-height-size);
+  --h4-mobile-line-height-size: var(--h4-line-height-size);
   --h5-mobile-line-height-size: var(--h6-line-height-size);
   --h6-mobile-line-height-size: calc(var(--h6-line-height-size) * 0.8);
 
