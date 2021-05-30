@@ -9,14 +9,23 @@
   &::before {
     content: '';
     width: 100%;
-    height: calc(100% - 593px);
+    height: 26.6rem;
     background-color: var(--secondary-color);
-    @include absolute(left 0 top 0);
+    @include absolute(left 0 top 35rem);
     z-index: -1;
+
+    @include min(tablet) {
+      height: calc(100% - 593px);
+      @include absolute(left 0 top 0);
+    }
   }
   position: relative;
 
   .topImageMask {
+    @include max(mobile) {
+      display: none;
+    }
+
     @include absolute(top -6rem left 0);
     height: 6rem;
     width: 100%;
@@ -30,6 +39,10 @@
   }
 
   .bottomImageMask {
+    @include max(mobile) {
+      display: none;
+    }
+
     @include absolute(bottom 50rem left 0);
     height: 9.3rem;
     width: 100%;
