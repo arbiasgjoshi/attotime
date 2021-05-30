@@ -16,13 +16,13 @@ export const accordionList1 = [
     icon: '',
     title: 'Track your crew’s time off and see who’s ready to work',
     description:
-      'Atto is super simple to use. At the start of each workday, your crew clock in to begin logging their hours. During the day they can write notes, track breaks, and switch between jobs they’re working on. And when they enter or leave a job site, or at their normal start and end time, we’ll send them a reminder to clock in and out.',
+      'Track any type of time off, paid or unpaid. This means site managers and office staff can easily see who’s available to be assigned a job – without the endless phone calls to your workers.',
   },
   {
     icon: '',
     title: 'Trust site managers to track your crews’ time',
     description:
-      'Atto is super simple to use. At the start of each workday, your crew clock in to begin logging their hours. During the day they can write notes, track breaks, and switch between jobs they’re working on. And when they enter or leave a job site, or at their normal start and end time, we’ll send them a reminder to clock in and out.',
+      'Get to work quicker by giving your site managers the authority to track your crew’s time. Now when your crew is at a job site and ready to go, your site managers can clock-in and out on all of their behalfs.',
   },
 ];
 
@@ -37,13 +37,13 @@ export const accordionList2 = [
     title: 'See where all your workers are in real-time',
     icon: '',
     description:
-      'Ensure that only hours worked are accounted for. With Atto, you can set the locations of your job sites and restrict workers from clocking in unless they’re within the site perimeter.',
+      'Track the locations of all your workers, without any back and forth messaging between your office and your building sites. Get notifications to inform you of their latest work activity. See who’s nearest to a building site and deploy them to the job. Plus, quickly relay project updates to your clients in real-time.',
   },
   {
     title: 'Get a daily summary of each worker’s movements',
     icon: '',
     description:
-      'Ensure that only hours worked are accounted for. With Atto, you can set the locations of your job sites and restrict workers from clocking in unless they’re within the site perimeter.',
+      'Want to check how productive your workers are? Need to see how much time was spent at each job site compared to on the road? With Atto, you can view a map of each worker’s movements, providing a daily timeline of what they were up to while on the job.',
   },
 ];
 
@@ -58,18 +58,18 @@ export const accordionList3 = [
     title: 'Check how much each team and job is costing you',
     icon: '',
     description:
-      'Ensure that only hours worked are accounted for. With Atto, you can set the locations of your job sites and restrict workers from clocking in unless they’re within the site perimeter.',
+      'Want to check if a job is running profitably? In a few taps, Atto produces timesheet summaries that can be filtered to show all the work done on a specific job, or by a specific team (e.g. only bricklayers). ',
   },
   {
     title: 'Save hours on payroll admin with automated timesheets',
     icon: '',
     description:
-      'Ensure that only hours worked are accounted for. With Atto, you can set the locations of your job sites and restrict workers from clocking in unless they’re within the site perimeter.',
+      'To save hours of payroll admin, Atto automatically emails timesheet reports to coincide with your payroll period. Not only does this make your payroll more accurate and efficient, but you know you’re only paying for hours that were actually worked.',
   },
   {
     title: 'Tender more accurate and profitable bids for future work',
     icon: '',
     description:
-      'Ensure that only hours worked are accounted for. With Atto, you can set the locations of your job sites and restrict workers from clocking in unless they’re within the site perimeter.',
+      'With all the time tracking data from previous jobs, you can ensure that any bids you submit for similar jobs in the future are both profitable and competitive.',
   },
 ];

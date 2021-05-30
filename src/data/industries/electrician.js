@@ -16,19 +16,19 @@ export const accordionList1 = [
     icon: '',
     title: 'Stop electricians from clocking in until they arrive on-site',
     description:
-      'Customer experiencing a power outage? Unsafe wiring about to give someone spiky hair? When you receive emergency call-outs, you need to be able to respond as quickly as possible. Atto allows you to instantly see which electricians are nearby and available to work – without needing to call around.',
+      'When your electricians serve multiple customers every day, it’s important that they turn up on time. Not only does it create a good impression, but it ensures that only hours worked are actually billed. That’s why Atto allows you to set the locations of your customers’ premises and restrict your electricians from clocking in until they’re on-site.',
   },
   {
     icon: '',
     title: 'Track the locations of your electricians and progress of jobs in real-time',
     description:
-      'Customer experiencing a power outage? Unsafe wiring about to give someone spiky hair? When you receive emergency call-outs, you need to be able to respond as quickly as possible. Atto allows you to instantly see which electricians are nearby and available to work – without needing to call around.',
+      'When your electricians are called to different jobs in different locations throughout the day, it can be hard to keep track of what’s going on. With Atto, you can track the live locations of your entire workforce. Check how long each electrician has been serving each customer. And, get notifications to inform you of their latest work activity. ',
   },
   {
     icon: '',
     title: 'View a map-based timeline of each electricians’ daily movements',
     description:
-      'Customer experiencing a power outage? Unsafe wiring about to give someone spiky hair? When you receive emergency call-outs, you need to be able to respond as quickly as possible. Atto allows you to instantly see which electricians are nearby and available to work – without needing to call around.',
+      'Check how productive your electricians are. Atto generates a map of each electrician’s daily movements, providing a clear timeline of what they were up to while working. Use it to see how long was spent at each call-out, along with the routing they took while on the clock.',
   },
 ];
 
@@ -43,25 +43,25 @@ export const accordionList2 = [
     icon: '',
     title: 'Check if electrical jobs are running to budget with timesheet summaries',
     description:
-      'When you rely on manual timesheets, you can be in for a nasty shock if your payroll costs more than you budgeted. With Atto, you can add your electricians’ pay rates and automatically estimate their pay based on the hours they track. This means at any time you can login and get a real-time estimate of your current wage bill.',
+      'Need to check if a job is running to budget? Want to see how much one team of electricians costs compared to another? In a few taps, Atto can produce timesheet summaries to show all the work done on a specific job, or by a specific team.',
   },
   {
     icon: '',
     title: 'Pull the plug on “guesstimated” time and start invoicing for every minute worked',
     description:
-      'When you rely on manual timesheets, you can be in for a nasty shock if your payroll costs more than you budgeted. With Atto, you can add your electricians’ pay rates and automatically estimate their pay based on the hours they track. This means at any time you can login and get a real-time estimate of your current wage bill.',
+      'When you charge your customers for hourly labor costs, relying on “guesstimated” job time can be costly. Not only can you under/overcharge them, but if an invoice is challenged, it’s hard to verify who’s in the right. With Atto, time records are precise and verified with location data so you can confidently bill customers for every minute spent on the job.',
   },
   {
     icon: '',
     title: 'Cut the admin time taken to run your payroll',
     description:
-      'When you rely on manual timesheets, you can be in for a nasty shock if your payroll costs more than you budgeted. With Atto, you can add your electricians’ pay rates and automatically estimate their pay based on the hours they track. This means at any time you can login and get a real-time estimate of your current wage bill.',
+      'To reduce the time your office staff spends administering payroll, Atto emails you a timesheet report to coincide with your payroll period. Now all they need to do is input the data into your payroll system – saving hours from the process.',
   },
   {
     icon: '',
     title: 'Win valuable contracts with precise cost estimates ',
     description:
-      'When you rely on manual timesheets, you can be in for a nasty shock if your payroll costs more than you budgeted. With Atto, you can add your electricians’ pay rates and automatically estimate their pay based on the hours they track. This means at any time you can login and get a real-time estimate of your current wage bill.',
+      'Some of the most reliable income streams for any electrical business are from commercial contracts and regular safety inspections. But in order to provide quotes that are profitable and beat the competition, you need to accurately forecast your labor costs. Atto helps you check the time your electricians took to complete similar jobs so you can produce more precise quotes and win more business in future',
   },
 ];
 
