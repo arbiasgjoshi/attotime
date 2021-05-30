@@ -2,7 +2,7 @@
   @include flex-direction(column);
 
   .firstRow {
-    @include flex-direction(column);
+    @include flex-direction(column-reverse);
 
     @include min(tablet) {
       flex-direction: row;
@@ -40,7 +40,15 @@
     }
 
     > div {
-      max-width: 26.3rem;
+      @include min(tablet) {
+        max-width: 26.3rem;
+      }
+
+      > div {
+        @include max(tablet) {
+          text-align: center;
+        }
+      }
 
       > div:nth-child(2) {
         h5 {
@@ -48,8 +56,10 @@
         }
 
         p {
-          height: 15rem;
-          @include flex-align(center, center);
+          @include min(tablet) {
+            height: 15rem;
+            @include flex-align(center, center);
+          }
         }
       }
     }
