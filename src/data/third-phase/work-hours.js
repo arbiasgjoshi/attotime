@@ -64,3 +64,21 @@ export const cardList = [
     alt: 'Easy to use',
   },
 ];
+
+export const verticalList = [
+  {
+    title: 'Job Codes',
+    description:
+      'Employees use job codes to track time towards specific purposes, such as for each client or type of job – making it much easier to see how productive they are.',
+  },
+  {
+    title: 'Locations',
+    description:
+      'Track the real-time location of your employees, prevent them from clocking in unless they’re at a job site, and verify that the hours they’re logging are actually being worked.',
+  },
+  {
+    title: 'Wages',
+    description:
+      'Input your employees’ pay rates into Atto, and get real-time estimates of your upcoming payroll based on the hours being tracked.',
+  },
+];

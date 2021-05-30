@@ -13,6 +13,7 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 import IconCardList from '@components/organisms/icon-card-list';
 import TickCardList from '@components/organisms/tick-card-list';
 import AnyDevice from '@components/organisms/any-device';
+import VerticalCheckList from '@components/organisms/vertical-check-list';
 
 import Workhours from '@images/work-hours-image1.svg';
 import Workhours2 from '@images/work-hours-image2.svg';
@@ -39,6 +40,7 @@ import {
   commonQuestionsList,
   featureCardsList,
   cardList,
+  verticalList,
 } from '@data/third-phase/work-hours.js';
 
 // import localeData from '@locale/en';
@@ -79,6 +81,13 @@ const WorkHoursTracker = () => (
       list={featureCardsList}
       styling="moreCards"
     />
+    <Divider />
+    <Title
+      title="Track more than just work hours"
+      description="The Atto work hours tracker can keep track of your employees’ jobs, locations, and even their wages."
+    />
+    <Divider className="style2" />
+    <VerticalCheckList list={verticalList} image={noImage} />
     <Divider />
     <Title
       title="Turn data from the work hours tracker into insightful reports"
