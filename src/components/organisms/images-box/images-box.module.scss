@@ -9,7 +9,7 @@
 
     @include max(mobile) {
       text-align: center;
-      margin-top: 27rem;
+      margin-top: 4rem;
       margin-bottom: 5rem;
     }
 
@@ -45,6 +45,10 @@
       max-width: 40rem;
     }
 
+    @include max(tablet) {
+      display: none;
+    }
+
     @include min(laptop) {
       max-width: 73.6rem;
     }
@@ -56,7 +60,7 @@
     max-width: 73.6rem;
     right: 0;
     top: 51.7rem;
-    @include max(mobile) {
+    @include max(tablet) {
       display: none;
     }
   }
@@ -68,26 +72,11 @@
       width: 37.2rem;
       margin-right: 3.2rem;
     }
-    .imageBox2 {
-      width: 63.2rem;
-      @include flex-direction(row);
-      justify-content: space-between;
-    }
-
-    @include max(mobile) {
-      // column-gap: 1.3rem;
-    }
-
-    @include min(tablet) {
-      // grid-template-columns: repeat(3, 1fr);
-      // column-gap: 3.2rem;
-      // margin-right: 5.4rem;
-    }
 
     .imageBox1 {
       max-height: 88.2rem;
 
-      @include max(mobile) {
+      @include max(tablet) {
         display: none;
         max-height: 35.3rem;
       }
@@ -96,30 +85,38 @@
     .imageBox2 {
       width: 66.4rem;
       position: relative;
+      @include flex-direction(row);
+      justify-content: space-between;
 
-      @include min(tablet) {
-        margin-top: 15.2rem;
+      // @include min(tablet) {
+      //   margin-top: 15.2rem;
+      // }
+
+      @include max(tablet) {
+        display: none;
       }
+
       @include min(laptop) {
         margin-top: 22.2rem;
       }
 
       img:last-child {
-        @include absolute(right 0 top -24.9rem);
+        margin-top: 2rem;
+        @include min(desktop) {
+          margin-top: 0;
+          @include absolute(right 0 top -24.9rem);
+        }
       }
     }
+  }
 
-    .imageBox3 {
-      z-index: 1;
-      margin-top: 4.7rem;
+  .mobileVersion {
+    @include flex-direction(row);
+    align-items: flex-start;
+    justify-content: space-between;
 
-      @include min(tablet) {
-        margin-top: 0.6rem;
-      }
-
-      @include min(laptop) {
-        margin-top: 5.6rem;
-      }
+    img:last-child {
+      margin-top: 4.8rem;
     }
   }
 

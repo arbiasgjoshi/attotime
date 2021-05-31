@@ -59,6 +59,7 @@
   flex-direction: column;
   border: 2px solid #efefef;
   border-radius: 20px;
+  background: #fff;
 
   @include min(tablet) {
     flex-direction: row;

@@ -5,6 +5,9 @@ import * as styles from './images-box.module.scss';
 
 import Shield from '../../../images/verifiedShield.svg';
 
+import mobileImageTwo from '../../../images/mobile-image-one@2x.png';
+import mobileImageOne from '../../../images/mobile-image-two@2x.png';
+
 const ImagesBox = ({
   title = 'Trusted by thousands of construction businesses across 50+ countries',
   image1,
@@ -35,6 +38,10 @@ const ImagesBox = ({
         <img src={image2} alt="Box Item Four" width="350" height="445" />
         <img src={image3} alt="Box Item Five" width="314" height="533" />
       </div>
+    </div>
+    <div className={styles.mobileVersion}>
+      <img src={mobileImageOne} alt="Box Item Four" width="165" />
+      <img src={mobileImageTwo} alt="Box Item Five" width="198" />
     </div>
   </div>
 );
