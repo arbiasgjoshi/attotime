@@ -57,7 +57,7 @@ const Landscaping = () => (
       />
       <Divider className="style4" />
       <ReviewCards />
-      <Divider className="style12" />
+      <Divider className="style13" />
     </div>
     <div className={greenBackground}>
       <div className={topImageMask}>

@@ -54,7 +54,7 @@ const Construction = () => (
       />
       <Divider className="style3" />
       <ReviewCards />
-      <Divider className="style12" />
+      <Divider className="style13" />
     </div>
     <div className={greenBackground}>
       <div className={topImageMask}>

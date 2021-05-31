@@ -66,6 +66,7 @@ const HomeHealthcare = () => (
         description="With real-time activity tracking, you can check if your caregivers are working, on a break, or enjoying some time off."
         maxWidth={920}
         maxDescriptionWidth={800}
+        bodyStyle="secondBodyStyle"
       />
       <Divider className="style3" />
       <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
