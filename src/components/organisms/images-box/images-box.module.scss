@@ -37,6 +37,10 @@
     position: absolute;
     right: 0;
 
+    img:first-child {
+      margin-bottom: 3.2rem;
+    }
+
     @include min(tablet) {
       max-width: 40rem;
     }
@@ -58,17 +62,26 @@
   }
 
   .imagesContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include flex-direction(row);
+
+    .imageBox1 {
+      width: 37.2rem;
+      margin-right: 3.2rem;
+    }
+    .imageBox2 {
+      width: 63.2rem;
+      @include flex-direction(row);
+      justify-content: space-between;
+    }
 
     @include max(mobile) {
-      column-gap: 1.3rem;
+      // column-gap: 1.3rem;
     }
 
     @include min(tablet) {
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 3.2rem;
-      margin-right: 5.4rem;
+      // grid-template-columns: repeat(3, 1fr);
+      // column-gap: 3.2rem;
+      // margin-right: 5.4rem;
     }
 
     .imageBox1 {
@@ -81,11 +94,18 @@
     }
 
     .imageBox2 {
+      width: 66.4rem;
+      position: relative;
+
       @include min(tablet) {
         margin-top: 15.2rem;
       }
       @include min(laptop) {
         margin-top: 22.2rem;
+      }
+
+      img:last-child {
+        @include absolute(right 0 top -24.9rem);
       }
     }
 
