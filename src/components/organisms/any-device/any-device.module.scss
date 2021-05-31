@@ -21,12 +21,22 @@
         p {
           font-size: var(--body-style-one);
           line-height: var(--body-style-one-line-height-size);
+          font-weight: normal;
+
+          @include min(desktop) {
+            margin-right: 9rem;
+          }
         }
       }
     }
 
     .imageContainer {
       max-width: 54rem;
+      margin-bottom: 4rem;
+
+      @include min(tablet) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -42,11 +52,13 @@
     > div {
       @include min(tablet) {
         max-width: 26.3rem;
+        margin-top: 0;
       }
 
       > div {
         @include max(tablet) {
           text-align: center;
+          justify-content: center;
         }
       }
 
@@ -61,6 +73,12 @@
             @include flex-align(center, center);
           }
         }
+      }
+    }
+
+    @include max(tablet) {
+      > div {
+        margin-top: 4rem;
       }
     }
   }

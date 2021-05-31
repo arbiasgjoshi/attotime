@@ -19,6 +19,7 @@ import AnyDevice from '@components/organisms/any-device';
 import IconCardList from '@components/organisms/icon-card-list';
 import CommonQuestions from '@components/organisms/common-questions';
 import Services from '@components/organisms/services';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
@@ -30,11 +31,10 @@ import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
 import icon35 from '@images/time-tracking-clock@1x.png';
 
-import { container } from '@styles/main.module.scss';
+import { FooterLinks } from '@locale/en.js';
+import { container, imageFormWrapper } from '@styles/main.module.scss';
 
 import { learnMoreContainer, buttonContainer } from './time-card-app.module.scss';
-
-import { FooterLinks } from '@locale/en.js';
 
 // import localeData from '@locale/en';
 import {
@@ -74,15 +74,18 @@ const TimeCardApp = () => (
       styling="moreCards"
     />
     <Divider />
-    <Title
-      title="Get insights into your employees work with automated time card reports"
-      description="Your employees’ time card information is automatically turned into real-time reports. Use it to see how your team is spending their time on the clock and reduce the time to administer payroll."
-      maxWidth={920}
-      maxDescriptionWidth={800}
-    />
-    <Divider className="style3" />
-    <ProductOverviewBanner />
-    <Divider className="style2" />
+
+    <div className={imageFormWrapper}>
+      <Title
+        title="Get insights into your employees work with automated time card reports"
+        description="Your employees’ time card information is automatically turned into real-time reports. Use it to see how your team is spending their time on the clock and reduce the time to administer payroll."
+        maxWidth={920}
+        maxDescriptionWidth={800}
+      />
+      <Divider className="style00" />
+      <ProductOverviewBanner />
+      <Divider className="style2" />
+    </div>
     <IconCardList cardList={cardList} style="timeCard" />
     <Divider className="style4" />
     <div className={buttonContainer}>
@@ -108,7 +111,7 @@ const TimeCardApp = () => (
       image={noImage}
     />
     <Divider />
-    <TimeTrackingIndustry />
+    <StaticImage quality={95} src="../../images/time-card-banner@2x.png" alt="Time Card Banner" />
     <Divider className="style2" />
     <Services list={serviceList} />
     <Divider />

@@ -11,6 +11,7 @@
   .logoWrapper {
     margin-bottom: 1.6rem;
     height: 5rem;
+    @include flex-align(center, flex-start);
 
     @include max(tablet) {
       padding: 0 !important;

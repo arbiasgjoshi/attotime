@@ -166,31 +166,31 @@ const HeaderComponent = ({ headerStyle }) => {
         <h6>More Features</h6>
         <ul>
           <li>
-            <Link to="/">
+            <Link to="/mobile-time-tracking">
               <Icon iconClass="arrow-right" />
               Mobile Time Tracking
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/time-clock">
               <Icon iconClass="arrow-right" />
               Time Clock
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/time-card-app">
               <Icon iconClass="arrow-right" />
               Time Card App
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/work-hours-tracker">
               <Icon iconClass="arrow-right" />
               Work Hours Tracker
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/employee-timesheet-app">
               <Icon iconClass="arrow-right" />
               Accurate Reports
             </Link>

@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   display: grid;
-  row-gap: 2rem;
+  row-gap: 3rem;
 
   @include min(tablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -9,7 +9,7 @@
     row-gap: 3rem;
 
     &.gapStyle {
-      row-gap: 8rem;
+      row-gap: 5rem;
     }
   }
 
@@ -19,7 +19,7 @@
     row-gap: 0;
 
     &.gapStyle {
-      row-gap: 10rem;
+      row-gap: 7rem;
     }
 
     &.twoCards {

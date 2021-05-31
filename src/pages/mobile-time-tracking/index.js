@@ -14,13 +14,7 @@ import IconCardList from '@components/organisms/icon-card-list';
 import CommonQuestions from '@components/organisms/common-questions';
 import AnyDevice from '@components/organisms/any-device';
 import Services from '@components/organisms/services';
-
-import {
-  featureCardsList,
-  commonQuestionsList,
-  firstList,
-  serviceList,
-} from '../../data/third-phase/time-tracking-app';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
@@ -32,11 +26,16 @@ import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
 import icon35 from '@images/time-tracking-clock@1x.png';
 
-import { container } from '@styles/main.module.scss';
-import { learnMoreContainer } from './time-tracking-app.module.scss';
-
 import { FooterLinks } from '@locale/en.js';
-import { StaticImage } from 'gatsby-plugin-image';
+
+import { container } from '@styles/main.module.scss';
+import {
+  featureCardsList,
+  commonQuestionsList,
+  firstList,
+  serviceList,
+} from '../../data/third-phase/time-tracking-app';
+import { learnMoreContainer } from './mobile-time-tracking.module.scss';
 
 // import localeData from '@locale/en';
 
@@ -63,13 +62,16 @@ const TimeTrackingApp = () => (
       description="Atto is an easy to use time-tracking solution. There’s absolutely no technical knowledge required."
       maxWidth={920}
       maxDescriptionWidth={800}
+      bodyStyle="secondBodyStyle"
     />
     <Divider className="style2" />
     <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
     <Divider />
+    <Title title="A time tracking app for any industry" maxWidth={500} />
+    <Divider className="style2" />
     <Services list={serviceList} />
     <Divider />
-    <StaticImage quality={90} src="../../images/field_workers.svg" alt="Field Workers" />
+    <StaticImage quality={95} src="../../images/time-tracking-banner@2x.png" alt="Field Workers" />
     <Divider />
     <AnyDevice
       title="Time tracking from any device – offline, online, or on the go"
@@ -79,34 +81,40 @@ const TimeTrackingApp = () => (
     />
     <Divider />
     <Title title="Time tracking from any location, and for any type of worker" maxWidth={800} />
-    <Divider />
+    <Divider className="style3" />
     <Article
       title="Time tracking for mobile workers"
       description="If your employees are on the go, Atto provides everything you need to ensure they’re accurately tracking time. Using GPS technology, you can restrict workers from clocking in until they’re where they should be. Track your employees’ location in real-time. And view map-based timelines of each worker’s daily movements, compiled using their time tracking data."
       image={noImage}
       isSwapped
+      imageHeight="380"
+      imagePadding="6rem 1rem 6rem 4rem"
     />
-    <Divider />
+    <Divider className="style3" />
     <Article
       title="Time tracking for teams of employees working together"
       description="If your employees work in teams, Atto makes time tracking quicker and easier. Instead of relying on workers to track time individually, you can allow managers to clock in and out for them. Alternatively, you can install a Time Clock Kiosk so that all employees can track time with their own PIN from a single device in a central location."
       image={noImage}
     />
-    <Divider />
+    <Divider className="style3" />
     <Article
       title="Time tracking for office workers"
       description="If your employees are office-based, they can track time using the web-based time clock on their desktop device. They get access to the same time tracking features as the app, including; clocking in and out, tracking breaks, categorizing jobs, writing notes, adding time off, and more."
       image={noImage}
       isSwapped
     />
-    <Divider />
+    <Divider className="style3" />
     <Article
       title="Never forget to start tracking time again!"
       description="As soon as an employee enters or leaves a job site, or at their normal start and end time, Atto sends a reminder to clock-in and out. While with work activity alerts, you’ll be alerted when employees start tracking time every day."
       image={noImage}
     />
     <Divider />
-    <StaticImage quality={90} src="../../images/time-tracking-app-image2.svg" alt="Field Workers" />
+    <StaticImage
+      quality={90}
+      src="../../images/time-tracking-banner-image-two@2x.png"
+      alt="time-tracking-for-any-industry"
+    />
     <Divider />
     <CommonQuestions list={commonQuestionsList} />
     <Divider />
@@ -158,6 +166,8 @@ const TimeTrackingApp = () => (
       checkItemOne="No credit card required"
       checkItemTwo="14 day free trial"
       checkItemThree="Cancel anytime"
+      formPadding="10.4rem 8rem"
+      style="pricing"
     />
     <Footer FooterLinks={FooterLinks} />
   </div>

@@ -85,5 +85,12 @@
       letter-spacing: -0.05rem;
       line-height: var(--body-style-one-line-height-size);
     }
+
+    &.secondBodyStyle {
+      font-size: var(--body-style-two);
+      line-height: var(--body-style-two-line-height-size);
+      letter-spacing: var(--body-style-two-letter-spacing);
+      color: #262626;
+    }
   }
 }

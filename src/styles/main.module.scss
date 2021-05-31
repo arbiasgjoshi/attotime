@@ -75,13 +75,13 @@
     order: -1;
   }
 
-  svg {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 2rem;
-  }
-
   @include min(tablet) {
+    svg {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
     svg,
     hr,
     .gatsby-image-wrapper {

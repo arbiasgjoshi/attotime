@@ -2,6 +2,7 @@
   position: relative;
   @include flex-direction(column);
   justify-content: center;
+  align-items: center;
 
   &.homepage {
     > div input {
@@ -11,6 +12,14 @@
 
       &:focus {
         border-color: var(--primary-color);
+      }
+    }
+
+    .checkItems {
+      justify-content: space-between;
+
+      @include max(mobile) {
+        justify-content: space-between;
       }
     }
   }
@@ -40,13 +49,13 @@
   .checkItems {
     @include flex-direction(row);
     margin: 0 2.1rem;
-    justify-content: space-between;
     margin-top: 1.3rem;
 
     @include max(mobile) {
+      width: 100%;
       flex-direction: row;
-      justify-content: space-between;
       margin: 1.3rem 0;
+      justify-content: space-between;
       padding: 0;
     }
 

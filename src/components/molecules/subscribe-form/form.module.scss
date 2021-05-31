@@ -14,6 +14,7 @@
   }
 
   @include max(mobile) {
+    width: 100%;
     > button {
       width: 100% !important;
       margin-top: 2rem;

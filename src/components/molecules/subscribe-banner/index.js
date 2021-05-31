@@ -9,6 +9,7 @@ import { bannerWrapper, textWrapper, hasImage, imgWrap } from './subscribe.modul
 const SubscribeBanner = ({
   title,
   subtitle,
+  formPadding,
   placeholder,
   bannerImage,
   checkItemOne,
@@ -16,7 +17,7 @@ const SubscribeBanner = ({
   checkItemThree,
   style = '',
 }) => (
-  <div className={`${bannerWrapper} ${bannerImage && hasImage}`}>
+  <div className={`${bannerWrapper} ${bannerImage && hasImage}`} style={{ padding: formPadding }}>
     {bannerImage && (
       <div className={imgWrap}>
         <StaticImage
@@ -46,6 +47,7 @@ SubscribeBanner.propTypes = {
   subtitle: PropTypes.string,
   bannerImage: PropTypes.bool,
   placeholder: PropTypes.string,
+  formPadding: PropTypes.string,
   checkItemOne: PropTypes.string,
   checkItemTwo: PropTypes.string,
   checkItemThree: PropTypes.string,

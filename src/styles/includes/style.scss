@@ -349,3 +349,13 @@ i {
     content: $attoicon-arrow-up;
   }
 }
+.attoicon-plus {
+  &:before {
+    content: $attoicon-plus;
+  }
+}
+.attoicon-minus {
+  &:before {
+    content: $attoicon-minus;
+  }
+}

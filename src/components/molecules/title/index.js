@@ -8,6 +8,7 @@ import {
   leftAligned,
   smallTitleStyle,
   notMiddleAligned,
+  secondBodyStyle,
   lighterTitle,
 } from './title.module.scss';
 
@@ -16,33 +17,49 @@ const Title = ({
   title,
   notCentered,
   description,
+  bodyStyle,
   leftAlign = false,
   maxWidth = '',
   marginBottom = '',
   maxDescriptionWidth,
-}) => (
-  <div className={`${container} ${leftAlign && leftAligned} ${notCentered && notMiddleAligned}`}>
-    {smallTitle && <p className={smallTitleStyle}>{smallTitle}</p>}
-    <h2
-      style={{ maxWidth, marginBottom }}
-      className={`${titleWrapper} ${smallTitle && lighterTitle}`}
-    >
-      {title}
-    </h2>
-    <p
-      style={maxDescriptionWidth && { maxWidth: maxDescriptionWidth }}
-      className={descriptionWrapper}
-    >
-      {description}
-    </p>
-  </div>
-);
+}) => {
+  const bodyStyleRendering = (val) => {
+    let classNames = descriptionWrapper;
+
+    if (val === 'secondBodyStyle') {
+      classNames += ` ${secondBodyStyle}`;
+    }
+
+    return classNames;
+  };
+  return (
+    <div className={`${container} ${leftAlign && leftAligned} ${notCentered && notMiddleAligned}`}>
+      {smallTitle && <p className={smallTitleStyle}>{smallTitle}</p>}
+      <h2
+        style={{ maxWidth, marginBottom }}
+        className={`${titleWrapper} ${smallTitle && lighterTitle}`}
+      >
+        {title}
+      </h2>
+      {description && (
+        <p
+          style={maxDescriptionWidth && { maxWidth: maxDescriptionWidth }}
+          className={bodyStyleRendering(bodyStyle)}
+        >
+          {description}
+        </p>
+      )}
+    </div>
+  );
+};
 
 Title.propTypes = {
   smallTitle: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   leftAlign: PropTypes.bool,
+  notCentered: PropTypes.bool,
+  bodyStyle: PropTypes.string,
   maxWidth: PropTypes.string,
   maxDescriptionWidth: PropTypes.string,
   marginBottom: PropTypes.string,

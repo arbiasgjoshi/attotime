@@ -18,9 +18,16 @@
 
     @include max(mobile) {
       text-align: left;
+      margin-bottom: 2rem;
 
       h3 {
         font-weight: 500;
+        text-align: center;
+        padding: 0 6rem;
+      }
+
+      p {
+        display: none;
       }
     }
 

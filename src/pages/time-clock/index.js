@@ -52,7 +52,7 @@ const TimeClock = () => (
       description="With Atto’s time clock, you can track time from any device, from absolutely anywhere."
       styling="other"
     />
-    <Divider />
+    <Divider className="style11" />
     <Story
       img={authorImage}
       paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
@@ -93,7 +93,7 @@ const TimeClock = () => (
       title="An easy way for small businesses to keep track of their employees’s time."
       maxWidth={900}
     />
-    <Divider />
+    <Divider className="style3" />
     <Article
       title="Add notes, track breaks, assign jobs, and more!"
       description="Get more data on what your employees are up to with Atto’s time clock. Employees can add notes and keep a work diary. Track their breaks and categorize them as paid or unpaid. And, use job codes to categorize time tracked towards specific purposes."
