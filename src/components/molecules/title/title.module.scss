@@ -61,6 +61,10 @@
       font-size: 5rem;
     }
 
+    &.smallMargin {
+      margin-bottom: 0.4rem;
+    }
+
     @include max(mobile) {
       text-align: left;
     }

@@ -88,7 +88,7 @@ const TimeClock = () => (
         imagePadding=".9rem 2.5rem .85rem .4rem"
       />
     </div>
-    <Divider className="style2" />
+    <Divider className="style4" />
     <Title
       title="An easy way for small businesses to keep track of their employees’s time."
       maxWidth={900}
@@ -145,7 +145,11 @@ const TimeClock = () => (
     <Divider />
     <CommonQuestions list={commonQuestionsList} />
     <Divider />
-    <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
+    <Title
+      title="It doesn't end here!"
+      smallerMargin
+      description="Learn more about what Atto can do for you"
+    />
     <div className={learnMoreContainer}>
       <LearnMoreCard
         title="GPS Location Tracking"

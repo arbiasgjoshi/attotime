@@ -210,9 +210,9 @@ const TimeTracking = () => {
       />
       <Divider />
       <Title
-        title={`It doesn't end here!`}
+        title="It doesn't end here!"
+        smallerMargin
         description="Learn more about what Atto can do for you"
-        marginBottom="4px"
       />
       <Divider className="style6" />
       <div className={learnMoreContainer}>

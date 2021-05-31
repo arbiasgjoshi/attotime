@@ -121,7 +121,11 @@ const TeamActivity = () => (
       author="Robert Bennet - DPA Cleaning Services, Inc."
     />
     <Divider />
-    <Title title={`It doesn't end here!`} description="Learn more about what Atto can do for you" />
+    <Title
+      title="It doesn't end here!"
+      smallerMargin
+      description="Learn more about what Atto can do for you"
+    />
     <Divider className="style2" />
     <div className={learnMoreContainer}>
       <LearnMoreCard

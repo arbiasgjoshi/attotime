@@ -16,6 +16,7 @@ import TickCardList from '@components/organisms/tick-card-list';
 import CommonQuestions from '@components/organisms/common-questions';
 import LearnMoreCard from '@components/molecules/learn-more-card';
 import Services from '@components/organisms/services';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
@@ -28,17 +29,13 @@ import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
 import icon35 from '@images/time-tracking-clock@1x.png';
 
-import { container } from '@styles/main.module.scss';
-
+import { container, imageFormWrapper } from '@styles/main.module.scss';
 import { FooterLinks } from '@locale/en.js';
 import { oldList, newList } from '@data/industries';
-import { rndContainer, learnMoreContainer } from './employee.module.scss';
-
-// import localeData from '@locale/en';
-
 import { checkList, cardList, commonQuestionsList } from '@data/third-phase/employee-timesheet-app';
-
 import { firstList, serviceList } from '@data/third-phase/time-tracking-app';
+import { rndContainer, learnMoreContainer } from './employee.module.scss';
+import { Field } from 'formik';
 
 const EmployeeTimesheetApp = () => (
   <div className={`${container}`}>
@@ -51,7 +48,7 @@ const EmployeeTimesheetApp = () => (
       image={noImage}
       styling="other"
     />
-    <Divider />
+    <Divider className="style11" />
     <TickCardList list={checkList} />
     <Divider />
     <Title
@@ -60,7 +57,7 @@ const EmployeeTimesheetApp = () => (
       maxDescriptionWidth={800}
       maxWidth={920}
     />
-    <Divider />
+    <Divider className="style91" />
     <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
     <Divider />
     <Story
@@ -75,8 +72,10 @@ const EmployeeTimesheetApp = () => (
       maxDescriptionWidth={800}
       maxWidth={920}
     />
-    <Divider className="style2" />
-    <ProductOverviewBanner />
+    <Divider className="style01" />
+    <div className={imageFormWrapper}>
+      <ProductOverviewBanner />
+    </div>
     <Divider className="style2" />
     <IconCardList cardList={cardList} style="timeCard" />
     <Divider />
@@ -85,14 +84,14 @@ const EmployeeTimesheetApp = () => (
       description="Add your employees’ pay rates, and Atto will estimate your payroll costs based on the hours tracked. What’s more, you can add more than one pay rate per employee so that your estimates remain accurate even if their rate changes."
       image={noImage}
     />
-    <Divider />
+    <Divider className="style3" />
     <Article
       title="See timesheet summaries per employee, team, or job code"
       description="Get insights into how productive each part of your business is. In a few taps, Atto generates timesheet reports that show all the work done by each employee, team, or towards a specific job."
       image={noImage}
       isSwapped
     />
-    <Divider />
+    <Divider className="style3" />
     <Article
       title="View timesheets as a daily map-based timeline"
       description="If your employees work in the field, it can be useful to see how long they spend at each job, and the routes they take throughout their day. Atto uses GPS tracking in conjunction with your employees’ timesheets to provide you a visual timeline of their daily movements."
@@ -137,7 +136,7 @@ const EmployeeTimesheetApp = () => (
         description="Atto integrates with Xero and QuickBooks Online to automatically sync timesheet data to your favorite payroll software."
       />
     </div>
-    <Divider />
+    <Divider className="style4" />
     <FieldWorkers />
     <Divider className="style2" />
     <Services list={serviceList} />
@@ -152,9 +151,13 @@ const EmployeeTimesheetApp = () => (
     <Divider />
     <CommonQuestions isSwapped list={commonQuestionsList} />
     <Divider />
-    <FieldWorkers2 />
+    <StaticImage src="../../../images/employee-timesheet-app@2x.png" quality={96} height="396" />
     <Divider />
-    <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
+    <Title
+      title="It doesn't end here!"
+      smallerMargin
+      description="Learn more about what Atto can do for you"
+    />
     <div className={learnMoreContainer}>
       <LearnMoreCard
         title="Time Tracking"

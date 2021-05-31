@@ -50,7 +50,7 @@ const TimeTrackingApp = () => (
       image={image1}
       styling="other"
     />
-    <Divider />
+    <Divider className="style11" />
     <Story
       img={authorImage}
       paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
@@ -118,7 +118,11 @@ const TimeTrackingApp = () => (
     <Divider />
     <CommonQuestions list={commonQuestionsList} />
     <Divider />
-    <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
+    <Title
+      title="It doesn't end here!"
+      smallerMargin
+      description="Learn more about what Atto can do for you"
+    />
     <div className={learnMoreContainer}>
       <LearnMoreCard
         title="Time Tracking"

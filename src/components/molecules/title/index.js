@@ -9,11 +9,13 @@ import {
   smallTitleStyle,
   notMiddleAligned,
   secondBodyStyle,
+  smallMargin,
   lighterTitle,
 } from './title.module.scss';
 
 const Title = ({
   smallTitle,
+  smallerMargin,
   title,
   notCentered,
   description,
@@ -37,7 +39,7 @@ const Title = ({
       {smallTitle && <p className={smallTitleStyle}>{smallTitle}</p>}
       <h2
         style={{ maxWidth, marginBottom }}
-        className={`${titleWrapper} ${smallTitle && lighterTitle}`}
+        className={`${titleWrapper} ${smallTitle && lighterTitle}  ${smallerMargin && smallMargin}`}
       >
         {title}
       </h2>
@@ -58,6 +60,7 @@ Title.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   leftAlign: PropTypes.bool,
+  smallerMargin: PropTypes.bool,
   notCentered: PropTypes.bool,
   bodyStyle: PropTypes.string,
   maxWidth: PropTypes.string,

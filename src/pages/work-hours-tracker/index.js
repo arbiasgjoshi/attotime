@@ -112,7 +112,11 @@ const WorkHoursTracker = () => (
     <Divider />
     <Workhours2 />
     <Divider />
-    <Title title="It doesn't end here!" description="Learn more about what Atto can do for you" />
+    <Title
+      title="It doesn't end here!"
+      smallerMargin
+      description="Learn more about what Atto can do for you"
+    />
     <div className={learnMoreContainer}>
       <LearnMoreCard
         title="Time Tracking"
