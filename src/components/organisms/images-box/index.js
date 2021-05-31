@@ -5,6 +5,7 @@ import * as styles from './images-box.module.scss';
 
 import Shield from '../../../images/verifiedShield.svg';
 
+import mobileImagePrimary from '../../../images/mobile-image-primary@2x.png';
 import mobileImageTwo from '../../../images/mobile-image-one@2x.png';
 import mobileImageOne from '../../../images/mobile-image-two@2x.png';
 
@@ -18,6 +19,9 @@ const ImagesBox = ({
   styling = '',
 }) => (
   <div className={`${styles.container} ${styles[styling]}`}>
+    <div className={styles.primaryMobile}>
+      <img src={mobileImagePrimary} alt="Primary Mobile Banner" height="217" />
+    </div>
     <div className={styles.textContainer}>
       <div className={styles.iconWrapper}>
         <Shield />
@@ -28,7 +32,6 @@ const ImagesBox = ({
     </div>
     <div className={styles.topImage}>
       <img src={image4} alt="Box Item One" />
-      <img src={image5} alt="Box Item Two" />
     </div>
     <div className={styles.imagesContainer}>
       <div className={styles.imageBox1}>

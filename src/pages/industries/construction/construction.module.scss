@@ -11,7 +11,7 @@
     width: 100%;
     height: 26.6rem;
     background-color: var(--secondary-color);
-    @include absolute(left 0 top 35rem);
+    @include absolute(left 0 top 33rem);
     z-index: -1;
 
     @include min(tablet) {

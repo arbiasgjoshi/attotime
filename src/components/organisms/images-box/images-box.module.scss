@@ -114,9 +114,21 @@
     @include flex-direction(row);
     align-items: flex-start;
     justify-content: space-between;
-
+    display: none;
     img:last-child {
       margin-top: 4.8rem;
+    }
+
+    @include max(tablet) {
+      display: block;
+    }
+  }
+
+  .primaryMobile {
+    display: none;
+
+    @include max(tablet) {
+      display: block;
     }
   }
 
