@@ -128,7 +128,7 @@
     display: none;
 
     @include max(tablet) {
-      display: block;
+      display: flex;
     }
   }
 
