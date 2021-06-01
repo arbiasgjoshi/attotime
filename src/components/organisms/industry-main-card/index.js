@@ -6,7 +6,16 @@ import CheckList from '@components/molecules/check-list';
 
 import * as styles from './industry-main-card.module.scss';
 
-const IndustryMainCard = ({ smallTitle, title, description, list, image, styling }) => (
+const IndustryMainCard = ({
+  smallTitle,
+  title,
+  description,
+  list,
+  image,
+  styling,
+  imageHeight,
+  imageWidth,
+}) => (
   <div className={`${styles.container} ${styles[styling]}`}>
     <div className={styles.firstBox}>
       <p className={styles.smallTitleStyle}>{smallTitle}</p>
@@ -27,8 +36,8 @@ const IndustryMainCard = ({ smallTitle, title, description, list, image, styling
         />
       </div>
     </div>
-    <div className={styles.secondBox}>
-      <img src={image} alt={title} width={500} height={596} />
+    <div className={`${styles.secondBox}`}>
+      <img src={image} alt={title} width={imageWidth || 500} height={imageHeight || 596} />
     </div>
   </div>
 );
@@ -38,6 +47,10 @@ export default IndustryMainCard;
 IndustryMainCard.propTypes = {
   smallTitle: PropTypes.string,
   title: PropTypes.string,
+  description: PropTypes.string,
+  styling: PropTypes.string,
   list: PropTypes.arrayOf({}),
   image: PropTypes.string,
+  imageHeight: PropTypes.string,
+  imageWidth: PropTypes.string,
 };

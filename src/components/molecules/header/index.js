@@ -413,17 +413,13 @@ const HeaderComponent = ({ headerStyle }) => {
             Product
           </Link>
           <Link
-            to="/industries"
+            to="/#"
             activeClassName={activeMenuItem}
             onMouseEnter={() => showMenu('industries')}
           >
             Industries
           </Link>
-          <Link
-            to="/resources"
-            activeClassName={activeMenuItem}
-            onMouseEnter={() => showMenu('resources')}
-          >
+          <Link to="/#" activeClassName={activeMenuItem} onMouseEnter={() => showMenu('resources')}>
             Resources
           </Link>
           <Link to="/pricing" activeClassName={activeMenuItem}>

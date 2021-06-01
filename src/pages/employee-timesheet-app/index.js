@@ -35,6 +35,7 @@ import { oldList, newList } from '@data/industries';
 import { checkList, cardList, commonQuestionsList } from '@data/third-phase/employee-timesheet-app';
 import { firstList, serviceList } from '@data/third-phase/time-tracking-app';
 import { rndContainer, learnMoreContainer } from './employee.module.scss';
+import image1 from '@images/time-clock-mobile@2x.png';
 import { Field } from 'formik';
 
 const EmployeeTimesheetApp = () => (
@@ -45,7 +46,9 @@ const EmployeeTimesheetApp = () => (
       smallTitle="EMPLOYEE TIMESHEET APP"
       title="Streamline your payroll with our simple employee timesheet app"
       description="Get accurate timesheet reports, including regular time, overtime, breaks, time off, and more."
-      image={noImage}
+      image={image1}
+      imageHeight="614"
+      imageWidth="438"
       styling="other"
     />
     <Divider className="style11" />

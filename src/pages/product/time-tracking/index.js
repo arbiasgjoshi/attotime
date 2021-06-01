@@ -16,7 +16,7 @@ import LearnMoreCard from '@components/molecules/learn-more-card';
 import IconCard from '@components/molecules/icon-card';
 import Title from '@components/molecules/title';
 import CheckList from '@components/molecules/check-list';
-import ImageSlider from '@components/molecules/image-slider';
+// import ImageSlider from '@components/molecules/image-slider';
 import IconCardList from '@components/organisms/icon-card-list';
 import FeaturesList from '@components/organisms/features-list';
 import GrowthNumbers from '@components/organisms/growth-numbers';
@@ -52,6 +52,7 @@ import {
   timeTrackingContainer,
   learnMoreContainer,
   workListContainer,
+  workListItem,
   commonProblemsContainer,
   mobileImage,
   desktopImage,
@@ -114,32 +115,59 @@ const TimeTracking = () => {
         description="Time tracking options to suit your business’ needs. In the office, in teams, at a job site, or on the move. Online or offline."
       />
       <Divider className="style7" />
-      <ImageSlider />
+      {/* <ImageSlider /> */}
       <div className={workListContainer}>
-        <FeatureCard
-          isWorkCard
-          title="Work in the office via the Web Dashboard"
-          description="When at the office, track your time using Atto’s web-based time clock."
-          logo={<WebTracking />}
-          alt="Web time tracking"
-          imagePadding=".8rem 2.9rem .797rem .1rem"
-        />
-        <FeatureCard
-          isWorkCard
-          title="Work on the go via the Mobile App"
-          description="Track time on the go with the Atto mobile app available on iOS and Android."
-          logo={<MobileTracking />}
-          alt="Mobile time tracking"
-          imagePadding=".5rem 3.24rem .587rem 0"
-        />
-        <FeatureCard
-          isWorkCard
-          title="Work at job sites via the Time Clock Kiosk"
-          description="Set up a time clock kiosk to enable your team to track time from a single device."
-          logo={<KioskTracking />}
-          alt="Kiosk time tracking"
-          imagePadding=".9rem 2.5rem .85rem .4rem"
-        />
+        <div>
+          <StaticImage
+            alt="Time tracking on the web"
+            height={378}
+            width={380}
+            quality={95}
+            src="../../../images/time-tracking-on-web@2x.png"
+          />
+          <FeatureCard
+            isWorkCard
+            title="Work in the office via the Web Dashboard"
+            description="When at the office, track your time using Atto’s web-based time clock."
+            logo={<WebTracking />}
+            alt="Web time tracking"
+            imagePadding=".8rem 2.9rem .797rem .1rem"
+          />
+        </div>
+        <div className={workListItem}>
+          <StaticImage
+            alt="Time tracking via our mobile app"
+            height={378}
+            width={380}
+            quality={95}
+            src="../../../images/time-tracking-mobile-app@2x.png"
+          />
+          <FeatureCard
+            isWorkCard
+            title="Work on the go via the Mobile App"
+            description="Track time on the go with the Atto mobile app available on iOS and Android."
+            logo={<MobileTracking />}
+            alt="Mobile time tracking"
+            imagePadding=".5rem 3.24rem .587rem 0"
+          />
+        </div>
+        <div className={workListItem}>
+          <StaticImage
+            alt="Time tracking on the time clock kiosk"
+            height={378}
+            width={380}
+            quality={95}
+            src="../../../images/time-clock-kiosk@2x.png"
+          />
+          <FeatureCard
+            isWorkCard
+            title="Work at job sites via the Time Clock Kiosk"
+            description="Set up a time clock kiosk to enable your team to track time from a single device."
+            logo={<KioskTracking />}
+            alt="Kiosk time tracking"
+            imagePadding=".9rem 2.5rem .85rem .4rem"
+          />
+        </div>
       </div>
       <Divider />
       <Title maxWidth={860} title="Lower costs, higher productivity. Less admin, more business." />

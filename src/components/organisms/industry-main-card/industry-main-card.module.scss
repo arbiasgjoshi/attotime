@@ -120,8 +120,18 @@
 
   .secondBox {
     max-width: 50rem;
+    margin-left: auto;
     @include max(tablet) {
       margin: 4rem 0;
+    }
+  }
+
+  .hasHeight {
+    height: unset;
+
+    @include max(tablet) {
+      max-width: 80%;
+      height: auto;
     }
   }
 }

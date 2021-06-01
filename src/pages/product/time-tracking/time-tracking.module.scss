@@ -16,8 +16,12 @@
   }
 
   .workListContainer {
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 5rem auto 0;
+
+    > div {
+      margin-bottom: 3rem;
+    }
 
     @include max(mobile) {
       text-align: center;
@@ -27,17 +31,25 @@
     @include min(tablet) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 8.1rem;
-      margin-left: 2rem;
-      width: calc(100% - 7.8rem);
+      column-gap: 0.3rem;
+      width: 100%;
+
+      > div > div:last-child {
+        margin-left: 2rem;
+        width: 30.3rem;
+      }
     }
 
     @include min(desktop) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      column-gap: 8.1rem;
+      column-gap: 0.3rem;
       margin-left: 2rem;
-      width: calc(100% - 7.8rem);
+      width: 100%;
+
+      > div {
+        margin-bottom: 0;
+      }
     }
   }
 

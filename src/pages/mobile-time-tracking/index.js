@@ -48,6 +48,8 @@ const TimeTrackingApp = () => (
       title="A highly accurate time tracking solution for any company"
       description="Clock in and out, keep notes, track breaks, assign job codes, add time off, and more!"
       image={image1}
+      imageHeight="614"
+      imageWidth="438"
       styling="other"
     />
     <Divider className="style11" />

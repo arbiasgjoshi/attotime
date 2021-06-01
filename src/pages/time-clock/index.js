@@ -12,8 +12,9 @@ import Article from '@components/molecules/article';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import TickCardList from '@components/organisms/tick-card-list';
 import LearnMoreCard from '@components/molecules/learn-more-card';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import noImage from '@images/no-image.png';
+// import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
 import WebTracking from '@images/web-time-tracking.svg';
 import MobileTracking from '@images/mobile_time_tracking.svg';
@@ -25,6 +26,11 @@ import { container } from '@styles/main.module.scss';
 import image1 from '@images/time-clock-mobile@2x.png';
 import image2 from '@images/give-managers-power@2x.png';
 import boxImage1 from '@images/construction-daily-timeline@2x.png';
+import addNotesImage from '@images/add-notes-track breaks-assign job@2x.png';
+import ensureEmployees from '@images/ensure-employees-are-ready@2x.png';
+import getNotifications from '@images/get-handy-notifications-of-time-clock-activity@2x.png';
+import recordPto from '@images/record-paid-time-off@2x.png';
+import seeEmployees from '@images/see-employees@2x.png';
 import boxImage2 from '@images/time-clock-boximage1.png';
 import boxImage3 from '@images/time-clock-boximage2.png';
 import boxImage4 from '@images/time-clock-boximage3.png';
@@ -49,6 +55,8 @@ const TimeClock = () => (
       smallTitle="TIME CLOCK"
       title="A simple time clock app for accurate time tracking"
       image={image1}
+      imageHeight="614"
+      imageWidth="438"
       description="With Atto’s time clock, you can track time from any device, from absolutely anywhere."
       styling="other"
     />
@@ -62,31 +70,62 @@ const TimeClock = () => (
     <TickCardList list={checkList} />
     <Divider className="style4" />
     <Title maxWidth={700} title="Track time from any location, and any device" />
+    <div className={workListContainer}></div>
+
     <div className={workListContainer}>
-      <FeatureCard
-        isWorkCard
-        title="On the Web"
-        description="When at the office, track your time using Atto’s web-based time clock."
-        logo={<WebTracking />}
-        alt="Web time tracking"
-        imagePadding=".8rem 2.9rem .797rem .1rem"
-      />
-      <FeatureCard
-        isWorkCard
-        title="Via our Mobile App"
-        description="Track time on the go with the Atto mobile app available on iOS and Android."
-        logo={<MobileTracking />}
-        alt="Mobile time tracking"
-        imagePadding=".5rem 3.24rem .587rem 0"
-      />
-      <FeatureCard
-        isWorkCard
-        title="Via the Time Clock Kiosk"
-        description="Set up a time clock kiosk to enable your team to track time from a single device."
-        logo={<KioskTracking />}
-        alt="Kiosk time tracking"
-        imagePadding=".9rem 2.5rem .85rem .4rem"
-      />
+      <div>
+        <StaticImage
+          alt="Time tracking on the web"
+          height={378}
+          width={380}
+          quality={95}
+          src="../../../images/time-tracking-on-web@2x.png"
+        />
+        <FeatureCard
+          isWorkCard
+          title="On the Web"
+          description="When at the office, track your time using Atto’s web-based time clock."
+          logo={<WebTracking />}
+          alt="Web time tracking"
+          imagePadding=".8rem 2.9rem .797rem .1rem"
+        />
+      </div>
+      <div>
+        <StaticImage
+          alt="Time tracking via our mobile app"
+          height={378}
+          width={380}
+          quality={95}
+          src="../../../images/time-tracking-mobile-app@2x.png"
+        />
+
+        <FeatureCard
+          isWorkCard
+          title="Via our Mobile App"
+          description="Track time on the go with the Atto mobile app available on iOS and Android."
+          logo={<MobileTracking />}
+          alt="Mobile time tracking"
+          imagePadding=".5rem 3.24rem .587rem 0"
+        />
+      </div>
+      <div>
+        <StaticImage
+          alt="Time tracking on the time clock kiosk"
+          height={378}
+          width={380}
+          quality={95}
+          src="../../../images/time-clock-kiosk@2x.png"
+        />
+
+        <FeatureCard
+          isWorkCard
+          title="Via the Time Clock Kiosk"
+          description="Set up a time clock kiosk to enable your team to track time from a single device."
+          logo={<KioskTracking />}
+          alt="Kiosk time tracking"
+          imagePadding=".9rem 2.5rem .85rem .4rem"
+        />
+      </div>
     </div>
     <Divider className="style4" />
     <Title
@@ -97,7 +136,10 @@ const TimeClock = () => (
     <Article
       title="Add notes, track breaks, assign jobs, and more!"
       description="Get more data on what your employees are up to with Atto’s time clock. Employees can add notes and keep a work diary. Track their breaks and categorize them as paid or unpaid. And, use job codes to categorize time tracked towards specific purposes."
-      image={noImage}
+      image={addNotesImage}
+      imageWidth="498"
+      imageHeight="455"
+      imagePadding="0.8rem 2.6rem 3.7rem"
     />
     <Divider />
     <Article
@@ -110,26 +152,38 @@ const TimeClock = () => (
     <Article
       title="Ensure employees are ready to work before they clock in"
       description="Increase employee accountability and transparency. Set the location of any job site and restrict workers from clocking in unless their GPS shows they’re within the job site’s perimeter."
-      image={noImage}
+      image={ensureEmployees}
+      imageWidth="532"
+      imageHeight="478"
+      imagePadding="1.1rem 0 1.1rem 1.8rem"
     />
     <Divider />
     <Article
       title="Get handy notifications of time clock activity"
       description="Real-time notifications help employees keep better track of their time. As soon as an employee enters or leaves a job site, or at their normal start and end time, we’ll send a reminder to clock-in and out. What’s more, with work activity alerts, you’ll be alerted when employees clock in and out every day."
-      image={noImage}
+      image={getNotifications}
+      imageWidth="380"
+      imageHeight="456"
+      imagePadding="2.2rem 8.5rem"
       isSwapped
     />
     <Divider />
     <Article
       title="Record time off for complete payroll data"
       description="In addition to work hours, employees can record paid or unpaid time off such as sickness and vacations. This means that you can rely on Atto to provide all the data you need to run your payroll error-free."
-      image={noImage}
+      image={recordPto}
+      imageWidth="452"
+      imageHeight="462"
+      imagePadding="1.9rem 4.9rem"
     />
     <Divider />
     <Article
       title="See what your employees have been up to"
       description="See how productive your employees are. At any time, you can check each employee’s real-time location and status. Additionally, Atto generates a map-based timeline to summarize each worker’s daily movements."
-      image={noImage}
+      image={seeEmployees}
+      imageWidth="510"
+      imageHeight="498"
+      imagePadding="0.1rem 2rem"
       isSwapped
     />
     <Divider />
