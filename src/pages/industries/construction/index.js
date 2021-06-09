@@ -103,7 +103,7 @@ const Construction = () => (
     </div>
     <div className={oldVsNewGradient}>
       <div className={`${container} ${noPadding}`}>
-        <Divider className="style5" />
+        <Divider className="style43" />
         <OldVsNew oldList={oldList} newList={newList} />
         <Divider />
       </div>

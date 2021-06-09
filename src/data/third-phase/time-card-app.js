@@ -16,12 +16,17 @@ export const checkList = [
 export const commonQuestionsList = [
   {
     title: 'Can I prevent employees from editing their time card entries?',
-    description: 'Lorem Ipsum',
+    description:
+      'Yes. Manual time card entries can be disabled, or enabled for specific user roles only.',
   },
-  { title: 'Can I setup time card rounding?', description: '' },
+  {
+    title: 'Can I setup time card rounding?',
+    description: `Yes. You can set up time card rounding to automatically round employees' clock in and out times to the nearest rounding increment of 5, 10, 15, 20 or 30 minutes.`,
+  },
   {
     title: 'What happens if an employee forgets to punch out from their time card?',
-    description: '',
+    description:
+      'If a team member fails to clock out at the end of their shift, their times will keep running until they clockout or an Admin or Manager clocks them out. Employees can later edit inaccurate time cards, which are flagged for review.',
   },
 ];
 

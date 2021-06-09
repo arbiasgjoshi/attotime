@@ -33,6 +33,10 @@
     margin: 2rem 0;
   }
 
+  &.style43 {
+    margin: 3rem 0;
+  }
+
   @include min(laptop) {
     margin: 9.9rem 0;
 
@@ -102,6 +106,10 @@
 
     &.style12 {
       margin: 14.9rem 0;
+    }
+
+    &.style43 {
+      margin: 10rem 0 6rem 0;
     }
   }
 }

@@ -15,8 +15,7 @@ export const commonQuestionsList = [
   },
   {
     title: 'How do I track my work hours?',
-    description:
-      'Time tracking is available via the Atto mobile app, via the web, or via the time clock kiosk. To start tracking your work hours on the app:',
+    description: `Time tracking is available via the Atto mobile app, via the web, or via the time clock kiosk. To start tracking your work hours on the app: 1. Open the Atto app. 2. Go to Time Clock. 3. Tap on the green "Clock In" button. 4. Your status will change to "On the Clock" and the timer will start running. 5. When you've finished working, tap on the red "Clock Out" button. While on the clock, you can select job codes, take breaks and add notes to your time entry.`,
   },
   {
     title: 'Can I use Atto’s Time Clock while offline?',
@@ -35,3 +34,5 @@ export const commonQuestionsList = [
     `,
   },
 ];
+
+
