@@ -59,6 +59,7 @@ const EmployeeTimesheetApp = () => (
       description="Atto is an easy to use time-tracking solution that generates accurate, reasy-to-read timesheet reports."
       maxDescriptionWidth={800}
       maxWidth={920}
+      bodyStyle="secondBodyStyle"
     />
     <Divider className="style91" />
     <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
@@ -74,6 +75,7 @@ const EmployeeTimesheetApp = () => (
       description="Your employees’ hours are instantly transformed into timesheet reports. View every hour worked from regular time to overtime. Create reports based on specific employees, teams, or job codes. And download and share them in a few clicks."
       maxDescriptionWidth={800}
       maxWidth={920}
+      bodyStyle="secondBodyStyle"
     />
     <Divider className="style01" />
     <div className={imageFormWrapper}>
@@ -140,7 +142,14 @@ const EmployeeTimesheetApp = () => (
       />
     </div>
     <Divider className="style4" />
-    <FieldWorkers />
+    <StaticImage src="../../images/time-tracking-for-field-workers@2x.png" quality={96} />
+    <Divider className="style11" />
+    <Title
+      title="A time tracking app for any industry"
+      description="Atto helps all types of businesses across the world to manage their employees’ time."
+      maxDescriptionWidth={700}
+      maxWidth={1000}
+    />
     <Divider className="style2" />
     <Services list={serviceList} />
     <Divider />

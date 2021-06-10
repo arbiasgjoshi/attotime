@@ -65,17 +65,20 @@ export const cardList = [
     description: `Atto’s real-time reports include every aspect of time on the job, including; regular time, overtime, time off, break time, and more.`,
     alt: 'See a summary of every hour on the clock',
     icon: SummaryImage,
+    imageWidth: '89',
   },
   {
     title: 'Email a report to coincide with payroll',
     description: `Atto automatically emails you your employees’ time card report based on your payroll period. Alternatively, you can download reports as PDF/CSV files.`,
     alt: 'Email a report to coincide with payroll',
     icon: ScheduledImage,
+    imageWidth: '115',
   },
   {
     title: 'Get alerted about manual time entries',
     description: `If an employee forgets to clock in/out and adds a manual time card entry, it is flagged for you to review and approve.`,
     alt: 'Get alerted about manual time entries',
     icon: ManualEntryImage,
+    imageWidth: '98',
   },
 ];

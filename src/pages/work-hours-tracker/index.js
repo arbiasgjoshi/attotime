@@ -14,10 +14,11 @@ import IconCardList from '@components/organisms/icon-card-list';
 import TickCardList from '@components/organisms/tick-card-list';
 import AnyDevice from '@components/organisms/any-device';
 import VerticalCheckList from '@components/organisms/vertical-check-list';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import Workhours from '@images/work-hours-image1.svg';
-import Workhours2 from '@images/work-hours-image2.svg';
-import noImage from '@images/no-image.png';
+// import Workhours2 from '@images/work-hours-image2.svg';
+// import noImage from '@images/no-image.png';
 
 import image1 from '@images/time-clock-mobile@2x.png';
 import TrackMore from '@images/track-more-than-just-work-hours@2x.png';
@@ -129,11 +130,11 @@ const WorkHoursTracker = () => (
     <Divider className="style2" />
     <Services list={serviceList} />
     <Divider className="style3" />
-    <Workhours />
+    <StaticImage src="../../images/time-tracking-for-any-industry@2x.png" quality={96} />
     <Divider />
     <CommonQuestions isSwapped list={commonQuestionsList} />
     <Divider />
-    <Workhours2 />
+    <StaticImage src="../../images/time-tracking-for-field-workers-three@2x.png" quality={96} />
     <Divider />
     <Title
       title="It doesn't end here!"

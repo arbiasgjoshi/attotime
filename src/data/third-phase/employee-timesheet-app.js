@@ -1,3 +1,7 @@
+import TimesheetsBill from '@images/accurate-timesheet-reports@2x.png';
+import SummaryImage from '@images/summary-of-hours-on-the-clock@2x.png';
+import TransparentManualAlerts from '@images/transparent-manual-entry-alerts@2x.png';
+
 export const checkList = [
   'Customizable Timesheet Reports',
   'Employee, Team, and Job-based Timesheet Summaries',
@@ -9,18 +13,23 @@ export const cardList = [
   {
     title: 'Maintain accurate timesheet records',
     description: `Even if employees leave, Atto keeps a record of their timesheets available to view, helping with your compliance and record-keeping needs.`,
-    alt: 'Maintain accurate',
-    // icon: icon1,
+    alt: 'Maintain accurate timesheet records',
+    icon: TimesheetsBill,
+    imageWidth: '85',
   },
   {
     title: 'View a summary of every hour on the clock',
     description: `Atto’s timesheet reports include every aspect of time on the job, including; regular time, overtime, time off, break time, and more.`,
     alt: 'Easy to use',
+    icon: SummaryImage,
+    imageWidth: '89',
   },
   {
-    title: 'Get alerted about manual time entries',
+    title: 'Get alerted to manual time entries',
     description: `If employees forget to track their time, they can add manual time entries, which are flagged for you to review and approve.`,
-    alt: 'Easy to use',
+    alt: 'Get alerted to manual time entries',
+    icon: TransparentManualAlerts,
+    imageWidth: '98',
   },
 ];
 

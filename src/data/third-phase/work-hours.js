@@ -66,12 +66,14 @@ export const cardList = [
     alt: 'Use your timesheets to bill hourly clients',
     icon: TimesheetsBill,
     breakTitle: true,
+    imageWidth: '85',
   },
   {
     title: 'Timesheets automatically emailed to speed up your payroll process',
     description: `Atto simplifies the payroll process by automatically emailing your employees’ timesheet report to coincide with your payroll period.`,
     alt: 'Timesheets automatically emailed to speed up your payroll process',
     icon: ScheduledImage,
+    imageWidth: '115',
   },
 ];
 

@@ -5,9 +5,11 @@
     @include flex-align(flex-end, center);
     margin: 0 auto;
 
-    > img {
-      max-height: 100%;
-      width: auto;
+    &:not(.adjustedWidth) {
+      > img {
+        max-height: 100%;
+        width: auto;
+      }
     }
 
     @include min(tablet) {
@@ -24,6 +26,13 @@
 
       @include min(desktop) {
         justify-content: flex-start;
+      }
+    }
+
+    &.adjustedWidth {
+      @include flex-align(center, center);
+      img {
+        max-width: unset;
       }
     }
   }
