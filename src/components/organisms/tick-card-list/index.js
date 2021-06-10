@@ -7,7 +7,7 @@ const TickCardList = ({ list }) => (
   <div className={container}>
     {list.map((title) => (
       <div className={item}>
-        <CheckCard title={title} />
+        <CheckCard title={title} style="centerAligned" />
       </div>
     ))}
   </div>

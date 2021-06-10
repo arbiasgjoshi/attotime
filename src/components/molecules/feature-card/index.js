@@ -9,6 +9,7 @@ import {
   logoWrapper,
   textContainer,
   leftAligned,
+  titlePush,
 } from './feature-card.module.scss';
 
 const FeatureCard = ({
@@ -16,6 +17,7 @@ const FeatureCard = ({
   title,
   description,
   isLeftAligned,
+  higherMargin = false,
   imagePadding,
   isWorkCard = false,
   style = '',
@@ -47,7 +49,7 @@ const FeatureCard = ({
               {logo}
             </div>
             <div className={textContainer}>
-              <h5>{title}</h5>
+              <h5 className={higherMargin && titlePush}>{title}</h5>
               <p>{description}</p>
             </div>
           </div>
@@ -63,6 +65,7 @@ FeatureCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   isWorkCard: PropTypes.bool,
+  higherMargin: PropTypes.bool,
   isLeftAligned: PropTypes.bool,
   imagePadding: PropTypes.string,
 };
