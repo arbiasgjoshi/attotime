@@ -1,19 +1,20 @@
-import React from 'react';
-import Collapsible from 'react-collapsible';
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/prop-types */
+import React, { useState } from 'react';
 
 import Icon from '@components/atoms/icon';
 import HeartIcon from '@images/heart-icon@2x.png';
-import './accordionCollapsible.scss';
 
 import {
   container,
+  triggerItemWrap,
   swap,
   firstBox,
   titleContainer,
   secondBox,
   imageWrapper,
-  triggerItemWrap,
   listStyle,
+  bottomBorderNone,
 } from './accordion-article.module.scss';
 
 const AccordionArticle = ({
@@ -26,13 +27,14 @@ const AccordionArticle = ({
   imageHeight,
   boxHeight,
 }) => {
-  const triggerItem = (val) => (
-    <div className={triggerItemWrap}>
-      <img src={HeartIcon} width="40" height="40" alt="Heart" />
-      <h5>{val}</h5>
-      <Icon iconClass="arrow-down" />
-    </div>
-  );
+  const [clicked, setClicked] = useState(false);
+
+  const toggle = (index) => {
+    if (clicked === index) {
+      return setClicked(null);
+    }
+    return setClicked(index);
+  };
 
   return (
     <div className={`${container} ${isSwapped && swap}`}>
@@ -43,10 +45,28 @@ const AccordionArticle = ({
           </div>
         )}
         <div className={listStyle}>
-          {list?.map(({ title, description }) => (
-            <Collapsible trigger={triggerItem(title)} transitionTime={200}>
-              <p>{description}</p>
-            </Collapsible>
+          {list?.map((item, index) => (
+            <>
+              <div
+                className={`${triggerItemWrap} ${clicked === index && bottomBorderNone}`}
+                onClick={() => toggle(index)}
+                onKeyDown={() => toggle(index)}
+                role="button"
+                key={index}
+                tabIndex={index}
+              >
+                <img src={HeartIcon} width="40" height="40" alt="Heart" />
+                <h5>{item.title}</h5>
+                <span>
+                  {clicked === index ? (
+                    <Icon iconClass="arrow-up" />
+                  ) : (
+                    <Icon iconClass="arrow-down" />
+                  )}
+                </span>
+              </div>
+              {clicked === index ? <p>{item.description}</p> : null}
+            </>
           ))}
         </div>
       </div>
