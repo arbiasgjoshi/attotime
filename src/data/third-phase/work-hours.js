@@ -4,6 +4,9 @@ import MobileTracking from '@images/mobile_time_tracking.svg';
 import KioskTracking from '@images/kiosk-time-tracking.svg';
 import CrewTracking from '@images/crew-tracking.svg';
 
+import TimesheetsBill from '@images/accurate-timesheet-reports@2x.png';
+import ScheduledImage from '@images/scheduled-timesheet-report-email@2x.png';
+
 export const checkList = [
   'Mobile, Web, Crew, and Kiosk Work Hours Trackers',
   'Real-time GPS Location Tracking',
@@ -58,15 +61,17 @@ export const featureCardsList = [
 
 export const cardList = [
   {
-    title: 'See a summary of every hour on the clock',
-    description: `Atto’s real-time reports include every aspect of time on the job, including; regular time, overtime, time off, break time, and more.`,
-    alt: 'Easy to use',
-    // icon: icon1,
+    title: `Use your timesheets to bill hourly clients`,
+    description: `Billing customers on an hourly basis? Download and share professional-looking PDF timesheets with them.`,
+    alt: 'Use your timesheets to bill hourly clients',
+    icon: TimesheetsBill,
+    breakTitle: true,
   },
   {
-    title: 'Email a report to coincide with payroll',
-    description: `Atto automatically emails you your employees’ time card report based on your payroll period. Alternatively, you can download reports as PDF/CSV files.`,
-    alt: 'Easy to use',
+    title: 'Timesheets automatically emailed to speed up your payroll process',
+    description: `Atto simplifies the payroll process by automatically emailing your employees’ timesheet report to coincide with your payroll period.`,
+    alt: 'Timesheets automatically emailed to speed up your payroll process',
+    icon: ScheduledImage,
   },
 ];
 

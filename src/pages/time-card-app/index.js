@@ -13,8 +13,7 @@ import LearnMoreCard from '@components/molecules/learn-more-card';
 import TickCardList from '@components/organisms/tick-card-list';
 import Article from '@components/molecules/article';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
-import TimeTrackingIndustry from '@images/time-tracking-industrySVG.svg';
-import TimeTracking from '@images/time-tracking-field-workers.svg';
+// import TimeTracking from '@images/time-tracking-field-workers.svg';
 import AnyDevice from '@components/organisms/any-device';
 import IconCardList from '@components/organisms/icon-card-list';
 import CommonQuestions from '@components/organisms/common-questions';
@@ -25,6 +24,10 @@ import noImage from '@images/no-image.png';
 import authorImage from '@images/construction-minds@2x.png';
 import image1 from '@images/time-clock-mobile@2x.png';
 import image2 from '@images/time-tracking-any-device.png';
+
+import GetWageEstimates from '@images/get-wage-estimates-from-your-employees@2x.png';
+import TimeCardSummaries from '@images/see-time-card-summaries-per-employee-team-or-project@2x.png';
+import ViewTimeCard from '@images/view-time-card-data@2x.png';
 
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
@@ -95,29 +98,44 @@ const TimeCardApp = () => (
     <Article
       title="Get wage estimates from your employees’ time cards"
       description="Keep your company’s finances on track. After adding your employees’ pay rates, Atto automatically estimates your wage bill based on the hours on their time cards. What’s more, you can add more than one pay rate per employee so that your estimates remain accurate even if their rate changes."
-      image={noImage}
+      image={GetWageEstimates}
+      imagePadding="10.4rem 4rem 12.3rem 0.1rem"
     />
     <Divider />
     <Article
       title="See time card summaries per employee, team, or job code"
       description="Get insights into how productive each part of your business is. In a few taps, Atto produces time card summaries to show all the work done by each employee, team, or towards a specific category of job."
-      image={noImage}
+      image={TimeCardSummaries}
       isSwapped
+      imagePadding="1.4rem 2.6rem 3.7rem 3.5rem"
     />
     <Divider />
     <Article
       title="View time card data as a daily map-based timeline"
       description="If your employees work in the field, it can be useful to see how long they spend at each job, and the routes they take throughout their day. Atto uses GPS tracking in conjunction with data from your employees’ time cards to produce visual timelines of their daily movements."
-      image={noImage}
+      image={ViewTimeCard}
+      imagePadding="6rem 1.8rem 6rem"
+      imageHeight="383"
     />
     <Divider />
     <StaticImage quality={95} src="../../images/time-card-banner@2x.png" alt="Time Card Banner" />
+    <Divider className="style2" />
+    <Title
+      title="A time tracking app for any industry"
+      description="Atto helps all types of businesses across the world to manage their employees’ time."
+      maxDescriptionWidth={700}
+      maxWidth={1000}
+    />
     <Divider className="style2" />
     <Services list={serviceList} />
     <Divider />
     <CommonQuestions isSwapped list={commonQuestionsList} />
     <Divider />
-    <TimeTracking />
+    <StaticImage
+      quality={95}
+      src="../../images/time-tracking-for-field-workers-two@2x.png"
+      alt="Time Card Banner"
+    />
     <Divider />
     <Title
       title="It doesn't end here!"

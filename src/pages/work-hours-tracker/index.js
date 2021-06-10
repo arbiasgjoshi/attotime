@@ -18,6 +18,9 @@ import VerticalCheckList from '@components/organisms/vertical-check-list';
 import Workhours from '@images/work-hours-image1.svg';
 import Workhours2 from '@images/work-hours-image2.svg';
 import noImage from '@images/no-image.png';
+
+import image1 from '@images/time-clock-mobile@2x.png';
+import TrackMore from '@images/track-more-than-just-work-hours@2x.png';
 import authorImage from '@images/construction-minds@2x.png';
 import image2 from '@images/time-tracking-any-device.png';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
@@ -29,8 +32,7 @@ import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
 import icon35 from '@images/time-tracking-clock@1x.png';
 
-import { container } from '@styles/main.module.scss';
-import { buttonContainer, learnMoreContainer } from './work-hours-tracker.module.scss';
+import { container, imageFormWrapper } from '@styles/main.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList, serviceList } from '@data/third-phase/time-tracking-app.js';
@@ -42,6 +44,7 @@ import {
   cardList,
   verticalList,
 } from '@data/third-phase/work-hours.js';
+import { buttonContainer, learnMoreContainer } from './work-hours-tracker.module.scss';
 
 // import localeData from '@locale/en';
 
@@ -53,7 +56,7 @@ const WorkHoursTracker = () => (
       smallTitle="WORK HOURS TRACKER"
       title="Keep track of your employees with our work hours tracker"
       description="With time tracking, location tracking, wage estimates, and instantly available timesheet reports."
-      image={noImage}
+      image={image1}
       styling="other"
     />
     <Divider className="style3" />
@@ -64,6 +67,7 @@ const WorkHoursTracker = () => (
       description="Whether your employees are working or enjoying some well-earned rest, you’ll always be aware of their work status."
       maxWidth={920}
       maxDescriptionWidth={800}
+      bodyStyle="secondBodyStyle"
     />
     <Divider className="style3" />
     <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
@@ -85,25 +89,44 @@ const WorkHoursTracker = () => (
     <Title
       title="Track more than just work hours"
       description="The Atto work hours tracker can keep track of your employees’ jobs, locations, and even their wages."
+      maxDescriptionWidth={850}
+      bodyStyle="secondBodyStyle"
     />
     <Divider className="style2" />
-    <VerticalCheckList list={verticalList} image={noImage} />
+    <VerticalCheckList
+      list={verticalList}
+      image={TrackMore}
+      imageAlt="Track more than just work hours"
+      imagePadding="3.1rem 0"
+      imageHeight="594"
+      imageWidth="550"
+    />
     <Divider />
-    <Title
-      title="Turn data from the work hours tracker into insightful reports"
-      description="Data from the work hours tracker is used to produce timesheet reports. Use them to see how productive your workers are, reduce the time to administer your payroll, and share them with clients you bill hourly."
-      maxWidth={920}
-      maxDescriptionWidth={800}
-    />
-    <Divider className="style2" />
-    <ProductOverviewBanner />
-    <Divider className="style2" />
+    <div className={imageFormWrapper}>
+      <Title
+        title="Turn data from the work hours tracker into insightful reports"
+        description="Data from the work hours tracker is used to produce timesheet reports. Use them to see how productive your workers are, reduce the time to administer your payroll, and share them with clients you bill hourly."
+        maxWidth={920}
+        maxDescriptionWidth={800}
+        bodyStyle="secondBodyStyle"
+      />
+      <Divider className="style2" />
+      <ProductOverviewBanner />
+      <Divider className="style2" />
+    </div>
     <IconCardList cardList={cardList} style="twoCards" />
-    <Divider className="style4" />
+    <Divider className="style3" />
     <div className={buttonContainer}>
       <Button btnText="Find out more" />
     </div>
     <Divider className="style4" />
+    <Title
+      title="A time tracking app for any industry"
+      description="Atto helps all types of businesses across the world to manage their employees’ time."
+      maxDescriptionWidth={700}
+      maxWidth={1000}
+    />
+    <Divider className="style2" />
     <Services list={serviceList} />
     <Divider className="style3" />
     <Workhours />

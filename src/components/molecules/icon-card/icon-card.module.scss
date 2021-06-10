@@ -132,7 +132,11 @@
       p {
         font-size: var(--body-style-three);
         font-weight: var(--body-style-three-font-weight);
-        line-height: var(--body-style-line-height);
+        line-height: var(--body-style-three-line-height-size);
+      }
+
+      h4.hasBreakStyle {
+        margin-right: 8.5rem;
       }
     }
   }

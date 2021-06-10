@@ -21,6 +21,11 @@ import authorImage from '@images/construction-minds@2x.png';
 import image1 from '@images/time-clock-mobile@2x.png';
 import image2 from '@images/time-tracking-any-device.png';
 
+import NeverForget from '@images/never-forget-tracking-time-again@2x.png';
+import MobileWorkers from '@images/tt-mobile-workers@2x.png';
+import EmployeesWorkingTogether from '@images/tt-teams-employees-working-together@2x.png';
+import OfficeWorkers from '@images/tt-for-office-workers@2x.png';
+
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
@@ -69,7 +74,12 @@ const TimeTrackingApp = () => (
     <Divider className="style2" />
     <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
     <Divider />
-    <Title title="A time tracking app for any industry" maxWidth={500} />
+    <Title
+      title="A time tracking app for any industry"
+      description="Atto helps all types of businesses across the world to manage their employees’ time."
+      maxDescriptionWidth={700}
+      maxWidth={1000}
+    />
     <Divider className="style2" />
     <Services list={serviceList} />
     <Divider />
@@ -86,30 +96,36 @@ const TimeTrackingApp = () => (
     <Divider className="style3" />
     <Article
       title="Time tracking for mobile workers"
-      description="If your employees are on the go, Atto provides everything you need to ensure they’re accurately tracking time. Using GPS technology, you can restrict workers from clocking in until they’re where they should be. Track your employees’ location in real-time. And view map-based timelines of each worker’s daily movements, compiled using their time tracking data."
-      image={noImage}
+      description="If your employees are on the go, Atto provides everything you need to ensure they’re accurately tracking time. Using GPS technology, you can restrict workers from clocking in until they’re where they should be."
+      secondDescription="Track your employees’ location in real-time. And view map-based timelines of each worker’s daily movements, compiled using their time tracking data."
+      image={MobileWorkers}
       isSwapped
       imageHeight="380"
-      imagePadding="6rem 1rem 6rem 4rem"
+      imagePadding="6rem 1rem 6rem 3rem"
     />
     <Divider className="style3" />
     <Article
       title="Time tracking for teams of employees working together"
-      description="If your employees work in teams, Atto makes time tracking quicker and easier. Instead of relying on workers to track time individually, you can allow managers to clock in and out for them. Alternatively, you can install a Time Clock Kiosk so that all employees can track time with their own PIN from a single device in a central location."
-      image={noImage}
+      description="If your employees work in teams, Atto makes time tracking quicker and easier. Instead of relying on workers to track time individually, you can allow managers to clock in and out for them."
+      secondDescription="Alternatively, you can install a Time Clock Kiosk so that all employees can track time with their own PIN from a single device in a central location."
+      image={EmployeesWorkingTogether}
+      imagePadding="0 5rem 2rem 4rem"
     />
     <Divider className="style3" />
     <Article
       title="Time tracking for office workers"
       description="If your employees are office-based, they can track time using the web-based time clock on their desktop device. They get access to the same time tracking features as the app, including; clocking in and out, tracking breaks, categorizing jobs, writing notes, adding time off, and more."
-      image={noImage}
+      image={OfficeWorkers}
       isSwapped
+      imagePadding="6rem 5.1rem 6rem 2rem"
     />
     <Divider className="style3" />
     <Article
       title="Never forget to start tracking time again!"
       description="As soon as an employee enters or leaves a job site, or at their normal start and end time, Atto sends a reminder to clock-in and out. While with work activity alerts, you’ll be alerted when employees start tracking time every day."
-      image={noImage}
+      image={NeverForget}
+      imageWidth="412"
+      imagePadding="0.8rem 6.5rem"
     />
     <Divider />
     <StaticImage

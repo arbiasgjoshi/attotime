@@ -12,6 +12,7 @@ const IconCard = ({
   noImage = false,
   isRound = false,
   style = '',
+  titleBreak,
   imagePadding = '',
   imageWidth,
   imageHeight,
@@ -26,7 +27,7 @@ const IconCard = ({
       </div>
     )}
     <div className={styles.textWrapper}>
-      <h4>{title}</h4>
+      <h4 className={titleBreak && styles.hasBreakStyle}>{title}</h4>
       <p>{description}</p>
     </div>
   </div>
