@@ -1,6 +1,5 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import Icon from '@components/atoms/icon';
 import HeartIcon from '@images/heart-icon@2x.png';
@@ -27,7 +26,7 @@ const AccordionArticle = ({
   imageHeight,
   boxHeight,
 }) => {
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState(0);
 
   const toggle = (index) => {
     if (clicked === index) {
@@ -77,6 +76,17 @@ const AccordionArticle = ({
       </div>
     </div>
   );
+};
+
+AccordionArticle.propTypes = {
+  title: PropTypes.string,
+  list: PropTypes.shape(),
+  isSwapped: PropTypes.bool,
+  imageHeight: PropTypes.string,
+  imageWidth: PropTypes.string,
+  boxHeight: PropTypes.string,
+  imagePadding: PropTypes.string,
+  image: PropTypes.string,
 };
 
 export default AccordionArticle;
