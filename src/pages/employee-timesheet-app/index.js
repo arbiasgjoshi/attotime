@@ -19,10 +19,18 @@ import Services from '@components/organisms/services';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import noImage from '@images/no-image.png';
+import EstimatesEmployee from '@images/estimates-employees-timesheets@2x.png';
+import TimeCardSummaries from '@images/see-time-card-summaries-per-employee-team-or-project@2x.png';
+import ViewTimeCard from '@images/view-time-card-data@2x.png';
+import StreamlinePayroll from '@images/streamline-payroll-with-simple-employee-timesheet-app@2x.png';
+import TimeTrackingAnyIndustry from '@images/time-tracking-for-any-industry-variant-two@2x.png';
+
+import AutomaticReports from '@images/automatic-email-reports@2x.png';
+import ExportTimesheet from '@images/export-timesheet-and-timesheet-data@2x.png';
+import AccountingIntegrations from '@images/accounting-integrations@2x.png';
+
 import authorImage from '@images/construction-minds@2x.png';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
-import FieldWorkers from '@images/employee-timeline-field-workers.svg';
-import FieldWorkers2 from '@images/employee-timeline-field-workers2.svg';
 
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
@@ -34,9 +42,8 @@ import { FooterLinks } from '@locale/en.js';
 import { oldList, newList } from '@data/industries';
 import { checkList, cardList, commonQuestionsList } from '@data/third-phase/employee-timesheet-app';
 import { firstList, serviceList } from '@data/third-phase/time-tracking-app';
-import { rndContainer, learnMoreContainer } from './employee.module.scss';
 import image1 from '@images/time-clock-mobile@2x.png';
-import { Field } from 'formik';
+import { rndContainer, learnMoreContainer } from './employee.module.scss';
 
 const EmployeeTimesheetApp = () => (
   <div className={`${container}`}>
@@ -87,20 +94,24 @@ const EmployeeTimesheetApp = () => (
     <Article
       title="Get wage estimates from your employees’ timesheets"
       description="Add your employees’ pay rates, and Atto will estimate your payroll costs based on the hours tracked. What’s more, you can add more than one pay rate per employee so that your estimates remain accurate even if their rate changes."
-      image={noImage}
+      image={EstimatesEmployee}
+      imagePadding="10.4rem 4rem 12.3rem 0.1rem"
     />
     <Divider className="style3" />
     <Article
       title="See timesheet summaries per employee, team, or job code"
       description="Get insights into how productive each part of your business is. In a few taps, Atto generates timesheet reports that show all the work done by each employee, team, or towards a specific job."
-      image={noImage}
+      image={TimeCardSummaries}
+      imagePadding="1.4rem 2.6rem 3.7rem 3.5rem"
       isSwapped
     />
     <Divider className="style3" />
     <Article
       title="View timesheets as a daily map-based timeline"
       description="If your employees work in the field, it can be useful to see how long they spend at each job, and the routes they take throughout their day. Atto uses GPS tracking in conjunction with your employees’ timesheets to provide you a visual timeline of their daily movements."
-      image={noImage}
+      image={ViewTimeCard}
+      imagePadding="6rem 1.8rem 6rem"
+      imageHeight="383"
     />
     <Divider />
     <Title
@@ -115,7 +126,7 @@ const EmployeeTimesheetApp = () => (
         isRound
         imageWidth={250}
         imageHeight={250}
-        icon={noImage}
+        icon={AutomaticReports}
         alt="Employees forget"
         title="Automatic email reports"
         description="Atto automatically emails you your employees’ timesheets to coincide with your payroll period. Send it directly to your accountant or input the data into your payroll system."
@@ -123,7 +134,7 @@ const EmployeeTimesheetApp = () => (
       <IconCard
         isRound
         bigImage
-        icon={noImage}
+        icon={ExportTimesheet}
         imageWidth={250}
         imageHeight={250}
         alt="Out of battery"
@@ -135,7 +146,7 @@ const EmployeeTimesheetApp = () => (
         isRound
         imageWidth={250}
         imageHeight={250}
-        icon={noImage}
+        icon={AccountingIntegrations}
         alt="Not sure if employees"
         title="Accounting integrations"
         description="Atto integrates with Xero and QuickBooks Online to automatically sync timesheet data to your favorite payroll software."
@@ -158,12 +169,12 @@ const EmployeeTimesheetApp = () => (
       description="Atto’s employee timesheet app is an easier and more accurate time tracking solution for your business."
       maxDescriptionWidth={800}
     />
-    <Divider />
+    <Divider className="style41" />
     <OldVsNew oldList={oldList} newList={newList} />
     <Divider />
     <CommonQuestions isSwapped list={commonQuestionsList} />
     <Divider />
-    <StaticImage src="../../../images/employee-timesheet-app@2x.png" quality={96} height="396" />
+    <StaticImage src="../../images/employee-timesheet-app@2x.png" quality={96} />
     <Divider />
     <Title
       title="It doesn't end here!"
