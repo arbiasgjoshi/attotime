@@ -69,8 +69,8 @@
 
         p {
           @include min(tablet) {
-            height: 15rem;
-            @include flex-align(center, center);
+            // height: 15rem;
+            // @include flex-align(center, center);
           }
         }
       }

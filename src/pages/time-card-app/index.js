@@ -74,12 +74,12 @@ const TimeCardApp = () => (
       styling="moreCards"
     />
     <Divider />
-
     <div className={imageFormWrapper}>
       <Title
         title="Get insights into your employees work with automated time card reports"
         description="Your employees’ time card information is automatically turned into real-time reports. Use it to see how your team is spending their time on the clock and reduce the time to administer payroll."
         maxWidth={920}
+        bodyStyle="secondBodyStyle"
         maxDescriptionWidth={800}
       />
       <Divider className="style00" />

@@ -4,6 +4,10 @@ import MobileTracking from '@images/mobile_time_tracking.svg';
 import KioskTracking from '@images/kiosk-time-tracking.svg';
 import CrewTracking from '@images/crew-tracking.svg';
 
+import SummaryImage from '@images/summary-of-hours-on-the-clock@2x.png';
+import ScheduledImage from '@images/scheduled-timesheet-report-email@2x.png';
+import ManualEntryImage from '@images/manual-entry-alerts@2x.png';
+
 export const checkList = [
   'Mobile, Web, and Kiosk Time Clock',
   'Time Card Reports',
@@ -59,17 +63,19 @@ export const cardList = [
   {
     title: 'See a summary of every hour on the clock',
     description: `Atto’s real-time reports include every aspect of time on the job, including; regular time, overtime, time off, break time, and more.`,
-    alt: 'Easy to use',
-    // icon: icon1,
+    alt: 'See a summary of every hour on the clock',
+    icon: SummaryImage,
   },
   {
     title: 'Email a report to coincide with payroll',
     description: `Atto automatically emails you your employees’ time card report based on your payroll period. Alternatively, you can download reports as PDF/CSV files.`,
-    alt: 'Easy to use',
+    alt: 'Email a report to coincide with payroll',
+    icon: ScheduledImage,
   },
   {
     title: 'Get alerted about manual time entries',
     description: `If an employee forgets to clock in/out and adds a manual time card entry, it is flagged for you to review and approve.`,
-    alt: 'Easy to use',
+    alt: 'Get alerted about manual time entries',
+    icon: ManualEntryImage,
   },
 ];
