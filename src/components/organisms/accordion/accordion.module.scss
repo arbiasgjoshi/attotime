@@ -1,0 +1,49 @@
+.triggerItemWrap {
+  cursor: pointer;
+  @include flex-direction(row);
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #efefef;
+
+  h5 {
+    letter-spacing: -0.05rem;
+    width: 100%;
+    margin: 0 2rem 0 1rem;
+    transition: ease all 0.25s;
+    &:hover {
+      color: #262626;
+    }
+
+    &.activeClass {
+      color: var(--primary-color);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    @include min(tablet) {
+      margin: 2.3rem 1.5rem 2.3rem 3rem;
+    }
+  }
+
+  > div {
+    margin-right: 2.6rem;
+    i {
+      font-size: 1.6rem;
+      width: 2.4rem;
+      height: 2.4rem;
+      @include flex-align(center, center);
+      transition: ease all 0.15s;
+    }
+  }
+}
+
+.contentWrapper {
+  padding: 0rem 2rem 1rem;
+  transform-origin: top center;
+
+  @include min(tablet) {
+    padding: 0rem 3.2rem 2.2rem 3rem;
+  }
+}
