@@ -79,6 +79,7 @@ const TimeClock = () => (
           width={380}
           quality={95}
           src="../../../images/time-tracking-on-web@2x.png"
+          placeholder="none"
         />
         <FeatureCard
           isWorkCard
@@ -95,6 +96,7 @@ const TimeClock = () => (
           height={378}
           width={380}
           quality={95}
+          placeholder="none"
           src="../../../images/time-tracking-mobile-app@2x.png"
         />
 
@@ -113,6 +115,7 @@ const TimeClock = () => (
           height={378}
           width={380}
           quality={95}
+          placeholder="none"
           src="../../../images/time-clock-kiosk@2x.png"
         />
 

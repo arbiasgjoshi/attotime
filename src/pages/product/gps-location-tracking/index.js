@@ -77,6 +77,7 @@ const LocationTracking = () => (
       width={1140}
       height={340}
       quality={95}
+      placeholder="none"
       className={desktopImage}
     />
     <Divider className="style2" />
@@ -114,6 +115,7 @@ const LocationTracking = () => (
           width={455}
           height={500}
           quality={90}
+          placeholder="none"
           alt="Your privacy,our priority"
         />
       </div>

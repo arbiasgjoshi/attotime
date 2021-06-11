@@ -118,7 +118,12 @@ const TimeCardApp = () => (
       imageHeight="383"
     />
     <Divider />
-    <StaticImage quality={95} src="../../images/time-card-banner@2x.png" alt="Time Card Banner" />
+    <StaticImage
+      quality={95}
+      src="../../images/time-card-banner@2x.png"
+      alt="Time Card Banner"
+      placeholder="none"
+    />
     <Divider className="style2" />
     <Title
       title="A time tracking app for any industry"
@@ -134,6 +139,7 @@ const TimeCardApp = () => (
     <StaticImage
       quality={95}
       src="../../images/time-tracking-for-field-workers-two@2x.png"
+      placeholder="none"
       alt="Time Card Banner"
     />
     <Divider />

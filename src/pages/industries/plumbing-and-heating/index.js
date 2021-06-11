@@ -120,7 +120,7 @@ const PlumbingAndHeating = () => (
       </div>
     </div>
     <div className={`${container} ${noPadding}`}>
-      <StaticImage src="../../../images/paper_timesheets@2x.png" />
+      <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
       <Divider className="style3" />
       <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
       <Divider />

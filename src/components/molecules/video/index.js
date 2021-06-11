@@ -34,6 +34,7 @@ const Video = ({ videoUrl }) => {
             height={489}
             quality={96}
             alt="Video placeholder"
+            placeholder="none"
             src="../../../images/video_placeholder@2x.png"
           />
           <span className={`${videoBackground} ${rightAligned}`} />

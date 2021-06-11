@@ -26,6 +26,7 @@ const SubscribeBanner = ({
           width={1140}
           height={470}
           quality={95}
+          placeholder="none"
         />
       </div>
     )}

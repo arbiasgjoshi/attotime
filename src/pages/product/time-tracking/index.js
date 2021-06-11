@@ -85,6 +85,7 @@ const TimeTracking = () => {
         alt="Home banner image"
         height={505}
         quality={95}
+        placeholder="none"
         className={mobileImage}
       />
       <Divider />
@@ -93,6 +94,7 @@ const TimeTracking = () => {
           alt="Clock In"
           height={502}
           quality={95}
+          placeholder="none"
           src="../../../images/banner-image-2@2x.png"
           className={desktopImage}
         />
@@ -123,6 +125,7 @@ const TimeTracking = () => {
             height={378}
             width={380}
             quality={95}
+            placeholder="none"
             src="../../../images/time-tracking-on-web@2x.png"
           />
           <FeatureCard
@@ -140,6 +143,7 @@ const TimeTracking = () => {
             height={378}
             width={380}
             quality={95}
+            placeholder="none"
             src="../../../images/time-tracking-mobile-app@2x.png"
           />
           <FeatureCard
@@ -157,6 +161,7 @@ const TimeTracking = () => {
             height={378}
             width={380}
             quality={95}
+            placeholder="none"
             src="../../../images/time-clock-kiosk@2x.png"
           />
           <FeatureCard
@@ -178,6 +183,7 @@ const TimeTracking = () => {
         width={1140}
         height={616}
         quality={96}
+        placeholder="none"
       />
       <Divider className="style3" />
       <CheckList list={overviewAdminList} hasDescription cardStyle="big" />

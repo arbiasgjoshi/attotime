@@ -214,6 +214,7 @@ const Pricing = () => {
           width={1140}
           quality={96}
           height={170}
+          placeholder="none"
         />
         <Link to="/all-features">
           <Button btnText="View All Features" btnStyle="big" />
@@ -242,6 +243,7 @@ const Pricing = () => {
         src="../../images/time-tracking-for-field-workers@2x.png"
         width={1140}
         quality={100}
+        placeholder="none"
         height={460}
       />
       <Divider />

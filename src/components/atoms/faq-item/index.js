@@ -13,9 +13,9 @@ const FaqItem = ({ title, paragraph, toggled: defaultToggle }) => {
         <h5>{title}</h5>
         <span onClick={() => setToggled(!toggled)} className={plus}>
           {toggled ? (
-            <StaticImage src="../../../images/minus@2x.png" quality={96} />
+            <StaticImage src="../../../images/minus@2x.png" quality={96} placeholder="none" />
           ) : (
-            <StaticImage src="../../../images/plus-black@2x.png" quality={96} />
+            <StaticImage src="../../../images/plus-black@2x.png" quality={96} placeholder="none" />
           )}
         </span>
       </div>

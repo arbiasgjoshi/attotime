@@ -153,7 +153,11 @@ const EmployeeTimesheetApp = () => (
       />
     </div>
     <Divider className="style4" />
-    <StaticImage src="../../images/time-tracking-for-field-workers@2x.png" quality={96} />
+    <StaticImage
+      src="../../images/time-tracking-for-field-workers@2x.png"
+      quality={96}
+      placeholder="none"
+    />
     <Divider className="style11" />
     <Title
       title="A time tracking app for any industry"
@@ -174,7 +178,7 @@ const EmployeeTimesheetApp = () => (
     <Divider />
     <CommonQuestions isSwapped list={commonQuestionsList} />
     <Divider />
-    <StaticImage src="../../images/employee-timesheet-app@2x.png" quality={96} />
+    <StaticImage src="../../images/employee-timesheet-app@2x.png" quality={96} placeholder="none" />
     <Divider />
     <Title
       title="It doesn't end here!"

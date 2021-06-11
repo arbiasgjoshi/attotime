@@ -130,11 +130,19 @@ const WorkHoursTracker = () => (
     <Divider className="style2" />
     <Services list={serviceList} />
     <Divider className="style3" />
-    <StaticImage src="../../images/time-tracking-for-any-industry@2x.png" quality={96} />
+    <StaticImage
+      src="../../images/time-tracking-for-any-industry@2x.png"
+      quality={96}
+      placeholder="none"
+    />
     <Divider />
     <CommonQuestions isSwapped list={commonQuestionsList} />
     <Divider />
-    <StaticImage src="../../images/time-tracking-for-field-workers-three@2x.png" quality={96} />
+    <StaticImage
+      src="../../images/time-tracking-for-field-workers-three@2x.png"
+      quality={96}
+      placeholder="none"
+    />
     <Divider />
     <Title
       title="It doesn't end here!"

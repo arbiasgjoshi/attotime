@@ -21,7 +21,13 @@ const Footer = ({ FooterLinks }) => (
   <footer className={pageFooter}>
     <div className={footerTop}>
       <div className={leftFooterItems}>
-        <StaticImage src="../../../images/logo@3x.png" alt="footer-logo" quality={100} width={86} />
+        <StaticImage
+          src="../../../images/logo@3x.png"
+          alt="footer-logo"
+          quality={100}
+          width={86}
+          placeholder="none"
+        />
         <p>A highly accurate time tracking solution for any company</p>
 
         <div>

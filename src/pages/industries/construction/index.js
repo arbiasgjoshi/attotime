@@ -58,10 +58,10 @@ const Construction = () => (
     </div>
     <div className={greenBackground}>
       <div className={topImageMask}>
-        <StaticImage src="../../../images/upper_shape.svg" />
+        <StaticImage src="../../../images/upper_shape.svg" placeholder="none" />
       </div>
       <div className={bottomImageMask}>
-        <StaticImage src="../../../images/lower_shape.svg" />
+        <StaticImage src="../../../images/lower_shape.svg" placeholder="none" />
       </div>
       <div className={`${container} ${noPadding}`}>
         <Title
@@ -71,7 +71,7 @@ const Construction = () => (
           maxDescriptionWidth={900}
         />
         <Divider className="style3" />
-        <StaticImage src="../../../images/paper_timesheets@2x.png" />
+        <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
         <Divider className="style3" />
         <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
       </div>
@@ -132,6 +132,7 @@ const Construction = () => (
         quality={90}
         width={1140}
         height={241}
+        placeholder="none"
         style={{ marginBottom: '0.2rem' }}
         src="../../../images/subscribe-banner-image.png"
       />

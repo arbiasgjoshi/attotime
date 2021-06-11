@@ -49,7 +49,13 @@ const BlogTemplate = () => (
       />
     </div>
     <Divider className="style5" />
-    <StaticImage quality={96} width={1140} height={450} src="../../images/browser5.jpeg" />
+    <StaticImage
+      quality={96}
+      width={1140}
+      height={450}
+      src="../../images/browser5.jpeg"
+      placeholder="none"
+    />
     <Divider className="style2" />
     <div className={contentWrapper}>
       <div style={{ display: 'flex', flexDirection: 'column' }}>

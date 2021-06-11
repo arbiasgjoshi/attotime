@@ -22,6 +22,7 @@ const Cover = ({ isSwapped = false }) => (
       width={746}
       height={400}
       quality={96}
+      placeholder="none"
       src="../../../../images/trusted-img@2x.png"
     />
   </div>

@@ -111,6 +111,7 @@ const Home = () => {
           alt="Home banner image"
           height={396}
           quality={95}
+          placeholder="none"
           className={mobileImage}
         />
       </div>
@@ -128,6 +129,7 @@ const Home = () => {
         width={1140}
         height={505}
         quality={95}
+        placeholder="none"
         className={desktopImage}
       />
       <Divider className="style4" />

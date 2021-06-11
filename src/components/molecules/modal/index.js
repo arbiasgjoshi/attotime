@@ -29,21 +29,6 @@ function Example({ showDialog, close }) {
           style="homepage"
         />
       </Dialog>
-
-      {/* The email front is ready but only need to find a way to seperate the logic from triggering a modal */}
-      {/* <Dialog className={confirmEmailContainer} isOpen={showDialog} onDismiss={close}>
-        <div className={iconContainer}>
-          <StaticImage src={'../../../images/green_circle_tick.png'} alt="Green Circle Tick" />
-        </div>
-        <div className={emailTextContainer}>
-          <h4>Confirm your email</h4>
-          <p>
-            A confirmation email has been sent to email@server.com. Click on the confirmation link
-            in the email to activate your account.
-          </p>
-        </div>
-        <Button btnStyle="gray" btnText="Continue" />
-      </Dialog> */}
     </div>
   );
 }

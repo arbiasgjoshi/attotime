@@ -83,7 +83,12 @@ const TimeTrackingApp = () => (
     <Divider className="style2" />
     <Services list={serviceList} />
     <Divider />
-    <StaticImage quality={95} src="../../images/time-tracking-banner@2x.png" alt="Field Workers" />
+    <StaticImage
+      quality={95}
+      src="../../images/time-tracking-banner@2x.png"
+      alt="Field Workers"
+      placeholder="none"
+    />
     <Divider />
     <AnyDevice
       title="Time tracking from any device – offline, online, or on the go"
@@ -131,6 +136,7 @@ const TimeTrackingApp = () => (
     <StaticImage
       quality={90}
       src="../../images/time-tracking-banner-image-two@2x.png"
+      placeholder="none"
       alt="time-tracking-for-any-industry"
     />
     <Divider />
