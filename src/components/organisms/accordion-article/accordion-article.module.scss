@@ -30,8 +30,8 @@
         cursor: pointer;
         @include flex-direction(row);
         align-items: center;
-        width: 100%;
-        border-bottom: 2px solid #efefef;
+        // width: 100%;
+        // border-bottom: 2px solid #efefef;
 
         h5 {
           letter-spacing: -0.05rem;
@@ -40,11 +40,18 @@
           margin: 0 2rem 0 1rem;
 
           @include min(tablet) {
-            margin: 2.3rem 2rem 2.3rem 1.8rem;
+            margin: 2.3rem 2rem 1rem 1.8rem;
           }
 
           &:hover {
             color: #262626;
+          }
+        }
+
+        img,
+        span {
+          @include min(tablet) {
+            margin-top: 2rem;
           }
         }
 
@@ -58,15 +65,22 @@
         }
       }
 
-      .bottomBorderNone {
-        border-bottom: 0 !important;
+      .triggerItemWrapText {
+        border-bottom: 2px solid #efefef;
+        transition: 0.5s ease-in-out;
+      }
+
+      .opened {
+        max-height: 400px;
       }
 
       p {
-        margin: 2rem 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
 
         @include min(tablet) {
-          margin: 0 7.2rem 3.2rem 5.8rem;
+          margin: 0 7.2rem 2rem 5.8rem;
         }
       }
     }
