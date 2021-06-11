@@ -65,11 +65,8 @@ const AccordionArticle = ({
                   )}
                 </span>
               </div>
-              <div
-                className={triggerItemWrapText}
-                // style={{ height: clicked === index ? '100%' : '0' }}
-              >
-                <p className={clicked === index && opened}>{item.description}</p>
+              <div className={`${triggerItemWrapText} ${clicked === index && opened}`}>
+                <p>{item.description}</p>
               </div>
             </>
           ))}

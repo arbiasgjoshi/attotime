@@ -67,18 +67,16 @@
 
       .triggerItemWrapText {
         border-bottom: 2px solid #efefef;
-        transition: 0.5s ease-in-out;
-      }
+        transition: 0.15s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
 
-      .opened {
-        max-height: 400px;
+        &.opened {
+          max-height: unset;
+        }
       }
 
       p {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s ease-in-out;
-
         @include min(tablet) {
           margin: 0 7.2rem 2rem 5.8rem;
         }
