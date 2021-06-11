@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import { Gatsby, StaticImage } from 'gatsby-plugin-image';
 
 import Divider from '@components/atoms/divider';
 import SEO from '@components/molecules/seo';
