@@ -12,6 +12,7 @@ import {
   imageContainer,
   firstBox,
   secondBox,
+  contentWrapper,
   closed,
   opened,
   swap,
@@ -41,7 +42,7 @@ const CommonQuestions = ({ title = 'Common Questions', list, isSwapped }) => {
       <div className={secondBox}>
         {list?.map(({ title, description }) => (
           <Collapsible trigger={triggerItem(title)} transitionTime={200}>
-            {description}
+            <div className={contentWrapper}>{description}</div>
           </Collapsible>
         ))}
       </div>
