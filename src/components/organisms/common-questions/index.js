@@ -3,7 +3,7 @@ import Collapsible from 'react-collapsible';
 
 import Icon from '@components/atoms/icon';
 
-import Shield from '../../../images/verifiedShield.svg';
+import CommonQuestionsIcon from '../../../images/common-questions-icon.svg';
 import './commonCollapsible.scss';
 
 import {
@@ -34,7 +34,7 @@ const CommonQuestions = ({ title = 'Common Questions', list, isSwapped }) => {
     <div className={`${container} ${isSwapped && swap}`}>
       <div className={firstBox}>
         <div className={imageContainer}>
-          <Shield />
+          <CommonQuestionsIcon />
         </div>
         <h2>{title}</h2>
       </div>
