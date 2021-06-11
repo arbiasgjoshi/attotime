@@ -401,7 +401,12 @@ const HeaderComponent = ({ headerStyle }) => {
       <div className={container}>
         <div className={leftNav}>
           <Link to="/">
-            <StaticImage src="../../../images/logo@3x.png" quality={100} width={86} />
+            <StaticImage
+              src="../../../images/logo@3x.png"
+              placeholder="none"
+              quality={100}
+              width={86}
+            />
           </Link>
         </div>
         <div className={menuLinks} onMouseEnter={() => setAbove(true)}>

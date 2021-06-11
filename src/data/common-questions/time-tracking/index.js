@@ -1,12 +1,12 @@
 import React from 'react';
 
-export const firstQuestion = () => (
+export const FirstQuestion = () => (
   <p>
     Atto will continue tracking time even when you’re offline. Once the device reconnects to the
     internet, time tracking records will be updated and synchronized.
   </p>
 );
-export const secondQuestion = () => (
+export const SecondQuestion = () => (
   <>
     <p>
       You can allow workers or managers to add manual time entries. All manual time entries are
@@ -14,13 +14,13 @@ export const secondQuestion = () => (
     </p>
   </>
 );
-export const thirdQuestion = () => (
+export const ThirdQuestion = () => (
   <p>
     No, GPS location tracking is an optional feature that can be disabled for all or some of your
     employees.
   </p>
 );
-export const fourthQuestion = () => (
+export const FourthQuestion = () => (
   <p>
     Atto’s time tracking options (via the app, online, and on the kiosk) can be used together. In
     other words, your office-based workers can use the web-based time clock, while mobile workers

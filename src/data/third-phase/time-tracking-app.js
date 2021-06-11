@@ -20,6 +20,13 @@ import icon4 from '@images/manage-overtime.png';
 import icon5 from '@images/switch-between-jobs.png';
 import icon6 from '@images/add-time-off.png';
 
+import {
+  FirstQuestion,
+  SecondQuestion,
+  ThirdQuestion,
+  FourthQuestion,
+} from '@data/common-questions/time-tracking';
+
 export const featureCardsList = [
   {
     title: 'Via our Mobile App',
@@ -42,21 +49,19 @@ export const featureCardsList = [
 export const commonQuestionsList = [
   {
     title: 'What happens if a worker loses their connection while time tracking?',
-    description: `Atto will continue tracking time even when you're offline. Once the device reconnects to the internet, time tracking records will be updated and synchronized.`,
+    description: <FirstQuestion />,
   },
   {
     title: 'What if a worker forgets to track time?',
-    description:
-      'You can allow workers or managers to add manual time entries. All manual time entries are flagged and available for review.',
+    description: <SecondQuestion />,
   },
   {
     title: 'Is GPS time tracking required?',
-    description:
-      'No, GPS location tracking is an optional feature that can be disabled for all or some of your employees.',
+    description: <ThirdQuestion />,
   },
   {
     title: 'What happens if I have office-based workers, and mobile workers?',
-    description: `Atto's time tracking options (via the app, online, and on the kiosk) can be used together. In other words, your office-based workers can use the web-based time clock, while mobile workers can use the mobile app.`,
+    description: <FourthQuestion />,
   },
 ];
 
