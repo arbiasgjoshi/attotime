@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Collapsible from 'react-collapsible';
 import PropTypes from 'prop-types';
 
 import Title from '@components/molecules/title';
 import Icon from '@components/atoms/icon';
 import Divider from '@components/atoms/divider';
-import { Tabbordion, TabPanel, TabLabel, TabContent } from 'react-tabbordion';
+// import { Tabbordion, TabPanel, TabLabel, TabContent } from 'react-tabbordion';
 
 // import '@components/organisms/accordion-article/accordionCollapsible.scss';
 // import Collapsible from 'react-collapsible';
@@ -30,8 +31,9 @@ const Faq = ({ list }) => {
         </Tabbordion> */}
         {list.map(({ title, paragraph }, index) => (
           <>
-            {triggerItem(title)}
-            <p>{paragraph}</p>
+            <Collapsible trigger={triggerItem(title)} transitionTime={200}>
+              <p>{paragraph}</p>
+            </Collapsible>
           </>
         ))}
       </div>

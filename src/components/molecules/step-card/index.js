@@ -21,4 +21,7 @@ Step.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
+  imageWidth: PropTypes.string,
+  imageHeight: PropTypes.string,
+  imagePadding: PropTypes.string,
 };

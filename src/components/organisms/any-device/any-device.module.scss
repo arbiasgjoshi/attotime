@@ -70,7 +70,7 @@
         p {
           @include min(tablet) {
             height: 15rem;
-            @include flex-align(center, center);
+            // @include flex-align(center, center);
           }
         }
       }

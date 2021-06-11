@@ -135,6 +135,10 @@
   &.workHoursTracker {
     margin-bottom: 2.8rem;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     .iconWrapper {
       margin-right: 1.8rem;
     }

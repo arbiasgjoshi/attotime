@@ -11,6 +11,7 @@ const IconCardList = ({ cardList, noImage, hasBigImages = false, style = '' }) =
       <IconCard
         key={index}
         title={card.title}
+        titleBreak={card.breakTitle}
         description={card.description}
         alt={card.alt}
         icon={card.icon}

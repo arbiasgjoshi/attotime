@@ -26,6 +26,11 @@
       grid-template-columns: repeat(2, 1fr);
       margin: 0 6rem;
       column-gap: 12rem;
+      width: unset;
+
+      div:last-child {
+        width: unset;
+      }
     }
   }
 

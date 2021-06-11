@@ -5,9 +5,11 @@
     @include flex-align(flex-end, center);
     margin: 0 auto;
 
-    > img {
-      max-height: 100%;
-      width: auto;
+    &:not(.adjustedWidth) {
+      > img {
+        max-height: 100%;
+        width: auto;
+      }
     }
 
     @include min(tablet) {
@@ -24,6 +26,13 @@
 
       @include min(desktop) {
         justify-content: flex-start;
+      }
+    }
+
+    &.adjustedWidth {
+      @include flex-align(center, center);
+      img {
+        max-width: unset;
       }
     }
   }
@@ -132,7 +141,11 @@
       p {
         font-size: var(--body-style-three);
         font-weight: var(--body-style-three-font-weight);
-        line-height: var(--body-style-line-height);
+        line-height: var(--body-style-three-line-height-size);
+      }
+
+      h4.hasBreakStyle {
+        margin-right: 8.5rem;
       }
     }
   }

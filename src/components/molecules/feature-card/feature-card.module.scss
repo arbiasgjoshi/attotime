@@ -24,6 +24,11 @@
       font-weight: var(--semi-bold);
       margin-bottom: 1.6rem;
 
+      &.titlePush {
+        margin-bottom: 1.7rem;
+        margin-right: 0;
+      }
+
       @include min(tablet) {
         margin-right: 4rem;
       }

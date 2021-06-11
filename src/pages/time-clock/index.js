@@ -70,8 +70,7 @@ const TimeClock = () => (
     <TickCardList list={checkList} />
     <Divider className="style4" />
     <Title maxWidth={700} title="Track time from any location, and any device" />
-    <div className={workListContainer}></div>
-
+    <Divider className="style010" />
     <div className={workListContainer}>
       <div>
         <StaticImage
