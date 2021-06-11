@@ -8,6 +8,12 @@ import SummaryImage from '@images/summary-of-hours-on-the-clock@2x.png';
 import ScheduledImage from '@images/scheduled-timesheet-report-email@2x.png';
 import ManualEntryImage from '@images/manual-entry-alerts@2x.png';
 
+import {
+  FirstQuestion,
+  SecondQuestion,
+  ThirdQuestion,
+} from '@data/common-questions/time-card-questions';
+
 export const checkList = [
   'Mobile, Web, and Kiosk Time Clock',
   'Time Card Reports',
@@ -20,17 +26,15 @@ export const checkList = [
 export const commonQuestionsList = [
   {
     title: 'Can I prevent employees from editing their time card entries?',
-    description:
-      'Yes. Manual time card entries can be disabled, or enabled for specific user roles only.',
+    description: <FirstQuestion />,
   },
   {
     title: 'Can I setup time card rounding?',
-    description: `Yes. You can set up time card rounding to automatically round employees' clock in and out times to the nearest rounding increment of 5, 10, 15, 20 or 30 minutes.`,
+    description: <SecondQuestion />,
   },
   {
     title: 'What happens if an employee forgets to punch out from their time card?',
-    description:
-      'If a team member fails to clock out at the end of their shift, their times will keep running until they clockout or an Admin or Manager clocks them out. Employees can later edit inaccurate time cards, which are flagged for review.',
+    description: <ThirdQuestion />,
   },
 ];
 

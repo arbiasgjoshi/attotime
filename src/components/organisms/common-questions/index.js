@@ -41,7 +41,7 @@ const CommonQuestions = ({ title = 'Common Questions', list, isSwapped }) => {
       <div className={secondBox}>
         {list?.map(({ title, description }) => (
           <Collapsible trigger={triggerItem(title)} transitionTime={200}>
-            <p>{description}</p>
+            {description}
           </Collapsible>
         ))}
       </div>
