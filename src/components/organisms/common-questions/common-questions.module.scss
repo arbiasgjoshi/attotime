@@ -58,6 +58,13 @@
       }
     }
 
+    ul li {
+      font-size: var(--body-style-three);
+      font-weight: var(--body-style-three-font-weight);
+      line-height: var(--body-style-three-line-height-size);
+      letter-spacing: var(--body-style-three-letter-spacing);
+    }
+
     p {
       margin: 2rem 1rem;
 

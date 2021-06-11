@@ -1,12 +1,12 @@
 import React from 'react';
 
-export const firstQuestion = () => (
+export const FirstQuestion = () => (
   <p>
     Atto can help businesses of any size keep track of time, from individual tradesmen and
     solo-freelancers, all the way to large enterprises.
   </p>
 );
-export const secondQuestion = () => (
+export const SecondQuestion = () => (
   <>
     <p>
       Time tracking is available via the Atto mobile app, via the web, or via the time clock kiosk.
@@ -24,7 +24,7 @@ export const secondQuestion = () => (
     </p>
   </>
 );
-export const thirdQuestion = () => (
+export const ThirdQuestion = () => (
   <p>
     Yes. You can track time with Atto’s work hours tracker even if you don’t have an active internet
     connection. When you’re offline, a red banner that says “No Internet Connection” will appear at
@@ -33,7 +33,7 @@ export const thirdQuestion = () => (
     offline will be synchronized online.
   </p>
 );
-export const fourthQuestion = () => (
+export const FourthQuestion = () => (
   <p>
     As soon as an employee enters or leaves a job site, or at their normal start and end time, Atto
     can send a reminder to clock-in and out. And if employees forget to track their time, they can

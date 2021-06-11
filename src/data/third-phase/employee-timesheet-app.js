@@ -1,6 +1,15 @@
+import React from 'react';
+
 import TimesheetsBill from '@images/accurate-timesheet-reports@2x.png';
 import SummaryImage from '@images/summary-of-hours-on-the-clock@2x.png';
 import TransparentManualAlerts from '@images/transparent-manual-entry-alerts@2x.png';
+
+import {
+  FirstQuestion,
+  SecondQuestion,
+  ThirdQuestion,
+  FourthQuestion,
+} from '@data/common-questions/timesheets';
 
 export const checkList = [
   'Customizable Timesheet Reports',
@@ -36,21 +45,18 @@ export const cardList = [
 export const commonQuestionsList = [
   {
     title: 'Why is Atto the best timesheet app?',
-    description: `Compared with other app-based solutions, Atto focuses on ease of use and simplicity. We pride ourselves on having built a timesheet solution that is modern, intuitive, and automated. While Atto can be used by freelancers and 'one-man-bands', we mainly help small-medium sized companies with their time tracking needs.`,
+    description: <FirstQuestion />,
   },
   {
     title: 'Can I export timesheet data from Atto?',
-    description:
-      'Yes. Timesheet reports can be downloaded and exported in either PDF or CSV file formats.',
+    description: <SecondQuestion />,
   },
   {
     title: 'What are mobile timesheets?',
-    description:
-      'The difference between a mobile timesheet and a regular timesheet is that a mobile timesheet can be viewed on a mobile device. With Atto, you can view timesheets on any device - mobile, tablet, or desktop.',
+    description: <ThirdQuestion />,
   },
   {
     title: 'Is Atto a free timesheet app?',
-    description:
-      'Atto includes a 14-day trial so you can try it out for free. After your trial ends, you have the option of upgrading to a paid plan to continue using Atto',
+    description: <FourthQuestion />,
   },
 ];

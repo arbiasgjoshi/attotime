@@ -29,6 +29,7 @@ import HelpCenterLogo from '@images/help-center-logo.svg';
 import BlogLogo from '@images/blog-menu-logo.svg';
 import ContactLogo from '@images/contact-menu-logo.svg';
 import Collapsible from 'react-collapsible';
+import HeaderLogo from '@images/logo@3x.png';
 
 import {
   headerWrapper,
@@ -401,7 +402,7 @@ const HeaderComponent = ({ headerStyle }) => {
       <div className={container}>
         <div className={leftNav}>
           <Link to="/">
-            <img src="@images/logo@3x.png" alt="Header Logo" width={86} />
+            <img src={HeaderLogo} alt="Header Logo" width="87" height="30" />
           </Link>
         </div>
         <div className={menuLinks} onMouseEnter={() => setAbove(true)}>

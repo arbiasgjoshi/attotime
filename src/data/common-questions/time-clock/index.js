@@ -1,12 +1,12 @@
 import React from 'react';
 
-export const firstQuestion = () => (
+export const FirstQuestion = () => (
   <p>
     A time clock is a device that is specifically used to track when an employee clocks in and out
     of work.
   </p>
 );
-export const secondQuestion = () => (
+export const SecondQuestion = () => (
   <>
     <p>
       Time tracking is available via the Atto mobile app, via the web, or via the time clock kiosk.
@@ -24,7 +24,7 @@ export const secondQuestion = () => (
     </p>
   </>
 );
-export const thirdQuestion = () => (
+export const ThirdQuestion = () => (
   <p>
     Yes. You can track time with Atto’s time clock even if you don’t have an internet connection in
     your device. When you’re offline, a red banner that says “No Internet Connection” will appear at
@@ -33,7 +33,7 @@ export const thirdQuestion = () => (
     offline will be synchronized online.
   </p>
 );
-export const fourthQuestion = () => (
+export const FourthQuestion = () => (
   <>
     <p>There are many benefits to consider, including:</p>
     <ul>

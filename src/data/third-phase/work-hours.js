@@ -7,6 +7,13 @@ import CrewTracking from '@images/crew-tracking.svg';
 import TimesheetsBill from '@images/accurate-timesheet-reports@2x.png';
 import ScheduledImage from '@images/scheduled-timesheet-report-email@2x.png';
 
+import {
+  FirstQuestion,
+  SecondQuestion,
+  ThirdQuestion,
+  FourthQuestion,
+} from '@data/common-questions/work-hours-trackers';
+
 export const checkList = [
   'Mobile, Web, Crew, and Kiosk Work Hours Trackers',
   'Real-time GPS Location Tracking',
@@ -17,21 +24,19 @@ export const checkList = [
 export const commonQuestionsList = [
   {
     title: 'Who is the Atto work hours tracker built for?',
-    description:
-      'Atto can help businesses of any size keep track of time, from individual tradesmen and solo-freelancers, all the way to large enterprises.',
+    description: <FirstQuestion />,
   },
   {
     title: 'How do I use the work hours tracker?',
-    description: `Time tracking is available via the Atto mobile app, via the web, or via the time clock kiosk. To start tracking your work hours on the app: 1. Open the Atto app. 2. Go to Time Clock. 3. Tap on the green "Clock In" button. 4. Your status will change to "On the Clock" and the timer will start running. 5. When you've finished working, tap on the red "Clock Out" button. While on the clock, you can select job codes, take breaks and add notes to your time entry.`,
+    description: <SecondQuestion />,
   },
   {
     title: 'Can I use the work hours tracker while offline?',
-    description: `Yes. You can track time with Atto's work hours tracker even if you don't have an active internet connection. When you're offline, a red banner that says "No Internet Connection" will appear at the top of your device's screen. While offline, you can clock in & out, add/change jobs, start a break, and add notes. Once your device reconnects to the internet, all account activity while offline will be synchronized online.`,
+    description: <ThirdQuestion />,
   },
   {
     title: 'What if my employees forget to clock in/out of the work hours tracker?',
-    description:
-      'As soon as an employee enters or leaves a job site, or at their normal start and end time, Atto can send a reminder to clock-in and out. If employees forget to track their time, they can add manual time card entries, which are flagged for review.',
+    description: <FourthQuestion />,
   },
 ];
 
