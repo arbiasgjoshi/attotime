@@ -7,13 +7,13 @@ import HeartIcon from '@images/heart-icon@2x.png';
 import {
   container,
   triggerItemWrap,
+  triggerItemWrapText,
   swap,
   firstBox,
   titleContainer,
   secondBox,
   imageWrapper,
   listStyle,
-  bottomBorderNone,
   opened,
 } from './accordion-article.module.scss';
 
@@ -48,7 +48,7 @@ const AccordionArticle = ({
           {list?.map((item, index) => (
             <>
               <div
-                className={`${triggerItemWrap} ${clicked === index && bottomBorderNone}`}
+                className={triggerItemWrap}
                 onClick={() => toggle(index)}
                 onKeyDown={() => toggle(index)}
                 role="button"
@@ -65,7 +65,12 @@ const AccordionArticle = ({
                   )}
                 </span>
               </div>
-              <p className={clicked === index && opened}>{item.description}</p>
+              <div
+                className={triggerItemWrapText}
+                // style={{ height: clicked === index ? '100%' : '0' }}
+              >
+                <p className={clicked === index && opened}>{item.description}</p>
+              </div>
             </>
           ))}
         </div>
