@@ -62,11 +62,18 @@
         border-bottom: 0 !important;
       }
 
+      .opened {
+        max-height: 400px;
+      }
+
       p {
-        margin: 2rem 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 400ms ease;
+        // margin: 2rem 1rem;
 
         @include min(tablet) {
-          margin: 0 7.2rem 3.2rem 5.8rem;
+          margin: 0 7.2rem 0rem 5.8rem;
         }
       }
     }

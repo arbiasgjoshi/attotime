@@ -15,6 +15,7 @@ import {
   imageWrapper,
   listStyle,
   bottomBorderNone,
+  opened,
 } from './accordion-article.module.scss';
 
 const AccordionArticle = ({
@@ -65,7 +66,7 @@ const AccordionArticle = ({
                   )}
                 </span>
               </div>
-              {clicked === index ? <p>{item.description}</p> : null}
+              <p className={clicked === index && opened}>{item.description}</p>
             </>
           ))}
         </div>
