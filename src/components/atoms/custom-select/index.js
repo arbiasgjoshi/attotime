@@ -4,7 +4,6 @@ import { useIntl, changeLocale } from 'gatsby-plugin-intl';
 import ArrowDown from '@images/arrow-down.svg';
 import {
   selectDropdown,
-  invertedArrow,
   selectedItem,
   optionsDropdown,
   activeItem,
@@ -68,7 +67,7 @@ const CustomSelect = () => {
     >
       <div className={selectedItem}>
         <span>{selected}</span>
-        <ArrowDown className={open ? invertedArrow : null} />
+        <ArrowDown />
       </div>
       <div className={`${optionsDropdown} ${open && isOpened}`}>
         {languages.map((lang, ix) => (

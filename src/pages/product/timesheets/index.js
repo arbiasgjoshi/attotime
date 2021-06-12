@@ -42,6 +42,7 @@ import WageEstimate from '@images/Wage_estimatesSVG.svg';
 import icon20 from '@images/time-tracking-clock@1x.png';
 import icon21 from '@images/location@1x.png';
 import icon22 from '@images/profile@1x.png';
+
 import Activity from '@images/activitySVG.svg'; // TODO change svg when png is provided
 
 import ConstructionLogo from '@images/construction-industry-logo.svg';
@@ -57,7 +58,6 @@ import photo1 from '../../../images/boost_productivity.png';
 import {
   teamActivityContainer,
   roundImagesContainer,
-  checkListContainer,
   learnMoreContainer,
   readyMadeTitle,
 } from './timesheets.module.scss';

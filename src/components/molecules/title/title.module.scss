@@ -51,6 +51,7 @@
   .titleWrapper {
     margin: auto;
     margin-bottom: 1.6rem;
+    text-align: center;
 
     @include max(tablet) {
       margin-bottom: 1rem !important;
@@ -66,7 +67,7 @@
     }
 
     @include max(mobile) {
-      text-align: left;
+      // text-align: left;
     }
   }
 
@@ -78,12 +79,7 @@
     letter-spacing: normal;
     text-align: center;
 
-    @include max(mobile) {
-      text-align: left;
-    }
-
     @include min(tablet) {
-      text-align: center;
       font-size: var(--body-style-one);
       font-weight: var(--body-style-one-font-weight);
       letter-spacing: -0.05rem;

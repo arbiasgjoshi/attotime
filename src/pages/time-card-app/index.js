@@ -13,7 +13,6 @@ import LearnMoreCard from '@components/molecules/learn-more-card';
 import TickCardList from '@components/organisms/tick-card-list';
 import Article from '@components/molecules/article';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
-// import TimeTracking from '@images/time-tracking-field-workers.svg';
 import AnyDevice from '@components/organisms/any-device';
 import IconCardList from '@components/organisms/icon-card-list';
 import CommonQuestions from '@components/organisms/common-questions';

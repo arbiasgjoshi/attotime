@@ -7,7 +7,6 @@ export const Timer = () => (
     viewBox="0 0 28 31"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="Atto-/-Product-/-Time-Tracking" transform="translate(-316.000000, -6723.000000)">
@@ -56,7 +55,6 @@ export const Geofencing = () => (
     viewBox="0 0 28 28"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="Atto-/-Product-/-Time-Tracking" transform="translate(-703.000000, -6725.000000)">
@@ -109,7 +107,6 @@ export const Notification = () => (
     viewBox="0 0 26 30"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Notification</title>
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -147,7 +144,6 @@ export const ManualEntries = () => (
     viewBox="0 0 40 40"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Manual Entries</title>
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -184,7 +180,6 @@ export const TimeOff = () => (
     viewBox="0 0 28 32"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Time Off</title>
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -223,7 +218,6 @@ export const Notes = () => (
     viewBox="0 0 40 40"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Notes</title>
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -275,7 +269,6 @@ export const OvertimeRules = () => (
     viewBox="0 0 40 40"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Overtime Rules</title>
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -332,7 +325,6 @@ export const BreakPreferences = () => (
     viewBox="0 0 28 30"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Break Preferences</title>
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -403,7 +395,6 @@ export const JobCodes = () => (
     viewBox="0 0 20 30"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Job Codes</title>
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -446,7 +437,6 @@ export const RoundedClockTimes = () => (
     viewBox="0 0 30 30"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Rounded Clock</title>
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -528,7 +518,6 @@ export const Timezones = () => (
     viewBox="0 0 40 40"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Timezones</title>
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -565,7 +554,6 @@ export const NightShifts = () => (
     viewBox="0 0 40 40"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Night Shifts</title>
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -604,7 +592,6 @@ export const RealTimeLocationUpdates = () => (
     viewBox="0 0 40 40"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Real Time Location Updates</title>
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -638,7 +625,6 @@ export const ClockInOutHistories = () => (
     viewBox="0 0 40 40"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>Real Time Location Updates</title>
     <g
@@ -715,7 +701,6 @@ export const NamedJobSites = () => (
     viewBox="0 0 40 40"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
   >
     <title>3429C9F3-56F3-429F-AA75-277EC13B2DC3SVG</title>
     <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -760,6 +745,7 @@ export const NamedJobSites = () => (
     </g>
   </svg>
 );
+
 export const LocationHistoryTracking = () => {};
 export const PrivacyControls = () => {};
 export const BatteryEfficiency = () => {};
@@ -776,3 +762,41 @@ export const WageRates = () => {};
 export const Payroll = () => {};
 export const Download = () => {};
 export const Archive = () => {};
+
+export const HeartIcon = () => (
+  <svg
+    width="19px"
+    height="17px"
+    viewBox="0 0 19 17"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>Heart Icon</title>
+    <g id="WEB-DESIGN" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+      <g
+        id="Atto-/-Time-tracking-for-construction-companies"
+        transform="translate(-161.000000, -4306.000000)"
+        fill="#262626"
+        stroke="#262626"
+        strokeWidth="0.5"
+      >
+        <g id="Group-37" transform="translate(150.000000, 4103.000000)">
+          <g id="Group-24" transform="translate(0.000000, 1.000000)">
+            <g id="Group-14" transform="translate(0.000000, 170.000000)">
+              <g id="subtittle-+" transform="translate(0.000000, 2.000000)">
+                <g id="Group" transform="translate(0.000000, 18.000000)">
+                  <g id="Employees-will-love" transform="translate(11.000000, 12.000000)">
+                    <path
+                      d="M17.05535,2.125 C15.02507,0.09472 11.7,0.025 9.6,2.019727 C7.5,0.059167 4.2107,0.094727 2.14465,2.125 C0.08021,4.18944 0.04465,7.55 2.109104,9.65 L2.14465,9.685546 L8.2,15.739496 C8.58556,16.125056 9.11056,16.334216 9.6,16.334216 C10.125,16.334216 10.61444,16.12367 11,15.739496 L17.05535,9.684146 C19.11979,7.585511 19.11979,4.224846 17.05535,2.124846 L17.05535,2.125 Z M16.11063,8.7393 L16.075084,8.774846 L10.055434,14.760546 C9.810707,15.005273 9.390994,15.005273 9.144874,14.760546 L3.160574,8.774846 L3.125028,8.7393 C1.585588,7.19986 1.585588,4.64465 3.125028,3.1036 C4.664468,1.56416 7.185728,1.56416 8.760728,3.1036 L9.146288,3.48916 C9.285742,3.628614 9.460742,3.699706 9.635728,3.699706 C9.810714,3.699706 9.985728,3.629979 10.125168,3.48916 L10.475168,3.13916 C12.014608,1.59972 14.535868,1.59972 16.110868,3.13916 C17.650308,4.64444 17.650308,7.16416 16.110868,8.73916 L16.11063,8.7393 Z"
+                      id="Fill-1"
+                    />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+);

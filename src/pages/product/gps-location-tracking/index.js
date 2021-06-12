@@ -18,7 +18,6 @@ import ListArticle from '@components/organisms/list-article';
 import Services from '@components/organisms/services';
 import VideoCheckList from '@components/organisms/video-checklist';
 
-// import noImage from '@images/no-image.png';
 import image1 from '@images/verify-your-team.png';
 import authorImage from '@images/authorImage.png';
 import DailyMovements from '@images/daily-movements.svg'; // TODO change svg when png is provided

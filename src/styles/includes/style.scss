@@ -27,59 +27,14 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.attoicon-break {
-  &:before {
-    content: $attoicon-break;
-  }
-}
-.attoicon-departments {
-  &:before {
-    content: $attoicon-departments;
-  }
-}
-.attoicon-email {
-  &:before {
-    content: $attoicon-email;
-  }
-}
 .attoicon-jobs {
   &:before {
     content: $attoicon-jobs;
   }
 }
-.attoicon-location-tracking {
-  &:before {
-    content: $attoicon-location-tracking;
-  }
-}
-.attoicon-manual-entries {
-  &:before {
-    content: $attoicon-manual-entries;
-  }
-}
-.attoicon-named-locations {
-  &:before {
-    content: $attoicon-named-locations;
-  }
-}
-.attoicon-night-shift {
-  &:before {
-    content: $attoicon-night-shift;
-  }
-}
 .attoicon-notes {
   &:before {
     content: $attoicon-notes;
-  }
-}
-.attoicon-overtime {
-  &:before {
-    content: $attoicon-overtime;
-  }
-}
-.attoicon-time-tracking1 {
-  &:before {
-    content: $attoicon-time-tracking1;
   }
 }
 .attoicon-timesheets {
@@ -92,6 +47,121 @@ i {
     content: $attoicon-timesheets-rounded1;
   }
 }
+.attoicon-mobile-tt {
+  &:before {
+    content: $attoicon-mobile-tt;
+  }
+}
+.attoicon-named-sites {
+  &:before {
+    content: $attoicon-named-sites;
+  }
+}
+.attoicon-profitable-bids {
+  &:before {
+    content: $attoicon-profitable-bids;
+  }
+}
+.attoicon-departments {
+  &:before {
+    content: $attoicon-departments;
+  }
+}
+.attoicon-timeline {
+  &:before {
+    content: $attoicon-timeline;
+  }
+}
+.attoicon-filters {
+  &:before {
+    content: $attoicon-filters;
+  }
+}
+.attoicon-verified {
+  &:before {
+    content: $attoicon-verified;
+  }
+}
+.attoicon-timezone {
+  &:before {
+    content: $attoicon-timezone;
+  }
+}
+.attoicon-manual-entries {
+  &:before {
+    content: $attoicon-manual-entries;
+  }
+}
+.attoicon-job-costing {
+  &:before {
+    content: $attoicon-job-costing;
+  }
+}
+.attoicon-location-tracking {
+  &:before {
+    content: $attoicon-location-tracking;
+  }
+}
+.attoicon-break {
+  &:before {
+    content: $attoicon-break;
+  }
+}
+.attoicon-night-shift {
+  &:before {
+    content: $attoicon-night-shift;
+  }
+}
+.attoicon-overtime {
+  &:before {
+    content: $attoicon-overtime;
+  }
+}
+.attoicon-time-tracking1 {
+  &:before {
+    content: $attoicon-time-tracking1;
+  }
+}
+.attoicon-time-tracking {
+  &:before {
+    content: $attoicon-time-tracking;
+  }
+}
+.attoicon-location-history {
+  &:before {
+    content: $attoicon-location-history;
+  }
+}
+.attoicon-privacy {
+  &:before {
+    content: $attoicon-privacy;
+  }
+}
+.attoicon-time-entry-history {
+  &:before {
+    content: $attoicon-time-entry-history;
+  }
+}
+.attoicon-customize {
+  &:before {
+    content: $attoicon-customize;
+  }
+}
+.attoicon-rounded-clock {
+  &:before {
+    content: $attoicon-rounded-clock;
+  }
+}
+.attoicon-time-off {
+  &:before {
+    content: $attoicon-time-off;
+  }
+}
+.attoicon-named-locations {
+  &:before {
+    content: $attoicon-named-locations;
+  }
+}
 .attoicon-sand-clock {
   &:before {
     content: $attoicon-sand-clock;
@@ -100,11 +170,6 @@ i {
 .attoicon-battery {
   &:before {
     content: $attoicon-battery;
-  }
-}
-.attoicon-crew {
-  &:before {
-    content: $attoicon-crew;
   }
 }
 .attoicon-support {
@@ -117,9 +182,19 @@ i {
     content: $attoicon-help-support;
   }
 }
-.attoicon-job-costing {
+.attoicon-web-tt {
   &:before {
-    content: $attoicon-job-costing;
+    content: $attoicon-web-tt;
+  }
+}
+.attoicon-archive {
+  &:before {
+    content: $attoicon-archive;
+  }
+}
+.attoicon-email {
+  &:before {
+    content: $attoicon-email;
   }
 }
 .attoicon-kiosk {
@@ -127,29 +202,14 @@ i {
     content: $attoicon-kiosk;
   }
 }
-.attoicon-location-history {
-  &:before {
-    content: $attoicon-location-history;
-  }
-}
-.attoicon-mobile-tt {
-  &:before {
-    content: $attoicon-mobile-tt;
-  }
-}
-.attoicon-named-sites {
-  &:before {
-    content: $attoicon-named-sites;
-  }
-}
-.attoicon-privacy {
-  &:before {
-    content: $attoicon-privacy;
-  }
-}
 .attoicon-share {
   &:before {
     content: $attoicon-share;
+  }
+}
+.attoicon-crew {
+  &:before {
+    content: $attoicon-crew;
   }
 }
 .attoicon-team-activity {
@@ -160,36 +220,6 @@ i {
 .attoicon-team {
   &:before {
     content: $attoicon-team;
-  }
-}
-.attoicon-profitable-bids {
-  &:before {
-    content: $attoicon-profitable-bids;
-  }
-}
-.attoicon-time-tracking {
-  &:before {
-    content: $attoicon-time-tracking;
-  }
-}
-.attoicon-timezone {
-  &:before {
-    content: $attoicon-timezone;
-  }
-}
-.attoicon-view-map {
-  &:before {
-    content: $attoicon-view-map;
-  }
-}
-.attoicon-wage-estimates {
-  &:before {
-    content: $attoicon-wage-estimates;
-  }
-}
-.attoicon-wage-estimates-bold {
-  &:before {
-    content: $attoicon-wage-estimates-bold;
   }
 }
 .attoicon-wages .path1 {
@@ -219,44 +249,29 @@ i {
     color: rgb(0, 0, 0);
   }
 }
-.attoicon-web-tt {
+.attoicon-notification {
   &:before {
-    content: $attoicon-web-tt;
+    content: $attoicon-notification;
   }
 }
-.attoicon-archive {
+.attoicon-avatar {
   &:before {
-    content: $attoicon-archive;
+    content: $attoicon-avatar;
   }
 }
-.attoicon-time-entry-history {
+.attoicon-view-map {
   &:before {
-    content: $attoicon-time-entry-history;
+    content: $attoicon-view-map;
   }
 }
-.attoicon-notifications {
+.attoicon-wage-estimates {
   &:before {
-    content: $attoicon-notifications;
+    content: $attoicon-wage-estimates;
   }
 }
-.attoicon-filters {
+.attoicon-wage-estimates-bold {
   &:before {
-    content: $attoicon-filters;
-  }
-}
-.attoicon-timeline {
-  &:before {
-    content: $attoicon-timeline;
-  }
-}
-.attoicon-customize {
-  &:before {
-    content: $attoicon-customize;
-  }
-}
-.attoicon-pto {
-  &:before {
-    content: $attoicon-pto;
+    content: $attoicon-wage-estimates-bold;
   }
 }
 .attoicon-close {
@@ -264,59 +279,14 @@ i {
     content: $attoicon-close;
   }
 }
-.attoicon-healthcare {
+.attoicon-plus {
   &:before {
-    content: $attoicon-healthcare;
+    content: $attoicon-plus;
   }
 }
-.attoicon-landscaping {
+.attoicon-minus {
   &:before {
-    content: $attoicon-landscaping;
-  }
-}
-.attoicon-electric {
-  &:before {
-    content: $attoicon-electric;
-  }
-}
-.attoicon-cleaning {
-  &:before {
-    content: $attoicon-cleaning;
-  }
-}
-.attoicon-roofing {
-  &:before {
-    content: $attoicon-roofing;
-  }
-}
-.attoicon-painting {
-  &:before {
-    content: $attoicon-painting;
-  }
-}
-.attoicon-verified {
-  &:before {
-    content: $attoicon-verified;
-  }
-}
-.attoicon-rounded-clock {
-  &:before {
-    content: $attoicon-rounded-clock;
-  }
-}
-.attoicon-time-off {
-  &:before {
-    content: $attoicon-time-off;
-  }
-}
-.attoicon-notification {
-  &:before {
-    content: $attoicon-notification;
-  }
-}
-.attoicon-play {
-  &:before {
-    content: $attoicon-play;
+    content: $attoicon-minus;
   }
 }
 .attoicon-tick {
@@ -334,11 +304,6 @@ i {
     content: $attoicon-arrow-right;
   }
 }
-.attoicon-long-arrow {
-  &:before {
-    content: $attoicon-long-arrow;
-  }
-}
 .attoicon-arrow-down {
   &:before {
     content: $attoicon-arrow-down;
@@ -349,13 +314,13 @@ i {
     content: $attoicon-arrow-up;
   }
 }
-.attoicon-plus {
+.attoicon-play {
   &:before {
-    content: $attoicon-plus;
+    content: $attoicon-play;
   }
 }
-.attoicon-minus {
+.attoicon-long-arrow {
   &:before {
-    content: $attoicon-minus;
+    content: $attoicon-long-arrow;
   }
 }

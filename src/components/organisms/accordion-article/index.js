@@ -3,18 +3,19 @@ import PropTypes from 'prop-types';
 
 import Icon from '@components/atoms/icon';
 import HeartIcon from '@images/heart-icon@2x.png';
+import Accordion from '@components/organisms/accordion';
 
 import {
   container,
-  triggerItemWrap,
-  triggerItemWrapText,
+  // triggerItemWrap,
+  // triggerItemWrapText,
+  // opened,
   swap,
   firstBox,
   titleContainer,
   secondBox,
   imageWrapper,
   listStyle,
-  opened,
 } from './accordion-article.module.scss';
 
 const AccordionArticle = ({
@@ -45,7 +46,8 @@ const AccordionArticle = ({
           </div>
         )}
         <div className={listStyle}>
-          {list?.map((item, index) => (
+          <Accordion items={list} industries />
+          {/* {list?.map((item, index) => (
             <>
               <div
                 className={triggerItemWrap}
@@ -69,7 +71,7 @@ const AccordionArticle = ({
                 <p>{item.description}</p>
               </div>
             </>
-          ))}
+          ))} */}
         </div>
       </div>
       <div className={secondBox}>

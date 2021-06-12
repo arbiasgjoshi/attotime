@@ -21,67 +21,6 @@
         margin-bottom: 5rem;
       }
     }
-
-    .listStyle {
-      .triggerItemWrap {
-        &:first-child {
-          border-top: 2px solid #efefef;
-        }
-        cursor: pointer;
-        @include flex-direction(row);
-        align-items: center;
-        // width: 100%;
-        // border-bottom: 2px solid #efefef;
-
-        h5 {
-          letter-spacing: -0.05rem;
-          width: 100%;
-          transition: ease all 0.15s;
-          margin: 0 2rem 0 1rem;
-
-          @include min(tablet) {
-            margin: 2.3rem 2rem 1rem 1.8rem;
-          }
-
-          &:hover {
-            color: #262626;
-          }
-        }
-
-        img,
-        span {
-          @include min(tablet) {
-            margin-top: 2rem;
-          }
-        }
-
-        > i {
-          font-size: 1.6rem;
-          min-width: 2.4rem;
-          height: 2.4rem;
-          margin-right: 1.2rem;
-          transition: ease all 0.15s;
-          @include flex-align(center, center);
-        }
-      }
-
-      .triggerItemWrapText {
-        border-bottom: 2px solid #efefef;
-        transition: 0.15s ease-in-out;
-        max-height: 0;
-        overflow: hidden;
-
-        &.opened {
-          max-height: unset;
-        }
-      }
-
-      p {
-        @include min(tablet) {
-          margin: 0 7.2rem 2rem 5.8rem;
-        }
-      }
-    }
   }
 
   .secondBox {

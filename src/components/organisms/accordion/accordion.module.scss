@@ -5,10 +5,18 @@
   width: 100%;
   border-top: 1px solid #efefef;
 
+  .svgWrap {
+    min-width: 4rem;
+    width: 4rem;
+    height: 4rem;
+    // margin-right: 1.8rem;
+    @include flex-align(center, center);
+  }
+
   h5 {
     letter-spacing: -0.05rem;
     width: 100%;
-    margin: 0 2rem 0 1rem;
+    margin: 2rem;
     transition: ease all 0.25s;
     &:hover {
       color: #262626;
@@ -27,7 +35,7 @@
     }
   }
 
-  > div {
+  .iconItem {
     margin-right: 2.6rem;
     i {
       font-size: 1.6rem;
@@ -36,14 +44,44 @@
       @include flex-align(center, center);
       transition: ease all 0.15s;
     }
+
+    &.industryIcon {
+      margin-right: 1.2rem;
+    }
   }
 }
 
 .contentWrapper {
-  padding: 0rem 2rem 1rem;
+  padding: 0 2rem 2rem;
   transform-origin: top center;
 
   @include min(tablet) {
-    padding: 0rem 3.2rem 2.2rem 3rem;
+    padding: 0 3.2rem 2.2rem 3rem;
+  }
+}
+
+.accordionItem {
+  header:last-child {
+    .triggerItemWrap {
+      border-bottom: 1px solid #efefef;
+    }
+  }
+
+  &.industryAccordion {
+    .triggerItemWrap {
+      h5 {
+        margin: 1.5rem 2rem;
+        @include min(tablet) {
+          margin: 1.8rem 2.3rem 1.8rem 1.8rem;
+        }
+      }
+    }
+
+    .contentWrapper {
+      padding: 0 2rem 2rem 2rem;
+      @include min(tablet) {
+        padding: 0 7.2rem 3.2rem 5.8rem;
+      }
+    }
   }
 }
