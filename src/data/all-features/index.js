@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Timer from '@images/timer.svg';
 import Flag from '@images/flag.svg';
 import Ringbell from '@images/ringbell.svg';
