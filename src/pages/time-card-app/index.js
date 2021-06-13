@@ -125,7 +125,7 @@ const TimeCardApp = () => (
       alt="Time Card Banner"
       placeholder="none"
     />
-    <Divider className="style2" />
+    <Divider className="style11" />
     <Title
       title="A time tracking app for any industry"
       description="Atto helps all types of businesses across the world to manage their employees’ time."

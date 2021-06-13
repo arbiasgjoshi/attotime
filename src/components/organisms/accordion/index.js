@@ -97,7 +97,7 @@ const FramerAccordion = ({ items, industries = false, onSetAccordionImage }) => 
           key={i}
           expanded={expanded}
           industries={industries}
-          setExpanded={(index) => onAccordionChange(index, item.image)}
+          setExpanded={(index) => industries && onAccordionChange(index, item.image)}
           icon={item.icon}
           content={item.description}
           title={item.title}
