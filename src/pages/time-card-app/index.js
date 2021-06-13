@@ -195,6 +195,8 @@ const TimeCardApp = () => (
       checkItemOne="No credit card required"
       checkItemTwo="14 day free trial"
       checkItemThree="Cancel anytime"
+      formPadding="10.4rem 8rem"
+      style="pricing"
     />
     <Footer FooterLinks={FooterLinks} />
   </div>
