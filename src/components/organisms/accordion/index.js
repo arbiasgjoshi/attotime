@@ -73,8 +73,21 @@ const Accordion = ({ i, expanded, setExpanded, content, icon, title, industries 
   );
 };
 
-const FramerAccordion = ({ items, industries = false }) => {
+const FramerAccordion = ({ items, industries = false, onSetAccordionImage }) => {
   const [expanded, setExpanded] = useState(0);
+
+  // const toggleAccordionImage = (img) => {
+  //   console.log(img);
+  // };
+
+  const onAccordionChange = (val, accordionImage) => {
+    setExpanded(val);
+    if (accordionImage) {
+      onSetAccordionImage(accordionImage);
+    } else {
+      onSetAccordionImage(null);
+    }
+  };
 
   return (
     <div className={`${accordionItem} ${industries && industryAccordion}`}>
@@ -84,7 +97,7 @@ const FramerAccordion = ({ items, industries = false }) => {
           key={i}
           expanded={expanded}
           industries={industries}
-          setExpanded={setExpanded}
+          setExpanded={(index) => onAccordionChange(index, item.image)}
           icon={item.icon}
           content={item.description}
           title={item.title}

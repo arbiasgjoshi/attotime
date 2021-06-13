@@ -28,13 +28,21 @@ const AccordionArticle = ({
   imageHeight,
   boxHeight,
 }) => {
-  const [clicked, setClicked] = useState(0);
+  // const [clicked, setClicked] = useState(0);
+  const [articleImage, setArticleImage] = useState(image);
+  const [imgWidth, setImgWidth] = useState(imageWidth);
+  const [imgHeight, setImgHeight] = useState(imageHeight);
 
-  const toggle = (index) => {
-    if (clicked === index) {
-      return setClicked(null);
+  const toggleImage = (imgToggle) => {
+    if (!imgToggle) {
+      setArticleImage(image);
+      setImgWidth(imageWidth);
+      setImgHeight(imageHeight);
+    } else {
+      setArticleImage(imgToggle.src);
+      setImgWidth(imgToggle.imageWidth);
+      setImgHeight(imgToggle.imageHeight);
     }
-    return setClicked(index);
   };
 
   return (
@@ -46,37 +54,12 @@ const AccordionArticle = ({
           </div>
         )}
         <div className={listStyle}>
-          <Accordion items={list} industries />
-          {/* {list?.map((item, index) => (
-            <>
-              <div
-                className={triggerItemWrap}
-                onClick={() => toggle(index)}
-                onKeyDown={() => toggle(index)}
-                role="button"
-                key={index}
-                tabIndex={index}
-              >
-                <img src={HeartIcon} width="40" height="40" alt="Heart" />
-                <h5>{item.title}</h5>
-                <span>
-                  {clicked === index ? (
-                    <Icon iconClass="arrow-up" />
-                  ) : (
-                    <Icon iconClass="arrow-down" />
-                  )}
-                </span>
-              </div>
-              <div className={`${triggerItemWrapText} ${clicked === index && opened}`}>
-                <p>{item.description}</p>
-              </div>
-            </>
-          ))} */}
+          <Accordion items={list} industries onSetAccordionImage={(val) => toggleImage(val)} />
         </div>
       </div>
       <div className={secondBox}>
         <div style={{ padding: imagePadding, height: boxHeight }} className={imageWrapper}>
-          <img src={image} alt={title} width={imageWidth} height={imageHeight} />
+          <img src={articleImage} alt={title} width={imgWidth} height={imgHeight} />
         </div>
       </div>
     </div>
