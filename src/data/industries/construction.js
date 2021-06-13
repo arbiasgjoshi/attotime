@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Icon from '@components/atoms/icon';
-import { HeartIcon } from '@components/atoms/svg-icons';
+import { HeartIcon, AutomatedTimesheets } from '@components/atoms/svg-icons';
 
 export const checkList1 = [
   { title: 'Track your entire crew’s time and location in real-time.' },
@@ -33,7 +33,7 @@ export const accordionList1 = [
 
 export const accordionList2 = [
   {
-    icon: <Icon iconClass="named-locations" fSize="1.8" />,
+    icon: <Icon iconClass="named-locations" fSize="2.2" />,
     title: 'Guarantee your crew is on-site before they clock in',
     description:
       'Ensure that only hours worked are accounted for. With Atto, you can set the locations of your job sites and restrict workers from clocking in unless they’re within the site perimeter.',
@@ -46,7 +46,7 @@ export const accordionList2 = [
   },
   {
     title: 'Get a daily summary of each worker’s movements',
-    icon: <Icon iconClass="named-locations" />,
+    icon: <Icon iconClass="movement-tracking" fSize="2.5" />,
     description:
       'Want to check how productive your workers are? Need to see how much time was spent at each job site compared to on the road? With Atto, you can view a map of each worker’s movements, providing a daily timeline of what they were up to while on the job.',
   },
@@ -55,25 +55,25 @@ export const accordionList2 = [
 export const accordionList3 = [
   {
     title: 'Keep projects on budget with wage estimates',
-    icon: <Icon iconClass="wage-estimates-bold" fSize="2.2" />,
+    icon: <Icon iconClass="wage-estimates-bold" fSize="2.4" />,
     description:
       'Construction projects run on tight margins, so it’s important to keep control of your costs. With Atto, you can add individual pay rates to calculate each worker’s estimated wages based on the hours they track. What’s more, you can add more than one pay rate per worker, so that your estimates will still be accurate – even if their rate changes.',
   },
   {
     title: 'Check how much each team and job is costing you',
-    icon: <Icon iconClass="job-costing" fSize="2" />,
+    icon: <Icon iconClass="job-costing" fSize="2.2" weight="bold" />,
     description:
       'Want to check if a job is running profitably? In a few taps, Atto produces timesheet summaries that can be filtered to show all the work done on a specific job, or by a specific team (e.g. only bricklayers). ',
   },
   {
     title: 'Save hours on payroll admin with automated timesheets',
-    icon: <Icon iconClass="named-locations" />,
+    icon: <AutomatedTimesheets />,
     description:
       'To save hours of payroll admin, Atto automatically emails timesheet reports to coincide with your payroll period. Not only does this make your payroll more accurate and efficient, but you know you’re only paying for hours that were actually worked.',
   },
   {
     title: 'Tender more accurate and profitable bids for future work',
-    icon: <Icon iconClass="named-locations" />,
+    icon: <Icon iconClass="jobs" fSize="2.1" />,
     description:
       'With all the time tracking data from previous jobs, you can ensure that any bids you submit for similar jobs in the future are both profitable and competitive.',
   },

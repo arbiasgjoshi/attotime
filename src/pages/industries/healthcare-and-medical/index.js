@@ -28,7 +28,11 @@ import boxImage2 from '@images/healthcare-box-two@2x.png';
 import boxImage3 from '@images/healthcare-box-three@2x.png';
 import boxImage4 from '@images/healthcare-box-four@2x.png';
 
-import { checkList1, accordionList1, accordionList2 } from '@data/industries/roofing.js';
+import {
+  checkList1,
+  accordionList1,
+  accordionList2,
+} from '@data/industries/home-and-healthcare.js';
 import { oldList, newList, steps } from '@data/industries';
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';

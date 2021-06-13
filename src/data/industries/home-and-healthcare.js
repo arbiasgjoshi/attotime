@@ -1,31 +1,38 @@
+import React from 'react';
+
+import Icon from '@components/atoms/icon';
+import { RespondToAbsenteeism, AutomatedTimesheets } from '@components/atoms/svg-icons';
+
 export const checkList1 = [
-  { title: 'Keep accurate time records while working outdoors.' },
-  { title: 'Track your roofers’ time and location in real-time.' },
-  { title: 'Respond quickly to changes in the weather.' },
-  { title: 'Improve the accuracy of quotes to win more jobs.' },
+  { title: 'Keep accurate time records while providing care.' },
+  {
+    title: `Track every caregivers’ time, wages, and real-time location.`,
+  },
+  { title: 'Record patient notes throughout the day.' },
+  { title: 'Spend more time with patients, and less time on admin.' },
 ];
 
 export const accordionList1 = [
   {
-    icon: '',
+    icon: <RespondToAbsenteeism />,
     title: 'Adjust quickly to employee sickness and absence ',
     description:
       'When caregivers are on sick leave, you need to make sure someone else can provide patient care at short notice. Atto allows you to quickly see who’s nearby and available to work – without having to call around.',
   },
   {
-    icon: '',
+    icon: <Icon iconClass="named-locations" fSize="2.2" />,
     title: 'Prevent caregivers from clocking in until they’re ready to work',
     description:
       'When you’re reliant on paper timesheets, it’s hard to verify that your caregivers are turning up on-time. With Atto, you can set the location of any of your patient’s homes and restrict caregivers from clocking in until they’re physically present.',
   },
   {
-    icon: '',
+    icon: <Icon iconClass="location-tracking" fSize="2.2" />,
     title: 'Track the whereabouts of your caregivers during the day',
     description:
       'When your caregivers are providing care to multiple patients throughout the day, it can be hard to keep track of what’s going on! Luckily, Atto, lets you track the live locations of all your caregivers. Check how long they’ve been at each home. And, stay informed with reassuring notifications of their latest work activity.',
   },
   {
-    icon: '',
+    icon: <Icon iconClass="movement-tracking" fSize="2.5" />,
     title: 'View map-based timelines of your caregivers’ movements ',
     description:
       'Check how productive your caregivers are. Atto generates a map of each caregivers’ daily movements, providing a clear timeline of what they were up to while working. Use it to see how long was spent with each patient, along with the routing they took while on the clock.',
@@ -34,19 +41,19 @@ export const accordionList1 = [
 
 export const accordionList2 = [
   {
-    icon: '',
+    icon: <Icon iconClass="wage-estimates-bold" fSize="2.4" />,
     title: 'Forecast your payroll costs ahead of payday to avoid unwanted surprises',
     description:
       'Add your caregivers’ pay rates and automatically estimate their wages based on the hours they track. Now, there’ll be no more payroll surprises at the end of the week!',
   },
   {
-    icon: '',
+    icon: <Icon iconClass="jobs" fSize="2.1" />,
     title: 'Compare the costs and time of different teams and different jobs',
     description:
       'Need to check if a job is running to budget? Need to see how much time one team of caregivers are taking compared to another? In a few taps, Atto generates timesheet summaries to show all the work done on a specific job type, or by a specific team of caregivers.',
   },
   {
-    icon: '',
+    icon: <AutomatedTimesheets />,
     title: 'Spend less time on payroll, and more time with patients',
     description:
       'When it comes to payroll, Atto automatically emails you an easy-to-read timesheet report to coincide with payday. Now all you need to do is input the data into your payroll system – saving hours from the process.',

@@ -9,7 +9,6 @@
     min-width: 4rem;
     width: 4rem;
     height: 4rem;
-    // margin-right: 1.8rem;
     @include flex-align(center, center);
   }
 
@@ -72,7 +71,7 @@
       h5 {
         margin: 1.5rem 2rem;
         @include min(tablet) {
-          margin: 1.8rem 2.3rem 1.8rem 1.8rem;
+          margin: 2.3rem 1.8rem;
         }
       }
     }

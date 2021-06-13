@@ -94,18 +94,21 @@ const Electrician = () => (
         imageHeight={354}
       />
       <Divider className="style3" />
-      <AccordionArticle
+      <Title
         title="Keep track of your electricians as they make their way to different call-outs throughout the day"
-        list={accordionList1}
-        image={image5}
+        maxWidth={920}
+        notCentered
       />
+      <Divider className="style3" />
+      <AccordionArticle list={accordionList1} image={image5} />
       <Divider />
-      <AccordionArticle
+      <Title
         title="Everything you need to keep electrical jobs on schedule and on budget"
-        list={accordionList2}
-        isSwapped
-        image={image6}
+        maxWidth={920}
+        notCentered
       />
+      <Divider className="style3" />
+      <AccordionArticle list={accordionList2} isSwapped image={image6} />
       <Divider className="style11" />
       <Title
         title="Say goodbye to paper timesheets!"

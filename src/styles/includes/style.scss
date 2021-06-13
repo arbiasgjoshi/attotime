@@ -264,6 +264,11 @@ i {
     content: $attoicon-view-map;
   }
 }
+.attoicon-movement-tracking {
+  &:before {
+    content: $attoicon-movement-tracking;
+  }
+}
 .attoicon-wage-estimates {
   &:before {
     content: $attoicon-wage-estimates;

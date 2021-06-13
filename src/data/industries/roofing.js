@@ -1,9 +1,15 @@
+import React from 'react';
+
+import Icon from '@components/atoms/icon';
+
 import icon1 from '@images/clock-in-out.png';
 import icon2 from '@images/write-notes.png';
 import icon3 from '@images/track-breaks.png';
 import icon4 from '@images/manage-overtime.png';
 import icon5 from '@images/switch-between-jobs.png';
 import icon6 from '@images/add-time-off.png';
+
+import { RespondToAbsenteeism, AutomatedTimesheets } from '@components/atoms/svg-icons';
 
 export const checkList1 = [
   { title: 'Keep accurate time records while working outdoors.' },
@@ -65,25 +71,25 @@ export const firstList = [
 
 export const accordionList1 = [
   {
-    icon: '',
+    icon: <RespondToAbsenteeism />,
     title: 'Respond quickly to weather changes and employee absences',
     description:
       'The unpredictability of the weather and employee absences mean you may need to change your plans at short notice. Atto allows you to instantly see which of your roofing contractors are nearby and available to work – without having to call around.',
   },
   {
-    icon: '',
+    icon: <Icon iconClass="named-locations" fSize="2.2" />,
     title: 'Stop roofers from clocking in until they’re ready to work',
     description:
       'When you’re reliant on paper timesheets, it’s hard to verify that your roofers are turning up to jobs on-time. With Atto, you can set the location of any job site and restrict them from clocking in until they’re physically present.',
   },
   {
-    icon: '',
+    icon: <Icon iconClass="location-tracking" fSize="2.2" />,
     title: 'Track the locations of your roofers and the progress of roofing jobs in real-time',
     description:
       'Installing solar panels, repairing leaks, fitting new roofs – when your roofing contractors are dealing with multiple jobs, it can be hard to keep track of what’s going on! With Atto, you can track the live locations of your entire workforce. Check how long your roofers have been working on each job. And, get notifications to inform you of their latest work activity.',
   },
   {
-    icon: '',
+    icon: <Icon iconClass="movement-tracking" fSize="2.5" />,
     title: 'View a map-based timeline of your roofers’ movements',
     description:
       'Check how productive your roofing contractors are. Atto generates a map of each roofers’ daily movements, providing a clear timeline of what they were up to while working. Use it to see how long was spent at each job, along with the routing they took while on the clock.',
@@ -92,25 +98,25 @@ export const accordionList1 = [
 
 export const accordionList2 = [
   {
-    icon: '',
+    icon: <Icon iconClass="wage-estimates-bold" fSize="2.4" />,
     title: 'Forecast your wage bill ahead of payday to avoid unwanted surprises',
     description:
       'Add your roofers’ pay rates and automatically estimate their wages based on the hours they track. Now, there’ll be no more payroll surprises at the end of the week!',
   },
   {
-    icon: '',
+    icon: <Icon iconClass="jobs" fSize="2.1" />,
     title: 'From roof tilers to safety inspectors see how much work each team’s completed',
     description:
       'Want to check if a job is running to budget? Need to see how much your tilers are costing you compared to your safety inspectors? In a few taps, Atto generates timesheet summaries to show all the work done on a specific job, or by a specific team.',
   },
   {
-    icon: '',
+    icon: <AutomatedTimesheets />,
     title: 'Reduce the admin time it takes to run your payroll',
     description:
       'To reduce admin time, Atto automatically emails you a timesheet report that coincides with your payroll period. Now all you need to do is input the data into your payroll system – saving hours from the process.',
   },
   {
-    icon: '',
+    icon: <Icon iconClass="job-costing" fSize="2.2" weight="bold" />,
     title: 'Win more roofing contracts with competitive quotes',
     description:
       'Your ability to estimate your labor costs impacts whether your job quotes are profitable and competitive. With Atto, you can check the time your roofers took to complete similar jobs, and use it to produce more precise quotes in the future.',

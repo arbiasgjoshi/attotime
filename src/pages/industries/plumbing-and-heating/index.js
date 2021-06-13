@@ -28,7 +28,13 @@ import boxImage3 from '@images/plumbing-box-three@2x.png';
 import boxImage4 from '@images/plumbing-box-four@2x.png';
 
 import image1 from '@images/no-image.png';
-import { container, industryPadding, oldVsNewGradient, noPadding } from '@styles/main.module.scss';
+import {
+  container,
+  industryPadding,
+  oldVsNewGradient,
+  noPadding,
+  background,
+} from '@styles/main.module.scss';
 import {
   checkList1,
   accordionList1,
@@ -38,13 +44,11 @@ import { oldList, newList, steps } from '@data/industries';
 import image2 from '@images/time-tracking-plumbing@2x.png';
 import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/industries/roofing.js';
-import { background } from './plumbing-and-heating.module.scss';
 
 // import localeData from '@locale/en';
 
 const PlumbingAndHeating = () => (
   <>
-    <div className={background} />
     <div className={`${container} ${industryPadding}`}>
       <SEO title="Plumbing And Heating Industries" />
       <Header />
@@ -119,10 +123,14 @@ const PlumbingAndHeating = () => (
         <Divider />
       </div>
     </div>
+    <div className={background}>
+      <div className={`${container} ${noPadding}`}>
+        <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
+        <Divider className="style3" />
+        <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+      </div>
+    </div>
     <div className={`${container} ${noPadding}`}>
-      <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
-      <Divider className="style3" />
-      <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
       <Divider />
       <Title
         title="Get everything set up in 3 simple steps"

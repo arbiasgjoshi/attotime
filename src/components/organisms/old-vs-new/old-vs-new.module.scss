@@ -4,53 +4,55 @@
   @include min(tablet) {
     margin-bottom: 3.5rem;
   }
+}
 
-  .oldWayTitle {
-    color: #e05656;
-    font-size: 38px;
-    letter-spacing: 0;
-    font-family: 'Spicy Pumpkin';
-    width: 50%;
-    padding-left: 8rem;
-    position: relative;
+.oldWayTitle {
+  color: #e05656;
+  font-size: 38px;
+  letter-spacing: 0;
+  font-family: 'Spicy Pumpkin';
+  width: 50%;
+  padding-left: 8rem;
+  @include absolute(top -13.5rem);
+  width: 100%;
 
-    &::after {
-      content: '';
-      @include absolute(left 10rem top 6rem);
-      background-image: url('@images/red-indicator-arrow@2x.png');
-      background-size: contain;
-      background-position: center;
-      width: 2rem;
-      height: 6.5rem;
-    }
-
-    @include min(tablet) {
-      line-height: 5rem;
-    }
+  &::after {
+    content: '';
+    @include absolute(left 10rem top 6rem);
+    background-image: url('@images/red-indicator-arrow@2x.png');
+    background-size: contain;
+    background-position: center;
+    width: 2rem;
+    height: 6.5rem;
   }
 
-  .newWayTitle {
-    color: #00b9cb;
-    letter-spacing: 0;
-    font-size: 38px;
-    font-family: 'Spicy Pumpkin';
-    width: 50%;
-    padding-left: 4.2rem;
-    position: relative;
+  @include min(tablet) {
+    line-height: 5rem;
+  }
+}
 
-    &::after {
-      content: '';
-      @include absolute(left 6rem top 6rem);
-      background-image: url('@images/green-indicator-arrow@2x.png');
-      background-size: contain;
-      background-position: center;
-      width: 2rem;
-      height: 6.5rem;
-    }
+.newWayTitle {
+  color: #00b9cb;
+  letter-spacing: 0;
+  font-size: 38px;
+  font-family: 'Spicy Pumpkin';
+  width: 50%;
+  padding-left: 4.2rem;
+  @include absolute(top -13.5rem);
+  width: 100%;
 
-    @include min(tablet) {
-      line-height: 5rem;
-    }
+  &::after {
+    content: '';
+    @include absolute(left 6rem top 6rem);
+    background-image: url('@images/green-indicator-arrow@2x.png');
+    background-size: contain;
+    background-position: center;
+    width: 2rem;
+    height: 6.5rem;
+  }
+
+  @include min(tablet) {
+    line-height: 5rem;
   }
 }
 
@@ -60,6 +62,7 @@
   border: 2px solid #efefef;
   border-radius: 20px;
   background: #fff;
+  margin-top: 10rem;
 
   @include min(tablet) {
     flex-direction: row;
@@ -71,6 +74,7 @@
 
   .oldListStyle,
   .newListStyle {
+    position: relative;
     > div {
       border-bottom: 2px solid #efefef;
       align-items: center;
