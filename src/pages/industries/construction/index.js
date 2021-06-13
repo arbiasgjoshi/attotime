@@ -39,8 +39,6 @@ import { steps, oldList, newList } from '@data/industries';
 import { FooterLinks } from '@locale/en.js';
 import { topImageMask, bottomImageMask, greenBackground } from './construction.module.scss';
 
-// import localeData from '@locale/en';
-
 const Construction = () => (
   <>
     <div className={`${container} ${industryPadding}`}>
@@ -103,6 +101,7 @@ const Construction = () => (
         boxHeight="62rem"
       />
     </div>
+    <Divider className="style3" />
     <div className={oldVsNewGradient}>
       <div className={`${container} ${noPadding}`}>
         <Divider />

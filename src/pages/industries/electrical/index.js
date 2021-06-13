@@ -82,9 +82,9 @@ const Electrician = () => (
         And if they do happen to forget, they can add a manual time entry for you to review later."
         image={image3}
         maxWidth={500}
-        imagePadding="7.3rem 4.5rem"
-        imageWidth={400}
-        imageHeight={354}
+        imagePadding="6rem 0"
+        imageWidth={550}
+        // imageHeight={354}
       />
       <Divider className="style3" />
       <Article
@@ -93,9 +93,9 @@ const Electrician = () => (
         image={image4}
         isSwapped
         maxWidth={500}
-        imagePadding="7.3rem 4.5rem"
-        imageWidth={400}
-        imageHeight={354}
+        imagePadding="4rem 0"
+        imageWidth={550}
+        // imageHeight={354}
       />
       <Divider className="style3" />
       <Title

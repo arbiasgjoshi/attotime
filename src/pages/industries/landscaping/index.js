@@ -42,8 +42,6 @@ import {
   greenBackground,
 } from '../construction/construction.module.scss';
 
-// import localeData from '@locale/en';
-
 const Landscaping = () => (
   <>
     <div className={`${container} ${industryPadding}`}>
@@ -105,11 +103,11 @@ const Landscaping = () => (
         title="All the reports you need to keep landscaping jobs on schedule and on budget"
         list={accordionList3}
         imageWidth={400}
-        // imageHeight={514}
         imagePadding="5.3rem 0"
         boxHeight="62rem"
       />
     </div>
+    <Divider className="style3" />
     <div className={oldVsNewGradient}>
       <div className={`${container} ${noPadding}`}>
         <Divider />

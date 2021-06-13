@@ -77,9 +77,9 @@ const PlumbingAndHeating = () => (
         description="When dealing with burst pipes and emergency call-outs, it’s easy to lose track of time. That’s why when your plumbers enter or leave a job site, and at their normal start and end time, we’ll remind them to clock in and out. And if they happen to forget, they can add a manual time entry for you to review later."
         image={image3}
         maxWidth={500}
-        imagePadding="7.3rem 4.5rem"
-        imageWidth={400}
-        imageHeight={354}
+        imagePadding="6rem 0"
+        imageWidth={550}
+        // imageHeight={354}
       />
       <Divider className="style3" />
       <Article
@@ -88,9 +88,9 @@ const PlumbingAndHeating = () => (
         image={image4}
         isSwapped
         maxWidth={500}
-        imagePadding="7.3rem 4.5rem"
-        imageWidth={400}
-        imageHeight={354}
+        imagePadding="6rem 17rem 6rem 0"
+        imageWidth={378}
+        // imageHeight={354}
       />
       <Divider className="style3" />
       <AccordionArticle

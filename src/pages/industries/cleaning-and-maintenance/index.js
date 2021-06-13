@@ -80,9 +80,9 @@ const Cleaning = () => (
         description="Keep better track of your time with Atto’s helpful reminders. When your cleaners enter or leave a job site, and at their normal start and end time, we’ll notify them to clock in and out. And if they happen to forget, they can still add a manual time entry for you to review later."
         image={image3}
         maxWidth={500}
-        imagePadding="7.3rem 4.5rem"
-        imageWidth={400}
-        imageHeight={354}
+        imagePadding="6rem 0"
+        imageWidth={550}
+        // imageHeight={354}
       />
       <Divider className="style3" />
       <Article
@@ -91,9 +91,8 @@ const Cleaning = () => (
         image={image4}
         isSwapped
         maxWidth={500}
-        imagePadding="7.3rem 4.5rem"
-        imageWidth={400}
-        imageHeight={354}
+        imagePadding="2rem 2rem 6rem 0"
+        imageWidth={530}
       />
       <Divider className="style3" />
       <Title
