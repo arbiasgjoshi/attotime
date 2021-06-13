@@ -54,6 +54,8 @@ const WorkHoursTracker = () => (
       title="Keep track of your employees with our work hours tracker"
       description="With time tracking, location tracking, wage estimates, and instantly available timesheet reports."
       image={image1}
+      imageHeight="614"
+      imageWidth="438"
       styling="other"
     />
     <Divider className="style3" />

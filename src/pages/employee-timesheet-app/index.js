@@ -18,12 +18,9 @@ import LearnMoreCard from '@components/molecules/learn-more-card';
 import Services from '@components/organisms/services';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import noImage from '@images/no-image.png';
 import EstimatesEmployee from '@images/estimates-employees-timesheets@2x.png';
 import TimeCardSummaries from '@images/see-time-card-summaries-per-employee-team-or-project@2x.png';
 import ViewTimeCard from '@images/view-time-card-data@2x.png';
-import StreamlinePayroll from '@images/streamline-payroll-with-simple-employee-timesheet-app@2x.png';
-import TimeTrackingAnyIndustry from '@images/time-tracking-for-any-industry-variant-two@2x.png';
 
 import AutomaticReports from '@images/automatic-email-reports@2x.png';
 import ExportTimesheet from '@images/export-timesheet-and-timesheet-data@2x.png';
@@ -42,7 +39,7 @@ import { FooterLinks } from '@locale/en.js';
 import { oldList, newList } from '@data/industries';
 import { checkList, cardList, commonQuestionsList } from '@data/third-phase/employee-timesheet-app';
 import { firstList, serviceList } from '@data/third-phase/time-tracking-app';
-import image1 from '@images/time-clock-mobile@2x.png';
+import image1 from '@images/streamline-your-payroll-with-our-simple-employee-timesheet-app@2x.png';
 import { rndContainer, learnMoreContainer } from './employee.module.scss';
 
 const EmployeeTimesheetApp = () => (

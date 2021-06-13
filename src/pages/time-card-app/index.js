@@ -57,6 +57,8 @@ const TimeCardApp = () => (
       title="Track your employees hours with our simple time card app"
       image={image1}
       styling="other"
+      imageHeight="614"
+      imageWidth="438"
       description="Clock in and out, track time on the job, and turn employee time card data into insightful reports."
     />
     <Divider className="style4" />

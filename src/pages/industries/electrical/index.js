@@ -104,7 +104,12 @@ const Electrician = () => (
         notCentered
       />
       <Divider className="style3" />
-      <AccordionArticle list={accordionList1} image={image5} />
+      <AccordionArticle
+        list={accordionList1}
+        image={image5}
+        imageWidth="352"
+        imagePadding="0 0 6.3rem 6rem"
+      />
       <Divider />
       <Title
         title="Everything you need to keep electrical jobs on schedule and on budget"
