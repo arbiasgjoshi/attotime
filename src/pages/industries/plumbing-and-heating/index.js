@@ -27,7 +27,6 @@ import boxImage2 from '@images/plumbing-box-two@2x.png';
 import boxImage3 from '@images/plumbing-box-three@2x.png';
 import boxImage4 from '@images/plumbing-box-four@2x.png';
 
-import image1 from '@images/no-image.png';
 import {
   container,
   industryPadding,
@@ -36,6 +35,7 @@ import {
   background,
 } from '@styles/main.module.scss';
 import {
+  firstList,
   checkList1,
   accordionList1,
   accordionList2,
@@ -43,9 +43,6 @@ import {
 import { oldList, newList, steps } from '@data/industries';
 import image2 from '@images/time-tracking-plumbing@2x.png';
 import { FooterLinks } from '@locale/en.js';
-import { firstList } from '@data/industries/roofing.js';
-
-// import localeData from '@locale/en';
 
 const PlumbingAndHeating = () => (
   <>
@@ -118,7 +115,7 @@ const PlumbingAndHeating = () => (
     </div>
     <div className={oldVsNewGradient}>
       <div className={`${container} ${noPadding}`}>
-        <Divider className="style5" />
+        <Divider />
         <OldVsNew oldList={oldList} newList={newList} />
         <Divider />
       </div>

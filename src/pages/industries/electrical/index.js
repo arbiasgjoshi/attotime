@@ -31,8 +31,12 @@ import boxImage4 from '@images/electrician-box-four@2x.png';
 import image2 from '@images/time-tracking-electricians@2x.png';
 
 import { FooterLinks } from '@locale/en.js';
-import { firstList } from '@data/industries/roofing.js';
-import { checkList1, accordionList1, accordionList2 } from '@data/industries/electrician.js';
+import {
+  firstList,
+  checkList1,
+  accordionList1,
+  accordionList2,
+} from '@data/industries/electrician.js';
 import { oldList, newList, steps } from '@data/industries';
 import {
   container,
@@ -119,7 +123,7 @@ const Electrician = () => (
     </div>
     <div className={oldVsNewGradient}>
       <div className={`${container} ${noPadding}`}>
-        <Divider className="style5" />
+        <Divider />
         <OldVsNew oldList={oldList} newList={newList} />
         <Divider />
       </div>

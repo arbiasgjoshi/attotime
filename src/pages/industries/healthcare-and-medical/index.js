@@ -29,13 +29,13 @@ import boxImage3 from '@images/healthcare-box-three@2x.png';
 import boxImage4 from '@images/healthcare-box-four@2x.png';
 
 import {
+  firstList,
   checkList1,
   accordionList1,
   accordionList2,
 } from '@data/industries/home-and-healthcare.js';
 import { oldList, newList, steps } from '@data/industries';
 import { FooterLinks } from '@locale/en.js';
-import { firstList } from '@data/industries/roofing.js';
 import {
   container,
   industryPadding,
@@ -74,15 +74,15 @@ const HomeHealthcare = () => (
       />
       <Divider className="style3" />
       <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
-      <Divider />
+      <Divider className="style10" />
       <Article
         title="Get helpful reminders so your caregivers never forget to clock in!"
         description="When caregivers are nursing patients, it can be easy to lose track of time. That’s why whenever they enter or leave a patient’s home, and at their normal start and end time, we’ll remind them to clock in and out. And if they still happen to forget, they can add a manual time entry for you to review later."
         image={image3}
         maxWidth={500}
-        imagePadding="7.3rem 4.5rem"
-        imageWidth={400}
-        imageHeight={354}
+        imagePadding="7.3rem 0"
+        imageWidth={550}
+        imageHeight={380}
       />
       <Divider className="style3" />
       <Article
@@ -91,23 +91,26 @@ const HomeHealthcare = () => (
         image={image4}
         isSwapped
         maxWidth={500}
-        imagePadding="7.3rem 4.5rem"
-        imageWidth={400}
-        imageHeight={354}
+        imagePadding="6rem 7rem 4.5rem 0"
+        imageWidth={476}
+        imageHeight={395}
       />
       <Divider className="style3" />
-      <AccordionArticle
+      <Title
         title="Keep track of your caregivers as they provide care throughout the day"
-        list={accordionList1}
-        image={image5}
+        maxWidth={920}
+        notCentered
       />
+      <Divider className="style3" />
+      <AccordionArticle list={accordionList1} image={image5} />
       <Divider className="style4" />
-      <AccordionArticle
+      <Title
         title="Everything you need to minimize admin and keep track of your budget"
-        list={accordionList2}
-        isSwapped
-        image={image6}
+        maxWidth={920}
+        notCentered
       />
+      <Divider className="style3" />
+      <AccordionArticle list={accordionList2} isSwapped image={image6} />
       <Divider className="style12" />
       <Title
         title="Say goodbye to paper timesheets!"
@@ -118,7 +121,7 @@ const HomeHealthcare = () => (
     </div>
     <div className={oldVsNewGradient}>
       <div className={`${container} ${noPadding}`}>
-        <Divider className="style5" />
+        <Divider />
         <OldVsNew oldList={oldList} newList={newList} />
         <Divider />
       </div>

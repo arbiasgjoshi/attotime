@@ -75,7 +75,6 @@ const Roofing = () => (
         maxWidth={500}
         imagePadding="6rem 0"
         imageWidth={550}
-        imageHeight={380}
       />
       <Divider className="style3" />
       <Article
@@ -84,9 +83,8 @@ const Roofing = () => (
         image={image4}
         isSwapped
         maxWidth={500}
-        imagePadding="3.8rem 5.8rem 6rem 0"
+        imagePadding="3.8rem 2.8rem 6rem 0"
         imageWidth={550}
-        imageHeight={500}
       />
       <Divider className="style4" />
       <Title
@@ -114,7 +112,7 @@ const Roofing = () => (
     </div>
     <div className={oldVsNewGradient}>
       <div className={`${container} ${noPadding}`}>
-        <Divider className="style4" />
+        <Divider />
         <OldVsNew oldList={oldList} newList={newList} />
         <Divider />
       </div>

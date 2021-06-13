@@ -83,7 +83,7 @@ export const firstList = [
     imageHeight: 244,
   },
   {
-    title: 'Track Breaks',
+    title: 'Track breaks',
     description: `Track breaks and categorize them as either paid or unpaid.`,
     alt: 'track breaks',
     icon: icon3,

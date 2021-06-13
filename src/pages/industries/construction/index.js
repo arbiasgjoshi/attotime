@@ -83,6 +83,7 @@ const Construction = () => (
         list={accordionList1}
         image={image3}
         imagePadding="6.1rem 0"
+        imageHeight="498"
       />
       <Divider className="style4" />
       <AccordionArticle
@@ -90,7 +91,8 @@ const Construction = () => (
         list={accordionList2}
         image={image4}
         isSwapped
-        imagePadding="2.1rem 0 10.1rem 0"
+        imageWidth="365"
+        imagePadding="2.1rem 1.7rem 10.1rem"
       />
       <Divider className="style4" />
       <AccordionArticle
@@ -103,7 +105,7 @@ const Construction = () => (
     </div>
     <div className={oldVsNewGradient}>
       <div className={`${container} ${noPadding}`}>
-        <Divider className="style43" />
+        <Divider />
         <OldVsNew oldList={oldList} newList={newList} />
         <Divider />
       </div>

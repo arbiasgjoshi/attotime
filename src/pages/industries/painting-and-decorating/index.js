@@ -29,10 +29,14 @@ import boxImage2 from '@images/painting-box-two@2x.png';
 import boxImage3 from '@images/painting-box-three@2x.png';
 import boxImage4 from '@images/painting-box-four@2x.png';
 
-import { checkList1, accordionList1, accordionList2 } from '@data/industries/painting.js';
+import {
+  firstList,
+  checkList1,
+  accordionList1,
+  accordionList2,
+} from '@data/industries/painting.js';
 import { oldList, newList, steps } from '@data/industries';
 import { FooterLinks } from '@locale/en.js';
-import { firstList } from '@data/industries/roofing.js';
 import {
   container,
   industryPadding,
@@ -75,9 +79,9 @@ const Painting = () => (
         title="Allow your supervisor to track your painting crew’s time"
         description="Painting large properties or doing a commercial renovation requires your crew to work together. Instead of having each painter or decorator track their time individually, your on-the-job supervisor can use Atto to clock in and out on their behalf."
         maxWidth={500}
-        imagePadding="7.3rem 4.5rem"
-        imageWidth={400}
-        imageHeight={354}
+        imagePadding="5rem 0"
+        imageWidth={550}
+        imageHeight={380}
         image={image3}
       />
       <Divider className="style3" />
@@ -86,9 +90,8 @@ const Painting = () => (
         description="Tiling large buildings or doing commercial and industrial painting jobs require lots of your roofers to work together. Instead of having each contractor track their time individually, your on-the-job supervisor can use Atto to clock-in and out on their behalf."
         isSwapped
         maxWidth={500}
-        imagePadding="7.3rem 4.5rem"
-        imageWidth={400}
-        imageHeight={354}
+        imagePadding="3rem 0 4rem"
+        imageWidth={550}
         image={image4}
       />
       <Divider className="style4" />
@@ -114,7 +117,7 @@ const Painting = () => (
     </div>
     <div className={oldVsNewGradient}>
       <div className={`${container} ${noPadding}`}>
-        <Divider className="style5" />
+        <Divider />
         <OldVsNew oldList={oldList} newList={newList} />
         <Divider />
       </div>

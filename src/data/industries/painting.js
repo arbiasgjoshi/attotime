@@ -3,11 +3,69 @@ import React from 'react';
 import Icon from '@components/atoms/icon';
 import { RespondToAbsenteeism, AutomatedTimesheets } from '@components/atoms/svg-icons';
 
+import icon1 from '@images/clock-in-out.png';
+import icon2 from '@images/write-notes.png';
+import icon3 from '@images/track-breaks.png';
+import icon4 from '@images/manage-overtime.png';
+import icon5 from '@images/switch-between-jobs.png';
+import icon6 from '@images/add-time-off.png';
+
 export const checkList1 = [
   { title: 'Track your painters’ and decorators’ time and location.' },
   { title: 'See who’s available to work in real-time.' },
   { title: 'Bill customers for every minute spent on the job.' },
   { title: 'Accurately estimate your labor costs to win more jobs.' },
+];
+
+export const firstList = [
+  {
+    title: 'Clock in and out',
+    description: `Tap the giant pulsating clock in/out button to start tracking time.`,
+    alt: 'Easy to use',
+    icon: icon1,
+    imageWidth: 350,
+    imageHeight: 244,
+  },
+  {
+    title: 'Track breaks',
+    description: `Track breaks and categorize them as either paid or unpaid.`,
+    alt: 'track breaks',
+    icon: icon3,
+    imageWidth: 350,
+    imageHeight: 244,
+  },
+  {
+    title: 'Manage overtime',
+    description: `Decide if overtime should be tracked, and if so, whether it’s calculated weekly, daily or daily double.`,
+    alt: 'Manage overtime',
+    icon: icon4,
+    imageWidth: 350,
+    imageHeight: 244,
+  },
+  {
+    title: 'Write notes',
+    description: `Add notes directly to time tracking records. For example, your crew can record their job progress, the shades of paint they need, or supplies to be ordered.`,
+    alt: 'write notes',
+    icon: icon2,
+    imageWidth: 350,
+    imageHeight: 244,
+  },
+  {
+    title: 'Add time off',
+    description: `Add time off such as vacations and sick leave to help managers understand who’s available. Useful for handling last-minute schedule changes, or dealing with unexpected absences.`,
+    alt: 'Time off',
+    icon: icon6,
+    imageWidth: 350,
+    imageHeight: 244,
+  },
+  {
+    title: 'Switch between jobs',
+    description: `Use job codes to categorize time being tracked. For example, categorize each type of job (e.g. interior decorating, exterior decorating) or type of client (residential, commercial).`,
+    alt: 'Switch between jobs',
+    icon: icon5,
+    imageWidth: 350,
+    imageHeight: 244,
+  },
 ];
 
 export const accordionList1 = [

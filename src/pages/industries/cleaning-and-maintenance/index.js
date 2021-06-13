@@ -23,7 +23,12 @@ import {
   oldVsNewGradient,
   background,
 } from '@styles/main.module.scss';
-import { checkList1, accordionList1, accordionList2 } from '@data/industries/cleaning.js';
+import {
+  firstList,
+  checkList1,
+  accordionList1,
+  accordionList2,
+} from '@data/industries/cleaning.js';
 import { oldList, newList, steps } from '@data/industries';
 
 import image2 from '@images/time-tracking-cleaning@2x.png';
@@ -39,7 +44,6 @@ import boxImage3 from '@images/cleaning-box-three@2x.png';
 import boxImage4 from '@images/cleaning-box-four@2x.png';
 
 import { FooterLinks } from '@locale/en.js';
-import { firstList } from '@data/industries/roofing.js';
 
 // import localeData from '@locale/en';
 
@@ -117,7 +121,7 @@ const Cleaning = () => (
     </div>
     <div className={oldVsNewGradient}>
       <div className={`${container} ${noPadding}`}>
-        <Divider className="style5" />
+        <Divider />
         <OldVsNew oldList={oldList} newList={newList} />
         <Divider />
       </div>

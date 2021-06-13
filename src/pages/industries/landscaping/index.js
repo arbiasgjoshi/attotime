@@ -85,10 +85,8 @@ const Landscaping = () => (
         image={image3}
         title="Keep track of everything happening outdoors"
         list={accordionList1}
-        imageWidth={360}
         imageHeight={498}
-        imagePadding="6.1rem 3rem 6.1rem 1rem"
-        boxHeight="62rem"
+        imagePadding="6.1rem 2.5rem 6.1rem 1rem"
       />
       <Divider />
       <AccordionArticle
@@ -106,15 +104,15 @@ const Landscaping = () => (
         image={image5}
         title="All the reports you need to keep landscaping jobs on schedule and on budget"
         list={accordionList3}
-        imageWidth={360}
-        imageHeight={498}
+        imageWidth={400}
+        // imageHeight={514}
         imagePadding="5.3rem 0"
         boxHeight="62rem"
       />
     </div>
     <div className={oldVsNewGradient}>
       <div className={`${container} ${noPadding}`}>
-        <Divider className="style5" />
+        <Divider />
         <OldVsNew oldList={oldList} newList={newList} />
         <Divider />
       </div>

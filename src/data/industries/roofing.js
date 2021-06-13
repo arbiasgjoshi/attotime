@@ -28,7 +28,7 @@ export const firstList = [
     imageHeight: 244,
   },
   {
-    title: 'Track Breaks',
+    title: 'Track breaks',
     description: `Track breaks and categorize them as either paid or unpaid.`,
     alt: 'track breaks',
     icon: icon3,
@@ -45,7 +45,7 @@ export const firstList = [
   },
   {
     title: 'Write notes',
-    description: `Add notes to your time tracking records, such as a work diary.`,
+    description: `Add notes directly to time tracking records. For example, your roofers can record information to help them complete roofing surveys and inspection reports on the go.`,
     alt: 'write notes',
     icon: icon2,
     imageWidth: 350,
@@ -53,7 +53,7 @@ export const firstList = [
   },
   {
     title: 'Add time off',
-    description: `Add time off such as vacations and sick leave to help managers understand who’s available to work.`,
+    description: `Add time off such as vacations and sick leave to help managers understand who’s available. Useful when dealing with weather-induced schedule changes.`,
     alt: 'Time off',
     icon: icon6,
     imageWidth: 350,
@@ -61,7 +61,7 @@ export const firstList = [
   },
   {
     title: 'Switch between jobs',
-    description: `Use job codes to categorize time tracked towards specific purposes – for example for each client or type of job.`,
+    description: `Use job codes to categorize time being tracked. For example, categorize each type of job (e.g. roof tiling, guttering, leak repairs) or type of client (residential, commercial, industrial).`,
     alt: 'Switch between jobs',
     icon: icon5,
     imageWidth: 350,
