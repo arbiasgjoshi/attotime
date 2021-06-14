@@ -2,6 +2,10 @@
   width: 100%;
   margin-bottom: 1rem;
 
+  @include max(mobile) {
+    margin-bottom: 3rem;
+  }
+
   @include min(tablet) {
     text-align: center;
     margin: 0;

@@ -27,6 +27,9 @@ const IndustryMainCard = ({
         </div>
       )}
       <div className={styles.emailContainer}>
+        <div className={styles.mobileImage}>
+          <img src={image} alt={title} width={imageWidth || 500} height={imageHeight || 596} />
+        </div>
         <EmailForm
           placeholder="Type your email"
           checkItemOne="No credit card required"

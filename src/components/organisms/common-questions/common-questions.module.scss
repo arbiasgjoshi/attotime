@@ -2,7 +2,11 @@
   @include flex-direction(column);
 
   .firstBox {
-    margin: 0 0 1rem 1rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    @include min(tablet) {
+      margin: 0 0 1rem 1rem;
+    }
   }
 
   @include min(tablet) {

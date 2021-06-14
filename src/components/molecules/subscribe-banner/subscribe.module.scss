@@ -22,12 +22,14 @@
 
       h3 {
         font-weight: 500;
-        text-align: center;
-        padding: 0 6rem;
+        text-align: left;
+        font-size: var(--h2-mobile-size);
+        line-height: var(--h2-mobile-line-height-size);
+        // padding: 0 6rem;
       }
 
       p {
-        display: none;
+        // display: none;
       }
     }
 
@@ -62,7 +64,7 @@
     .imgWrap {
       position: absolute;
       left: 0;
-      top: -18rem;
+      top: -10rem;
       max-width: 100%;
       height: auto;
       z-index: -1;
@@ -74,6 +76,7 @@
   }
 
   @include max(tablet) {
+    padding: 3rem 2rem !important;
     &.hasImage {
       margin-top: 20rem;
     }

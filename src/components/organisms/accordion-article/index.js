@@ -54,7 +54,11 @@ const AccordionArticle = ({
           </div>
         )}
         <div className={listStyle}>
-          <Accordion items={list} industries onSetAccordionImage={(val) => toggleImage(val)} />
+          <Accordion
+            items={list}
+            industries
+            onSetAccordionImage={(val) => val && toggleImage(val)}
+          />
         </div>
       </div>
       <div className={secondBox}>

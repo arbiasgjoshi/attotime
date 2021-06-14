@@ -9,6 +9,14 @@
   @include max(mobile) {
     text-align: center;
     margin-top: 2rem;
+
+    .featureCardWithBanner {
+      margin-bottom: 5rem;
+
+      > div:first-child {
+        margin-bottom: 2rem;
+      }
+    }
   }
 
   @include min(tablet) {

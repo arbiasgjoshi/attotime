@@ -100,6 +100,18 @@
       width: 100%;
       margin-top: 3rem;
 
+      .mobileImage {
+        display: none;
+
+        @include max(tablet) {
+          display: block;
+
+          img {
+            margin-bottom: 3rem;
+          }
+        }
+      }
+
       @include min(tablet) {
         margin-top: 4rem;
         max-width: 48.2rem;
@@ -123,6 +135,10 @@
     margin-left: auto;
     @include max(tablet) {
       margin: 4rem 0;
+
+      img {
+        display: none;
+      }
     }
   }
 

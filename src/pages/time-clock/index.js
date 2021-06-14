@@ -41,7 +41,11 @@ import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
 
-import { workListContainer, learnMoreContainer } from './time-clock.module.scss';
+import {
+  workListContainer,
+  learnMoreContainer,
+  featureCardWithBanner,
+} from './time-clock.module.scss';
 
 import { checkList, commonQuestionsList } from '../../data/third-phase/time-clock.js';
 
@@ -72,7 +76,7 @@ const TimeClock = () => (
     <Title maxWidth={700} title="Track time from any location, and any device" />
     <Divider className="style010" />
     <div className={workListContainer}>
-      <div>
+      <div className={featureCardWithBanner}>
         <StaticImage
           alt="Time tracking on the web"
           height={378}
@@ -90,7 +94,7 @@ const TimeClock = () => (
           imagePadding=".8rem 2.9rem .797rem .1rem"
         />
       </div>
-      <div>
+      <div className={featureCardWithBanner}>
         <StaticImage
           alt="Time tracking via our mobile app"
           height={378}
@@ -109,7 +113,7 @@ const TimeClock = () => (
           imagePadding=".5rem 3.24rem .587rem 0"
         />
       </div>
-      <div>
+      <div className={featureCardWithBanner}>
         <StaticImage
           alt="Time tracking on the time clock kiosk"
           height={378}
