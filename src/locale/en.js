@@ -1,5 +1,5 @@
 import googlePlay from '../images/google-play@2x.png';
-import appStore from '../images/app-store@2x.png';
+import appStore from '../images/apple-store@2x.png';
 
 export const placeholderData = {};
 

@@ -15,6 +15,7 @@ import {
   hasLine,
   parentPath,
   downloadApp,
+  linkWrap,
 } from './footer.module.scss';
 
 const Footer = ({ FooterLinks }) => (
@@ -52,8 +53,15 @@ const Footer = ({ FooterLinks }) => (
               <div className={downloadApp}>
                 <h5 className={parentPath}>Download</h5>
                 {section.downloadApp.map((app) => (
-                  <Link to={app.href} target="_blank" rel="noreferrer" key={app.id}>
-                    <img src={app.src} alt="Mobile" />
+                  <Link
+                    to={app.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    key={app.id}
+                    className={linkWrap}
+                  >
+                    <img src={app.src} alt="Mobile" width="19" />
+                    <p>{app.name}</p>
                   </Link>
                 ))}
               </div>
