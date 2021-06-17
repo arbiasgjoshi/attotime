@@ -47,22 +47,28 @@ const Accordion = ({ i, expanded, setExpanded, content, icon, title, industries 
       <motion.header initial={false} onClick={() => setExpanded(isOpen ? false : i)}>
         {triggerItem(title, isOpen, icon, industries)}
       </motion.header>
-      <AnimatePresence initial={false}>
+      <AnimatePresence initial={false} exitBeforeEnter>
         {isOpen && (
           <motion.section
             key="content"
             initial="collapsed"
             animate="open"
             exit="collapsed"
+            style={{ overflow: 'hidden' }}
             variants={{
               open: { opacity: 1, height: 'auto' },
               collapsed: { opacity: 0, height: 0 },
             }}
-            transition={{ duration: 0.25, ease: 'easeInOut' }}
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
           >
             <motion.div
-              variants={{ collapsed: { scale: 0.9 }, open: { scale: 1 } }}
-              transition={{ duration: 0.25, ease: 'easeInOut' }}
+              initial="collapsed"
+              animate="open"
+              variants={{
+                open: { translateY: '0', opacity: 1 },
+                collapsed: { translateY: '2rem', opacity: 0 },
+              }}
+              transition={{ delay: 0.1 }}
               className={contentWrapper}
             >
               {industries ? <p>{content}</p> : <>{content}</>}

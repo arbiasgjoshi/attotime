@@ -10,6 +10,10 @@
     width: 4rem;
     height: 4rem;
     @include flex-align(center, center);
+
+    @include max(tablet) {
+      display: none;
+    }
   }
 
   h5 {
@@ -17,6 +21,7 @@
     width: 100%;
     margin: 2rem;
     transition: ease all 0.25s;
+
     &:hover {
       color: #262626;
     }
@@ -58,6 +63,7 @@
 .contentWrapper {
   padding: 0 2rem 2rem 0;
   transform-origin: top center;
+  transition: ease all 0.2s;
 
   @include min(tablet) {
     padding: 0 3.2rem 2.2rem 3rem;
@@ -74,7 +80,7 @@
   &.industryAccordion {
     .triggerItemWrap {
       h5 {
-        margin: 1.5rem 2rem;
+        margin: 1.5rem 0.8rem;
         @include min(tablet) {
           margin: 2.3rem 1.8rem;
         }
@@ -82,7 +88,7 @@
     }
 
     .contentWrapper {
-      padding: 0 2rem 2rem 2rem;
+      padding: 0 4.2rem 2rem 0.8rem;
       @include min(tablet) {
         padding: 0 7.2rem 3.2rem 5.8rem;
       }
