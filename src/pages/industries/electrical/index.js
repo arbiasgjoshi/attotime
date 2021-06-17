@@ -72,6 +72,7 @@ const Electrician = () => (
         maxWidth={920}
         maxDescriptionWidth={800}
         description="With real-time activity tracking, you can check if your electricians are working, on a break, or enjoying some time off."
+        bodyStyle="secondBodyStyle"
       />
       <Divider className="centenary" />
       <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />

@@ -70,6 +70,7 @@ const Cleaning = () => (
         title="Keep track of everything happening throughout your cleaners’ workday"
         maxWidth={920}
         maxDescriptionWidth={800}
+        bodyStyle="secondBodyStyle"
         description="Atto’s time tracking app is incredibly easy to use and allows you to see what all your cleaners are up to in real-time."
       />
       <Divider className="centenary" />

@@ -37,8 +37,8 @@ const ImagesBox = ({
     <div className={styles.imagesContainer}>
       <div className={styles.imageBox1}>{image1 && <img src={image1} alt="Box Item Three" />}</div>
       <div className={styles.imageBox2}>
-        <img src={image2} alt="Box Item Four" width="350" height="445" />
-        <img src={image3} alt="Box Item Five" width="314" height="533" />
+        <img src={image2} alt="Box Item Four" width="350" />
+        <img src={image3} alt="Box Item Five" width="378" />
       </div>
     </div>
     <div className={styles.mobileVersion}>

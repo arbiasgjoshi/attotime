@@ -66,6 +66,7 @@ const PlumbingAndHeating = () => (
       <Title
         title="Track all of your plumbers throughout their workday"
         description="With real-time activity tracking, you can check if your plumbers are working, on a break, or enjoying some time off."
+        bodyStyle="secondBodyStyle"
         maxWidth={920}
         maxDescriptionWidth={800}
       />
@@ -93,18 +94,21 @@ const PlumbingAndHeating = () => (
         // imageHeight={354}
       />
       <Divider className="style3" />
-      <AccordionArticle
+      <Title
         title="Keep track of your plumbers as they make their way to different call-outs throughout the day"
-        list={accordionList1}
-        image={image5}
+        maxWidth={920}
+        notCentered
       />
+      <Divider className="style3" />
+      <AccordionArticle list={accordionList1} image={image5} />
       <Divider />
-      <AccordionArticle
-        title="Keep track of your plumbers as they make their way to different call-outs throughout the day"
-        list={accordionList2}
-        isSwapped
-        image={image6}
+      <Title
+        title="Everything you need to keep plumbing jobs on schedule and on budget"
+        maxWidth={920}
+        notCentered
       />
+      <Divider className="style3" />
+      <AccordionArticle list={accordionList2} isSwapped image={image6} />
       <Divider className="style11" />
       <Title
         title="Say goodbye to paper timesheets!"

@@ -70,6 +70,7 @@ const Painting = () => (
         title="Track all of your painters and decorators throughout their workday"
         description="With real-time activity tracking, you can check if your crew is working, on a break, or enjoying some time off."
         maxWidth={920}
+        bodyStyle="secondBodyStyle"
         maxDescriptionWidth={800}
       />
       <Divider className="centenary" />
@@ -95,18 +96,21 @@ const Painting = () => (
         image={image4}
       />
       <Divider className="style4" />
-      <AccordionArticle
+      <Title
         title="Keep track of your painting and decorating crew as they work throughout the day"
-        list={accordionList1}
-        image={image5}
+        maxWidth={920}
+        notCentered
       />
+      <Divider className="style3" />
+      <AccordionArticle list={accordionList1} image={image5} />
       <Divider className="style4" />
-      <AccordionArticle
+      <Title
         title="Everything you need to keep painting and decorating jobs on schedule and on budget"
-        list={accordionList2}
-        image={image6}
-        isSwapped
+        maxWidth={920}
+        notCentered
       />
+      <Divider className="style3" />
+      <AccordionArticle list={accordionList2} image={image6} isSwapped />
       <Divider />
       <Title
         title="Say goodbye to paper timesheets!"

@@ -1,7 +1,7 @@
 .container {
   @include flex-direction(column-reverse);
   align-items: center;
-  margin: 2rem 1rem;
+  // margin: 2rem 1rem;
 
   @include min(tablet) {
     margin: 1rem;
