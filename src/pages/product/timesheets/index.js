@@ -1,7 +1,6 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import { FooterLinks } from '@locale/en.js';
-import { container } from '@styles/main.module.scss';
+import { container, imageFormWrapper } from '@styles/main.module.scss';
 
 import Divider from '@components/atoms/divider';
 import SEO from '@components/molecules/seo';
@@ -19,6 +18,7 @@ import IconCardList from '@components/organisms/icon-card-list';
 import GrowthNumbers from '@components/organisms/growth-numbers';
 import VideoCheckList from '@components/organisms/video-checklist';
 import Services from '@components/organisms/services';
+import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 
 import authorImage from '@images/authorImage.png';
 import noImage from '@images/no-image.png';
@@ -220,14 +220,9 @@ const Timesheets = () => {
           maxDescriptionWidth={980}
         />
       </div>
-      <Divider className="style3" />
-      <div>
-        <StaticImage
-          alt="Clock In"
-          quality={95}
-          src="../../../images/ready-made.svg"
-          placeholder="none"
-        />
+      <Divider className="style01" />
+      <div className={imageFormWrapper}>
+        <ProductOverviewBanner />
       </div>
       <Divider className="style3" />
       <IconCardList cardList={firstList} style="smallTimesheetImages" />

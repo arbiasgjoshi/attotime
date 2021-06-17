@@ -40,7 +40,7 @@ import {
 } from './pricing.module.scss';
 
 const Pricing = () => {
-  const [active, setActive] = useState('monthly');
+  const [active, setActive] = useState('annually');
   const checkList = [
     { title: 'Time Tracking', noStyle: false },
     { title: 'GPS Location Tracking', noStyle: false },
@@ -180,7 +180,7 @@ const Pricing = () => {
       <div className={packageWrapper}>
         <PackageCard
           title="Premium"
-          price={active === 'annually' ? 4 : 5}
+          price={active === 'annually' ? 7 : 5}
           list={checkList}
           listTitle="Includes"
           contentText="/ user / month"

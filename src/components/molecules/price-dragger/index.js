@@ -61,7 +61,7 @@ const PriceDragger = () => {
           <div className={pricingValue}>
             <p className={currency}>$</p>
             <h2>{val * 5}</h2>
-            <p className={plan}>/ annual</p>
+            <p className={plan}>/ month</p>
           </div>
         </div>
       </div>

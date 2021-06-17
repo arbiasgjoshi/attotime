@@ -61,6 +61,15 @@
   }
 }
 
+.imageWrapper {
+  @include min(desktop) {
+    width: calc(100% + 70px);
+    margin-left: -35px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .imageFormWrapper {
   @include flex-direction(column);
   align-items: center;

@@ -23,7 +23,7 @@ import GrowthNumbers from '@components/organisms/growth-numbers';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
-import { container } from '@styles/main.module.scss';
+import { container, imageWrapper } from '@styles/main.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
 import authorImage from '@images/authorImage.png';
@@ -166,14 +166,15 @@ const TimeTracking = () => {
       <Divider />
       <Title maxWidth={860} title="Lower costs, higher productivity. Less admin, more business." />
       <Divider className="style7" />
-      <StaticImage
-        src="../../../images/admin-panel.png"
-        alt="admin-panel-image"
-        width={1140}
-        height={616}
-        quality={96}
-        placeholder="none"
-      />
+      <div className={imageWrapper}>
+        <StaticImage
+          src="../../../images/admin-panel.png"
+          alt="admin-panel-image"
+          width={1170}
+          quality={96}
+          placeholder="none"
+        />
+      </div>
       <Divider className="style3" />
       <CheckList list={overviewAdminList} hasDescription cardStyle="big" />
       <Divider />
