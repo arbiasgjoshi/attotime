@@ -81,7 +81,7 @@ module.exports = {
         languages: [`en`, `de`, `es`, `fr`],
         // language file path
         defaultLanguage: `en`,
-        redirect: true,
+        redirect: false,
       },
     },
   ],
