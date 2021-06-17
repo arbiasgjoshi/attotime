@@ -48,7 +48,7 @@ const ListArticle = ({
       <div style={{ margin: textMargin }} className={textWrapper}>
         <Title title={title} description={description} leftAlign />
         {description2 && <p className={descr2}>{description2}</p>}
-        <CheckList list={list} cardStyle="small" />
+        <CheckList list={list} insideTitle cardStyle="small" />
       </div>
       <div style={{ padding: imagePadding }} className={secondBlock}>
         <div className={imageWrapper}>{image2}</div>

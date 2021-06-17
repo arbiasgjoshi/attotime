@@ -40,6 +40,12 @@
     }
   }
 
+  @include max(tablet) {
+    input:first-child {
+      margin-bottom: 2rem;
+    }
+  }
+
   textarea {
     width: 100%;
     resize: none;

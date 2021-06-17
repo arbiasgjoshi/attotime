@@ -45,10 +45,9 @@ const AllFeaturesPage = () => {
           maxParagraphWidth={620}
           subtitle="Combining everything you need to manage your team in one place."
         />
-        <Divider className="style4" />
-        <Divider className="style3" />
-        <Title title="Time Tracking Features" />
-        <Divider className="style5" />
+        <Divider className="" />
+        <Title title="Time Tracking Features" smallerMargin />
+        <Divider className="style51" />
         <div className={`${cardListWrapper} ${timeTrackingStyle}`}>
           {timeTrackingCards.map(({ title, description, logo }) => (
             <div className={cardWrapper}>
@@ -63,7 +62,7 @@ const AllFeaturesPage = () => {
         </div>
         <Divider className="style4" />
         <Title title="Location Tracking Features" />
-        <Divider className="style5" />
+        <Divider className="style51" />
         <div className={`${cardListWrapper} ${locationTrackingStyle}`}>
           {locationTrackingCards.map(({ title, description, logo }) => (
             <div className={cardWrapper}>
@@ -78,7 +77,7 @@ const AllFeaturesPage = () => {
         </div>
         <Divider className="style4" />
         <Title title="Team Activity Features" />
-        <Divider className="style5" />
+        <Divider className="style51" />
         <div className={`${cardListWrapper} ${teamActivityStyle}`}>
           {teamActivityCards.map(({ title, description, logo }) => (
             <div className={cardWrapper}>
@@ -93,7 +92,7 @@ const AllFeaturesPage = () => {
         </div>
         <Divider className="style4" />
         <Title title="Timesheets Features" />
-        <Divider className="style5" />
+        <Divider className="style51" />
         <div className={`${cardListWrapper} ${timesheetStyle}`}>
           {timesheetCards.map(({ title, description, logo, empty }) => (
             <div className={`${cardWrapper} ${empty && emptyCard}`}>

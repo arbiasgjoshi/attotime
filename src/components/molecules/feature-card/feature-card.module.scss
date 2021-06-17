@@ -29,6 +29,12 @@
         margin-right: 0;
       }
 
+      @include max(mobile) {
+        font-size: var(--h4-mobile-size);
+        line-height: var(--h4-mobile-line-height-size);
+        letter-spacing: var(--h4-mobile-letter-spacing);
+      }
+
       @include min(tablet) {
         margin-right: 4rem;
       }
@@ -37,7 +43,7 @@
 }
 
 .container {
-  margin: 2rem auto;
+  margin: 4rem auto;
   width: 80%;
 
   @include min(tablet) {

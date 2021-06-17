@@ -137,6 +137,7 @@ const Product = () => {
         path="/product/time-tracking"
         imageWidth={437}
         imageHeight={580}
+        insideTitle
       />
       <Divider />
       <ProductCard
@@ -149,6 +150,7 @@ const Product = () => {
         path="/product/gps-location-tracking"
         imageWidth={500}
         imageHeight={650}
+        insideTitle
       />
       <Divider />
       <ProductCard
@@ -161,6 +163,7 @@ const Product = () => {
         path="/product/team-activity"
         imageWidth={463}
         imageHeight={580}
+        insideTitle
       />
       <Divider />
       <ProductCard
@@ -174,6 +177,7 @@ const Product = () => {
         path="/product/timesheets"
         imageWidth={408}
         imageHeight={580}
+        insideTitle
       />
       <Divider />
       <GrowthNumbers />

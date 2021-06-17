@@ -13,6 +13,7 @@ import {
   industryIcon,
   industryAccordion,
   svgWrap,
+  adjustPadding,
   contentWrapper,
 } from './accordion.module.scss';
 
@@ -73,7 +74,13 @@ const Accordion = ({ i, expanded, setExpanded, content, icon, title, industries 
   );
 };
 
-const FramerAccordion = ({ items, industries = false, onSetAccordionImage }) => {
+const FramerAccordion = ({
+  items,
+  industries = false,
+  noIconPadding = false,
+  type,
+  onSetAccordionImage,
+}) => {
   const [expanded, setExpanded] = useState(0);
 
   // const toggleAccordionImage = (img) => {
@@ -91,13 +98,18 @@ const FramerAccordion = ({ items, industries = false, onSetAccordionImage }) => 
   };
 
   return (
-    <div className={`${accordionItem} ${industries && industryAccordion}`}>
+    <div
+      className={`${accordionItem} ${industries && industryAccordion} ${
+        noIconPadding && adjustPadding
+      }`}
+    >
       {items.map((item, i) => (
         <Accordion
           i={i}
           key={i}
           expanded={expanded}
           industries={industries}
+          type={type}
           setExpanded={(index) => onAccordionChange(index, item.image)}
           icon={item.icon}
           content={item.description}

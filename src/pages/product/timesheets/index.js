@@ -256,7 +256,7 @@ const Timesheets = () => {
       <GrowthNumbers />
       <Divider />
       <Title
-        title="Streamline the entrie payroll process"
+        title="Streamline the entire payroll process"
         description="Go from timesheets to payroll in no time at all. With Atto, you’ll enjoy a streamlined payroll process that will save hours of admin every payday."
         maxDescriptionWidth={1000}
       />

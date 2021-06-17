@@ -3,8 +3,6 @@ import React from 'react';
 import Divider from '@components/atoms/divider';
 import SEO from '@components/molecules/seo';
 import Header from '@components/molecules/header';
-import { StaticImage } from 'gatsby-plugin-image';
-import Title from '@components/molecules/title';
 import Footer from '@components/molecules/footer';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 

@@ -4,7 +4,7 @@
   border-radius: 8px;
   background-color: #ffffff;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
 
   .greenSubtitle {
     font-weight: normal;
@@ -73,6 +73,17 @@
       h5 {
         font-size: 2.2rem !important;
         font-weight: 400 !important;
+      }
+    }
+
+    @include max(tablet) {
+      > div {
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      > h5 {
+        margin-bottom: 2rem;
       }
     }
   }

@@ -80,27 +80,16 @@ const TimeTracking = () => {
         cardStyle="centerAligned"
         videoUrl="https://www.youtube.com/watch?v=DTvS9lvRxZ8"
       />
+      <Divider />
       <StaticImage
-        src="../images/time-tracking-fingertips@2x.png"
-        alt="Home banner image"
-        height={505}
+        alt="Clock In"
+        height={502}
         quality={95}
         placeholder="none"
-        className={mobileImage}
+        src="../../../images/banner-image-2@2x.png"
       />
-      <Divider />
-      <div>
-        <StaticImage
-          alt="Clock In"
-          height={502}
-          quality={95}
-          placeholder="none"
-          src="../../../images/banner-image-2@2x.png"
-          className={desktopImage}
-        />
-      </div>
       <Divider className="style3" />
-      <IconCardList cardList={timeTrackingFeatures} />
+      <IconCardList middleAligned cardList={timeTrackingFeatures} />
       <Divider />
       <Title
         title="Start tracking time in a tap"

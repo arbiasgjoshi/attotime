@@ -17,6 +17,7 @@ const ProductCard = ({
   list,
   image,
   isSwapped,
+  insideTitle = false,
   style = '',
   imagePadding = '',
   path = '/',
@@ -35,6 +36,7 @@ const ProductCard = ({
             <CheckCard
               title={item.title}
               hasDescription
+              insideTitle={insideTitle}
               description={item.description}
               style="small"
             />

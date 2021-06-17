@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-
-import Icon from '@components/atoms/icon';
-import HeartIcon from '@images/heart-icon@2x.png';
 import Accordion from '@components/organisms/accordion';
 
 import {
   container,
-  // triggerItemWrap,
-  // triggerItemWrapText,
-  // opened,
   swap,
   firstBox,
   titleContainer,
