@@ -20,6 +20,7 @@ const FeatureCard = ({
   higherMargin = false,
   imagePadding,
   isWorkCard = false,
+  comingSoon = false,
   style = '',
 }) => {
   const render = () => {
@@ -51,6 +52,7 @@ const FeatureCard = ({
             <div className={textContainer}>
               <h5 className={higherMargin && titlePush}>{title}</h5>
               <p>{description}</p>
+              {comingSoon && <span>Coming Soon</span>}
             </div>
           </div>
         );

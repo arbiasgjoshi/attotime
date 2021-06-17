@@ -130,6 +130,7 @@ const TimeClock = () => (
           logo={<KioskTracking />}
           alt="Kiosk time tracking"
           imagePadding=".9rem 2.5rem .85rem .4rem"
+          comingSoon
         />
       </div>
     </div>

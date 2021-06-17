@@ -16,8 +16,15 @@ const AnyDevice = ({ title, description, image, list, styling }) => (
       </div>
     </div>
     <div className={styles.secondRow}>
-      {list.map(({ title, description, logo }) => (
-        <FeatureCard logo={logo} isWorkCard higherMargin title={title} description={description} />
+      {list.map(({ title, description, logo, comingSoon = false }) => (
+        <FeatureCard
+          logo={logo}
+          isWorkCard
+          higherMargin
+          title={title}
+          comingSoon={comingSoon}
+          description={description}
+        />
       ))}
     </div>
   </div>
