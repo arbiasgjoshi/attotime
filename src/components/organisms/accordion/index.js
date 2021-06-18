@@ -14,10 +14,11 @@ import {
   industryAccordion,
   svgWrap,
   adjustPadding,
+  featureImgWrapper,
   contentWrapper,
 } from './accordion.module.scss';
 
-const triggerItem = (val, opened, itemIcon, isIndustries) => (
+const triggerItem = (val, opened, itemIcon, hasArrow) => (
   <div className={triggerItemWrap}>
     {itemIcon && <div className={svgWrap}>{itemIcon}</div>}
     <motion.h5
@@ -28,24 +29,37 @@ const triggerItem = (val, opened, itemIcon, isIndustries) => (
       {val}
     </motion.h5>
     {opened ? (
-      <div className={`${iconItem} ${isIndustries && industryIcon}`}>
-        <Icon iconClass={isIndustries ? 'arrow-up' : 'minus'} />
+      <div className={`${iconItem} ${hasArrow && industryIcon}`}>
+        <Icon iconClass={hasArrow ? 'arrow-up' : 'minus'} />
       </div>
     ) : (
-      <div className={`${iconItem} ${isIndustries && industryIcon}`}>
-        <Icon iconClass={isIndustries ? 'arrow-down' : 'plus'} />
+      <div className={`${iconItem} ${hasArrow && industryIcon}`}>
+        <Icon iconClass={hasArrow ? 'arrow-down' : 'plus'} />
       </div>
     )}
   </div>
 );
 
-const Accordion = ({ i, expanded, setExpanded, content, icon, title, industries }) => {
+const Accordion = ({
+  image,
+  industries,
+  i,
+  icon,
+  expanded,
+  setExpanded,
+  content,
+  featureImage,
+  title,
+  faq,
+  hasArrow,
+  featureTabs,
+}) => {
   const isOpen = i === expanded;
 
   return (
     <>
       <motion.header initial={false} onClick={() => setExpanded(isOpen ? false : i)}>
-        {triggerItem(title, isOpen, icon, industries)}
+        {triggerItem(title, isOpen, icon, hasArrow)}
       </motion.header>
       <AnimatePresence initial={false} exitBeforeEnter>
         {isOpen && (
@@ -71,7 +85,12 @@ const Accordion = ({ i, expanded, setExpanded, content, icon, title, industries 
               transition={{ delay: 0.1 }}
               className={contentWrapper}
             >
-              {industries ? <p>{content}</p> : <>{content}</>}
+              {!faq ? <p>{content}</p> : <>{content}</>}
+              {featureTabs && featureImage && (
+                <div className={featureImgWrapper}>
+                  <img src={featureImage} alt={title} />
+                </div>
+              )}
             </motion.div>
           </motion.section>
         )}
@@ -84,23 +103,18 @@ const FramerAccordion = ({
   items,
   industries = false,
   noIconPadding = false,
+  featureTabs = false,
+  arrowIcon,
   type,
   onSetAccordionImage,
 }) => {
   const [expanded, setExpanded] = useState(0);
-
-  // const toggleAccordionImage = (img) => {
-  //   console.log(img);
-  // };
 
   const onAccordionChange = (val, accordionImage) => {
     setExpanded(val);
     if (accordionImage) {
       onSetAccordionImage(accordionImage);
     }
-    // else {
-    //   onSetAccordionImage(null);
-    // }
   };
 
   return (
@@ -115,9 +129,12 @@ const FramerAccordion = ({
           key={i}
           expanded={expanded}
           industries={industries}
+          featureTabs={featureTabs}
           type={type}
+          hasArrow={arrowIcon}
           setExpanded={(index) => onAccordionChange(index, item.image)}
           icon={item.icon}
+          featureImage={item.featureImage}
           content={item.description}
           title={item.title}
         />

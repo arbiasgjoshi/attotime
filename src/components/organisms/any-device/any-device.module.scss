@@ -66,13 +66,6 @@
         h5 {
           margin-right: 1rem;
         }
-
-        p {
-          @include min(tablet) {
-            height: 15rem;
-            // @include flex-align(center, center);
-          }
-        }
       }
     }
 

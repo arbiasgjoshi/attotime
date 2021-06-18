@@ -51,6 +51,7 @@ const AccordionArticle = ({
           <Accordion
             items={list}
             industries
+            arrowIcon
             onSetAccordionImage={(val) => val && toggleImage(val)}
           />
         </div>
