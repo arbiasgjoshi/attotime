@@ -78,59 +78,105 @@
     ]
   },
   "pages": {
-    "homepage": {},
+    "homepage": {
+      "name": "HOMEPAGE",
+      "title": "A simpler way to manage your employees’ time",
+      "description": "A simple, all-in-one solution that accurately tracks your employees’ time and automates timesheets",
+      "timeTrackingTitle": "Track time from any device, anytime, and anywhere",
+      "timeTrackingDescription": "Say goodbye to employee estimates. See every minute on the clock, including work hours, breaks, and time-off.",
+      "gpsTitle": "Be in control of your employees in the field",
+      "gpsDescription": "Track job routes, work history, and employee’ locations in real-time – increasing team safety and accountability.",
+      "teamActivityTitle": "Stay in the loop of work activity throughout the day",
+      "teamActivityDescription": "Get instantly notified of employee work activity – without needing to pick up the phone.",
+      "timesheetsTitle": "Automate your employees’ timesheets",
+      "timesheetsDescription": "Accurate, trustworthy, and insightful timesheets – that save hours from the payroll process.",
+      "secondSectionTitle": "Thousands of businesses have saved time using Atto",
+      "secondSectionDesc": "And it’s not just time saved, but money and stress too.",
+      "timesheetCheckItem-0": "No longer chasing timesheets.",
+      "timesheetCheckItem-1": "Cut payroll costs with accurate time entries.",
+      "timesheetCheckItem-2": "Staying in the loop without constant check-ins.",
+      "timesheetCheckItem-3": "Saving hours of admin with instanly-generated timesheets.",
+      "thirdSectionTitle": "See how Atto works with your industry",
+      "thirdSectionDesc": "Atto helps all types of businesses across the world manage their employees’ time.",
+      "fourthSectionTitle": "Hear what business owners say about Atto",
+      "subscribeTitle": "No time to waste!",
+      "subscribeDesc": "Stay in control of your employees’ time.",
+      "subscribeCheckItem-0": "Avoid guesswork with accurate time-tracking",
+      "subscribeCheckItem-1": "Increase employee accountability and safety",
+      "subscribeCheckItem-2": "Stay in the loop without constant check-ins",
+      "subscribeCheckItem-3": "Enjoy hassle-free automated employee timesheets",
+      "subscribeCheckItem-4": "Streamline the entire payroll process"
+    },
+    "productOverview": {
+      "name": "PRODUCT OVERVIEW",
+      "bannerTitle": "Everything you need to keep track of your employees’ time",
+      "bannerDesc": "Don't let timesheets be a distraction. Focus on what matters and let us handle them for you.",
+      "featureItemTitle-1": "Simple",
+      "featureItemDesc-1": "SimpleIntuitive, easy-to-use software with no technical knowledge required.",
+      "featureItemTitle-2": "All-In-One",
+      "featureItemDesc-2": "Combining everything you need to manage your team’s time in one place.",
+      "featureItemTitle-3": "Time-Saving",
+      "featureItemDesc-3": "Using automation to save time and let your team focus on productive work.",
+      "mainFeatureTitle-1": "Accurate time tracking at your fingertips",
+      "mainFeatureDesc-1": "Know where your employees’ time is going. See every minute on the clock including work hours, breaks, and time off.",
+      "mainFeature-1-CheckItem-1-Title": "No longer rely on timesheet estimates",
+      "mainFeature-1-CheckItem-1-Desc": "Automated time-tracking means accurate entries and reduced payroll costs.",
+      "mainFeature-1-CheckItem-2-Title": "Track time from any device, anytime, anywhere",
+      "mainFeature-1-CheckItem-2-Desc": "Keep track of time in the office, in teams, at a job site, or on the move.",
+      "mainFeatureTitle-2": "Know where your team is in real-time",
+      "mainFeatureDesc-2": "Get real-time updates on your entire team’s locations and daily movements. Stay in control of your employees in the field.",
+      "mainFeature-2-CheckItem-1-Title": "Avoid constant calls and check-ins",
+      "mainFeature-2-CheckItem-1-Desc": "Instantly see where your team is and track the progress they’re making.",
+      "mainFeature-2-CheckItem-2-Title": "Increase team safety and accountability",
+      "mainFeature-2-CheckItem-2-Desc": "Verify your team is exactly where they should be all the time.",
+      "mainFeatureTitle-3": "Stay in the loop as work happens",
+      "mainFeatureDesc-3": "View the work status of your team in a few taps, making team management far simpler and easier.",
+      "mainFeature-3-CheckItem-1-Title": "Never be in the dark about team progress",
+      "mainFeature-3-CheckItem-1-Desc": "Be informed of your team’s work activity with instant notifications.",
+      "mainFeature-3-CheckItem-2-Title": "Get greater insight into your employees’ workdays",
+      "mainFeature-3-CheckItem-2-Desc": "Check up on employee productivity with clear timelines of their workdays.",
+      "mainFeatureTitle-4": "Relax with timesheets on time, every time",
+      "mainFeatureDesc-4": "Atto instantly generates timesheets for you so you never stress over misplaced, late, or inaccurate timesheets again.",
+      "mainFeature-4-CheckItem-1-Title": "Feel confident in your timesheet accuracy",
+      "mainFeature-4-CheckItem-1-Desc": "Gain trust with accurate timesheets that are verified using location data.",
+      "mainFeature-4-CheckItem-2-Title": "Streamline the payroll process",
+      "mainFeature-4-CheckItem-2-Desc": "Save hours of admin with payroll integrations and automatically emailed reports.",
+      "subscribeBannertitle": "Free up your time and focus on what really matters"
+    },
     "productTimeTracking": {
-      "pageTagtitle": "Time Tracking",
+      "name": "TIME TRACKING",
       "bannerTitle": "Take the pain away from time tracking",
-      "bannerSubTitle": "An easy-to-use, accurate, and trustworthy time-tracking solution.",
-      "firstSectionChecklists": [
-        {
-          "checkTitle": ""
-        }
-      ],
-      "firstFeatureTaglines": [
-        {
-          "title": "",
-          "description": "",
-          "alt": "",
-          "icon": ""
-        }
-      ],
-      "secondSectionTitle": "Start tracking time in a tap",
-      "secondSectionSubtitle": "Say goodbye to employee estimates. Use the time clock to precisely capture work activity.",
-      "productFeatures": [
-        {
-          "title": "",
-          "description": "",
-          "alt": "",
-          "icon": ""
-        }
-      ],
+      "bannerDesc": "An easy-to-use, accurate, and trustworthy time-tracking solution.",
+      "checkListItem-0": "Keep track of time wherever your employees are",
+      "checkListItem-1": "Reduce payroll costs and increase productivity",
+      "checkListItem-2": "Track hours, breaks, time off, and more",
+      "checkListItem-3": "Increase the accuracy of job estimates",
+      "featureItemTitle-1": "Easy to Use",
+      "featureItemDesc-1": "Start tracking in a tap. Employees love using Atto because it’s simple, intuitive, and requires no technical knowledge to use.",
+      "featureItemTitle-2": "Accurate",
+      "featureItemDesc-2": "No more end-of-week timesheet guesswork. Time gets tracked in real-time as employees work – with entries precise to the nearest second.",
+      "featureItemTitle-3": "Trustworthy",
+      "featureItemDesc-3": "Gain confidence in your time tracking data. Timesheets are verified using location data, so you can trust the validity of every time entry.",
+      "secondSectionTitle": "Start tracking time in a tap! ",
+      "secondSectionDesc": "Say goodbye to employee estimates. Use the time clock to precisely capture work activity.",
+      "iconFeatureTitle-1": "Clock in and out",
+      "iconFeatureDesc-1": "Tap the giant pulsating clock in/out button to start tracking time.",
+      "iconFeatureTitle-2": "Write notes",
+      "iconFeatureDesc-2": "Add notes to your time tracking records, such as a work diary.",
+      "iconFeatureTitle-3": "Track breaks",
+      "iconFeatureDesc-3": "Track breaks and categorize them as either paid or unpaid.",
+      "iconFeatureTitle-4": "Manage overtime",
+      "iconFeatureDesc-4": "Decide if overtime should be tracked, and if so, whether it’s calculated weekly, daily or daily double.",
+      "iconFeatureTitle-5": "Switch between jobs",
+      "iconFeatureDesc-5": "Use job codes to categorize time tracked towards specific purposes – for example for each client or type of job.",
+      "iconFeatureTitle-6": "Add time off",
+      "iconFeatureDesc-6": "Add time off such as vacations and sick leave to help managers understand who’s available to work.",
       "thirdSectionTitle": "Accurately track time from any location and any device",
-      "thirSectionSubtitle": "Time-tracking options to suit your business' needs. In the office, in teams, at a job site, or on the move. Online or offline.",
-      "thirSectionFeatures": [
-        {
-          "image": "",
-          "icon": "",
-          "title": "",
-          "desc": ""
-        }
-      ],
-      "fourthSectionTitle": "Lower costs, higher productivity. Less admin, more bussiness",
-      "fourthSectionImage": "",
-      "fourthSectionCheckLists": [
-        {
-          "checkTitle": ""
-        }
-      ],
-      "fifthSectionTitle": "Our full suite of time tracking features at a glance",
-      "fifthSectionFeaturesList": [
-        {
-          "icon": "",
-          "featureTitle": "",
-          "featureDesc": ""
-        }
-      ]
+      "thirdSectionDesc": "Time tracking options to suit your business’ needs. In the office, in teams, at a job site, or on the move. Online or offline. ",
+      "imageIconFeatureTitle-1": "",
+      "imageIconFeatureDesc-1": "",
+      "imageIconFeatureTitle-2": "",
+      "imageIconFeatureTitle-3": ""
     },
     "productLocationTracking": {},
     "productTeamActivty": {},

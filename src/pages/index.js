@@ -105,16 +105,16 @@ const Home = () => {
         title="Time tracking, simplified."
         subtitle="Atto is a simple all-in-one time-tracking and timesheet solution. Spend less time managing your business and more time getting work done."
       />
-      <div className={mobileImageWrapper}>
+      {/* <div className={mobileImageWrapper}>
         <StaticImage
           src="../images/homepage-banner-mobile@2x.png"
-          alt="Home banner image"
+          alt="Home banner image" 
           height={396}
           quality={95}
           placeholder="none"
-          className={mobileImage}
+          className={desktopImage}
         />
-      </div>
+      </div> */}
       <EmailForm
         placeholder="Type your email"
         checkItemOne="No credit card required"

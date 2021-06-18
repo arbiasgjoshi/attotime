@@ -23,7 +23,7 @@ const Faq = ({ list }) => {
       <Title title="Frequently asked questions" />
       <Divider className="style2" />
       <div className={listStyle}>
-        <Accordion items={list} industries noIconPadding />
+        <Accordion items={list} arrowIcon noIconPadding />
       </div>
       <Divider />
     </div>

@@ -78,60 +78,36 @@
     ]
   },
   "pages": {
-    "homepage": {},
-    "productTimeTracking": {
-      "pageTagtitle": "Zeit",
-      "bannerTitle": "Ein Teitel",
-      "bannerSubTitle": "Nur hier sein.",
-      "firstSectionChecklists": [
-        {
-          "checkTitle": ""
-        }
-      ],
-      "firstFeatureTaglines": [
-        {
-          "title": "",
-          "description": "",
-          "alt": "",
-          "icon": ""
-        }
-      ],
-      "secondSectionTitle": "Start tracking time in a tap",
-      "secondSectionSubtitle": "Say goodbye to employee estimates. Use the time clock to precisely capture work activity.",
-      "productFeatures": [
-        {
-          "title": "",
-          "description": "",
-          "alt": "",
-          "icon": ""
-        }
-      ],
-      "thirdSectionTitle": "Accurately track time from any location and any device",
-      "thirSectionSubtitle": "Time-tracking options to suit your business' needs. In the office, in teams, at a job site, or on the move. Online or offline.",
-      "thirSectionFeatures": [
-        {
-          "image": "",
-          "icon": "",
-          "title": "",
-          "desc": ""
-        }
-      ],
-      "fourthSectionTitle": "Lower costs, higher productivity. Less admin, more bussiness",
-      "fourthSectionImage": "",
-      "fourthSectionCheckLists": [
-        {
-          "checkTitle": ""
-        }
-      ],
-      "fifthSectionTitle": "Our full suite of time tracking features at a glance",
-      "fifthSectionFeaturesList": [
-        {
-          "icon": "",
-          "featureTitle": "",
-          "featureDesc": ""
-        }
-      ]
+    "homepage": {
+      "name": "STARTSEITE",
+      "title": "Eine einfachere Art, die Arbeitszeit deiner Mitarbeiter zu managen",
+      "description": "Eine einfache Rundumlösung, die die Arbeitszeit deiner Mitarbeiter genau erfasst und Stundenzettel automatisiert.",
+      "timeTrackingTitle": "Zeiterfassung von jedem Gerät aus – jederzeit und überall",
+      "timeTrackingDescription": "Schluss mit Schätzungen von Mitarbeitern. Sieh jede Minute, wenn der Mitarbeiter eingestempelt ist, einschließlich Arbeitszeiten, Pausen und Nichtarbeitszeiten.",
+      "gpsTitle": "Kontrolliere Deine Mitarbeiter im Außeneinsatz",
+      "gpsDescription": "Verfolge Jobwege, Arbeitsverläufe und Standorte der Mitarbeiter in Echtzeit – das erhöht die Sicherheit und Verantwortlichkeit deines Teams.",
+      "teamActivityTitle": "Halte dich den ganzen Tag über die Arbeit auf dem Laufenden.",
+      "teamActivityDescription": "Lass dich sofort über die Arbeit deiner Mitarbeiter informieren – und zwar ohne zum Hörer greifen zu müssen.",
+      "timesheetsTitle": "Automatisiere die Stundenzettel deiner Mitarbeiter",
+      "timesheetsDescription": "Exakte, vertrauenswürdige und aussagekräftige Stundenzettel – das spart Zeit bei der Lohnabrechnung.",
+      "secondSectionTitle": "Tausende von Unternehmen sparen bereits mit Atto Zeit",
+      "secondSectionDesc": "Und man spart nicht nur Zeit, sondern auch Geld und Stress. ",
+      "timesheetCheckItem-0": "Nie mehr den Stundenzetteln hinterherlaufen.",
+      "timesheetCheckItem-1": "Senke Lohnkosten mit genauer Zeiterfassung.",
+      "timesheetCheckItem-2": "Ohne ständige Kontrollen auf dem Laufenden bleiben.",
+      "timesheetCheckItem-3": "Spare viele Stunden an Verwaltungsarbeit mit sofort generierten Stundenzetteln. ",
+      "thirdSectionTitle": "Sieh dir an, wie Atto in deiner Branche eingesetzt wird",
+      "thirdSectionDesc": "Atto hilft Unternehmen aller Art weltweit, die Arbeitszeit ihrer Mitarbeiter zu verwalten.",
+      "fourthSectionTitle": "Hör dir an, was Unternehmer über Atto sagen",
+      "subscribeTitle": "Du hast keine Zeit zu verschenken!",
+      "subscribeDesc": "Behalte die Arbeitszeit deiner Mitarbeiter im Griff.",
+      "subscribeCheckItem-0": "Genaue Zeiterfassung vermeidet Rätselraten",
+      "subscribeCheckItem-1": "Erhöhe die Verantwortlichkeit und Sicherheit deiner Mitarbeiter",
+      "subscribeCheckItem-2": "Bleib auf dem Laufenden, ohne ständig nachzufragen",
+      "subscribeCheckItem-3": "Gönne dir unkomplizierte, automatisierte Mitarbeiter-Stundenzettel",
+      "subscribeCheckItem-4": "Rationalisiere den gesamten Prozess der Gehaltsabrechnung"
     },
+    "productTimeTracking": {},
     "productLocationTracking": {},
     "productTeamActivty": {},
     "productTimesheets": {},
