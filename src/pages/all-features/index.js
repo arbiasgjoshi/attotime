@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import HeaderComponent from '@components/molecules/header';
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Title from '@components/molecules/title';
 import Divider from '@components/atoms/divider';
 import FeatureCard from '@components/molecules/feature-card';
@@ -38,7 +38,7 @@ const AllFeaturesPage = () => {
     <>
       <span className={behindMask} />
       <div className={container}>
-        <SEO title="All features" />
+        <Seo title="All features" />
         <HeaderComponent headerStyle="pricingHeader" />
         <MainTitleCard
           title="All features, at a glance"

@@ -7,7 +7,7 @@ import Divider from '@components/atoms/divider';
 import EmailForm from '@components/atoms/email-form';
 import Number from '@components/atoms/number-card';
 import HeaderComponent from '@components/molecules/header';
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import FooterComponent from '@components/molecules/footer';
 import Title from '@components/molecules/title';
 import MainTitle from '@components/molecules/main-title-card';
@@ -99,7 +99,7 @@ const Home = () => {
 
   return (
     <div className={container}>
-      <SEO title="ATTO: Timesheets for Employees | Time & GPS Location Tracking" />
+      <Seo title="ATTO: Timesheets for Employees | Time & GPS Location Tracking" />
       <HeaderComponent />
       <MainTitle
         title="Time tracking, simplified."

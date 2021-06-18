@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import HeaderComponent from '@components/molecules/header';
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import { FooterLinks } from '@locale/en.js';
 import FooterComponent from '@components/molecules/footer';
 import Divider from '@components/atoms/divider';
@@ -58,7 +58,7 @@ const Blog = () => {
 
   return (
     <div className={container}>
-      <SEO title="Attotime - Landing Page" />
+      <Seo title="Attotime - Landing Page" />
       <HeaderComponent />
       <MainTitle image={mainHeader} subtitle="Thoughts and ideas on the future of work" />
       <div className={buttonList}>

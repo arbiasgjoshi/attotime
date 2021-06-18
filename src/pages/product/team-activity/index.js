@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Divider from '@components/atoms/divider';
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
 import Title from '@components/molecules/title';
@@ -38,7 +38,7 @@ import {
 
 const TeamActivity = () => (
   <div className={`${teamActivityContainer} ${container}`}>
-    <SEO title="Team Activity" />
+    <Seo title="Team Activity" />
     <Header />
     <MainTitleCard
       hasParagraph

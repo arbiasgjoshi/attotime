@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Divider from '@components/atoms/divider';
 import Button from '@components/atoms/button';
 import Header from '@components/molecules/header';
@@ -50,7 +50,7 @@ import { serviceList } from '../../data/third-phase/time-tracking-app';
 
 const TimeCardApp = () => (
   <div className={`${container}`}>
-    <SEO title="Time Card App" />
+    <Seo title="Time Card App" />
     <Header />
     <IndustryMainCard
       smallTitle="TIME CARD APP"

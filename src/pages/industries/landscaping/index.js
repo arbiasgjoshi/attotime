@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import Divider from '@components/atoms/divider';
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Title from '@components/molecules/title';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
@@ -45,7 +45,7 @@ import {
 const Landscaping = () => (
   <>
     <div className={`${container} ${industryPadding}`}>
-      <SEO title="Landscaping Industries" />
+      <Seo title="Landscaping Industries" />
       <Header />
       <IndustryMainCard
         smallTitle="ATTO FOR LANDSCAPING"

@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import Divider from '@components/atoms/divider';
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Title from '@components/molecules/title';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
@@ -47,7 +47,7 @@ import {
 
 const LocationTracking = () => (
   <div className={container}>
-    <SEO title="GPS Location Tracking" />
+    <Seo title="GPS Location Tracking" />
     <Header />
     <MainTitleCard
       title="Be in the right place, at the right time"

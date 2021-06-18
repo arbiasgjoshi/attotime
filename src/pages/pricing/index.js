@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import HeaderComponent from '@components/molecules/header';
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import { Link } from 'gatsby-plugin-intl';
 import { FooterLinks } from '@locale/en.js';
 import Button from '@components/atoms/button';
@@ -147,7 +147,7 @@ const Pricing = () => {
 
   return (
     <div className={container}>
-      <SEO title="Pricing" />
+      <Seo title="Pricing" />
       <HeaderComponent headerStyle="pricingHeader" />
       <span className={behindMask} />
       <div className={priceHeader}>

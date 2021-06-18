@@ -3,7 +3,7 @@ import { FooterLinks } from '@locale/en.js';
 import { container, imageFormWrapper } from '@styles/main.module.scss';
 
 import Divider from '@components/atoms/divider';
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Title from '@components/molecules/title';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
@@ -200,7 +200,7 @@ const Timesheets = () => {
 
   return (
     <div className={`${container} ${teamActivityContainer}`}>
-      <SEO title="Timesheets" />
+      <Seo title="Timesheets" />
       <Header />
       <MainTitleCard
         maxParagraphWidth={760}

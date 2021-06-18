@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Divider from '@components/atoms/divider';
 import Header from '@components/molecules/header';
 import Title from '@components/molecules/title';
@@ -53,7 +53,7 @@ import { checkList, commonQuestionsList } from '../../data/third-phase/time-cloc
 
 const TimeClock = () => (
   <div className={`${container}`}>
-    <SEO title="Time Clock" />
+    <Seo title="Time Clock" />
     <Header />
     <IndustryMainCard
       smallTitle="TIME CLOCK"

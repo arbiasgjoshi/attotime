@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Divider from '@components/atoms/divider';
 import Header from '@components/molecules/header';
 import Title from '@components/molecules/title';
@@ -44,7 +44,7 @@ import { rndContainer, learnMoreContainer } from './employee.module.scss';
 
 const EmployeeTimesheetApp = () => (
   <div className={`${container}`}>
-    <SEO title="Employee Timesheet App" />
+    <Seo title="Employee Timesheet App" />
     <Header />
     <IndustryMainCard
       smallTitle="EMPLOYEE TIMESHEET APP"

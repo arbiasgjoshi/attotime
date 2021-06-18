@@ -2,7 +2,7 @@ import React from 'react';
 
 import HeaderComponent from '@components/molecules/header';
 import MainTitleCard from '@components/molecules/main-title-card';
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Divider from '@components/atoms/divider';
 import EmailForm from '@components/atoms/email-form';
 import { FooterLinks } from '@locale/en.js';
@@ -106,7 +106,7 @@ const Product = () => {
 
   return (
     <div className={`${container} ${productContainer}`}>
-      <SEO title="Product Overview" />
+      <Seo title="Product Overview" />
       <HeaderComponent />
       <MainTitleCard
         maxParagraphWidth={760}

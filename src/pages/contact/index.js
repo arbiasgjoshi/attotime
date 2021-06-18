@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import HeaderComponent from '@components/molecules/header';
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Divider from '@components/atoms/divider';
 import MainTitleCard from '@components/molecules/main-title-card';
 import HeartIcon from '@images/heart-icon@2x.png';
@@ -20,7 +20,7 @@ const Contact = () => {
   const form = null;
   return (
     <div className={container}>
-      <SEO title="Contact Us" />
+      <Seo title="Contact Us" />
       <HeaderComponent />
       <div className={middleAlign}>
         <img src={HeartIcon} width="75" height="75" alt="Heart" />

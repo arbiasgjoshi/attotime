@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Divider from '@components/atoms/divider';
 import Button from '@components/atoms/button';
 import Header from '@components/molecules/header';
@@ -47,7 +47,7 @@ import { buttonContainer, learnMoreContainer } from './work-hours-tracker.module
 
 const WorkHoursTracker = () => (
   <div className={`${container}`}>
-    <SEO title="Work Hours Tracker" />
+    <Seo title="Work Hours Tracker" />
     <Header />
     <IndustryMainCard
       smallTitle="WORK HOURS TRACKER"

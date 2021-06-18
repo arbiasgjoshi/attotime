@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Divider from '@components/atoms/divider';
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Header from '@components/molecules/header';
 import Title from '@components/molecules/title';
 import Footer from '@components/molecules/footer';
@@ -46,7 +46,7 @@ import { learnMoreContainer } from './mobile-time-tracking.module.scss';
 
 const TimeTrackingApp = () => (
   <div className={`${container}`}>
-    <SEO title="Time Tracking App" />
+    <Seo title="Time Tracking App" />
     <Header />
     <IndustryMainCard
       smallTitle="TIME TRACKING APP"

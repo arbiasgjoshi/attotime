@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Divider from '@components/atoms/divider';
-import SEO from '@components/molecules/seo';
+import Seo from '@components/molecules/seo';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
@@ -12,7 +12,7 @@ import { FooterLinks } from '@locale/en.js';
 const Terms = () => (
   <>
     <div className={`${container}`}>
-      <SEO title="Privacy" />
+      <Seo title="Privacy" />
       <Header />
       <Divider className="style12" />
       <SubscribeBanner
