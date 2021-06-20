@@ -7,7 +7,11 @@
       "industriesLabel": "Industries",
       "resourcesLabel": "Resources",
       "pricingLabel": "Pricing",
-      "tryForFreeLabel": "Try for Free"
+      "tryForFreeLabel": "Try for Free",
+      "timeTrackingLabel": "Time Tracking",
+      "locationTrackingLabel": "GPS Location Tracking",
+      "timesheetsTrackingLabel": "Timesheets",
+      "teamActivityTrackingLabel": "Team Activity"
     }
   },
   "pages": {
@@ -100,10 +104,10 @@
       "iconFeatureDescThree": "Track breaks and categorize them as either paid or unpaid.",
       "iconFeatureTitleFour": "Manage overtime",
       "iconFeatureDescFour": "Decide if overtime should be tracked, and if so, whether it’s calculated weekly, daily or daily double.",
-      "iconFeatureTitle-5": "Switch between jobs",
-      "iconFeatureDesc-5": "Use job codes to categorize time tracked towards specific purposes – for example for each client or type of job.",
-      "iconFeatureTitle-6": "Add time off",
-      "iconFeatureDesc-6": "Add time off such as vacations and sick leave to help managers understand who’s available to work.",
+      "iconFeatureTitleFive": "Switch between jobs",
+      "iconFeatureDescFive": "Use job codes to categorize time tracked towards specific purposes – for example for each client or type of job.",
+      "iconFeatureTitleSix": "Add time off",
+      "iconFeatureDescSix": "Add time off such as vacations and sick leave to help managers understand who’s available to work.",
       "thirdSectionTitle": "Accurately track time from any location and any device",
       "thirdSectionDesc": "Time tracking options to suit your business’ needs. In the office, in teams, at a job site, or on the move. Online or offline.",
       "imageIconFeatureTitleOne": "Work in the office via the Web Dashboard",

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import HeaderComponent from '@components/molecules/header';
 import Seo from '@components/molecules/seo';
+import { useIntl } from 'gatsby-plugin-intl';
 import Title from '@components/molecules/title';
 import Divider from '@components/atoms/divider';
 import FeatureCard from '@components/molecules/feature-card';
@@ -15,6 +16,7 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 import { FooterLinks, faqList } from '@locale/en.js';
 
 import { container } from '@styles/main.module.scss';
+
 import {
   timeTrackingCards,
   locationTrackingCards,
@@ -33,7 +35,8 @@ import {
 } from './all-features.module.scss';
 
 const AllFeaturesPage = () => {
-  const someVar = null;
+  const Intl = useIntl();
+
   return (
     <>
       <span className={behindMask} />
@@ -109,10 +112,10 @@ const AllFeaturesPage = () => {
           bannerImage
           title="There’s no time to waste!"
           subtitle="Try Atto, free for 14 days"
-          placeholder="Type your email"
-          checkItemOne="No credit card required"
-          checkItemTwo="14 day free trial"
-          checkItemThree="Cancel anytime"
+          placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
+          checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
+          checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
+          checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
           style="pricing"
         />
         <FooterComponent FooterLinks={FooterLinks} />

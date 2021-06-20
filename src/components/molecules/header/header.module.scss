@@ -152,6 +152,7 @@
   a {
     margin-right: 1.6rem;
     transition: ease all 0.2s;
+    min-width: 5rem;
     &:hover {
       color: var(--primary-color);
     }

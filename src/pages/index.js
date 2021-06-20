@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Slider from 'react-slick';
+import { useIntl } from 'gatsby-plugin-intl';
 
 import Icon from '@components/atoms/icon';
 import Divider from '@components/atoms/divider';
@@ -19,7 +20,7 @@ import Story from '@components/organisms/story';
 import Services from '@components/organisms/services';
 import VideoCheckList from '@components/organisms/video-checklist';
 
-import { serviceList, checkList, titleList } from '@data/listed-data';
+import { serviceList } from '@data/listed-data';
 import authorImage from '@images/no-image.png';
 
 import { container } from '@styles/main.module.scss';
@@ -31,14 +32,7 @@ import {
   pulledRight,
   carouselWrapper,
 } from '@components/molecules/carousel/carousel.module.scss';
-import {
-  // slider,
-  sliderWrapper,
-  numbers,
-  mobileImage,
-  mobileImageWrapper,
-  desktopImage,
-} from './homepage.module.scss';
+import { sliderWrapper, numbers, desktopImage } from './homepage.module.scss';
 
 const SampleNextArrow = (props) => {
   // eslint-disable-next-line react/prop-types
@@ -61,6 +55,8 @@ const SamplePrevArrow = (props) => {
 };
 
 const Home = () => {
+  const Intl = useIntl();
+
   const [settings, setSettings] = useState({
     dots: false,
     infinite: false,
@@ -73,6 +69,23 @@ const Home = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   });
+
+  const titleList = [
+    { title: Intl.formatMessage({ id: 'pages.homepage.timesheetCheckItemZero' }), id: '1asdd1a' },
+    { title: Intl.formatMessage({ id: 'pages.homepage.timesheetCheckItemOne' }), id: '1asdd1b' },
+    { title: Intl.formatMessage({ id: 'pages.homepage.timesheetCheckItemTwo' }), id: '1asdd1c' },
+    { title: Intl.formatMessage({ id: 'pages.homepage.timesheetCheckItemThree' }), id: '1asdd1d' },
+  ];
+
+  const checkList = [
+    { title: Intl.formatMessage({ id: 'pages.homepage.subscribeCheckItemZero' }), id: '1asdd1a' },
+    { title: Intl.formatMessage({ id: 'pages.homepage.subscribeCheckItemOne' }), id: '1asdd1a' },
+    { title: Intl.formatMessage({ id: 'pages.homepage.subscribeCheckItemTwo' }), id: '1asdd1a' },
+    { title: Intl.formatMessage({ id: 'pages.homepage.subscribeCheckItemThree' }), id: '1asdd1a' },
+    { title: Intl.formatMessage({ id: 'pages.homepage.subscribeCheckItemFour' }), id: '1asdd1a' },
+  ];
+
+  // console.log(titleList);
 
   useEffect(() => {
     if (window.innerWidth < 768) {
@@ -102,30 +115,20 @@ const Home = () => {
       <Seo title="ATTO: Timesheets for Employees | Time & GPS Location Tracking" />
       <HeaderComponent />
       <MainTitle
-        title="Time tracking, simplified."
-        subtitle="Atto is a simple all-in-one time-tracking and timesheet solution. Spend less time managing your business and more time getting work done."
+        title={Intl.formatMessage({ id: 'pages.homepage.title' })}
+        subtitle={Intl.formatMessage({ id: 'pages.homepage.description' })}
       />
-      {/* <div className={mobileImageWrapper}>
-        <StaticImage
-          src="../images/homepage-banner-mobile@2x.png"
-          alt="Home banner image" 
-          height={396}
-          quality={95}
-          placeholder="none"
-          className={desktopImage}
-        />
-      </div> */}
       <EmailForm
-        placeholder="Type your email"
-        checkItemOne="No credit card required"
-        checkItemTwo="14 day free trial"
-        checkItemThree="Cancel anytime"
+        placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
+        checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
+        checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
+        checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
         style="homepage"
       />
       <Divider className="style1" />
       <StaticImage
         src="../images/banner-image-2@2x.png"
-        alt="Home banner image"
+        alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
         width={1140}
         height={505}
         quality={95}
@@ -178,16 +181,16 @@ const Home = () => {
       <Title
         maxWidth={840}
         maxDescriptionWidth={766}
-        title="Thousands of businesses have saved time using Atto"
-        description="And it’s not just time saved, but money and stress too."
+        title={Intl.formatMessage({ id: 'pages.homepage.secondSectionTitle' })}
+        description={Intl.formatMessage({ id: 'pages.homepage.secondSectionDesc' })}
         marginBottom="2rem"
       />
       <Divider className="style3" />
       <VideoCheckList list={titleList} cardStyle="centerAligned" />
       <Divider />
       <Title
-        title="See how Atto works with your industry"
-        description="Atto helps all types of businesses across the world manage their employees’ time."
+        title={Intl.formatMessage({ id: 'pages.homepage.thirdSectionTitle' })}
+        description={Intl.formatMessage({ id: 'pages.homepage.thirdSectionDesc' })}
         maxDescriptionWidth={700}
       />
       <Divider className="style2" />
@@ -200,7 +203,7 @@ const Home = () => {
         <Number title="250 million+" description="Minutes Tracked" />
       </div>
       <Divider />
-      <Title title="Hear what business owners say about Atto" />
+      <Title title={Intl.formatMessage({ id: 'pages.homepage.fourthSectionTitle' })} />
       <Divider className="style9" />
       <CarouselComponent large>
         <Story
@@ -224,8 +227,8 @@ const Home = () => {
       </CarouselComponent>
       <Divider />
       <FreeTrial
-        title="No time to waste!"
-        description="Stay in control of your employees’ time."
+        title={Intl.formatMessage({ id: 'pages.homepage.subscribeTitle' })}
+        description={Intl.formatMessage({ id: 'pages.homepage.subscribeDesc' })}
         list={checkList}
       />
       <FooterComponent FooterLinks={FooterLinks} />

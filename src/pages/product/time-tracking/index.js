@@ -1,8 +1,5 @@
 import React from 'react';
 
-// import PropTypes from 'prop-types';
-// import { graphql } from 'gatsby';
-
 import { StaticImage } from 'gatsby-plugin-image';
 import Divider from '@components/atoms/divider';
 import Seo from '@components/molecules/seo';
@@ -33,20 +30,36 @@ import WebTracking from '@images/web-time-tracking.svg';
 import MobileTracking from '@images/mobile_time_tracking.svg';
 import KioskTracking from '@images/kiosk-time-tracking.svg';
 
+import Timer from '@images/timer.svg';
+import Flag from '@images/flag.svg';
+import Ringbell from '@images/ringbell.svg';
+import MLogo from '@images/m-logo.svg';
+import Brightness from '@images/brightness.svg';
+import Coffe from '@images/coffe.svg';
+import Bookmark from '@images/bookmark.svg';
+import Clock from '@images/clock.svg';
+import Browser from '@images/browser.svg';
+import Darkmode from '@images/darkMode.svg';
+import Notes from '@images/notes.svg';
+import Overtime from '@images/overtime.svg';
+
+import icon from '@images/easy-to-use.png';
+import icon2 from '@images/accurate.png';
+import icon3 from '@images/trustworthy.png';
+import icon4 from '@images/clock-in-out.png';
+import icon5 from '@images/write-notes.png';
+import icon6 from '@images/track-breaks.png';
+import icon7 from '@images/manage-overtime.png';
+import icon8 from '@images/switch-between-jobs.png';
+import icon9 from '@images/add-time-off.png';
+
 import icon22 from '@images/employees_forget.png';
 import icon23 from '@images/out-of-battery.png';
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
 
-import {
-  serviceList,
-  timeTrackingTitleList,
-  timeTrackingFeatureList,
-  timeTrackingFeatures,
-  timeTrackingOtherFeatures,
-  overviewAdminList,
-} from '@data/listed-data';
+import { serviceList, overviewAdminList } from '@data/listed-data';
 
 import {
   timeTrackingContainer,
@@ -54,25 +67,245 @@ import {
   workListContainer,
   workListItem,
   commonProblemsContainer,
-  mobileImage,
-  desktopImage,
 } from './time-tracking.module.scss';
-
-// import localeData from '@locale/en';
 
 const TimeTracking = () => {
   const Intl = useIntl();
 
+  const timeTrackingTitleList = [
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.checkListItemZero' }),
+      id: '1asdd1a',
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.checkListItemOne' }),
+      id: '1asdd1b',
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.checkListItemTwo' }),
+      id: '1asdd1c',
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.checkListItemThree' }),
+      id: '1asdd1d',
+    },
+  ];
+
+  const timeTrackingFeatures = [
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.featureItemTitleOne' }),
+      description: Intl.formatMessage({ id: 'pages.productTimeTracking.featureItemDescOne' }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.featureItemTitleOne' }),
+      icon,
+      imagePadding: '.8rem 3.1rem 1.5rem 3rem',
+      imageWidth: 59,
+      imageHeight: 97,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.featureItemTitleTwo' }),
+      description: Intl.formatMessage({ id: 'pages.productTimeTracking.featureItemDescTwo' }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.featureItemTitleTwo' }),
+      icon: icon2,
+      imagePadding: '.8rem .6rem 1.9rem 2rem',
+      imageWidth: 94,
+      imageHeight: 93,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.featureItemTitleThree' }),
+      description: Intl.formatMessage({ id: 'pages.productTimeTracking.featureItemDescThree' }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.featureItemTitleThree' }),
+      icon: icon3,
+      imagePadding: '1.2rem 1rem',
+      imageWidth: 100,
+      imageHeight: 96,
+    },
+  ];
+
+  const timeTrackingOtherFeatures = [
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleOne' }),
+      description: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureDescOne' }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleOne' }),
+      icon: icon4,
+      imageWidth: 350,
+      imageHeight: 244,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleTwo' }),
+      description: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureDescTwo' }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleTwo' }),
+      icon: icon5,
+      imageWidth: 350,
+      imageHeight: 244,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleThree' }),
+      description: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureDescThree' }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleThree' }),
+      icon: icon6,
+      imageWidth: 350,
+      imageHeight: 244,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleFour' }),
+      description: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureDescFour' }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleFour' }),
+      icon: icon7,
+      imageWidth: 350,
+      imageHeight: 244,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleFive' }),
+      description: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureDescFive' }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleFive' }),
+      icon: icon8,
+      imageWidth: 350,
+      imageHeight: 244,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleSix' }),
+      description: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureDescSix' }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleSix' }),
+      icon: icon9,
+      imageWidth: 350,
+      imageHeight: 244,
+    },
+  ];
+
+  const overviewAdminList = [
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.checkListFeatureOneTitle' }),
+      description: Intl.formatMessage({ id: 'pages.productTimeTracking.checkListFeatureOneDesc' }),
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.checkListFeatureTwoTitle' }),
+      description: Intl.formatMessage({ id: 'pages.productTimeTracking.checkListFeatureTwoDesc' }),
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.checkListFeatureThreeTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.checkListFeatureThreeDesc',
+      }),
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.checkListFeatureFourTitle' }),
+      description: Intl.formatMessage({ id: 'pages.productTimeTracking.checkListFeatureFourDesc' }),
+    },
+  ];
+
+  const timeTrackingFeatureList = [
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesOneTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesOneDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesOneTitle' }),
+      logo: <Timer />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesTwoTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesTwoDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesTwoTitle' }),
+      logo: <Flag />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesThreeTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesThreeDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesThreeTitle' }),
+      logo: <Ringbell />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesFourTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesFourDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesFourTitle' }),
+      logo: <MLogo />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesFiveTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesFiveDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesFiveTitle' }),
+      logo: <Brightness />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesSixTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesSixDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesSixTitle' }),
+      logo: <Notes />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesSevenTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesSevenDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesSevenTitle' }),
+      logo: <Overtime />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesEightTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesEightDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesEightTitle' }),
+      logo: <Coffe />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesNineTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesNineDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesNineTitle' }),
+      logo: <Bookmark />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesTenTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesTenDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesTenTitle' }),
+      logo: <Clock />,
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesElevenTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesElevenDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesElevenTitle' }),
+      logo: <Browser />,
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesTwelveTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimeTracking.timeTrackingFeaturesTwelveDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTimeTracking.timeTrackingFeaturesTwelveTitle' }),
+      logo: <Darkmode />,
+    },
+  ];
+
   return (
     <div className={`${container} ${timeTrackingContainer}`}>
-      <Seo title="Product - Time Tracking" />
+      <Seo title={Intl.formatMessage({ id: 'pages.productTimeTracking.name' })} />
       <Header />
       <MainTitleCard
         hasParagraph
         showButton
-        paragraph="TIME TRACKING"
-        title="Take the pain away from time tracking"
-        subtitle="An easy-to-use, accurate, and trustworthy time-tracking solution."
+        paragraph={Intl.formatMessage({ id: 'pages.productTimeTracking.name' })}
+        title={Intl.formatMessage({ id: 'pages.productTimeTracking.bannerTitle' })}
+        subtitle={Intl.formatMessage({ id: 'pages.productTimeTracking.bannerDescription' })}
       />
       <Divider className="style2" />
       <VideoCheckList
@@ -92,9 +325,9 @@ const TimeTracking = () => {
       <IconCardList middleAligned cardList={timeTrackingFeatures} />
       <Divider />
       <Title
-        title="Start tracking time in a tap"
+        title={Intl.formatMessage({ id: 'pages.productTimeTracking.secondSectionTitle' })}
+        description={Intl.formatMessage({ id: 'pages.productTimeTracking.secondSectionDesc' })}
         maxDescriptionWidth={800}
-        description="Say goodbye to employee estimates. Use the time clock to precisely capture work activity."
       />
       <Divider className="style7" />
       <IconCardList cardList={timeTrackingOtherFeatures} hasBigImages style="smallerMargin" />
@@ -102,15 +335,14 @@ const TimeTracking = () => {
       <Title
         maxWidth={950}
         maxDescriptionWidth={800}
-        title="Accurately track time from any location and any device"
-        description="Time tracking options to suit your business’ needs. In the office, in teams, at a job site, or on the move. Online or offline."
+        title={Intl.formatMessage({ id: 'pages.productTimeTracking.thirdSectionTitle' })}
+        description={Intl.formatMessage({ id: 'pages.productTimeTracking.thirdSectionDesc' })}
       />
       <Divider className="style7" />
-      {/* <ImageSlider /> */}
       <div className={workListContainer}>
         <div>
           <StaticImage
-            alt="Time tracking on the web"
+            alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
             height={378}
             width={380}
             quality={95}
@@ -119,16 +351,18 @@ const TimeTracking = () => {
           />
           <FeatureCard
             isWorkCard
-            title="Work in the office via the Web Dashboard"
-            description="When at the office, track your time using Atto’s web-based time clock."
+            title={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+            alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+            description={Intl.formatMessage({
+              id: 'pages.productTimeTracking.imageIconFeatureDescOne',
+            })}
             logo={<WebTracking />}
-            alt="Web time tracking"
             imagePadding=".8rem 2.9rem .797rem .1rem"
           />
         </div>
         <div className={workListItem}>
           <StaticImage
-            alt="Time tracking via our mobile app"
+            alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleTwo' })}
             height={378}
             width={380}
             quality={95}
@@ -137,16 +371,18 @@ const TimeTracking = () => {
           />
           <FeatureCard
             isWorkCard
-            title="Work on the go via the Mobile App"
-            description="Track time on the go with the Atto mobile app available on iOS and Android."
+            title={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleTwo' })}
+            alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleTwo' })}
+            description={Intl.formatMessage({
+              id: 'pages.productTimeTracking.imageIconFeatureDescTwo',
+            })}
             logo={<MobileTracking />}
-            alt="Mobile time tracking"
             imagePadding=".5rem 3.24rem .587rem 0"
           />
         </div>
         <div className={workListItem}>
           <StaticImage
-            alt="Time tracking on the time clock kiosk"
+            alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleThree' })}
             height={378}
             width={380}
             quality={95}
@@ -155,17 +391,24 @@ const TimeTracking = () => {
           />
           <FeatureCard
             isWorkCard
-            title="Work at job sites via the Time Clock Kiosk"
-            description="Set up a time clock kiosk to enable your team to track time from a single device."
+            title={Intl.formatMessage({
+              id: 'pages.productTimeTracking.imageIconFeatureTitleThree',
+            })}
+            alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleThree' })}
+            description={Intl.formatMessage({
+              id: 'pages.productTimeTracking.imageIconFeatureDescThree',
+            })}
             logo={<KioskTracking />}
-            alt="Kiosk time tracking"
             imagePadding=".9rem 2.5rem .85rem .4rem"
             comingSoon
           />
         </div>
       </div>
       <Divider />
-      <Title maxWidth={860} title="Lower costs, higher productivity. Less admin, more business." />
+      <Title
+        maxWidth={860}
+        title={Intl.formatMessage({ id: 'pages.productTimeTracking.fourthSectionTitle' })}
+      />
       <Divider className="style7" />
       <div className={imageWrapper}>
         <StaticImage
@@ -179,13 +422,16 @@ const TimeTracking = () => {
       <Divider className="style3" />
       <CheckList list={overviewAdminList} hasDescription cardStyle="big" />
       <Divider />
-      <Title maxWidth={880} title="Our full suite of time tracking features at a glance" />
+      <Title
+        maxWidth={880}
+        title={Intl.formatMessage({ id: 'pages.productTimeTracking.fifthSectionTitle' })}
+      />
       <Divider className="style3" />
       <FeaturesList list={timeTrackingFeatureList} />
       <Divider />
       <GrowthNumbers />
       <Divider />
-      <Title title="Common problems, solved." />
+      <Title title={Intl.formatMessage({ id: 'pages.productTimeTracking.sixthSectionTitle' })} />
       <Divider className="style7" />
       <div className={commonProblemsContainer}>
         <IconCard
@@ -194,9 +440,13 @@ const TimeTracking = () => {
           imageWidth={250}
           imageHeight={250}
           icon={icon22}
-          alt="Employees forget"
-          title="Employees forget to track their time?"
-          description="Not any more! With smart reminders, your employees are encouraged to clock in/out when they’re at a job site, and at their regular start and end time."
+          title={Intl.formatMessage({
+            id: 'pages.productTimeTracking.commonProblemFeatureOneTitle',
+          })}
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.commonProblemFeatureOneTitle' })}
+          description={Intl.formatMessage({
+            id: 'pages.productTimeTracking.commonProblemFeatureOneDesc',
+          })}
         />
         <IconCard
           isRound
@@ -204,9 +454,13 @@ const TimeTracking = () => {
           icon={icon23}
           imageWidth={250}
           imageHeight={250}
-          alt="Out of battery"
-          title="What if phone ran out of battery?"
-          description="Not a problem! If an employee forgets their phone, or it runs out of battery, either they or a manager can add a manual time entry for your approval."
+          title={Intl.formatMessage({
+            id: 'pages.productTimeTracking.commonProblemFeatureTwoTitle',
+          })}
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.commonProblemFeatureTwoTitle' })}
+          description={Intl.formatMessage({
+            id: 'pages.productTimeTracking.commonProblemFeatureTwoDesc',
+          })}
         />
         <IconCard
           bigImage
@@ -214,15 +468,25 @@ const TimeTracking = () => {
           imageWidth={250}
           imageHeight={250}
           icon={noImage}
-          alt="Not sure if employees"
-          title="Not sure if employees are where they’re supposed to?"
-          description="Always be in the know! With geofencing, you can restrict employees from clocking in until they’re at a job site – increasing accountability and preventing inaccurate time entries."
+          title={Intl.formatMessage({
+            id: 'pages.productTimeTracking.commonProblemFeatureThreeTitle',
+          })}
+          alt={Intl.formatMessage({
+            id: 'pages.productTimeTracking.commonProblemFeatureThreeTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productTimeTracking.commonProblemFeatureThreeDesc',
+          })}
         />
       </div>
       <Divider />
       <Title
-        title="Time tracking solutions for any industry"
-        description="Atto helps all types of businesses across the world to manage their employees’ time."
+        title={Intl.formatMessage({
+          id: 'pages.productTimeTracking.seventhSectionTitle',
+        })}
+        description={Intl.formatMessage({
+          id: 'pages.productTimeTracking.seventhSectionDesc',
+        })}
         maxDescriptionWidth={700}
       />
       <Divider className="style2" />
@@ -235,31 +499,47 @@ const TimeTracking = () => {
       />
       <Divider />
       <Title
-        title="It doesn't end here!"
         smallerMargin
-        description="Learn more about what Atto can do for you"
+        title={Intl.formatMessage({
+          id: 'pages.productTimeTracking.eighthSectionTitle',
+        })}
+        description={Intl.formatMessage({
+          id: 'pages.productTimeTracking.eighthSectionDesc',
+        })}
       />
       <Divider className="style6" />
       <div className={learnMoreContainer}>
         <LearnMoreCard
-          title="GPS Location Tracking"
-          description="Increase the safety and accountability of your team with real-time updates on their location."
+          title={Intl.formatMessage({
+            id: 'pages.productTimeTracking.bottomFeatureOneTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productTimeTracking.bottomFeatureOneDesc',
+          })}
           icon={icon32}
           path="/product/gps-location-tracking"
           imageWidth={27}
           imageHeight={32}
         />
         <LearnMoreCard
-          title="Team Activity"
-          description="Stay in the loop with what's happening - without needing to pick up the phone"
+          title={Intl.formatMessage({
+            id: 'pages.productTimeTracking.bottomFeatureTwoTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productTimeTracking.bottomFeatureTwoDesc',
+          })}
           icon={icon33}
           path="/product/team-activity"
           imageWidth={42}
           imageHeight={44}
         />
         <LearnMoreCard
-          title="Timesheets"
-          description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+          title={Intl.formatMessage({
+            id: 'pages.productTimeTracking.bottomFeatureThreeTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productTimeTracking.bottomFeatureThreeDesc',
+          })}
           icon={icon34}
           path="/product/timesheets"
           imageWidth={30}
@@ -268,20 +548,18 @@ const TimeTracking = () => {
       </div>
       <Divider />
       <SubscribeBanner
-        title="What are you waiting for? Time is ticking!"
-        placeholder="Type your email"
+        title={Intl.formatMessage({
+          id: 'pages.productTimeTracking.subscribeBannerTitle',
+        })}
+        placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
         bannerImage
-        checkItemOne="No credit card required"
-        checkItemTwo="14 day free trial"
-        checkItemThree="Cancel anytime"
+        checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
+        checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
+        checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
       />
       <Footer FooterLinks={FooterLinks} />
     </div>
   );
 };
-
-// TimeTracking.propTypes = {
-//   data: PropTypes.shape(),
-// };
 
 export default TimeTracking;

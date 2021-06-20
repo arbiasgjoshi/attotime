@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import HeaderComponent from '@components/molecules/header';
 import Seo from '@components/molecules/seo';
+import { useIntl } from 'gatsby-plugin-intl';
 import { Link } from 'gatsby-plugin-intl';
 import { FooterLinks } from '@locale/en.js';
 import Button from '@components/atoms/button';
@@ -40,6 +41,7 @@ import {
 } from './pricing.module.scss';
 
 const Pricing = () => {
+  const Intl = useIntl();
   const [active, setActive] = useState('annually');
   const checkList = [
     { title: 'Time Tracking', noStyle: false },
@@ -248,10 +250,10 @@ const Pricing = () => {
         bannerImage
         title="There’s no time to waste!"
         subtitle="Try Atto, free for 14 days"
-        placeholder="Type your email"
-        checkItemOne="No credit card required"
-        checkItemTwo="14 day free trial"
-        checkItemThree="Cancel anytime"
+        placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
+        checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
+        checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
+        checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
         style="pricing"
       />
       <FooterComponent FooterLinks={FooterLinks} />

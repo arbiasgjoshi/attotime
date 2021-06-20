@@ -3,6 +3,7 @@ import React from 'react';
 import HeaderComponent from '@components/molecules/header';
 import MainTitleCard from '@components/molecules/main-title-card';
 import Seo from '@components/molecules/seo';
+import { useIntl } from 'gatsby-plugin-intl';
 import Divider from '@components/atoms/divider';
 import EmailForm from '@components/atoms/email-form';
 import { FooterLinks } from '@locale/en.js';
@@ -30,29 +31,31 @@ import image4 from '@images/relax-with-timesheets@2x.png';
 import { productContainer } from './product.module.scss';
 
 const Product = () => {
+  const Intl = useIntl();
+
   const firstList = [
     {
-      title: 'Simple',
-      description: `Intuitive, easy-to-use software with no technical knowledge required.`,
-      alt: 'Simple',
+      title: Intl.formatMessage({ id: 'pages.productOverview.featureItemTitleOne' }),
+      description: Intl.formatMessage({ id: 'pages.productOverview.featureItemDescOne' }),
+      alt: Intl.formatMessage({ id: 'pages.productOverview.featureItemTitleOne' }),
       icon,
       imageWidth: 59,
       imageHeight: 97,
       imagePadding: '.8rem 3.1rem 1.5rem 3rem',
     },
     {
-      title: 'All-in-one',
-      description: `Combining everything you need to manage your team’s time in one place.`,
-      alt: 'All-in-one',
+      title: Intl.formatMessage({ id: 'pages.productOverview.featureItemTitleTwo' }),
+      description: Intl.formatMessage({ id: 'pages.productOverview.featureItemDescTwo' }),
+      alt: Intl.formatMessage({ id: 'pages.productOverview.featureItemTitleTwo' }),
       icon: icon2,
       imageWidth: 80,
       imageHeight: 75,
       imagePadding: '2.3rem 2rem 2.2rem 2rem',
     },
     {
-      title: 'Time-Saving',
-      description: `Using automation to save time and let your team focus on productive work.`,
-      alt: 'Time Saving',
+      title: Intl.formatMessage({ id: 'pages.productOverview.featureItemTitleThree' }),
+      description: Intl.formatMessage({ id: 'pages.productOverview.featureItemDescThree' }),
+      alt: Intl.formatMessage({ id: 'pages.productOverview.featureItemTitleThree' }),
       icon: icon3,
       imageWidth: 85,
       imageHeight: 96,
@@ -62,63 +65,79 @@ const Product = () => {
 
   const productList1 = [
     {
-      title: 'Eliminate timesheet estimates',
-      description: `Automated time-tracking means accurate entries and reduced payroll costs.`,
+      title: Intl.formatMessage({ id: 'pages.productOverview.mainFeatureOneCheckItemOneTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productOverview.mainFeatureOneCheckItemOneDesc',
+      }),
     },
     {
-      title: `Track time from any device, anytime, anywhere`,
-      description: `Keep track of time in the office, in teams, at a job site, or on the move.`,
+      title: Intl.formatMessage({ id: 'pages.productOverview.mainFeatureOneCheckItemTwoTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productOverview.mainFeatureOneCheckItemTwoDesc',
+      }),
     },
   ];
 
   const productList2 = [
     {
-      title: 'Avoid constant calls and check-ins',
-      description: `Instantly see where your team is and track the progress they’re making.`,
+      title: Intl.formatMessage({ id: 'pages.productOverview.mainFeatureTwoCheckItemOneTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productOverview.mainFeatureTwoCheckItemOneDesc',
+      }),
     },
     {
-      title: `Increase team safety and accountability`,
-      description: `Verify your team is exactly where they should be all the time.`,
+      title: Intl.formatMessage({ id: 'pages.productOverview.mainFeatureTwoCheckItemTwoTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productOverview.mainFeatureTwoCheckItemTwoDesc',
+      }),
     },
   ];
 
   const productList3 = [
     {
-      title: 'Never be in the dark about team progress',
-      description: `Be informed of your team’s work activity with instant notifications.`,
+      title: Intl.formatMessage({ id: 'pages.productOverview.mainFeatureThreeCheckItemOneTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productOverview.mainFeatureThreeCheckItemOneDesc',
+      }),
     },
     {
-      title: `Get greater insight into your employees’ workdays`,
-      description: `Check up on employee productivity with clear timelines of their workdays.`,
+      title: Intl.formatMessage({ id: 'pages.productOverview.mainFeatureThreeCheckItemTwoTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productOverview.mainFeatureThreeCheckItemTwoDesc',
+      }),
     },
   ];
 
   const productList4 = [
     {
-      title: 'Feel confident in your timesheet accuracy',
-      description: `Gain trust with accurate timesheets that are verified using location data.`,
+      title: Intl.formatMessage({ id: 'pages.productOverview.mainFeatureFourCheckItemOneTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productOverview.mainFeatureFourCheckItemOneDesc',
+      }),
     },
     {
-      title: `Streamline the payroll process`,
-      description: `Save hours of admin with payroll integrations and automatically emailed reports.`,
+      title: Intl.formatMessage({ id: 'pages.productOverview.mainFeatureFourCheckItemTwoTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productOverview.mainFeatureFourCheckItemTwoDesc',
+      }),
     },
   ];
 
   return (
     <div className={`${container} ${productContainer}`}>
-      <Seo title="Product Overview" />
+      <Seo title={Intl.formatMessage({ id: 'pages.productOverview.name' })} />
       <HeaderComponent />
       <MainTitleCard
         maxParagraphWidth={760}
-        title="Everything you need to keep track of your employees’ time"
-        subtitle="Don't let timesheets be a distraction. Focus on what matters and let us handle them for you."
+        title={Intl.formatMessage({ id: 'pages.productOverview.bannerTitle' })}
+        subtitle={Intl.formatMessage({ id: 'pages.productOverview.bannerDescription' })}
       />
       <div className={imageFormWrapper}>
         <EmailForm
-          placeholder="Type your email"
-          checkItemOne="No credit card required"
-          checkItemTwo="14 day free trial"
-          checkItemThree="Cancel anytime"
+          placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
+          checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
+          checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
+          checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
           style="productPage"
         />
         <Divider className="style0" />
@@ -129,8 +148,8 @@ const Product = () => {
       <Divider />
       <ProductCard
         productName="TIME TRACKING"
-        title="Accurate time tracking at your fingertips"
-        description="Know where your employees’ time is going. See every minute on the clock including work hours, breaks, and time off."
+        title={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureTitleOne' })}
+        description={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureDescOne' })}
         list={productList1}
         image={image1}
         imagePadding="3.5rem 3.1rem"
@@ -142,8 +161,8 @@ const Product = () => {
       <Divider />
       <ProductCard
         productName="LOCATION TRACKING"
-        title="Know where your team is in real-time"
-        description="Get real-time updates on your entire team’s locations and daily movements. Stay in control of your employees in the field."
+        title={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureTitleTwo' })}
+        description={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureDescTwo' })}
         list={productList2}
         image={image2}
         isSwapped
@@ -155,8 +174,8 @@ const Product = () => {
       <Divider />
       <ProductCard
         productName="TEAM ACTIVITY"
-        title="Stay in the loop as work happens"
-        description="View the work status of your team in a few taps, making team management far simpler and easier."
+        title={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureTitleThree' })}
+        description={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureDescThree' })}
         list={productList3}
         image={image3}
         imagePadding="3.5rem 1.87rem 3.5rem 1.8rem"
@@ -168,8 +187,8 @@ const Product = () => {
       <Divider />
       <ProductCard
         productName="TIMESHEETS"
-        title="Relax with timesheets on time, every time"
-        description="Atto instantly generates timesheets for you so you never stress over misplaced, late, or inaccurate timesheets again."
+        title={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureTitleFour' })}
+        description={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureDescFour' })}
         list={productList4}
         image={image4}
         isSwapped
@@ -190,11 +209,11 @@ const Product = () => {
       <Divider />
       <SubscribeBanner
         bannerImage
-        title="Free up your time and focus on what really matters"
-        placeholder="Type your email"
-        checkItemOne="No credit card required"
-        checkItemTwo="14 day free trial"
-        checkItemThree="Cancel anytime"
+        title={Intl.formatMessage({ id: 'pages.productOverview.subscribeBannertitle' })}
+        placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
+        checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
+        checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
+        checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
       />
       <FooterComponent FooterLinks={FooterLinks} />
     </div>

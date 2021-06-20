@@ -4,6 +4,7 @@ import { container, imageFormWrapper } from '@styles/main.module.scss';
 
 import Divider from '@components/atoms/divider';
 import Seo from '@components/molecules/seo';
+import { useIntl } from 'gatsby-plugin-intl';
 import Title from '@components/molecules/title';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
@@ -63,6 +64,7 @@ import {
 } from './timesheets.module.scss';
 
 const Timesheets = () => {
+  const Intl = useIntl();
   const checkLists = [
     { title: 'View precise, instantly-generated, and verified timesheets' },
     { title: 'Save countless hours a week from your payroll process' },
@@ -331,10 +333,10 @@ const Timesheets = () => {
       <Divider className="style3" />
       <SubscribeBanner
         title="Sit back and relax with timesheets on-time, every time"
-        placeholder="Type your email"
-        checkItemOne="No credit card required"
-        checkItemTwo="14 day free trial"
-        checkItemThree="Cancel anytime"
+        placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
+        checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
+        checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
+        checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
       />
       <Footer FooterLinks={FooterLinks} />
     </div>
