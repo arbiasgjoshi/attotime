@@ -19,6 +19,15 @@ import ListArticle from '@components/organisms/list-article';
 import Services from '@components/organisms/services';
 import VideoCheckList from '@components/organisms/video-checklist';
 
+import Timer from '@images/timer.svg';
+import Flag from '@images/flag.svg';
+import Ringbell from '@images/ringbell.svg';
+import MLogo from '@images/m-logo.svg';
+import Brightness from '@images/brightness.svg';
+import Coffe from '@images/coffe.svg';
+import Bookmark from '@images/bookmark.svg';
+import Battery from '@images/battery.svg';
+
 import image1 from '@images/verify-your-team.png';
 import authorImage from '@images/authorImage.png';
 import DailyMovements from '@images/daily-movements.svg'; // TODO change svg when png is provided
@@ -30,15 +39,7 @@ import icon20 from '@images/timesheets@1x.png';
 import { container } from '@styles/main.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
-import {
-  serviceList,
-  featuresList,
-  checkList1,
-  checkLists2,
-  checkLists3,
-  checkList4,
-  cardList,
-} from '@data/listed-data';
+import { serviceList } from '@data/listed-data';
 
 import {
   privacyContainer,
@@ -48,25 +49,216 @@ import {
 
 const LocationTracking = () => {
   const Intl = useIntl();
+
+  const checkList1 = [
+    { title: Intl.formatMessage({ id: 'pages.productLocationTracking.checkListItemZero' }) },
+    { title: Intl.formatMessage({ id: 'pages.productLocationTracking.checkListItemOne' }) },
+    { title: Intl.formatMessage({ id: 'pages.productLocationTracking.checkListItemTwo' }) },
+    { title: Intl.formatMessage({ id: 'pages.productLocationTracking.checkListItemThree' }) },
+  ];
+
+  const cardList = [
+    {
+      title: Intl.formatMessage({ id: 'pages.productLocationTracking.additionalFeatureOneTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.additionalFeatureOneDesc',
+      }),
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productLocationTracking.additionalFeatureTwoTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.additionalFeatureTwoDesc',
+      }),
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.additionalFeatureThreeTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.additionalFeatureThreeDesc',
+      }),
+    },
+  ];
+
+  const checkLists2 = [
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.locationTrackingFeatureOneCheckItemOne',
+      }),
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.locationTrackingFeatureOneCheckItemTwo',
+      }),
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.locationTrackingFeatureOneCheckItemThree',
+      }),
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.locationTrackingFeatureOneCheckItemFour',
+      }),
+    },
+  ];
+
+  const checkLists3 = [
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.locationTrackingFeatureTwoCheckItemOne',
+      }),
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.locationTrackingFeatureTwoCheckItemTwo',
+      }),
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.locationTrackingFeatureTwoCheckItemThree',
+      }),
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.locationTrackingFeatureTwoCheckItemFour',
+      }),
+    },
+  ];
+
+  const checkList4 = [
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.thirdSectionCheckItemOneTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.thirdSectionCheckItemOneDesc',
+      }),
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.thirdSectionCheckItemTwoTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.thirdSectionCheckItemTwoDesc',
+      }),
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.thirdSectionCheckItemThreeTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.thirdSectionCheckItemThreeDesc',
+      }),
+    },
+  ];
+
+  const featuresList = [
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureOneTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureOneDesc',
+      }),
+      logo: <Timer />,
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureTwoTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureTwoDesc',
+      }),
+      logo: <Flag />,
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureThreeTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureThreeDesc',
+      }),
+      logo: <Ringbell />,
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureFourTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureFourDesc',
+      }),
+      logo: <MLogo />,
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureFiveTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureFiveDesc',
+      }),
+      logo: <Brightness />,
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureSixTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureSixDesc',
+      }),
+      logo: <Flag />,
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureSevenTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureSevenDesc',
+      }),
+      logo: <Battery />,
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureEightTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureEightDesc',
+      }),
+      logo: <Coffe />,
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureNineTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureNineDesc',
+      }),
+      logo: <Bookmark />,
+    },
+  ];
+
   return (
     <div className={container}>
-      <Seo title="GPS Location Tracking" />
+      <Seo title={Intl.formatMessage({ id: 'pages.productLocationTracking.name' })} />
       <Header />
       <MainTitleCard
-        title="Be in the right place, at the right time"
-        subtitle="Increase the accountability and transparency of your team with real-time updates on their location."
+        paragraph={Intl.formatMessage({ id: 'pages.productLocationTracking.name' })}
+        title={Intl.formatMessage({ id: 'pages.productLocationTracking.bannerTitle' })}
+        subtitle={Intl.formatMessage({ id: 'pages.productLocationTracking.bannerDescription' })}
         hasParagraph
         showButton
-        paragraph="GPS LOCATION TRACKING"
       />
       <Divider className="style2" />
       <VideoCheckList list={checkList1} cardStyle="centerAligned" />
       <Divider />
-      <Title maxWidth={920} title="Track the locations of your entire team in real-time" />
+      <Title
+        maxWidth={920}
+        title={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
+      />
       <Divider className="style5" />
       <StaticImage
         src="../../../images/gps-location-tracking-two@2x.png"
-        alt="location of team"
+        alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
         width={1140}
         height={340}
         quality={95}
@@ -76,16 +268,26 @@ const LocationTracking = () => {
       <IconCardList noImage cardList={cardList} />
       <Divider />
       <ListArticle
-        title="Keep track of your team's daily movements"
-        description="Atto’s GPS location tracking generates simple map-based timelines of every employee’s daily movements. This helps you visualize their workdays in a clear, simple-to-understand fashion."
+        title={Intl.formatMessage({
+          id: 'pages.productLocationTracking.locationTrackingFeatureOneTitle',
+        })}
+        description={Intl.formatMessage({
+          id: 'pages.productLocationTracking.locationTrackingFeatureOneDesc',
+        })}
         list={checkLists2}
         image={<DailyMovements />}
       />
       <Divider />
       <ListArticle
-        title="Verify your team is working at the right job site"
-        description="Increase your team’s accountability by using geofencing to restrict them from clocking in until they’re at a job site."
-        description2="Clock in/out locations are GPS stamped and job sites can be named so it’s easy to read reports and check activity."
+        title={Intl.formatMessage({
+          id: 'pages.productLocationTracking.locationTrackingFeatureTwoTitle',
+        })}
+        description={Intl.formatMessage({
+          id: 'pages.productLocationTracking.locationTrackingFeatureTwoDescOne',
+        })}
+        description2={Intl.formatMessage({
+          id: 'pages.productLocationTracking.locationTrackingFeatureTwoDescTwo',
+        })}
         list={checkLists3}
         image={image1}
         isSwapped
@@ -94,8 +296,12 @@ const LocationTracking = () => {
       />
       <Divider />
       <Title
-        title="Your privacy, our priority."
-        description="You always stay in complete control of location tracking, providing peace of mind to your employees."
+        title={Intl.formatMessage({
+          id: 'pages.productLocationTracking.thirdSectionTitle',
+        })}
+        description={Intl.formatMessage({
+          id: 'pages.productLocationTracking.thirdSectionDesc',
+        })}
         maxDescriptionWidth={1040}
       />
       <Divider className="style3" />
@@ -108,20 +314,31 @@ const LocationTracking = () => {
             height={500}
             quality={90}
             placeholder="none"
-            alt="Your privacy,our priority"
+            title={Intl.formatMessage({
+              id: 'pages.productLocationTracking.thirdSectionTitle',
+            })}
           />
         </div>
       </div>
       <Divider />
-      <Title title="Our full suite of location tracking features at a glance" maxWidth={880} />
+      <Title
+        title={Intl.formatMessage({
+          id: 'pages.productLocationTracking.fourthSectionTitle',
+        })}
+        maxWidth={880}
+      />
       <Divider className="style7" />
       <FeaturesList list={featuresList} />
       <Divider />
       <Cover isSwapped />
       <Divider className="style10" />
       <Title
-        title="GPS location tracking for any industry"
-        description="Atto helps all types of businesses across the world to manage their employees’ time."
+        title={Intl.formatMessage({
+          id: 'pages.productLocationTracking.fifthSectionTitle',
+        })}
+        description={Intl.formatMessage({
+          id: 'pages.productTimeTracking.seventhSectionDesc',
+        })}
         maxDescriptionWidth={700}
       />
       <Divider className="style2" />
@@ -134,31 +351,47 @@ const LocationTracking = () => {
       />
       <Divider />
       <Title
-        title="It doesn't end here!"
+        title={Intl.formatMessage({
+          id: 'pages.productTimeTracking.eighthSectionTitle',
+        })}
+        description={Intl.formatMessage({
+          id: 'pages.productTimeTracking.eighthSectionDesc',
+        })}
         smallerMargin
-        description="Learn more about what Atto can do for you"
       />
       <Divider className="style6" />
       <div className={learnMoreContainer}>
         <LearnMoreCard
-          title="Time Tracking"
-          description="See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!."
+          title={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureOneTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureOneTitle',
+          })}
           icon={icon18}
           path="/product/time-tracking"
           imageWidth={30}
           imageHeight={34}
         />
         <LearnMoreCard
-          title="Team Activity"
-          description="Stay in the loop with what’s happening – without having to pick up the phone."
+          title={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureTwoTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureTwoDesc',
+          })}
           icon={icon19}
           path="/product/team-activity"
           imageWidth={42}
           imageHeight={44}
         />
         <LearnMoreCard
-          title="Timesheets"
-          description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+          title={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureThreeTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureThreeDesc',
+          })}
           icon={icon20}
           path="/product/timesheets"
           imageWidth={30}
@@ -167,7 +400,9 @@ const LocationTracking = () => {
       </div>
       <Divider className="style3" />
       <SubscribeBanner
-        title="Near or far, stay in control of your team, wherever they are."
+        title={Intl.formatMessage({
+          id: 'pages.productLocationTracking.subscribeBannerTitle',
+        })}
         placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
         checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
         checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}

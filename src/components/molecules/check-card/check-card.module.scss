@@ -96,7 +96,7 @@
     .paragraph {
       margin-top: 0.8rem;
       max-width: 50rem;
-      height: 9rem;
+      min-height: 9rem;
       padding-left: 5.1rem;
 
       @include min(tablet) {

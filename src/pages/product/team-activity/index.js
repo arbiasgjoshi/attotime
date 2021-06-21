@@ -22,6 +22,12 @@ import image1 from '@images/team-management-departments.png';
 import image2 from '@images/find-out.png';
 import image3 from '@images/eliminate-checks.png';
 import image4 from '@images/activity-updates@2x.png';
+import Team from '@images/team.svg';
+import Timeline from '@images/timeline.svg';
+import Departments from '@images/departments.svg';
+import FilterAndSearch from '@images/filter-and-search.svg';
+import Notifications from '@images/notifications.svg';
+import Messaging from '@images/messaging.svg';
 
 import icon14 from '@images/time-tracking-clock@1x.png';
 import icon15 from '@images/location@1x.png';
@@ -29,7 +35,7 @@ import icon16 from '@images/timesheets@1x.png';
 
 import { container, articleList } from '@styles/main.module.scss';
 
-import { serviceList, titleList2, featureList2 } from '@data/listed-data';
+import { serviceList } from '@data/listed-data';
 
 import {
   teamActivityContainer,
@@ -38,25 +44,88 @@ import {
 } from './team-activity.module.scss';
 
 const TeamActivity = () => {
+  const Intl = useIntl();
+
+  const titleList2 = [
+    { title: Intl.formatMessage({ id: 'pages.productTeamActivity.checkListItemZero' }) },
+    { title: Intl.formatMessage({ id: 'pages.productTeamActivity.checkListItemOne' }) },
+    { title: Intl.formatMessage({ id: 'pages.productTeamActivity.checkListItemTwo' }) },
+    { title: Intl.formatMessage({ id: 'pages.productTeamActivity.checkListItemThree' }) },
+  ];
+
+  const featureList2 = [
+    {
+      title: Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionFeatureOneTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureOneDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionFeatureOneTitle' }),
+      logo: <Team />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionFeatureTwoTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureTwoDesc',
+      }),
+      alt: Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionFeatureTwoTitle' }),
+      logo: <Timeline />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionFeatureThreeTitle' }),
+      alt: Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionFeatureThreeTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureThreeDesc',
+      }),
+      logo: <Departments />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionFeatureFourTitle' }),
+      alt: Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionFeatureFourTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureFourDesc',
+      }),
+      logo: <FilterAndSearch />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionFeatureFiveTitle' }),
+      alt: Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionFeatureFiveTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureFiveDesc',
+      }),
+      logo: <Notifications />,
+    },
+    {
+      title: Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionFeatureSixTitle' }),
+      alt: Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionFeatureSixTitle' }),
+      description: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureSixDesc',
+      }),
+      logo: <Messaging />,
+    },
+  ];
+
   return (
     <div className={`${teamActivityContainer} ${container}`}>
-      <Seo title="Team Activity" />
+      <Seo title={Intl.formatMessage({ id: 'pages.productTeamActivity.name' })} />
       <Header />
       <MainTitleCard
         hasParagraph
         showButton
-        paragraph="TEAM ACTIVITY"
-        title="Stay in the loop with everything happening in real-time"
+        paragraph={Intl.formatMessage({ id: 'pages.productTeamActivity.name' })}
+        title={Intl.formatMessage({ id: 'pages.productTeamActivity.bannerTitle' })}
       />
       <Divider className="style2" />
       <VideoCheckList list={titleList2} cardStyle="centerAligned" />
       <Divider />
-      <Title maxWidth={900} title="See where your team is, and what they're working on" />
+      <Title
+        maxWidth={900}
+        title={Intl.formatMessage({ id: 'pages.productTeamActivity.secondSectionTitle' })}
+      />
       <Divider className="style2" />
       <div className={articleList}>
         <Article
-          title="Never feel in the dark again with team activity updates"
-          description="Find out what’s going on in a few taps. Get real-time updates on your team’s status and location. See who’s on the clock, on break, or enjoying some time off."
+          title={Intl.formatMessage({ id: 'pages.productTeamActivity.firstFeatureTitle' })}
+          description={Intl.formatMessage({ id: 'pages.productTeamActivity.firstFeatureDesc' })}
           image={image4}
           maxWidth={500}
           imagePadding="7.3rem 4.5rem"
@@ -64,8 +133,8 @@ const TeamActivity = () => {
           imageHeight={354}
         />
         <Article
-          title="Simplify team management with departments"
-          description="Organize employees into departments to make them easier to manage. Group them based on their location, job site, or role to see all their statuses at once. Easily keep track of everyone regardless of your company size."
+          title={Intl.formatMessage({ id: 'pages.productTeamActivity.secondFeatureTitle' })}
+          description={Intl.formatMessage({ id: 'pages.productTeamActivity.secondFeatureDesc' })}
           image={image1}
           isSwapped
           maxWidth={500}
@@ -74,8 +143,8 @@ const TeamActivity = () => {
           imageHeight={413}
         />
         <Article
-          title="Find out what any employee is up to in seconds"
-          description="Stay in control of what’s happening. Filter your team based on their current status, the department they’re in, or by searching for their name. Make day-to-day decisions faster with all the information you need at your fingertips."
+          title={Intl.formatMessage({ id: 'pages.productTeamActivity.thirdFeatureTitle' })}
+          description={Intl.formatMessage({ id: 'pages.productTeamActivity.thirdFeatureDesc' })}
           image={image2}
           maxWidth={500}
           imagePadding="3.3rem 4.2rem 2.4rem 10.7rem"
@@ -83,8 +152,8 @@ const TeamActivity = () => {
           imageHeight={443}
         />
         <Article
-          title="Eliminate back and forth phone calls and constant check-ins"
-          description="Increase team visibility and make team management a breeze. Get notified as soon as an employee clocks in or out, takes a break, or edits a time entry."
+          title={Intl.formatMessage({ id: 'pages.productTeamActivity.fourthFeatureTitle' })}
+          description={Intl.formatMessage({ id: 'pages.productTeamActivity.fourthFeatureDesc' })}
           image={image3}
           isSwapped
           maxWidth={500}
@@ -93,8 +162,8 @@ const TeamActivity = () => {
           imageHeight={388}
         />
         <Article
-          title="See your team’s progress at the end of each day"
-          description="Check on your team’s progress and productivity with clear timelines of everyone’s daily activity. See how long they spend on breaks, jobs, and on the clock. Gain greater insight into their workdays, and use it to speed-up timesheet approvals."
+          title={Intl.formatMessage({ id: 'pages.productTeamActivity.fifthFeatureTitle' })}
+          description={Intl.formatMessage({ id: 'pages.productTeamActivity.fifthFeatureDesc' })}
           image={image1}
           maxWidth={500}
           imagePadding="1.8rem 5.5rem"
@@ -103,7 +172,10 @@ const TeamActivity = () => {
         />
       </div>
       <Divider />
-      <Title maxWidth={880} title="Our full suite of team activity features at a glance" />
+      <Title
+        maxWidth={880}
+        title={Intl.formatMessage({ id: 'pages.productTeamActivity.thirdSectionTitle' })}
+      />
       <Divider className="style3" />
       <div className={featuresStyle}>
         <FeaturesList list={featureList2} />
@@ -113,7 +185,7 @@ const TeamActivity = () => {
       <Divider className="style10" />
       <Title
         title="A work hours tracker for any industry"
-        description="Atto helps all types of businesses across the world to manage their employees’ time."
+        description={Intl.formatMessage({ id: 'pages.productTimeTracking.seventhSectionDesc' })}
         maxDescriptionWidth={700}
       />
       <Divider className="style2" />
@@ -126,31 +198,43 @@ const TeamActivity = () => {
       />
       <Divider />
       <Title
-        title="It doesn't end here!"
+        title={Intl.formatMessage({ id: 'pages.productTimeTracking.eighthSectionTitle' })}
+        description={Intl.formatMessage({ id: 'pages.productTimeTracking.eighthSectionDesc' })}
         smallerMargin
-        description="Learn more about what Atto can do for you"
       />
       <Divider className="style2" />
       <div className={learnMoreContainer}>
         <LearnMoreCard
-          title="Time Tracking"
+          title={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureOneTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureOneDesc',
+          })}
           icon={icon14}
-          description="See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!"
           path="/product/time-tracking"
           imageWidth={30}
           imageHeight={34}
         />
         <LearnMoreCard
-          title="GPS Location Tracking"
-          description="Increase the safety and accountability of your team with real-time updates on their location."
+          title={Intl.formatMessage({
+            id: 'pages.productTimeTracking.bottomFeatureOneTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productTimeTracking.bottomFeatureOneDesc',
+          })}
           icon={icon15}
           path="/product/gps-location-tracking"
           imageWidth={27}
           imageHeight={32}
         />
         <LearnMoreCard
-          title="Timesheets"
-          description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
+          title={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureThreeTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureThreeDesc',
+          })}
           icon={icon16}
           path="/product/timesheets"
           imageWidth={30}
@@ -159,7 +243,9 @@ const TeamActivity = () => {
       </div>
       <Divider />
       <SubscribeBanner
-        title="Stay in control of what's happening with team activity updates"
+        title={Intl.formatMessage({
+          id: 'pages.productTeamActivity.subscribeBannerTitle',
+        })}
         placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
         checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
         checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}

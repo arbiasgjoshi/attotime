@@ -1,26 +1,23 @@
 import React from 'react';
-import Collapsible from 'react-collapsible';
+import { useIntl } from 'gatsby-plugin-intl';
 import PropTypes from 'prop-types';
 
 import Title from '@components/molecules/title';
-import Icon from '@components/atoms/icon';
 import Divider from '@components/atoms/divider';
 
 import Accordion from '@components/organisms/accordion';
 
-import { questionsContainer, listStyle, triggerItemWrap } from './faq.module.scss';
+import { questionsContainer, listStyle } from './faq.module.scss';
 
 const Faq = ({ list }) => {
-  const triggerItem = (val) => (
-    <div className={triggerItemWrap}>
-      <h5>{val}</h5>
-      <Icon iconClass="arrow-down" />
-    </div>
-  );
-
+  const Intl = useIntl();
   return (
     <div className={questionsContainer}>
-      <Title title="Frequently asked questions" />
+      <Title
+        title={Intl.formatMessage({
+          id: 'pages.pricing.faqTitle',
+        })}
+      />
       <Divider className="style2" />
       <div className={listStyle}>
         <Accordion items={list} arrowIcon noIconPadding />

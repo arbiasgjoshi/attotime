@@ -165,7 +165,7 @@
       "bottomFeatureOneTitle": "GPS Location Tracking",
       "bottomFeatureOneDesc": "Increase the safety and accountability of your team with real-time updates on their location.",
       "bottomFeatureTwoTitle": "Team Activity",
-      "bottomFeatureTwoDesc": "Stay in the loop with what’s happening – without needing to pick up the phone.GPS Location Tracking",
+      "bottomFeatureTwoDesc": "Stay in the loop with what’s happening – without needing to pick up the phone.",
       "bottomFeatureThreeTitle": "Timesheets",
       "bottomFeatureThreeDesc": "Spend more time on the things that matter with ready-made, accurate, verified timesheets.",
       "subscribeBannerTitle": "What are you waiting for? Time is ticking!"
@@ -226,7 +226,6 @@
       "fourthSectionFeatureNineTitle": "Privacy Controls",
       "fourthSectionFeatureNineDesc": "Stay in control of what gets tracked – real-time positions, clock in/out locations, or nothing at all.",
       "fifthSectionTitle": "GPS location tracking for any industry",
-      "fifthSectionDesc": "GPS location tracking for any industry",
       "bottomFeatureOneTitle": "Time Tracking",
       "bottomFeatureOneDesc": "See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!",
       "bottomFeatureTwoTitle": "Team Activity",
@@ -235,7 +234,7 @@
       "bottomFeatureThreeDesc": "Spend more time on the things that matter with ready-made, accurate, verified timesheets.",
       "subscribeBannerTitle": "Near or far, stay in control of your team, wherever they are."
     },
-    "productTeamActivty": {
+    "productTeamActivity": {
       "name": "TEAM ACTIVITY",
       "bannerTitle": "Stay in the loop with everything happening in real-time",
       "checkListItemZero": "View any employee’s status and location in a few taps",
@@ -345,7 +344,7 @@
       "apiAccessFeatureTitle": "API Access",
       "secondSectionTitle": "That’s not all!",
       "secondSectionDesc": "30+ more features included in our Premium & Enterprise Plans",
-      "viewAllFeaturesLabe;": "View All Features",
+      "viewAllFeaturesLabel": "View All Features",
       "thirdSectionTitle": "Calculate your total team cost",
       "thirdSectionDesc": "Simple pricing based on the number of users in your account",
       "fourthSectionTitle": "All our main features, included in one simple plan",
