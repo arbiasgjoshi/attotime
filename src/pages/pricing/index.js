@@ -285,7 +285,7 @@ const Pricing = () => {
       <div className={packageWrapper}>
         <PackageCard
           title="Premium"
-          price={active === 'annually' ? 7 : 5}
+          price={active === 'annually' ? 5 : 7}
           list={checkList}
           listTitle={Intl.formatMessage({
             id: 'pages.pricing.includesLabel',

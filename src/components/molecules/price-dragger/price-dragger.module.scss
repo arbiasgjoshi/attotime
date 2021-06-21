@@ -25,9 +25,12 @@
   margin-bottom: 1rem;
   border-radius: 5rem;
 
-  @include min(laptop) {
+  @include min(desktop) {
     @include absolute(left -9.25rem top 0);
-    background: url('@images/bubble-icon.png') no-repeat center;
+    background-image: url('@images/bubble-icon.png');
+    background-position: bottom center;
+    background-size: 99% auto;
+    background-repeat: no-repeat;
   }
   background-size: 97% auto;
   height: 7rem;
