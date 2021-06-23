@@ -184,7 +184,7 @@ const TeamActivity = () => {
       <Cover isSwapped />
       <Divider className="style10" />
       <Title
-        title="A work hours tracker for any industry"
+        title={Intl.formatMessage({ id: 'pages.homepage.thirdSectionTitle' })}
         description={Intl.formatMessage({ id: 'pages.productTimeTracking.seventhSectionDesc' })}
         maxDescriptionWidth={700}
       />
@@ -244,7 +244,7 @@ const TeamActivity = () => {
       <Divider />
       <SubscribeBanner
         title={Intl.formatMessage({
-          id: 'pages.productTeamActivity.subscribeBannerTitle',
+          id: 'pages.productTeamActivity.subscribeBanner',
         })}
         placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
         checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}

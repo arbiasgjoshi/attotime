@@ -17,7 +17,7 @@
   "pages": {
     "homepage": {
       "name": "HOMEPAGE",
-      "title": "A simpler way to manage your employees’ time",
+      "title": "Time tracking, simplified",
       "description": "A simple, all-in-one solution that accurately tracks your employees’ time and automates timesheets",
       "timeTrackingTitle": "Track time from any device, anytime, and anywhere",
       "timeTrackingDescription": "Say goodbye to employee estimates. See every minute on the clock, including work hours, breaks, and time-off.",
@@ -29,10 +29,10 @@
       "timesheetsDescription": "Accurate, trustworthy, and insightful timesheets – that save hours from the payroll process.",
       "secondSectionTitle": "Thousands of businesses have saved time using Atto",
       "secondSectionDesc": "And it’s not just time saved, but money and stress too.",
-      "timesheetCheckItemZero": "No longer chasing timesheets.",
+      "timesheetCheckItemZero": "No need to chase timesheets any longer.",
       "timesheetCheckItemOne": "Cut payroll costs with accurate time entries.",
-      "timesheetCheckItemTwo": "Staying in the loop without constant check-ins.",
-      "timesheetCheckItemThree": "Saving hours of admin with instanly-generated timesheets.",
+      "timesheetCheckItemTwo": "Stay in the loop without constant check-ins.",
+      "timesheetCheckItemThree": "Save hours of admin with instantly-generated timesheets.",
       "thirdSectionTitle": "See how Atto works with your industry",
       "thirdSectionDesc": "Atto helps all types of businesses across the world manage their employees’ time.",
       "fourthSectionTitle": "Hear what business owners say about Atto",
@@ -201,7 +201,7 @@
       "thirdSectionTitle": "Your privacy, our priority.",
       "thirdSectionDesc": "You always stay in complete control of location tracking, providing peace of mind to your employees.",
       "thirdSectionCheckItemOneTitle": "Decide who’s locations are tracked, and who’s aren’t",
-      "thirdSectionCheckItemOneDesc": "Location tracking is completely optional. Don’t need it? Disable it! Atto gives you the power to decide which specific employees or teams require it.Decide who’s locations are tracked, and who’s aren’t",
+      "thirdSectionCheckItemOneDesc": "Location tracking is completely optional. Don’t need it? Disable it! Atto gives you the power to decide which specific employees or teams require it.",
       "thirdSectionCheckItemTwoTitle": "Choose which type of location tracking to enable",
       "thirdSectionCheckItemTwoDesc": "You get to choose whether you require real-time location tracking, or alternatively, just the locations of where employees clock in and out.",
       "thirdSectionCheckItemThreeTitle": "When work ends, so does location tracking",
@@ -299,7 +299,7 @@
       "thirdSectionFeatureOneDesc": "Get all the data you need including regular time, overtime, breaks, time off, and more.",
       "thirdSectionFeatureTwoTitle": "Scheduled Email Reports",
       "thirdSectionFeatureTwoDesc": "Schedule an email with your employees’ timesheets to coincide with your payroll schedule. ",
-      "thirdSectionFeatureThreeTitle": "Timesheets by Employee, Team, Jobs",
+      "thirdSectionFeatureThreeTitle": "Timesheets by Employee, Team, Job",
       "thirdSectionFeatureThreeDesc": "Generate timesheets based on work done by an employee, team, or toward a category of job. ",
       "thirdSectionFeatureFourTitle": "Wage Estimates And Pay Rates",
       "thirdSectionFeatureFourDesc": "Assign pay rates to your employees and their estimated pay will be added to their timesheets.",
@@ -322,7 +322,7 @@
       "fourthSectionFeatureThreeTitle": "Timesheets on-time and in your Inbox",
       "fourthSectionFeatureThreeDesc": "Schedule your employees’ timesheets to be automatically emailed to you in line with your payroll schedule.",
       "fifthSectionTitle": "Timesheets for any industry",
-      "fifthSectionDesc": "Sit back and relax with timesheets on-time, every time"
+      "subscribeBanner": "Sit back and relax with timesheets on-time, every time"
     },
     "pricing": {
       "name": "PRICING",

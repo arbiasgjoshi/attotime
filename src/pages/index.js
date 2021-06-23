@@ -186,7 +186,11 @@ const Home = () => {
         marginBottom="2rem"
       />
       <Divider className="style3" />
-      <VideoCheckList list={titleList} cardStyle="centerAligned" />
+      <VideoCheckList
+        list={titleList}
+        videoUrl="https://vimeo.com/704266"
+        cardStyle="centerAligned"
+      />
       <Divider />
       <Title
         title={Intl.formatMessage({ id: 'pages.homepage.thirdSectionTitle' })}
@@ -210,9 +214,9 @@ const Home = () => {
           className="homepage"
           img={authorImage}
           paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
-          author="Robert Bennet - DPA Cleaning Services, Inc."
+          author="Helen Smith, Owner of SCW Cleaning Limited"
         />
-        <Story
+        {/* <Story
           className="homepage"
           img={authorImage}
           paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
@@ -223,7 +227,7 @@ const Home = () => {
           img={authorImage}
           paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
           author="Robert Bennet - DPA Cleaning Services, Inc."
-        />
+        /> */}
       </CarouselComponent>
       <Divider />
       <FreeTrial

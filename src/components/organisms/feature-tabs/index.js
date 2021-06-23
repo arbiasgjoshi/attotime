@@ -43,7 +43,7 @@ const FeatureTabs = () => {
       imageHeight: 650,
     },
     {
-      title: Intl.formatMessage({ id: 'pages.productTeamActivty.name' }),
+      title: Intl.formatMessage({ id: 'pages.productTeamActivity.name' }),
       sectionTitle: Intl.formatMessage({ id: 'pages.homepage.teamActivityTitle' }),
       description: Intl.formatMessage({ id: 'pages.homepage.teamActivityDescription' }),
       featureImage: image4,

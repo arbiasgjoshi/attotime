@@ -38,9 +38,10 @@ import boxImage4 from '@images/time-clock-boximage3.png';
 import boxImage5 from '@images/time-clock-boximage4.png';
 
 import { FooterLinks } from '@locale/en.js';
-import icon32 from '@images/location@1x.png';
-import icon33 from '@images/profile@1x.png';
-import icon34 from '@images/timesheets@1x.png';
+import icon1 from '@images/location@1x.png';
+import icon2 from '@images/time-tracking-clock@1x.png';
+import icon3 from '@images/profile@1x.png';
+import icon4 from '@images/timesheets@1x.png';
 
 import {
   workListContainer,
@@ -222,36 +223,52 @@ const TimeClock = () => {
       />
       <div className={learnMoreContainer}>
         <LearnMoreCard
-          title="GPS Location Tracking"
-          description="Increase the safety and accountability of your team with real-time updates on their location."
-          icon={icon32}
+          title={Intl.formatMessage({
+            id: 'pages.productTimeTracking.bottomFeatureOneTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productTimeTracking.bottomFeatureOneDesc',
+          })}
+          icon={icon1}
           path="/product/gps-location-tracking"
           imageWidth={27}
           imageHeight={32}
           styling="smaller"
         />
         <LearnMoreCard
-          title="Team Activity"
-          description="Stay in the loop with what's happening - without needing to pick up the phone"
-          icon={icon33}
+          title={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureOneTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureOneDesc',
+          })}
+          icon={icon2}
+          path="/product/time-tracking"
+          imageWidth={30}
+          imageHeight={34}
+          styling="smaller"
+        />
+        <LearnMoreCard
+          title={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureTwoTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureTwoDesc',
+          })}
+          icon={icon3}
           path="/product/team-activity"
           imageWidth={42}
           imageHeight={44}
           styling="smaller"
         />
         <LearnMoreCard
-          title="Timesheets"
-          description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
-          icon={icon34}
-          path="/product/timesheets"
-          imageWidth={30}
-          imageHeight={33}
-          styling="smaller"
-        />
-        <LearnMoreCard
-          title="Timesheets"
-          description="Spend more time on the things that matter with ready-made, accurate, verified timesheets."
-          icon={icon34}
+          title={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureThreeTitle',
+          })}
+          description={Intl.formatMessage({
+            id: 'pages.productLocationTracking.bottomFeatureThreeDesc',
+          })}
+          icon={icon4}
           path="/product/timesheets"
           imageWidth={30}
           imageHeight={33}

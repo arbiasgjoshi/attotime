@@ -366,7 +366,7 @@ const LocationTracking = () => {
             id: 'pages.productLocationTracking.bottomFeatureOneTitle',
           })}
           description={Intl.formatMessage({
-            id: 'pages.productLocationTracking.bottomFeatureOneTitle',
+            id: 'pages.productLocationTracking.bottomFeatureOneDesc',
           })}
           icon={icon18}
           path="/product/time-tracking"

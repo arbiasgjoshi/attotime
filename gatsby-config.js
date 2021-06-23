@@ -5,6 +5,14 @@ module.exports = {
     author: `Arbias Gjoshi`,
     siteUrl: 'http://localhost:8000',
   },
+  flags: {
+    PARALLEL_SOURCING: false,
+    PRESERVE_FILE_DOWNLOAD_CACHE: false,
+    FAST_DEV: false,
+    LMDB_STORE: false,
+    PRESERVE_WEBPACK_CACHE: false,
+    DEV_SSR: false,
+  },
   plugins: [
     {
       resolve: 'gatsby-plugin-sass',

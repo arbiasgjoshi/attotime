@@ -269,7 +269,7 @@ const Timesheets = () => {
       <Divider className="style3" />
       <FeaturesList list={featureList} />
       <Divider />
-      <GrowthNumbers />
+      <GrowthNumbers title={Intl.formatMessage({ id: 'pages.miscellaneous.trustedThousands' })} />
       <Divider />
       <Title
         title={Intl.formatMessage({ id: 'pages.productTimesheets.fourthSectionTitle' })}

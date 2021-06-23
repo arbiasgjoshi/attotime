@@ -113,6 +113,9 @@
 
       > div {
         align-items: flex-start;
+        > div > div {
+          align-items: center;
+        }
 
         @include min(tablet) {
           margin: 4rem 0;
@@ -133,6 +136,7 @@
 
         p {
           height: initial;
+          max-width: unset !important;
         }
       }
     }

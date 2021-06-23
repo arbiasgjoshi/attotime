@@ -13,7 +13,7 @@
   "pages": {
     "homepage": {
       "name": "PAGE D'ACCUEIL",
-      "title": "Gérer le temps de vos employés plus simplement",
+      "title": "Le suivi d’heures, simplifié",
       "description": "Une solution simple et complète qui permet de suivre avec précision le temps de vos employés et d'automatiser les feuilles de temps.",
       "timeTrackingTitle": "Suivez le temps passé depuis n'importe quel appareil, à tout moment et n'importe où.",
       "timeTrackingDescription": "Dites adieu aux estimations des employés. Consultez chaque minute passée au travail, y compris les heures de travail, les pauses et les congés.",
@@ -317,7 +317,7 @@
       "fourthSectionFeatureThreeTitle": "Feuilles de temps à l'heure et dans votre boîte de réception",
       "fourthSectionFeatureThreeDesc": "Programmez les feuilles de temps de vos employés pour qu'elles vous soient automatiquement envoyées par e-mail selon votre calendrier de paie.",
       "fifthSectionTitle": "Des feuilles de temps pour tous les secteurs d'activité",
-      "fifthSectionDesc": "Vous pouvez vous détendre en bénéficiant de feuilles de temps ponctuelles, à chaque fois."
+      "subscribeBanner": "Vous pouvez vous détendre en bénéficiant de feuilles de temps ponctuelles, à chaque fois."
     },
     "pricing": {
       "name": "TARIFS",

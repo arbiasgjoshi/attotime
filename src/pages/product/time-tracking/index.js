@@ -429,7 +429,7 @@ const TimeTracking = () => {
       <Divider className="style3" />
       <FeaturesList list={timeTrackingFeatureList} />
       <Divider />
-      <GrowthNumbers />
+      <GrowthNumbers title={Intl.formatMessage({ id: 'pages.miscellaneous.trustedThousands' })} />
       <Divider />
       <Title title={Intl.formatMessage({ id: 'pages.productTimeTracking.sixthSectionTitle' })} />
       <Divider className="style7" />
@@ -494,7 +494,7 @@ const TimeTracking = () => {
       <Divider />
       <Story
         img={authorImage}
-        paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
+        paragraph="Great time keeping app for business. Lets you clock on for different clients and jobs or enter manually. Simple to use & great timesheet reporting. Exactly what I was looking for."
         author="Robert Bennet - DPA Cleaning Services, Inc."
       />
       <Divider />

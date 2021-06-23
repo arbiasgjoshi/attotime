@@ -13,7 +13,7 @@
   "pages": {
     "homepage": {
       "name": "STARTSEITE",
-      "title": "Eine einfachere Art, die Arbeitszeit deiner Mitarbeiter zu managen",
+      "title": "Vereinfachte Zeiterfassung",
       "description": "Eine einfache Rundumlösung, die die Arbeitszeit deiner Mitarbeiter genau erfasst und Stundenzettel automatisiert.",
       "timeTrackingTitle": "Zeiterfassung von jedem Gerät aus – jederzeit und überall",
       "timeTrackingDescription": "Schluss mit Schätzungen von Mitarbeitern. Sieh jede Minute, wenn der Mitarbeiter eingestempelt ist, einschließlich Arbeitszeiten, Pausen und Nichtarbeitszeiten.",
@@ -317,7 +317,7 @@
       "fourthSectionFeatureThreeTitle": "Stundenzettel zeitnah und in deinem Posteingang",
       "fourthSectionFeatureThreeDesc": "Plane die Stundenzettel deiner Mitarbeiter so, dass sie automatisch und pünktlich zur Lohnabrechnung per E-Mail an dich gesendet werden.",
       "fifthSectionTitle": "Stundenzettel für jede Branche",
-      "fifthSectionDesc": "Lehne dich zurück und entspanne dich jedes Mal mit pünktlichen Stundenzetteln"
+      "subscribeBanner": "Lehne dich zurück und entspanne dich jedes Mal mit pünktlichen Stundenzetteln"
     },
     "pricing": {
       "name": "PREISGESTALTUNG",

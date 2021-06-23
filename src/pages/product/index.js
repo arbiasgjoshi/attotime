@@ -199,7 +199,7 @@ const Product = () => {
         insideTitle
       />
       <Divider />
-      <GrowthNumbers />
+      <GrowthNumbers title={Intl.formatMessage({ id: 'pages.miscellaneous.trustedGlobally' })} />
       <Divider />
       <Story
         img={authorImage}

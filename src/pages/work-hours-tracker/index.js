@@ -124,7 +124,7 @@ const WorkHoursTracker = () => {
       </div>
       <Divider className="style4" />
       <Title
-        title="A time tracking app for any industry"
+        title="A work hours tracker for any industry"
         description="Atto helps all types of businesses across the world to manage their employees’ time."
         maxDescriptionWidth={700}
         maxWidth={1000}

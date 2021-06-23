@@ -160,7 +160,7 @@ const EmployeeTimesheetApp = () => {
       />
       <Divider className="style11" />
       <Title
-        title="A time tracking app for any industry"
+        title="A timesheet app for any industry"
         description="Atto helps all types of businesses across the world to manage their employees’ time."
         maxDescriptionWidth={700}
         maxWidth={1000}

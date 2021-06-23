@@ -5,9 +5,9 @@ import Cover from './cover';
 
 import { container, cardList } from './growth-numbers.module.scss';
 
-const GrowthNumbers = () => (
+const GrowthNumbers = ({ title }) => (
   <div className={container}>
-    <Cover />
+    <Cover titleValue={title} />
     <div className={cardList}>
       <NumberCard hasPadding title="150,000+" description="Employees have signed up" />
       <NumberCard hasPadding hasBorder title="10,000,000+" description="Hours tracked accurately" />

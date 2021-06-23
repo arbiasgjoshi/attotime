@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import { StaticImage, getImage } from 'gatsby-plugin-image';
@@ -20,8 +20,26 @@ import {
   watchButton,
 } from './video.module.scss';
 
-const Video = ({ videoUrl }) => {
+const Video = () => {
   const [play, setPlay] = useState(false);
+  const [videoUrl, setVideoUrl] = useState(
+    'https://player.vimeo.com/video/563662750?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+  );
+
+  const srcUrl =
+    'https://player.vimeo.com/video/563662750?badge=0&amp;autopause=0&amp;&amp;player_id=0&amp;app_id=58479';
+
+  useEffect(() => {
+    if (play) {
+      setVideoUrl(
+        'https://player.vimeo.com/video/563662750?badge=0&amp;autopause=0&amp;autoplay=0&amp;player_id=0&amp;app_id=58479'
+      );
+    } else {
+      setVideoUrl(
+        'https://player.vimeo.com/video/563662750?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+      );
+    }
+  }, [play]);
 
   return (
     <div className={videoContainer}>
@@ -47,7 +65,24 @@ const Video = ({ videoUrl }) => {
         </div>
       )}
       <div className={videoPlayer}>
-        <ReactPlayer url={videoUrl} playing={play} width="100%" height="100%" />
+        {/* <ReactPlayer url="https://vimeo.com/563662750" playing={play} width="100%" height="100%" /> */}
+        <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+          <iframe
+            src={videoUrl}
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            style={{
+              position: 'absolute',
+              top: '0',
+              left: '0',
+              width: '100%',
+              height: '100%',
+            }}
+            title="Atto  &amp;middot;  Time tracking, simplified"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
       </div>
     </div>
   );

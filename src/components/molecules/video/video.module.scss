@@ -8,7 +8,6 @@
   @include min(tablet) {
     margin: 0;
     height: 48.9rem;
-    // padding: 4.5rem 0;
   }
 
   .maskOverlay {
@@ -150,16 +149,16 @@
     position: relative;
     width: 96rem;
     max-width: 100%;
-    padding-top: 42.85%; /* Player ratio: 100 / (1280 / 720) */
     border-radius: 1rem;
     overflow: hidden;
+    // padding-top: 42.85%; /* Player ratio: 100 / (1280 / 720) */
 
-    > div {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
+    // > div {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    // }
   }
 }

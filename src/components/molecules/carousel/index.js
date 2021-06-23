@@ -11,8 +11,9 @@ import { btnWrapper, leftAligned, rightAligned, largeStyle } from './carousel.mo
 
 const CarouselComponent = ({ children, large }) => (
   <Carousel
-    selectedItem={1}
+    selectedItem={0}
     showThumbs={false}
+    showIndicators={false}
     showStatus={false}
     renderArrowPrev={(onClickHandler, hasPrev) =>
       hasPrev && (

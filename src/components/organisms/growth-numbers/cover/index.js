@@ -5,7 +5,7 @@ import { useIntl } from 'gatsby-plugin-intl';
 
 import { container, swap, leftBox, iconWrapper, imageWrapper } from './cover.module.scss';
 
-const Cover = ({ isSwapped = false }) => {
+const Cover = ({ isSwapped = false, titleValue }) => {
   const Intl = useIntl();
 
   return (
@@ -19,7 +19,7 @@ const Cover = ({ isSwapped = false }) => {
             src="../../../../images/verifiedShield.svg"
           />
         </div>
-        <h4>{Intl.formatMessage({ id: 'pages.miscellaneous.trustedThousands' })}</h4>
+        <h4>{titleValue}</h4>
       </div>
       <StaticImage
         className={imageWrapper}
