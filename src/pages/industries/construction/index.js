@@ -60,10 +60,18 @@ const Construction = () => {
       </div>
       <div className={greenBackground}>
         <div className={topImageMask}>
-          <StaticImage src="../../../images/upper_shape.svg" placeholder="none" />
+          <StaticImage
+            src="../../../images/upper_shape.svg"
+            alt="Top Green Mask"
+            placeholder="none"
+          />
         </div>
         <div className={bottomImageMask}>
-          <StaticImage src="../../../images/lower_shape.svg" placeholder="none" />
+          <StaticImage
+            src="../../../images/lower_shape.svg"
+            alt="Bottom Green Mask"
+            placeholder="none"
+          />
         </div>
         <div className={`${container} ${noPadding}`}>
           <Title
@@ -73,7 +81,11 @@ const Construction = () => {
             maxDescriptionWidth={900}
           />
           <Divider className="style3" />
-          <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
+          <StaticImage
+            src="../../../images/paper_timesheets@2x.png"
+            placeholder="none"
+            alt="Say goodbye to paper timesheets"
+          />
           <Divider className="style3" />
           <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
         </div>
@@ -137,6 +149,7 @@ const Construction = () => {
           quality={90}
           width={1140}
           height={241}
+          alt="Ready to put Atto to work on your construction sites?"
           placeholder="none"
           style={{ marginBottom: '0.2rem' }}
           src="../../../images/subscribe-banner-image.png"

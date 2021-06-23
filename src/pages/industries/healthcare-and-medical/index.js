@@ -35,7 +35,7 @@ import {
   accordionList1,
   accordionList2,
 } from '@data/industries/home-and-healthcare.js';
-import { oldList, newList, steps } from '@data/industries';
+import { oldList, newList, healthSteps } from '@data/industries';
 import { FooterLinks } from '@locale/en.js';
 import {
   container,
@@ -117,7 +117,7 @@ const HomeHealthcare = () => {
         <Divider className="style12" />
         <Title
           title="Say goodbye to paper timesheets!"
-          description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for roofing companies"
+          description="Switching to Atto means more time caring, and less time dealing with the nightmare of paper timesheets."
           maxWidth={1040}
           maxDescriptionWidth={900}
         />
@@ -133,7 +133,13 @@ const HomeHealthcare = () => {
         <div className={`${container} ${noPadding}`}>
           <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
           <Divider className="style3" />
-          <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+          <ImagesBox
+            image1={boxImage1}
+            image2={boxImage2}
+            image3={boxImage3}
+            image4={boxImage4}
+            title="Trusted by thousands of caregivers across 50+ countries"
+          />
         </div>
       </div>
       <div className={`${container} ${noPadding}`}>
@@ -146,7 +152,7 @@ const HomeHealthcare = () => {
           maxDescriptionWidth={750}
         />
         <Divider className="style1" />
-        <Steps list={steps} />
+        <Steps list={healthSteps} />
         <Divider className="style4" />
         <SubscribeBanner
           title="You provide quality care. We'll provide quality time tracking software"

@@ -36,7 +36,7 @@ import {
   accordionList1,
   accordionList2,
 } from '@data/industries/painting.js';
-import { oldList, newList, steps } from '@data/industries';
+import { oldList, newList, painterSteps } from '@data/industries';
 import { FooterLinks } from '@locale/en.js';
 import {
   container,
@@ -79,8 +79,8 @@ const Painting = () => {
         <IconCardList cardList={firstList} hasBigImages style="smallerMargin" />
         <Divider />
         <Article
-          title="Allow your supervisor to track your painting crew’s time"
-          description="Painting large properties or doing a commercial renovation requires your crew to work together. Instead of having each painter or decorator track their time individually, your on-the-job supervisor can use Atto to clock in and out on their behalf."
+          title="Get helpful reminders so your painters never forget to clock in!"
+          description="When your workers are in the middle of a paint job, it can be easy to lose track of time. That’s why whenever they enter or leave a job site, and at their normal start and end time, we’ll remind them to clock-in and out. And if they happen to forget, they can add a manual time entry for you to review later."
           maxWidth={500}
           imagePadding="5rem 0"
           imageWidth={550}
@@ -89,8 +89,8 @@ const Painting = () => {
         />
         <Divider className="style3" />
         <Article
-          title="Entrust your supervisor to track your painting crew’s time"
-          description="Tiling large buildings or doing commercial and industrial painting jobs require lots of your roofers to work together. Instead of having each contractor track their time individually, your on-the-job supervisor can use Atto to clock-in and out on their behalf."
+          title="Allow your supervisor to track your painting crew’s time"
+          description="Painting large properties or doing a commercial renovation requires your crew to work together. Instead of having each painter or decorator track their time individually, your on-the-job supervisor can use Atto to clock in and out on their behalf."
           isSwapped
           maxWidth={500}
           imagePadding="3rem 0 4rem"
@@ -116,7 +116,7 @@ const Painting = () => {
         <Divider />
         <Title
           title="Say goodbye to paper timesheets!"
-          description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for roofing companies"
+          description="Switch to Atto, an easier and more accurate time-tracking solution for painting and decorating companies."
           maxWidth={1040}
           maxDescriptionWidth={900}
         />
@@ -132,12 +132,26 @@ const Painting = () => {
         <div className={`${container} ${noPadding}`}>
           <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
           <Divider className="style3" />
-          <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+          <ImagesBox
+            image1={boxImage1}
+            image2={boxImage2}
+            image3={boxImage3}
+            image4={boxImage4}
+            title="Trusted by thousands of painting and decorating companies."
+          />
         </div>
       </div>
       <div className={`${container} ${noPadding}`}>
         <Divider />
-        <Steps list={steps} />
+        <Title
+          title="Get everything set up in 3 simple steps"
+          description="Atto is designed to be the easiest time-tracking app to use.
+         There’s absolutely no technical knowledge required."
+          maxWidth={932}
+          maxDescriptionWidth={750}
+        />
+        <Divider className="style1" />
+        <Steps list={painterSteps} />
         <Divider className="style4" />
         <SubscribeBanner
           title="Using paper timesheets is like watching paint dry. Try Atto instead!"

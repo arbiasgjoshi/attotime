@@ -8,6 +8,7 @@ import Divider from '@components/atoms/divider';
 import Icon from '@components/atoms/icon';
 import Modal from '@components/molecules/modal';
 import useScroll from 'react-use-scroll';
+import Accordion from '@components/organisms/accordion';
 
 import ProductIcon from '@images/product-overview-logo.svg';
 import TimeTrackingIcon from '@images/time-tracking.svg';
@@ -390,6 +391,31 @@ const HeaderComponent = ({ headerStyle }) => {
     }
   };
 
+  const menuItemsOne = [
+    {
+      title: 'Product',
+      url: false,
+      description: productSection(),
+    },
+    {
+      title: 'Industries',
+      url: false,
+      description: industriesSection(),
+    },
+    {
+      title: 'Pricing',
+      description: '',
+      url: '/pricing',
+    },
+    {
+      title: 'Resources',
+      url: false,
+      description: resourceSection(),
+    },
+  ];
+
+  const menuItemsTwo = [];
+
   useEffect(() => {
     menuStateConfig();
   }, [overMenu, aboveLinks]);
@@ -453,18 +479,7 @@ const HeaderComponent = ({ headerStyle }) => {
         )}
         {openMobile && (
           <div className={collapsibleMenu}>
-            <Collapsible trigger={triggerItem('Product')} transitionTime={200}>
-              {productSection()}
-            </Collapsible>
-            <Collapsible trigger={triggerItem('Industries')} transitionTime={200}>
-              {industriesSection()}
-            </Collapsible>
-            <Link to="/pricing">
-              <h5>Pricing</h5>
-            </Link>
-            <Collapsible trigger={triggerItem('Resources')} transitionTime={200}>
-              {resourceSection()}
-            </Collapsible>
+            <Accordion items={menuItemsOne} arrowIcon noIconPadding mainMenuStyle />
             <div className={mobileButtons}>
               <Button btnStyle="gray" btnText="Log in" />
               <Button btnStyle="teal" btnText="Start a Free 14-Day Trial" />

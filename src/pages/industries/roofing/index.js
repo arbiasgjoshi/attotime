@@ -29,7 +29,7 @@ import boxImage2 from '@images/roofing-box-two@2x.png';
 import boxImage3 from '@images/roofing-box-three@2x.png';
 import boxImage4 from '@images/roofing-box-four@2x.png';
 
-import { oldList, newList, steps } from '@data/industries';
+import { oldList, newList, roofingSteps } from '@data/industries';
 import { checkList1, firstList, accordionList1, accordionList2 } from '@data/industries/roofing.js';
 import { FooterLinks } from '@locale/en.js';
 import {
@@ -126,7 +126,13 @@ const Roofing = () => {
         <div className={`${container} ${noPadding}`}>
           <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
           <Divider className="style3" />
-          <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+          <ImagesBox
+            image1={boxImage1}
+            image2={boxImage2}
+            image3={boxImage3}
+            image4={boxImage4}
+            title="Trusted by thousands of roofing companies accross 50+ countries."
+          />
         </div>
       </div>
       <div className={`${container} ${noPadding}`}>
@@ -139,7 +145,7 @@ const Roofing = () => {
           maxDescriptionWidth={750}
         />
         <Divider className="style1" />
-        <Steps list={steps} />
+        <Steps list={roofingSteps} />
         <Divider className="style4" />
         <SubscribeBanner
           title="Time tracking for roofing companies? We’re on top of it!"

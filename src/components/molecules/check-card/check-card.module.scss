@@ -145,6 +145,19 @@
     }
   }
 
+  &.rowSmall {
+    .iconWrapper {
+      margin-top: 0;
+      margin-right: 1rem;
+      min-width: unset;
+    }
+    i {
+      width: 2.8rem;
+      height: 2.8rem;
+      font-size: 1.2rem;
+    }
+  }
+
   &.centerAligned {
     align-items: center;
   }

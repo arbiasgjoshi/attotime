@@ -100,6 +100,7 @@ const TeamActivity = () => {
       description: Intl.formatMessage({
         id: 'pages.productTeamActivity.thirdSectionFeatureSixDesc',
       }),
+      comingSoon: true,
       logo: <Messaging />,
     },
   ];

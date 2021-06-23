@@ -38,7 +38,7 @@ import {
   accordionList1,
   accordionList2,
 } from '@data/industries/electrician.js';
-import { oldList, newList, steps } from '@data/industries';
+import { oldList, newList, electricianSteps } from '@data/industries';
 import {
   container,
   industryPadding,
@@ -125,7 +125,7 @@ const Electrician = () => {
         <Divider className="style11" />
         <Title
           title="Say goodbye to paper timesheets!"
-          description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for roofing companies"
+          description="Switch to Atto, an easier and more accurate time-tracking solution for electricians."
           maxWidth={1040}
           maxDescriptionWidth={900}
         />
@@ -141,7 +141,13 @@ const Electrician = () => {
         <div className={`${container} ${noPadding}`}>
           <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
           <Divider className="style3" />
-          <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+          <ImagesBox
+            image1={boxImage1}
+            image2={boxImage2}
+            image3={boxImage3}
+            image4={boxImage4}
+            title="Trusted by thousands of electrical businesses across 50+ countries"
+          />
         </div>
       </div>
       <div className={`${container} ${noPadding}`}>
@@ -154,7 +160,7 @@ const Electrician = () => {
           maxDescriptionWidth={750}
         />
         <Divider className="style1" />
-        <Steps list={steps} />
+        <Steps list={electricianSteps} />
         <Divider className="style4" />
         <SubscribeBanner
           title="Keep track of all your electricians in the field with Atto"

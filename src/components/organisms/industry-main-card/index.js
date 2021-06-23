@@ -27,7 +27,7 @@ const IndustryMainCard = ({
         {description && <p className={styles.descr}>{description}</p>}
         {list && (
           <div className={styles.listContainer}>
-            <CheckList list={list} cardStyle="row" />
+            <CheckList list={list} cardStyle="rowSmall" />
           </div>
         )}
         <div className={styles.emailContainer}>

@@ -41,7 +41,7 @@ import {
   accordionList1,
   accordionList2,
 } from '@data/industries/plumbing-and-heating.js';
-import { oldList, newList, steps } from '@data/industries';
+import { oldList, newList, plumberSteps } from '@data/industries';
 import image2 from '@images/time-tracking-plumbing@2x.png';
 import { FooterLinks } from '@locale/en.js';
 
@@ -116,7 +116,7 @@ const PlumbingAndHeating = () => {
         <Divider className="style11" />
         <Title
           title="Say goodbye to paper timesheets!"
-          description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for roofing companies"
+          description="Switch to Atto, an easier and more accurate time-tracking solution for plumbing and heating companies."
           maxWidth={1040}
           maxDescriptionWidth={900}
         />
@@ -132,7 +132,13 @@ const PlumbingAndHeating = () => {
         <div className={`${container} ${noPadding}`}>
           <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
           <Divider className="style3" />
-          <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+          <ImagesBox
+            image1={boxImage1}
+            image2={boxImage2}
+            image3={boxImage3}
+            image4={boxImage4}
+            title="Trusted by thousands of plumbers & heaters across 50+ countries"
+          />
         </div>
       </div>
       <div className={`${container} ${noPadding}`}>
@@ -145,7 +151,7 @@ const PlumbingAndHeating = () => {
           maxDescriptionWidth={750}
         />
         <Divider className="style1" />
-        <Steps list={steps} />
+        <Steps list={plumberSteps} />
         <Divider className="style4" />
         <SubscribeBanner
           title="All cisterns go! Get to work with accurate time tracking from Atto."

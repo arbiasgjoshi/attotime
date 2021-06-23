@@ -35,7 +35,7 @@ import {
   accordionList3,
 } from '@data/industries/landscaping.js';
 
-import { oldList, newList, steps } from '@data/industries';
+import { oldList, newList, landscapeSteps } from '@data/industries';
 import { container, industryPadding, noPadding, oldVsNewGradient } from '@styles/main.module.scss';
 import {
   topImageMask,
@@ -69,15 +69,21 @@ const Landscaping = () => {
         </div>
         <div className={`${container} ${noPadding}`}>
           <Title
-            title="Say goodbye to paper timesheets"
-            description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for construction companies"
+            title="The grass is always greener with Atto"
+            description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for landscaping companies"
             maxWidth={1040}
             maxDescriptionWidth={900}
           />
           <Divider className="style3" />
           <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
           <Divider className="style3" />
-          <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+          <ImagesBox
+            image1={boxImage1}
+            image2={boxImage2}
+            image3={boxImage3}
+            image4={boxImage4}
+            title="Trusted by thousands of landscaping businesses across 50+ countries"
+          />
         </div>
       </div>
       <div className={`${container} ${noPadding}`}>
@@ -136,7 +142,7 @@ const Landscaping = () => {
           maxDescriptionWidth={750}
         />
         <Divider className="style1" />
-        <Steps list={steps} />
+        <Steps list={landscapeSteps} />
         <Divider className="style4" />
         <StaticImage
           quality={90}

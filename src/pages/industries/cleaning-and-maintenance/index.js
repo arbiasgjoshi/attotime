@@ -31,7 +31,7 @@ import {
   accordionList1,
   accordionList2,
 } from '@data/industries/cleaning.js';
-import { oldList, newList, steps } from '@data/industries';
+import { oldList, newList, cleanersSteps } from '@data/industries';
 
 import image2 from '@images/time-tracking-cleaning@2x.png';
 import authorImage from '@images/cleaning-author@2x.png';
@@ -132,9 +132,19 @@ const Cleaning = () => {
       </div>
       <div className={background}>
         <div className={`${container} ${noPadding}`}>
-          <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
+          <StaticImage
+            src="../../../images/paper_timesheets@2x.png"
+            alt="Say goodbye to paper timesheets"
+            placeholder="none"
+          />
           <Divider className="style3" />
-          <ImagesBox image1={boxImage1} image2={boxImage2} image3={boxImage3} image4={boxImage4} />
+          <ImagesBox
+            image1={boxImage1}
+            image2={boxImage2}
+            image3={boxImage3}
+            image4={boxImage4}
+            title="Trusted by thousands of cleaning businesses across 50+ countries"
+          />
         </div>
       </div>
       <div className={`${container} ${noPadding}`}>
@@ -147,7 +157,7 @@ const Cleaning = () => {
           maxDescriptionWidth={750}
         />
         <Divider className="style1" />
-        <Steps list={steps} />
+        <Steps list={cleanersSteps} />
         <Divider className="style4" />
         <SubscribeBanner
           title="Let’s make it a clean sweep! Keep your time tracking tidy with Atto"
