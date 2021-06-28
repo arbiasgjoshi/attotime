@@ -30,8 +30,8 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 // import boxImage4 from '@images/painting-box-four@2x.png';
 
 // Add Industry Images
-import image5 from '@images/painting-accordion3.png';
-import image6 from '@images/painting-accordion4.png';
+import image5 from '@images/painting/Respond to absenteeism and last-minute schedule changes@2x.png';
+import image6 from '@images/painting/Avoid surprises by forecasting wages ahead of payday@2x.png';
 
 import boxImage1 from '@images/painting/Painting daily timeline@2x.png';
 import boxImage2 from '@images/painting/Painting location tracking@2x.png';
