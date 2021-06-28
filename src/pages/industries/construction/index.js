@@ -17,16 +17,27 @@ import OldVsNew from '@components/organisms/old-vs-new';
 import ReviewCards from '@components/organisms/review-cards';
 import ImagesBox from '@components/organisms/images-box';
 
-import authorImage from '@images/construction-minds@2x.png';
-import image2 from '@images/time-tracking-construction@2x.png';
-import image3 from '@images/still_want_to_use_it@2x.png';
-import image4 from '@images/guarante-on-site@2x.png';
-import image5 from '@images/wage-estimates@2x.png';
+// import authorImage from '@images/construction-minds@2x.png';
+// import image2 from '@images/time-tracking-construction@2x.png';
+// import image3 from '@images/still_want_to_use_it@2x.png';
+// import image4 from '@images/guarante-on-site@2x.png';
+// import image5 from '@images/wage-estimates@2x.png';
+// import boxImage1 from '@images/construction-daily-timeline@2x.png';
+// import boxImage2 from '@images/construction-location@2x.png';
+// import boxImage3 from '@images/construction-timesheets@2x.png';
+// import boxImage4 from '@images/construction-time-tracking@2x.png';
 
-import boxImage1 from '@images/construction-daily-timeline@2x.png';
-import boxImage2 from '@images/construction-location@2x.png';
-import boxImage3 from '@images/construction-timesheets@2x.png';
-import boxImage4 from '@images/construction-time-tracking@2x.png';
+import image3 from '@images/construction/So simple that your workers will want to use it@2x.png';
+import image4 from '@images/construction/Guarantee your crew is on-site before they clock in@2x.png';
+import image5 from '@images/construction/Keep projects on budget with wage estimates@2x.png';
+
+import featuredImage from '@images/construction/Time tracking for construction companies@2x.png';
+import authorImage from '@images/construction/Built with construction companies in mind@2x.png';
+
+import boxImage1 from '@images/construction/Construction Daily Timeline@2x.png';
+import boxImage2 from '@images/construction/Construction Location@2x.png';
+import boxImage3 from '@images/construction/Construction timesheets@2x.png';
+import boxImage4 from '@images/construction/Construction time tracking@2x.png';
 
 import { container, industryPadding, noPadding, oldVsNewGradient } from '@styles/main.module.scss';
 import {
@@ -52,7 +63,7 @@ const Construction = () => {
           smallTitle="ATTO FOR CONSTRUCTION"
           title="Time Tracking for Construction Companies"
           list={checkList1}
-          image={image2}
+          image={featuredImage}
         />
         <Divider className="style3" />
         <ReviewCards />
@@ -82,8 +93,9 @@ const Construction = () => {
           />
           <Divider className="style3" />
           <StaticImage
-            src="../../../images/paper_timesheets@2x.png"
+            src="../../../images/construction/Say goodbye to paper timesheets@2x.png"
             placeholder="none"
+            quality={96}
             alt="Say goodbye to paper timesheets"
           />
           <Divider className="style3" />
@@ -152,7 +164,7 @@ const Construction = () => {
           alt="Ready to put Atto to work on your construction sites?"
           placeholder="none"
           style={{ marginBottom: '0.2rem' }}
-          src="../../../images/subscribe-banner-image.png"
+          src="../../../images/construction/Ready to put Atto to work on your construction sites@2x.png"
         />
         <SubscribeBanner
           title="Ready to put Atto to work on your construction sites?"

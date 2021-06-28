@@ -16,16 +16,29 @@ import OldVsNew from '@components/organisms/old-vs-new';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import ImagesBox from '@components/organisms/images-box';
 
-import authorImage from '@images/landscaping-author@2x.png';
-import image2 from '@images/time-tracking-landscaping@2x.png';
-import image3 from '@images/landscaping-accordion1.png';
-import image4 from '@images/landscaping-accordion2.png';
-import image5 from '@images/landscaping-accordion3.png';
+// import authorImage from '@images/landscaping-author@2x.png';
 
-import boxImage1 from '@images/landscaping-box-one@2x.png';
-import boxImage2 from '@images/landscaping-box-two@2x.png';
-import boxImage3 from '@images/landscaping-box-three@2x.png';
-import boxImage4 from '@images/landscaping-box-four@2x.png';
+// import image2 from '@images/time-tracking-landscaping@2x.png';
+// import boxImage1 from '@images/landscaping-box-one@2x.png';
+// import boxImage2 from '@images/landscaping-box-two@2x.png';
+// import boxImage3 from '@images/landscaping-box-three@2x.png';
+// import boxImage4 from '@images/landscaping-box-four@2x.png';
+
+// import image3 from '@images/landscaping-accordion1.png';
+// import image4 from '@images/landscaping-accordion2.png';
+// import image5 from '@images/landscaping-accordion3.png';
+
+import authorImage from '@images/landscaping/Built with landscaping companies in mind@2x.png';
+import BannerImage from '@images/landscaping/Time Tracking for Landscaping Companies@2x.png';
+
+import image3 from '@images/landscaping/Atto is completely mobile – just like your crew@2x.png';
+import image4 from '@images/landscaping/Make sure your crew are about to get their hands dirty before they clock in@2x.png';
+import image5 from '@images/landscaping/Prune your costs and keep jobs on budget with wage estimates@2x.png';
+
+import boxImage1 from '@images/landscaping/Landscaping daily timeline@2x.png';
+import boxImage2 from '@images/landscaping/Landscaping location tracking@2x.png';
+import boxImage3 from '@images/landscaping/Landscaping timesheets@2x.png';
+import boxImage4 from '@images/landscaping/The grass is always greener with Atto@2x.png';
 
 import { FooterLinks } from '@locale/en.js';
 import {
@@ -54,7 +67,7 @@ const Landscaping = () => {
           smallTitle="ATTO FOR LANDSCAPING"
           title="Time Tracking for Landscaping Companies"
           list={checkList1}
-          image={image2}
+          image={BannerImage}
         />
         <Divider className="style4" />
         <ReviewCards />
@@ -145,12 +158,13 @@ const Landscaping = () => {
         <Steps list={landscapeSteps} />
         <Divider className="style4" />
         <StaticImage
-          quality={90}
+          quality={96}
           width={1140}
           height={241}
           style={{ marginBottom: '0.2rem' }}
           placeholder="none"
-          src="../../../images/landscape-subscribe-banner.png"
+          alt="Help your business to blossom with accurate time tracking from Atto"
+          src="../../../images/landscaping/Help your business to blossom with accurate time tracking from Atto@2x.png"
         />
         <SubscribeBanner
           title="Help your business blossom with accurate time tracking from Atto"

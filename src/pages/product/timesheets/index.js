@@ -1,8 +1,9 @@
 import React from 'react';
 import { FooterLinks } from '@locale/en.js';
-import { container, imageFormWrapper } from '@styles/main.module.scss';
+import { container, imageWrapper } from '@styles/main.module.scss';
 
 import Divider from '@components/atoms/divider';
+import { StaticImage } from 'gatsby-plugin-image';
 import Seo from '@components/molecules/seo';
 import { useIntl } from 'gatsby-plugin-intl';
 import Title from '@components/molecules/title';
@@ -21,10 +22,9 @@ import VideoCheckList from '@components/organisms/video-checklist';
 import Services from '@components/organisms/services';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 
-import authorImage from '@images/authorImage.png';
-import noImage from '@images/no-image.png';
-import roundImage2 from '@images/syncWithPayroll2x.png';
-import roundImage3 from '@images/timesheets-inbox2x.png';
+import imgOne from '@images/en/timesheets/Estimate your Employees’ Wages@2x.png';
+import imgTwo from '@images/en/timesheets/Sync with Payroll and Accounting Software@2x.png';
+import imgThree from '@images/timesheets-inbox2x.png';
 
 import icon from '@images/accurate.png';
 import icon2 from '@images/trustworthy.png';
@@ -44,7 +44,32 @@ import icon20 from '@images/time-tracking-clock@1x.png';
 import icon21 from '@images/location@1x.png';
 import icon22 from '@images/profile@1x.png';
 
-import Activity from '@images/activitySVG.svg'; // TODO change svg when png is provided
+import authorImage from '@images/en/timesheets/Time tracking app review@2x.png';
+
+// import featureBannerImgEn from '@images/en/timesheets/Everything you need to keep track of your employees’ time@2x.png';
+// import featureBannerImgDe from '@images/de/timesheets/DE_Everything you need to keep track of your employees’ time@2x.png';
+// import featureBannerImgEs from '@images/es/timesheets/ES_Everything you need to keep track of your employees’ time@2x.png';
+// import featureBannerImgFr from '@images/fr/timesheets/FR_Everything you need to keep track of your employees’ time@2x.png';
+
+import featureImgLocaleOneEn from '@images/en/timesheets/Boost productivity with timesheet insights@2x.png';
+import featureImgLocaleOneDe from '@images/de/timesheets/DE_Boost productivity with timesheet insights@2x.png';
+import featureImgLocaleOneEs from '@images/es/timesheets/ES_Boost productivity with timesheet insights@2x.png';
+import featureImgLocaleOneFr from '@images/fr/timesheets/FR_Boost productivity with timesheet insights@2x.png';
+
+import featureImgLocaleTwoEn from '@images/en/timesheets/Gain a clear understanding of your employees’ activity@2x.png';
+import featureImgLocaleTwoDe from '@images/de/timesheets/DE_Gain a clear understanding of your employees’ activity@2x.png';
+import featureImgLocaleTwoEs from '@images/es/timesheets/ES_Gain a clear understanding of your employees’ activity@2x.png';
+import featureImgLocaleTwoFr from '@images/fr/timesheets/FR_Gain a clear understanding of your employees’ activity@2x.png';
+
+import featureImgLocaleThreeEn from '@images/en/timesheets/Timesheets on-time and in your Inbox@2x.png';
+import featureImgLocaleThreeDe from '@images/de/timesheets/DE_Timesheets on-time and in your Inbox@2x.png';
+import featureImgLocaleThreeEs from '@images/es/timesheets/ES_Timesheets on-time and in your Inbox@2x.png';
+import featureImgLocaleThreeFr from '@images/fr/timesheets/FR_Timesheets on-time and in your Inbox@2x.png';
+
+import featureImgLocaleFourEn from '@images/en/timesheets/Estimate your Employees’ Wages@2x.png';
+import featureImgLocaleFourDe from '@images/de/timesheets/DE_Estimate your Employees’ Wages@2x.png';
+import featureImgLocaleFourEs from '@images/es/timesheets/ES_Estimate your Employees’ Wages@2x.png';
+import featureImgLocaleFourFr from '@images/fr/timesheets/FR_Estimate your Employees’ Wages@2x.png';
 
 import ConstructionLogo from '@images/construction-industry-logo.svg';
 import PaintingLogo from '@images/painting-industry-logo.svg';
@@ -216,6 +241,129 @@ const Timesheets = () => {
     { title: 'Other industries', url: '/industries/electrical', icon: <ThreeDots /> },
   ];
 
+  const bannerImage = (loc) => {
+    if (loc === 'en') {
+      return (
+        <StaticImage
+          src="../../../images/en/timesheets/Everything you need to keep track of your employees’ time@2x.png"
+          alt="admin-panel-image"
+          width={1220}
+          quality={100}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'de') {
+      return (
+        <StaticImage
+          src="../../../images/de/overview/DE_Everything you need to keep track of your employees’ time@2x.png"
+          alt="admin-panel-image"
+          width={1220}
+          quality={100}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'es') {
+      return (
+        <StaticImage
+          src="../../../images/es/overview/ES_Everything you need to keep track of your employees’ time@2x.png"
+          alt="admin-panel-image"
+          width={1220}
+          quality={100}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'fr') {
+      return (
+        <StaticImage
+          src="../../../images/fr/timesheets/FR_Everything you need to keep track of your employees’ time@2x.png"
+          alt="admin-panel-image"
+          width={1220}
+          quality={100}
+          placeholder="none"
+        />
+      );
+    }
+  };
+
+  const timeSheetFeatureImgOne = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleOneEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleOneEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleOneDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleOneFr;
+    }
+  };
+
+  const timeSheetFeatureImgTwo = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleTwoEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleTwoEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleTwoDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleTwoFr;
+    }
+  };
+
+  const timeSheetFeatureImgThree = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleThreeEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleThreeEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleThreeDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleThreeFr;
+    }
+  };
+
+  const timeSheetFeatureImgFour = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleFourEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleFourEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleFourDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleFourFr;
+    }
+  };
+
   return (
     <div className={`${container} ${teamActivityContainer}`}>
       <Seo title={Intl.formatMessage({ id: 'pages.productTimesheets.name' })} />
@@ -239,8 +387,8 @@ const Timesheets = () => {
         />
       </div>
       <Divider className="style01" />
-      <div className={imageFormWrapper}>
-        <ProductOverviewBanner />
+      <div className={imageWrapper} style={{ width: 'calc(100% + 70px)' }}>
+        {bannerImage(Intl.locale)}
       </div>
       <Divider className="style3" />
       <IconCardList cardList={firstList} style="smallTimesheetImages" />
@@ -249,7 +397,7 @@ const Timesheets = () => {
         title={Intl.formatMessage({ id: 'pages.productTimesheets.firstFeatureTitle' })}
         description={Intl.formatMessage({ id: 'pages.productTimesheets.firstFeatureDesc' })}
         list={checkLists2}
-        image={photo1}
+        image={timeSheetFeatureImgOne(Intl.locale)}
         textMargin="10.3 0"
       />
       <Divider />
@@ -257,7 +405,7 @@ const Timesheets = () => {
         title={Intl.formatMessage({ id: 'pages.productTimesheets.secondFeatureTitle' })}
         description={Intl.formatMessage({ id: 'pages.productTimesheets.secondFeatureDesc' })}
         list={checkLists3}
-        image={<Activity />}
+        image={timeSheetFeatureImgTwo(Intl.locale)}
         isSwapped
         textMargin="5.8rem 0"
       />
@@ -281,7 +429,7 @@ const Timesheets = () => {
         <IconCard
           isRound
           bigImage
-          icon={noImage}
+          icon={timeSheetFeatureImgFour(Intl.locale)}
           title={Intl.formatMessage({ id: 'pages.productTimesheets.fourthSectionFeatureOneTitle' })}
           alt={Intl.formatMessage({ id: 'pages.productTimesheets.fourthSectionFeatureOneTitle' })}
           description={Intl.formatMessage({
@@ -292,7 +440,7 @@ const Timesheets = () => {
         <IconCard
           isRound
           bigImage
-          icon={roundImage2}
+          icon={imgTwo}
           title={Intl.formatMessage({ id: 'pages.productTimesheets.fourthSectionFeatureTwoTitle' })}
           alt={Intl.formatMessage({ id: 'pages.productTimesheets.fourthSectionFeatureTwoTitle' })}
           description={Intl.formatMessage({
@@ -303,7 +451,7 @@ const Timesheets = () => {
         <IconCard
           isRound
           bigImage
-          icon={roundImage3}
+          icon={timeSheetFeatureImgThree(Intl.locale)}
           title={Intl.formatMessage({
             id: 'pages.productTimesheets.fourthSectionFeatureThreeTitle',
           })}

@@ -23,8 +23,7 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 import { container, imageWrapper } from '@styles/main.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
-import authorImage from '@images/authorImage.png';
-import noImage from '@images/no-image.png';
+import authorImage from '@images/en/time-tracking/Time tracking app review@2x.png';
 
 import WebTracking from '@images/web-time-tracking.svg';
 import MobileTracking from '@images/mobile_time_tracking.svg';
@@ -46,18 +45,58 @@ import Overtime from '@images/overtime.svg';
 import icon from '@images/easy-to-use.png';
 import icon2 from '@images/accurate.png';
 import icon3 from '@images/trustworthy.png';
-import icon4 from '@images/clock-in-out.png';
-import icon5 from '@images/write-notes.png';
-import icon6 from '@images/track-breaks.png';
-import icon7 from '@images/manage-overtime.png';
-import icon8 from '@images/switch-between-jobs.png';
-import icon9 from '@images/add-time-off.png';
 
-import icon22 from '@images/employees_forget.png';
-import icon23 from '@images/out-of-battery.png';
+// import noImage from '@images/no-image.png';
+// import icon4 from '@images/clock-in-out.png';
+// import icon5 from '@images/write-notes.png';
+// import icon6 from '@images/track-breaks.png';
+// import icon7 from '@images/manage-overtime.png';
+// import icon8 from '@images/switch-between-jobs.png';
+// import icon9 from '@images/add-time-off.png';
+
+import icon22 from '@images/en/time-tracking/Employees forget to track their time_@2x.png';
+import icon23 from '@images/en/time-tracking/What if phone ran out of battery_@2x.png';
+import icon24 from '@images/en/time-tracking/Not sure if employees are where they’re supposed to_@2x.png';
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
+//
+// Clock-in and out@2x.png
+
+import featureImgLocaleOneEn from '@images/clock-in-out.png';
+import featureImgLocaleOneDe from '@images/de/time-tracking/DE_Clock-in and out@2x.png';
+import featureImgLocaleOneEs from '@images/es/time-tracking/ES_Clock-in and out@2x.png';
+import featureImgLocaleOneFr from '@images/fr/time-tracking/FR_Clock-in and out@2x.png';
+
+import featureImgLocaleTwoEn from '@images/write-notes.png';
+import featureImgLocaleTwoDe from '@images/de/time-tracking/DE_Write notes@2x.png';
+import featureImgLocaleTwoEs from '@images/es/time-tracking/ES_Write notes@2x.png';
+import featureImgLocaleTwoFr from '@images/fr/time-tracking/FR_Write notes@2x.png';
+
+import featureImgLocaleThreeEn from '@images/track-breaks.png';
+import featureImgLocaleThreeDe from '@images/de/time-tracking/DE_Track breaks@2x.png';
+import featureImgLocaleThreeEs from '@images/es/time-tracking/ES_Track breaks@2x.png';
+import featureImgLocaleThreeFr from '@images/fr/time-tracking/FR_Track breaks@2x.png';
+
+import featureImgLocaleFourEn from '@images/manage-overtime.png';
+import featureImgLocaleFourDe from '@images/de/time-tracking/DE_Manage overtime@2x.png';
+import featureImgLocaleFourEs from '@images/es/time-tracking/ES_Manage overtime@2x.png';
+import featureImgLocaleFourFr from '@images/fr/time-tracking/FR_Manage overtime@2x.png';
+
+import featureImgLocaleFiveEn from '@images/switch-between-jobs.png';
+import featureImgLocaleFiveDe from '@images/de/time-tracking/DE_Switch between jobs@2x.png';
+import featureImgLocaleFiveEs from '@images/es/time-tracking/ES_Switch between jobs@2x.png';
+import featureImgLocaleFiveFr from '@images/fr/time-tracking/FR_Switch between jobs@2x.png';
+
+import featureImgLocaleSixEn from '@images/add-time-off.png';
+import featureImgLocaleSixDe from '@images/de/time-tracking/DE_Add time off@2x.png';
+import featureImgLocaleSixEs from '@images/es/time-tracking/ES_Add time off@2x.png';
+import featureImgLocaleSixFr from '@images/fr/time-tracking/FR_Add time off@2x.png';
+
+// import featureBlockImgThreeEn from '@images/en/time-tracking/Work at Job Sites via the Time Clock Kiosk@2x.png';
+// import featureBlockImgThreeDe from '@images/de/time-tracking/DE_Work at Job Sites via the Time Clock Kiosk@2x.png';
+// import featureBlockImgThreeEs from '@images/es/time-tracking/ES_Work at Job Sites via the Time Clock Kiosk@2x.png';
+// import featureBlockImgThreeFr from '@images/fr/tome-tracking/FR_Work at Job Sites via the Time Clock Kiosk@2x.png';
 
 import { serviceList, overviewAdminList } from '@data/listed-data';
 
@@ -121,12 +160,172 @@ const TimeTracking = () => {
     },
   ];
 
+  const timeTrackingBannerImg = (loc) => {
+    if (loc === 'en') {
+      //
+      return (
+        <StaticImage
+          src="../../../images/en/time-tracking/Lower costs, higher productivity. Less admin, more business.@2x.png"
+          alt="admin-panel-image"
+          width={1250}
+          quality={96}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'es') {
+      //
+      return (
+        <StaticImage
+          src="../../../images/es/time-tracking/ES_Lower costs, higher productivity. Less admin, more business.@2x.png"
+          alt="admin-panel-image"
+          width={1250}
+          quality={96}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'de') {
+      //
+      return (
+        <StaticImage
+          src="../../../images/de/time-tracking/DE_Lower costs, higher productivity. Less admin, more business.@2x.png"
+          alt="admin-panel-image"
+          width={1250}
+          quality={96}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'fr') {
+      //
+      return (
+        <StaticImage
+          src="../../../images/fr/time-tracking/FR_Lower costs, higher productivity. Less admin, more business.@2x.png"
+          alt="admin-panel-image"
+          width={1250}
+          quality={96}
+          placeholder="none"
+        />
+      );
+    }
+  };
+
+  const timeTrackingImgLocaleOne = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleOneEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleOneEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleOneDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleOneFr;
+    }
+  };
+  const timeTrackingImgLocaleTwo = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleTwoEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleTwoEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleTwoDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleTwoFr;
+    }
+  };
+  const timeTrackingImgLocaleThree = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleThreeEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleThreeEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleThreeDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleThreeFr;
+    }
+  };
+  const timeTrackingImgLocaleFour = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleFourEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleFourEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleFourDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleFourFr;
+    }
+  };
+  const timeTrackingImgLocaleFive = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleFiveEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleFiveEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleFiveDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleFiveFr;
+    }
+  };
+  const timeTrackingImgLocaleSix = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleSixEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleSixEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleSixDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleSixFr;
+    }
+  };
+
   const timeTrackingOtherFeatures = [
     {
       title: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleOne' }),
       description: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureDescOne' }),
       alt: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleOne' }),
-      icon: icon4,
+      icon: timeTrackingImgLocaleOne(Intl.locale),
       imageWidth: 350,
       imageHeight: 244,
     },
@@ -134,7 +333,7 @@ const TimeTracking = () => {
       title: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleTwo' }),
       description: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureDescTwo' }),
       alt: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleTwo' }),
-      icon: icon5,
+      icon: timeTrackingImgLocaleTwo(Intl.locale),
       imageWidth: 350,
       imageHeight: 244,
     },
@@ -142,7 +341,7 @@ const TimeTracking = () => {
       title: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleThree' }),
       description: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureDescThree' }),
       alt: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleThree' }),
-      icon: icon6,
+      icon: timeTrackingImgLocaleThree(Intl.locale),
       imageWidth: 350,
       imageHeight: 244,
     },
@@ -150,7 +349,7 @@ const TimeTracking = () => {
       title: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleFour' }),
       description: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureDescFour' }),
       alt: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleFour' }),
-      icon: icon7,
+      icon: timeTrackingImgLocaleFour(Intl.locale),
       imageWidth: 350,
       imageHeight: 244,
     },
@@ -158,7 +357,7 @@ const TimeTracking = () => {
       title: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleFive' }),
       description: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureDescFive' }),
       alt: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleFive' }),
-      icon: icon8,
+      icon: timeTrackingImgLocaleFive(Intl.locale),
       imageWidth: 350,
       imageHeight: 244,
     },
@@ -166,7 +365,7 @@ const TimeTracking = () => {
       title: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleSix' }),
       description: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureDescSix' }),
       alt: Intl.formatMessage({ id: 'pages.productTimeTracking.iconFeatureTitleSix' }),
-      icon: icon9,
+      icon: timeTrackingImgLocaleSix(Intl.locale),
       imageWidth: 350,
       imageHeight: 244,
     },
@@ -296,6 +495,206 @@ const TimeTracking = () => {
     },
   ];
 
+  const featuredIageLocale = (loc) => {
+    if (loc === 'en') {
+      return (
+        <StaticImage
+          src="../images/en/time-tracking-simplified@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={1140}
+          quality={95}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'de') {
+      return (
+        <StaticImage
+          src="../images/de/de-time-tracking-simplified@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={1140}
+          quality={95}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'fr') {
+      return (
+        <StaticImage
+          src="../images/fr/fr-time-tracking-simplified@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={1140}
+          quality={95}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'es') {
+      return (
+        <StaticImage
+          src="../images/es/es-time-tracking-simplified@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={1140}
+          quality={95}
+          placeholder="none"
+        />
+      );
+    }
+  };
+
+  const featuredStoryImageOne = (loc) => {
+    if (loc === 'en') {
+      return (
+        <StaticImage
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+          height={378}
+          width={380}
+          quality={95}
+          placeholder="none"
+          src="../../../images/en/time-tracking/Work in the Office via the Web Dashboard@2x.png"
+        />
+      );
+    }
+    if (loc === 'es') {
+      return (
+        <StaticImage
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+          height={378}
+          width={380}
+          quality={95}
+          placeholder="none"
+          src="../../../images/es/time-tracking/ES_Work in the Office via the Web Dashboard@2x.png"
+        />
+      );
+    }
+    if (loc === 'fr') {
+      return (
+        <StaticImage
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+          height={378}
+          width={380}
+          quality={95}
+          placeholder="none"
+          src="../../../images/fr/time-tracking/FR_Work in the Office via the Web Dashboard@2x.png"
+        />
+      );
+    }
+    if (loc === 'de') {
+      return (
+        <StaticImage
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+          height={378}
+          width={380}
+          quality={95}
+          placeholder="none"
+          src="../../../images/de/time-tracking/DE_Work in the Office via the Web Dashboard@2x.png"
+        />
+      );
+    }
+  };
+
+  const featuredStoryImageTwo = (loc) => {
+    if (loc === 'en') {
+      return (
+        <StaticImage
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+          height={378}
+          width={380}
+          quality={95}
+          placeholder="none"
+          src="../../../images/en/time-tracking/Work on the Go via the Mobile App@2x.png"
+        />
+      );
+    }
+    if (loc === 'es') {
+      return (
+        <StaticImage
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+          height={378}
+          width={380}
+          quality={95}
+          placeholder="none"
+          src="../../../images/es/time-tracking/ES_Work on the Go via the Mobile App@2x.png"
+        />
+      );
+    }
+    if (loc === 'fr') {
+      return (
+        <StaticImage
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+          height={378}
+          width={380}
+          quality={95}
+          placeholder="none"
+          src="../../../images/fr/time-tracking/FR_Work on the Go via the Mobile App@2x.png"
+        />
+      );
+    }
+    if (loc === 'de') {
+      return (
+        <StaticImage
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+          height={378}
+          width={380}
+          quality={95}
+          placeholder="none"
+          src="../../../images/de/time-tracking/DE_Work on the Go via the Mobile App@2x.png"
+        />
+      );
+    }
+  };
+
+  const featuredStoryImageThree = (loc) => {
+    if (loc === 'en') {
+      return (
+        <StaticImage
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+          height={378}
+          width={380}
+          quality={95}
+          placeholder="none"
+          src="../../../images/en/time-tracking/Work at Job Sites via the Time Clock Kiosk@2x.png"
+        />
+      );
+    }
+    if (loc === 'es') {
+      return (
+        <StaticImage
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+          height={378}
+          width={380}
+          quality={95}
+          placeholder="none"
+          src="../../../images/es/time-tracking/ES_Work at Job Sites via the Time Clock Kiosk@2x.png"
+        />
+      );
+    }
+    if (loc === 'fr') {
+      return (
+        <StaticImage
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+          height={378}
+          width={380}
+          quality={95}
+          placeholder="none"
+          src="../../../images/fr/time-tracking/FR_Work at Job Sites via the Time Clock Kiosk@2x.png"
+        />
+      );
+    }
+    if (loc === 'de') {
+      return (
+        <StaticImage
+          alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
+          height={378}
+          width={380}
+          quality={95}
+          placeholder="none"
+          src="../../../images/de/time-tracking/DE_Work at Job Sites via the Time Clock Kiosk@2x.png"
+        />
+      );
+    }
+  };
+
   return (
     <div className={`${container} ${timeTrackingContainer}`}>
       <Seo title={Intl.formatMessage({ id: 'pages.productTimeTracking.name' })} />
@@ -314,13 +713,7 @@ const TimeTracking = () => {
         videoUrl="https://www.youtube.com/watch?v=DTvS9lvRxZ8"
       />
       <Divider />
-      <StaticImage
-        alt="Clock In"
-        height={502}
-        quality={95}
-        placeholder="none"
-        src="../../../images/banner-image-2@2x.png"
-      />
+      {featuredIageLocale(Intl.locale)}
       <Divider className="style3" />
       <IconCardList middleAligned cardList={timeTrackingFeatures} />
       <Divider />
@@ -341,14 +734,7 @@ const TimeTracking = () => {
       <Divider className="style7" />
       <div className={workListContainer}>
         <div>
-          <StaticImage
-            alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
-            height={378}
-            width={380}
-            quality={95}
-            placeholder="none"
-            src="../../../images/time-tracking-on-web@2x.png"
-          />
+          {featuredStoryImageOne(Intl.locale)}
           <FeatureCard
             isWorkCard
             title={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleOne' })}
@@ -361,14 +747,7 @@ const TimeTracking = () => {
           />
         </div>
         <div className={workListItem}>
-          <StaticImage
-            alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleTwo' })}
-            height={378}
-            width={380}
-            quality={95}
-            placeholder="none"
-            src="../../../images/time-tracking-mobile-app@2x.png"
-          />
+          {featuredStoryImageTwo(Intl.locale)}
           <FeatureCard
             isWorkCard
             title={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleTwo' })}
@@ -381,14 +760,7 @@ const TimeTracking = () => {
           />
         </div>
         <div className={workListItem}>
-          <StaticImage
-            alt={Intl.formatMessage({ id: 'pages.productTimeTracking.imageIconFeatureTitleThree' })}
-            height={378}
-            width={380}
-            quality={95}
-            placeholder="none"
-            src="../../../images/time-clock-kiosk@2x.png"
-          />
+          {featuredStoryImageThree(Intl.locale)}
           <FeatureCard
             isWorkCard
             title={Intl.formatMessage({
@@ -410,14 +782,8 @@ const TimeTracking = () => {
         title={Intl.formatMessage({ id: 'pages.productTimeTracking.fourthSectionTitle' })}
       />
       <Divider className="style7" />
-      <div className={imageWrapper}>
-        <StaticImage
-          src="../../../images/admin-panel.png"
-          alt="admin-panel-image"
-          width={1170}
-          quality={96}
-          placeholder="none"
-        />
+      <div className={imageWrapper} style={{ width: 'calc(100% + 100px)' }}>
+        {timeTrackingBannerImg(Intl.locale)}
       </div>
       <Divider className="style3" />
       <CheckList list={overviewAdminList} hasDescription cardStyle="big" />
@@ -467,7 +833,7 @@ const TimeTracking = () => {
           isRound
           imageWidth={250}
           imageHeight={250}
-          icon={noImage}
+          icon={icon24}
           title={Intl.formatMessage({
             id: 'pages.productTimeTracking.commonProblemFeatureThreeTitle',
           })}

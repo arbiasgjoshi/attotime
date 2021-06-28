@@ -17,18 +17,32 @@ import Steps from '@components/organisms/steps';
 import ImagesBox from '@components/organisms/images-box';
 
 import SubscribeBanner from '@components/molecules/subscribe-banner';
-import authorImage from '@images/painting-author@2x.png';
+
+// import authorImage from '@images/painting-author@2x.png';
 // import image1 from '@images/no-image.png';
-import image2 from '@images/time-tracking-painting@2x.png';
-import image3 from '@images/painting-accordion1.png';
-import image4 from '@images/painting-accordion2.png';
+// import image2 from '@images/time-tracking-painting@2x.png';
+// import image3 from '@images/painting-accordion1.png';
+// import image4 from '@images/painting-accordion2.png';
+
+// import boxImage1 from '@images/painting-box-one@2x.png';
+// import boxImage2 from '@images/painting-box-two@2x.png';
+// import boxImage3 from '@images/painting-box-three@2x.png';
+// import boxImage4 from '@images/painting-box-four@2x.png';
+
+// Add Industry Images
 import image5 from '@images/painting-accordion3.png';
 import image6 from '@images/painting-accordion4.png';
 
-import boxImage1 from '@images/painting-box-one@2x.png';
-import boxImage2 from '@images/painting-box-two@2x.png';
-import boxImage3 from '@images/painting-box-three@2x.png';
-import boxImage4 from '@images/painting-box-four@2x.png';
+import boxImage1 from '@images/painting/Painting daily timeline@2x.png';
+import boxImage2 from '@images/painting/Painting location tracking@2x.png';
+import boxImage3 from '@images/painting/Painting timesheets@2x.png';
+import boxImage4 from '@images/painting/Painting time tracking@2x.png';
+
+import image2 from '@images/painting/Time Tracking for Painting and Decorating Companies@2x.png';
+import image3 from '@images/painting/Get helpful reminders so your painters never forget to clock-in@2x.png';
+import image4 from '@images/painting/Allow your supervisor to track your painting crew’s time @2x.png';
+
+import authorImage from '@images/painting/Painting reviews@2x.png';
 
 import {
   firstList,

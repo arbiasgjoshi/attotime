@@ -17,17 +17,30 @@ import OldVsNew from '@components/organisms/old-vs-new';
 import Steps from '@components/organisms/steps';
 import ImagesBox from '@components/organisms/images-box';
 
-import authorImage from '@images/authorImage.png';
-import image2 from '@images/time-tracking-healthcare@2x.png';
-import image3 from '@images/healthcare-accordion1.png';
-import image4 from '@images/healthcare-accordion2.png';
-import image5 from '@images/healthcare-accordion3.png';
-import image6 from '@images/healthcare-accordion4.png';
+// import authorImage from '@images/authorImage.png';
+// import image2 from '@images/time-tracking-healthcare@2x.png';
 
-import boxImage1 from '@images/healthcare-box-one@2x.png';
-import boxImage2 from '@images/healthcare-box-two@2x.png';
-import boxImage3 from '@images/healthcare-box-three@2x.png';
-import boxImage4 from '@images/healthcare-box-four@2x.png';
+// import image3 from '@images/healthcare-accordion1.png';
+// import image4 from '@images/healthcare-accordion2.png';
+// import image5 from '@images/healthcare-accordion3.png';
+// import image6 from '@images/healthcare-accordion4.png';
+
+// import boxImage1 from '@images/healthcare-box-one@2x.png';
+// import boxImage2 from '@images/healthcare-box-two@2x.png';
+// import boxImage3 from '@images/healthcare-box-three@2x.png';
+// import boxImage4 from '@images/healthcare-box-four@2x.png';
+
+import boxImage1 from '@images/healthcare/Healthcare daily timeline@2x.png';
+import boxImage2 from '@images/healthcare/Healthcare location tracking@2x.png';
+import boxImage3 from '@images/healthcare/Healthcare timesheets@2x.png';
+import boxImage4 from '@images/healthcare/Healthcare time tracking@2x.png';
+import authorImage from '@images/healthcare/Healthcare reviews@2x.png';
+
+import image2 from '@images/healthcare/Time Tracking Software for Home Healthcare Providers@2x.png';
+import image3 from '@images/healthcare/Healthcare daily timeline@2x.png';
+import image4 from '@images/healthcare/Allow your senior caregivers to track everyone’s time @2x.png';
+import image5 from '@images/healthcare/Adjust quickly to employee sickness and absence @2x.png';
+import image6 from '@images/healthcare/Forecast your payroll costs ahead of payday to avoid unwanted surprises@2x.png';
 
 import {
   firstList,
@@ -131,7 +144,12 @@ const HomeHealthcare = () => {
       </div>
       <div className={background}>
         <div className={`${container} ${noPadding}`}>
-          <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
+          <StaticImage
+            src="../../../images/healthcare/Say goodbye to paper timesheets@2x.png"
+            alt="Say goodbye to paper timesheets"
+            quality={96}
+            placeholder="none"
+          />
           <Divider className="style3" />
           <ImagesBox
             image1={boxImage1}

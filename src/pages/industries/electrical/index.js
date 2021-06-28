@@ -17,19 +17,31 @@ import OldVsNew from '@components/organisms/old-vs-new';
 import Steps from '@components/organisms/steps';
 import ImagesBox from '@components/organisms/images-box';
 
-import authorImage from '@images/electrician-author@2x.png';
-import image3 from '@images/electrician-accordion1.png';
-import image4 from '@images/electrician-accordion2.png';
-import image5 from '@images/electrician-accordion3.png';
-import image6 from '@images/electrician-accordion4.png';
+// import authorImage from '@images/electrician-author@2x.png';
+// import image3 from '@images/electrician-accordion1.png';
+// import image4 from '@images/electrician-accordion2.png';
+// import image5 from '@images/electrician-accordion3.png';
+// import image6 from '@images/electrician-accordion4.png';
+// import boxImage1 from '@images/electrician-box-one@2x.png';
+// import boxImage2 from '@images/electrician-box-two@2x.png';
+// import boxImage3 from '@images/electrician-box-three@2x.png';
+// import boxImage4 from '@images/electrician-box-four@2x.png';
 
-import boxImage1 from '@images/electrician-box-one@2x.png';
-import boxImage2 from '@images/electrician-box-two@2x.png';
-import boxImage3 from '@images/electrician-box-three@2x.png';
-import boxImage4 from '@images/electrician-box-four@2x.png';
+import authorImage from '@images/electric/Electricians review@2x.png';
+
+import image3 from '@images/electric/Buzz your electricians with helpful reminders so they don’t forget to clock-in@2x.png';
+import image4 from '@images/electric/Give on-site supervisors the power to track your electricians’ time@2x.png';
+import image5 from '@images/electric/Despatch electricians to emergency call-outs faster@2x.png';
+import image6 from '@images/electric/Avoid a nasty shock by forecasting wages ahead of payday@2x.png';
+
+import boxImage1 from '@images/electric/Electricians daily timeline@2x.png';
+import boxImage2 from '@images/electric/Electricians location tracking@2x.png';
+import boxImage3 from '@images/electric/Electricians timesheets@2x.png';
+import boxImage4 from '@images/electric/Electricians time tracking@2x.png';
 
 // import image1 from '@images/no-image.png';
-import image2 from '@images/time-tracking-electricians@2x.png';
+// import image2 from '@images/time-tracking-electricians@2x.png';
+import BannerImage from '@images/electric/Time Tracking for Electricians@2x.png';
 
 import { FooterLinks } from '@locale/en.js';
 import {
@@ -60,7 +72,7 @@ const Electrician = () => {
           smallTitle="ATTO FOR ELECTRICIANS"
           title="Time Tracking for Electricians"
           list={checkList1}
-          image={image2}
+          image={BannerImage}
         />
         <Divider className="style4" />
         <Story
@@ -139,7 +151,12 @@ const Electrician = () => {
       </div>
       <div className={background}>
         <div className={`${container} ${noPadding}`}>
-          <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
+          <StaticImage
+            src="../../../images/electric/Say goodbye to paper timesheets@2x.png"
+            alt="Say goodbye to paper timesheets"
+            quality={98}
+            placeholder="none"
+          />
           <Divider className="style3" />
           <ImagesBox
             image1={boxImage1}

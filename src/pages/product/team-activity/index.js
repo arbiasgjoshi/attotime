@@ -17,7 +17,7 @@ import Story from '@components/organisms/story';
 import VideoCheckList from '@components/organisms/video-checklist';
 
 import { FooterLinks } from '@locale/en.js';
-import authorImage from '@images/authorImage.png';
+import authorImage from '@images/en/team-activity/Time tracking app review@2x.png';
 import image1 from '@images/team-management-departments.png';
 import image2 from '@images/find-out.png';
 import image3 from '@images/eliminate-checks.png';
@@ -32,6 +32,31 @@ import Messaging from '@images/messaging.svg';
 import icon14 from '@images/time-tracking-clock@1x.png';
 import icon15 from '@images/location@1x.png';
 import icon16 from '@images/timesheets@1x.png';
+
+import featureImgLocaleOneEn from '@images/en/team-activity/Never feel in the dark again with team activity updates@2x.png';
+import featureImgLocaleOneDe from '@images/de/team-activity/DE_Never feel in the dark again with team activity updates@2x.png';
+import featureImgLocaleOneEs from '@images/es/team-activity/ES_Never feel in the dark again with team activity updates@2x.png';
+import featureImgLocaleOneFr from '@images/fr/team-activity/FR_Never feel in the dark again with team activity updates@2x.png';
+
+import featureImgLocaleTwoEn from '@images/en/team-activity/Simplify team management with departments@2x.png';
+import featureImgLocaleTwoDe from '@images/de/team-activity/DE_Simplify team management with departments@2x.png';
+import featureImgLocaleTwoEs from '@images/es/team-activity/ES_Simplify team management with departments@2x.png';
+import featureImgLocaleTwoFr from '@images/fr/team-activity/FR_Simplify team management with departments@2x.png';
+
+import featureImgLocaleThreeEn from '@images/en/team-activity/Find out what any employee is up to in seconds@2x.png';
+import featureImgLocaleThreeDe from '@images/de/team-activity/DE_Find out what any employee is up to in seconds@2x.png';
+import featureImgLocaleThreeEs from '@images/es/team-activity/ES_Find out what any employee is up to in seconds@2x.png';
+import featureImgLocaleThreeFr from '@images/fr/team-activity/FR_Find out what any employee is up to in seconds@2x.png';
+
+import featureImgLocaleFourEn from '@images/en/team-activity/Eliminate back and forth phone calls and constant check-ins@2x.png';
+import featureImgLocaleFourDe from '@images/de/team-activity/DE_Eliminate back and forth phone calls and constant check-ins@2x.png';
+import featureImgLocaleFourEs from '@images/es/team-activity/ES_Eliminate back and forth phone calls and constant check-ins@2x.png';
+import featureImgLocaleFourFr from '@images/fr/team-activity/FR_Eliminate back and forth phone calls and constant check-ins@2x.png';
+
+import featureImgLocaleFiveEn from '@images/en/team-activity/See your team’s progress at the end of each day@2x.png';
+import featureImgLocaleFiveDe from '@images/de/team-activity/DE_See your team’s progress at the end of each day@2x.png';
+import featureImgLocaleFiveEs from '@images/es/team-activity/ES_See your team’s progress at the end of each day@2x.png';
+import featureImgLocaleFiveFr from '@images/fr/team-activity/FR_See your team’s progress at the end of each day@2x.png';
 
 import { container, articleList } from '@styles/main.module.scss';
 
@@ -105,6 +130,101 @@ const TeamActivity = () => {
     },
   ];
 
+  const teamActivityImgOne = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleOneEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleOneEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleOneDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleOneFr;
+    }
+  };
+
+  const teamActivityImgTwo = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleTwoEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleTwoEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleTwoDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleTwoFr;
+    }
+  };
+
+  const teamActivityImgThree = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleThreeEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleThreeEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleThreeDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleThreeFr;
+    }
+  };
+
+  const teamActivityImgFour = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleFourEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleFourEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleFourDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleFourFr;
+    }
+  };
+
+  const teamActivityImgFive = (loc) => {
+    if (loc === 'en') {
+      //
+      return featureImgLocaleFiveEn;
+    }
+    if (loc === 'es') {
+      //
+      return featureImgLocaleFiveEs;
+    }
+    if (loc === 'de') {
+      //
+      return featureImgLocaleFiveDe;
+    }
+    if (loc === 'fr') {
+      //
+      return featureImgLocaleFiveFr;
+    }
+  };
+
   return (
     <div className={`${teamActivityContainer} ${container}`}>
       <Seo title={Intl.formatMessage({ id: 'pages.productTeamActivity.name' })} />
@@ -127,7 +247,7 @@ const TeamActivity = () => {
         <Article
           title={Intl.formatMessage({ id: 'pages.productTeamActivity.firstFeatureTitle' })}
           description={Intl.formatMessage({ id: 'pages.productTeamActivity.firstFeatureDesc' })}
-          image={image4}
+          image={teamActivityImgOne(Intl.locale)}
           maxWidth={500}
           imagePadding="7.3rem 4.5rem"
           imageWidth={400}
@@ -136,7 +256,7 @@ const TeamActivity = () => {
         <Article
           title={Intl.formatMessage({ id: 'pages.productTeamActivity.secondFeatureTitle' })}
           description={Intl.formatMessage({ id: 'pages.productTeamActivity.secondFeatureDesc' })}
-          image={image1}
+          image={teamActivityImgTwo(Intl.locale)}
           isSwapped
           maxWidth={500}
           imagePadding="4.4rem 5.9rem 4.3rem 5.3rem"
@@ -146,7 +266,7 @@ const TeamActivity = () => {
         <Article
           title={Intl.formatMessage({ id: 'pages.productTeamActivity.thirdFeatureTitle' })}
           description={Intl.formatMessage({ id: 'pages.productTeamActivity.thirdFeatureDesc' })}
-          image={image2}
+          image={teamActivityImgThree(Intl.locale)}
           maxWidth={500}
           imagePadding="3.3rem 4.2rem 2.4rem 10.7rem"
           imageWidth={371}
@@ -155,7 +275,7 @@ const TeamActivity = () => {
         <Article
           title={Intl.formatMessage({ id: 'pages.productTeamActivity.fourthFeatureTitle' })}
           description={Intl.formatMessage({ id: 'pages.productTeamActivity.fourthFeatureDesc' })}
-          image={image3}
+          image={teamActivityImgFour(Intl.locale)}
           isSwapped
           maxWidth={500}
           imagePadding="5.6rem 5.5rem"
@@ -165,7 +285,7 @@ const TeamActivity = () => {
         <Article
           title={Intl.formatMessage({ id: 'pages.productTeamActivity.fifthFeatureTitle' })}
           description={Intl.formatMessage({ id: 'pages.productTeamActivity.fifthFeatureDesc' })}
-          image={image1}
+          image={teamActivityImgFive(Intl.locale)}
           maxWidth={500}
           imagePadding="1.8rem 5.5rem"
           imageWidth={400}

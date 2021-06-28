@@ -33,21 +33,32 @@ import {
 } from '@data/industries/cleaning.js';
 import { oldList, newList, cleanersSteps } from '@data/industries';
 
-import image2 from '@images/time-tracking-cleaning@2x.png';
-import authorImage from '@images/cleaning-author@2x.png';
-import image3 from '@images/cleaning-accordion1.png';
-import image4 from '@images/cleaning-accordion2.png';
-import image5 from '@images/cleaning-accordion3.png';
-import image6 from '@images/cleaning-accordion4.png';
+// import authorImage from '@images/cleaning-author@2x.png';
+// import image2 from '@images/time-tracking-cleaning@2x.png';
+// import image3 from '@images/cleaning-accordion1.png';
+// import image4 from '@images/cleaning-accordion2.png';
+// import image5 from '@images/cleaning-accordion3.png';
+// import image6 from '@images/cleaning-accordion4.png';
 
-import boxImage1 from '@images/cleaning-box-one@2x.png';
-import boxImage2 from '@images/cleaning-box-two@2x.png';
-import boxImage3 from '@images/cleaning-box-three@2x.png';
-import boxImage4 from '@images/cleaning-box-four@2x.png';
+// import boxImage1 from '@images/cleaning-box-one@2x.png';
+// import boxImage2 from '@images/cleaning-box-two@2x.png';
+// import boxImage3 from '@images/cleaning-box-three@2x.png';
+// import boxImage4 from '@images/cleaning-box-four@2x.png';
+
+import bannerImage from '@images/cleaning/Time Tracking for Cleaning Companies@2x.png';
+import reviewImage from '@images/cleaning/Cleaners review@2x.png';
+
+import image3 from '@images/cleaning/Group 11@2x.png';
+import image4 from '@images/cleaning/Entrust managers to track your cleaners’ time @2x.png';
+import image5 from '@images/cleaning/See who’s nearby and available to respond to urgent cleaning jobs@2x.png';
+import image6 from '@images/cleaning/Keep a handle on your biggest cost – your cleaners’ wages@2x.png';
+
+import boxImage1 from '@images/cleaning/Cleaners daily timeline@2x.png';
+import boxImage2 from '@images/cleaning/Cleaners location tracking@2x.png';
+import boxImage3 from '@images/cleaning/Cleaners timesheets@2x.png';
+import boxImage4 from '@images/cleaning/Cleaners time tracking@2x.png';
 
 import { FooterLinks } from '@locale/en.js';
-
-// import localeData from '@locale/en';
 
 const Cleaning = () => {
   const Intl = useIntl();
@@ -60,11 +71,11 @@ const Cleaning = () => {
           smallTitle="ATTO FOR CLEANERS"
           title="Time Tracking for Cleaning Companies"
           list={checkList1}
-          image={image2}
+          image={bannerImage}
         />
         <Divider className="style4" />
         <Story
-          img={authorImage}
+          img={reviewImage}
           paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."
         `}
           author="Robert Bennett - DPA Cleaning Services, Inc."

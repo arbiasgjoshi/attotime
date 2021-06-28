@@ -16,17 +16,27 @@ import AccordionArticle from '@components/organisms/accordion-article';
 import OldVsNew from '@components/organisms/old-vs-new';
 import Steps from '@components/organisms/steps';
 import ImagesBox from '@components/organisms/images-box';
+import authorImage from '@images/plumbing/Plumbers review@2x.png';
 
-import authorImage from '@images/plumbing-author@2x.png';
-import image3 from '@images/plumbing-accordion1.png';
-import image4 from '@images/plumbing-accordion2.png';
-import image5 from '@images/plumbing-accordion3.png';
-import image6 from '@images/plumbing-accordion4.png';
+// import authorImage from '@images/plumbing-author@2x.png';
+// import image3 from '@images/plumbing-accordion1.png';
+// import image4 from '@images/plumbing-accordion2.png';
+// import image5 from '@images/plumbing-accordion3.png';
+// import image6 from '@images/plumbing-accordion4.png';
+// import boxImage1 from '@images/plumbing-box-one@2x.png';
+// import boxImage2 from '@images/plumbing-box-two@2x.png';
+// import boxImage3 from '@images/plumbing-box-three@2x.png';
+// import boxImage4 from '@images/plumbing-box-four@2x.png';
 
-import boxImage1 from '@images/plumbing-box-one@2x.png';
-import boxImage2 from '@images/plumbing-box-two@2x.png';
-import boxImage3 from '@images/plumbing-box-three@2x.png';
-import boxImage4 from '@images/plumbing-box-four@2x.png';
+import image3 from '@images/plumbing/Get helpful reminders so your plumbers never forget to clock-in@2x.png';
+import image4 from '@images/plumbing/Allow your on-site manager to track your plumbers’ time@2x.png';
+import image5 from '@images/plumbing/Respond faster to emergency plumbing call-outs@2x.png';
+import image6 from '@images/plumbing/Avoid surprises by forecasting your wage bill ahead of payday@2x.png';
+
+import boxImage1 from '@images/plumbing/Plumbers daily timeline@2x.png';
+import boxImage2 from '@images/plumbing/Plumbers location tracking@2x.png';
+import boxImage3 from '@images/plumbing/Plumbers timesheets@2x.png';
+import boxImage4 from '@images/plumbing/Plumbers time tracking@2x.png';
 
 import {
   container,
@@ -42,7 +52,8 @@ import {
   accordionList2,
 } from '@data/industries/plumbing-and-heating.js';
 import { oldList, newList, plumberSteps } from '@data/industries';
-import image2 from '@images/time-tracking-plumbing@2x.png';
+// import image2 from '@images/time-tracking-plumbing@2x.png';
+import BannerImage from '@images/plumbing/Time Tracking for Plumbing and Heating Companies@2x.png';
 import { FooterLinks } from '@locale/en.js';
 
 const PlumbingAndHeating = () => {
@@ -57,7 +68,7 @@ const PlumbingAndHeating = () => {
           smallTitle="ATTO FOR PLUMBERS AND HEATING ENGINEERS"
           title="Time Tracking for Plumbing and Heating Companies"
           list={checkList1}
-          image={image2}
+          image={BannerImage}
         />
         <Divider className="style4" />
         <Story

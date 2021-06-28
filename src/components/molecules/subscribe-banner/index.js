@@ -21,8 +21,8 @@ const SubscribeBanner = ({
     {bannerImage && (
       <div className={imgWrap}>
         <StaticImage
-          src="../../../images/subscribe-banner@2x.png"
-          alt="three phones"
+          src="../../../images/en/overview/What are you waiting for_ Time is ticking!@2x.png"
+          alt="What are you waiting for. Time is ticking"
           width={1140}
           height={470}
           quality={95}
