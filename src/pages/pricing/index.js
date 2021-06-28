@@ -16,7 +16,7 @@ import FeaturesList from '@components/organisms/features-list';
 import PriceDragger from '@components/molecules/price-dragger';
 
 import { container } from '@styles/main.module.scss';
-import authorImage2 from '@images/authorImage2.png';
+import authorImage2 from '@images/time-tracking-app-review.png';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import TimesheetIcon from '@images/timesheets.svg';
@@ -363,7 +363,7 @@ const Pricing = () => {
       <FeaturesList isLeftAligned list={featureList} style="pricing" />
       <Divider />
       <StaticImage
-        src="../../images/time-tracking-for-field-workers@2x.png"
+        src="../../images/pricing-time-tracking-for-field-workers.png"
         width={1140}
         quality={100}
         placeholder="none"

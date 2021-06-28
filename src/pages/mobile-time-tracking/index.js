@@ -98,6 +98,7 @@ const TimeTrackingApp = () => {
         title="Time tracking from any device – offline, online, or on the go"
         description="Whether you’re in the office or on the move, Atto has a time tracking solution for your needs."
         image={image2}
+        bigDescStyle
         list={featureCardsList}
       />
       <Divider />

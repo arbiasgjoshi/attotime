@@ -4,12 +4,12 @@ import FeatureCard from '@components/molecules/feature-card';
 
 import * as styles from './any-device.module.scss';
 
-const AnyDevice = ({ title, description, image, list, styling }) => (
+const AnyDevice = ({ title, description, image, bigDescStyle = false, list, styling }) => (
   <div className={`${styles.container} ${styles[styling]}`}>
     <div className={styles.firstRow}>
       <div className={styles.textContainer}>
         <h2>{title}</h2>
-        <p>{description}</p>
+        <p className={bigDescStyle && styles.bigStyle}>{description}</p>
       </div>
       <div className={styles.imageContainer}>
         <img src={image} alt={title} />

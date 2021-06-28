@@ -126,8 +126,6 @@ const FramerAccordion = ({
 }) => {
   const [expanded, setExpanded] = useState(0);
 
-  console.log(items);
-
   const onAccordionChange = (val, accordionImage) => {
     setExpanded(val);
     if (accordionImage) {

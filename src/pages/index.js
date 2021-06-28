@@ -21,7 +21,7 @@ import Services from '@components/organisms/services';
 import VideoCheckList from '@components/organisms/video-checklist';
 
 import { serviceList } from '@data/listed-data';
-import authorImage from '@images/no-image.png';
+import authorImage from '@images/hear-what-businesses-have-to-say@2x.png';
 
 import { container, formRotated } from '@styles/main.module.scss';
 import '@styles/includes/slick-carousel.scss';
@@ -85,7 +85,53 @@ const Home = () => {
     { title: Intl.formatMessage({ id: 'pages.homepage.subscribeCheckItemFour' }), id: '1asdd1a' },
   ];
 
-  // console.log(titleList);
+  const imageOneLocale = (loc) => {
+    console.log(loc);
+    if (loc === 'en') {
+      return (
+        <StaticImage
+          src="../images/en/time-tracking-simplified@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={1140}
+          placeholder="none"
+          className={desktopImage}
+        />
+      );
+    }
+    if (loc === 'de') {
+      return (
+        <StaticImage
+          src="../images/es/es-time-tracking-simplified@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={1140}
+          placeholder="none"
+          className={desktopImage}
+        />
+      );
+    }
+    if (loc === 'fr') {
+      return (
+        <StaticImage
+          src="../images/fr/fr-time-tracking-simplified@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={1140}
+          placeholder="none"
+          className={desktopImage}
+        />
+      );
+    }
+    if (loc === 'es') {
+      return (
+        <StaticImage
+          src="../images/es/es-time-tracking-simplified@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={1140}
+          placeholder="none"
+          className={desktopImage}
+        />
+      );
+    }
+  };
 
   useEffect(() => {
     if (window.innerWidth < 768) {
@@ -127,14 +173,7 @@ const Home = () => {
           style="homepage"
         />
         <Divider className="style1" />
-        <StaticImage
-          src="../images/banner-image-2@2x.png"
-          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
-          width={1140}
-          height={505}
-          placeholder="none"
-          className={desktopImage}
-        />
+        {imageOneLocale(Intl.locale)}
         <StaticImage
           src="../images/homepage-banner-mobile@2x.png"
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}

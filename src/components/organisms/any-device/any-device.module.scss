@@ -24,6 +24,12 @@
           letter-spacing: var(--body-style-two-letter-spacing);
           font-weight: normal;
 
+          &.bigStyle {
+            font-size: var(--body-style-one);
+            line-height: var(--body-style-one-line-height-size);
+            letter-spacing: var(--body-style-one-letter-spacing);
+          }
+
           @include min(desktop) {
             margin-right: 9rem;
           }
