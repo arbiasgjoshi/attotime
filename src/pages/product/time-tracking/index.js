@@ -93,12 +93,7 @@ import featureImgLocaleSixDe from '@images/de/time-tracking/DE_Add time off@2x.p
 import featureImgLocaleSixEs from '@images/es/time-tracking/ES_Add time off@2x.png';
 import featureImgLocaleSixFr from '@images/fr/time-tracking/FR_Add time off@2x.png';
 
-// import featureBlockImgThreeEn from '@images/en/time-tracking/Work at Job Sites via the Time Clock Kiosk@2x.png';
-// import featureBlockImgThreeDe from '@images/de/time-tracking/DE_Work at Job Sites via the Time Clock Kiosk@2x.png';
-// import featureBlockImgThreeEs from '@images/es/time-tracking/ES_Work at Job Sites via the Time Clock Kiosk@2x.png';
-// import featureBlockImgThreeFr from '@images/fr/tome-tracking/FR_Work at Job Sites via the Time Clock Kiosk@2x.png';
-
-import { serviceList, overviewAdminList } from '@data/listed-data';
+import { serviceList } from '@data/listed-data';
 
 import {
   timeTrackingContainer,

@@ -18,14 +18,24 @@ import Services from '@components/organisms/services';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import noImage from '@images/no-image.png';
-import authorImage from '@images/construction-minds@2x.png';
-import image1 from '@images/time-clock-mobile@2x.png';
-import image2 from '@images/time-tracking-any-device.png';
 
-import NeverForget from '@images/never-forget-tracking-time-again@2x.png';
-import MobileWorkers from '@images/tt-mobile-workers@2x.png';
-import EmployeesWorkingTogether from '@images/tt-teams-employees-working-together@2x.png';
-import OfficeWorkers from '@images/tt-for-office-workers@2x.png';
+// import authorImage from '@images/construction-minds@2x.png';
+// import image1 from '@images/time-clock-mobile@2x.png';
+// import image2 from '@images/time-tracking-any-device.png';
+
+import reviewImage from '@images/time-tracking/Time tracking app review@2x.png';
+import bannerImage from '@images/time-tracking/A highly accurate time tracking solution@2x.png';
+import anyDevice from '@images/time-tracking/Time tracking from any device – offline, online, or on the go@2x.png';
+
+// import NeverForget from '@images/never-forget-tracking-time-again@2x.png';
+// import MobileWorkers from '@images/tt-mobile-workers@2x.png';
+// import EmployeesWorkingTogether from '@images/tt-teams-employees-working-together@2x.png';
+// import OfficeWorkers from '@images/tt-for-office-workers@2x.png';
+
+import NeverForget from '@images/time-tracking/Never forget to start tracking time again@2x.png';
+import MobileWorkers from '@images/time-tracking/Time tracking for mobile workers @2x.png';
+import EmployeesWorkingTogether from '@images/time-tracking/Time tracking for teams of employees working together@2x.png';
+import OfficeWorkers from '@images/time-tracking/Time tracking for office workers@2x.png';
 
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
@@ -56,14 +66,14 @@ const TimeTrackingApp = () => {
         smallTitle="TIME TRACKING APP"
         title="A highly accurate time tracking solution for any company"
         description="Clock in and out, keep notes, track breaks, assign job codes, add time off, and more!"
-        image={image1}
+        image={bannerImage}
         imageHeight="614"
         imageWidth="438"
         styling="other"
       />
       <Divider className="style11" />
       <Story
-        img={authorImage}
+        img={reviewImage}
         paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
         author="Robert Bennett - DPA Cleaning Services, Inc."
       />
@@ -88,16 +98,17 @@ const TimeTrackingApp = () => {
       <Services list={serviceList} />
       <Divider />
       <StaticImage
-        quality={95}
-        src="../../images/time-tracking-banner@2x.png"
-        alt="Field Workers"
+        quality={98}
+        src="../../images/time-tracking/Time tracking for field workers@2x.png"
+        alt="Time tracking for field workers"
+        width={1140}
         placeholder="none"
       />
       <Divider />
       <AnyDevice
         title="Time tracking from any device – offline, online, or on the go"
         description="Whether you’re in the office or on the move, Atto has a time tracking solution for your needs."
-        image={image2}
+        image={anyDevice}
         bigDescStyle
         list={featureCardsList}
       />
@@ -139,10 +150,11 @@ const TimeTrackingApp = () => {
       />
       <Divider />
       <StaticImage
-        quality={90}
-        src="../../images/time-tracking-banner-image-two@2x.png"
+        quality={97}
+        src="../../images/time-tracking/Time tracking for any industry@2x.png"
         placeholder="none"
-        alt="time-tracking-for-any-industry"
+        width={1140}
+        alt="Time tracking for any industry"
       />
       <Divider />
       <CommonQuestions list={commonQuestionsList} />

@@ -5,9 +5,9 @@ import * as styles from './images-box.module.scss';
 
 import Shield from '../../../images/verifiedShield.svg';
 
-import mobileImagePrimary from '../../../images/mobile-image-primary@2x.png';
-import mobileImageTwo from '../../../images/mobile-image-one@2x.png';
-import mobileImageOne from '../../../images/mobile-image-two@2x.png';
+import mobileImagePrimary from '../../../images/electric/Electricians timesheets@2x.png';
+import mobileImageTwo from '../../../images/electric/Electricians timesheets@2x.png';
+import mobileImageOne from '../../../images/electric/Electricians location tracking@2x.png';
 
 const ImagesBox = ({
   title = 'Trusted by thousands of construction businesses across 50+ countries',

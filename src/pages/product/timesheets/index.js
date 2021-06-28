@@ -20,11 +20,11 @@ import IconCardList from '@components/organisms/icon-card-list';
 import GrowthNumbers from '@components/organisms/growth-numbers';
 import VideoCheckList from '@components/organisms/video-checklist';
 import Services from '@components/organisms/services';
-import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 
-import imgOne from '@images/en/timesheets/Estimate your Employees’ Wages@2x.png';
+// import imgOne from '@images/en/timesheets/Estimate your Employees’ Wages@2x.png';
+// import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
+// import imgThree from '@images/timesheets-inbox2x.png';
 import imgTwo from '@images/en/timesheets/Sync with Payroll and Accounting Software@2x.png';
-import imgThree from '@images/timesheets-inbox2x.png';
 
 import icon from '@images/accurate.png';
 import icon2 from '@images/trustworthy.png';
@@ -44,12 +44,8 @@ import icon20 from '@images/time-tracking-clock@1x.png';
 import icon21 from '@images/location@1x.png';
 import icon22 from '@images/profile@1x.png';
 
+// import photo1 from '../../../images/boost_productivity.png';
 import authorImage from '@images/en/timesheets/Time tracking app review@2x.png';
-
-// import featureBannerImgEn from '@images/en/timesheets/Everything you need to keep track of your employees’ time@2x.png';
-// import featureBannerImgDe from '@images/de/timesheets/DE_Everything you need to keep track of your employees’ time@2x.png';
-// import featureBannerImgEs from '@images/es/timesheets/ES_Everything you need to keep track of your employees’ time@2x.png';
-// import featureBannerImgFr from '@images/fr/timesheets/FR_Everything you need to keep track of your employees’ time@2x.png';
 
 import featureImgLocaleOneEn from '@images/en/timesheets/Boost productivity with timesheet insights@2x.png';
 import featureImgLocaleOneDe from '@images/de/timesheets/DE_Boost productivity with timesheet insights@2x.png';
@@ -80,7 +76,6 @@ import LandscapingLogo from '@images/landscaping-industry-logo.svg';
 import RoofingLogo from '@images/roofing-industry-logo.svg';
 import CleaningLogo from '@images/cleaning-industry-logo.svg';
 import ThreeDots from '@images/three-dots.svg';
-import photo1 from '../../../images/boost_productivity.png';
 import {
   teamActivityContainer,
   roundImagesContainer,

@@ -19,28 +19,37 @@ import LearnMoreCard from '@components/molecules/learn-more-card';
 import Services from '@components/organisms/services';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import EstimatesEmployee from '@images/estimates-employees-timesheets@2x.png';
-import TimeCardSummaries from '@images/see-time-card-summaries-per-employee-team-or-project@2x.png';
-import ViewTimeCard from '@images/view-time-card-data@2x.png';
+// import authorImage from '@images/construction-minds@2x.png';
+// import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
+// import EstimatesEmployee from '@images/estimates-employees-timesheets@2x.png';
+// import TimeCardSummaries from '@images/see-time-card-summaries-per-employee-team-or-project@2x.png';
+// import ViewTimeCard from '@images/view-time-card-data@2x.png';
+
+// import AutomaticReports from '@images/automatic-email-reports@2x.png';
+// import ExportTimesheet from '@images/export-timesheet-and-timesheet-data@2x.png';
+// import AccountingIntegrations from '@images/accounting-integrations@2x.png';
+// import image1 from '@images/streamline-your-payroll-with-our-simple-employee-timesheet-app@2x.png';
+import authorImage from '@images/timesheets/Timesheet app review@2x.png';
+import image1 from '@images/timesheets/Streamline your payroll with our simple employee timesheet app@2x.png';
+// import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
+import EstimatesEmployee from '@images/timesheets/Get wage estimates from your employees’ timesheets@2x.png';
+import TimeCardSummaries from '@images/timesheets/See timesheet summaries per employee, team, or project@2x.png';
+import ViewTimeCard from '@images/timesheets/View timesheets as a daily map-based timeline@2x.png';
 
 import AutomaticReports from '@images/automatic-email-reports@2x.png';
 import ExportTimesheet from '@images/export-timesheet-and-timesheet-data@2x.png';
 import AccountingIntegrations from '@images/accounting-integrations@2x.png';
-
-import authorImage from '@images/construction-minds@2x.png';
-import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 
 import icon32 from '@images/location@2x.png';
 import icon33 from '@images/profile@2x.png';
 import icon34 from '@images/work-hours-tracker@2x.png';
 import icon35 from '@images/time-tracking-clock@1x.png';
 
-import { container, imageFormWrapper } from '@styles/main.module.scss';
+import { container, imageWrapper } from '@styles/main.module.scss';
 import { FooterLinks } from '@locale/en.js';
 import { oldList, newList } from '@data/industries';
 import { checkList, cardList, commonQuestionsList } from '@data/third-phase/employee-timesheet-app';
 import { firstList, serviceList } from '@data/third-phase/time-tracking-app';
-import image1 from '@images/streamline-your-payroll-with-our-simple-employee-timesheet-app@2x.png';
 import { rndContainer, learnMoreContainer } from './employee.module.scss';
 
 const EmployeeTimesheetApp = () => {
@@ -85,8 +94,14 @@ const EmployeeTimesheetApp = () => {
         bodyStyle="secondBodyStyle"
       />
       <Divider className="style01" />
-      <div className={imageFormWrapper}>
-        <ProductOverviewBanner />
+      <div className={imageWrapper}>
+        <StaticImage
+          width={1220}
+          quality={95}
+          src="../../images/timesheets/Ready-made professional timesheets@2x.png"
+          placeholder="none"
+          alt="Ready-made professional timesheets"
+        />
       </div>
       <Divider className="style2" />
       <IconCardList cardList={cardList} style="timeCard" />
@@ -154,7 +169,9 @@ const EmployeeTimesheetApp = () => {
       </div>
       <Divider className="style4" />
       <StaticImage
-        src="../../images/time-tracking-for-field-workers@2x.png"
+        src="../../images/timesheets/Time tracking for field workers@2x.png"
+        width={1140}
+        alt="Time tracking for field workers"
         quality={96}
         placeholder="none"
       />
@@ -179,7 +196,8 @@ const EmployeeTimesheetApp = () => {
       <CommonQuestions isSwapped list={commonQuestionsList} />
       <Divider />
       <StaticImage
-        src="../../images/employee-timesheet-app@2x.png"
+        src="../../images/timesheets/Time tracking for any industry@2x.png"
+        alt="Time tracking for any industry"
         quality={96}
         placeholder="none"
       />

@@ -13,21 +13,28 @@ import SubscribeBanner from '@components/molecules/subscribe-banner';
 import LearnMoreCard from '@components/molecules/learn-more-card';
 import TickCardList from '@components/organisms/tick-card-list';
 import Article from '@components/molecules/article';
-import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 import AnyDevice from '@components/organisms/any-device';
 import IconCardList from '@components/organisms/icon-card-list';
 import CommonQuestions from '@components/organisms/common-questions';
 import Services from '@components/organisms/services';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import noImage from '@images/no-image.png';
-import authorImage from '@images/construction-minds@2x.png';
-import image1 from '@images/time-clock-mobile@2x.png';
-import image2 from '@images/time-tracking-any-device.png';
+// import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
+// import noImage from '@images/no-image.png';
+// import authorImage from '@images/construction-minds@2x.png';
+// import image1 from '@images/time-clock-mobile@2x.png';
+// import image2 from '@images/time-tracking-any-device.png';
+// import GetWageEstimates from '@images/get-wage-estimates-from-your-employees@2x.png';
+// import TimeCardSummaries from '@images/see-time-card-summaries-per-employee-team-or-project@2x.png';
+// import ViewTimeCard from '@images/view-time-card-data@2x.png';
 
-import GetWageEstimates from '@images/get-wage-estimates-from-your-employees@2x.png';
-import TimeCardSummaries from '@images/see-time-card-summaries-per-employee-team-or-project@2x.png';
-import ViewTimeCard from '@images/view-time-card-data@2x.png';
+import authorImage from '@images/time-card-app/Time card app review@2x.png';
+import image1 from '@images/time-card-app/A highly accurate time tracking solution@2x.png';
+import image2 from '@images/time-card-app/Time card options to suit the needs of any business@2x.png';
+
+import GetWageEstimates from '@images/time-card-app/Get wage estimates from your employees’ time cards@2x.png';
+import TimeCardSummaries from '@images/time-card-app/See time card summaries per employee, team, or project@2x.png';
+import ViewTimeCard from '@images/time-card-app/View time card data as a daily map-based timeline@2x.png';
 
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
@@ -35,7 +42,7 @@ import icon34 from '@images/timesheets@1x.png';
 import icon35 from '@images/time-tracking-clock@1x.png';
 
 import { FooterLinks } from '@locale/en.js';
-import { container, imageFormWrapper } from '@styles/main.module.scss';
+import { container, imageFormWrapper, imageWrapper } from '@styles/main.module.scss';
 
 import { learnMoreContainer, buttonContainer } from './time-card-app.module.scss';
 
@@ -91,9 +98,18 @@ const TimeCardApp = () => {
           maxDescriptionWidth={800}
         />
         <Divider className="style00" />
-        <ProductOverviewBanner />
-        <Divider className="style2" />
+        {/* <ProductOverviewBanner /> */}
       </div>
+      <div className={imageWrapper}>
+        <StaticImage
+          quality={95}
+          width={1220}
+          src="../../images/time-card-app/Ready-made professional timesheets@2x.png"
+          alt="Ready-made professional timesheets"
+          placeholder="none"
+        />
+      </div>
+      <Divider className="style2" />
       <IconCardList cardList={cardList} style="timeCard" />
       <Divider className="style4" />
       <div className={buttonContainer}>
@@ -125,8 +141,9 @@ const TimeCardApp = () => {
       <Divider />
       <StaticImage
         quality={95}
-        src="../../images/time-card-banner@2x.png"
-        alt="Time Card Banner"
+        src="../../images/time-card-app/Time tracking for any industry@2x.png"
+        alt="Time tracking for any industry"
+        width={1140}
         placeholder="none"
       />
       <Divider className="style11" />
@@ -143,9 +160,9 @@ const TimeCardApp = () => {
       <Divider />
       <StaticImage
         quality={95}
-        src="../../images/time-tracking-for-field-workers-two@2x.png"
+        src="../../images/time-card-app/Time tracking for field workers@2x.png"
         placeholder="none"
-        alt="Time Card Banner"
+        alt="Time tracking for field workers"
       />
       <Divider />
       <Title

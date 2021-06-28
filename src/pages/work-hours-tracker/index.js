@@ -17,20 +17,27 @@ import AnyDevice from '@components/organisms/any-device';
 import VerticalCheckList from '@components/organisms/vertical-check-list';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import image1 from '@images/time-clock-mobile@2x.png';
-import TrackMore from '@images/track-more-than-just-work-hours@2x.png';
-import authorImage from '@images/construction-minds@2x.png';
-import image2 from '@images/time-tracking-any-device.png';
-import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 import CommonQuestions from '@components/organisms/common-questions';
 import Services from '@components/organisms/services';
+
+// import image1 from '@images/time-clock-mobile@2x.png';
+// import TrackMore from '@images/track-more-than-just-work-hours@2x.png';
+// import authorImage from '@images/construction-minds@2x.png';
+// import image2 from '@images/time-tracking-any-device.png';
+// import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
+// import ProductOverviewBanner from '@images/work-hours-tracker/product-overview-banner-image.svg';
+
+import image1 from '@images/work-hours-tracker/A highly accurate time tracking solution@2x.png';
+import TrackMore from '@images/work-hours-tracker/Track more than just work hours@2x.png';
+import authorImage from '@images/work-hours-tracker/Work hours tracker review@2x.png';
+import image2 from '@images/work-hours-tracker/A work hours tracker for every device, and every purpose@2x.png';
 
 import icon32 from '@images/location@1x.png';
 import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
 import icon35 from '@images/time-tracking-clock@1x.png';
 
-import { container, imageFormWrapper } from '@styles/main.module.scss';
+import { container, imageFormWrapper, imageWrapper } from '@styles/main.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
 import { firstList, serviceList } from '@data/third-phase/time-tracking-app.js';
@@ -114,9 +121,18 @@ const WorkHoursTracker = () => {
           bodyStyle="secondBodyStyle"
         />
         <Divider className="style2" />
-        <ProductOverviewBanner />
-        <Divider className="style2" />
       </div>
+      <div className={imageWrapper}>
+        <StaticImage
+          width={1220}
+          quality={95}
+          src="../../images/work-hours-tracker/Ready-made professional timesheets@2x.png"
+          placeholder="none"
+          alt="Ready-made professional timesheets"
+        />
+      </div>
+      <Divider className="style2" />
+
       <IconCardList cardList={cardList} style="twoCards" />
       <Divider className="style3" />
       <div className={buttonContainer}>
@@ -133,15 +149,20 @@ const WorkHoursTracker = () => {
       <Services list={serviceList} />
       <Divider className="style3" />
       <StaticImage
-        src="../../images/time-tracking-for-any-industry@2x.png"
+        src="../../images/work-hours-tracker/Time tracking for any industry@2x.png"
         quality={96}
+        width={1140}
+        height={445}
+        alt="Time tracking for any industry"
         placeholder="none"
       />
       <Divider />
       <CommonQuestions isSwapped list={commonQuestionsList} />
       <Divider />
       <StaticImage
-        src="../../images/time-tracking-for-field-workers-three@2x.png"
+        src="../../images/work-hours-tracker/Time tracking for field workers@2x.png"
+        width={1140}
+        height={509}
         quality={96}
         placeholder="none"
       />

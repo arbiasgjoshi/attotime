@@ -37,7 +37,7 @@ import boxImage4 from '@images/healthcare/Healthcare time tracking@2x.png';
 import authorImage from '@images/healthcare/Healthcare reviews@2x.png';
 
 import image2 from '@images/healthcare/Time Tracking Software for Home Healthcare Providers@2x.png';
-import image3 from '@images/healthcare/Healthcare daily timeline@2x.png';
+import image3 from '@images/healthcare/Get helpful reminders so your caregivers never forget to clock-in@2x.png';
 import image4 from '@images/healthcare/Allow your senior caregivers to track everyone’s time @2x.png';
 import image5 from '@images/healthcare/Adjust quickly to employee sickness and absence @2x.png';
 import image6 from '@images/healthcare/Forecast your payroll costs ahead of payday to avoid unwanted surprises@2x.png';
