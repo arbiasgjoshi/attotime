@@ -86,7 +86,6 @@ const Home = () => {
   ];
 
   const imageOneLocale = (loc) => {
-    console.log(loc);
     if (loc === 'en') {
       return (
         <StaticImage
@@ -101,7 +100,7 @@ const Home = () => {
     if (loc === 'de') {
       return (
         <StaticImage
-          src="../images/es/es-time-tracking-simplified@2x.png"
+          src="../images/de/de-time-tracking-simplified@2x.png"
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
           placeholder="none"
