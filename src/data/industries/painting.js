@@ -17,6 +17,7 @@ import StopCleaners from '@images/accordion-images/Stop electricians from clocki
 import CheckHowMuch from '@images/accordion-images/Keep tabs on how much work each team has done@2x.png';
 import PreciseJobTimeTracking from '@images/accordion-images/Precise job bids with accurate time tracking@2x.png';
 import WinContracts from '@images/accordion-images/Win valuable contracts with precise cost estimates @2x.png';
+import WorkerLocations from '@images/accordion-images/See where all your workers are in real-time@2x.png';
 import AdminAutomatedTimesheets from '@images/accordion-images/Spend less time on admin with automated timesheets@2x.png';
 import GetDailySummary from '@images/accordion-images/Get a daily summary of each worker’s movements@2x.png';
 
@@ -106,6 +107,11 @@ export const accordionList1 = [
     title: 'Track the locations of your workers and the progress of paint jobs in real-time',
     description:
       'When your painting crew is dealing with different jobs in different locations, it can be hard to keep track of what’s going on. With Atto, you can track the live locations of your entire workforce. Check how long your crew has been working on each job. And, get notifications to inform you of their latest work activity.',
+    image: {
+      src: WorkerLocations,
+      imageWidth: '418',
+      imageHeight: '498',
+    },
   },
   {
     icon: <Icon iconClass="movement-tracking" fSize="2.5" />,
