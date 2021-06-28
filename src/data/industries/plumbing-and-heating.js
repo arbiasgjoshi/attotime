@@ -14,9 +14,9 @@ import icon6 from '@images/add-time-off.png';
 import imageOne from '@images/plumbing/Respond faster to emergency plumbing call-outs@2x.png';
 import imageTwo from '@images/plumbing/Avoid surprises by forecasting your wage bill ahead of payday@2x.png';
 
+import CheckHowMuch from '@images/accordion-images/Keep tabs on how much work each team has done@2x.png';
 import StopCleaners from '@images/accordion-images/Stop electricians from clocking in until they arrive on-site@2x.png';
 import WorkerLocations from '@images/accordion-images/See where all your workers are in real-time@2x.png';
-import CheckHowMuch from '@images/accordion-images/Keep tabs on how much work each team has done@2x.png';
 import PreciseJobTimeTracking from '@images/accordion-images/Precise job bids with accurate time tracking@2x.png';
 import WinContracts from '@images/accordion-images/Win valuable contracts with precise cost estimates @2x.png';
 import AdminAutomatedTimesheets from '@images/accordion-images/Spend less time on admin with automated timesheets@2x.png';
@@ -144,6 +144,11 @@ export const accordionList2 = [
     title: 'From plumbers to heating engineers, see how much work each team completed',
     description:
       'Want to check if a job is running to budget? Need to see how much your heating engineers are costing you compared to your plumbers? In a few taps, Atto can produce timesheet summaries to show all the work done on a specific job, or by a specific team',
+    image: {
+      src: CheckHowMuch,
+      imageWidth: '378',
+      imageHeight: '492',
+    },
   },
   {
     icon: <Icon iconClass="sand-clock" fSize="2.1" />,
