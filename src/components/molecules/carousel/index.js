@@ -14,6 +14,7 @@ const CarouselComponent = ({ children, large }) => (
     selectedItem={0}
     showThumbs={false}
     showIndicators={false}
+    // centerMode={true}
     showStatus={false}
     renderArrowPrev={(onClickHandler, hasPrev) =>
       hasPrev && (

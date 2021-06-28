@@ -118,7 +118,7 @@ const Cleaning = () => {
         <Divider className="style11" />
         <Title
           title="Say goodbye to paper timesheets!"
-          description="Ditch paper timesheets and switch to Atto – an easier and more accurate time-tracking solution for roofing companies"
+          description="Switch to Atto, an easier and more accurate time-tracking solution for cleaning companies."
           maxWidth={1040}
           maxDescriptionWidth={900}
         />

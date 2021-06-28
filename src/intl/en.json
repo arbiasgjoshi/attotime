@@ -81,7 +81,7 @@
       "subscribeBannertitle": "Free up your time and focus on what really matters"
     },
     "productTimeTracking": {
-      "name": "TIME TRACKING",
+      "name": "Time Tracking",
       "bannerTitle": "Take the pain away from time tracking",
       "bannerDescription": "An easy-to-use, accurate, and trustworthy time-tracking solution.",
       "checkListItemZero": "Keep track of time wherever your employees are",
@@ -171,7 +171,7 @@
       "subscribeBannerTitle": "What are you waiting for? Time is ticking!"
     },
     "productLocationTracking": {
-      "name": "LOCATION TRACKING",
+      "name": "Location tracking",
       "bannerTitle": "Be in the right place, at the right time",
       "bannerDescription": "Increase the accountability and transparency of your team with real-time updates on their location.",
       "checkListItemZero": "Track your team’s progress without constant check-ins",
@@ -229,13 +229,13 @@
       "bottomFeatureOneTitle": "Time Tracking",
       "bottomFeatureOneDesc": "See exactly where your employees’ time is going. Track work hours, breaks, overtime, time off, and more!",
       "bottomFeatureTwoTitle": "Team Activity",
-      "bottomFeatureTwoDesc": "Stay in the loop with what’s happening – without needing to pick up the phone.GPS Location Tracking",
+      "bottomFeatureTwoDesc": "Stay in the loop with what’s happening – without having to pick up the phone.",
       "bottomFeatureThreeTitle": "Timesheets",
       "bottomFeatureThreeDesc": "Spend more time on the things that matter with ready-made, accurate, verified timesheets.",
       "subscribeBannerTitle": "Near or far, stay in control of your team, wherever they are."
     },
     "productTeamActivity": {
-      "name": "TEAM ACTIVITY",
+      "name": "Team Activity",
       "bannerTitle": "Stay in the loop with everything happening in real-time",
       "checkListItemZero": "View any employee’s status and location in a few taps",
       "checkListItemOne": "Increase team visibility, transparency, and accountability",

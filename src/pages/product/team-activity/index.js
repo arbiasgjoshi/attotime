@@ -182,10 +182,13 @@ const TeamActivity = () => {
         <FeaturesList list={featureList2} />
       </div>
       <Divider />
-      <Cover isSwapped />
+      <Cover
+        isSwapped
+        titleValue={Intl.formatMessage({ id: 'pages.miscellaneous.trustedGlobally' })}
+      />
       <Divider className="style10" />
       <Title
-        title={Intl.formatMessage({ id: 'pages.homepage.thirdSectionTitle' })}
+        title="Team activity tracking for any industry"
         description={Intl.formatMessage({ id: 'pages.productTimeTracking.seventhSectionDesc' })}
         maxDescriptionWidth={700}
       />

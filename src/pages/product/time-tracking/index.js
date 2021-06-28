@@ -429,7 +429,7 @@ const TimeTracking = () => {
       <Divider className="style3" />
       <FeaturesList list={timeTrackingFeatureList} />
       <Divider />
-      <GrowthNumbers title={Intl.formatMessage({ id: 'pages.miscellaneous.trustedThousands' })} />
+      <GrowthNumbers title={Intl.formatMessage({ id: 'pages.miscellaneous.trustedGlobally' })} />
       <Divider />
       <Title title={Intl.formatMessage({ id: 'pages.productTimeTracking.sixthSectionTitle' })} />
       <Divider className="style7" />

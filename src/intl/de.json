@@ -77,7 +77,7 @@
       "subscribeBannertitle": "Schaufle dir Zeit frei und konzentriere dich auf das, was wirklich wichtig ist"
     },
     "productTimeTracking": {
-      "name": "ZEITERFASSUNG",
+      "name": "Zeiterfassung",
       "bannerTitle": "Schluss mit dem Zeiterfassungsstress",
       "bannerDescription": "Eine benutzerfreundliche, akkurate und vertrauenswürdige Lösung für die Zeiterfassung.",
       "checkListItemZero": "Erfasse die Arbeitszeit jederzeit, wo auch immer deine Mitarbeiter gerade sind",
@@ -166,7 +166,7 @@
       "subscribeBannerTitle": "Worauf wartest du noch? Die Uhr tickt!"
     },
     "productLocationTracking": {
-      "name": "STANDORT-TRACKING",
+      "name": "Standort-Tracking",
       "bannerTitle": "Sei zur rechten Zeit am rechten Ort",
       "bannerDescription": "Erhöhe die Verantwortlichkeit und Transparenz deines Teams mit aktuellen Informationen über seinen Standort.",
       "checkListItemZero": "Verfolge den Fortschritt deines Teams ohne ständige Kontrollen",
@@ -230,7 +230,7 @@
       "subscribeBannerTitle": "Ob nah oder fern: Behalte dein Team unter Kontrolle, egal wo es ist."
     },
     "productTeamActivty": {
-      "name": "TEAMAKTIVITÄT",
+      "name": "Teamaktivität",
       "bannerTitle": "Bleib auf dem Laufenden über alles, was in Echtzeit geschieht.",
       "checkListItemZero": "Sieh dir den Status und den Standort jedes Mitarbeiters auf Knopfdruck",
       "checkListItemOne": "Verbessere die Sichtbarkeit, Transparenz und Verantwortlichkeit des Teams ",
@@ -263,7 +263,7 @@
       "subscribeBanner": "Bleibe mit Teamaktivitäts-Updates immer auf dem Laufenden"
     },
     "productTimesheets": {
-      "name": "STUNDENZETTEL",
+      "name": "Studenzettel",
       "bannerTitle": "Stundenzettel-Berichte ohne viel Aufwand",
       "bannerDescription": "Nutze deine Zeit für die wichtigen Dinge und fülle deine Stundenzettel einfach und pünktlich aus.",
       "checkListItemZero": "Sieh präzise, automatisch generierte und geprüfte Stundenzettel",

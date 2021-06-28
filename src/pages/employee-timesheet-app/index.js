@@ -30,9 +30,9 @@ import AccountingIntegrations from '@images/accounting-integrations@2x.png';
 import authorImage from '@images/construction-minds@2x.png';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 
-import icon32 from '@images/location@1x.png';
-import icon33 from '@images/profile@1x.png';
-import icon34 from '@images/timesheets@1x.png';
+import icon32 from '@images/location@2x.png';
+import icon33 from '@images/profile@2x.png';
+import icon34 from '@images/work-hours-tracker@2x.png';
 import icon35 from '@images/time-tracking-clock@1x.png';
 
 import { container, imageFormWrapper } from '@styles/main.module.scss';
@@ -222,8 +222,8 @@ const EmployeeTimesheetApp = () => {
           description="Track your work hours, breaks, time off, overtime, and more!"
           icon={icon34}
           path="/work-hours-tracker"
-          imageWidth={30}
-          imageHeight={33}
+          imageWidth={52}
+          imageHeight={25}
           styling="smaller"
         />
       </div>

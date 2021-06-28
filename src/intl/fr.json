@@ -41,7 +41,7 @@
       "subscribeCheckItemFour": "Rationalisez l'ensemble du processus de paie"
     },
     "productOverview": {
-      "name": "APERÇU DU PRODUIT",
+      "name": "Aperçu du produit",
       "bannerTitle": "Tout ce dont vous avez besoin pour gérer le temps de vos employés",
       "bannerDescription": "Ne laissez pas les feuilles de temps vous distraire. Concentrez-vous sur l'essentiel et laissez-nous les gérer pour vous.",
       "featureItemTitleOne": "Simple",
@@ -77,7 +77,7 @@
       "subscribeBannertitle": "Gagnez du temps et concentrez-vous sur ce qui compte vraiment."
     },
     "productTimeTracking": {
-      "name": "SUIVI DES HEURES",
+      "name": "Suivi des heures",
       "bannerTitle": "Simplifiez le suivi des heures",
       "bannerDescription": "Une solution de suivi des heures facile à utiliser, précise et fiable.",
       "checkListItemZero": "Contrôlez les horaires de vos employés où qu'ils se trouvent",
@@ -166,7 +166,7 @@
       "subscribeBannerTitle": "Qu'attendez-vous pour agir ? Le temps presse !"
     },
     "productLocationTracking": {
-      "name": "GÉOLOCALISATION",
+      "name": "Géolocalisation",
       "bannerTitle": "Soyez au bon endroit, au bon moment",
       "bannerDescription": "Renforcez la responsabilité et la transparence de votre équipe grâce à des mises à jour en temps réel de leur localisation.",
       "checkListItemZero": "Suivez les progrès de votre équipe sans avoir à effectuer des contrôles constants.",
@@ -230,7 +230,7 @@
       "subscribeBannerTitle": "Que vous soyez à proximité ou à distance, gardez le contrôle de votre équipe, où qu'elle se trouve."
     },
     "productTeamActivty": {
-      "name": "ACTIVITÉ DE L'ÉQUIPE",
+      "name": "Activité de l'équipe",
       "bannerTitle": "Restez au courant de tout ce qui se passe en temps réel",
       "checkListItemZero": "Visualisez le statut et l'emplacement de n'importe quel employé en quelques clics.",
       "checkListItemOne": "Augmentez la visibilité, la transparence et la responsabilité de l'équipe",
@@ -263,7 +263,7 @@
       "subscribeBanner": "Gardez le contrôle de ce qui se passe grâce aux mises à jour des activités de l'équipe."
     },
     "productTimesheets": {
-      "name": "TIMESHEETS",
+      "name": "Timesheets",
       "bannerTitle": "Des feuilles de temps sans tracas",
       "bannerDescription": "Consacrez plus de temps aux choses qui comptent grâce à des feuilles de temps remplies sans effort et en temps voulu.",
       "checkListItemZero": "Consultez des feuilles de temps précises, générées et vérifiées instantanément.",

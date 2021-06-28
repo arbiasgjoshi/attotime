@@ -330,7 +330,10 @@ const LocationTracking = () => {
       <Divider className="style7" />
       <FeaturesList list={featuresList} />
       <Divider />
-      <Cover isSwapped />
+      <Cover
+        isSwapped
+        titleValue={Intl.formatMessage({ id: 'pages.miscellaneous.trustedGlobally' })}
+      />
       <Divider className="style10" />
       <Title
         title={Intl.formatMessage({

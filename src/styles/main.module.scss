@@ -106,5 +106,12 @@
   }
 }
 
+@include max(tablet) {
+  .formRotated {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .articleList {
 }

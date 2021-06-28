@@ -224,24 +224,9 @@ const TimeClock = () => {
       <div className={learnMoreContainer}>
         <LearnMoreCard
           title={Intl.formatMessage({
-            id: 'pages.productTimeTracking.bottomFeatureOneTitle',
-          })}
-          description={Intl.formatMessage({
-            id: 'pages.productTimeTracking.bottomFeatureOneDesc',
-          })}
-          icon={icon1}
-          path="/product/gps-location-tracking"
-          imageWidth={27}
-          imageHeight={32}
-          styling="smaller"
-        />
-        <LearnMoreCard
-          title={Intl.formatMessage({
             id: 'pages.productLocationTracking.bottomFeatureOneTitle',
           })}
-          description={Intl.formatMessage({
-            id: 'pages.productLocationTracking.bottomFeatureOneDesc',
-          })}
+          description="Know where your time is going. Just tap a button to clock in and start tracking your time."
           icon={icon2}
           path="/product/time-tracking"
           imageWidth={30}
@@ -250,11 +235,20 @@ const TimeClock = () => {
         />
         <LearnMoreCard
           title={Intl.formatMessage({
+            id: 'pages.productTimeTracking.bottomFeatureOneTitle',
+          })}
+          description="Get real-time updates on your team’s location. Ensure everyone is safe and productive."
+          icon={icon1}
+          path="/product/gps-location-tracking"
+          imageWidth={27}
+          imageHeight={32}
+          styling="smaller"
+        />
+        <LearnMoreCard
+          title={Intl.formatMessage({
             id: 'pages.productLocationTracking.bottomFeatureTwoTitle',
           })}
-          description={Intl.formatMessage({
-            id: 'pages.productLocationTracking.bottomFeatureTwoDesc',
-          })}
+          description="Find out instantly who’s on the clock, on break, or enjoying some time off."
           icon={icon3}
           path="/product/team-activity"
           imageWidth={42}
@@ -265,9 +259,7 @@ const TimeClock = () => {
           title={Intl.formatMessage({
             id: 'pages.productLocationTracking.bottomFeatureThreeTitle',
           })}
-          description={Intl.formatMessage({
-            id: 'pages.productLocationTracking.bottomFeatureThreeDesc',
-          })}
+          description="Get accurate timesheet reports, including regular time, overtime, and time off."
           icon={icon4}
           path="/product/timesheets"
           imageWidth={30}

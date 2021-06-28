@@ -75,6 +75,7 @@
         line-height: 1.5rem;
         padding: 0.9rem 0;
         width: 8.6rem;
+        display: none;
       }
 
       .menuTrigger {
@@ -236,6 +237,7 @@
       width: 100%;
       opacity: 1;
       border: 0;
+      margin: 39px 0;
     }
 
     .subItems {
@@ -475,6 +477,14 @@
       letter-spacing: -0.05rem;
       font-weight: 500;
       width: 100%;
+    }
+  }
+
+  > div:first-child {
+    > section {
+      > div {
+        padding-left: 0.8rem;
+      }
     }
   }
 

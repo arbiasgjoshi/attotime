@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Icon from '@components/atoms/icon';
 
@@ -54,6 +54,7 @@ const Accordion = ({
   i,
   icon,
   expanded,
+  expandOnInit,
   setExpanded,
   content,
   featureImage,
@@ -64,11 +65,12 @@ const Accordion = ({
   hasArrow,
   featureTabs,
 }) => {
+  const [toggleOpen, setToggleOpen] = useState(expandOnInit);
   const isOpen = i === expanded;
 
   return (
     <>
-      <motion.header initial={false} onClick={() => setExpanded(isOpen ? false : i)}>
+      <motion.header initial={false} onClick={() => setExpanded(i)}>
         {triggerItem(title, isOpen, icon, hasArrow, isMenu, url)}
       </motion.header>
       {!url && (
@@ -117,11 +119,14 @@ const FramerAccordion = ({
   noIconPadding = false,
   featureTabs = false,
   mainMenuStyle = false,
+  isExpanded,
   arrowIcon,
   type,
   onSetAccordionImage,
 }) => {
   const [expanded, setExpanded] = useState(0);
+
+  console.log(items);
 
   const onAccordionChange = (val, accordionImage) => {
     setExpanded(val);
@@ -141,6 +146,7 @@ const FramerAccordion = ({
           i={i}
           key={i}
           expanded={expanded}
+          expandOnInit={isExpanded}
           industries={industries}
           featureTabs={featureTabs}
           isMenu={mainMenuStyle}

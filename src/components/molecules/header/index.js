@@ -29,7 +29,6 @@ import ThreeDots from '@images/three-dots.svg';
 import HelpCenterLogo from '@images/help-center-logo.svg';
 import BlogLogo from '@images/blog-menu-logo.svg';
 import ContactLogo from '@images/contact-menu-logo.svg';
-import Collapsible from 'react-collapsible';
 import HeaderLogo from '@images/logo@3x.png';
 
 import {
@@ -414,8 +413,6 @@ const HeaderComponent = ({ headerStyle }) => {
     },
   ];
 
-  const menuItemsTwo = [];
-
   useEffect(() => {
     menuStateConfig();
   }, [overMenu, aboveLinks]);
@@ -479,7 +476,13 @@ const HeaderComponent = ({ headerStyle }) => {
         )}
         {openMobile && (
           <div className={collapsibleMenu}>
-            <Accordion items={menuItemsOne} arrowIcon noIconPadding mainMenuStyle />
+            <Accordion
+              items={menuItemsOne}
+              isExpanded={false}
+              arrowIcon
+              noIconPadding
+              mainMenuStyle
+            />
             <div className={mobileButtons}>
               <Button btnStyle="gray" btnText="Log in" />
               <Button btnStyle="teal" btnText="Start a Free 14-Day Trial" />

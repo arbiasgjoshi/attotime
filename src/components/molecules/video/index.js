@@ -17,6 +17,7 @@ import {
   maskOverlay,
   playIcon,
   videoPlayer,
+  playerIframe,
   watchButton,
 } from './video.module.scss';
 
@@ -32,7 +33,7 @@ const Video = () => {
   useEffect(() => {
     if (play) {
       setVideoUrl(
-        'https://player.vimeo.com/video/563662750?badge=0&amp;autopause=0&amp;autoplay=0&amp;player_id=0&amp;app_id=58479'
+        'https://player.vimeo.com/video/563662750?badge=0&amp;autopause=0&amp;autoplay=1&amp;player_id=0&amp;app_id=58479'
       );
     } else {
       setVideoUrl(
@@ -66,7 +67,7 @@ const Video = () => {
       )}
       <div className={videoPlayer}>
         {/* <ReactPlayer url="https://vimeo.com/563662750" playing={play} width="100%" height="100%" /> */}
-        <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+        <div className={playerIframe}>
           <iframe
             src={videoUrl}
             frameborder="0"

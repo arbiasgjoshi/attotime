@@ -56,7 +56,7 @@ const ContactForm = () => {
             </div>
 
             <div className={formRow}>
-              <textarea name="email" placeholder="E-mail" />
+              <textarea name="message" placeholder="Message" />
             </div>
             <div className={formBtn}>
               <Button btnText="Send Message" btnStyle="formBtn" defaultBtn />

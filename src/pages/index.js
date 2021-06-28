@@ -23,7 +23,7 @@ import VideoCheckList from '@components/organisms/video-checklist';
 import { serviceList } from '@data/listed-data';
 import authorImage from '@images/no-image.png';
 
-import { container } from '@styles/main.module.scss';
+import { container, formRotated } from '@styles/main.module.scss';
 import '@styles/includes/slick-carousel.scss';
 import { FooterLinks } from '@locale/en.js';
 import {
@@ -32,7 +32,7 @@ import {
   pulledRight,
   carouselWrapper,
 } from '@components/molecules/carousel/carousel.module.scss';
-import { sliderWrapper, numbers, desktopImage } from './homepage.module.scss';
+import { sliderWrapper, numbers, desktopImage, mobileImage } from './homepage.module.scss';
 
 const SampleNextArrow = (props) => {
   // eslint-disable-next-line react/prop-types
@@ -118,23 +118,32 @@ const Home = () => {
         title={Intl.formatMessage({ id: 'pages.homepage.title' })}
         subtitle={Intl.formatMessage({ id: 'pages.homepage.description' })}
       />
-      <EmailForm
-        placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
-        checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
-        checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
-        checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
-        style="homepage"
-      />
-      <Divider className="style1" />
-      <StaticImage
-        src="../images/banner-image-2@2x.png"
-        alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
-        width={1140}
-        height={505}
-        quality={95}
-        placeholder="none"
-        className={desktopImage}
-      />
+      <div className={formRotated}>
+        <EmailForm
+          placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
+          checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
+          checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
+          checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
+          style="homepage"
+        />
+        <Divider className="style1" />
+        <StaticImage
+          src="../images/banner-image-2@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={1140}
+          height={505}
+          placeholder="none"
+          className={desktopImage}
+        />
+        <StaticImage
+          src="../images/homepage-banner-mobile@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={332}
+          height={396}
+          placeholder="none"
+          className={mobileImage}
+        />
+      </div>
       <Divider className="style4" />
       <div className={sliderWrapper}>
         <Slider {...settings} className={carouselWrapper} width={960}>
@@ -213,8 +222,8 @@ const Home = () => {
         <Story
           className="homepage"
           img={authorImage}
-          paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
-          author="Helen Smith, Owner of SCW Cleaning Limited"
+          paragraph="It is saving us a ton of time & money with timesheets and everyone’s getting paid accurately."
+          author="Julia Conner – Pennprojects, LLC"
         />
         {/* <Story
           className="homepage"
