@@ -28,8 +28,12 @@ import Coffe from '@images/coffe.svg';
 import Bookmark from '@images/bookmark.svg';
 import Battery from '@images/battery.svg';
 
-import image1 from '@images/verify-your-team.png';
-import authorImage from '@images/authorImage.png';
+import verifyTeamEn from '@images/en/gps-location-tracking/Verify your team are working where they should be@2x.png';
+import verifyTeamDe from '@images/de/gps-location-tracking/DE_Verify your team are working where they should be@2x.png';
+import verifyTeamFr from '@images/fr/gps-location-tracking/FR_Verify your team are working where they should be@2x.png';
+import verifyTeamEs from '@images/es/gps-location-tracking/ES_Verify your team are working where they should be@2x.png';
+
+import reviewImage from '@images/en/gps-location-tracking/Time tracking app review@2x.png';
 
 import movements from '@images/en/gps-location-tracking/Keep track of your team’s daily movements@2x.png';
 
@@ -238,48 +242,71 @@ const LocationTracking = () => {
     },
   ];
 
-  // const dailyMovements = (loc) => {
-  //   if (loc === 'en') {
-  //     return (
-  //       <img
-  //         src={movements_en}
-  //         alt="Keep track of your team’s daily movements"
-  //         width="500"
-  //         quality="600"
-  //       />
-  //     );
-  //   }
-  //   if (loc === 'de') {
-  //     return (
-  //       <img
-  //         src={movements_de}
-  //         alt="Keep track of your team’s daily movements"
-  //         width="500"
-  //         quality="600"
-  //       />
-  //     );
-  //   }
-  //   if (loc === 'fr') {
-  //     return (
-  //       <img
-  //         src={movements_fr}
-  //         alt="Keep track of your team’s daily movements"
-  //         width="500"
-  //         quality="600"
-  //       />
-  //     );
-  //   }
-  //   if (loc === 'es') {
-  //     return (
-  //       <img
-  //         src={movements_es}
-  //         alt="Keep track of your team’s daily movements"
-  //         width="500"
-  //         quality="600"
-  //       />
-  //     );
-  //   }
-  // };
+  const imageTwoLocale = (loc) => {
+    if (loc === 'en') {
+      return verifyTeamEn;
+    }
+    if (loc === 'de') {
+      return verifyTeamDe;
+    }
+    if (loc === 'fr') {
+      return verifyTeamFr;
+    }
+    if (loc === 'es') {
+      return verifyTeamEs;
+    }
+  };
+
+  const imageOneLocale = (loc) => {
+    if (loc === 'en') {
+      return (
+        <StaticImage
+          src="../../../images/en/gps-location-tracking/Track the locations of your entire team in real-time@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
+          width={1140}
+          height={340}
+          quality={95}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'de') {
+      return (
+        <StaticImage
+          src="../../../images/de/gps-location-tracking/DE_Track the locations of your entire team in real-time@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
+          width={1140}
+          height={340}
+          quality={95}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'fr') {
+      return (
+        <StaticImage
+          src="../../../images/fr/gps-location-tracking/FR_Track the locations of your entire team in real-time@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
+          width={1140}
+          height={340}
+          quality={95}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'es') {
+      return (
+        <StaticImage
+          src="../../../images/es/gps-location-tracking/ES_Track the locations of your entire team in real-time@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
+          width={1140}
+          height={340}
+          quality={95}
+          placeholder="none"
+        />
+      );
+    }
+  };
 
   return (
     <div className={container}>
@@ -300,14 +327,7 @@ const LocationTracking = () => {
         title={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
       />
       <Divider className="style5" />
-      <StaticImage
-        src="../../../images/gps-location-tracking-two@2x.png"
-        alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
-        width={1140}
-        height={340}
-        quality={95}
-        placeholder="none"
-      />
+      {imageOneLocale(Intl.locale)}
       <Divider className="style2" />
       <IconCardList noImage cardList={cardList} />
       <Divider />
@@ -335,7 +355,7 @@ const LocationTracking = () => {
           id: 'pages.productLocationTracking.locationTrackingFeatureTwoDescTwo',
         })}
         list={checkLists3}
-        image={image1}
+        image={imageTwoLocale(Intl.locale)}
         isSwapped
         imageWidth={500}
         imageHeight={600}
@@ -394,7 +414,7 @@ const LocationTracking = () => {
       <Services list={serviceList} />
       <Divider />
       <Story
-        img={authorImage}
+        img={reviewImage}
         paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
         author="Robert Bennett - DPA Cleaning Services, Inc."
       />

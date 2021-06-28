@@ -27,7 +27,7 @@ const Cover = ({ isSwapped = false, titleValue }) => {
         height={400}
         quality={96}
         placeholder="none"
-        src="../../../../images/trusted-img@2x.png"
+        src="../../../../images/en/gps-location-tracking/Trusted by thousands of businesses across 50+ countries globally@2x.png"
       />
     </div>
   );
