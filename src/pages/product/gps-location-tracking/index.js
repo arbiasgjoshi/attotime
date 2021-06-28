@@ -30,7 +30,8 @@ import Battery from '@images/battery.svg';
 
 import image1 from '@images/verify-your-team.png';
 import authorImage from '@images/authorImage.png';
-import DailyMovements from '@images/daily-movements.svg'; // TODO change svg when png is provided
+
+import movements from '@images/en/gps-location-tracking/Keep track of your team’s daily movements@2x.png';
 
 import icon18 from '@images/location@1x.png';
 import icon19 from '@images/profile@1x.png';
@@ -237,6 +238,49 @@ const LocationTracking = () => {
     },
   ];
 
+  // const dailyMovements = (loc) => {
+  //   if (loc === 'en') {
+  //     return (
+  //       <img
+  //         src={movements_en}
+  //         alt="Keep track of your team’s daily movements"
+  //         width="500"
+  //         quality="600"
+  //       />
+  //     );
+  //   }
+  //   if (loc === 'de') {
+  //     return (
+  //       <img
+  //         src={movements_de}
+  //         alt="Keep track of your team’s daily movements"
+  //         width="500"
+  //         quality="600"
+  //       />
+  //     );
+  //   }
+  //   if (loc === 'fr') {
+  //     return (
+  //       <img
+  //         src={movements_fr}
+  //         alt="Keep track of your team’s daily movements"
+  //         width="500"
+  //         quality="600"
+  //       />
+  //     );
+  //   }
+  //   if (loc === 'es') {
+  //     return (
+  //       <img
+  //         src={movements_es}
+  //         alt="Keep track of your team’s daily movements"
+  //         width="500"
+  //         quality="600"
+  //       />
+  //     );
+  //   }
+  // };
+
   return (
     <div className={container}>
       <Seo title={Intl.formatMessage({ id: 'pages.productLocationTracking.name' })} />
@@ -275,7 +319,9 @@ const LocationTracking = () => {
           id: 'pages.productLocationTracking.locationTrackingFeatureOneDesc',
         })}
         list={checkLists2}
-        image={<DailyMovements />}
+        imageWidth="500"
+        imageHeight="600"
+        image={movements}
       />
       <Divider />
       <ListArticle

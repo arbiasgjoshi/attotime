@@ -30,13 +30,7 @@ const ListArticle = ({
   useEffect(() => {
     if (typeof image === 'string') {
       setImage2(
-        <img
-          width={imageWidth}
-          alt={`title${imageHeight}`}
-          height={imageHeight}
-          className={img}
-          src={image}
-        />
+        <img width={imageWidth} alt={title} height={imageHeight} className={img} src={image} />
       );
     } else {
       setImage2(image);

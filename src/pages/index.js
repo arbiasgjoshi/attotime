@@ -92,6 +92,7 @@ const Home = () => {
           src="../images/en/time-tracking-simplified@2x.png"
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
+          quality={95}
           placeholder="none"
           className={desktopImage}
         />
@@ -103,6 +104,7 @@ const Home = () => {
           src="../images/de/de-time-tracking-simplified@2x.png"
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
+          quality={95}
           placeholder="none"
           className={desktopImage}
         />
@@ -114,6 +116,7 @@ const Home = () => {
           src="../images/fr/fr-time-tracking-simplified@2x.png"
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
+          quality={95}
           placeholder="none"
           className={desktopImage}
         />
@@ -125,6 +128,7 @@ const Home = () => {
           src="../images/es/es-time-tracking-simplified@2x.png"
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
+          quality={95}
           placeholder="none"
           className={desktopImage}
         />
