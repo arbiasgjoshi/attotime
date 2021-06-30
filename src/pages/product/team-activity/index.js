@@ -16,12 +16,12 @@ import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
 import VideoCheckList from '@components/organisms/video-checklist';
 
+// import image1 from '@images/team-management-departments.png';
+// import image2 from '@images/find-out.png';
+// import image3 from '@images/eliminate-checks.png';
+// import image4 from '@images/activity-updates@2x.png';
 import { FooterLinks } from '@locale/en.js';
 import authorImage from '@images/en/team-activity/Time tracking app review@2x.png';
-import image1 from '@images/team-management-departments.png';
-import image2 from '@images/find-out.png';
-import image3 from '@images/eliminate-checks.png';
-import image4 from '@images/activity-updates@2x.png';
 import Team from '@images/team.svg';
 import Timeline from '@images/timeline.svg';
 import Departments from '@images/departments.svg';
@@ -59,8 +59,6 @@ import featureImgLocaleFiveEs from '@images/es/team-activity/ES_See your team’
 import featureImgLocaleFiveFr from '@images/fr/team-activity/FR_See your team’s progress at the end of each day@2x.png';
 
 import { container, articleList } from '@styles/main.module.scss';
-
-import { serviceList } from '@data/listed-data';
 
 import { teamActivityContainer, learnMoreContainer } from '../product.module.scss';
 
@@ -314,7 +312,7 @@ const TeamActivity = () => {
         maxDescriptionWidth={700}
       />
       <Divider className="style2" />
-      <Services list={serviceList} />
+      <Services />
       <Divider />
       <Story
         img={authorImage}

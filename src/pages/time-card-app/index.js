@@ -54,8 +54,6 @@ import {
   cardList,
 } from '../../data/third-phase/time-card-app';
 
-import { serviceList } from '../../data/third-phase/time-tracking-app';
-
 const TimeCardApp = () => {
   const Intl = useIntl();
 
@@ -157,7 +155,7 @@ const TimeCardApp = () => {
         maxWidth={1000}
       />
       <Divider className="style2" />
-      <Services list={serviceList} />
+      <Services />
       <Divider />
       <CommonQuestions isSwapped list={commonQuestionsList} />
       <Divider />

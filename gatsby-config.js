@@ -6,12 +6,12 @@ module.exports = {
     siteUrl: 'https://attotime.com',
   },
   flags: {
-    // PARALLEL_SOURCING: false,
-    // PRESERVE_FILE_DOWNLOAD_CACHE: false,
+    PARALLEL_SOURCING: false,
+    PRESERVE_FILE_DOWNLOAD_CACHE: false,
     FAST_DEV: false,
-    // LMDB_STORE: false,
-    // PRESERVE_WEBPACK_CACHE: false,
-    // DEV_SSR: false,
+    LMDB_STORE: false,
+    PRESERVE_WEBPACK_CACHE: false,
+    DEV_SSR: false,
   },
   plugins: [
     {

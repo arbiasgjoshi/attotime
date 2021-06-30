@@ -8,10 +8,16 @@
       "resourcesLabel": "Recursos",
       "pricingLabel": "Sistema de precios",
       "tryForFreeLabel": "Pruébalo gratuitamente",
+      "login": "Iniciar sesión",
       "timeTrackingLabel": "Control del tiempo",
       "locationTrackingLabel": "Control de ubicación",
       "timesheetsTrackingLabel": "Hojas de Horas",
-      "teamActivityTrackingLabel": "Actividad del equipo"
+      "teamActivityTrackingLabel": "Actividad del equipo",
+      "productOverviewDesc": "Una solución sencilla y completa que controla de manera precisa el tiempo de tus empleados y automatiza las hojas de horas",
+      "timeTrackingDesc": "Control del tiempo preciso al alcance de tu mano",
+      "locationTrackingDesc": "Obtén actualizaciones en tiempo real del ubicación de tu equipo",
+      "teamActivityTrackingDesc": "Mantente informado mientras se realiza el trabajo",
+      "timesheetsTrackingDesc": "Informes precisos de las hojas de horas sin complicaciones"
     }
   },
   "pages": {
@@ -393,7 +399,11 @@
     },
     "contact": {
       "metaTitle": "Tú eres lo único que importa | Contacta con nosotros en Atto",
-      "metaDesc": "support@attotime.com | Póngase en contacto con nosotros. Estamos aquí para usted y listos para responder a todas sus preguntas."
+      "metaDesc": "support@attotime.com | Póngase en contacto con nosotros. Estamos aquí para usted y listos para responder a todas sus preguntas.",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Enviar mensaje",
+      "sendMessage": "Enviar mensaje"
     },
     "allFeatures": {
       "name": "TODAS LAS FUNCIONES",
@@ -403,6 +413,17 @@
       "bannerDesc": "Combina todo lo que necesitas para gestionar tu equipo de manera centralizada.",
       "subscribeBanner": "Tú eres lo que cuenta.",
       "subscribeBannerDesc": "Contáctanos Estamos listos para contestar todas tus preguntas."
+    },
+    "industries": {
+      "constructionLabel": "Construcción",
+      "landscapingLabel": "Paisajismo",
+      "roofingLabel": "Tejados",
+      "paintingLabel": "Pintura y decoración",
+      "cleaningLabel": "Limpieza y mantenimiento",
+      "healthcareLabel": "Salud y Medicina",
+      "electricalLabel": "Electricidad",
+      "plumbingLabel": "Fontanería y Calefacción",
+      "otherIndustriesLabel": "Otras industrias"
     },
     "miscellaneous": {
       "typeYourEmail": "Escribe tu correo electrónico",
@@ -420,7 +441,27 @@
       "hundredThousandsActive": "Más de 100 000 usuarios activos",
       "hundredThousandsJobsTracked": "Más de 100 000 tareas controladas",
       "fiftyCountries": "Más de 58 países de todo el mundo",
-      "hundredThousandsJobSites": "Más de 100 000 emplazamientos de tarea"
+      "hundredThousandsJobSites": "Más de 100 000 emplazamientos de tarea",
+      "timesheetsGenerated": "Hojas de horas generadas",
+      "jobsCompleted": "Tareas completadas",
+      "companiesTrustUs": "Empresas confían en nosotros",
+      "hoursTracked": "Horas de trabajo registradas",
+      "freeTrial14Days": "Inicia una prueba gratuita",
+      "start14Days": "Inicia una prueba gratuita",
+      "comingSoon": "Próximamente",
+      "everythingInPremium": "Everything in Premium, plus",
+      "premium": "Premium",
+      "enterprise": "Empresa",
+      "users": "usuarios",
+      "monthly": "Mensualmente",
+      "annually": "Anualmente",
+      "Save29": "Ahorre un 29%",
+      "userPerMonth": "/ usuario / mes",
+      "contactSales": "Contactar con Ventas",
+      "noOfUsers": "Usuarios",
+      "monthlyPlan": "Plan mensual",
+      "annualPlan": "Plan anual - Ahorre un 29%",
+      "perMonth": "/ mes"
     }
   }
 }

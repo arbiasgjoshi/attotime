@@ -43,8 +43,6 @@ import WageEstimate from '@images/Wage_estimatesSVG.svg';
 import icon20 from '@images/time-tracking-clock@1x.png';
 import icon21 from '@images/location@1x.png';
 import icon22 from '@images/profile@1x.png';
-
-// import photo1 from '../../../images/boost_productivity.png';
 import authorImage from '@images/en/timesheets/Time tracking app review@2x.png';
 
 import featureImgLocaleOneEn from '@images/en/timesheets/Boost productivity with timesheet insights@2x.png';
@@ -67,15 +65,6 @@ import featureImgLocaleFourDe from '@images/de/timesheets/DE_Estimate your Emplo
 import featureImgLocaleFourEs from '@images/es/timesheets/ES_Estimate your Employees’ Wages@2x.png';
 import featureImgLocaleFourFr from '@images/fr/timesheets/FR_Estimate your Employees’ Wages@2x.png';
 
-import ConstructionLogo from '@images/construction-industry-logo.svg';
-import PaintingLogo from '@images/painting-industry-logo.svg';
-import HealthcareLogo from '@images/healthcare-industry-logo.svg';
-import PlumbingLogo from '@images/plumbing-industry-logo.svg';
-import ElectrianLogo from '@images/electrician-industry-logo.svg';
-import LandscapingLogo from '@images/landscaping-industry-logo.svg';
-import RoofingLogo from '@images/roofing-industry-logo.svg';
-import CleaningLogo from '@images/cleaning-industry-logo.svg';
-import ThreeDots from '@images/three-dots.svg';
 import {
   teamActivityContainer,
   roundImagesContainer,
@@ -206,34 +195,6 @@ const Timesheets = () => {
       }),
       logo: <WageEstimate />,
     },
-  ];
-
-  const serviceList = [
-    { title: 'Construction', url: '/industries/construction', icon: <ConstructionLogo /> },
-    { title: 'Landscaping & Gardening', url: '/industries/landscaping', icon: <LandscapingLogo /> },
-    { title: 'Roofing', url: '/industries/roofing', icon: <RoofingLogo /> },
-    {
-      title: 'Painting & Decorating',
-      url: '/industries/painting-and-decorating',
-      icon: <PaintingLogo />,
-    },
-    {
-      title: 'Cleaning & Maintenance',
-      url: '/industries/cleaning-and-maintenance',
-      icon: <CleaningLogo />,
-    },
-    {
-      title: 'Healthcare & Medical',
-      url: '/industries/healthcare-and-medical',
-      icon: <HealthcareLogo />,
-    },
-    { title: 'Electrical', url: '/industries/electrical', icon: <ElectrianLogo /> },
-    {
-      title: 'Plumbing & Heating',
-      url: '/industries/plumbing-and-heating',
-      icon: <PlumbingLogo />,
-    },
-    { title: 'Other industries', url: '/industries/electrical', icon: <ThreeDots /> },
   ];
 
   const bannerImage = (loc) => {
@@ -471,7 +432,7 @@ const Timesheets = () => {
         maxDescriptionWidth={700}
       />
       <Divider className="style2" />
-      <Services list={serviceList} />
+      <Services />
       <Divider />
       <Story
         img={authorImage}

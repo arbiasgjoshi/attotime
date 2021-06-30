@@ -8,10 +8,16 @@
       "resourcesLabel": "Ressources",
       "pricingLabel": "Tarification",
       "tryForFreeLabel": "Essayer gratuitement",
+      "login": "Se connecter",
       "timeTrackingLabel": "Time Tracking",
       "locationTrackingLabel": "GPS Location Tracking",
       "timesheetsTrackingLabel": "Timesheets",
-      "teamActivityTrackingLabel": "Team Activity"
+      "teamActivityTrackingLabel": "Team Activity",
+      "productOverviewDesc": "Une solution simple et complète qui permet de suivre avec précision le temps de vos employés et d'automatiser les feuilles de temps",
+      "timeTrackingDesc": "Effectuez le suivi du temps depuis n'importe quel appareil",
+      "locationTrackingDesc": "Des mises à jour en temps réel sur la localisation de votre équipe.",
+      "teamActivityTrackingDesc": "Restez informé de l'évolution du travail",
+      "timesheetsTrackingDesc": "Des rapports précis sur les feuilles de temps sans tracas"
     }
   },
   "pages": {
@@ -393,7 +399,13 @@
     },
     "contact": {
       "metaTitle": "Vous êtes tout ce qui compte | Contactez nous chez Atto",
-      "metaDesc": "support@attotime.com | Prenez contact avec nous ! Nous sommes là pour vous et prêts à répondre à toutes vos questions."
+      "metaDesc": "support@attotime.com | Prenez contact avec nous ! Nous sommes là pour vous et prêts à répondre à toutes vos questions.",
+      "bannerTitle": "Tout ce qui compte, c'est vous !",
+      "bannerDesc": "Restez en contact. Nous sommes prêts à répondre à toutes vos questions.",
+      "name": "Nom",
+      "email": "Courriel",
+      "message": "Message",
+      "sendMessage": "Envoyer le message"
     },
     "allFeatures": {
       "name": "TOUTES LES FONCTIONNALITÉS",
@@ -403,6 +415,17 @@
       "bannerDesc": "Combinez tout ce dont vous avez besoin pour gérer votre équipe en un seul endroit.",
       "subscribeBanner": "Tout ce qui compte, c'est vous !",
       "subscribeBannerDesc": "Restez en contact. Nous sommes prêts à répondre à toutes vos questions."
+    },
+    "industries": {
+      "constructionLabel": "Construction",
+      "landscapingLabel": "Aménagement paysager",
+      "roofingLabel": "Toiture",
+      "paintingLabel": "Peinture & Décoration",
+      "cleaningLabel": "Nettoyage & Maintenance",
+      "healthcareLabel": "Soins de santé & médical",
+      "electricalLabel": "Électricité",
+      "plumbingLabel": "Plomberie & chauffage",
+      "otherIndustriesLabel": "Autres industries"
     },
     "miscellaneous": {
       "typeYourEmail": "Entrez votre adresse e-mail",
@@ -420,7 +443,27 @@
       "hundredThousandsActive": "Plus de 100 000 utilisateurs actifs",
       "hundredThousandsJobsTracked": "Plus de 100 000 tâches suivies",
       "fiftyCountries": "Plus de 50 pays dans le monde",
-      "hundredThousandsJobSites": "Plus de 100 000 sites de travail"
+      "hundredThousandsJobSites": "Plus de 100 000 sites de travail",
+      "timesheetsGenerated": "Feuilles de temps générées",
+      "jobsCompleted": "Tâches réalisées",
+      "companiesTrustUs": "Entreprises",
+      "hoursTracked": "Heures suivies",
+      "freeTrial14Days": "Démarrer un essai gratuit",
+      "start14Days": "Essai gratuit de 14 jours",
+      "comingSoon": "Bientôt disponible",
+      "everythingInPremium": "Tout ce qui se trouve dans le forfait Premium, plus",
+      "premium": "Premium",
+      "enterprise": "Enterprise",
+      "users": "utilisateurs",
+      "monthly": "Mensuel",
+      "annually": "Annuel",
+      "Save29": "Économisez 29% de",
+      "userPerMonth": "/ utilisateur / mois",
+      "contactSales": "Contacter les ventes",
+      "noOfUsers": "utilisateurs",
+      "monthlyPlan": "Plan mensuel",
+      "annualPlan": "Plan annuel - Économisez 29 %.",
+      "perMonth": "/ par mois"
     }
   }
 }

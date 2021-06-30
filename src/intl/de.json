@@ -8,10 +8,16 @@
       "resourcesLabel": "Ressourcen",
       "pricingLabel": "Preisgestaltung",
       "tryForFreeLabel": "Kostenlos testen",
+      "login": "Anmelden",
       "timeTrackingLabel": "Zeiterfassung",
       "locationTrackingLabel": "Standort-Tracking",
       "timesheetsTrackingLabel": "Studenzettel",
-      "teamActivityTrackingLabel": "Teamaktivität"
+      "teamActivityTrackingLabel": "Teamaktivität",
+      "productOverviewDesc": "Eine einfache Rundumlösung, die die Arbeitszeit deiner Mitarbeiter genau erfasst und Stundenzettel automatisiert",
+      "timeTrackingDesc": "Zeiterfassung von jedem Gerät aus – jederzeit und überall",
+      "locationTrackingDesc": "Aktualisierungen zum Standort deines Teams in Echtzeit",
+      "teamActivityTrackingDesc": "Bleib während der Arbeit immer auf dem Laufenden",
+      "timesheetsTrackingDesc": "Akkurate Stundenzettel-Berichte ohne großen Aufwand"
     }
   },
   "pages": {
@@ -393,7 +399,11 @@
     },
     "contact": {
       "metaTitle": "Sie sind alles, was zählt | Kontaktieren Sie uns bei Atto",
-      "metaDesc": "support@attotime.com | Nehmen Sie Kontakt auf! Wir sind für Sie da und beantworten gerne alle Ihre Fragen."
+      "metaDesc": "support@attotime.com | Nehmen Sie Kontakt auf! Wir sind für Sie da und beantworten gerne alle Ihre Fragen.",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "sendMessage": "Nachricht senden"
     },
     "allFeatures": {
       "name": "ALLE FUNKTIONEN",
@@ -403,6 +413,17 @@
       "bannerDesc": "Konzentriere alles, was du brauchst, um dein Team zu managen, an einem Ort.",
       "subscribeBanner": "Das Einzige, was zählt, bist du!",
       "subscribeBannerDesc": "Kontakt aufnehmen. Wir beantworten gerne alle deine Fragen."
+    },
+    "industries": {
+      "constructionLabel": "Konstruktion",
+      "landscapingLabel": "Landschaftsbau",
+      "roofingLabel": "Bedachung",
+      "paintingLabel": "Malerei & Dekoration",
+      "cleaningLabel": "Reinigung & Wartung",
+      "healthcareLabel": "Gesundheitswesen & Medizin",
+      "electricalLabel": "Elektrisch",
+      "plumbingLabel": "Klempnerei & Heizung",
+      "otherIndustriesLabel": "Andere Industrien"
     },
     "miscellaneous": {
       "typeYourEmail": "Tippe deine E-Mail-Adresse ein",
@@ -420,7 +441,27 @@
       "hundredThousandsActive": "Über 100.000 aktive Nutzer",
       "hundredThousandsJobsTracked": "Über 100.000 Jobs verfolgt",
       "fiftyCountries": "Über 50 Länder weltweit",
-      "hundredThousandsJobSites": "Über 100.000 Arbeitsorte"
+      "hundredThousandsJobSites": "Über 100.000 Arbeitsorte",
+      "timesheetsGenerated": "generierte Stundenzettel",
+      "jobsCompleted": "abgeschlossene Jobs",
+      "companiesTrustUs": "Unternehmen vertrauen uns",
+      "hoursTracked": "Verfolgte Stunden",
+      "freeTrial14Days": "Kostenlosen Test starten",
+      "start14Days": "Kostenlosen Test starten",
+      "comingSoon": "Demnächst verfügbar",
+      "everythingInPremium": "Alles in Premium, plus",
+      "premium": "Premium",
+      "enterprise": "Enterprise",
+      "users": "Benutzer",
+      "monthly": "Monatlich",
+      "annually": "Jährlich",
+      "Save29": "Sparen Sie 29%",
+      "userPerMonth": "/ Benutzer / Monat",
+      "contactSales": "Contact Sales",
+      "noOfUsers": "Benutzer",
+      "monthlyPlan": "Monatlicher Plan",
+      "annualPlan": "Jahresplan - 29% sparen",
+      "perMonth": "/ Monat"
     }
   }
 }

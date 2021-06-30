@@ -93,8 +93,6 @@ import featureImgLocaleSixDe from '@images/de/time-tracking/DE_Add time off@2x.p
 import featureImgLocaleSixEs from '@images/es/time-tracking/ES_Add time off@2x.png';
 import featureImgLocaleSixFr from '@images/fr/time-tracking/FR_Add time off@2x.png';
 
-import { serviceList } from '@data/listed-data';
-
 import { teamActivityContainer, learnMoreContainer } from '../product.module.scss';
 
 import {
@@ -855,7 +853,7 @@ const TimeTracking = () => {
         maxDescriptionWidth={700}
       />
       <Divider className="style2" />
-      <Services list={serviceList} />
+      <Services />
       <Divider />
       <Story
         img={authorImage}

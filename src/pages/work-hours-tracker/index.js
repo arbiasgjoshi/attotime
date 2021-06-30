@@ -40,7 +40,7 @@ import icon35 from '@images/time-tracking-clock@1x.png';
 import { container, imageFormWrapper, imageWrapper } from '@styles/main.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
-import { firstList, serviceList } from '@data/third-phase/time-tracking-app.js';
+import { firstList } from '@data/third-phase/time-tracking-app.js';
 
 import {
   checkList,
@@ -149,7 +149,7 @@ const WorkHoursTracker = () => {
         maxWidth={1000}
       />
       <Divider className="style2" />
-      <Services list={serviceList} />
+      <Services />
       <Divider className="style3" />
       <StaticImage
         src="../../images/work-hours-tracker/Time tracking for any industry@2x.png"

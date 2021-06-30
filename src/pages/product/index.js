@@ -15,19 +15,18 @@ import GrowthNumbers from '@components/organisms/growth-numbers';
 import FooterComponent from '@components/molecules/footer';
 
 import { container, imageFormWrapper } from '@styles/main.module.scss';
-import { StaticImage } from 'gatsby-plugin-image';
 import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
+// import { StaticImage } from 'gatsby-plugin-image';
+// import image1 from '@images/time-tracking-fingertips@2x.png';
+// import image2 from '@images/know-where-is-team.png';
+// import image3 from '@images/stay-in-loop.png';
+// import image4 from '@images/relax-with-timesheets@2x.png';
 
 import authorImage from '@images/en/overview/Time tracking app review@2x.png';
 
 import icon from '@images/easy-to-use.png';
 import icon2 from '@images/All_in_one@2x.png';
 import icon3 from '@images/Time_saving@2x.png';
-
-import image1 from '@images/time-tracking-fingertips@2x.png';
-import image2 from '@images/know-where-is-team.png';
-import image3 from '@images/stay-in-loop.png';
-import image4 from '@images/relax-with-timesheets@2x.png';
 
 import imgLocaleOneEn from '@images/en/overview/Atto - time and location tracking app generating timesheets@2x.png';
 import imgLocaleOneDe from '@images/de/overview/DE_Atto - time and location tracking app generating timesheet@2x.png';
@@ -247,7 +246,7 @@ const Product = () => {
       <IconCardList cardList={firstList} style="smallTimesheetImages" />
       <Divider />
       <ProductCard
-        productName="TIME TRACKING"
+        productName={Intl.formatMessage({ id: 'header.menu.timeTrackingLabel' })}
         title={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureTitleOne' })}
         description={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureDescOne' })}
         list={productList1}
@@ -260,7 +259,7 @@ const Product = () => {
       />
       <Divider />
       <ProductCard
-        productName="LOCATION TRACKING"
+        productName={Intl.formatMessage({ id: 'pages.productTimeTracking.bottomFeatureOneTitle' })}
         title={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureTitleTwo' })}
         description={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureDescTwo' })}
         list={productList2}
@@ -273,7 +272,7 @@ const Product = () => {
       />
       <Divider />
       <ProductCard
-        productName="TEAM ACTIVITY"
+        productName={Intl.formatMessage({ id: 'header.menu.teamActivityTrackingLabel' })}
         title={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureTitleThree' })}
         description={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureDescThree' })}
         list={productList3}
@@ -286,7 +285,7 @@ const Product = () => {
       />
       <Divider />
       <ProductCard
-        productName="TIMESHEETS"
+        productName={Intl.formatMessage({ id: 'header.menu.timesheetsTrackingLabel' })}
         title={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureTitleFour' })}
         description={Intl.formatMessage({ id: 'pages.productOverview.mainFeatureDescFour' })}
         list={productList4}

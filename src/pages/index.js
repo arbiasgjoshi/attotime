@@ -20,7 +20,6 @@ import Story from '@components/organisms/story';
 import Services from '@components/organisms/services';
 import VideoCheckList from '@components/organisms/video-checklist';
 
-import { serviceList } from '@data/listed-data';
 import authorImage from '@images/hear-what-businesses-have-to-say@2x.png';
 
 import { container, formRotated } from '@styles/main.module.scss';
@@ -252,7 +251,7 @@ const Home = () => {
         maxDescriptionWidth={700}
       />
       <Divider className="style2" />
-      <Services list={serviceList} />
+      <Services />
       <Divider className="style8" />
       <div className={numbers}>
         <Number title="500,000+" description="Timesheets Produced" />

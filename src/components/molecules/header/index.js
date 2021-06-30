@@ -108,10 +108,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <div className={menuItemDesc}>
               <div className={notMobile}>
                 <h6>{Intl.formatMessage({ id: 'pages.productOverview.name' })}</h6>
-                <p>
-                  Atto is a simple all-in-one time-tracking and timesheet solution. Spend less time
-                  managing your business and more time getting work done.
-                </p>
+                <p>{Intl.formatMessage({ id: 'header.menu.productOverviewDesc' })}</p>
               </div>
               <div className={mobile}>
                 <h6>Overview</h6>
@@ -128,7 +125,7 @@ const HeaderComponent = ({ headerStyle }) => {
             </div>
             <div className={menuItemDesc}>
               <h6>{Intl.formatMessage({ id: 'header.menu.timeTrackingLabel' })}</h6>
-              <p>Accurate time tracking from any location and any device</p>
+              <p>{Intl.formatMessage({ id: 'header.menu.timeTrackingDesc' })}</p>
             </div>
           </Link>
           <Link
@@ -141,7 +138,7 @@ const HeaderComponent = ({ headerStyle }) => {
             </div>
             <div className={menuItemDesc}>
               <h6>{Intl.formatMessage({ id: 'header.menu.locationTrackingLabel' })}</h6>
-              <p>Real-time updates on your team’s locations and movements</p>
+              <p>{Intl.formatMessage({ id: 'header.menu.locationTrackingDesc' })}</p>
             </div>
           </Link>
           <Link className={menuItem} activeClassName={activeMenuItem} to="/product/team-activity">
@@ -150,7 +147,7 @@ const HeaderComponent = ({ headerStyle }) => {
             </div>
             <div className={menuItemDesc}>
               <h6>{Intl.formatMessage({ id: 'header.menu.teamActivityTrackingLabel' })}</h6>
-              <p>Stay in the loop of your team’s progress as work happens</p>
+              <p>{Intl.formatMessage({ id: 'header.menu.teamActivityTrackingDesc' })}</p>
             </div>
           </Link>
           <Link className={menuItem} activeClassName={activeMenuItem} to="/product/timesheets">
@@ -159,7 +156,7 @@ const HeaderComponent = ({ headerStyle }) => {
             </div>
             <div className={menuItemDesc}>
               <h6>{Intl.formatMessage({ id: 'header.menu.timesheetsTrackingLabel' })}</h6>
-              <p>Accurate timesheet reports without the hassle</p>
+              <p>{Intl.formatMessage({ id: 'header.menu.timesheetsTrackingDesc' })}</p>
             </div>
           </Link>
         </div>
@@ -449,13 +446,13 @@ const HeaderComponent = ({ headerStyle }) => {
           <Link to="/#" activeClassName={activeMenuItem} onMouseEnter={() => showMenu('resources')}>
             {Intl.formatMessage({ id: 'header.menu.resourcesLabel' })}
           </Link>
-          <Link to="/pricing" activeClassName={activeMenuItem}>
+          <Link to="/pricing" activeClassName={activeMenuItem} onMouseEnter={() => setOpen(false)}>
             {Intl.formatMessage({ id: 'header.menu.pricingLabel' })}
           </Link>
         </div>
         <div className={rightNavButtons}>
           <Link to="/login" className={login}>
-            Log In
+            {Intl.formatMessage({ id: 'header.menu.login' })}
           </Link>
           <Button
             onBtnClick={openModal}
@@ -491,8 +488,8 @@ const HeaderComponent = ({ headerStyle }) => {
               mainMenuStyle
             />
             <div className={mobileButtons}>
-              <Button btnStyle="gray" btnText="Log in" />
-              <Button btnStyle="teal" btnText="Start a Free 14-Day Trial" />
+              <Button btnStyle="gray" btnText={Intl.formatMessage({ id: 'header.menu.login' })} />
+              <Button btnStyle="teal" btnText={Intl.formatMessage({ id: 'header.menu.login' })} />
             </div>
           </div>
         )}

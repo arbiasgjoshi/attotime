@@ -44,7 +44,6 @@ import icon20 from '@images/timesheets@1x.png';
 import { container } from '@styles/main.module.scss';
 
 import { FooterLinks } from '@locale/en.js';
-import { serviceList } from '@data/listed-data';
 
 import { teamActivityContainer, learnMoreContainer } from '../product.module.scss';
 import { privacyContainer, imageContainer } from './gps-location-tracking.module.scss';
@@ -411,7 +410,7 @@ const LocationTracking = () => {
         maxDescriptionWidth={700}
       />
       <Divider className="style2" />
-      <Services list={serviceList} />
+      <Services />
       <Divider />
       <Story
         img={reviewImage}

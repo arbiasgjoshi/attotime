@@ -49,7 +49,7 @@ import { container, imageWrapper } from '@styles/main.module.scss';
 import { FooterLinks } from '@locale/en.js';
 import { oldList, newList } from '@data/industries';
 import { checkList, cardList, commonQuestionsList } from '@data/third-phase/employee-timesheet-app';
-import { firstList, serviceList } from '@data/third-phase/time-tracking-app';
+import { firstList } from '@data/third-phase/time-tracking-app';
 import { rndContainer, learnMoreContainer } from './employee.module.scss';
 
 const EmployeeTimesheetApp = () => {
@@ -186,7 +186,7 @@ const EmployeeTimesheetApp = () => {
         maxWidth={1000}
       />
       <Divider className="style2" />
-      <Services list={serviceList} />
+      <Services />
       <Divider />
       <Title
         title="Using paper timesheets? See the difference!"

@@ -17,8 +17,6 @@ import AnyDevice from '@components/organisms/any-device';
 import Services from '@components/organisms/services';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import noImage from '@images/no-image.png';
-
 // import authorImage from '@images/construction-minds@2x.png';
 // import image1 from '@images/time-clock-mobile@2x.png';
 // import image2 from '@images/time-tracking-any-device.png';
@@ -49,7 +47,6 @@ import {
   featureCardsList,
   commonQuestionsList,
   firstList,
-  serviceList,
 } from '../../data/third-phase/time-tracking-app';
 import { learnMoreContainer } from './mobile-time-tracking.module.scss';
 
@@ -98,7 +95,7 @@ const TimeTrackingApp = () => {
         maxWidth={1000}
       />
       <Divider className="style2" />
-      <Services list={serviceList} />
+      <Services />
       <Divider />
       <StaticImage
         quality={98}

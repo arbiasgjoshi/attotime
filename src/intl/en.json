@@ -7,11 +7,17 @@
       "industriesLabel": "Industries",
       "resourcesLabel": "Resources",
       "pricingLabel": "Pricing",
+      "login": "Log In",
       "tryForFreeLabel": "Try for Free",
       "timeTrackingLabel": "Time Tracking",
       "locationTrackingLabel": "GPS Location Tracking",
       "timesheetsTrackingLabel": "Timesheets",
-      "teamActivityTrackingLabel": "Team Activity"
+      "teamActivityTrackingLabel": "Team Activity",
+      "productOverviewDesc": "Atto is a simple all-in-one time-tracking and timesheet solution. Spend less time managing your business and more time getting work done",
+      "timeTrackingDesc": "Accurate time tracking from any location and any device",
+      "locationTrackingDesc": "Real-time updates on your team’s locations and movements",
+      "teamActivityTrackingDesc": "Stay in the loop of your team’s progress as work happens",
+      "timesheetsTrackingDesc": "Accurate timesheet reports without the hassle"
     }
   },
   "pages": {
@@ -394,7 +400,11 @@
     },
     "contact": {
       "metaTitle": "You're all that matters | Contact us at Atto",
-      "metaDesc": "support@attotime.com | Get in touch! We’re here for you and ready to answer all your questions."
+      "metaDesc": "support@attotime.com | Get in touch! We’re here for you and ready to answer all your questions.",
+      "name": "Name",
+      "email": "E-mail",
+      "message": "Message",
+      "sendMessage": "Send Message"
     },
     "allFeatures": {
       "name": "ALL FEATURES",
@@ -404,6 +414,17 @@
       "bannerDesc": "Combining everything you need to manage your team in one place.",
       "subscribeBanner": "You’re all that matters!",
       "subscribeBannerDesc": "Get in touch. We’re ready to answer all your questions."
+    },
+    "industries": {
+      "constructionLabel": "Construction",
+      "landscapingLabel": "Landscaping & Gardening",
+      "roofingLabel": "Roofing",
+      "paintingLabel": "Painting & Decorating",
+      "cleaningLabel": "Cleaning & Maintenance",
+      "healthcareLabel": "Healthcare & Medical",
+      "electricalLabel": "Electrical",
+      "plumbingLabel": "Plumbing & Heating",
+      "otherIndustriesLabel": "Other industries"
     },
     "miscellaneous": {
       "typeYourEmail": "Type your email",
@@ -421,7 +442,27 @@
       "hundredThousandsActive": "100,000+ Active users",
       "hundredThousandsJobsTracked": "100,000+ Jobs tracked",
       "fiftyCountries": "50+ Countries worldwide",
-      "hundredThousandsJobSites": "100,000+ Job sites"
+      "hundredThousandsJobSites": "100,000+ Job sites",
+      "timesheetsGenerated": "Timesheets Generated",
+      "jobsCompleted": "Jobs Completed",
+      "companiesTrustUs": "Companies Trust Us",
+      "hoursTracked": "Hours Tracked",
+      "freeTrial14Days": "Start a Free Trial - 14 Days Free",
+      "start14Days": "Start 14-day Free Trial",
+      "comingSoon": "Coming Soon",
+      "everythingInPremium": "Everything in Premium, plus",
+      "premium": "Premium",
+      "enterprise": "Enterprise",
+      "users": "users",
+      "monthly": "Monthly",
+      "annually": "Annually",
+      "Save29": "Save 29%",
+      "userPerMonth": "/ user / month",
+      "contactSales": "Contact Sales",
+      "noOfUsers": "",
+      "monthlyPlan": "Monthly Plan",
+      "annualPlan": "Annual Plan - Save 29%",
+      "perMonth": "/ month"
     }
   }
 }
