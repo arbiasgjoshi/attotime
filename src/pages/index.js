@@ -161,7 +161,10 @@ const Home = () => {
 
   return (
     <div className={container}>
-      <Seo title="ATTO: Timesheets for Employees | Time & GPS Location Tracking" />
+      <Seo
+        title={Intl.formatMessage({ id: 'pages.homepage.metaTitle' })}
+        description={Intl.formatMessage({ id: 'pages.homepage.metaDescription' })}
+      />
       <HeaderComponent />
       <MainTitle
         title={Intl.formatMessage({ id: 'pages.homepage.title' })}

@@ -340,9 +340,8 @@ const AllFeaturesPage = () => {
       <span className={behindMask} />
       <div className={container}>
         <Seo
-          title={Intl.formatMessage({
-            id: 'pages.allFeatures.name',
-          })}
+          title={Intl.formatMessage({ id: 'pages.allFeatures.metaTitle' })}
+          description={Intl.formatMessage({ id: 'pages.allFeatures.metaDescription' })}
         />
         <HeaderComponent headerStyle="pricingHeader" />
         <MainTitleCard

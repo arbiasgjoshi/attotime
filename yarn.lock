@@ -6635,6 +6635,13 @@ gatsby-page-utils@^1.7.1:
     lodash "^4.17.21"
     micromatch "^4.0.2"
 
+gatsby-plugin-canonical-urls@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-3.8.0.tgz#91126bb8a764bbf5525667db33d005202d8cac12"
+  integrity sha512-gGpEt+TSPS+lQFuEP48DjcIKnRPsg0WTcZ3aOIRv+5PpClVHdWinaN16hEnxArxVHs+7TCjJly+n8AH6fRdDSA==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+
 gatsby-plugin-google-fonts@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz#d71054f7bf207b9a8da227380369e18e6f4e0201"

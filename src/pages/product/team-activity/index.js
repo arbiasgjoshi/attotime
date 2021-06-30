@@ -227,7 +227,10 @@ const TeamActivity = () => {
 
   return (
     <div className={`${teamActivityContainer} ${container}`}>
-      <Seo title={Intl.formatMessage({ id: 'pages.productTeamActivity.name' })} />
+      <Seo
+        title={Intl.formatMessage({ id: 'pages.productTeamActivity.metaTitle' })}
+        description={Intl.formatMessage({ id: 'pages.productTeamActivity.metaDescription' })}
+      />
       <Header />
       <MainTitleCard
         hasParagraph
@@ -308,7 +311,7 @@ const TeamActivity = () => {
       />
       <Divider className="style10" />
       <Title
-        title="Team activity tracking for any industry"
+        title={Intl.formatMessage({ id: 'pages.productTimeTracking.seventhSectionTitle' })}
         description={Intl.formatMessage({ id: 'pages.productTimeTracking.seventhSectionDesc' })}
         maxDescriptionWidth={700}
       />

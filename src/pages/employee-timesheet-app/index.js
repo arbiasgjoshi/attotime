@@ -56,7 +56,10 @@ const EmployeeTimesheetApp = () => {
   const Intl = useIntl();
   return (
     <div className={`${container}`}>
-      <Seo title="Employee Timesheet App" />
+      <Seo
+        title="Accurate Timesheet, Payroll & Job Code Reports"
+        description="Relax with timesheets on time, every time! Atto instantly generates timesheets for you so you never stress over misplaced, late, or inaccurate timesheets again."
+      />
       <Header />
       <IndustryMainCard
         smallTitle="EMPLOYEE TIMESHEET APP"

@@ -61,7 +61,10 @@ const TimeCardApp = () => {
 
   return (
     <div className={`${container}`}>
-      <Seo title="Time Card App" />
+      <Seo
+        title="Time Card App for Teams | Simplified Timesheets"
+        description="Track your employees' hours with Atto's simple time card app. Clock in and out, track time on the job, and turn employee time card data into insightful reports."
+      />
       <Header />
       <IndustryMainCard
         smallTitle="TIME CARD APP"

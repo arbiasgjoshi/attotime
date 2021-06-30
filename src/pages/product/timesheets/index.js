@@ -361,7 +361,10 @@ const Timesheets = () => {
 
   return (
     <div className={`${container} ${teamActivityContainer}`}>
-      <Seo title={Intl.formatMessage({ id: 'pages.productTimesheets.name' })} />
+      <Seo
+        title={Intl.formatMessage({ id: 'pages.productTimesheets.metaTitle' })}
+        description={Intl.formatMessage({ id: 'pages.productTimesheets.metaDescription' })}
+      />
       <Header />
       <MainTitleCard
         maxParagraphWidth={760}

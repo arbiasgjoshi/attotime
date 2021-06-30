@@ -692,7 +692,10 @@ const TimeTracking = () => {
 
   return (
     <div className={`${container} ${timeTrackingContainer}`}>
-      <Seo title={Intl.formatMessage({ id: 'pages.productTimeTracking.name' })} />
+      <Seo
+        title={Intl.formatMessage({ id: 'pages.productTimeTracking.metaTitle' })}
+        description={Intl.formatMessage({ id: 'pages.productTimeTracking.metaDescription' })}
+      />
       <Header />
       <MainTitleCard
         hasParagraph

@@ -62,7 +62,10 @@ const Roofing = () => {
   return (
     <>
       <div className={`${container} ${industryPadding}`}>
-        <Seo title="Roofing Industries" />
+        <Seo
+          title="Time Tracking for Roofing Companies | Timesheet Software"
+          description="Keep accurate time records while working outdoors. Track your roofers’ time and location in real-time. Save endless hours on admin and payroll. Sign up today!"
+        />
         <Header />
         <IndustryMainCard
           smallTitle="ATTO FOR ROOFING"
@@ -138,7 +141,12 @@ const Roofing = () => {
       </div>
       <div className={background}>
         <div className={`${container} ${noPadding}`}>
-          <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
+          <StaticImage
+            src="../../../images/roofing/Say goodbye to paper timesheets@2x.png"
+            quality={96}
+            width={1209}
+            placeholder="none"
+          />
           <Divider className="style3" />
           <ImagesBox
             image1={boxImage1}

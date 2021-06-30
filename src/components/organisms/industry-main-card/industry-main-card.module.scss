@@ -97,6 +97,10 @@
       @include min(tablet) {
         margin-top: 4rem;
         max-width: 48.2rem;
+
+        &.differentLocale {
+          max-width: 54rem;
+        }
       }
 
       > div {

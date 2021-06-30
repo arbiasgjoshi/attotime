@@ -32,7 +32,6 @@ const Footer = ({ FooterLinks }) => (
         <p>A highly accurate time tracking solution for any company</p>
 
         <div>
-          {/* TODO Dropdown here */}
           <CustomSelect />
         </div>
       </div>

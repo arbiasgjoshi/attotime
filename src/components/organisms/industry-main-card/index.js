@@ -30,7 +30,9 @@ const IndustryMainCard = ({
             <CheckList list={list} cardStyle="rowSmall" />
           </div>
         )}
-        <div className={styles.emailContainer}>
+        <div
+          className={`${styles.emailContainer} ${Intl.locale !== 'en' && styles.differentLocale}`}
+        >
           <div className={styles.mobileImage}>
             <img src={image} alt={title} width={imageWidth || 500} height={imageHeight || 596} />
           </div>

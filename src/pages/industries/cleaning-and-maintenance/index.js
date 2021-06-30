@@ -65,7 +65,10 @@ const Cleaning = () => {
   return (
     <>
       <div className={`${container} ${industryPadding}`}>
-        <Seo title="Cleaning Industries" />
+        <Seo
+          title="Time Tracking for Cleaning Companies | Timesheet Software"
+          description="Track your cleaners’ time and location in real-time. Estimate labor costs to win more cleaning contracts. Quickly deploy cleaners to urgent jobs. Sign up today!"
+        />
         <Header />
         <IndustryMainCard
           smallTitle="ATTO FOR CLEANERS"

@@ -76,7 +76,10 @@ const TimeClock = () => {
 
   return (
     <div className={`${container}`}>
-      <Seo title="Time Clock" />
+      <Seo
+        title="Employee Time Clock App | Simple Time Tracking"
+        description="With Atto’s time clock, you can track time from any device, from anywhere - on the web, via our mobile app or via our time clock kiosk. Try Atto, free for 14 days."
+      />
       <Header />
       <IndustryMainCard
         smallTitle="TIME CLOCK"

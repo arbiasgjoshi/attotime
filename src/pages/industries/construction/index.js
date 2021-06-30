@@ -57,7 +57,10 @@ const Construction = () => {
   return (
     <>
       <div className={`${container} ${industryPadding}`}>
-        <Seo title="Construction Industries" />
+        <Seo
+          title="Time Tracking for Construction Companies | Timesheet Software"
+          description="Track your entire construction crew’s time and location. Save endless hours on admin and payroll. Keep jobs on schedule and on budget. Sign up today!"
+        />
         <Header />
         <IndustryMainCard
           smallTitle="ATTO FOR CONSTRUCTION"

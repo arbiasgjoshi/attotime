@@ -47,7 +47,7 @@ const Pricing = () => {
   const checkList = [
     { title: 'Time Tracking', noStyle: false },
     { title: 'GPS Location Tracking', noStyle: false },
-    { title: 'Team Activit Insights', noStyle: false },
+    { title: 'Team Activity Insights', noStyle: false },
     { title: 'Timesheets', noStyle: false },
     {
       title: Intl.formatMessage({
@@ -248,7 +248,10 @@ const Pricing = () => {
 
   return (
     <div className={container}>
-      <Seo title="Pricing" />
+      <Seo
+        title={Intl.formatMessage({ id: 'pages.pricing.metaTitle' })}
+        description={Intl.formatMessage({ id: 'pages.pricing.metaDescription' })}
+      />
       <HeaderComponent headerStyle="pricingHeader" />
       <span className={behindMask} />
       <div className={priceHeader}>

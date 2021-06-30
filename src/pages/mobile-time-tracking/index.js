@@ -60,7 +60,10 @@ const TimeTrackingApp = () => {
 
   return (
     <div className={`${container}`}>
-      <Seo title="Time Tracking App" />
+      <Seo
+        title="Mobile Time Tracking App | iOS & Android"
+        description="Atto is a highly accurate time tracking solution for any company. Clock in and out, keep notes, track breaks, assign job codes, add time off, and more!"
+      />
       <Header />
       <IndustryMainCard
         smallTitle="TIME TRACKING APP"

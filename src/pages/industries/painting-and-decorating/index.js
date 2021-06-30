@@ -66,7 +66,10 @@ const Painting = () => {
   return (
     <>
       <div className={`${container} ${industryPadding}`}>
-        <Seo title="Painting Industries" />
+        <Seo
+          title="Time Tracking for Painting and Decorating Companies"
+          description="Track your painters’ and decorators’ time and location. Accurately estimate labor costs to win more jobs. See who’s available to work in real-time. Sign up today!"
+        />
         <Header />
         <IndustryMainCard
           smallTitle="ATTO FOR PAINTERS AND DECORATORS"
@@ -144,7 +147,12 @@ const Painting = () => {
       </div>
       <div className={background}>
         <div className={`${container} ${noPadding}`}>
-          <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
+          <StaticImage
+            src="../../../images/painting/Say goodbye to paper timesheets@2x.png"
+            quality={96}
+            width={1209}
+            placeholder="none"
+          />
           <Divider className="style3" />
           <ImagesBox
             image1={boxImage1}

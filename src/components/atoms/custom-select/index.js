@@ -20,18 +20,22 @@ const CustomSelect = () => {
   const languages = [
     {
       id: 'en',
+      path: '/',
       name: 'English',
     },
     {
       id: 'es',
+      path: 'es',
       name: 'Español',
     },
     {
       id: 'fr',
+      path: 'fr',
       name: 'Française',
     },
     {
       id: 'de',
+      path: 'de',
       name: 'Deutsch',
     },
   ];
@@ -73,7 +77,7 @@ const CustomSelect = () => {
         {languages.map((lang, ix) => (
           <button
             className={buttonClass(lang)}
-            onClick={() => changeLocale(lang.id)}
+            onClick={() => changeLocale(lang.path)}
             type="button"
             key={ix}
           >

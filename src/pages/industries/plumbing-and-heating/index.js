@@ -62,7 +62,10 @@ const PlumbingAndHeating = () => {
   return (
     <>
       <div className={`${container} ${industryPadding}`}>
-        <Seo title="Plumbing And Heating Industries" />
+        <Seo
+          title="Time Tracking for Plumbing and Heating Companies"
+          description="Track all your plumbers' time and locations throughout their workday. Save endless hours on admin and payroll. And, respond faster to emergency call-outs."
+        />
         <Header />
         <IndustryMainCard
           smallTitle="ATTO FOR PLUMBERS AND HEATING ENGINEERS"
@@ -141,7 +144,12 @@ const PlumbingAndHeating = () => {
       </div>
       <div className={background}>
         <div className={`${container} ${noPadding}`}>
-          <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
+          <StaticImage
+            src="../../../images/plumbing/Say goodbye to paper timesheets@2x.png"
+            quality={96}
+            width={1209}
+            placeholder="none"
+          />
           <Divider className="style3" />
           <ImagesBox
             image1={boxImage1}

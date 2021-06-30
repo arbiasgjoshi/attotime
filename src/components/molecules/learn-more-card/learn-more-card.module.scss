@@ -49,9 +49,9 @@
 
     .paragraphText {
       @include min(tablet) {
-        height: 12rem;
+        min-height: 12rem;
         width: 27rem;
-        margin-bottom: 4rem;
+        margin: 0 auto 3rem;
       }
     }
   }

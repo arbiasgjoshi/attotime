@@ -222,7 +222,10 @@ const Product = () => {
 
   return (
     <div className={`${container} ${productContainer}`}>
-      <Seo title={Intl.formatMessage({ id: 'pages.productOverview.name' })} />
+      <Seo
+        title={Intl.formatMessage({ id: 'pages.productOverview.metaTitle' })}
+        description={Intl.formatMessage({ id: 'pages.productOverview.metaDescription' })}
+      />
       <HeaderComponent />
       <MainTitleCard
         maxParagraphWidth={760}

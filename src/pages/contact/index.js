@@ -21,7 +21,10 @@ const Contact = () => {
   const Intl = useIntl();
   return (
     <div className={container}>
-      <Seo title="Contact Us" />
+      <Seo
+        title={Intl.formatMessage({ id: 'pages.contact.metaTitle' })}
+        description={Intl.formatMessage({ id: 'pages.contact.metaDescription' })}
+      />
       <HeaderComponent />
       <div className={middleAlign}>
         <img src={HeartIcon} width="75" height="75" alt="Heart" />

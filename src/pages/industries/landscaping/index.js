@@ -61,7 +61,10 @@ const Landscaping = () => {
   return (
     <>
       <div className={`${container} ${industryPadding}`}>
-        <Seo title="Landscaping Industries" />
+        <Seo
+          title="Time Tracking for Landscaping Companies | Timesheet Software"
+          description="Keep accurate time records while working outdoors. View every landscapers’ locations in real-time. Save endless hours on admin and payroll. Sign up today!"
+        />
         <Header />
         <IndustryMainCard
           smallTitle="ATTO FOR LANDSCAPING"
@@ -88,7 +91,12 @@ const Landscaping = () => {
             maxDescriptionWidth={900}
           />
           <Divider className="style3" />
-          <StaticImage src="../../../images/paper_timesheets@2x.png" placeholder="none" />
+          <StaticImage
+            src="../../../images/landscaping/Ditch paper timesheets and switch to Atto@2x.png"
+            width={1140}
+            quality={95}
+            placeholder="none"
+          />
           <Divider className="style3" />
           <ImagesBox
             image1={boxImage1}

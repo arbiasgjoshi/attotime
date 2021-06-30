@@ -66,7 +66,10 @@ const Electrician = () => {
   return (
     <>
       <div className={`${container} ${industryPadding}`}>
-        <Seo title="Electrician Industries" />
+        <Seo
+          title="Time Tracking for Electricians | Timesheet Software"
+          description="Track your electricians’ time and locations. Estimate your wage bill ahead of payday. Write job notes to complete inspection paperwork faster. Sign up today!"
+        />
         <Header />
         <IndustryMainCard
           smallTitle="ATTO FOR ELECTRICIANS"

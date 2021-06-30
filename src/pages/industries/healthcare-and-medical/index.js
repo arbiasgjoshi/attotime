@@ -65,7 +65,10 @@ const HomeHealthcare = () => {
   return (
     <>
       <div className={`${container} ${industryPadding}`}>
-        <Seo title="Home and Healthcare Industries" />
+        <Seo
+          title="Time Tracking Software for Home Healthcare Providers"
+          description="Keep accurate time records while providing care. Track every caregivers’ time, wages, and location. Record patient notes throughout the day. Sign up today!"
+        />
         <Header />
         <IndustryMainCard
           smallTitle="ATTO FOR HOME HEALTHCARE"

@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Attotime Landing Site ',
-    description: `Attotime Website`,
-    author: `Arbias Gjoshi`,
-    siteUrl: 'http://localhost:8000',
+    title: 'ATTO',
+    description: `Atto is a simple, all-in-one solution that accurately tracks your employees’ time and automates timesheets. Join 10,000+ businesses that trust Atto. Sign up now!`,
+    author: `Zetta Technologies`,
+    siteUrl: 'https://attotime.com',
   },
   flags: {
     // PARALLEL_SOURCING: false,
@@ -37,6 +37,12 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://attotime.com/`,
+      },
+    },
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',

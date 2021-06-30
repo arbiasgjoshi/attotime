@@ -58,7 +58,10 @@ const WorkHoursTracker = () => {
 
   return (
     <div className={`${container}`}>
-      <Seo title="Work Hours Tracker" />
+      <Seo
+        title="Employee Work Hours Tracker | Web & Mobile "
+        description="Keep track of your employees with Atto's work hours tracker. Includes time tracking, location tracking, wage estimates, and instantly available timesheet reports."
+      />
       <Header />
       <IndustryMainCard
         smallTitle="WORK HOURS TRACKER"

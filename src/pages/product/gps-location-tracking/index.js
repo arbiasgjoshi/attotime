@@ -310,7 +310,10 @@ const LocationTracking = () => {
 
   return (
     <div className={container}>
-      <Seo title={Intl.formatMessage({ id: 'pages.productLocationTracking.name' })} />
+      <Seo
+        title={Intl.formatMessage({ id: 'pages.productLocationTracking.metaTitle' })}
+        description={Intl.formatMessage({ id: 'pages.productLocationTracking.metaDescription' })}
+      />
       <Header />
       <MainTitleCard
         paragraph={Intl.formatMessage({ id: 'pages.productLocationTracking.name' })}
