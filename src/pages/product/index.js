@@ -4,6 +4,7 @@ import HeaderComponent from '@components/molecules/header';
 import MainTitleCard from '@components/molecules/main-title-card';
 import Seo from '@components/molecules/seo';
 import { useIntl } from 'gatsby-plugin-intl';
+import { StaticImage } from 'gatsby-plugin-image';
 import Divider from '@components/atoms/divider';
 import EmailForm from '@components/atoms/email-form';
 import { FooterLinks } from '@locale/en.js';
@@ -14,8 +15,8 @@ import ProductCard from '@components/organisms/product-card';
 import GrowthNumbers from '@components/organisms/growth-numbers';
 import FooterComponent from '@components/molecules/footer';
 
-import { container, imageFormWrapper } from '@styles/main.module.scss';
-import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
+import { container, imageFormWrapper, imageWrapper } from '@styles/main.module.scss';
+// import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
 // import { StaticImage } from 'gatsby-plugin-image';
 // import image1 from '@images/time-tracking-fingertips@2x.png';
 // import image2 from '@images/know-where-is-team.png';
@@ -219,6 +220,53 @@ const Product = () => {
     }
   };
 
+  const bannerImage = (loc) => {
+    if (loc === 'en') {
+      return (
+        <StaticImage
+          src="../../../images/en/timesheets/Everything you need to keep track of your employees’ time@2x.png"
+          alt="admin-panel-image"
+          width={1220}
+          quality={100}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'de') {
+      return (
+        <StaticImage
+          src="../../../images/de/overview/DE_Everything you need to keep track of your employees’ time@2x.png"
+          alt="admin-panel-image"
+          width={1220}
+          quality={100}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'es') {
+      return (
+        <StaticImage
+          src="../../../images/es/overview/ES_Everything you need to keep track of your employees’ time@2x.png"
+          alt="admin-panel-image"
+          width={1220}
+          quality={100}
+          placeholder="none"
+        />
+      );
+    }
+    if (loc === 'fr') {
+      return (
+        <StaticImage
+          src="../../../images/fr/timesheets/FR_Everything you need to keep track of your employees’ time@2x.png"
+          alt="admin-panel-image"
+          width={1220}
+          quality={100}
+          placeholder="none"
+        />
+      );
+    }
+  };
+
   return (
     <div className={`${container} ${productContainer}`}>
       <Seo
@@ -240,7 +288,10 @@ const Product = () => {
           style="productPage"
         />
         <Divider className="style0" />
-        <ProductOverviewBanner />
+        {/* <ProductOverviewBanner /> */}
+      </div>
+      <div className={imageWrapper} style={{ width: 'calc(100% + 70px)' }}>
+        {bannerImage(Intl.locale)}
       </div>
       <Divider className="style31" />
       <IconCardList cardList={firstList} style="smallTimesheetImages" />
