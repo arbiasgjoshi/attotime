@@ -76,9 +76,8 @@ const PlumbingAndHeating = () => {
         <Divider className="style4" />
         <Story
           img={authorImage}
-          paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."
-      `}
-          author="Robert Bennett - DPA Cleaning Services, Inc."
+          paragraph={`"This app has really helped our company. I love the location service that it provides while my employees are clocked in. This is absolutely necessary as our employees drive to multiple job site locations.”`}
+          author="Lyns & J"
         />
         <Divider />
         <Title

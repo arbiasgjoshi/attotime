@@ -193,24 +193,24 @@ const Home = () => {
       <div className={sliderWrapper}>
         <Slider {...settings} className={carouselWrapper} width={960}>
           <CommentCard
-            title="Amazing for my business!"
-            description="Super convenient and easy to use, so happy i’ve found Atto! Highly recommend."
+            title="A must have app"
+            description="It is saving us a ton of time with timesheets and everyone’s getting paid accurately."
             date="23 Jul"
-            author="Nita Ora"
+            author="Julia Conner"
             sliderItem
           />
           <CommentCard
-            title="A must have software"
-            description="I just love the ongoning improvements."
+            title="So perfectly simplistic"
+            description="I work in construction and the ease of tracking hours via GPS is amazing."
             date="20 Jul"
-            author="James Stone"
+            author="Rich Mathews"
             sliderItem
           />
           <CommentCard
-            title="Everything you need"
-            description="Service is fabolous and it’s easy to use. My employees love it."
+            title="Absolutely awesome!!"
+            description="Does precisely and perfectly what it says. Loving it and the helpful staff."
             date="18 Jun"
-            author="Rich Mathews"
+            author="Robert Bennett"
             sliderItem
           />
           <CommentCard

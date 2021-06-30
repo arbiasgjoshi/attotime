@@ -76,8 +76,8 @@ const Roofing = () => {
         <Divider className="style4" />
         <Story
           img={authorImage}
-          paragraph="Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."
-          author="Robert Bennett - DPA Cleaning Services, Inc."
+          paragraph={`“Great app for my roofing business. Allows me to track my employees/contractors and more importantly makes it easy for them to fill out timesheets."`}
+          author="Syphon"
         />
         <Divider />
         <Title

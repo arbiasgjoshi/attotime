@@ -20,7 +20,7 @@ const CustomSelect = () => {
   const languages = [
     {
       id: 'en',
-      path: '/',
+      path: 'en',
       name: 'English',
     },
     {

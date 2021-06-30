@@ -80,8 +80,8 @@ const TimeCardApp = () => {
       <Divider className="style4" />
       <Story
         img={authorImage}
-        paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
-        author="Robert Bennett - DPA Cleaning Services, Inc."
+        paragraph={`"Using them for our non profit, to manage a few employees. I've tried about 50 others apps before (no kidding). This one finally did the trick."`}
+        author="- Dance Of Life"
       />
       <Divider />
       <AnyDevice

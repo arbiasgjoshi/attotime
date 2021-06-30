@@ -303,8 +303,9 @@ const Product = () => {
       <Divider />
       <Story
         img={authorImage}
-        paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
-        author="Robert Bennet - DPA Cleaning Services, Inc."
+        paragraph={`“So perfectly simplistic. I work in construction so employees can all be in different places. 
+        The ease of tracking hours and productivity via GPS is amazing.”`}
+        author="Jack Thomas – Vision Building & Development"
       />
       <Divider />
       <SubscribeBanner

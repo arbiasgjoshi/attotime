@@ -475,8 +475,8 @@ const Timesheets = () => {
       <Divider />
       <Story
         img={authorImage}
-        paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
-        author="Robert Bennet - DPA Cleaning Services, Inc."
+        paragraph="Great time keeping app for business. Lets you clock on for different clients and jobs or enter manually. Simple to use & great timesheet reporting. Exactly what I was looking for."
+        author="David Warwick"
       />
       <Divider />
       <Title

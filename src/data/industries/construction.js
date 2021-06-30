@@ -140,3 +140,24 @@ export const accordionList3 = [
     },
   },
 ];
+
+export const reviews = [
+  {
+    title: '"A must-have app for your company”',
+    rating: '5 / 5',
+    author: 'Julia Conner',
+    job: '',
+  },
+  {
+    title: '“Would highly recommend for keeping track of your staff’s time”',
+    rating: '5 / 5',
+    author: 'Frank Mason',
+    job: '',
+  },
+  {
+    title: '"So perfectly simplistic"',
+    rating: '5 / 5',
+    author: 'Rich Mathews',
+    job: '',
+  },
+];

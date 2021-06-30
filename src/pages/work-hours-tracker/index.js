@@ -87,8 +87,8 @@ const WorkHoursTracker = () => {
       <Divider />
       <Story
         img={authorImage}
-        paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
-        author="Robert Bennett - DPA Cleaning Services, Inc."
+        paragraph={`“We work in different locations. Atto has saved me much money over the previous way I managed time; piece of paper. It allows me to see the employees’ locations when they clock in and out. Atto is an immediate money saver."`}
+        author="Stephen Carlson - Coastal Contracting LLC"
       />
       <Divider />
       <AnyDevice

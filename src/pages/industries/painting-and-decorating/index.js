@@ -80,9 +80,8 @@ const Painting = () => {
         <Divider className="style4" />
         <Story
           img={authorImage}
-          paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."
-      `}
-          author="Robert Bennett - DPA Cleaning Services, Inc."
+          paragraph={`"This app really does offer everything you need and more as far as time tracking goes. This is an app I highly recommend to all of my friends and family who are running a business."`}
+          author="Anthony Harp"
         />
         <Divider />
         <Title

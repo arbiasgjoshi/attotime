@@ -79,9 +79,8 @@ const Cleaning = () => {
         <Divider className="style4" />
         <Story
           img={reviewImage}
-          paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."
-        `}
-          author="Robert Bennett - DPA Cleaning Services, Inc."
+          paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
+          author="Xana Still"
         />
         <Divider />
         <Title

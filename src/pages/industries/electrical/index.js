@@ -80,9 +80,8 @@ const Electrician = () => {
         <Divider className="style4" />
         <Story
           img={authorImage}
-          paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."
-      `}
-          author="Robert Bennett - DPA Electrician Services, Inc."
+          paragraph={`"I appreciate the simplicity yet advance features. Knowing where my team members are and what they are working on allows us to communicate with our devices and takes the human (time) out of the loop."`}
+          author="Andy"
         />
         <Divider />
         <Title

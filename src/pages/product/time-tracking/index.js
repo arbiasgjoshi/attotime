@@ -858,8 +858,8 @@ const TimeTracking = () => {
       <Divider />
       <Story
         img={authorImage}
-        paragraph="Great time keeping app for business. Lets you clock on for different clients and jobs or enter manually. Simple to use & great timesheet reporting. Exactly what I was looking for."
-        author="Robert Bennet - DPA Cleaning Services, Inc."
+        paragraph="It makes keeping up with my team's hours seamless! It is saving us a ton of time with timesheets and everyone’s getting paid accurately for the hours they’ve worked."
+        author="Julia Conner – Pennprojects, LLC"
       />
       <Divider />
       <Title
