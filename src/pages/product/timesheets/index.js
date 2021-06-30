@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import { container, imageWrapper } from '@styles/main.module.scss';
 
 import Divider from '@components/atoms/divider';
@@ -494,7 +494,7 @@ const Timesheets = () => {
         checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
         checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
       />
-      <Footer FooterLinks={FooterLinks} />
+      <Footer />
     </div>
   );
 };

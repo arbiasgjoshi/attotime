@@ -49,7 +49,7 @@ import {
   accordionList2,
 } from '@data/industries/home-and-healthcare.js';
 import { oldList, newList, healthSteps } from '@data/industries';
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import {
   container,
   industryPadding,
@@ -181,7 +181,7 @@ const HomeHealthcare = () => {
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
           checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
         />
-        <Footer FooterLinks={FooterLinks} />
+        <Footer />
       </div>
     </>
   );

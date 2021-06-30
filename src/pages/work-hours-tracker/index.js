@@ -39,7 +39,7 @@ import icon35 from '@images/time-tracking-clock@1x.png';
 
 import { container, imageFormWrapper, imageWrapper } from '@styles/main.module.scss';
 
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import { firstList } from '@data/third-phase/time-tracking-app.js';
 
 import {
@@ -224,7 +224,7 @@ const WorkHoursTracker = () => {
         formPadding="10.4rem 8rem"
         style="pricing"
       />
-      <Footer FooterLinks={FooterLinks} />
+      <Footer />
     </div>
   );
 };

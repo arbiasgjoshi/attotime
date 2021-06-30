@@ -41,7 +41,7 @@ import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
 import icon35 from '@images/time-tracking-clock@1x.png';
 
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import { container, imageFormWrapper, imageWrapper } from '@styles/main.module.scss';
 
 import { learnMoreContainer, buttonContainer } from './time-card-app.module.scss';
@@ -220,7 +220,7 @@ const TimeCardApp = () => {
         formPadding="10.4rem 8rem"
         style="pricing"
       />
-      <Footer FooterLinks={FooterLinks} />
+      <Footer />
     </div>
   );
 };

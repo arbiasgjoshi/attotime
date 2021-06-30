@@ -43,7 +43,7 @@ import icon20 from '@images/timesheets@1x.png';
 
 import { container } from '@styles/main.module.scss';
 
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 
 import { teamActivityContainer, learnMoreContainer } from '../product.module.scss';
 import { privacyContainer, imageContainer } from './gps-location-tracking.module.scss';
@@ -476,7 +476,7 @@ const LocationTracking = () => {
         checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
         checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
       />
-      <Footer FooterLinks={FooterLinks} />
+      <Footer />
     </div>
   );
 };

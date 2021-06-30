@@ -40,7 +40,7 @@ import boxImage2 from '@images/landscaping/Landscaping location tracking@2x.png'
 import boxImage3 from '@images/landscaping/Landscaping timesheets@2x.png';
 import boxImage4 from '@images/landscaping/The grass is always greener with Atto@2x.png';
 
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import {
   checkList1,
   accordionList1,
@@ -181,7 +181,7 @@ const Landscaping = () => {
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
           checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
         />
-        <Footer FooterLinks={FooterLinks} />
+        <Footer />
       </div>
     </>
   );

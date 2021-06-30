@@ -45,7 +45,7 @@ import boxImage4 from '@images/roofing/Roofers time tracking@2x.png';
 
 import { oldList, newList, roofingSteps } from '@data/industries';
 import { checkList1, firstList, accordionList1, accordionList2 } from '@data/industries/roofing.js';
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import {
   container,
   industryPadding,
@@ -176,7 +176,7 @@ const Roofing = () => {
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
           checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
         />
-        <Footer FooterLinks={FooterLinks} />
+        <Footer />
       </div>
     </>
   );

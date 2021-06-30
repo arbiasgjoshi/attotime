@@ -55,7 +55,7 @@ import boxImage3 from '@images/time-clock/Team activity updates@2x.png';
 import boxImage4 from '@images/time-clock/Mobile time tracking app@2x.png';
 import boxImage5 from '@images/time-clock/Location tracking@2x.png';
 
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import icon1 from '@images/location@1x.png';
 import icon2 from '@images/time-tracking-clock@1x.png';
 import icon3 from '@images/profile@1x.png';
@@ -301,7 +301,7 @@ const TimeClock = () => {
         formPadding="10.4rem 8rem"
         style="pricing"
       />
-      <Footer FooterLinks={FooterLinks} />
+      <Footer />
     </div>
   );
 };

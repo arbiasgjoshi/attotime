@@ -7,7 +7,7 @@ import { useIntl } from 'gatsby-plugin-intl';
 import { StaticImage } from 'gatsby-plugin-image';
 import Divider from '@components/atoms/divider';
 import EmailForm from '@components/atoms/email-form';
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import Story from '@components/organisms/story';
 import IconCardList from '@components/organisms/icon-card-list';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
@@ -366,7 +366,7 @@ const Product = () => {
         checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
         checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
       />
-      <FooterComponent FooterLinks={FooterLinks} />
+      <FooterComponent />
     </div>
   );
 };

@@ -11,7 +11,7 @@ import MainTitleCard from '@components/molecules/main-title-card';
 
 import FooterComponent from '@components/molecules/footer';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 
 import Timer from '@images/timer.svg';
 import Flag from '@images/flag.svg';
@@ -423,7 +423,7 @@ const AllFeaturesPage = () => {
           checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
           style="pricing"
         />
-        <FooterComponent FooterLinks={FooterLinks} />
+        <FooterComponent />
       </div>
     </>
   );

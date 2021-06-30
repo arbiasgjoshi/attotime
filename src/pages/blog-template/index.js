@@ -8,7 +8,7 @@ import Footer from '@components/molecules/footer';
 import BlogTitle from '@components/molecules/blog-title';
 import Content from '@components/organisms/content';
 
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 
 import { container } from '@styles/main.module.scss';
 import {
@@ -64,7 +64,7 @@ const BlogTemplate = () => (
       <Content />
     </div>
     <Divider className="style5" />
-    <Footer FooterLinks={FooterLinks} />
+    <Footer />
   </div>
 );
 

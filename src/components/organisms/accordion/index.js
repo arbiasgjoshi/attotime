@@ -28,7 +28,7 @@ const triggerItem = (val, opened, itemIcon, hasArrow, menuStyle, url) => (
         <motion.h5
           initial={false}
           className={opened ? activeClass : null}
-          transition={{ duration: 0.25 }}
+          transition={{ duration: 0.1 }}
         >
           {val}
         </motion.h5>
@@ -65,7 +65,7 @@ const Accordion = ({
   hasArrow,
   featureTabs,
 }) => {
-  const [toggleOpen, setToggleOpen] = useState(expandOnInit);
+  // const [toggleOpen, setToggleOpen] = useState(expandOnInit);
   const isOpen = i === expanded;
 
   return (
@@ -86,7 +86,7 @@ const Accordion = ({
                 open: { opacity: 1, height: 'auto' },
                 collapsed: { opacity: 0, height: 0 },
               }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              transition={{ duration: 0.1, ease: 'easeInOut' }}
             >
               <motion.div
                 initial="collapsed"

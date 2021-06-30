@@ -46,7 +46,7 @@ import icon34 from '@images/work-hours-tracker@2x.png';
 import icon35 from '@images/time-tracking-clock@1x.png';
 
 import { container, imageWrapper } from '@styles/main.module.scss';
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import { oldList, newList } from '@data/industries';
 import { checkList, cardList, commonQuestionsList } from '@data/third-phase/employee-timesheet-app';
 import { firstList } from '@data/third-phase/time-tracking-app';
@@ -259,7 +259,7 @@ const EmployeeTimesheetApp = () => {
         formPadding="10.4rem 8rem"
         style="pricing"
       />
-      <Footer FooterLinks={FooterLinks} />
+      <Footer />
     </div>
   );
 };

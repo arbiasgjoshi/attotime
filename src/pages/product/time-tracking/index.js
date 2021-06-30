@@ -22,7 +22,7 @@ import Story from '@components/organisms/story';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 import { container, imageWrapper } from '@styles/main.module.scss';
 
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import authorImage from '@images/en/time-tracking/Time tracking app review@2x.png';
 
 import WebTracking from '@images/web-time-tracking.svg';
@@ -920,7 +920,7 @@ const TimeTracking = () => {
         checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
         checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
       />
-      <Footer FooterLinks={FooterLinks} />
+      <Footer />
     </div>
   );
 };

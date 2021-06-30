@@ -8,7 +8,7 @@ import Footer from '@components/molecules/footer';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 
 import { container } from '@styles/main.module.scss';
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 
 const Terms = () => {
   const Intl = useIntl();
@@ -26,7 +26,7 @@ const Terms = () => {
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
           checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
         />
-        <Footer FooterLinks={FooterLinks} />
+        <Footer />
       </div>
     </>
   );

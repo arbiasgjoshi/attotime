@@ -4,7 +4,7 @@ import HeaderComponent from '@components/molecules/header';
 import Seo from '@components/molecules/seo';
 import { useIntl } from 'gatsby-plugin-intl';
 import { Link } from 'gatsby-plugin-intl';
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import Button from '@components/atoms/button';
 import Divider from '@components/atoms/divider';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
@@ -384,7 +384,7 @@ const Pricing = () => {
         checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
         style="pricing"
       />
-      <FooterComponent FooterLinks={FooterLinks} />
+      <FooterComponent />
     </div>
   );
 };

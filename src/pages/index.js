@@ -24,7 +24,7 @@ import authorImage from '@images/hear-what-businesses-have-to-say@2x.png';
 
 import { container, formRotated } from '@styles/main.module.scss';
 import '@styles/includes/slick-carousel.scss';
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import {
   btnWrapper,
   pulledLeft,
@@ -288,7 +288,7 @@ const Home = () => {
         description={Intl.formatMessage({ id: 'pages.homepage.subscribeDesc' })}
         list={checkList}
       />
-      <FooterComponent FooterLinks={FooterLinks} />
+      <FooterComponent />
     </div>
   );
 };

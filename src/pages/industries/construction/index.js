@@ -49,7 +49,7 @@ import {
 
 import { steps, oldList, newList } from '@data/industries';
 
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import { topImageMask, bottomImageMask, greenBackground } from './construction.module.scss';
 
 const Construction = () => {
@@ -176,7 +176,7 @@ const Construction = () => {
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
           checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
         />
-        <Footer FooterLinks={FooterLinks} />
+        <Footer />
       </div>
     </>
   );

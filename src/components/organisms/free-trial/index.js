@@ -28,8 +28,8 @@ const FreeTrial = ({ title, description, list = [] }) => {
           <h4>{description}</h4>
           <Input placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })} />
           <Button
-            btnText="Start a Free Trial - 14 Days Free"
-            btnMobileText="Start a Free 14-Day Trial"
+            btnText={Intl.formatMessage({ id: 'pages.miscellaneous.freeTrial14Days' })}
+            btnMobileText={Intl.formatMessage({ id: 'pages.miscellaneous.start14Days' })}
             btnStyle="black"
           />
           <div className={ticksWrapper}>

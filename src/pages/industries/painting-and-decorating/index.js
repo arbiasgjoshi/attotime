@@ -51,7 +51,7 @@ import {
   accordionList2,
 } from '@data/industries/painting.js';
 import { oldList, newList, painterSteps } from '@data/industries';
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import {
   container,
   industryPadding,
@@ -181,7 +181,7 @@ const Painting = () => {
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
           checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
         />
-        <Footer FooterLinks={FooterLinks} />
+        <Footer />
       </div>
     </>
   );

@@ -58,7 +58,7 @@ import boxImage2 from '@images/cleaning/Cleaners location tracking@2x.png';
 import boxImage3 from '@images/cleaning/Cleaners timesheets@2x.png';
 import boxImage4 from '@images/cleaning/Cleaners time tracking@2x.png';
 
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 
 const Cleaning = () => {
   const Intl = useIntl();
@@ -179,7 +179,7 @@ const Cleaning = () => {
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
           checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
         />
-        <Footer FooterLinks={FooterLinks} />
+        <Footer />
       </div>
     </>
   );

@@ -82,7 +82,7 @@
 .contentWrapper {
   padding: 0 2rem 2rem 0;
   transform-origin: top center;
-  transition: ease all 0.2s;
+  transition: ease all 0.1s;
 
   @include min(tablet) {
     padding: 0 3.2rem 2.2rem 3rem;

@@ -20,7 +20,7 @@ import VideoCheckList from '@components/organisms/video-checklist';
 // import image2 from '@images/find-out.png';
 // import image3 from '@images/eliminate-checks.png';
 // import image4 from '@images/activity-updates@2x.png';
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import authorImage from '@images/en/team-activity/Time tracking app review@2x.png';
 import Team from '@images/team.svg';
 import Timeline from '@images/timeline.svg';
@@ -375,7 +375,7 @@ const TeamActivity = () => {
         checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
         checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
       />
-      <Footer FooterLinks={FooterLinks} />
+      <Footer />
     </div>
   );
 };

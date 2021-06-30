@@ -54,7 +54,7 @@ import {
 import { oldList, newList, plumberSteps } from '@data/industries';
 // import image2 from '@images/time-tracking-plumbing@2x.png';
 import BannerImage from '@images/plumbing/Time Tracking for Plumbing and Heating Companies@2x.png';
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 
 const PlumbingAndHeating = () => {
   const Intl = useIntl();
@@ -178,7 +178,7 @@ const PlumbingAndHeating = () => {
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
           checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
         />
-        <Footer FooterLinks={FooterLinks} />
+        <Footer />
       </div>
     </>
   );

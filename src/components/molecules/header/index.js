@@ -313,7 +313,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <HelpCenterLogo />
           </div>
           <div className={menuItemDesc}>
-            <h6>Help Center</h6>
+            <h6>{Intl.formatMessage({ id: 'header.menu.helpCenterLabel' })}</h6>
             <p>Get answers to all of your questions in an instant</p>
           </div>
         </Link>
@@ -322,7 +322,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <BlogLogo />
           </div>
           <div className={menuItemDesc}>
-            <h6>Blog</h6>
+            <h6>{Intl.formatMessage({ id: 'header.menu.blogLabel' })}</h6>
             <p>Get helpful productivity tips from our blog</p>
           </div>
         </Link>
@@ -331,7 +331,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <ContactLogo />
           </div>
           <div className={menuItemDesc}>
-            <h6>Contact</h6>
+            <h6>{Intl.formatMessage({ id: 'header.menu.contactLabel' })}</h6>
             <p>Reach out to our support team to get answers to your questions</p>
           </div>
         </Link>
@@ -392,22 +392,22 @@ const HeaderComponent = ({ headerStyle }) => {
 
   const menuItemsOne = [
     {
-      title: 'Product',
+      title: Intl.formatMessage({ id: 'header.menu.productLabel' }),
       url: false,
       description: productSection(),
     },
     {
-      title: 'Industries',
+      title: Intl.formatMessage({ id: 'header.menu.industriesLabel' }),
       url: false,
       description: industriesSection(),
     },
     {
-      title: 'Pricing',
+      title: Intl.formatMessage({ id: 'header.menu.pricingLabel' }),
       description: '',
       url: '/pricing',
     },
     {
-      title: 'Resources',
+      title: Intl.formatMessage({ id: 'header.menu.resourcesLabel' }),
       url: false,
       description: resourceSection(),
     },
@@ -436,13 +436,15 @@ const HeaderComponent = ({ headerStyle }) => {
           >
             {Intl.formatMessage({ id: 'header.menu.productLabel' })}
           </Link>
-          <Link
-            to="/#"
-            activeClassName={activeMenuItem}
-            onMouseEnter={() => showMenu('industries')}
-          >
-            {Intl.formatMessage({ id: 'header.menu.industriesLabel' })}
-          </Link>
+          {Intl.locale === 'en' && (
+            <Link
+              to="/#"
+              activeClassName={activeMenuItem}
+              onMouseEnter={() => showMenu('industries')}
+            >
+              {Intl.formatMessage({ id: 'header.menu.industriesLabel' })}
+            </Link>
+          )}
           <Link to="/#" activeClassName={activeMenuItem} onMouseEnter={() => showMenu('resources')}>
             {Intl.formatMessage({ id: 'header.menu.resourcesLabel' })}
           </Link>
@@ -489,7 +491,10 @@ const HeaderComponent = ({ headerStyle }) => {
             />
             <div className={mobileButtons}>
               <Button btnStyle="gray" btnText={Intl.formatMessage({ id: 'header.menu.login' })} />
-              <Button btnStyle="teal" btnText={Intl.formatMessage({ id: 'header.menu.login' })} />
+              <Button
+                btnStyle="teal"
+                btnText={Intl.formatMessage({ id: 'pages.miscellaneous.start14Days' })}
+              />
             </div>
           </div>
         )}

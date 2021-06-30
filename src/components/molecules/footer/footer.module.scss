@@ -107,6 +107,16 @@
       }
     }
   }
+
+  &.hiddenItem {
+    @include min(laptop) {
+      width: 40%;
+      flex-grow: unset;
+    }
+    > div:nth-child(2) {
+      display: none;
+    }
+  }
 }
 
 .downloadApp {

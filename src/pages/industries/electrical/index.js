@@ -43,7 +43,7 @@ import boxImage4 from '@images/electric/Electricians time tracking@2x.png';
 // import image2 from '@images/time-tracking-electricians@2x.png';
 import BannerImage from '@images/electric/Time Tracking for Electricians@2x.png';
 
-import { FooterLinks } from '@locale/en.js';
+// import { FooterLinks } from '@locale/en.js';
 import {
   firstList,
   checkList1,
@@ -188,7 +188,7 @@ const Electrician = () => {
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
           checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
         />
-        <Footer FooterLinks={FooterLinks} />
+        <Footer />
       </div>
     </>
   );
