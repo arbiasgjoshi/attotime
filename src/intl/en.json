@@ -19,6 +19,8 @@
       "name": "HOMEPAGE",
       "title": "Time tracking, simplified",
       "description": "A simple, all-in-one solution that accurately tracks your employees’ time and automates timesheets",
+      "metaTitle": "Atto: Timesheet & Time Tracking Software",
+      "metaDescription": "Atto is a simple, all-in-one solution that accurately tracks your employees’ time and automates timesheets. Join 10,000+ businesses that trust Atto. Sign up now!",
       "timeTrackingTitle": "Track time from any device, anytime, and anywhere",
       "timeTrackingDescription": "Say goodbye to employee estimates. See every minute on the clock, including work hours, breaks, and time-off.",
       "gpsTitle": "Be in control of your employees in the field",
@@ -46,6 +48,8 @@
     },
     "productOverview": {
       "name": "PRODUCT OVERVIEW",
+      "metaTitle": "Timesheet & Time Tracking Software for Teams",
+      "metaDescription": "Everything you need to keep track of your team’s time. Join 10,000+ businesses that trust Atto to accurately track time, automate timesheets and simplify payroll",
       "bannerTitle": "Everything you need to keep track of your employees’ time",
       "bannerDescription": "Don't let timesheets be a distraction. Focus on what matters and let us handle them for you.",
       "featureItemTitleOne": "Simple",
@@ -82,6 +86,8 @@
     },
     "productTimeTracking": {
       "name": "Time Tracking",
+      "metaTitle": "Time Tracking Software for Teams",
+      "metaDescription": "Take the pain away from time tracking! Atto is an easy-to-use, accurate time tracking solution. Join 10,000+ businesses that trust Atto. Sign up now!",
       "bannerTitle": "Take the pain away from time tracking",
       "bannerDescription": "An easy-to-use, accurate, and trustworthy time-tracking solution.",
       "checkListItemZero": "Keep track of time wherever your employees are",
@@ -172,6 +178,8 @@
     },
     "productLocationTracking": {
       "name": "Location tracking",
+      "metaTitle": "GPS Location Tracking App for Teams",
+      "metaDescription": "Get real-time updates on your entire team’s locations and daily movements. Stay in control of your employees in the field and avoid constant calls and check-ins",
       "bannerTitle": "Be in the right place, at the right time",
       "bannerDescription": "Increase the accountability and transparency of your team with real-time updates on their location.",
       "checkListItemZero": "Track your team’s progress without constant check-ins",
@@ -236,6 +244,8 @@
     },
     "productTeamActivity": {
       "name": "Team Activity",
+      "metaTitle": "Simplified Workforce Management Software",
+      "metaDescription": "Stay in the loop as work happens. View the work status of your team in a few taps and make team management far simpler and easier. Sign up now!",
       "bannerTitle": "Stay in the loop with everything happening in real-time",
       "checkListItemZero": "View any employee’s status and location in a few taps",
       "checkListItemOne": "Increase team visibility, transparency, and accountability",
@@ -269,6 +279,8 @@
     },
     "productTimesheets": {
       "name": "TIMESHEETS",
+      "metaTitle": "Automated Timesheet & Payroll Reporting Software",
+      "metaDescription": "Streamline your payroll with Atto's simple employee timesheet app. Get accurate timesheet reports, including regular time, overtime, breaks, time off, and more.",
       "bannerTitle": "Timesheet reports without the hassle",
       "bannerDescription": "Spend more time on the things that matter with timesheets filled painlessly and on-time.",
       "checkListItemZero": "View precise, instantly-generated, and verified timesheets",
@@ -326,6 +338,8 @@
     },
     "pricing": {
       "name": "PRICING",
+      "metaTitle": "Atto Pricing | Sign up for free; No base price; No setup fee",
+      "metaDescription": "Try Atto, free for 14 days - no credit card required. No base price. No setup fee. Simple pricing starting at $5.",
       "bannerTitle": "Pay-as-you-grow pricing",
       "contactTeam": "Contact our sales team for a custom plan",
       "includesLabel": "Includes",
@@ -378,8 +392,14 @@
       "subscribeBanner": "There’s no time to waste!",
       "subscribeBannerDesc": "Try Atto, free for 14 days"
     },
+    "contact": {
+      "metaTitle": "You're all that matters | Contact us at Atto",
+      "metaDesc": "support@attotime.com | Get in touch! We’re here for you and ready to answer all your questions."
+    },
     "allFeatures": {
       "name": "ALL FEATURES",
+      "metaTitle": "All the time tracking features you need, in one single place | Atto",
+      "metaDescription": "Atto combines everything you need to manage your team. A simple, all-in-one solution that accurately tracks your employees’ time and automates timesheets.",
       "bannerTitle": "All features, at a glance",
       "bannerDesc": "Combining everything you need to manage your team in one place.",
       "subscribeBanner": "You’re all that matters!",
