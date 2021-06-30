@@ -7,7 +7,11 @@
       "industriesLabel": "Branchen",
       "resourcesLabel": "Ressourcen",
       "pricingLabel": "Preisgestaltung",
-      "tryForFreeLabel": "Kostenlos testen"
+      "tryForFreeLabel": "Kostenlos testen",
+      "timeTrackingLabel": "Zeiterfassung",
+      "locationTrackingLabel": "Standort-Tracking",
+      "timesheetsTrackingLabel": "Studenzettel",
+      "teamActivityTrackingLabel": "Teamaktivität"
     }
   },
   "pages": {
@@ -43,7 +47,7 @@
       "subscribeCheckItemFour": "Rationalisiere den gesamten Prozess der Gehaltsabrechnung"
     },
     "productOverview": {
-      "name": "PRODUKTÜBERSICHT",
+      "name": "Produktübersicht",
       "metaTitle": "Stundenzettel & Zeiterfassungs Software für Teams",
       "metaDescription": "Alles, was du brauchst, um die Arbeitszeit deiner Mitarbeiter zu erfassen. Schließen Sie sich den über 10.000 Unternehmen an, die Atto bei der genauen Zeiterfassung vertrauen.",
       "bannerTitle": "Alles, was du brauchst, um die Arbeitszeit deiner Mitarbeiter zu erfassen",

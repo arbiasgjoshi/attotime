@@ -95,11 +95,12 @@ import featureImgLocaleSixFr from '@images/fr/time-tracking/FR_Add time off@2x.p
 
 import { serviceList } from '@data/listed-data';
 
+import { teamActivityContainer, learnMoreContainer } from '../product.module.scss';
+
 import {
-  timeTrackingContainer,
-  learnMoreContainer,
   workListContainer,
   workListItem,
+  timeTrackingContainer,
   commonProblemsContainer,
 } from './time-tracking.module.scss';
 
@@ -691,7 +692,7 @@ const TimeTracking = () => {
   };
 
   return (
-    <div className={`${container} ${timeTrackingContainer}`}>
+    <div className={`${container} ${timeTrackingContainer} ${teamActivityContainer}`}>
       <Seo
         title={Intl.formatMessage({ id: 'pages.productTimeTracking.metaTitle' })}
         description={Intl.formatMessage({ id: 'pages.productTimeTracking.metaDescription' })}

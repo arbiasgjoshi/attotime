@@ -46,11 +46,8 @@ import { container } from '@styles/main.module.scss';
 import { FooterLinks } from '@locale/en.js';
 import { serviceList } from '@data/listed-data';
 
-import {
-  privacyContainer,
-  imageContainer,
-  learnMoreContainer,
-} from './gps-location-tracking.module.scss';
+import { teamActivityContainer, learnMoreContainer } from '../product.module.scss';
+import { privacyContainer, imageContainer } from './gps-location-tracking.module.scss';
 
 const LocationTracking = () => {
   const Intl = useIntl();
@@ -309,7 +306,7 @@ const LocationTracking = () => {
   };
 
   return (
-    <div className={container}>
+    <div className={`${container} ${teamActivityContainer}`}>
       <Seo
         title={Intl.formatMessage({ id: 'pages.productLocationTracking.metaTitle' })}
         description={Intl.formatMessage({ id: 'pages.productLocationTracking.metaDescription' })}

@@ -81,7 +81,7 @@ import {
   roundImagesContainer,
   learnMoreContainer,
   readyMadeTitle,
-} from './timesheets.module.scss';
+} from '../product.module.scss';
 
 const Timesheets = () => {
   const Intl = useIntl();

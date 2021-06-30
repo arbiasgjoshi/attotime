@@ -62,11 +62,9 @@ import { container, articleList } from '@styles/main.module.scss';
 
 import { serviceList } from '@data/listed-data';
 
-import {
-  teamActivityContainer,
-  learnMoreContainer,
-  featuresStyle,
-} from './team-activity.module.scss';
+import { teamActivityContainer, learnMoreContainer } from '../product.module.scss';
+
+import { featuresStyle } from './team-activity.module.scss';
 
 const TeamActivity = () => {
   const Intl = useIntl();

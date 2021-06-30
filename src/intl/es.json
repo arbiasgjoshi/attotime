@@ -7,7 +7,11 @@
       "industriesLabel": "Industrias",
       "resourcesLabel": "Recursos",
       "pricingLabel": "Sistema de precios",
-      "tryForFreeLabel": "Pruébalo gratuitamente"
+      "tryForFreeLabel": "Pruébalo gratuitamente",
+      "timeTrackingLabel": "Control del tiempo",
+      "locationTrackingLabel": "Control de ubicación",
+      "timesheetsTrackingLabel": "Hojas de Horas",
+      "teamActivityTrackingLabel": "Actividad del equipo"
     }
   },
   "pages": {
@@ -43,7 +47,7 @@
       "subscribeCheckItemFour": "Simplifica todo el proceso de nómina"
     },
     "productOverview": {
-      "name": "DESCRIPCIÓN DEL PRODUCTO",
+      "name": "Descripción del producto",
       "metaTitle": "Hoja de horas y software de control del tiempo",
       "metaDescription": "Alles, was du brauchst, um die Arbeitszeit deiner Mitarbeiter zu erfassen. Schließen Sie sich den über 10.000 Unternehmen an, die Atto bei der genauen Zeiterfassung vertrauen.",
       "bannerTitle": "Todo lo que necesitas para el seguimiento del tiempo de tus empleados",

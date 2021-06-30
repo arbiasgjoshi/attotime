@@ -7,7 +7,11 @@
       "industriesLabel": "Industries",
       "resourcesLabel": "Ressources",
       "pricingLabel": "Tarification",
-      "tryForFreeLabel": "Essayer gratuitement"
+      "tryForFreeLabel": "Essayer gratuitement",
+      "timeTrackingLabel": "Time Tracking",
+      "locationTrackingLabel": "GPS Location Tracking",
+      "timesheetsTrackingLabel": "Timesheets",
+      "teamActivityTrackingLabel": "Team Activity"
     }
   },
   "pages": {

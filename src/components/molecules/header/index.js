@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby-plugin-intl';
+import { Link, useIntl } from 'gatsby-plugin-intl';
 
 import Button from '@components/atoms/button';
 import Divider from '@components/atoms/divider';
@@ -83,6 +83,7 @@ const HeaderComponent = ({ headerStyle }) => {
   const closeModal = () => setShowDialog(false);
 
   const scroll = useScroll();
+  const Intl = useIntl();
 
   const listentoScroll = () => (scroll === 0 ? setShadow(false) : setShadow(true));
 
@@ -106,7 +107,7 @@ const HeaderComponent = ({ headerStyle }) => {
             </div>
             <div className={menuItemDesc}>
               <div className={notMobile}>
-                <h6>Product Overview</h6>
+                <h6>{Intl.formatMessage({ id: 'pages.productOverview.name' })}</h6>
                 <p>
                   Atto is a simple all-in-one time-tracking and timesheet solution. Spend less time
                   managing your business and more time getting work done.
@@ -126,7 +127,7 @@ const HeaderComponent = ({ headerStyle }) => {
               <TimeTrackingIcon />
             </div>
             <div className={menuItemDesc}>
-              <h6>Time Tracking</h6>
+              <h6>{Intl.formatMessage({ id: 'header.menu.timeTrackingLabel' })}</h6>
               <p>Accurate time tracking from any location and any device</p>
             </div>
           </Link>
@@ -139,7 +140,7 @@ const HeaderComponent = ({ headerStyle }) => {
               <LocationTrackingIcon />
             </div>
             <div className={menuItemDesc}>
-              <h6>GPS Location Tracking</h6>
+              <h6>{Intl.formatMessage({ id: 'header.menu.locationTrackingLabel' })}</h6>
               <p>Real-time updates on your team’s locations and movements</p>
             </div>
           </Link>
@@ -148,7 +149,7 @@ const HeaderComponent = ({ headerStyle }) => {
               <TeamActivityLogo />
             </div>
             <div className={menuItemDesc}>
-              <h6>Team Activity</h6>
+              <h6>{Intl.formatMessage({ id: 'header.menu.teamActivityTrackingLabel' })}</h6>
               <p>Stay in the loop of your team’s progress as work happens</p>
             </div>
           </Link>
@@ -157,47 +158,49 @@ const HeaderComponent = ({ headerStyle }) => {
               <TimesheetsLogo />
             </div>
             <div className={menuItemDesc}>
-              <h6>Timesheets</h6>
+              <h6>{Intl.formatMessage({ id: 'header.menu.timesheetsTrackingLabel' })}</h6>
               <p>Accurate timesheet reports without the hassle</p>
             </div>
           </Link>
         </div>
       </div>
-      <div className={rightItems}>
-        <h6>More Features</h6>
-        <ul>
-          <li>
-            <Link to="/mobile-time-tracking">
-              <Icon iconClass="arrow-right" />
-              Mobile Time Tracking
-            </Link>
-          </li>
-          <li>
-            <Link to="/time-clock">
-              <Icon iconClass="arrow-right" />
-              Time Clock
-            </Link>
-          </li>
-          <li>
-            <Link to="/time-card-app">
-              <Icon iconClass="arrow-right" />
-              Time Card App
-            </Link>
-          </li>
-          <li>
-            <Link to="/work-hours-tracker">
-              <Icon iconClass="arrow-right" />
-              Work Hours Tracker
-            </Link>
-          </li>
-          <li>
-            <Link to="/employee-timesheet-app">
-              <Icon iconClass="arrow-right" />
-              Accurate Reports
-            </Link>
-          </li>
-        </ul>
-      </div>
+      {Intl.locale === 'en' && (
+        <div className={rightItems}>
+          <h6>More Features</h6>
+          <ul>
+            <li>
+              <Link to="/mobile-time-tracking">
+                <Icon iconClass="arrow-right" />
+                Mobile Time Tracking
+              </Link>
+            </li>
+            <li>
+              <Link to="/time-clock">
+                <Icon iconClass="arrow-right" />
+                Time Clock
+              </Link>
+            </li>
+            <li>
+              <Link to="/time-card-app">
+                <Icon iconClass="arrow-right" />
+                Time Card App
+              </Link>
+            </li>
+            <li>
+              <Link to="/work-hours-tracker">
+                <Icon iconClass="arrow-right" />
+                Work Hours Tracker
+              </Link>
+            </li>
+            <li>
+              <Link to="/employee-timesheet-app">
+                <Icon iconClass="arrow-right" />
+                Accurate Reports
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 
@@ -363,12 +366,12 @@ const HeaderComponent = ({ headerStyle }) => {
 
   // const checkMenuStatus = () => {};
 
-  const triggerItem = (val) => (
-    <div className={triggerItemWrap}>
-      <h5>{val}</h5>
-      <Icon iconClass="arrow-down" />
-    </div>
-  );
+  // const triggerItem = (val) => (
+  //   <div className={triggerItemWrap}>
+  //     <h5>{val}</h5>
+  //     <Icon iconClass="arrow-down" />
+  //   </div>
+  // );
 
   const toggleMenu = () => {
     setOpenMobile(!openMobile);
@@ -434,27 +437,31 @@ const HeaderComponent = ({ headerStyle }) => {
             activeClassName={activeMenuItem}
             onMouseEnter={() => showMenu('product')}
           >
-            Product
+            {Intl.formatMessage({ id: 'header.menu.productLabel' })}
           </Link>
           <Link
             to="/#"
             activeClassName={activeMenuItem}
             onMouseEnter={() => showMenu('industries')}
           >
-            Industries
+            {Intl.formatMessage({ id: 'header.menu.industriesLabel' })}
           </Link>
           <Link to="/#" activeClassName={activeMenuItem} onMouseEnter={() => showMenu('resources')}>
-            Resources
+            {Intl.formatMessage({ id: 'header.menu.resourcesLabel' })}
           </Link>
           <Link to="/pricing" activeClassName={activeMenuItem}>
-            Pricing
+            {Intl.formatMessage({ id: 'header.menu.pricingLabel' })}
           </Link>
         </div>
         <div className={rightNavButtons}>
           <Link to="/login" className={login}>
             Log In
           </Link>
-          <Button onBtnClick={openModal} btnText="Try for Free" btnStyle="teal" />
+          <Button
+            onBtnClick={openModal}
+            btnText={Intl.formatMessage({ id: 'header.menu.tryForFreeLabel' })}
+            btnStyle="teal"
+          />
           <button
             className={`${menuTrigger} ${openMobile && activeButton} `}
             type="button"

@@ -75,7 +75,7 @@
         line-height: 1.5rem;
         padding: 0.9rem 0;
         width: 8.6rem;
-        display: none;
+        // display: none;
       }
 
       .menuTrigger {
@@ -199,7 +199,7 @@
   .leftItems {
     @include flex-direction(column);
     padding: 7.6rem;
-    flex-grow: 1;
+    // flex-grow: 1;
     width: 66.66667%;
 
     @include min(tablet) {

@@ -11,7 +11,7 @@ export const FooterLinks = [
     subMenuLinks: [
       {
         id: 0,
-        path: '/product/why-atto',
+        path: '/product',
         name: 'Why Atto',
         hasLine: true,
       },
