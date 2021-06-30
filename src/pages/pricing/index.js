@@ -45,10 +45,25 @@ const Pricing = () => {
   const [active, setActive] = useState('annually');
 
   const checkList = [
-    { title: 'Time Tracking', noStyle: false },
-    { title: 'GPS Location Tracking', noStyle: false },
+    {
+      title: Intl.formatMessage({
+        id: 'header.menu.timeTrackingLabel',
+      }),
+      noStyle: false,
+    },
+    {
+      title: Intl.formatMessage({
+        id: 'header.menu.locationTrackingLabel',
+      }),
+      noStyle: false,
+    },
     { title: 'Team Activity Insights', noStyle: false },
-    { title: 'Timesheets', noStyle: false },
+    {
+      title: Intl.formatMessage({
+        id: 'header.menu.timesheetsTrackingLabel',
+      }),
+      noStyle: false,
+    },
     {
       title: Intl.formatMessage({
         id: 'pages.pricing.mobileTimeClockFeatureTitle',
@@ -263,14 +278,14 @@ const Pricing = () => {
         <div className={rightSide}>
           <div className={buttonContainer}>
             <Button
-              btnText="Monthly"
+              btnText={Intl.formatMessage({ id: 'pages.miscellaneous.monthly' })}
               btnStyle="round"
               pricing
               activeClass={active === 'monthly'}
               onBtnClick={() => setActive('monthly')}
             />
             <Button
-              btnText="Annually"
+              btnText={Intl.formatMessage({ id: 'pages.miscellaneous.annually' })}
               btnStyle="round"
               pricing
               activeClass={active === 'annually'}
@@ -280,34 +295,34 @@ const Pricing = () => {
         </div>
       </div>
       {active === 'annually' ? (
-        <p className={discount}>Save 29%</p>
+        <p className={discount}>{Intl.formatMessage({ id: 'pages.miscellaneous.Save29' })}</p>
       ) : (
         <p className={discount}>&nbsp; </p>
       )}
       {/* <Divider className="style2" /> */}
       <div className={packageWrapper}>
         <PackageCard
-          title="Premium"
+          title={Intl.formatMessage({ id: 'pages.miscellaneous.premium' })}
           price={active === 'annually' ? 5 : 7}
           list={checkList}
           listTitle={Intl.formatMessage({
             id: 'pages.pricing.includesLabel',
           })}
-          contentText="/ user / month"
-          usersText="1-99 users"
+          contentText={Intl.formatMessage({ id: 'pages.miscellaneous.userPerMonth' })}
+          usersText={`1-99 ${Intl.formatMessage({ id: 'pages.miscellaneous.users' })}`}
           hasGreyBg={false}
-          btnText="Start 14-day Free Trial"
+          btnText={Intl.formatMessage({ id: 'pages.miscellaneous.start14Days' })}
         />
         <PackageCard
-          title="Enterprise"
-          listTitle="Everything in Premium, plus"
+          title={Intl.formatMessage({ id: 'pages.miscellaneous.enterprise' })}
+          listTitle={Intl.formatMessage({ id: 'pages.miscellaneous.everythingInPremium' })}
           list={checkList2}
           hasGreyBg
           contentText={Intl.formatMessage({
             id: 'pages.pricing.contactTeam',
           })}
-          usersText="100+ users"
-          btnText="Contact Sales"
+          usersText={`100+ ${Intl.formatMessage({ id: 'pages.miscellaneous.users' })}`}
+          btnText={Intl.formatMessage({ id: 'pages.miscellaneous.contactSales' })}
         />
       </div>
       <Divider className="medium" />

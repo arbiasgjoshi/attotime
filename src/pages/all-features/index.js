@@ -170,54 +170,82 @@ const AllFeaturesPage = () => {
 
   const locationTrackingCards = [
     {
-      title: 'Real-time Location Updates',
-      description: 'See the location of your entire team of employees as they work in real-time.',
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureOneTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureOneDesc',
+      }),
       logo: <LocationClock />,
       alt: '',
     },
     {
-      title: 'Clock-in/out Location History',
-      description: 'View GPS time stamps of your employees’ clock in and clock out locations.',
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureTwoTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureTwoDesc',
+      }),
       logo: <LocationClock />,
       alt: '',
     },
     {
-      title: 'Named Job Sites',
-      description:
-        'Provide names for specific locations you operate from to make reporting easier.',
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureThreeTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureThreeDesc',
+      }),
       logo: <House />,
       alt: '',
     },
     {
-      title: 'Customizable GPS Tracking',
-      description:
-        'Choose the specific employees and teams that require location tracking for their job.',
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureFiveTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureFiveDesc',
+      }),
       logo: <Settings />,
       alt: '',
     },
     {
-      title: 'Geofencing',
-      description: 'Restrict employees from clocking in until they’ve arrived at a job site.',
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureSixTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureSixDesc',
+      }),
       logo: <Flag />,
       alt: '',
     },
     {
-      title: 'Location History Tracking',
-      description: 'View your employees’ location history throughout their entire day.',
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureFourTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureFourDesc',
+      }),
       logo: <LocationAt />,
       alt: '',
     },
     {
-      title: 'Privacy Controls',
-      description:
-        'Stay in control of what gets tracked – real-time positions, clock in/out locations, or nothing at all.',
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureNineTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureNineDesc',
+      }),
       logo: <Security />,
       alt: '',
     },
     {
-      title: 'Built-in Battery Efficiency',
-      description:
-        'Never worry about your battery life being drained with battery-efficient GPS tracking technology.',
+      title: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureSevenTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productLocationTracking.fourthSectionFeatureSevenDesc',
+      }),
       logo: <Battery />,
       alt: '',
     },
@@ -225,42 +253,62 @@ const AllFeaturesPage = () => {
 
   const teamActivityCards = [
     {
-      title: 'Daily Timeline',
-      description: 'See a clear, simple timeline view of every employee’s daily activity.',
+      title: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureTwoTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureTwoDesc',
+      }),
       logo: <Timeline />,
       alt: '',
     },
     {
-      title: 'Employee Status Overview',
-      description:
-        'Stay in control of your team’s daily activity with real-time updates on their status and location.',
+      title: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureOneTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureOneDesc',
+      }),
       logo: <Team />,
       alt: '',
     },
     {
-      title: 'Departments',
-      description:
-        'Organize employees into departments based on their location, job site, or role.',
+      title: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureThreeTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureThreeDesc',
+      }),
       logo: <Department />,
       alt: '',
     },
     {
-      title: 'Filter and Search',
-      description:
-        'Filter teams based on their status, department, or simply search for their name.',
+      title: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureFourTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureFourDesc',
+      }),
       logo: <Filter />,
       alt: '',
     },
     {
-      title: 'Smart Notifications',
-      description:
-        'Get notified whenever an employee clocks in or out, takes a break, or edits a time entry.',
+      title: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureFiveTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureFiveDesc',
+      }),
       logo: <Ringbell />,
       alt: '',
     },
     {
-      title: 'Messaging*',
-      description: 'Allow employees to send messages and share photos 1-1 or in group chats.',
+      title: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureSixTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTeamActivity.thirdSectionFeatureSixDesc',
+      }),
       logo: <Messaging />,
       alt: '',
     },
@@ -268,61 +316,92 @@ const AllFeaturesPage = () => {
 
   const timesheetCards = [
     {
-      title: 'Comprehensive Timesheets',
-      description:
-        'Get all the data you need including regular time, overtime, breaks, time off, and more.',
+      title: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureOneTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureOneDesc',
+      }),
       logo: <AllTimesheets />,
       alt: '',
     },
     {
-      title: 'Scheduled Email Reports',
-      description:
-        'Schedule an email with your employees’ timesheets to coincide with your payroll schedule.',
+      title: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureTwoTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureTwoDesc',
+      }),
       logo: <AllFeatureEmail />,
       alt: '',
     },
     {
-      title: 'Timesheets by Team and Jobs',
-      description:
-        'Generate timesheets based on work done by an employee, team, or toward a category of job.',
+      title: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureThreeTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureThreeDesc',
+      }),
       logo: <AvoidGuess />,
       alt: '',
     },
     {
-      title: 'Time Entry Change History',
-      description: 'View any historic changes made to time entries by an employee or admin.',
+      title: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureSevenTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureSevenDesc',
+      }),
       logo: <ChangeHistory />,
       alt: '',
     },
     {
-      title: 'Timesheet Rounding',
-      description: 'Set a rounding increment and clock in/out times are rounded automatically.',
+      title: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureSixTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureSixDesc',
+      }),
       logo: <AllFeatresRounding />,
       alt: '',
     },
     {
-      title: 'Wage Estimates and Pay Rates',
-      description:
-        'Assign pay rates to your employees and their estimated pay will be added to their timesheets.',
+      title: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureFourTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureFourDesc',
+      }),
       logo: <Wages />,
       alt: '',
     },
     {
-      title: 'Payroll Integrations',
-      description: 'Streamline your payroll with our QuickBooks Online and Xero integrations.',
+      title: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureNineTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureNineDesc',
+      }),
       logo: <WageEstimate />,
       alt: '',
     },
     {
-      title: 'Download and Share',
-      description: 'Download any timesheet report as a PDF or CSV file in one click.',
+      title: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureFiveTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureFiveDesc',
+      }),
       logo: <Share />,
       alt: '',
     },
     {
-      title: 'Archive Employees',
-      description:
-        'View timesheets for employees even after they’ve left the company – vital for compliance purposes.',
+      title: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureEightTitle',
+      }),
+      description: Intl.formatMessage({
+        id: 'pages.productTimesheets.thirdSectionFeatureEightDesc',
+      }),
       logo: <ArchivedMembers />,
       alt: '',
     },
@@ -354,7 +433,10 @@ const AllFeaturesPage = () => {
           maxParagraphWidth={620}
         />
         <Divider className="" />
-        <Title title="Time Tracking Features" smallerMargin />
+        <Title
+          title={Intl.formatMessage({ id: 'pages.allFeatures.timetrackingTitle' })}
+          smallerMargin
+        />
         <Divider className="style51" />
         <div className={`${cardListWrapper} ${timeTrackingStyle}`}>
           {timeTrackingCards.map(({ title, description, logo }) => (
@@ -369,7 +451,7 @@ const AllFeaturesPage = () => {
           ))}
         </div>
         <Divider className="style4" />
-        <Title title="Location Tracking Features" />
+        <Title title={Intl.formatMessage({ id: 'pages.allFeatures.locationTrackingTitle' })} />
         <Divider className="style51" />
         <div className={`${cardListWrapper} ${locationTrackingStyle}`}>
           {locationTrackingCards.map(({ title, description, logo }) => (
@@ -384,7 +466,7 @@ const AllFeaturesPage = () => {
           ))}
         </div>
         <Divider className="style4" />
-        <Title title="Team Activity Features" />
+        <Title title={Intl.formatMessage({ id: 'pages.allFeatures.teamActivityTitle' })} />
         <Divider className="style51" />
         <div className={`${cardListWrapper} ${teamActivityStyle}`}>
           {teamActivityCards.map(({ title, description, logo }) => (
@@ -399,7 +481,7 @@ const AllFeaturesPage = () => {
           ))}
         </div>
         <Divider className="style4" />
-        <Title title="Timesheets Features" />
+        <Title title={Intl.formatMessage({ id: 'pages.allFeatures.timesheetTitle' })} />
         <Divider className="style51" />
         <div className={`${cardListWrapper} ${timesheetStyle}`}>
           {timesheetCards.map(({ title, description, logo, empty }) => (

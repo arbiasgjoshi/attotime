@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Accordion from '@components/organisms/accordion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import {
   container,
@@ -24,6 +25,7 @@ const AccordionArticle = ({
 }) => {
   // const [clicked, setClicked] = useState(0);
   const [articleImage, setArticleImage] = useState(image);
+  const [changedImage, setChanged] = useState(false);
   const [imgWidth, setImgWidth] = useState(imageWidth);
   const [imgHeight, setImgHeight] = useState(imageHeight);
 
@@ -57,9 +59,20 @@ const AccordionArticle = ({
         </div>
       </div>
       <div className={secondBox}>
-        <div style={{ padding: imagePadding, height: boxHeight }} className={imageWrapper}>
+        <motion.div
+          style={{ padding: imagePadding, height: boxHeight }}
+          initial="collapsed"
+          animate="open"
+          exit="collapsed"
+          variants={{
+            open: { opacity: 1 },
+            collapsed: { opacity: 0 },
+          }}
+          transition={{ duration: '0.15' }}
+          className={imageWrapper}
+        >
           <img src={articleImage} alt={title} width={imgWidth} height={imgHeight} />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

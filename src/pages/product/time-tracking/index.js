@@ -63,6 +63,21 @@ import icon34 from '@images/timesheets@1x.png';
 //
 // Clock-in and out@2x.png
 
+import roundedFeatureOneEn from '@images/en/time-tracking/Employees forget to track their time_@2x.png';
+import roundedFeatureOneDe from '@images/de/time-tracking/DE_Employees forget to track their time_@2x.png';
+import roundedFeatureOneEs from '@images/es/time-tracking/ES_Employees forget to track their time_@2x.png';
+import roundedFeatureOneFr from '@images/fr/time-tracking/FR_Employees forget to track their time_@2x.png';
+
+import roundedFeatureTwoEn from '@images/en/time-tracking/What if phone ran out of battery_@2x.png';
+import roundedFeatureTwoDe from '@images/en/time-tracking/What if phone ran out of battery_@2x.png';
+import roundedFeatureTwoEs from '@images/en/time-tracking/What if phone ran out of battery_@2x.png';
+import roundedFeatureTwoFr from '@images/en/time-tracking/What if phone ran out of battery_@2x.png';
+
+import roundedFeatureThreeEn from '@images/en/time-tracking/Not sure if employees are where they’re supposed to_@2x.png';
+import roundedFeatureThreeDe from '@images/en/time-tracking/Not sure if employees are where they’re supposed to_@2x.png';
+import roundedFeatureThreeEs from '@images/en/time-tracking/Not sure if employees are where they’re supposed to_@2x.png';
+import roundedFeatureThreeFr from '@images/en/time-tracking/Not sure if employees are where they’re supposed to_@2x.png';
+
 import featureImgLocaleOneEn from '@images/clock-in-out.png';
 import featureImgLocaleOneDe from '@images/de/time-tracking/DE_Clock-in and out@2x.png';
 import featureImgLocaleOneEs from '@images/es/time-tracking/ES_Clock-in and out@2x.png';
@@ -207,19 +222,15 @@ const TimeTracking = () => {
 
   const timeTrackingImgLocaleOne = (loc) => {
     if (loc === 'en') {
-      //
       return featureImgLocaleOneEn;
     }
     if (loc === 'es') {
-      //
       return featureImgLocaleOneEs;
     }
     if (loc === 'de') {
-      //
       return featureImgLocaleOneDe;
     }
     if (loc === 'fr') {
-      //
       return featureImgLocaleOneFr;
     }
   };
@@ -311,6 +322,60 @@ const TimeTracking = () => {
     if (loc === 'fr') {
       //
       return featureImgLocaleSixFr;
+    }
+  };
+
+  const timeTrackingRoundedOne = (loc) => {
+    if (loc === 'en') {
+      return roundedFeatureOneEn;
+    }
+    if (loc === 'es') {
+      //
+      return roundedFeatureOneEs;
+    }
+    if (loc === 'de') {
+      //
+      return roundedFeatureOneDe;
+    }
+    if (loc === 'fr') {
+      //
+      return roundedFeatureOneFr;
+    }
+  };
+
+  const timeTrackingRoundedTwo = (loc) => {
+    if (loc === 'en') {
+      return roundedFeatureTwoEn;
+    }
+    if (loc === 'es') {
+      //
+      return roundedFeatureTwoEs;
+    }
+    if (loc === 'de') {
+      //
+      return roundedFeatureTwoDe;
+    }
+    if (loc === 'fr') {
+      //
+      return roundedFeatureTwoFr;
+    }
+  };
+
+  const timeTrackingRoundedThree = (loc) => {
+    if (loc === 'en') {
+      return roundedFeatureThreeEn;
+    }
+    if (loc === 'es') {
+      //
+      return roundedFeatureThreeEs;
+    }
+    if (loc === 'de') {
+      //
+      return roundedFeatureThreeDe;
+    }
+    if (loc === 'fr') {
+      //
+      return roundedFeatureThreeFr;
     }
   };
 
@@ -802,7 +867,7 @@ const TimeTracking = () => {
           isRound
           imageWidth={250}
           imageHeight={250}
-          icon={icon22}
+          icon={timeTrackingRoundedOne(Intl.locale)}
           title={Intl.formatMessage({
             id: 'pages.productTimeTracking.commonProblemFeatureOneTitle',
           })}
@@ -814,7 +879,7 @@ const TimeTracking = () => {
         <IconCard
           isRound
           bigImage
-          icon={icon23}
+          icon={timeTrackingRoundedTwo(Intl.locale)}
           imageWidth={250}
           imageHeight={250}
           title={Intl.formatMessage({
@@ -830,7 +895,7 @@ const TimeTracking = () => {
           isRound
           imageWidth={250}
           imageHeight={250}
-          icon={icon24}
+          icon={timeTrackingRoundedThree(Intl.locale)}
           title={Intl.formatMessage({
             id: 'pages.productTimeTracking.commonProblemFeatureThreeTitle',
           })}

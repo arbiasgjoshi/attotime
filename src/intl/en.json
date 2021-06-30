@@ -411,6 +411,10 @@
     },
     "allFeatures": {
       "name": "ALL FEATURES",
+      "timetrackingTitle": "Time Tracking Features",
+      "locationTrackingTitle": "Location Tracking Features",
+      "teamActivityTitle": "Team Activity Features",
+      "timesheetTitle": "Timesheet Features",
       "metaTitle": "All the time tracking features you need, in one single place | Atto",
       "metaDescription": "Atto combines everything you need to manage your team. A simple, all-in-one solution that accurately tracks your employees’ time and automates timesheets.",
       "bannerTitle": "All features, at a glance",
@@ -462,7 +466,6 @@
       "Save29": "Save 29%",
       "userPerMonth": "/ user / month",
       "contactSales": "Contact Sales",
-      "noOfUsers": "",
       "monthlyPlan": "Monthly Plan",
       "annualPlan": "Annual Plan - Save 29%",
       "perMonth": "/ month"

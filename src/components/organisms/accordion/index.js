@@ -78,10 +78,10 @@ const Accordion = ({
           {isOpen && (
             <motion.section
               key="content"
+              style={{ overflow: 'hidden' }}
               initial="collapsed"
               animate="open"
               exit="collapsed"
-              style={{ overflow: 'hidden' }}
               variants={{
                 open: { opacity: 1, height: 'auto' },
                 collapsed: { opacity: 0, height: 0 },

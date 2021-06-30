@@ -410,6 +410,10 @@
     },
     "allFeatures": {
       "name": "ALLE FUNKTIONEN",
+      "timetrackingTitle": "Zeiterfassung funktionen",
+      "locationTrackingTitle": "Standort-Tracking funktionen",
+      "teamActivityTitle": "Teamaktivität funktionen",
+      "timesheetTitle": "Studenzettel funktionen",
       "metaTitle": "Alle Zeiterfassung Funktionen, die Sie benötigen, an einem Ort",
       "metaDescription": "Konzentriere alles, was du brauchst, um dein Team zu managen, an einem Ort. Schließen Sie sich den über 10.000 Unternehmen an, die Atto bei der genauen Zeiterfassung vertrauen.",
       "bannerTitle": "Alle Funktionen auf einen Blick",
