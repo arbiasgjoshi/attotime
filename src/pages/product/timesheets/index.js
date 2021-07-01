@@ -336,7 +336,7 @@ const Timesheets = () => {
         subtitle={Intl.formatMessage({ id: 'pages.productTimesheets.bannerDescription' })}
       />
       <Divider className="style2" />
-      <VideoCheckList list={checkLists} cardStyle="centerAligned" />
+      <VideoCheckList list={checkLists} placeholder="timesheets" cardStyle="centerAligned" />
       <Divider />
       <div className={readyMadeTitle}>
         <Title

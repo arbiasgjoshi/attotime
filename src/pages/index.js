@@ -242,6 +242,7 @@ const Home = () => {
       <VideoCheckList
         list={titleList}
         videoUrl="https://vimeo.com/704266"
+        placeholder="home"
         cardStyle="centerAligned"
       />
       <Divider />

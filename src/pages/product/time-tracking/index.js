@@ -771,6 +771,7 @@ const TimeTracking = () => {
       <Divider className="style2" />
       <VideoCheckList
         list={timeTrackingTitleList}
+        placeholder="time-tracking"
         cardStyle="centerAligned"
         videoUrl="https://www.youtube.com/watch?v=DTvS9lvRxZ8"
       />

@@ -235,7 +235,7 @@ const TeamActivity = () => {
         title={Intl.formatMessage({ id: 'pages.productTeamActivity.bannerTitle' })}
       />
       <Divider className="style2" />
-      <VideoCheckList list={titleList2} cardStyle="centerAligned" />
+      <VideoCheckList list={titleList2} placeholder="team-activity" cardStyle="centerAligned" />
       <Divider />
       <Title
         maxWidth={900}

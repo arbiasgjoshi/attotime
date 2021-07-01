@@ -319,7 +319,7 @@ const LocationTracking = () => {
         showButton
       />
       <Divider className="style2" />
-      <VideoCheckList list={checkList1} cardStyle="centerAligned" />
+      <VideoCheckList list={checkList1} placeholder="location-tracking" cardStyle="centerAligned" />
       <Divider />
       <Title
         maxWidth={920}
