@@ -57,7 +57,12 @@ const Pricing = () => {
       }),
       noStyle: false,
     },
-    { title: 'Team Activity Insights', noStyle: false },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.pricing.pricingFeatureThreeTitle',
+      }),
+      noStyle: false,
+    },
     {
       title: Intl.formatMessage({
         id: 'header.menu.timesheetsTrackingLabel',
@@ -70,7 +75,12 @@ const Pricing = () => {
       }),
       noStyle: false,
     },
-    { title: 'Job Codes, Breaks, Notes', noStyle: false },
+    {
+      title: Intl.formatMessage({
+        id: 'pages.pricing.jobsBreaksNotes',
+      }),
+      noStyle: false,
+    },
     {
       title: Intl.formatMessage({
         id: 'pages.pricing.timeOffTrackingFeatureTitle',
@@ -293,13 +303,12 @@ const Pricing = () => {
             />
           </div>
         </div>
+        {active === 'annually' ? (
+          <p className={discount}>{Intl.formatMessage({ id: 'pages.miscellaneous.Save29' })}</p>
+        ) : (
+          <p className={discount}>&nbsp; </p>
+        )}
       </div>
-      {active === 'annually' ? (
-        <p className={discount}>{Intl.formatMessage({ id: 'pages.miscellaneous.Save29' })}</p>
-      ) : (
-        <p className={discount}>&nbsp; </p>
-      )}
-      {/* <Divider className="style2" /> */}
       <div className={packageWrapper}>
         <PackageCard
           title={Intl.formatMessage({ id: 'pages.miscellaneous.premium' })}

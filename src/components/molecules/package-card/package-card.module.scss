@@ -35,8 +35,8 @@
       display: flex;
       align-items: center;
       line-height: 3rem;
-      margin-bottom: 4.5rem;
-      min-height: 8rem;
+      margin-bottom: 1.5rem;
+      min-height: 11rem;
 
       > p {
         max-width: 23.3rem;
@@ -54,6 +54,12 @@
           font-weight: var(--semi-bold);
           letter-spacing: -1.33px;
           line-height: 8rem;
+        }
+      }
+
+      &.extendedContent {
+        > p {
+          max-width: 32rem;
         }
       }
     }

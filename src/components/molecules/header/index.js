@@ -314,7 +314,7 @@ const HeaderComponent = ({ headerStyle }) => {
           </div>
           <div className={menuItemDesc}>
             <h6>{Intl.formatMessage({ id: 'header.menu.helpCenterLabel' })}</h6>
-            <p>Get answers to all of your questions in an instant</p>
+            <p>{Intl.formatMessage({ id: 'header.menu.helpCenterDesc' })}</p>
           </div>
         </Link>
         <Link className={menuItem} activeClassName={activeMenuItem} to="/blog">
@@ -323,7 +323,7 @@ const HeaderComponent = ({ headerStyle }) => {
           </div>
           <div className={menuItemDesc}>
             <h6>{Intl.formatMessage({ id: 'header.menu.blogLabel' })}</h6>
-            <p>Get helpful productivity tips from our blog</p>
+            <p>{Intl.formatMessage({ id: 'header.menu.blogDesc' })}</p>
           </div>
         </Link>
         <Link className={menuItem} activeClassName={activeMenuItem} to="/contact">
@@ -332,7 +332,7 @@ const HeaderComponent = ({ headerStyle }) => {
           </div>
           <div className={menuItemDesc}>
             <h6>{Intl.formatMessage({ id: 'header.menu.contactLabel' })}</h6>
-            <p>Reach out to our support team to get answers to your questions</p>
+            <p>{Intl.formatMessage({ id: 'header.menu.contactDesc' })}</p>
           </div>
         </Link>
       </div>
