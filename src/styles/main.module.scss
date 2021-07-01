@@ -68,6 +68,10 @@
     display: flex;
     justify-content: center;
   }
+
+  @include max(tablet) {
+    max-width: 100%;
+  }
 }
 
 .imageFormWrapper {

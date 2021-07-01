@@ -56,7 +56,16 @@
       "subscribeCheckItemOne": "Renforcez la responsabilité et la sécurité de vos employés",
       "subscribeCheckItemTwo": "Restez informé sans avoir à vérifier constamment.",
       "subscribeCheckItemThree": "Profitez de l'automatisation des feuilles de temps des employés sans tracas.",
-      "subscribeCheckItemFour": "Rationalisez l'ensemble du processus de paie"
+      "subscribeCheckItemFour": "Rationalisez l'ensemble du processus de paie",
+      "reviews": {
+        "firstTitle": "Une application indispensable",
+        "firstDesc": "Elle nous fait gagner un temps fou avec les feuilles de temps et tout le monde est payé correctement.",
+        "secondTitle": "Si parfaitement simpliste",
+        "secondDesc": "Je travaille dans la construction et la facilité de suivi des heures par GPS est incroyable.",
+        "thirdTitle": "Absolument génial !",
+        "thidDesc": "Fait précisément et parfaitement ce qu'il dit. Je l'adore et le personnel serviable.",
+        "bottomReview": "\"Il nous fait économiser une tonne de temps et d'argent avec les feuilles de temps et tout le monde est payé avec précision.\""
+      }
     },
     "productOverview": {
       "name": "Aperçu du produit",
@@ -94,7 +103,8 @@
       "mainFeatureFourCheckItemOneDesc": "Gagnez en confiance avec des feuilles de temps précises qui sont vérifiées à l'aide de données de localisation.",
       "mainFeatureFourCheckItemTwoTitle": "Rationalisez le processus de paie",
       "mainFeatureFourCheckItemTwoDesc": "Économisez des heures de travail administratif grâce aux intégrations de paie et aux rapports envoyés automatiquement par e-mail.",
-      "subscribeBannertitle": "Gagnez du temps et concentrez-vous sur ce qui compte vraiment."
+      "subscribeBannertitle": "Gagnez du temps et concentrez-vous sur ce qui compte vraiment.",
+      "review": "\"C'est parfaitement simpliste. Je travaille dans le secteur de la construction et les employés peuvent se trouver à différents endroits. La facilité de suivi des heures et de la productivité par GPS est incroyable.\""
     },
     "productTimeTracking": {
       "name": "Suivi des heures",
@@ -185,7 +195,8 @@
       "bottomFeatureTwoDesc": "Restez au courant de ce qui se passe – sans avoir besoin de décrocher le téléphone.",
       "bottomFeatureThreeTitle": "Feuilles de temps",
       "bottomFeatureThreeDesc": "Consacrez plus de temps aux choses qui comptent grâce à des feuilles de temps prêtes à l'emploi, précises et vérifiées.",
-      "subscribeBannerTitle": "Qu'attendez-vous pour agir ? Le temps presse !"
+      "subscribeBannerTitle": "Qu'attendez-vous pour agir ? Le temps presse !",
+      "review": "\"Il permet de suivre les heures de mon équipe en toute transparence ! Il nous fait gagner beaucoup de temps avec les feuilles de temps et chacun est payé correctement pour les heures qu'il a travaillées.\""
     },
     "productLocationTracking": {
       "name": "Géolocalisation",
@@ -251,7 +262,8 @@
       "bottomFeatureTwoDesc": "Restez au courant de ce qui se passe – sans avoir besoin de décrocher le téléphone.",
       "bottomFeatureThreeTitle": "Feuilles de temps",
       "bottomFeatureThreeDesc": "Consacrez plus de temps aux choses qui comptent grâce à des feuilles de temps prêtes à l'emploi, précises et vérifiées.",
-      "subscribeBannerTitle": "Que vous soyez à proximité ou à distance, gardez le contrôle de votre équipe, où qu'elle se trouve."
+      "subscribeBannerTitle": "Que vous soyez à proximité ou à distance, gardez le contrôle de votre équipe, où qu'elle se trouve.",
+      "review": "\"Nous travaillons sur différents sites. Atto m'a permis d'économiser beaucoup d'argent par rapport à l'ancienne méthode de gestion du temps, à savoir le papier. Il me permet de voir où se trouvent les employés lorsqu'ils pointent. Atto est un gain d'argent immédiat.\""
     },
     "productTeamActivity": {
       "name": "Activité de l'équipe",
@@ -286,7 +298,8 @@
       "thirdSectionFeatureFiveDesc": "Recevez une notification quand un employé pointe à l'entrée, à la sortie, prend une pause ou modifie une entrée d'heures.",
       "thirdSectionFeatureSixTitle": "Messaging",
       "thirdSectionFeatureSixDesc": "Permettez aux employés d'envoyer des messages et de partager des photos entre eux ou dans des chats de groupe.",
-      "subscribeBanner": "Gardez le contrôle de ce qui se passe grâce aux mises à jour des activités de l'équipe."
+      "subscribeBanner": "Gardez le contrôle de ce qui se passe grâce aux mises à jour des activités de l'équipe.",
+      "review": "\"J'apprécie la simplicité et les fonctionnalités avancées. Le fait de savoir où se trouvent les membres de mon équipe et sur quoi ils travaillent nous permet de communiquer avec nos appareils et élimine l'humain (le temps) de la boucle.\""
     },
     "productTimesheets": {
       "name": "FEUILLES DE TEMPS",
@@ -345,7 +358,8 @@
       "fourthSectionFeatureThreeTitle": "Feuilles de temps à l'heure et dans votre boîte de réception",
       "fourthSectionFeatureThreeDesc": "Programmez les feuilles de temps de vos employés pour qu'elles vous soient automatiquement envoyées par e-mail selon votre calendrier de paie.",
       "fifthSectionTitle": "Des feuilles de temps pour tous les secteurs d'activité",
-      "subscribeBanner": "Vous pouvez vous détendre en bénéficiant de feuilles de temps ponctuelles, à chaque fois."
+      "subscribeBanner": "Vous pouvez vous détendre en bénéficiant de feuilles de temps ponctuelles, à chaque fois.",
+      "review": "\"Excellente application de gestion du temps pour les entreprises. Elle vous permet de pointer pour différents clients et travaux ou d'entrer manuellement. Simple à utiliser et excellent rapport sur les feuilles de temps. Exactement ce que je recherchais.\""
     },
     "pricing": {
       "name": "TARIFS",
@@ -402,7 +416,8 @@
       "faqFourTitle": "J'ai une question à laquelle je n'ai pas trouvé de réponse",
       "faqFourDesc": "Pas de problème, vous pouvez consulter notre centre d'aide ou cliquer sur l'icône de chat dans le coin inférieur droit pour poser vos questions à notre équipe d'assistance.",
       "subscribeBanner": "Le temps est précieux!",
-      "subscribeBannerDesc": "Essayez Atto, gratuitement pendant 14 jours"
+      "subscribeBannerDesc": "Essayez Atto, gratuitement pendant 14 jours",
+      "review": "\"Si parfaitement simpliste. Je travaille dans le secteur de la construction et les employés peuvent se trouver à différents endroits. La facilité de suivi des heures et de la productivité par GPS est incroyable.\""
     },
     "contact": {
       "metaTitle": "Vous êtes tout ce qui compte | Contactez nous chez Atto",
@@ -416,10 +431,10 @@
     },
     "allFeatures": {
       "name": "TOUTES LES FONCTIONNALITÉS",
-      "timetrackingTitle": "Suivi des heures fonctionnalités",
-      "locationTrackingTitle": "Géolocalisation fonctionnalités",
-      "teamActivityTitle": "Activité de l'équipe fonctionnalités",
-      "timesheetTitle": "Feuilles de temps fonctionnalités",
+      "timetrackingTitle": "Fonctionnalités de suivi du temps",
+      "locationTrackingTitle": "Fonctionnalités de suivi de la localisation",
+      "teamActivityTitle": "Fonctionnalités de l'activité de l'équipe",
+      "timesheetTitle": "Fonctionnalités de la feuille de temps",
       "metaTitle": "Tout ce dont vous avez besoin, en une seule application",
       "metaDescription": "Combinez tout ce dont vous avez besoin pour gérer votre équipe en un seul endroit. Rejoignez plus de 10 000 entreprises qui font confiance à Atto pour le suivi précis du temps.",
       "bannerTitle": "Toutes les fonctionnalités, en un coup d'œil",

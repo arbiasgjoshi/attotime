@@ -56,7 +56,16 @@
       "subscribeCheckItemOne": "Aumenta la seguridad y responsabilidad de tus empleados",
       "subscribeCheckItemTwo": "Mantente informado sin constantes verificaciones.",
       "subscribeCheckItemThree": "Disfruta de hojas de horas automatizadas y sin complicaciones",
-      "subscribeCheckItemFour": "Simplifica todo el proceso de nómina"
+      "subscribeCheckItemFour": "Simplifica todo el proceso de nómina",
+      "reviews": {
+        "firstTitle": "Una aplicación imprescindible",
+        "firstDesc": "Nos está ahorrando un montón de tiempo con las hojas de tiempo y todo el mundo está recibiendo el pago con precisión.",
+        "secondTitle": "Tan perfectamente simplista",
+        "secondDesc": "Trabajo en la construcción y la facilidad de seguimiento de las horas a través del GPS es increíble.",
+        "thirdTitle": "¡Absolutamente impresionante!",
+        "thidDesc": "Hace exactamente y perfectamente lo que dice. Me encanta y el personal es muy servicial.",
+        "bottomReview": "\"Nos está ahorrando un montón de tiempo y dinero con las hojas de tiempo y todo el mundo está recibiendo el pago con precisión.\""
+      }
     },
     "productOverview": {
       "name": "Descripción del producto",
@@ -94,7 +103,8 @@
       "mainFeatureFourCheckItemOneDesc": "Aumenta tu confianza gracias a una hojas de horas precisas verificadas mediante información de ubicación.",
       "mainFeatureFourCheckItemTwoTitle": "Simplifica todo el proceso de nómina",
       "mainFeatureFourCheckItemTwoDesc": "Ahorra horas de trabajo administrativo con hojas de horas integradas e informes enviados automáticamente por correo electrónico.",
-      "subscribeBannertitle": "Gana tiempo y céntrate en lo que es verdaderamente importante"
+      "subscribeBannertitle": "Gana tiempo y céntrate en lo que es verdaderamente importante",
+      "review": "\"Es tan perfectamente simplista. Trabajo en la construcción, por lo que los empleados pueden estar en varios lugares. La facilidad de seguimiento de las horas y la productividad a través de GPS es increíble.\""
     },
     "productTimeTracking": {
       "name": "Control del tiempo",
@@ -185,7 +195,8 @@
       "bottomFeatureTwoDesc": "Mantente informado de lo que pasa - sin necesidad de usar el teléfono.",
       "bottomFeatureThreeTitle": "Hojas de horas",
       "bottomFeatureThreeDesc": "Dedica más tiempo a lo que importa con hojas de horas preelaboradas, precisas y verificadas.",
-      "subscribeBannerTitle": "¿A qué esperas? ¡No dejes que pase más tiempo!"
+      "subscribeBannerTitle": "¿A qué esperas? ¡No dejes que pase más tiempo!",
+      "review": "\"¡Hace que el seguimiento de las horas de mi equipo sea perfecto! Nos ahorra un montón de tiempo con las hojas de tiempo y todo el mundo recibe el pago exacto por las horas que ha trabajado.\""
     },
     "productLocationTracking": {
       "name": "Control de ubicación",
@@ -251,7 +262,8 @@
       "bottomFeatureTwoDesc": "Mantente informado de lo que pasa - sin necesidad de usar el teléfono.",
       "bottomFeatureThreeTitle": "Hojas de horas",
       "bottomFeatureThreeDesc": "Dedica más tiempo a lo que importa con hojas de horas preelaboradas, precisas y verificadas.",
-      "subscribeBannerTitle": "Mantén el control de tu equipo donde quiera que esté, ya sea cerca o lejos."
+      "subscribeBannerTitle": "Mantén el control de tu equipo donde quiera que esté, ya sea cerca o lejos.",
+      "review": "\"Trabajamos en diferentes lugares. Atto me ha ahorrado mucho dinero con respecto a la forma anterior de gestionar el tiempo; un trozo de papel. Me permite ver la ubicación de los empleados cuando fichan a la entrada y a la salida. Atto es un ahorro inmediato de dinero\""
     },
     "productTeamActivity": {
       "name": "Actividad del equipo",
@@ -286,7 +298,8 @@
       "thirdSectionFeatureFiveDesc": "Recibe una notificación cada vez que un empleado ficha la entrada/salida, se toma un descanso o edita un registro de tiempo.",
       "thirdSectionFeatureSixTitle": "Messaging",
       "thirdSectionFeatureSixDesc": "Permite a los empleados enviar mensajes y compartir fotos tanto entre dos personas como en chats de grupo.",
-      "subscribeBanner": "Mantén el control de lo que está ocurriendo con actualizaciones de la actividad del equipo"
+      "subscribeBanner": "Mantén el control de lo que está ocurriendo con actualizaciones de la actividad del equipo",
+      "review": "\"Aprecio la simplicidad y a la vez las funciones avanzadas. Saber dónde están los miembros de mi equipo y en qué están trabajando nos permite comunicarnos con nuestros dispositivos y elimina el aspecto humano (el tiempo).\""
     },
     "productTimesheets": {
       "name": "HOJAS DE HORAS",
@@ -345,7 +358,8 @@
       "fourthSectionFeatureThreeTitle": "Hojas de horas a tiempo en tu bandeja de entrada",
       "fourthSectionFeatureThreeDesc": "Puedes programar que las hojas de horas de tus empleados sean enviadas automáticamente a tu correo electrónico coincidiendo con el calendario de nóminas.",
       "fifthSectionTitle": "Hojas de horas para cualquier sector",
-      "subscribeBanner": "Relájate: tus hojas de horas siempre estarán listas a tiempo"
+      "subscribeBanner": "Relájate: tus hojas de horas siempre estarán listas a tiempo",
+      "review": "\"Gran aplicación de control del tiempo para las empresas. Te permite fichar para diferentes clientes y trabajos o introducirlos manualmente. Fácil de usar y con un gran reporte de horas. Exactamente lo que estaba buscando\""
     },
     "pricing": {
       "name": "SISTEMA DE PRECIOS",
@@ -402,7 +416,8 @@
       "faqFourTitle": "Tengo una pregunta y no encuentro su respuesta",
       "faqFourDesc": "No te preocupes: puedes visitar nuestro centro de asistencia o hacer clic en el icono de chat en la esquina inferior derecha para plantear tu pregunta al equipo de soporte.",
       "subscribeBanner": "¡No hay tiempo que perder!",
-      "subscribeBannerDesc": "Prueba Atto: gratis durante 14 días"
+      "subscribeBannerDesc": "Prueba Atto: gratis durante 14 días",
+      "review": "\"Es perfectamente simplista. Trabajo en la construcción, por lo que los empleados pueden estar en varios lugares. La facilidad de seguimiento de las horas y la productividad a través de GPS es increíble.\""
     },
     "contact": {
       "metaTitle": "Tú eres lo único que importa | Contacta con nosotros en Atto",
@@ -414,10 +429,10 @@
     },
     "allFeatures": {
       "name": "TODAS LAS FUNCIONES",
-      "timetrackingTitle": "Los funciones de Control del tiempo",
-      "locationTrackingTitle": "Los funciones de Control de ubicación",
-      "teamActivityTitle": "Los Funciones de Actividad del equipo",
-      "timesheetTitle": "Los Funcionces de Hojas de Horas",
+      "timetrackingTitle": "Funciones de control de tiempo",
+      "locationTrackingTitle": "Funciones de control de la ubicación",
+      "teamActivityTitle": "Funciones de la actividad del equipo",
+      "timesheetTitle": "Funciones de la hoja de horas",
       "metaTitle": "Todas las funciones que necesita, en un solo lugar | Atto",
       "metaDescription": "Combina todo lo que necesitas para gestionar tu equipo de manera centralizada. Únase a más de 10.000 empresas que confían en Atto para realizar un seguimiento preciso del tiempo.",
       "bannerTitle": "Todas las funciones de un vistazo",

@@ -7,7 +7,6 @@ import { useIntl } from 'gatsby-plugin-intl';
 import { StaticImage } from 'gatsby-plugin-image';
 import Divider from '@components/atoms/divider';
 import EmailForm from '@components/atoms/email-form';
-// import { FooterLinks } from '@locale/en.js';
 import Story from '@components/organisms/story';
 import IconCardList from '@components/organisms/icon-card-list';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
@@ -16,8 +15,8 @@ import GrowthNumbers from '@components/organisms/growth-numbers';
 import FooterComponent from '@components/molecules/footer';
 
 import { container, imageFormWrapper, imageWrapper } from '@styles/main.module.scss';
+
 // import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
-// import { StaticImage } from 'gatsby-plugin-image';
 // import image1 from '@images/time-tracking-fingertips@2x.png';
 // import image2 from '@images/know-where-is-team.png';
 // import image3 from '@images/stay-in-loop.png';
@@ -221,22 +220,12 @@ const Product = () => {
   };
 
   const bannerImage = (loc) => {
-    if (loc === 'en') {
-      return (
-        <StaticImage
-          src="../../../images/en/timesheets/Everything you need to keep track of your employees’ time@2x.png"
-          alt="admin-panel-image"
-          width={1220}
-          quality={100}
-          placeholder="none"
-        />
-      );
-    }
+    console.log(loc);
     if (loc === 'de') {
       return (
         <StaticImage
-          src="../../../images/de/overview/DE_Everything you need to keep track of your employees’ time@2x.png"
-          alt="admin-panel-image"
+          src="../../images/de/overview/DE_Everything you need to keep track of your employees’ time@2x.png"
+          alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={100}
           placeholder="none"
@@ -246,8 +235,8 @@ const Product = () => {
     if (loc === 'es') {
       return (
         <StaticImage
-          src="../../../images/es/overview/ES_Everything you need to keep track of your employees’ time@2x.png"
-          alt="admin-panel-image"
+          src="../../images/es/overview/ES_Everything you need to keep track of your employees’ time@2x.png"
+          alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={100}
           placeholder="none"
@@ -257,14 +246,23 @@ const Product = () => {
     if (loc === 'fr') {
       return (
         <StaticImage
-          src="../../../images/fr/timesheets/FR_Everything you need to keep track of your employees’ time@2x.png"
-          alt="admin-panel-image"
+          src="../../images/fr/overview/FR_Everything you need to keep track of your employees’ time@2x.png"
+          alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={100}
           placeholder="none"
         />
       );
     }
+    return (
+      <StaticImage
+        src="../../images/en/overview/Everything you need to keep track of your employees’ time@2x.png"
+        alt="Everything you need to keep track of your employees’ time"
+        width={1220}
+        quality={100}
+        placeholder="none"
+      />
+    );
   };
 
   return (
@@ -353,8 +351,7 @@ const Product = () => {
       <Divider />
       <Story
         img={authorImage}
-        paragraph={`“So perfectly simplistic. I work in construction so employees can all be in different places. 
-        The ease of tracking hours and productivity via GPS is amazing.”`}
+        paragraph={Intl.formatMessage({ id: 'pages.productOverview.review' })}
         author="Jack Thomas – Vision Building & Development"
       />
       <Divider />

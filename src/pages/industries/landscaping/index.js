@@ -150,9 +150,9 @@ const Landscaping = () => {
         <Divider className="style2" />
         <Story
           img={authorImage}
-          paragraph={`"So perfectly simplistic. I work in construction so employees can all be in different places. 
-      The ease of tracking hours and productivity via GPS is amazing."`}
-          author="Jack Thomas – Vision Building & Development"
+          paragraph={`"It makes keeping up with my team's hours seamless! It is saving us a ton of time with timesheets and everyone’s getting paid accurately for the hours they’ve worked.
+          "`}
+          author="Julia Conner – Pennprojects, LLC"
         />
         <Divider />
         <Title

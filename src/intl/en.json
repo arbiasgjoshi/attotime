@@ -56,7 +56,16 @@
       "subscribeCheckItemOne": "Increase employee accountability and safety",
       "subscribeCheckItemTwo": "Stay in the loop without constant check-ins",
       "subscribeCheckItemThree": "Enjoy hassle-free automated employee timesheets",
-      "subscribeCheckItemFour": "Streamline the entire payroll process"
+      "subscribeCheckItemFour": "Streamline the entire payroll process",
+      "reviews": {
+        "firstTitle": "A must have app",
+        "firstDesc": "It is saving us a ton of time with timesheets and everyone’s getting paid accurately.",
+        "secondTitle": "So perfectly simplistic",
+        "secondDesc": "I work in construction and the ease of tracking hours via GPS is amazing.",
+        "thirdTitle": "Absolutely awesome!!",
+        "thirdDesc": "Does precisely and perfectly what it says. Loving it and the helpful staff.",
+        "bottomReview": "It is saving us a ton of time & money with timesheets and everyone’s getting paid accurately."
+      }
     },
     "productOverview": {
       "name": "Product Overview",
@@ -94,7 +103,8 @@
       "mainFeatureFourCheckItemOneDesc": "Gain trust with accurate timesheets that are verified using location data.",
       "mainFeatureFourCheckItemTwoTitle": "Streamline the payroll process",
       "mainFeatureFourCheckItemTwoDesc": "Save hours of admin with payroll integrations and automatically emailed reports.",
-      "subscribeBannertitle": "Free up your time and focus on what really matters"
+      "subscribeBannertitle": "Free up your time and focus on what really matters",
+      "review": "\"So perfectly simplistic. I work in construction so employees can all be in different places. The ease of tracking hours and productivity via GPS is amazing.\""
     },
     "productTimeTracking": {
       "name": "Time Tracking",
@@ -186,7 +196,8 @@
       "bottomFeatureTwoDesc": "Stay in the loop with what’s happening – without needing to pick up the phone.",
       "bottomFeatureThreeTitle": "Timesheets",
       "bottomFeatureThreeDesc": "Spend more time on the things that matter with ready-made, accurate, verified timesheets.",
-      "subscribeBannerTitle": "What are you waiting for? Time is ticking!"
+      "subscribeBannerTitle": "What are you waiting for? Time is ticking!",
+      "review": "\"It makes keeping up with my team's hours seamless! It is saving us a ton of time with timesheets and everyone’s getting paid accurately for the hours they’ve worked.\""
     },
     "productLocationTracking": {
       "name": "Location tracking",
@@ -252,7 +263,8 @@
       "bottomFeatureTwoDesc": "Stay in the loop with what’s happening – without having to pick up the phone.",
       "bottomFeatureThreeTitle": "Timesheets",
       "bottomFeatureThreeDesc": "Spend more time on the things that matter with ready-made, accurate, verified timesheets.",
-      "subscribeBannerTitle": "Near or far, stay in control of your team, wherever they are."
+      "subscribeBannerTitle": "Near or far, stay in control of your team, wherever they are.",
+      "review": "\"We work in different locations. Atto has saved me much money over the previous way I managed time; piece of paper. It allows me to see the employees’ locations when they clock in and out. Atto is an immediate money saver.\""
     },
     "productTeamActivity": {
       "name": "Team Activity",
@@ -287,7 +299,8 @@
       "thirdSectionFeatureFiveDesc": "Get notified whenever an employee clocks in or out, takes a break, or edits a time entry. ",
       "thirdSectionFeatureSixTitle": "Messaging",
       "thirdSectionFeatureSixDesc": "Allow employees to send messages and share photos 1-1 or in group chats.",
-      "subscribeBanner": "Stay in control of what’s happening with team activity updates"
+      "subscribeBanner": "Stay in control of what’s happening with team activity updates",
+      "review": "\"I appreciate the simplicity yet advance features. Knowing where my team members are and what they are working on allows us to communicate with our devices and takes the human (time) out of the loop.\""
     },
     "productTimesheets": {
       "name": "TIMESHEETS",
@@ -346,7 +359,8 @@
       "fourthSectionFeatureThreeTitle": "Timesheets on-time and in your Inbox",
       "fourthSectionFeatureThreeDesc": "Schedule your employees’ timesheets to be automatically emailed to you in line with your payroll schedule.",
       "fifthSectionTitle": "Timesheets for any industry",
-      "subscribeBanner": "Sit back and relax with timesheets on-time, every time"
+      "subscribeBanner": "Sit back and relax with timesheets on-time, every time",
+      "review": "\"Great time keeping app for business. Lets you clock on for different clients and jobs or enter manually. Simple to use & great timesheet reporting. Exactly what I was looking for.\""
     },
     "pricing": {
       "name": "PRICING",
@@ -403,7 +417,8 @@
       "faqFourTitle": "I have a question that isn’t answered",
       "faqFourDesc": "No worries, you can check out our help center, or click on the chat icon in the bottom right-hand corner to ask questions to our support team.",
       "subscribeBanner": "There’s no time to waste!",
-      "subscribeBannerDesc": "Try Atto, free for 14 days"
+      "subscribeBannerDesc": "Try Atto, free for 14 days",
+      "review": "\"So perfectly simplistic. I work in construction so employees can all be in different places. The ease of tracking hours and productivity via GPS is amazing.\""
     },
     "contact": {
       "metaTitle": "You're all that matters | Contact us at Atto",

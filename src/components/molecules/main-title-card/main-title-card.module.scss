@@ -23,6 +23,14 @@
 
     .mainTitle {
       margin-bottom: 0.8rem;
+
+      @include max(mobile) {
+        max-width: 95%;
+        word-break: break-all;
+        // overflow-wrap: break-word;
+
+        margin: 0 auto;
+      }
     }
 
     .paragraphStyle {

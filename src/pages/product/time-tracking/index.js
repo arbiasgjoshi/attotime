@@ -923,7 +923,7 @@ const TimeTracking = () => {
       <Divider />
       <Story
         img={authorImage}
-        paragraph="It makes keeping up with my team's hours seamless! It is saving us a ton of time with timesheets and everyone’s getting paid accurately for the hours they’ve worked."
+        paragraph={Intl.formatMessage({ id: 'pages.productTimeTracking.review' })}
         author="Julia Conner – Pennprojects, LLC"
       />
       <Divider />

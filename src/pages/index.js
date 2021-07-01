@@ -135,6 +135,55 @@ const Home = () => {
     }
   };
 
+  const mobileLocale = (loc) => {
+    if (loc === 'de') {
+      return (
+        <StaticImage
+          src="../images/DE_Mobile Time tracking, simplified@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={434}
+          quality={95}
+          placeholder="none"
+          className={mobileImage}
+        />
+      );
+    }
+    if (loc === 'fr') {
+      return (
+        <StaticImage
+          src="../images/FR_Mobile Time tracking, simplified@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={434}
+          quality={95}
+          placeholder="none"
+          className={mobileImage}
+        />
+      );
+    }
+    if (loc === 'es') {
+      return (
+        <StaticImage
+          src="../images/ES_Mobile Time tracking, simplified@2x.png"
+          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+          width={434}
+          quality={95}
+          placeholder="none"
+          className={mobileImage}
+        />
+      );
+    }
+    return (
+      <StaticImage
+        src="../images/Mobile Time tracking, simplified@2x.png"
+        alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
+        width={434}
+        quality={95}
+        placeholder="none"
+        className={mobileImage}
+      />
+    );
+  };
+
   useEffect(() => {
     if (window.innerWidth < 768) {
       setSettings({
@@ -179,51 +228,30 @@ const Home = () => {
         />
         <Divider className="style1" />
         {imageOneLocale(Intl.locale)}
-        <StaticImage
-          src="../images/homepage-banner-mobile@2x.png"
-          alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
-          width={332}
-          height={396}
-          placeholder="none"
-          className={mobileImage}
-        />
+        {mobileLocale(Intl.locale)}
       </div>
       <Divider className="style4" />
       <div className={sliderWrapper}>
         <Slider {...settings} className={carouselWrapper} width={960}>
           <CommentCard
-            title="A must have app"
-            description="It is saving us a ton of time with timesheets and everyone’s getting paid accurately."
+            title={Intl.formatMessage({ id: 'pages.homepage.reviews.firstTitle' })}
+            description={Intl.formatMessage({ id: 'pages.homepage.reviews.firstDesc' })}
             date="23 Jul"
             author="Julia Conner"
             sliderItem
           />
           <CommentCard
-            title="So perfectly simplistic"
-            description="I work in construction and the ease of tracking hours via GPS is amazing."
+            title={Intl.formatMessage({ id: 'pages.homepage.reviews.secondTitle' })}
+            description={Intl.formatMessage({ id: 'pages.homepage.reviews.secondDesc' })}
             date="20 Jul"
             author="Rich Mathews"
             sliderItem
           />
           <CommentCard
-            title="Absolutely awesome!!"
-            description="Does precisely and perfectly what it says. Loving it and the helpful staff."
+            title={Intl.formatMessage({ id: 'pages.homepage.reviews.thirdTitle' })}
+            description={Intl.formatMessage({ id: 'pages.homepage.reviews.thirdDesc' })}
             date="18 Jun"
             author="Robert Bennett"
-            sliderItem
-          />
-          <CommentCard
-            title="A must have software"
-            description="I just love the ongoning improvements."
-            date="20 Jul"
-            author="James Stone"
-            sliderItem
-          />
-          <CommentCard
-            title="Everything you need"
-            description="Service is fabolous and it’s easy to use. My employees love it."
-            date="18 Jun"
-            author="Rich Mathews"
             sliderItem
           />
         </Slider>
@@ -267,7 +295,7 @@ const Home = () => {
         <Story
           className="homepage"
           img={authorImage}
-          paragraph="It is saving us a ton of time & money with timesheets and everyone’s getting paid accurately."
+          paragraph={Intl.formatMessage({ id: 'pages.homepage.reviews.bottomReview' })}
           author="Julia Conner – Pennprojects, LLC"
         />
         {/* <Story

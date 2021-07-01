@@ -56,7 +56,16 @@
       "subscribeCheckItemOne": "Erhöhe die Verantwortlichkeit und Sicherheit deiner Mitarbeiter",
       "subscribeCheckItemTwo": "Bleib auf dem Laufenden, ohne ständig nachzufragen",
       "subscribeCheckItemThree": "Gönne dir unkomplizierte, automatisierte Mitarbeiter-Stundenzettel",
-      "subscribeCheckItemFour": "Rationalisiere den gesamten Prozess der Gehaltsabrechnung"
+      "subscribeCheckItemFour": "Rationalisiere den gesamten Prozess der Gehaltsabrechnung",
+      "reviews": {
+        "firstTitle": "Eine App, die man haben muss",
+        "firstDesc": "Es spart uns eine Menge Zeit mit Stundenzetteln und jeder wird genau bezahlt.",
+        "secondTitle": "So perfekt vereinfacht",
+        "secondDesc": "Ich arbeite auf dem Bau und die Einfachheit der Zeiterfassung über GPS ist erstaunlich.",
+        "thirdTitle": "Absolut genial!!",
+        "thidDesc": "Macht genau und perfekt, was es sagt. Ich liebe es und die hilfsbereiten Mitarbeiter.",
+        "bottomReview": "\"Es spart uns eine Menge Zeit und Geld mit Stundenzetteln und jeder wird genau bezahlt.\""
+      }
     },
     "productOverview": {
       "name": "Produktübersicht",
@@ -94,7 +103,8 @@
       "mainFeatureFourCheckItemOneDesc": "Gewinne Vertrauen mit genauen Stundenzetteln, die anhand von Standortdaten überprüft werden.",
       "mainFeatureFourCheckItemTwoTitle": "Rationalisiere den Prozess der Gehaltsabrechnung",
       "mainFeatureFourCheckItemTwoDesc": "Spare viele Stunden an Verwaltungsarbeit ein, indem du die Gehaltsabrechnung integrierst und automatisch Berichte per E-Mail verschickst.",
-      "subscribeBannertitle": "Schaufle dir Zeit frei und konzentriere dich auf das, was wirklich wichtig ist"
+      "subscribeBannertitle": "Schaufle dir Zeit frei und konzentriere dich auf das, was wirklich wichtig ist",
+      "review": "\"So perfekt vereinfacht. Ich arbeite im Baugewerbe, so dass alle Mitarbeiter an verschiedenen Orten sein können. Die Einfachheit der Zeiterfassung und Produktivität über GPS ist erstaunlich.\""
     },
     "productTimeTracking": {
       "name": "Zeiterfassung",
@@ -185,7 +195,8 @@
       "bottomFeatureTwoDesc": "Bleib auf dem Laufenden, was vor sich geht – ohne zum Hörer zu greifen.",
       "bottomFeatureThreeTitle": "Stundenzettel",
       "bottomFeatureThreeDesc": "Verbringe mehr Zeit mit wichtigen Dingen – dank standardisierter, genauer und geprüfter Stundenzettel.",
-      "subscribeBannerTitle": "Worauf wartest du noch? Die Uhr tickt!"
+      "subscribeBannerTitle": "Worauf wartest du noch? Die Uhr tickt!",
+      "review": "\"Es macht die Zeiterfassung für mein Team nahtlos! Es spart uns eine Menge Zeit mit Stundenzetteln und jeder wird genau für die Stunden bezahlt, die er gearbeitet hat.\""
     },
     "productLocationTracking": {
       "name": "Standort-Tracking",
@@ -251,7 +262,8 @@
       "bottomFeatureTwoDesc": "Bleib auf dem Laufenden, was vor sich geht – ohne zum Hörer zu greifen.",
       "bottomFeatureThreeTitle": "Stundenzettel",
       "bottomFeatureThreeDesc": "Verbringe mehr Zeit mit wichtigen Dingen – dank standardisierter, genauer und geprüfter Stundenzettel.",
-      "subscribeBannerTitle": "Ob nah oder fern: Behalte dein Team unter Kontrolle, egal wo es ist."
+      "subscribeBannerTitle": "Ob nah oder fern: Behalte dein Team unter Kontrolle, egal wo es ist.",
+      "review": "\"Wir arbeiten an verschiedenen Standorten. Atto hat mir viel Geld gespart im Vergleich zu der früheren Art und Weise, wie ich die Zeit verwaltet habe; ein Stück Papier. Es ermöglicht mir, die Standorte der Mitarbeiter zu sehen, wenn sie ein- und ausstempeln. Mit Atto kann ich sofort Geld sparen.\""
     },
     "productTeamActivity": {
       "name": "Teamaktivität",
@@ -286,7 +298,8 @@
       "thirdSectionFeatureFiveDesc": "Erhalte eine Benachrichtigung, wenn ein Mitarbeiter sich ein- und ausstempelt, eine Pause macht oder einen Zeiteintrag bearbeitet. ",
       "thirdSectionFeatureSixTitle": "Messaging",
       "thirdSectionFeatureSixDesc": "Erlaube Mitarbeitern, Nachrichten zu senden und Fotos 1:1 oder in Gruppenchats zu teilen.",
-      "subscribeBanner": "Bleibe mit Teamaktivitäts-Updates immer auf dem Laufenden"
+      "subscribeBanner": "Bleibe mit Teamaktivitäts-Updates immer auf dem Laufenden",
+      "review": "\"Ich schätze die Einfachheit und die fortschrittlichen Funktionen. Zu wissen, wo meine Teammitglieder sind und woran sie arbeiten, ermöglicht uns die Kommunikation mit unseren Geräten und nimmt den Menschen (Zeit) aus dem Spiel.\""
     },
     "productTimesheets": {
       "name": "Studenzettel",
@@ -345,7 +358,8 @@
       "fourthSectionFeatureThreeTitle": "Stundenzettel zeitnah und in deinem Posteingang",
       "fourthSectionFeatureThreeDesc": "Plane die Stundenzettel deiner Mitarbeiter so, dass sie automatisch und pünktlich zur Lohnabrechnung per E-Mail an dich gesendet werden.",
       "fifthSectionTitle": "Stundenzettel für jede Branche",
-      "subscribeBanner": "Lehne dich zurück und entspanne dich jedes Mal mit pünktlichen Stundenzetteln"
+      "subscribeBanner": "Lehne dich zurück und entspanne dich jedes Mal mit pünktlichen Stundenzetteln",
+      "review": "\"Tolle Zeiterfassungs-App für Unternehmen. Lässt Sie für verschiedene Kunden und Jobs stempeln oder manuell eingeben. Einfach zu bedienen und großartige Zeiterfassungsberichte. Genau das, wonach ich gesucht habe.\""
     },
     "pricing": {
       "name": "PREISGESTALTUNG",
@@ -402,7 +416,8 @@
       "faqFourTitle": "Ich habe eine Frage, die noch nicht beantwortet ist",
       "faqFourDesc": "Keine Sorge, du kannst in unserem Hilfe-Center nachsehen oder auf das Chat-Symbol in der unteren rechten Ecke klicken, um unserem Support-Team Fragen zu stellen.",
       "subscribeBanner": "Du hast keine Zeit zu verschenken!",
-      "subscribeBannerDesc": "Teste Atto kostenlos für 14 Tage"
+      "subscribeBannerDesc": "Teste Atto kostenlos für 14 Tage",
+      "review": "\"So perfekt vereinfacht. Ich arbeite im Baugewerbe, so dass alle Mitarbeiter an verschiedenen Orten sein können. Die Einfachheit der Verfolgung von Stunden und Produktivität über GPS ist erstaunlich.\""
     },
     "contact": {
       "metaTitle": "Sie sind alles, was zählt | Kontaktieren Sie uns bei Atto",
@@ -414,10 +429,10 @@
     },
     "allFeatures": {
       "name": "ALLE FUNKTIONEN",
-      "timetrackingTitle": "Zeiterfassung funktionen",
-      "locationTrackingTitle": "Standort-Tracking funktionen",
-      "teamActivityTitle": "Teamaktivität funktionen",
-      "timesheetTitle": "Studenzettel funktionen",
+      "timetrackingTitle": "Zeiterfassung-Funktionen",
+      "locationTrackingTitle": "Standort-tracking-Funktionen",
+      "teamActivityTitle": "Teamaktivitäts-Funktionen",
+      "timesheetTitle": "Stundenzettel-Funktionen",
       "metaTitle": "Alle Zeiterfassung Funktionen, die Sie benötigen, an einem Ort",
       "metaDescription": "Konzentriere alles, was du brauchst, um dein Team zu managen, an einem Ort. Schließen Sie sich den über 10.000 Unternehmen an, die Atto bei der genauen Zeiterfassung vertrauen.",
       "bannerTitle": "Alle Funktionen auf einen Blick",

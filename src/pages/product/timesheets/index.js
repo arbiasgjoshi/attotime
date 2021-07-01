@@ -436,7 +436,7 @@ const Timesheets = () => {
       <Divider />
       <Story
         img={authorImage}
-        paragraph="Great time keeping app for business. Lets you clock on for different clients and jobs or enter manually. Simple to use & great timesheet reporting. Exactly what I was looking for."
+        paragraph={Intl.formatMessage({ id: 'pages.productTimesheets.review' })}
         author="David Warwick"
       />
       <Divider />

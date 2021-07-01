@@ -414,7 +414,7 @@ const LocationTracking = () => {
       <Divider />
       <Story
         img={reviewImage}
-        paragraph={`"Does precisely and perfectly what it says. The great big pulsating green button is appealing, makes you want to start work right away! Loving it and the helpful staff."`}
+        paragraph={Intl.formatMessage({ id: 'pages.productLocationTracking.review' })}
         author="Robert Bennett - DPA Cleaning Services, Inc."
       />
       <Divider />

@@ -376,8 +376,10 @@ const Pricing = () => {
       <Divider />
       <Story
         img={authorImage2}
-        paragraph="“Quote from an Enterprise level customer about how amazing Atto is and how it helps improve their business”"
-        author="Andrew Platonic, CEO, Scuable Inc."
+        paragraph={Intl.formatMessage({
+          id: 'pages.pricing.review',
+        })}
+        author="Jack Thomas – Vision Building & Development"
       />
       <Divider />
       <Title
