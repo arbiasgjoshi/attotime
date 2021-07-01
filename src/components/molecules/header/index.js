@@ -453,9 +453,9 @@ const HeaderComponent = ({ headerStyle }) => {
           </Link>
         </div>
         <div className={rightNavButtons}>
-          <Link to="https://app.attotime.com/login" target="_blank" className={login}>
+          <a href="https://app.attotime.com/login" target="_blank" className={login}>
             {Intl.formatMessage({ id: 'header.menu.login' })}
-          </Link>
+          </a>
           <Button
             onBtnClick={openModal}
             btnText={Intl.formatMessage({ id: 'header.menu.tryForFreeLabel' })}
