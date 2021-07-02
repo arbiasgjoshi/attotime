@@ -484,7 +484,7 @@ const HeaderComponent = ({ headerStyle }) => {
           <div className={collapsibleMenu}>
             <Accordion
               items={menuItemsOne}
-              isExpanded={false}
+              isExpanded={null}
               arrowIcon
               noIconPadding
               mainMenuStyle

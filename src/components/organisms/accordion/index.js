@@ -119,12 +119,12 @@ const FramerAccordion = ({
   noIconPadding = false,
   featureTabs = false,
   mainMenuStyle = false,
-  isExpanded,
+  isExpanded = 0,
   arrowIcon,
   type,
   onSetAccordionImage,
 }) => {
-  const [expanded, setExpanded] = useState(0);
+  const [expanded, setExpanded] = useState(isExpanded);
 
   const onAccordionChange = (val, accordionImage) => {
     setExpanded(val);
