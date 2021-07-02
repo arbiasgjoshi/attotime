@@ -69,14 +69,14 @@ import roundedFeatureOneEs from '@images/es/time-tracking/ES_Employees forget to
 import roundedFeatureOneFr from '@images/fr/time-tracking/FR_Employees forget to track their time_@2x.png';
 
 import roundedFeatureTwoEn from '@images/en/time-tracking/What if phone ran out of battery_@2x.png';
-import roundedFeatureTwoDe from '@images/en/time-tracking/What if phone ran out of battery_@2x.png';
-import roundedFeatureTwoEs from '@images/en/time-tracking/What if phone ran out of battery_@2x.png';
-import roundedFeatureTwoFr from '@images/en/time-tracking/What if phone ran out of battery_@2x.png';
+import roundedFeatureTwoDe from '@images/de/time-tracking/DE_What if phone ran out of battery_@2x.png';
+import roundedFeatureTwoEs from '@images/es/time-tracking/ES_What if phone ran out of battery_@2x.png';
+import roundedFeatureTwoFr from '@images/fr/time-tracking/FR_What if phone ran out of battery_@2x.png';
 
 import roundedFeatureThreeEn from '@images/en/time-tracking/Not sure if employees are where they’re supposed to_@2x.png';
-import roundedFeatureThreeDe from '@images/en/time-tracking/Not sure if employees are where they’re supposed to_@2x.png';
-import roundedFeatureThreeEs from '@images/en/time-tracking/Not sure if employees are where they’re supposed to_@2x.png';
-import roundedFeatureThreeFr from '@images/en/time-tracking/Not sure if employees are where they’re supposed to_@2x.png';
+import roundedFeatureThreeDe from '@images/de/time-tracking/DE_Not sure if employees are where they’re supposed to_@2x.png';
+import roundedFeatureThreeEs from '@images/es/time-tracking/ES_Not sure if employees are where they’re supposed to_@2x.png';
+import roundedFeatureThreeFr from '@images/fr/time-tracking/FR_Not sure if employees are where they’re supposed to_@2x.png';
 
 import featureImgLocaleOneEn from '@images/clock-in-out.png';
 import featureImgLocaleOneDe from '@images/de/time-tracking/DE_Clock-in and out@2x.png';
