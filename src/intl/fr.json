@@ -489,7 +489,10 @@
       "noOfUsers": "utilisateurs",
       "monthlyPlan": "Plan mensuel",
       "annualPlan": "Plan annuel - Économisez 29 %.",
-      "perMonth": "/ par mois"
+      "perMonth": "/ par mois",
+      "footerText": "Une solution de suivi des heures très précise pour toute entreprise",
+      "footerLinkOne": "Conditions",
+      "footerLinkTwo": "Politique de confidentialité"
     }
   }
 }

@@ -487,7 +487,10 @@
       "contactSales": "Contact Sales",
       "monthlyPlan": "Monthly Plan",
       "annualPlan": "Annual Plan - Save 29%",
-      "perMonth": "/ month"
+      "perMonth": "/ month",
+      "footerText": "A highly accurate time tracking solution for any company",
+      "footerLinkOne": "Terms",
+      "footerLinkTwo": "Privacy"
     }
   }
 }

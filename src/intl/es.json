@@ -487,7 +487,10 @@
       "noOfUsers": "Usuarios",
       "monthlyPlan": "Plan mensual",
       "annualPlan": "Plan anual - Ahorre un 29%",
-      "perMonth": "/ mes"
+      "perMonth": "/ mes",
+      "footerText": "Una solución de control del tiempo muy precisa para cualquier empresa",
+      "footerLinkOne": "Términos",
+      "footerLinkTwo": "Política de privacidad"
     }
   }
 }

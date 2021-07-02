@@ -196,7 +196,7 @@ const Footer = () => {
             width={86}
             placeholder="none"
           />
-          <p>A highly accurate time tracking solution for any company</p>
+          <p>{Intl.formatMessage({ id: 'pages.miscellaneous.footerText' })}</p>
 
           <div>
             <CustomSelect />
@@ -239,11 +239,11 @@ const Footer = () => {
       <p className={footerBottom}>
         © Specta Labs, Inc.{' '}
         <Link to="/terms" target="_blank">
-          Terms
+          {Intl.formatMessage({ id: 'pages.miscellaneous.footerLinkOne' })}
         </Link>{' '}
         &{' '}
         <Link to="/privacy" target="_blank">
-          Privacy
+          {Intl.formatMessage({ id: 'pages.miscellaneous.footerLinkTwo' })}
         </Link>
       </p>
     </footer>
