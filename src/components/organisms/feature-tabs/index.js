@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 
 import ProductCard from '../product-card';
 import Tabs from './tabs';

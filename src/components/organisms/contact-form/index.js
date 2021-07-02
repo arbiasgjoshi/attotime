@@ -1,5 +1,5 @@
 import React from 'react';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 import { Formik } from 'formik';
 import Button from '@components/atoms/button';
 import * as yup from 'yup';

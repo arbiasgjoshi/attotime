@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby-plugin-intl';
+import { Link } from 'gatsby-plugin-react-intl';
 
 import Icon from '@components/atoms/icon';
 import Title from '@components/molecules/title';
 import CheckCard from '@components/molecules/check-card';
 
 import arrowIcon from '@images/arrowForward@2x.png';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 
 import * as styles from './product-card.module.scss';
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useIntl, changeLocale } from 'gatsby-plugin-intl';
+import { useIntl, changeLocale } from 'gatsby-plugin-react-intl';
 
 import ArrowDown from '@images/arrow-down.svg';
 import {

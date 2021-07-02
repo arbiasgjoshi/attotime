@@ -2,7 +2,7 @@ import React from 'react';
 
 import HeaderComponent from '@components/molecules/header';
 import Seo from '@components/molecules/seo';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 import Divider from '@components/atoms/divider';
 import MainTitleCard from '@components/molecules/main-title-card';
 import HeartIcon from '@images/heart-icon@2x.png';

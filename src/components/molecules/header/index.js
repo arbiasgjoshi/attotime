@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link, useIntl } from 'gatsby-plugin-intl';
+import { Link, useIntl } from 'gatsby-plugin-react-intl';
 
 import Button from '@components/atoms/button';
 import Divider from '@components/atoms/divider';

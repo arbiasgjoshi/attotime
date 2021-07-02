@@ -18,7 +18,7 @@ import {
   contentWrapper,
 } from './blog-template.module.scss';
 import TableOfContent from '../../components/molecules/table-of-content';
-import { Link } from 'gatsby-plugin-intl';
+import { Link } from 'gatsby-plugin-react-intl';
 
 const titleList = [
   'Do your homework',

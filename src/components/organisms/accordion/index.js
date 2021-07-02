@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 import Icon from '@components/atoms/icon';
 
-import { Link } from 'gatsby-plugin-intl';
+import { Link } from 'gatsby-plugin-react-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import {

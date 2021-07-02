@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 
 import NumberCard from '@components/atoms/number-card';
 import Cover from './cover';

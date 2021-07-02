@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useIntl, Link } from 'gatsby-plugin-intl';
+import { useIntl, Link } from 'gatsby-plugin-react-intl';
 
 import Button from '@components/atoms/button';
 

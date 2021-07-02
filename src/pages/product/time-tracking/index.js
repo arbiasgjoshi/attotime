@@ -3,7 +3,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Divider from '@components/atoms/divider';
 import Seo from '@components/molecules/seo';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';
 import VideoCheckList from '@components/organisms/video-checklist';

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 import ConstructionLogo from '@images/construction-industry-logo.svg';
 import PaintingLogo from '@images/painting-industry-logo.svg';
 import HealthcareLogo from '@images/healthcare-industry-logo.svg';

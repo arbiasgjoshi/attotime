@@ -5,7 +5,7 @@ import EmailForm from '@components/atoms/email-form';
 import CheckList from '@components/molecules/check-list';
 
 import * as styles from './industry-main-card.module.scss';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 
 const IndustryMainCard = ({
   smallTitle,

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Slider from 'react-slick';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 
 import Icon from '@components/atoms/icon';
 import Divider from '@components/atoms/divider';

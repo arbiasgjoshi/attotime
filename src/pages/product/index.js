@@ -3,7 +3,7 @@ import React from 'react';
 import HeaderComponent from '@components/molecules/header';
 import MainTitleCard from '@components/molecules/main-title-card';
 import Seo from '@components/molecules/seo';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 import { StaticImage } from 'gatsby-plugin-image';
 import Divider from '@components/atoms/divider';
 import EmailForm from '@components/atoms/email-form';

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import HeaderComponent from '@components/molecules/header';
 import Seo from '@components/molecules/seo';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 // import { FooterLinks } from '@locale/en.js';
 import FooterComponent from '@components/molecules/footer';
 import Divider from '@components/atoms/divider';

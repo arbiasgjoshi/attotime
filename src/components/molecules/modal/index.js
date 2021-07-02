@@ -2,7 +2,7 @@ import React from 'react';
 import { Dialog } from '@reach/dialog';
 import '@reach/dialog/styles.css';
 import EmailForm from '../../atoms/email-form';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 
 import { dialogContainer, textContainer } from './modal.module.scss';
 

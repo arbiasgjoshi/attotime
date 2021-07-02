@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, useIntl } from 'gatsby-plugin-intl';
+import { Link, useIntl } from 'gatsby-plugin-react-intl';
 import { StaticImage } from 'gatsby-plugin-image';
 import googlePlay from '@images/google-play@2x.png';
 import appStore from '@images/apple-store@2x.png';

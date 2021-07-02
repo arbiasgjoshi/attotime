@@ -5,7 +5,7 @@ import Input from '@components/atoms/input';
 import Button from '@components/atoms/button';
 import Icon from '@components/atoms/icon';
 import CheckCard from '@components/molecules/check-card';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 
 import {
   container,

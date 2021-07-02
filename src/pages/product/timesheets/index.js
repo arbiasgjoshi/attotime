@@ -5,7 +5,7 @@ import { container, imageWrapper } from '@styles/main.module.scss';
 import Divider from '@components/atoms/divider';
 import { StaticImage } from 'gatsby-plugin-image';
 import Seo from '@components/molecules/seo';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 import Title from '@components/molecules/title';
 import Header from '@components/molecules/header';
 import Footer from '@components/molecules/footer';

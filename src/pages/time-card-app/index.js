@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Seo from '@components/molecules/seo';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 import Divider from '@components/atoms/divider';
 import Button from '@components/atoms/button';
 import Header from '@components/molecules/header';

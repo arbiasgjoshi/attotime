@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useIntl } from 'gatsby-plugin-intl';
+import { useIntl } from 'gatsby-plugin-react-intl';
 import Slider from 'rc-slider';
 import Draggable from 'react-draggable';
 
