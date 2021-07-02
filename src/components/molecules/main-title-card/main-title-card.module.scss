@@ -25,10 +25,7 @@
       margin-bottom: 0.8rem;
 
       @include max(mobile) {
-        max-width: 95%;
-        word-break: break-all;
-        // overflow-wrap: break-word;
-
+        word-break: break-word;
         margin: 0 auto;
       }
     }

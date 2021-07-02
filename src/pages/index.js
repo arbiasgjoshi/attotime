@@ -283,10 +283,22 @@ const Home = () => {
       <Services />
       <Divider className="style8" />
       <div className={numbers}>
-        <Number title="500,000+" description="Timesheets Produced" />
-        <Number title="150,000+" description="App Downloads" />
-        <Number title="10,000+" description="Companies use Atto" />
-        <Number title="250 million+" description="Minutes Tracked" />
+        <Number
+          title="1.2M +"
+          description={Intl.formatMessage({ id: 'pages.miscellaneous.timesheetsGenerated' })}
+        />
+        <Number
+          title="100k +"
+          description={Intl.formatMessage({ id: 'pages.miscellaneous.jobsCompleted' })}
+        />
+        <Number
+          title="10k +"
+          description={Intl.formatMessage({ id: 'pages.miscellaneous.companiesTrustUs' })}
+        />
+        <Number
+          title="750M +"
+          description={Intl.formatMessage({ id: 'pages.miscellaneous.hoursTracked' })}
+        />
       </div>
       <Divider />
       <Title title={Intl.formatMessage({ id: 'pages.homepage.fourthSectionTitle' })} />

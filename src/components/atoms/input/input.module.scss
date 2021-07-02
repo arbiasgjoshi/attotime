@@ -4,7 +4,7 @@
     content: '';
     width: calc(100% + 0.8rem);
     height: calc(100% + 1rem);
-    @include absolute(left -0.4rem top -0.45rem);
+    @include absolute(left -0.4rem top -0.5rem);
     z-index: -1;
     border-radius: 0.8rem;
     transition: ease all 0.3s;
