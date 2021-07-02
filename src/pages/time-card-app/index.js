@@ -209,7 +209,7 @@ const TimeCardApp = () => {
           styling="smaller"
         />
       </div>
-      <Divider />
+      <Divider className="style4" />
       <SubscribeBanner
         title="#1 Time Card App. Free for 14 days"
         subtitle="Use Atto to track your employees hours with ease"

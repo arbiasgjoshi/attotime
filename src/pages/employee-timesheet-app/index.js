@@ -248,7 +248,7 @@ const EmployeeTimesheetApp = () => {
           styling="smaller"
         />
       </div>
-      <Divider />
+      <Divider className="style4" />
       <SubscribeBanner
         title="Try Atto, completely free for 14 days"
         subtitle="Do away with clunky spreadsheets and paper timesheets"

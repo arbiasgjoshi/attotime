@@ -484,7 +484,7 @@ const Timesheets = () => {
           path="/product/team-activity"
         />
       </div>
-      <Divider className="style3" />
+      <Divider className="style4" />
       <SubscribeBanner
         title={Intl.formatMessage({
           id: 'pages.productTimesheets.subscribeBanner',

@@ -466,7 +466,7 @@ const LocationTracking = () => {
           imageHeight={33}
         />
       </div>
-      <Divider className="style3" />
+      <Divider className="style4" />
       <SubscribeBanner
         title={Intl.formatMessage({
           id: 'pages.productLocationTracking.subscribeBannerTitle',

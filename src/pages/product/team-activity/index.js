@@ -364,7 +364,7 @@ const TeamActivity = () => {
           imageHeight={33}
         />
       </div>
-      <Divider />
+      <Divider className="style4" />
       <SubscribeBanner
         title={Intl.formatMessage({
           id: 'pages.productTeamActivity.subscribeBanner',

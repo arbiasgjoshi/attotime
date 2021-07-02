@@ -76,6 +76,8 @@
 
   > a {
     margin-top: auto;
+    width: 22rem;
+    max-width: 100%;
     // margin-bottom: auto;
   }
 
@@ -84,8 +86,9 @@
     border-radius: 0;
 
     @include max(mobile) {
-      padding: 5rem 3.5rem 0;
+      padding: 3rem 3.5rem 3rem;
       margin-bottom: 2rem;
+      width: 85%;
 
       .textWrapper {
         margin-bottom: 3rem;
