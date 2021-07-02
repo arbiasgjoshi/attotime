@@ -4,6 +4,7 @@ module.exports = {
     description: `Atto is a simple, all-in-one solution that accurately tracks your employees’ time and automates timesheets. Join 10,000+ businesses that trust Atto. Sign up now!`,
     author: `Zetta Technologies`,
     siteUrl: 'https://attotime.com',
+    image: 'src/images/Atto - Social Media Share@2x.png',
   },
   flags: {
     PARALLEL_SOURCING: false,
@@ -26,7 +27,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        icon: 'src/images/atto_favicon@2x.png',
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
