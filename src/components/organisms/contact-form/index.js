@@ -9,14 +9,10 @@ import { formWrapper, formRow, formBtn, formMask } from './contact-form.module.s
 const ContactForm = () => {
   const Intl = useIntl();
   const validationSchema = yup.object().shape({
-    username: yup
+    email: yup
       .string()
       .email('This field must be a valid email')
       .required('Email is a required field'),
-    password: yup
-      .string()
-      .min(6, 'Password must be at least 6 characters')
-      .required('Password is a required field'),
   });
 
   return (
@@ -29,13 +25,10 @@ const ContactForm = () => {
         }}
         validationSchema={validationSchema}
         autoComplete="off"
-        onSubmit={(values) => {
-          console.log(values);
-          //   send({ type: 'SUBMIT', data: values });
-        }}
+        onSubmit={(values) => console.log(values)}
       >
         {({ values, handleChange, handleBlur, handleSubmit, errors }) => (
-          <form method="POST" onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <div className={formRow}>
               <input
                 type="text"
@@ -62,11 +55,12 @@ const ContactForm = () => {
               />
             </div>
             <div className={formBtn}>
-              <Button
+              {/* <Button
                 btnText={Intl.formatMessage({ id: 'pages.contact.sendMessage' })}
                 btnStyle="formBtn"
                 defaultBtn
-              />
+              /> */}
+              <button type="submit">Submit</button>
               <span className={formMask} />
             </div>
           </form>
