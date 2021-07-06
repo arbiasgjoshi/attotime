@@ -29,7 +29,7 @@ function ModalDialog({ showDialog, close, value = 'random@email.com' }) {
       return (
         <>
           <div className={textContainer}>
-            <h4>You were invited</h4>
+            <h4>Account Setup</h4>
             <p>
               {`A confirmation email has been sent to '${value}'. Click on the confirmation link
               in the email to activate your account.`}
