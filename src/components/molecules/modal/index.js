@@ -50,7 +50,7 @@ function ModalDialog({ showDialog, close, value = 'random@email.com' }) {
           checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
           checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
-          onSuccessChange={(val) => setValue(val)}
+          onSuccessChange={(val) => setType(val)}
           style="homepage"
         />
       </>
@@ -59,8 +59,9 @@ function ModalDialog({ showDialog, close, value = 'random@email.com' }) {
 
   return (
     <div>
-      {renderModalTypes(type)}
-      <Dialog className={dialogContainer} isOpen={showDialog} onDismiss={close}></Dialog>
+      <Dialog className={dialogContainer} isOpen={showDialog} onDismiss={close}>
+        {renderModalTypes(type)}
+      </Dialog>
     </div>
   );
 }
