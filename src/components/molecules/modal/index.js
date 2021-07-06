@@ -10,12 +10,26 @@ function ModalDialog({ showDialog, close, value = 'random@email.com' }) {
   const Intl = useIntl();
   const [type, setType] = useState('default');
 
-  const renderModalTypes = (val) => {
-    if (val === 'success') {
+  const renderModalTypes = (data) => {
+    if (data.message === 'success') {
       return (
         <>
           <div className={textContainer}>
             <h4>Confirm your email</h4>
+            <p>
+              {`A confirmation email has been sent to '${value}'. Click on the confirmation link
+              in the email to activate your account.`}
+            </p>
+          </div>
+        </>
+      );
+    }
+
+    if (data.message === 'invited') {
+      return (
+        <>
+          <div className={textContainer}>
+            <h4>You were invited</h4>
             <p>
               {`A confirmation email has been sent to '${value}'. Click on the confirmation link
               in the email to activate your account.`}

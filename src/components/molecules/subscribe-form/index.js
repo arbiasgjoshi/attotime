@@ -29,7 +29,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes }) => {
       .then((data) => {
         if (data.message === 'invited') {
           console.log('data');
-          onSuccessRes(data.message);
+          onSuccessRes(data);
           // add token paramter to app.attotime.com/sign-up + data.token
           // toggle secondary modal
           //
