@@ -9,14 +9,12 @@ import { useIntl } from 'gatsby-plugin-react-intl';
 
 import { formWrapper } from './form.module.scss';
 
-const SubscribeForm = ({ placeholder }) => {
+const SubscribeForm = ({ placeholder, onSuccessRes }) => {
   const Intl = useIntl();
 
   const validationSchema = yup.object().shape({
     email: yup.string().email('This field must be a valid email'),
   });
-
-  // const submitRequest = (val) => {};
 
   const signUpTrial = (val) => {
     const requestOptions = {
@@ -28,7 +26,15 @@ const SubscribeForm = ({ placeholder }) => {
     };
     fetch('/confirmation', requestOptions)
       .then((response) => response.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        if (data.message === 'invited') {
+          console.log('data');
+          onSuccessRes(data.message);
+          // add token paramter to app.attotime.com/sign-up + data.token
+          // toggle secondary modal
+          //
+        }
+      });
   };
 
   return (

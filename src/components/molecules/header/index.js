@@ -421,7 +421,7 @@ const HeaderComponent = ({ headerStyle }) => {
     <header
       className={`${headerWrapper} ${headerStyle && pricingStyle} ${shadow && onScrollStyle}`}
     >
-      <Modal close={closeModal} showDialog={showDialog} />
+      <Modal close={closeModal} showDialog={showDialog} modalType={default}/>
       <div className={container}>
         <div className={leftNav}>
           <Link to="/">
