@@ -95,7 +95,7 @@ module.exports = {
     {
       resolve: `gatsby-source-iubenda-documents`,
       options: {
-        documentIds: [`<77119290>`, `<47240763>`, `<85558244>`, `<97533579>`],
+        documentIds: [`77119290`, `47240763`, `85558244`, `97533579`],
       },
     },
     {

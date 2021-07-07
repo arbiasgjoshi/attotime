@@ -35,10 +35,17 @@
     .textPush {
       margin-bottom: 1rem;
     }
+
+    p {
+      span {
+        font-weight: 500;
+      }
+    }
   }
 
+  > a,
   > button {
-    margin: 1.5rem;
+    margin: 1.5rem auto;
   }
 }
 

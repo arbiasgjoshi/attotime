@@ -45,7 +45,7 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
           <div className={textContainer}>
             <h4>Confirm your email</h4>
             <p>
-              {`A confirmation email has been sent to '${data.email}'. Click on the confirmation link
+              {`A confirmation email has been sent to <span>'${data.email}'</span>. Click on the confirmation link
               in the email to activate your account.`}
             </p>
           </div>
@@ -60,7 +60,7 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
           <div className={textContainer}>
             <h4>Account Setup</h4>
             <p className={textPush}>
-              {`${data.data.name} has invited you to join '${data.data.company}'. Join the rest of the team today`}
+              {`<span>${data.data.name}</span> has invited you to join <span>'${data.data.company}</span>'. Join the rest of the team today`}
             </p>
             <a href={`https://app.attotime.com/signup/${data.data.token}`}>
               <Button btnStyle="teal" btnText="Join Team" />
