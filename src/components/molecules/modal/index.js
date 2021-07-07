@@ -7,12 +7,35 @@ import { useIntl } from 'gatsby-plugin-react-intl';
 
 import { dialogContainer, textContainer, textPush } from './modal.module.scss';
 
-function ModalDialog({ showDialog, setFormValues, close, hasValues, onDelete }) {
+function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
   const Intl = useIntl();
-  const [type, setType] = useState(type);
 
   const stateSucceeded = (val) => {
     setFormValues(val);
+  };
+
+  // const deleteInvite = (val) => {
+  //   const requestOptions = {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({ email: val }),
+  //   };
+  //   fetch('/delete-invite', requestOptions)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       const parsedData = {
+  //         data,
+  //         email: val,
+  //       };
+
+  //       onSuccessRes(parsedData);
+  //     });
+  // };
+
+  const deleteInvite = (obj) => {
+    setFormValues(obj);
   };
 
   const renderModalTypes = (data) => {
@@ -21,12 +44,12 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues, onDelete }) 
         <>
           <div className={textContainer}>
             <h4>Confirm your email</h4>
-            <p className={textPush}>
+            <p>
               {`A confirmation email has been sent to '${data.email}'. Click on the confirmation link
               in the email to activate your account.`}
             </p>
-            <Button btnStyle="teal" btnText="Continue" />
           </div>
+          <Button btnStyle="teal" btnText="Continue" onBtnClick={() => close()} />
         </>
       );
     }
@@ -43,7 +66,11 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues, onDelete }) 
               <Button btnStyle="teal" btnText="Join Team" />
             </a>
             <p>or</p>
-            <Button btnStyle="black" btnText="Setup new Account" onBtnClick={() => {}} />
+            <Button
+              btnStyle="black"
+              btnText="Setup new Account"
+              onBtnClick={() => deleteInvite({ email: data?.data?.email, action: 'delete' })}
+            />
           </div>
         </>
       );

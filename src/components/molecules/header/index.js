@@ -414,10 +414,29 @@ const HeaderComponent = ({ headerStyle }) => {
     },
   ];
 
-  const toggleDeleteInvite = () => {};
+  const toggleDeleteInvite = (data) => {
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email: data.email }),
+    };
+    fetch('/confirmation', requestOptions)
+      .then((response) => response.json())
+      .then((res) => {
+        setHasValues(res);
+        setShowDialog(true);
+      });
+  };
 
   const formSuccessState = (val) => {
-    setValues(val);
+    closeModal();
+    if (val?.action !== 'delete') {
+      setValues(val);
+    } else {
+      toggleDeleteInvite(val);
+    }
   };
 
   useEffect(() => {
@@ -425,8 +444,8 @@ const HeaderComponent = ({ headerStyle }) => {
       console.log('At the header, we are showing these values:', values);
 
       setTimeout(() => {
-        console.log('After all, the modal will show now');
-        showDialog(true);
+        // console.log('After all, the modal will show now');
+        setShowDialog(true);
       }, 1500);
     }
   }, [values]);

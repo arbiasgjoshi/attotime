@@ -219,7 +219,12 @@ const Home = () => {
         description={Intl.formatMessage({ id: 'pages.homepage.metaDescription' })}
       />
       <HeaderComponent />
-      <Modal close={closeModal} showDialog={showDialog} hasValues={values} />
+      <Modal
+        close={closeModal}
+        showDialog={showDialog}
+        hasValues={values}
+        setFormValues={(formValues) => formSuccessState(formValues)}
+      />
       <MainTitle
         title={Intl.formatMessage({ id: 'pages.homepage.title' })}
         subtitle={Intl.formatMessage({ id: 'pages.homepage.description' })}
