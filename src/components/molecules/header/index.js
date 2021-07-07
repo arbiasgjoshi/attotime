@@ -420,10 +420,11 @@ const HeaderComponent = ({ headerStyle }) => {
 
   useEffect(() => {
     if (values) {
-      console.log(values);
+      console.log('At the header, we are showing these values:', values);
 
       setTimeout(() => {
-        console.log('modal will show now');
+        console.log('After all, the modal will show now');
+        showDialog(true);
       }, 1500);
     }
   }, [values]);
