@@ -5,27 +5,23 @@ import EmailForm from '../../atoms/email-form';
 import Button from '../../atoms/button';
 import { useIntl } from 'gatsby-plugin-react-intl';
 
-import { dialogContainer, textContainer } from './modal.module.scss';
+import { dialogContainer, textContainer, textPush } from './modal.module.scss';
 
 function ModalDialog({ showDialog, setFormValues, close, hasValues, onDelete }) {
   const Intl = useIntl();
   const [type, setType] = useState(type);
 
   const stateSucceeded = (val) => {
-    console.log('modal dialog state succeeded', val);
     setFormValues(val);
-    setTimeout(() => {
-      close();
-    }, 1500);
   };
 
   const renderModalTypes = (data) => {
-    if (data.message === 'Signup Succeeded') {
+    if (data?.data?.message === 'Signup Succeeded') {
       return (
         <>
           <div className={textContainer}>
             <h4>Confirm your email</h4>
-            <p>
+            <p className={textPush}>
               {`A confirmation email has been sent to '${data.email}'. Click on the confirmation link
               in the email to activate your account.`}
             </p>
@@ -35,12 +31,12 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues, onDelete }) 
       );
     }
 
-    if (data.message === 'invited') {
+    if (data?.data?.message === 'invited') {
       return (
         <>
           <div className={textContainer}>
             <h4>Account Setup</h4>
-            <p>
+            <p className={textPush}>
               {`${data.data.name} has invited you to join '${data.data.company}'. Join the rest of the team today`}
             </p>
             <a href={`https://app.attotime.com/signup/${data.data.token}`}>
