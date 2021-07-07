@@ -6,9 +6,20 @@ import { useIntl } from 'gatsby-plugin-react-intl';
 
 import { dialogContainer, textContainer } from './modal.module.scss';
 
-function ModalDialog({ showDialog, close, value = 'random@email.com' }) {
+function ModalDialog({ showDialog, setFormValues, close, value = 'random@email.com' }) {
   const Intl = useIntl();
+  // const [email, setEmail] = useState('');
   const [type, setType] = useState('default');
+
+  const stateSucceeded = (val) => {
+    // setEmail(val.email);
+    // console.log(val);
+    setFormValues(val);
+    setTimeout(() => {
+      close();
+      // showDialog();
+    }, 1500);
+  };
 
   const renderModalTypes = (data) => {
     if (data.message === 'success') {
@@ -50,7 +61,7 @@ function ModalDialog({ showDialog, close, value = 'random@email.com' }) {
           checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
           checkItemThree={Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}
-          onSuccessChange={(val) => setType(val)}
+          onSuccessChange={(val) => stateSucceeded(val)}
           style="homepage"
         />
       </>

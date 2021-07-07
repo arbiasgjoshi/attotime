@@ -79,6 +79,7 @@ const HeaderComponent = ({ headerStyle }) => {
   const [activeItem, setActiveItem] = useState(null);
 
   const [showDialog, setShowDialog] = useState(false);
+  const [values, setValues] = useState({});
   const openModal = () => setShowDialog(true);
   const closeModal = () => setShowDialog(false);
 
@@ -413,6 +414,20 @@ const HeaderComponent = ({ headerStyle }) => {
     },
   ];
 
+  const formSuccessState = (val) => {
+    setValues(val);
+  };
+
+  useEffect(() => {
+    if (values) {
+      console.log(values);
+
+      setTimeout(() => {
+        console.log('modal will show now');
+      }, 1500);
+    }
+  }, [values]);
+
   useEffect(() => {
     menuStateConfig();
   }, [overMenu, aboveLinks]);
@@ -421,7 +436,12 @@ const HeaderComponent = ({ headerStyle }) => {
     <header
       className={`${headerWrapper} ${headerStyle && pricingStyle} ${shadow && onScrollStyle}`}
     >
-      <Modal close={closeModal} showDialog={showDialog} />
+      <Modal
+        close={closeModal}
+        showDialog={showDialog}
+        hasValues={values}
+        setFormValues={(formValues) => formSuccessState(formValues)}
+      />
       <div className={container}>
         <div className={leftNav}>
           <Link to="/">
