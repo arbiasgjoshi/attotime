@@ -58,7 +58,7 @@ const Home = () => {
   const Intl = useIntl();
   const [showDialog, setShowDialog] = useState(false);
   const [values, setValues] = useState({});
-  const openModal = () => setShowDialog(true);
+  const openModal = () => setShowDialog(false);
   const closeModal = () => setShowDialog(false);
 
   const [settings, setSettings] = useState({

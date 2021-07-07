@@ -79,7 +79,7 @@ const HeaderComponent = ({ headerStyle }) => {
   const [activeItem, setActiveItem] = useState(null);
 
   const [showDialog, setShowDialog] = useState(false);
-  const [values, setValues] = useState({});
+  const [values, setValues] = useState(null);
   const openModal = () => setShowDialog(true);
   const closeModal = () => setShowDialog(false);
 
@@ -441,10 +441,7 @@ const HeaderComponent = ({ headerStyle }) => {
 
   useEffect(() => {
     if (values) {
-      console.log('At the header, we are showing these values:', values);
-
       setTimeout(() => {
-        // console.log('After all, the modal will show now');
         setShowDialog(true);
       }, 1500);
     }

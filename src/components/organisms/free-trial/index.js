@@ -31,6 +31,7 @@ const FreeTrial = ({ title, description, list = [] }) => {
             btnText={Intl.formatMessage({ id: 'pages.miscellaneous.freeTrial14Days' })}
             btnMobileText={Intl.formatMessage({ id: 'pages.miscellaneous.start14Days' })}
             btnStyle="black"
+            onBtnClick={}
           />
           <div className={ticksWrapper}>
             <div className={tickItem}>
