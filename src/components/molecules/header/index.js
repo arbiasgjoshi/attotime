@@ -414,6 +414,8 @@ const HeaderComponent = ({ headerStyle }) => {
     },
   ];
 
+  const toggleDeleteInvite = () => {};
+
   const formSuccessState = (val) => {
     setValues(val);
   };
@@ -441,6 +443,7 @@ const HeaderComponent = ({ headerStyle }) => {
         close={closeModal}
         showDialog={showDialog}
         hasValues={values}
+        onDelete={toggleDeleteInvite}
         setFormValues={(formValues) => formSuccessState(formValues)}
       />
       <div className={container}>

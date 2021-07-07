@@ -7,18 +7,15 @@ import { useIntl } from 'gatsby-plugin-react-intl';
 
 import { dialogContainer, textContainer } from './modal.module.scss';
 
-function ModalDialog({ showDialog, setFormValues, close, type, hasValues }) {
+function ModalDialog({ showDialog, setFormValues, close, hasValues, onDelete }) {
   const Intl = useIntl();
-  // const [email, setEmail] = useState('');
   const [type, setType] = useState(type);
 
   const stateSucceeded = (val) => {
-    // setEmail(val.email);
     console.log('modal dialog state succeeded', val);
     setFormValues(val);
     setTimeout(() => {
       close();
-      // showDialog();
     }, 1500);
   };
 
@@ -32,6 +29,7 @@ function ModalDialog({ showDialog, setFormValues, close, type, hasValues }) {
               {`A confirmation email has been sent to '${data.email}'. Click on the confirmation link
               in the email to activate your account.`}
             </p>
+            <Button btnStyle="teal" btnText="Continue" />
           </div>
         </>
       );
@@ -45,13 +43,11 @@ function ModalDialog({ showDialog, setFormValues, close, type, hasValues }) {
             <p>
               {`${data.data.name} has invited you to join '${data.data.company}'. Join the rest of the team today`}
             </p>
-            <a href="">
-              <Button btnStyle="teal" />
+            <a href={`https://app.attotime.com/signup/${data.data.token}`}>
+              <Button btnStyle="teal" btnText="Join Team" />
             </a>
             <p>or</p>
-            <a href="">
-              <Button btnStyle="black" />
-            </a>
+            <Button btnStyle="black" btnText="Setup new Account" onBtnClick={() => {}} />
           </div>
         </>
       );
@@ -78,7 +74,7 @@ function ModalDialog({ showDialog, setFormValues, close, type, hasValues }) {
   return (
     <div>
       <Dialog className={dialogContainer} isOpen={showDialog} onDismiss={close}>
-        {renderModalTypes(type)}
+        {renderModalTypes(hasValues)}
       </Dialog>
     </div>
   );
