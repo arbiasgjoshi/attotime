@@ -20,13 +20,13 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
 
   const confirmLabel = (lang) => {
     if (lang === 'fr') {
-      return '';
+      return 'Confirmez votre e-mail';
     }
     if (lang === 'de') {
-      return '';
+      return 'Bestätigen Sie Ihre E-Mail-Adresse';
     }
     if (lang === 'es') {
-      return '';
+      return 'Confirme su correo electrónico';
     }
     return 'Confirm your email';
   };
@@ -95,9 +95,8 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
     if (lang === 'fr') {
       return (
         <span>
-          <strong>{data.name}</strong> vous a invité(e) à rejoindre
-          <strong>{data.company}</strong> le compte de société. Rejoignez le reste de l’équipe dès
-          aujourd’hui
+          <strong>{data.name}</strong> vous a invité(e) à rejoindre <strong>{data.company}</strong>{' '}
+          le compte de société. Rejoignez le reste de l’équipe dès aujourd’hui
         </span>
       );
     }
@@ -120,8 +119,8 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
     }
     return (
       <span>
-        <strong>{data.name}</strong> has invited you to join
-        <strong>{data.company}</strong> company account. Join the rest of the team today
+        <strong>{data.name}</strong> has invited you to join <strong>{data.company}</strong> company
+        account. Join the rest of the team today
       </span>
     );
   };
@@ -171,7 +170,7 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
           <div className={textContainer}>
             <span className={greenArrow} />
             <h4>{confirmLabel(Intl.locale)}</h4>
-            <p>{confirmDesc(Intl.locale)}</p>
+            <p>{confirmDesc(Intl.locale, data)}</p>
           </div>
           <Button btnStyle="gray" btnText={confirmButton(Intl.locale)} onBtnClick={() => close()} />
         </>
@@ -189,7 +188,7 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
             </a>
             <p>{orLabel(Intl.locale)}</p>
             <Button
-              btnStyle="black"
+              btnStyle="gray"
               btnText={buttonLabelTwo(Intl.locale)}
               onBtnClick={() => deleteInvite({ email: data?.email, action: 'delete' })}
             />

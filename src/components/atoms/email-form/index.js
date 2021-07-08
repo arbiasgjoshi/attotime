@@ -15,7 +15,7 @@ const EmailForm = ({
   changeModal,
 }) => (
   <div className={`${styles.container} ${style ? styles[style] : ''}`}>
-    <SubscribeForm placeholder={placeholder} onSuccessRes={changeModal} />
+    <SubscribeForm placeholder={placeholder} onSuccessRes={(val) => changeModal(val)} />
     <div className={styles.checkItems}>
       <div className={styles.itemWrapper}>
         <Icon iconClass="tick" />

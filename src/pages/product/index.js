@@ -79,6 +79,9 @@ const Product = () => {
     closeModal();
     if (val?.action !== 'delete') {
       setValues(val);
+      setTimeout(() => {
+        openModal();
+      }, 500);
     } else {
       toggleDeleteInvite(val);
     }
@@ -317,6 +320,7 @@ const Product = () => {
       />
       <div className={imageFormWrapper}>
         <EmailForm
+          changeModal={(val) => formSuccessState(val)}
           placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
           checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}
