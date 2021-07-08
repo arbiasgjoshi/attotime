@@ -54,8 +54,6 @@ const SubscribeForm = ({ placeholder, onSuccessRes }) => {
               value={values.email}
               onChange={handleChange}
               onBlur={handleBlur}
-              // onChange={handleChange}
-              // onBlur={handleBlur}
             />
           </div>
           <Button
@@ -70,6 +68,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes }) => {
 
 SubscribeForm.propTypes = {
   placeholder: PropTypes.string,
+  onSuccessRes: PropTypes.func,
 };
 
 export default SubscribeForm;
