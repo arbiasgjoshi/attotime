@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
 import { Link, useIntl } from 'gatsby-plugin-react-intl';
 
 import Button from '@components/atoms/button';
@@ -417,7 +417,7 @@ const HeaderComponent = ({ headerStyle }) => {
       .then((response) => response.json())
       .then((res) => {
         setValues(res);
-        setShowDialog(true);
+        openModal();
       });
   };
 

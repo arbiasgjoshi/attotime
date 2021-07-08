@@ -139,7 +139,7 @@ const TimeTracking = () => {
       .then((response) => response.json())
       .then((res) => {
         setValues(res);
-        setShowDialog(true);
+        openModal();
       });
   };
 
