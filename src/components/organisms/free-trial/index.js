@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// import Input from '@components/atoms/input';
-import { defaultInput } from '@components/atoms/input/input.module.scss';
+import { defaultInput, inputWrapper } from '@components/atoms/input/input.module.scss';
 import { formWrapper } from '@components/molecules/subscribe-form/form.module.scss';
 import Button from '@components/atoms/button';
 import Icon from '@components/atoms/icon';
@@ -61,15 +60,17 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes }) => {
           >
             {({ values, handleSubmit, handleChange, handleBlur, errors }) => (
               <form method="POST" onSubmit={handleSubmit}>
-                <input
-                  placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
-                  className={defaultInput}
-                  name="email"
-                  type="email"
-                  value={values.email}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                />
+                <div className={inputWrapper}>
+                  <input
+                    placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
+                    className={defaultInput}
+                    name="email"
+                    type="email"
+                    value={values.email}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                </div>
                 <Button
                   btnText={Intl.formatMessage({ id: 'pages.miscellaneous.freeTrial14Days' })}
                   btnMobileText={Intl.formatMessage({ id: 'pages.miscellaneous.start14Days' })}
