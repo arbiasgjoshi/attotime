@@ -14,32 +14,12 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
     setFormValues(val);
   };
 
-  // const deleteInvite = (val) => {
-  //   const requestOptions = {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify({ email: val }),
-  //   };
-  //   fetch('/delete-invite', requestOptions)
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       const parsedData = {
-  //         data,
-  //         email: val,
-  //       };
-
-  //       onSuccessRes(parsedData);
-  //     });
-  // };
-
   const deleteInvite = (obj) => {
     setFormValues(obj);
   };
 
   const renderModalTypes = (data) => {
-    if (data?.data?.message === 'Signup Succeeded') {
+    if (data?.message === 'Signup Succeeded') {
       return (
         <>
           <div className={textContainer}>
@@ -54,22 +34,22 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
       );
     }
 
-    if (data?.data?.message === 'invited') {
+    if (data?.message === 'invited') {
       return (
         <>
           <div className={textContainer}>
             <h4>Account Setup</h4>
             <p className={textPush}>
-              {`<span>${data.data.name}</span> has invited you to join <span>'${data.data.company}</span>'. Join the rest of the team today`}
+              {`<span>${data.data.name}</span> has invited you to join <span>'${data?.company}</span>'. Join the rest of the team today`}
             </p>
-            <a href={`https://app.attotime.com/signup/${data.data.token}`}>
+            <a href={`https://app.attotime.com/signup/${data?.token}`}>
               <Button btnStyle="teal" btnText="Join Team" />
             </a>
             <p>or</p>
             <Button
               btnStyle="black"
               btnText="Setup new Account"
-              onBtnClick={() => deleteInvite({ email: data?.data?.email, action: 'delete' })}
+              onBtnClick={() => deleteInvite({ email: data?.email, action: 'delete' })}
             />
           </div>
         </>

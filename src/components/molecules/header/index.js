@@ -309,7 +309,7 @@ const HeaderComponent = ({ headerStyle }) => {
   const resourceSection = () => (
     <div className={`${menuSection} ${resourcesMenu} ${contentPadding}`}>
       <div className={menuItems}>
-        <Link className={menuItem} activeClassName={activeMenuItem} to="/help-center">
+        <a className={menuItem} activeClassName={activeMenuItem} href="https://help.attotime.com/">
           <div className={menuIcon}>
             <HelpCenterLogo />
           </div>
@@ -317,7 +317,7 @@ const HeaderComponent = ({ headerStyle }) => {
             <h6>{Intl.formatMessage({ id: 'header.menu.helpCenterLabel' })}</h6>
             <p>{Intl.formatMessage({ id: 'header.menu.helpCenterDesc' })}</p>
           </div>
-        </Link>
+        </a>
         <Link className={menuItem} activeClassName={activeMenuItem} to="/blog">
           <div className={menuIcon}>
             <BlogLogo />
@@ -361,15 +361,6 @@ const HeaderComponent = ({ headerStyle }) => {
 
     return menuClass;
   };
-
-  // const checkMenuStatus = () => {};
-
-  // const triggerItem = (val) => (
-  //   <div className={triggerItemWrap}>
-  //     <h5>{val}</h5>
-  //     <Icon iconClass="arrow-down" />
-  //   </div>
-  // );
 
   const toggleMenu = () => {
     setOpenMobile(!openMobile);

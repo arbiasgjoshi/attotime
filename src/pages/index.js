@@ -365,6 +365,10 @@ const Home = () => {
         title={Intl.formatMessage({ id: 'pages.homepage.subscribeTitle' })}
         description={Intl.formatMessage({ id: 'pages.homepage.subscribeDesc' })}
         list={checkList}
+        onSuccessRes={(val) => {
+          setValues(val);
+          showDialog();
+        }}
       />
       <FooterComponent />
     </div>
