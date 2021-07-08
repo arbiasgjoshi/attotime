@@ -803,6 +803,7 @@ const TimeTracking = () => {
       <MainTitleCard
         hasParagraph
         showButton
+        toggleModal={() => openModal()}
         paragraph={Intl.formatMessage({ id: 'pages.productTimeTracking.name' })}
         title={Intl.formatMessage({ id: 'pages.productTimeTracking.bannerTitle' })}
         subtitle={Intl.formatMessage({ id: 'pages.productTimeTracking.bannerDescription' })}

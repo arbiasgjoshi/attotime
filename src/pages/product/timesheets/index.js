@@ -368,6 +368,7 @@ const Timesheets = () => {
         maxParagraphWidth={760}
         hasParagraph
         showButton
+        toggleModal={() => openModal()}
         paragraph={Intl.formatMessage({ id: 'pages.productTimesheets.name' })}
         title={Intl.formatMessage({ id: 'pages.productTimesheets.bannerTitle' })}
         subtitle={Intl.formatMessage({ id: 'pages.productTimesheets.bannerDescription' })}

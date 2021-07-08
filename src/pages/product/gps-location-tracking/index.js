@@ -354,6 +354,7 @@ const LocationTracking = () => {
         title={Intl.formatMessage({ id: 'pages.productLocationTracking.bannerTitle' })}
         subtitle={Intl.formatMessage({ id: 'pages.productLocationTracking.bannerDescription' })}
         hasParagraph
+        toggleModal={() => openModal()}
         showButton
       />
       <Divider className="style2" />

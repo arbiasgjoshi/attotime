@@ -263,6 +263,7 @@ const TeamActivity = () => {
       <MainTitleCard
         hasParagraph
         showButton
+        toggleModal={() => openModal()}
         paragraph={Intl.formatMessage({ id: 'pages.productTeamActivity.name' })}
         title={Intl.formatMessage({ id: 'pages.productTeamActivity.bannerTitle' })}
       />
