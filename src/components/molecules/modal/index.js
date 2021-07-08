@@ -5,7 +5,15 @@ import EmailForm from '../../atoms/email-form';
 import Button from '../../atoms/button';
 import { useIntl } from 'gatsby-plugin-react-intl';
 
-import { dialogContainer, textContainer, textPush, greenArrow } from './modal.module.scss';
+import {
+  dialogContainer,
+  textContainer,
+  textPush,
+  greenArrow,
+  noMargin,
+  pushButton,
+  pushAround,
+} from './modal.module.scss';
 
 function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
   const Intl = useIntl();
@@ -35,7 +43,7 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
     if (lang === 'fr') {
       return (
         <p>
-          Un e-mail de confirmation a été envoyé à<span>{data.email}</span>. Cliquez sur le lien de
+          Un e-mail de confirmation a été envoyé à <span>{data.email}</span>. Cliquez sur le lien de
           confirmation qu’il contient pour activer votre compte.
         </p>
       );
@@ -51,16 +59,15 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
     if (lang === 'es') {
       return (
         <p>
-          Se ha enviado un correo electrónico de confirmación a<span>{data.email}</span>. Haga clic
+          Se ha enviado un correo electrónico de confirmación a <span>{data.email}</span>. Haga clic
           en el enlace de confirmación del correo electrónico para activar su cuenta.
         </p>
       );
     }
     return (
       <p>
-        A confirmation email has been sent to
-        <span>{data.email}</span>. Click on the confirmation link in the email to activate your
-        account.
+        A confirmation email has been sent to <span>{data.email}</span>. Click on the confirmation
+        link in the email to activate your account.
       </p>
     );
   };
@@ -137,6 +144,7 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
     }
     return 'or';
   };
+
   const buttonLabelOne = (lang) => {
     if (lang === 'fr') {
       return 'Rejoindre l’équipe';
@@ -167,12 +175,16 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
     if (data?.message === 'Signup Succeeded') {
       return (
         <>
-          <div className={textContainer}>
+          <div className={`${textContainer} ${pushButton} ${noMargin}`}>
             <span className={greenArrow} />
             <h4>{confirmLabel(Intl.locale)}</h4>
             <p>{confirmDesc(Intl.locale, data)}</p>
+            <Button
+              btnStyle="gray"
+              btnText={confirmButton(Intl.locale)}
+              onBtnClick={() => close()}
+            />
           </div>
-          <Button btnStyle="gray" btnText={confirmButton(Intl.locale)} onBtnClick={() => close()} />
         </>
       );
     }
@@ -180,7 +192,7 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
     if (data?.message === 'invited') {
       return (
         <>
-          <div className={textContainer}>
+          <div className={`${textContainer} ${noMargin}`}>
             <h4>{accountLabel(Intl.locale)}</h4>
             <p className={textPush}>{accountText(Intl.locale, data)}</p>
             <a href={`https://app.attotime.com/signup/${data.token}`}>

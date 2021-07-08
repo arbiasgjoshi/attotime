@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import { useIntl } from 'gatsby-plugin-react-intl';
 
 import Icon from '@components/atoms/icon';
+import Button from '@components/atoms/button';
 import Divider from '@components/atoms/divider';
 import EmailForm from '@components/atoms/email-form';
 import Number from '@components/atoms/number-card';
@@ -58,7 +59,7 @@ const Home = () => {
   const Intl = useIntl();
   const [showDialog, setShowDialog] = useState(false);
   const [values, setValues] = useState({});
-  const openModal = () => setShowDialog(false);
+  const openModal = () => setShowDialog(true);
   const closeModal = () => setShowDialog(false);
 
   const [settings, setSettings] = useState({
@@ -253,6 +254,7 @@ const Home = () => {
         hasValues={values}
         setFormValues={(formValues) => formSuccessState(formValues)}
       />
+
       <MainTitle
         title={Intl.formatMessage({ id: 'pages.homepage.title' })}
         subtitle={Intl.formatMessage({ id: 'pages.homepage.description' })}
@@ -270,6 +272,7 @@ const Home = () => {
         {imageOneLocale(Intl.locale)}
         {mobileLocale(Intl.locale)}
       </div>
+
       <Divider className="style4" />
       <div className={sliderWrapper}>
         <Slider {...settings} className={carouselWrapper} width={960}>

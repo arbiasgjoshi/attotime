@@ -24,13 +24,17 @@
 
   @include min(desktop) {
     padding: 8.3rem 10rem;
-    height: 40rem;
+    min-height: 40rem;
   }
 
   .textContainer {
     @include flex-align(center, center);
     flex-direction: column;
     margin-bottom: 5rem;
+
+    &.noMargin {
+      margin-bottom: 0;
+    }
 
     .greenArrow {
       width: 4rem;
@@ -39,6 +43,13 @@
       background: url('@images/green-confirm-arrow.png');
       background-size: contain;
       background-position: center;
+    }
+
+    &.pushButton {
+      > button {
+        margin-top: 4rem !important;
+        margin-bottom: 0;
+      }
     }
 
     h4 {
@@ -52,10 +63,12 @@
 
     .pushAround {
       text-align: center;
-      margin: 2.5rem 0;
+      margin: 2rem 0;
     }
 
     p {
+      text-align: center;
+      strong,
       span {
         font-weight: 500;
       }
@@ -63,8 +76,9 @@
 
     a,
     button {
-      margin: 1.5rem auto;
-      width: 18rem;
+      margin: 0.5rem auto;
+      min-width: 19.5rem;
+      max-width: 20rem;
     }
   }
 }
