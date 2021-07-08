@@ -69,7 +69,7 @@ const Construction = () => {
       },
       body: JSON.stringify({ email: data.email }),
     };
-    fetch('/confirmation', requestOptions)
+    fetch('/delete-invite', requestOptions)
       .then((response) => response.json())
       .then((res) => {
         setValues(res);
