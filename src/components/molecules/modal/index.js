@@ -186,7 +186,7 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
             <a href={`https://app.attotime.com/signup/${data.token}`}>
               <Button btnStyle="teal" btnText={buttonLabelOne(Intl.locale)} />
             </a>
-            <p>{orLabel(Intl.locale)}</p>
+            <p className={pushAround}>{orLabel(Intl.locale)}</p>
             <Button
               btnStyle="gray"
               btnText={buttonLabelTwo(Intl.locale)}
