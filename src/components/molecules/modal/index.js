@@ -173,7 +173,7 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
             <h4>{confirmLabel(Intl.locale)}</h4>
             <p>{confirmDesc(Intl.locale)}</p>
           </div>
-          <Button btnStyle="teal" btnText={confirmButton(Intl.locale)} onBtnClick={() => close()} />
+          <Button btnStyle="gray" btnText={confirmButton(Intl.locale)} onBtnClick={() => close()} />
         </>
       );
     }
