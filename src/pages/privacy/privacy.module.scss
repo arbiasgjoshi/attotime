@@ -1,9 +1,10 @@
 .privacyPolicyStyle {
+  padding: 0 2rem;
   p,
   ul li,
   ol li {
-    font-size: 2.4rem;
-    line-height: 2.8rem;
+    font-size: 2.2rem;
+    line-height: 3rem;
     margin-bottom: 1rem;
     color: var(--color-11);
   }
@@ -16,9 +17,7 @@
   ul,
   ol {
     list-style: inherit;
-    padding-left: 2.5rem;
-    margin: 1.5rem 0;
-    padding-top: 2rem;
+    margin: 3rem 2rem 2rem 3rem;
   }
 
   ul li,

@@ -9,8 +9,9 @@ import Footer from '@components/molecules/footer';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
 
 import { container } from '@styles/main.module.scss';
+import { privacyPolicyStyle } from '../privacy/privacy.module.scss';
 
-const Terms = () => {
+const Terms = ({ data }) => {
   const Intl = useIntl();
 
   const renderPrivacyPolicy = (lang) => {
@@ -65,7 +66,7 @@ const Terms = () => {
 };
 
 export const query = graphql`
-  query PrivacyQuery {
+  query TermsQuery {
     allIubendaDocument {
       nodes {
         documentId
