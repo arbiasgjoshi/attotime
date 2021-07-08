@@ -197,7 +197,7 @@ const Home = () => {
       },
       body: JSON.stringify({ email: data.email }),
     };
-    fetch('/confirmation', requestOptions)
+    fetch('/delete-invite', requestOptions)
       .then((response) => response.json())
       .then((res) => {
         setValues(res);
@@ -209,6 +209,9 @@ const Home = () => {
     closeModal();
     if (val?.action !== 'delete') {
       setValues(val);
+      setTimeout(() => {
+        openModal();
+      }, 500);
     } else {
       toggleDeleteInvite(val);
     }
@@ -256,7 +259,7 @@ const Home = () => {
       />
       <div className={formRotated}>
         <EmailForm
-          changeModal={(val) => console.log(val)}
+          changeModal={(val) => formSuccessState(val)}
           placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
           checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
           checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}

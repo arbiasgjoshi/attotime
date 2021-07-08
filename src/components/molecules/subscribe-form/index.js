@@ -27,6 +27,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes }) => {
     fetch('/confirmation', requestOptions)
       .then((response) => response.json())
       .then((data) => {
+        console.log('success data is:', data);
         onSuccessRes(data);
       });
   };

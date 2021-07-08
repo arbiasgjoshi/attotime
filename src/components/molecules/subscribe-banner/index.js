@@ -47,6 +47,9 @@ const SubscribeBanner = ({
     closeModal();
     if (val?.action !== 'delete') {
       setValues(val);
+      setTimeout(() => {
+        openModal();
+      }, 500);
     } else {
       toggleDeleteInvite(val);
     }
@@ -121,7 +124,7 @@ const SubscribeBanner = ({
           {subtitle && <p>{subtitle}</p>}
         </div>
         <EmailForm
-          changeModal={(val) => console.log(val)}
+          changeModal={(val) => formSuccessState(val)}
           placeholder={placeholder}
           checkItemOne={checkItemOne}
           checkItemTwo={checkItemTwo}

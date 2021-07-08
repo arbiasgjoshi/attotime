@@ -28,6 +28,15 @@
     flex-direction: column;
     margin-bottom: 5rem;
 
+    .greenArrow {
+      width: 4rem;
+      height: 4rem;
+      margin: 0 auto 1.6rem;
+      background: url('@images/green-confirm-arrow.png');
+      background-size: contain;
+      background-position: center;
+    }
+
     h4 {
       margin-bottom: 0.8rem;
     }
