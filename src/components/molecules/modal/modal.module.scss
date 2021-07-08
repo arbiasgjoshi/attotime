@@ -11,12 +11,16 @@
 
 .dialogContainer {
   // padding: 4rem ​1.5rem 1rem;
-  padding: 4rem 2rem 1rem;
+  padding: 4rem;
   width: 80rem;
   max-width: calc(100% - 2rem);
   border-radius: 0.4rem;
   background-color: #ffffff;
   box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.2);
+
+  @include max(mobile) {
+    padding: 4rem 2rem 3rem;
+  }
 
   @include min(desktop) {
     padding: 8.3rem 10rem;
