@@ -358,7 +358,12 @@ const LocationTracking = () => {
         showButton
       />
       <Divider className="style2" />
-      <VideoCheckList list={checkList1} placeholder="location-tracking" cardStyle="centerAligned" />
+      <VideoCheckList
+        list={checkList1}
+        videoUrl="https://player.vimeo.com/video/563712211?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        placeholder="location-tracking"
+        cardStyle="centerAligned"
+      />
       <Divider />
       <Title
         maxWidth={920}

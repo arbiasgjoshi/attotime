@@ -17,8 +17,6 @@ import LearnMoreCard from '@components/molecules/learn-more-card';
 import { StaticImage } from 'gatsby-plugin-image';
 import { container } from '@styles/main.module.scss';
 
-// import noImage from '@images/no-image.png';
-// import authorImage from '@images/construction-minds@2x.png';
 import authorImage from '@images/time-clock/Time clock app review@2x.png';
 
 import WebTracking from '@images/web-time-tracking.svg';
@@ -26,15 +24,6 @@ import MobileTracking from '@images/mobile_time_tracking.svg';
 import KioskTracking from '@images/kiosk-time-tracking.svg';
 import ImagesBox from '@components/organisms/images-box';
 import CommonQuestions from '@components/organisms/common-questions';
-
-// import image1 from '@images/time-clock-mobile@2x.png';
-// import image2 from '@images/give-managers-power@2x.png';
-
-// import addNotesImage from '@images/add-notes-track breaks-assign job@2x.png';
-// import ensureEmployees from '@images/ensure-employees-are-ready@2x.png';
-// import getNotifications from '@images/get-handy-notifications-of-time-clock-activity@2x.png';
-// import recordPto from '@images/record-paid-time-off@2x.png';
-// import seeEmployees from '@images/see-employees@2x.png';
 
 import image1 from '@images/time-clock/A highly accurate time tracking solution@2x.png';
 import image2 from '@images/time-clock/Give managers the power to track employee time@2x.png';
@@ -44,19 +33,12 @@ import getNotifications from '@images/time-clock/Get handy notifications of time
 import recordPto from '@images/time-clock/Record paid time off for complete payroll data@2x.png';
 import seeEmployees from '@images/time-clock/See what your employees have been up to@2x.png';
 
-// import boxImage1 from '@images/construction-daily-timeline@2x.png';
-// import boxImage2 from '@images/time-clock-boximage1.png';
-// import boxImage3 from '@images/time-clock-boximage2.png';
-// import boxImage4 from '@images/time-clock-boximage3.png';
-// import boxImage5 from '@images/time-clock-boximage4.png';
-
 import boxImage1 from '@images/construction/Construction Daily Timeline@2x.png';
 import boxImage2 from '@images/time-clock/Real time location tracking@2x.png';
 import boxImage3 from '@images/time-clock/Team activity updates@2x.png';
 import boxImage4 from '@images/time-clock/Mobile time tracking app@2x.png';
 import boxImage5 from '@images/time-clock/Location tracking@2x.png';
 
-// import { FooterLinks } from '@locale/en.js';
 import icon1 from '@images/location@1x.png';
 import icon2 from '@images/time-tracking-clock@1x.png';
 import icon3 from '@images/profile@1x.png';

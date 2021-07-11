@@ -17,12 +17,6 @@ import FooterComponent from '@components/molecules/footer';
 
 import { container, imageFormWrapper, imageWrapper } from '@styles/main.module.scss';
 
-// import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
-// import image1 from '@images/time-tracking-fingertips@2x.png';
-// import image2 from '@images/know-where-is-team.png';
-// import image3 from '@images/stay-in-loop.png';
-// import image4 from '@images/relax-with-timesheets@2x.png';
-
 import authorImage from '@images/en/overview/Time tracking app review@2x.png';
 
 import icon from '@images/easy-to-use.png';

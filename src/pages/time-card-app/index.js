@@ -20,15 +20,6 @@ import CommonQuestions from '@components/organisms/common-questions';
 import Services from '@components/organisms/services';
 import { StaticImage } from 'gatsby-plugin-image';
 
-// import ProductOverviewBanner from '@images/product-overview-banner-image.svg';
-// import noImage from '@images/no-image.png';
-// import authorImage from '@images/construction-minds@2x.png';
-// import image1 from '@images/time-clock-mobile@2x.png';
-// import image2 from '@images/time-tracking-any-device.png';
-// import GetWageEstimates from '@images/get-wage-estimates-from-your-employees@2x.png';
-// import TimeCardSummaries from '@images/see-time-card-summaries-per-employee-team-or-project@2x.png';
-// import ViewTimeCard from '@images/view-time-card-data@2x.png';
-
 import authorImage from '@images/time-card-app/Time card app review@2x.png';
 import image1 from '@images/time-card-app/A highly accurate time tracking solution@2x.png';
 import image2 from '@images/time-card-app/Time card options to suit the needs of any business@2x.png';
@@ -42,12 +33,10 @@ import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
 import icon35 from '@images/time-tracking-clock@1x.png';
 
-// import { FooterLinks } from '@locale/en.js';
 import { container, imageFormWrapper, imageWrapper } from '@styles/main.module.scss';
 
 import { learnMoreContainer, buttonContainer } from './time-card-app.module.scss';
 
-// import localeData from '@locale/en';
 import {
   checkList,
   commonQuestionsList,
