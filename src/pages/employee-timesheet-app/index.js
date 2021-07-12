@@ -22,9 +22,9 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import authorImage from '@images/timesheets/Timesheet app review@2x.png';
 import image1 from '@images/timesheets/Streamline your payroll with our simple employee timesheet app@2x.png';
-import EstimatesEmployee from '@images/timesheets/Get wage estimates from your employees’ timesheets@2x.png';
-import TimeCardSummaries from '@images/timesheets/See timesheet summaries per employee, team, or project@2x.png';
-import ViewTimeCard from '@images/timesheets/View timesheets as a daily map-based timeline@2x.png';
+// import EstimatesEmployee from '@images/timesheets/Get wage estimates from your employees’ timesheets@2x.png';
+// import TimeCardSummaries from '@images/timesheets/See timesheet summaries per employee, team, or project@2x.png';
+// import ViewTimeCard from '@images/timesheets/View timesheets as a daily map-based timeline@2x.png';
 
 import AutomaticReports from '@images/automatic-email-reports@2x.png';
 import ExportTimesheet from '@images/export-timesheet-and-timesheet-data@2x.png';
@@ -139,14 +139,14 @@ const EmployeeTimesheetApp = () => {
       <Article
         title="Get wage estimates from your employees’ timesheets"
         description="Add your employees’ pay rates, and Atto will estimate your payroll costs based on the hours tracked. What’s more, you can add more than one pay rate per employee so that your estimates remain accurate even if their rate changes."
-        image={EstimatesEmployee}
+        image="timesheet-estimates"
         imagePadding="10.4rem 4rem 12.3rem 0.1rem"
       />
       <Divider className="style3" />
       <Article
         title="See timesheet summaries per employee, team, or job code"
         description="Get insights into how productive each part of your business is. In a few taps, Atto generates timesheet reports that show all the work done by each employee, team, or towards a specific job."
-        image={TimeCardSummaries}
+        image="timesheet-summaries"
         imagePadding="1.4rem 2.6rem 3.7rem 3.5rem"
         isSwapped
       />
@@ -154,7 +154,7 @@ const EmployeeTimesheetApp = () => {
       <Article
         title="View timesheets as a daily map-based timeline"
         description="If your employees work in the field, it can be useful to see how long they spend at each job, and the routes they take throughout their day. Atto uses GPS tracking in conjunction with your employees’ timesheets to provide you a visual timeline of their daily movements."
-        image={ViewTimeCard}
+        image="timesheet-viewtimecard"
         imagePadding="6rem 1.8rem 6rem"
         imageHeight="383"
       />

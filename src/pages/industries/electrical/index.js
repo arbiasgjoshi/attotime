@@ -20,8 +20,8 @@ import ImagesBox from '@components/organisms/images-box';
 
 import authorImage from '@images/electric/Electricians review@2x.png';
 
-import image3 from '@images/electric/Buzz your electricians with helpful reminders so they don’t forget to clock-in@2x.png';
-import image4 from '@images/electric/Give on-site supervisors the power to track your electricians’ time@2x.png';
+// import image3 from '@images/electric/Buzz your electricians with helpful reminders so they don’t forget to clock-in@2x.png';
+// import image4 from '@images/electric/Give on-site supervisors the power to track your electricians’ time@2x.png';
 import image5 from '@images/electric/Despatch electricians to emergency call-outs faster@2x.png';
 import image6 from '@images/electric/Avoid a nasty shock by forecasting wages ahead of payday@2x.png';
 
@@ -121,22 +121,18 @@ const Electrician = () => {
           title="Buzz your electricians with helpful reminders so they don’t forget to clock in!"
           description="Handling electricity requires full focus and concentration, so it’s easy to lose track of time. That’s why whenever your electricians enter or leave a job site, and at their normal start and end time, we’ll remind them to clock in and out. 
         And if they do happen to forget, they can add a manual time entry for you to review later."
-          image={image3}
+          image="electrical-one"
           maxWidth={500}
           imagePadding="6rem 0"
-          imageWidth={550}
-          // imageHeight={354}
         />
         <Divider className="style3" />
         <Article
           title="Give on-site supervisors the power to track your electricians’ time"
           description="Wiring an entire building? Dealing with a commercial job that requires multiple electricians on-site? Instead of having each of them track their time individually, your on-site supervisor can clock-in and out on all of your electricians’ behalf."
-          image={image4}
+          image="electrical-two"
           isSwapped
           maxWidth={500}
           imagePadding="4rem 0"
-          imageWidth={550}
-          // imageHeight={354}
         />
         <Divider className="style3" />
         <Title
