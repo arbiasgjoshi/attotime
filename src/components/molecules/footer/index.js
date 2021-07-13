@@ -313,9 +313,10 @@ const Footer = () => {
         </p>
       </footer>
       {cookieScripts(Intl.locale)}
-      <script type="text/javascript" src="//cdn.iubenda.com/cs/ccpa/stub.js" />
+      <script type="text/javascript" defer src="//cdn.iubenda.com/cs/ccpa/stub.js" />
       <script
         type="text/javascript"
+        defer
         src="//cdn.iubenda.com/cs/iubenda_cs.js"
         charSet="UTF-8"
         async
@@ -346,10 +347,11 @@ const Footer = () => {
       <noscript>
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-NV2DTP3"
+          title="null"
           height="0"
           width="0"
-          style="display:none;visibility:hidden"
-        ></iframe>
+          style={{ display: 'none', visibility: 'hidden' }}
+        />
       </noscript>
 
       {/* <!-- Helpscout --> */}
@@ -383,7 +385,7 @@ const Footer = () => {
 };
 
 Footer.propTypes = {
-  FooterLinks: PropTypes.arrayOf({}),
+  // FooterLinks: PropTypes.arrayOf({}),
 };
 
 export default Footer;
