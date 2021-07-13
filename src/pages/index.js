@@ -244,6 +244,7 @@ const Home = () => {
   return (
     <div className={container}>
       <Seo
+        noTemplate
         title={Intl.formatMessage({ id: 'pages.homepage.metaTitle' })}
         description={Intl.formatMessage({ id: 'pages.homepage.metaDescription' })}
       />

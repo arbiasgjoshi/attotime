@@ -313,6 +313,7 @@ const Pricing = () => {
         setFormValues={(formValues) => formSuccessState(formValues)}
       />
       <Seo
+        noTemplate
         title={Intl.formatMessage({ id: 'pages.pricing.metaTitle' })}
         description={Intl.formatMessage({ id: 'pages.pricing.metaDescription' })}
       />
