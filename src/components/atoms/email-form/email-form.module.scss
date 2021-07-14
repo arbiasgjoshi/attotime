@@ -4,6 +4,16 @@
   justify-content: center;
   align-items: center;
 
+  .errorMsgStyle {
+    color: #e05656;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-top: 0.4rem;
+    width: 43rem;
+    max-width: 100%;
+  }
+
   &.homepage {
     > form > div {
       // FIXME Need to delete this below if otherwise
@@ -61,6 +71,12 @@
     }
   }
 
+  &.banner {
+    .errorMsgStyle {
+      color: #000;
+    }
+  }
+
   .checkItems {
     @include flex-direction(row);
     margin: 0 2.1rem;
@@ -109,16 +125,6 @@
       //     display: none;
       //   }
       // }
-    }
-
-    .errorMsgStyle {
-      color: #e05656;
-      font-size: 1.5rem;
-      font-weight: 300;
-      line-height: 1.5rem;
-      margin-top: 0.4rem;
-      width: 43rem;
-      max-width: 100%;
     }
   }
 }

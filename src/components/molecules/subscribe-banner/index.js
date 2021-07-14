@@ -124,6 +124,7 @@ const SubscribeBanner = ({
           {subtitle && <p>{subtitle}</p>}
         </div>
         <EmailForm
+          style="banner"
           changeModal={(val) => formSuccessState(val)}
           placeholder={placeholder}
           checkItemOne={checkItemOne}

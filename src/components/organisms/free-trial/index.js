@@ -16,11 +16,13 @@ import {
   listWrapper,
   ticksWrapper,
   tickItem,
+  desktopBtn,
+  mobileBtn,
   errorMsgStyle,
   mobileOnly,
 } from './free-trial.module.scss';
 
-const FreeTrial = ({ title, description, list = [], onSuccessRes }) => {
+const FreeTrial = ({ title, description, list = [], onSuccessRes, onToggleModal }) => {
   const Intl = useIntl();
   const [stopLoad, setStopLoad] = useState(false);
   const [hasError, setError] = useState(false);
@@ -81,18 +83,28 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes }) => {
                     onBlur={handleBlur}
                   />
                 </div>
-                <Button
-                  disabled={!values.email}
-                  hasLoader
-                  stopLoader={stopLoad}
-                  btnMobileText={Intl.formatMessage({ id: 'pages.miscellaneous.start14Days' })}
-                  btnText={Intl.formatMessage({ id: 'pages.miscellaneous.freeTrial14Days' })}
-                  btnStyle="black"
-                />
+                <div className={desktopBtn}>
+                  <Button
+                    disabled={!values.email}
+                    hasLoader
+                    stopLoader={stopLoad}
+                    btnMobileText={Intl.formatMessage({ id: 'pages.miscellaneous.start14Days' })}
+                    btnText={Intl.formatMessage({ id: 'pages.miscellaneous.freeTrial14Days' })}
+                    btnStyle="black"
+                  />
+                </div>
               </form>
             )}
           </Formik>
-          {/* {!hasError ? (
+          <div className={mobileBtn}>
+            <Button
+              onBtnClick={() => onToggleModal()}
+              btnMobileText={Intl.formatMessage({ id: 'pages.miscellaneous.start14Days' })}
+              btnText={Intl.formatMessage({ id: 'pages.miscellaneous.freeTrial14Days' })}
+              btnStyle="black"
+            />
+          </div>
+          {!hasError ? (
             <div className={ticksWrapper}>
               <div className={tickItem}>
                 <Icon iconClass="tick" />
@@ -103,9 +115,9 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes }) => {
                 <span>{Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}</span>
               </div>
             </div>
-          ) : ( */}
-          <span className={errorMsgStyle}>Type your message correctly</span>
-          {/* )} */}
+          ) : (
+            <span className={errorMsgStyle}>Type your message correctly</span>
+          )}
         </div>
         <div className={listWrapper}>
           {list.map(({ title: listItemTitle }) => (
