@@ -266,7 +266,7 @@ const Footer = () => {
               alt="footer-logo"
               quality={100}
               width={86}
-              placeholder="tracedSVG"
+              placeholder="blurred"
             />
             <p>{Intl.formatMessage({ id: 'pages.miscellaneous.footerText' })}</p>
 

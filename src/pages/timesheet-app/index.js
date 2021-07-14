@@ -126,7 +126,7 @@ const EmployeeTimesheetApp = () => {
           width={1220}
           quality={95}
           src="../../images/timesheets/Ready-made professional timesheets@2x.png"
-          placeholder="tracedSVG"
+          placeholder="blurred"
           alt="Ready-made professional timesheets"
         />
       </div>
@@ -200,7 +200,7 @@ const EmployeeTimesheetApp = () => {
         width={1140}
         alt="Time tracking for field workers"
         quality={96}
-        placeholder="tracedSVG"
+        placeholder="blurred"
       />
       <Divider className="style11" />
       <Title
@@ -226,7 +226,7 @@ const EmployeeTimesheetApp = () => {
         src="../../images/timesheets/Time tracking for any industry@2x.png"
         alt="Time tracking for any industry"
         quality={96}
-        placeholder="tracedSVG"
+        placeholder="blurred"
       />
       <Divider />
       <Title

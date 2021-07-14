@@ -167,7 +167,7 @@ const Electrician = () => {
             src="../../../images/electric/Say goodbye to paper timesheets@2x.png"
             alt="Say goodbye to paper timesheets"
             quality={98}
-            placeholder="tracedSVG"
+            placeholder="blurred"
           />
           <Divider className="style3" />
           <ImagesBox

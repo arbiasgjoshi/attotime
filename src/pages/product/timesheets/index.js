@@ -234,7 +234,7 @@ const Timesheets = () => {
           alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={95}
-          placeholder="tracedSVG"
+          placeholder="blurred"
         />
       );
     }
@@ -245,7 +245,7 @@ const Timesheets = () => {
           alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={95}
-          placeholder="tracedSVG"
+          placeholder="blurred"
         />
       );
     }
@@ -256,7 +256,7 @@ const Timesheets = () => {
           alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={95}
-          placeholder="tracedSVG"
+          placeholder="blurred"
         />
       );
     }
@@ -267,7 +267,7 @@ const Timesheets = () => {
           alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={95}
-          placeholder="tracedSVG"
+          placeholder="blurred"
         />
       );
     }

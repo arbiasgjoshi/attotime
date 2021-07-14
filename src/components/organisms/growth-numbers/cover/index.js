@@ -26,7 +26,7 @@ const Cover = ({ isSwapped = false, titleValue }) => {
         width={746}
         height={400}
         quality={96}
-        placeholder="tracedSVG"
+        placeholder="blurred"
         src="../../../../images/en/gps-location-tracking/Trusted by thousands of businesses across 50+ countries globally@2x.png"
       />
     </div>
