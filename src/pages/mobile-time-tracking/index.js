@@ -27,13 +27,12 @@ import icon33 from '@images/profile@1x.png';
 import icon34 from '@images/timesheets@1x.png';
 import icon35 from '@images/time-tracking-clock@1x.png';
 
-import { container } from '@styles/main.module.scss';
+import { container, learnMoreContainer } from '@styles/main.module.scss';
 import {
   featureCardsList,
   commonQuestionsList,
   firstList,
 } from '../../data/third-phase/time-tracking-app';
-import { learnMoreContainer } from './mobile-time-tracking.module.scss';
 
 const TimeTrackingApp = () => {
   const Intl = useIntl();
