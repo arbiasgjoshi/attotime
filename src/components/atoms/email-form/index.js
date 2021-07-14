@@ -24,12 +24,12 @@ const EmailForm = ({
         onError={(val) => {
           setErrorMessage(val);
           setError(true);
-          setTimeout(() => {
-            setError(false);
-            setErrorMessage('');
-          }, 5000);
         }}
-        onSuccessRes={(val) => changeModal(val)}
+        onSuccessRes={(val) => {
+          changeModal(val);
+          setError(false);
+          setErrorMessage('');
+        }}
       />
       <div className={styles.checkItems}>
         {!hasError ? (

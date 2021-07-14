@@ -76,6 +76,7 @@ const Button = ({
   };
 
   useEffect(() => {
+    console.log('we are entering here due to change on stopLoader');
     setToggle(false);
   }, [stopLoader]);
 

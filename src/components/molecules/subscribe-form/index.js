@@ -28,10 +28,14 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError }) => {
     fetch('/confirmation', requestOptions)
       .then((response) => response.json())
       .then((data) => {
-        setStopLoad(true);
+        console.log('we are receiving data', data);
         if (!data.error) {
+          console.log('we are having an error');
+          setStopLoad(true);
           onSuccessRes(data);
         } else {
+          console.log('we are succeeding');
+          setStopLoad(true);
           onError(data.error);
         }
       });

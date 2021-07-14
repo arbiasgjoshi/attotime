@@ -213,6 +213,10 @@ const IndustryMainCard = ({
     return null;
   };
 
+  const stateSucceeded = (val) => {
+    setValues(val);
+  };
+
   const toggleDeleteInvite = (data) => {
     const requestOptions = {
       method: 'POST',
@@ -265,7 +269,7 @@ const IndustryMainCard = ({
               {staticImageSwitch(image, title)}
             </div>
             <EmailForm
-              changeModal={(val) => console.log(val)}
+              changeModal={(val) => formSuccessState(val)}
               placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
               checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}
               checkItemTwo={Intl.formatMessage({ id: 'pages.miscellaneous.14DaysTrial' })}

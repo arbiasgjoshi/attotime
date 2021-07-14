@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useIntl } from 'gatsby-plugin-react-intl';
 import { motion } from 'framer-motion';
 import { Formik } from 'formik';
-import Button from '@components/atoms/button';
+import { defaultBtn } from '@components/atoms/button/button.module.scss';
 import * as yup from 'yup';
 
 import {
@@ -28,7 +28,8 @@ const ContactForm = () => {
       .required('Email is a required field'),
   });
 
-  const signUpTrial = (val) => {
+  const sendContactEmail = (val) => {
+    console.log('we are entering here!');
     const requestOptions = {
       method: 'POST',
       headers: {
@@ -88,14 +89,15 @@ const ContactForm = () => {
           initialValues={{
             name: '',
             email: '',
-            message: '',
+            text: '',
           }}
           validationSchema={validationSchema}
           autoComplete="off"
-          onSubmit={(values) => signUpTrial(values)}
+          onSubmit={(values) => sendContactEmail(values)}
         >
-          {({ values, handleChange, handleBlur, handleSubmit, errors }) => (
+          {({ values, handleChange, handleBlur, validateForm, handleSubmit, errors }) => (
             <form onSubmit={handleSubmit}>
+              {/* {console.log(errors)} */}
               <div className={formRow}>
                 <input
                   type="text"
@@ -118,15 +120,16 @@ const ContactForm = () => {
               <div className={formRow}>
                 <textarea
                   name="text"
+                  value={values.text}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
                   placeholder={Intl.formatMessage({ id: 'pages.contact.message' })}
                 />
               </div>
               <div className={formBtn}>
-                <Button
-                  btnText={Intl.formatMessage({ id: 'pages.contact.sendMessage' })}
-                  btnStyle="formBtn"
-                  defaultBtn
-                />
+                <button type="submit" className={defaultBtn}>
+                  {Intl.formatMessage({ id: 'pages.contact.sendMessage' })}
+                </button>
                 <span className={formMask} />
               </div>
             </form>
