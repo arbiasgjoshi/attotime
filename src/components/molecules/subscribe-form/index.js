@@ -12,6 +12,7 @@ import { formWrapper, errorMessage } from './form.module.scss';
 const SubscribeForm = ({ placeholder, onSuccessRes, onError }) => {
   const Intl = useIntl();
   const [stopLoad, setStopLoad] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   const validationSchema = yup.object().shape({
     email: yup.string().email('This field must be a valid email').required('Required'),
@@ -30,12 +31,14 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError }) => {
       .then((data) => {
         console.log('we are receiving data', data);
         if (!data.error) {
+          setHasError(false);
           console.log('we are having an error');
           setStopLoad(true);
           onSuccessRes(data);
         } else {
           console.log('we are succeeding');
           setStopLoad(true);
+          setHasError(true);
           onError(data.error);
         }
       });
@@ -57,7 +60,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError }) => {
           <div className={inputWrapper}>
             <input
               placeholder={placeholder}
-              className={defaultInput}
+              className={`${defaultInput} ${hasError && inputError}`}
               name="email"
               type="email"
               value={values.email}
