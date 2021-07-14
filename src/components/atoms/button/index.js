@@ -64,8 +64,6 @@ const Button = ({
     return className;
   };
 
-  // console.log(stopLoader);
-
   const toggleButtonClick = () => {
     if (onBtnClick) {
       onBtnClick();
