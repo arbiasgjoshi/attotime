@@ -15,7 +15,7 @@ import Title from '@components/molecules/title';
 import Story from '@components/organisms/story';
 import FeaturesList from '@components/organisms/features-list';
 import PriceDragger from '@components/molecules/price-dragger';
-import { navigate } from '@reach/router';
+import { navigate } from 'gatsby-plugin-intl';
 
 import { container } from '@styles/main.module.scss';
 import authorImage2 from '@images/time-tracking-app-review.png';
