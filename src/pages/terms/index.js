@@ -14,7 +14,7 @@ import { privacyPolicyStyle } from '../privacy/privacy.module.scss';
 const Terms = ({ data }) => {
   const Intl = useIntl();
 
-  console.log(Intl.locale);
+  console.log(data);
 
   const renderPrivacyPolicy = (lang) => {
     if (lang === 'en') {
