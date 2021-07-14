@@ -20,7 +20,6 @@ import {
   downloadApp,
   linkWrap,
 } from './footer.module.scss';
-import { ImportsNotUsedAsValues } from 'typescript';
 
 const Footer = () => {
   const Intl = useIntl();
