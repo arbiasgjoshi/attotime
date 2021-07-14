@@ -113,7 +113,7 @@ const TimeClock = () => {
             alt="Time tracking on the web"
             height={378}
             width={380}
-            quality={100}
+            quality={97}
             src="../../images/time-clock/Time tracking on the web@2x.png"
             placeholder="blurred"
           />
@@ -131,7 +131,7 @@ const TimeClock = () => {
             alt="Time tracking via our mobile app"
             height={378}
             width={380}
-            quality={100}
+            quality={97}
             placeholder="blurred"
             src="../../images/time-clock/Time tracking via our mobile app@2x.png"
           />
@@ -150,7 +150,7 @@ const TimeClock = () => {
             alt="Time tracking on the time clock kiosk"
             height={378}
             width={380}
-            quality={100}
+            quality={97}
             placeholder="blurred"
             src="../../images/time-clock/Time tracking on the time clock kiosk@2x.png"
           />

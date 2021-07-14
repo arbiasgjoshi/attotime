@@ -57,7 +57,7 @@ const ImagesBox = ({
                 alt="Construction timesheets"
                 width={378}
                 placeholder="blurred"
-                quality={100}
+                quality={97}
               />
             </div>
           </div>
@@ -465,7 +465,7 @@ const ImagesBox = ({
                 alt="Team activity updates"
                 width={378}
                 placeholder="blurred"
-                quality={100}
+                quality={97}
               />
             </div>
           </div>

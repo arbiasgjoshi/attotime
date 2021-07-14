@@ -158,7 +158,7 @@ const WorkHoursTracker = () => {
       <div className={imageWrapper}>
         <StaticImage
           width={1220}
-          quality={95}
+          quality={96}
           src="../../images/work-hours-tracker/Ready-made professional timesheets@2x.png"
           placeholder="blurred"
           alt="Ready-made professional timesheets"

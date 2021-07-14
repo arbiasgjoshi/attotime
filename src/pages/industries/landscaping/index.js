@@ -111,7 +111,7 @@ const Landscaping = () => {
           <StaticImage
             src="../../../images/landscaping/Ditch paper timesheets and switch to Atto@2x.png"
             width={1140}
-            quality={95}
+            quality={96}
             placeholder="blurred"
           />
           <Divider className="style3" />

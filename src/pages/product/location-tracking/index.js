@@ -275,7 +275,7 @@ const LocationTracking = () => {
       alt="Keep track of your team’s daily movements@2x.png"
       width={500}
       height={600}
-      quality={95}
+      quality={96}
       placeholder="blurred"
     />
   );
@@ -288,7 +288,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={500}
           height={600}
-          quality={95}
+          quality={96}
           placeholder="blurred"
         />
       );
@@ -300,7 +300,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={500}
           height={600}
-          quality={95}
+          quality={96}
           placeholder="blurred"
         />
       );
@@ -312,7 +312,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={500}
           height={600}
-          quality={95}
+          quality={96}
           placeholder="blurred"
         />
       );
@@ -324,7 +324,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={500}
           height={600}
-          quality={95}
+          quality={96}
           placeholder="blurred"
         />
       );
@@ -339,7 +339,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={1140}
           height={340}
-          quality={95}
+          quality={96}
           placeholder="blurred"
         />
       );
@@ -351,7 +351,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={1140}
           height={340}
-          quality={95}
+          quality={96}
           placeholder="blurred"
         />
       );
@@ -363,7 +363,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={1140}
           height={340}
-          quality={95}
+          quality={96}
           placeholder="blurred"
         />
       );
@@ -375,7 +375,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={1140}
           height={340}
-          quality={95}
+          quality={96}
           placeholder="blurred"
         />
       );

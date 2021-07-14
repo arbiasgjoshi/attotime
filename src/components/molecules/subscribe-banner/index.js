@@ -65,7 +65,7 @@ const SubscribeBanner = ({
           alt="What are you waiting for. Time is ticking"
           width={1140}
           height={470}
-          quality={95}
+          quality={96}
           placeholder="blurred"
         />
       );
@@ -77,7 +77,7 @@ const SubscribeBanner = ({
           alt="What are you waiting for. Time is ticking"
           width={1140}
           height={470}
-          quality={95}
+          quality={96}
           placeholder="blurred"
         />
       );
@@ -89,7 +89,7 @@ const SubscribeBanner = ({
           alt="What are you waiting for. Time is ticking"
           width={1140}
           height={470}
-          quality={95}
+          quality={96}
           placeholder="blurred"
         />
       );
@@ -101,7 +101,7 @@ const SubscribeBanner = ({
           alt="What are you waiting for. Time is ticking"
           width={1140}
           height={470}
-          quality={95}
+          quality={96}
           placeholder="blurred"
         />
       );

@@ -8,7 +8,7 @@ const ImageSlider = () => (
     {/* <StaticImage
       width={378}
       height={380}
-      quality={95}
+      quality={96}
       placeholder="blurred"
       alt="work in the office"
       src="../../../images/work_in_the_office.svg"
@@ -16,7 +16,7 @@ const ImageSlider = () => (
     <StaticImage
       width={378}
       height={380}
-      quality={95}
+      quality={96}
       placeholder="blurred"
       alt="work at job sites"
       src="../../../images/work_at_job_sites.svg"
@@ -24,7 +24,7 @@ const ImageSlider = () => (
     <StaticImage
       width={378}
       height={380}
-      quality={95}
+      quality={96}
       placeholder="blurred"
       alt="work on the go"
       src="../../../images/work_on_the_go.svg"

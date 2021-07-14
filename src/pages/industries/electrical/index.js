@@ -166,7 +166,7 @@ const Electrician = () => {
           <StaticImage
             src="../../../images/electric/Say goodbye to paper timesheets@2x.png"
             alt="Say goodbye to paper timesheets"
-            quality={98}
+            quality={97}
             placeholder="blurred"
           />
           <Divider className="style3" />

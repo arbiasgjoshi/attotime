@@ -264,7 +264,7 @@ const Footer = () => {
             <StaticImage
               src="../../../images/logo@3x.png"
               alt="footer-logo"
-              quality={100}
+              quality={97}
               width={86}
               placeholder="blurred"
             />

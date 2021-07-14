@@ -118,7 +118,7 @@ const TimeTrackingApp = () => {
       <Services />
       <Divider />
       <StaticImage
-        quality={98}
+        quality={97}
         src="../../images/time-tracking/Time tracking for field workers@2x.png"
         alt="Time tracking for field workers"
         width={1140}
