@@ -22,6 +22,7 @@ const SubscribeBanner = ({
   const Intl = useIntl();
 
   const [showDialog, setShowDialog] = useState(false);
+  const [deletedInvite, setDeleted] = useState(false);
   const [values, setValues] = useState(null);
 
   const openModal = () => setShowDialog(true);
@@ -39,6 +40,7 @@ const SubscribeBanner = ({
       .then((response) => response.json())
       .then((res) => {
         setValues(res);
+        setDeleted(true);
         openModal();
       });
   };
@@ -125,6 +127,7 @@ const SubscribeBanner = ({
         </div>
         <EmailForm
           style="banner"
+          deleteSucceded={deletedInvite}
           changeModal={(val) => formSuccessState(val)}
           placeholder={placeholder}
           checkItemOne={checkItemOne}

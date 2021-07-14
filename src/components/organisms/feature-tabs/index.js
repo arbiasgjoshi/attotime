@@ -157,7 +157,6 @@ const FeatureTabs = () => {
       />
       <>
         <div className={getClassName(0)}>
-          {console.log(Intl.formatMessage({ id: 'pages.homepage.timeTrackingTitle' }))}
           <ProductCard
             title={Intl.formatMessage({ id: 'pages.homepage.timeTrackingTitle' })}
             description={Intl.formatMessage({ id: 'pages.homepage.timeTrackingDescription' })}

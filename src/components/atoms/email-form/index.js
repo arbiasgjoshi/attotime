@@ -12,6 +12,7 @@ const EmailForm = ({
   checkItemTwo,
   checkItemThree,
   style,
+  deleteSucceded = false,
   changeModal,
 }) => {
   const [hasError, setError] = useState(false);
@@ -21,6 +22,7 @@ const EmailForm = ({
     <div className={`${styles.container} ${style ? styles[style] : ''}`}>
       <SubscribeForm
         placeholder={placeholder}
+        sucessfullyDeleted={deleteSucceded}
         onError={(val) => {
           setErrorMessage(val);
           setError(true);

@@ -37,6 +37,7 @@ const IndustryMainCard = ({
   const Intl = useIntl();
   const [showDialog, setShowDialog] = useState(false);
   const [values, setValues] = useState(null);
+  const [deletedInvite, setDeleted] = useState(false);
 
   const openModal = () => setShowDialog(true);
   const closeModal = () => setShowDialog(false);
@@ -228,6 +229,7 @@ const IndustryMainCard = ({
     fetch('/delete-invite', requestOptions)
       .then((response) => response.json())
       .then((res) => {
+        setDeleted(true);
         setValues(res);
         openModal();
       });
@@ -269,6 +271,7 @@ const IndustryMainCard = ({
               {staticImageSwitch(image, title)}
             </div>
             <EmailForm
+              deleteSucceded={deletedInvite}
               changeModal={(val) => formSuccessState(val)}
               placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })}
               checkItemOne={Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}

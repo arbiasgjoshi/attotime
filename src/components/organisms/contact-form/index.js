@@ -17,6 +17,7 @@ const ContactForm = () => {
   const [isOpen, setOpen] = useState(false);
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
+  const [successMsg, setSuccessMessage] = useState('');
 
   const Intl = useIntl();
   const validationSchema = yup.object().shape({
@@ -42,6 +43,7 @@ const ContactForm = () => {
       .then((data) => {
         if (!data.error) {
           setOpen(true);
+          setSuccessMessage(data.message);
         } else {
           setError(true);
           setErrorMessage(data.error);
@@ -56,9 +58,11 @@ const ContactForm = () => {
     },
     exit: {
       opacity: 0,
-      marginTop: '10rem',
+      translateY: '10rem',
+      display: 'none',
+      height: 0,
       transition: {
-        duration: 0.3,
+        duration: 0.5,
       },
     },
   };
@@ -72,7 +76,8 @@ const ContactForm = () => {
       opacity: 0,
       marginTop: '10rem',
       transition: {
-        duration: 0.3,
+        duration: 0.4,
+        delay: 0.7,
       },
     },
   };
@@ -145,7 +150,7 @@ const ContactForm = () => {
           className={`${formWrapper} ${successMessage}`}
         >
           <h1>Thank you!</h1>
-          <p>Your message was succesfully sent!</p>
+          <p>{successMsg}</p>
         </motion.div>
       )}
     </>

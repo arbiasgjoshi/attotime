@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Formik } from 'formik';
 import * as yup from 'yup';
 
-import { inputWrapper, defaultInput } from '@components/atoms/input/input.module.scss';
+import { inputWrapper, defaultInput, inputError } from '@components/atoms/input/input.module.scss';
 import Button from '@components/atoms/button';
 import { useIntl } from 'gatsby-plugin-react-intl';
 
 import { formWrapper, errorMessage } from './form.module.scss';
 
-const SubscribeForm = ({ placeholder, onSuccessRes, onError }) => {
+const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted }) => {
   const Intl = useIntl();
   const [stopLoad, setStopLoad] = useState(false);
   const [hasError, setHasError] = useState(false);
@@ -29,7 +29,6 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError }) => {
     fetch('/confirmation', requestOptions)
       .then((response) => response.json())
       .then((data) => {
-        console.log('we are receiving data', data);
         if (!data.error) {
           setHasError(false);
           console.log('we are having an error');
@@ -43,6 +42,10 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError }) => {
         }
       });
   };
+
+  useEffect(() => {
+    setStopLoad(true);
+  }, [sucessfullyDeleted]);
 
   return (
     <Formik
