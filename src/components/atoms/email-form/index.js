@@ -13,25 +13,47 @@ const EmailForm = ({
   checkItemThree,
   style,
   changeModal,
-}) => (
-  <div className={`${styles.container} ${style ? styles[style] : ''}`}>
-    <SubscribeForm placeholder={placeholder} onSuccessRes={(val) => changeModal(val)} />
-    <div className={styles.checkItems}>
-      <div className={styles.itemWrapper}>
-        <Icon iconClass="tick" />
-        <span>{checkItemOne}</span>
-      </div>
-      <div className={styles.itemWrapper}>
-        <Icon iconClass="tick" />
-        <span>{checkItemTwo}</span>
-      </div>
-      <div className={styles.itemWrapper}>
-        <Icon iconClass="tick" />
-        <span>{checkItemThree}</span>
+}) => {
+  const [hasError, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+
+  return (
+    <div className={`${styles.container} ${style ? styles[style] : ''}`}>
+      <SubscribeForm
+        placeholder={placeholder}
+        onError={(val) => {
+          setErrorMessage(val);
+          setError(true);
+          setTimeout(() => {
+            setError(false);
+            setErrorMessage('');
+          }, 5000);
+        }}
+        onSuccessRes={(val) => changeModal(val)}
+      />
+      <div className={styles.checkItems}>
+        {!hasError ? (
+          <>
+            <div className={styles.itemWrapper}>
+              <Icon iconClass="tick" />
+              <span>{checkItemOne}</span>
+            </div>
+            <div className={styles.itemWrapper}>
+              <Icon iconClass="tick" />
+              <span>{checkItemTwo}</span>
+            </div>
+            <div className={styles.itemWrapper}>
+              <Icon iconClass="tick" />
+              <span>{checkItemThree}</span>
+            </div>
+          </>
+        ) : (
+          <span className={styles.errorMsgStyle}>{errorMessage}</span>
+        )}
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 EmailForm.propTypes = {
   placeholder: PropTypes.string,
