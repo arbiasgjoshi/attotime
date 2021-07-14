@@ -29,17 +29,20 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
     };
     fetch('/confirmation', requestOptions)
       .then((response) => response.json())
+      .catch(() => {
+        console.error('Error is here:');
+        setStopLoad(!stopLoad);
+      })
       .then((data) => {
-        if (!data.error) {
+        setStopLoad(!stopLoad);
+        if (data && !data.error) {
           setHasError(false);
-          console.log('we are having an error');
-          setStopLoad(true);
           onSuccessRes(data);
         } else {
-          console.log('we are succeeding');
-          setStopLoad(true);
           setHasError(true);
-          onError(data.error);
+          if (data) {
+            onError(data.error);
+          }
         }
       });
   };
@@ -49,40 +52,51 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
   }, [sucessfullyDeleted]);
 
   return (
-    <Formik
-      initialValues={{
-        email: '',
-      }}
-      validationSchema={validationSchema}
-      autoComplete="off"
-      onSubmit={(values) => {
-        signUpTrial(values.email);
-      }}
-    >
-      {({ values, handleSubmit, handleChange, handleBlur, errors }) => (
-        <form method="POST" onSubmit={handleSubmit} className={formWrapper}>
-          <div className={inputWrapper}>
-            <input
-              placeholder={placeholder}
-              className={`${defaultInput} ${hasError && inputError}`}
-              name="email"
-              type="email"
-              value={values.email}
-              onChange={handleChange}
-              onBlur={handleBlur}
+    <>
+      <button
+        onClick={() => {
+          console.log('im clicking here', stopLoad);
+          setStopLoad(!stopLoad);
+        }}
+      >
+        Click me
+      </button>
+      <Formik
+        initialValues={{
+          email: '',
+        }}
+        validationSchema={validationSchema}
+        autoComplete="off"
+        onSubmit={(values) => {
+          signUpTrial(values.email);
+        }}
+      >
+        {({ values, handleSubmit, handleChange, isValid, isSubmitting, handleBlur, errors }) => (
+          <form method="POST" onSubmit={handleSubmit} className={formWrapper}>
+            <div className={inputWrapper}>
+              <input
+                placeholder={placeholder}
+                className={`${defaultInput} ${hasError && inputError}`}
+                name="email"
+                type="email"
+                value={values.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
+              />
+            </div>
+            {console.log(isValid, isSubmitting)}
+            <Button
+              btnText={Intl.formatMessage({ id: 'pages.miscellaneous.startFreeTrial' })}
+              btnStyle="black"
+              disabled={!isValid && isSubmitting}
+              hasLoader
+              // onClick={() => setDisabled(true)}
+              stopLoader={stopLoad}
             />
-          </div>
-          <Button
-            btnText={Intl.formatMessage({ id: 'pages.miscellaneous.startFreeTrial' })}
-            btnStyle="black"
-            disabled={disabled}
-            hasLoader
-            onClick={() => setDisabled(true)}
-            stopLoader={stopLoad}
-          />
-        </form>
-      )}
-    </Formik>
+          </form>
+        )}
+      </Formik>
+    </>
   );
 };
 
