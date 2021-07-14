@@ -16,12 +16,15 @@ import {
   listWrapper,
   ticksWrapper,
   tickItem,
+  errorMsgStyle,
   mobileOnly,
 } from './free-trial.module.scss';
 
 const FreeTrial = ({ title, description, list = [], onSuccessRes }) => {
   const Intl = useIntl();
   const [stopLoad, setStopLoad] = useState(false);
+  const [hasError, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const validationSchema = yup.object().shape({
     email: yup.string().email('This field must be a valid email').required('Required'),
@@ -39,7 +42,12 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes }) => {
       .then((response) => response.json())
       .then((data) => {
         setStopLoad(true);
-        onSuccessRes(data);
+        if (!data.error) {
+          onSuccessRes(data);
+        } else {
+          setError(true);
+          setErrorMessage(data.error);
+        }
       });
   };
 
@@ -84,17 +92,20 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes }) => {
               </form>
             )}
           </Formik>
-          {/* <Input placeholder={Intl.formatMessage({ id: 'pages.miscellaneous.typeYourEmail' })} /> */}
-          <div className={ticksWrapper}>
-            <div className={tickItem}>
-              <Icon iconClass="tick" />
-              <span>{Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}</span>
+          {/* {!hasError ? (
+            <div className={ticksWrapper}>
+              <div className={tickItem}>
+                <Icon iconClass="tick" />
+                <span>{Intl.formatMessage({ id: 'pages.miscellaneous.noCreditCard' })}</span>
+              </div>
+              <div className={tickItem}>
+                <Icon iconClass="tick" />
+                <span>{Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}</span>
+              </div>
             </div>
-            <div className={tickItem}>
-              <Icon iconClass="tick" />
-              <span>{Intl.formatMessage({ id: 'pages.miscellaneous.cancelAnytime' })}</span>
-            </div>
-          </div>
+          ) : ( */}
+          <span className={errorMsgStyle}>Type your message correctly</span>
+          {/* )} */}
         </div>
         <div className={listWrapper}>
           {list.map(({ title: listItemTitle }) => (

@@ -268,7 +268,7 @@ const Accordion = ({
 
   return (
     <>
-      <motion.header initial={false} onClick={() => setExpanded(i)}>
+      <motion.header initial={false} onClick={() => setExpanded(i === expanded ? null : i)}>
         {triggerItem(title, isOpen, icon, hasArrow, isMenu, url)}
       </motion.header>
       {!url && (

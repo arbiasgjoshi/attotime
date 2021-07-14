@@ -9,10 +9,9 @@ import { useIntl } from 'gatsby-plugin-react-intl';
 
 import { formWrapper, errorMessage } from './form.module.scss';
 
-const SubscribeForm = ({ placeholder, onSuccessRes }) => {
+const SubscribeForm = ({ placeholder, onSuccessRes, onError }) => {
   const Intl = useIntl();
   const [stopLoad, setStopLoad] = useState(false);
-  const [error, setError] = useState(null);
 
   const validationSchema = yup.object().shape({
     email: yup.string().email('This field must be a valid email').required('Required'),
@@ -33,7 +32,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes }) => {
         if (!data.error) {
           onSuccessRes(data);
         } else {
-          setError(data.error);
+          onError(data.error);
         }
       });
   };
@@ -62,7 +61,6 @@ const SubscribeForm = ({ placeholder, onSuccessRes }) => {
               onBlur={handleBlur}
             />
           </div>
-          {error && <span className={errorMessage}>{error}</span>}
           <Button
             btnText={Intl.formatMessage({ id: 'pages.miscellaneous.startFreeTrial' })}
             btnStyle="black"
@@ -79,6 +77,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes }) => {
 SubscribeForm.propTypes = {
   placeholder: PropTypes.string,
   onSuccessRes: PropTypes.func,
+  onError: PropTypes.func,
 };
 
 export default SubscribeForm;

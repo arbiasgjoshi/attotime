@@ -15,6 +15,8 @@ import {
 
 const ContactForm = () => {
   const [isOpen, setOpen] = useState(false);
+  const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
 
   const Intl = useIntl();
   const validationSchema = yup.object().shape({
@@ -37,7 +39,12 @@ const ContactForm = () => {
     fetch('/send-email', requestOptions)
       .then((response) => response.json())
       .then((data) => {
-        setOpen(true);
+        if (!data.error) {
+          setOpen(true);
+        } else {
+          setError(true);
+          setErrorMessage(data.error);
+        }
       });
   };
 
@@ -125,6 +132,7 @@ const ContactForm = () => {
             </form>
           )}
         </Formik>
+        {error && <span>{errorMessage}</span>}
       </motion.div>
       {isOpen && (
         <motion.div
