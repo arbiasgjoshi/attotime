@@ -28,8 +28,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes }) => {
     fetch('/confirmation', requestOptions)
       .then((response) => response.json())
       .then((data) => {
-        // console.log('success data is:', data);
-
+        setStopLoad(true);
         onSuccessRes(data);
       });
   };
@@ -61,8 +60,8 @@ const SubscribeForm = ({ placeholder, onSuccessRes }) => {
           <Button
             btnText={Intl.formatMessage({ id: 'pages.miscellaneous.startFreeTrial' })}
             btnStyle="black"
-            hasLoader
             disabled={!values.email}
+            hasLoader
             stopLoader={stopLoad}
           />
         </form>

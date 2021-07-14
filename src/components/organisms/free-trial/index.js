@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import { defaultInput, inputWrapper } from '@components/atoms/input/input.module.scss';
@@ -21,6 +21,7 @@ import {
 
 const FreeTrial = ({ title, description, list = [], onSuccessRes }) => {
   const Intl = useIntl();
+  const [stopLoad, setStopLoad] = useState(false);
 
   const validationSchema = yup.object().shape({
     email: yup.string().email('This field must be a valid email').required('Required'),
@@ -37,6 +38,7 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes }) => {
     fetch('/confirmation', requestOptions)
       .then((response) => response.json())
       .then((data) => {
+        setStopLoad(true);
         onSuccessRes(data);
       });
   };
@@ -72,6 +74,9 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes }) => {
                   />
                 </div>
                 <Button
+                  disabled={!values.email}
+                  hasLoader
+                  stopLoader={stopLoad}
                   btnMobileText={Intl.formatMessage({ id: 'pages.miscellaneous.start14Days' })}
                   btnText={Intl.formatMessage({ id: 'pages.miscellaneous.freeTrial14Days' })}
                   btnStyle="black"

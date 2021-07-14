@@ -333,7 +333,7 @@ const Product = () => {
         list={productList2}
         image={imageLocaleTwo(Intl.locale)}
         isSwapped
-        path="/product/gps-location-tracking"
+        path="/product/location-tracking"
         imageWidth={500}
         imageHeight={650}
         insideTitle

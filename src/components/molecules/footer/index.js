@@ -20,9 +20,17 @@ import {
   downloadApp,
   linkWrap,
 } from './footer.module.scss';
+import { ImportsNotUsedAsValues } from 'typescript';
 
 const Footer = () => {
   const Intl = useIntl();
+
+  const productLabel = () => {
+    if (Intl.locale !== 'en') {
+      return Intl.formatMessage({ id: 'pages.productOverview.name' });
+    }
+    return 'Why Atto';
+  };
 
   const FooterLinks = [
     {
@@ -33,7 +41,7 @@ const Footer = () => {
         {
           id: 0,
           path: '/product',
-          name: 'Why Atto',
+          name: productLabel(),
           hasLine: true,
         },
         {
@@ -80,7 +88,7 @@ const Footer = () => {
         },
         {
           id: 9,
-          path: '/product/pricing',
+          path: '/pricing',
           name: Intl.formatMessage({ id: 'header.menu.pricingLabel' }),
           hasLine: false,
         },
@@ -112,7 +120,7 @@ const Footer = () => {
         },
         {
           id: 3,
-          path: '/industries/electrician',
+          path: '/industries/electrical',
           name: Intl.formatMessage({ id: 'pages.industries.electricalLabel' }),
           hasLine: false,
         },
@@ -284,8 +292,8 @@ const Footer = () => {
                   <div className={downloadApp}>
                     <h5 className={parentPath}>Download</h5>
                     {section.downloadApp.map((app) => (
-                      <Link
-                        to={app.href}
+                      <a
+                        href={app.href}
                         target="_blank"
                         rel="noreferrer"
                         key={app.id}
@@ -293,7 +301,7 @@ const Footer = () => {
                       >
                         <img src={app.src} alt="Mobile" width="19" />
                         <p>{app.name}</p>
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 )}
@@ -384,8 +392,6 @@ const Footer = () => {
   );
 };
 
-Footer.propTypes = {
-  // FooterLinks: PropTypes.arrayOf({}),
-};
+Footer.propTypes = {};
 
 export default Footer;

@@ -112,7 +112,7 @@ const FeatureTabs = () => {
       sectionTitle: Intl.formatMessage({ id: 'pages.homepage.gpsTitle' }),
       description: Intl.formatMessage({ id: 'pages.homepage.gpsDescription' }),
       featureImage: imageLocaleTwo(Intl.locale),
-      path: '/product/gps-location-tracking',
+      path: '/product/location-tracking',
       imagePadding: 0,
       imageWidth: 500,
       imageHeight: 650,
@@ -177,7 +177,7 @@ const FeatureTabs = () => {
             image={imageLocaleTwo(Intl.locale)}
             isSwapped
             style="homepage"
-            path="/product/gps-location-tracking"
+            path="/product/location-tracking"
             imageWidth={500}
             imageHeight={650}
           />

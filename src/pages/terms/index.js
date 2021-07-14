@@ -14,7 +14,17 @@ import { privacyPolicyStyle } from '../privacy/privacy.module.scss';
 const Terms = ({ data }) => {
   const Intl = useIntl();
 
+  console.log(Intl.locale);
+
   const renderPrivacyPolicy = (lang) => {
+    if (lang === 'en') {
+      return (
+        <div
+          className={privacyPolicyStyle}
+          dangerouslySetInnerHTML={{ __html: data.allIubendaDocument.nodes[0].termsAndConditions }}
+        />
+      );
+    }
     if (lang === 'fr') {
       return (
         <div
@@ -39,12 +49,6 @@ const Terms = ({ data }) => {
         />
       );
     }
-    return (
-      <div
-        className={privacyPolicyStyle}
-        dangerouslySetInnerHTML={{ __html: data.allIubendaDocument.nodes[0].termsAndConditions }}
-      />
-    );
   };
   return (
     <>

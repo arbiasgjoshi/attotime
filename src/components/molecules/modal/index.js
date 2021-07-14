@@ -212,7 +212,7 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
     return (
       <>
         <div className={textContainer}>
-          <h3>Sign up for a 14-day free trial</h3>
+          <h3>{Intl.formatMessage({ id: 'pages.miscellaneous.modalTitle' })}</h3>
           <p>{Intl.formatMessage({ id: 'pages.pricing.subscribeBanner' })}</p>
         </div>
         <EmailForm

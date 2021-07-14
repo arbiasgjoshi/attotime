@@ -261,7 +261,8 @@ const IndustryMainCard = ({
             className={`${styles.emailContainer} ${Intl.locale !== 'en' && styles.differentLocale}`}
           >
             <div className={styles.mobileImage}>
-              <img src={image} alt={title} width={imageWidth || 500} height={imageHeight || 596} />
+              {/* <img src={image} alt={title} width={imageWidth || 500} height={imageHeight || 596} /> */}
+              {staticImageSwitch(image, title)}
             </div>
             <EmailForm
               changeModal={(val) => console.log(val)}

@@ -974,7 +974,7 @@ const TimeTracking = () => {
             id: 'pages.productTimeTracking.bottomFeatureOneDesc',
           })}
           icon={icon32}
-          path="/product/gps-location-tracking"
+          path="/product/location-tracking"
           imageWidth={27}
           imageHeight={32}
         />
