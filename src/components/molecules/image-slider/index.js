@@ -9,7 +9,7 @@ const ImageSlider = () => (
       width={378}
       height={380}
       quality={95}
-      placeholder="blurred"
+      placeholder="tracedSVG"
       alt="work in the office"
       src="../../../images/work_in_the_office.svg"
     />
@@ -17,7 +17,7 @@ const ImageSlider = () => (
       width={378}
       height={380}
       quality={95}
-      placeholder="blurred"
+      placeholder="tracedSVG"
       alt="work at job sites"
       src="../../../images/work_at_job_sites.svg"
     />
@@ -25,7 +25,7 @@ const ImageSlider = () => (
       width={378}
       height={380}
       quality={95}
-      placeholder="blurred"
+      placeholder="tracedSVG"
       alt="work on the go"
       src="../../../images/work_on_the_go.svg"
     /> */}

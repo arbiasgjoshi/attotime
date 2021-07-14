@@ -392,7 +392,7 @@ const Pricing = () => {
           width={1140}
           quality={96}
           height={170}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
         <Link to="/all-features">
           <Button
@@ -437,7 +437,7 @@ const Pricing = () => {
         src="../../images/pricing-time-tracking-for-field-workers.png"
         width={1140}
         quality={96}
-        placeholder="blurred"
+        placeholder="tracedSVG"
         height={460}
       />
       <Divider />

@@ -241,7 +241,7 @@ const Product = () => {
           alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={100}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -252,7 +252,7 @@ const Product = () => {
           alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={100}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -263,7 +263,7 @@ const Product = () => {
           alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={100}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -273,7 +273,7 @@ const Product = () => {
         alt="Everything you need to keep track of your employees’ time"
         width={1220}
         quality={100}
-        placeholder="blurred"
+        placeholder="tracedSVG"
       />
     );
   };

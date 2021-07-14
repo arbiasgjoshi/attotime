@@ -66,7 +66,7 @@ const SubscribeBanner = ({
           width={1140}
           height={470}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -78,7 +78,7 @@ const SubscribeBanner = ({
           width={1140}
           height={470}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -90,7 +90,7 @@ const SubscribeBanner = ({
           width={1140}
           height={470}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -102,7 +102,7 @@ const SubscribeBanner = ({
           width={1140}
           height={470}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }

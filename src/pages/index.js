@@ -99,7 +99,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
           className={desktopImage}
         />
       );
@@ -111,7 +111,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
           className={desktopImage}
         />
       );
@@ -123,7 +123,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
           className={desktopImage}
         />
       );
@@ -135,7 +135,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
           className={desktopImage}
         />
       );
@@ -150,7 +150,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={434}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
           className={mobileImage}
         />
       );
@@ -162,7 +162,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={434}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
           className={mobileImage}
         />
       );
@@ -174,7 +174,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={434}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
           className={mobileImage}
         />
       );
@@ -185,7 +185,7 @@ const Home = () => {
         alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
         width={434}
         quality={95}
-        placeholder="blurred"
+        placeholder="tracedSVG"
         className={mobileImage}
       />
     );

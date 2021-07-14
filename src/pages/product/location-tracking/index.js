@@ -276,7 +276,7 @@ const LocationTracking = () => {
       width={500}
       height={600}
       quality={95}
-      placeholder="blurred"
+      placeholder="tracedSVG"
     />
   );
 
@@ -289,7 +289,7 @@ const LocationTracking = () => {
           width={500}
           height={600}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -301,7 +301,7 @@ const LocationTracking = () => {
           width={500}
           height={600}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -313,7 +313,7 @@ const LocationTracking = () => {
           width={500}
           height={600}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -325,7 +325,7 @@ const LocationTracking = () => {
           width={500}
           height={600}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -340,7 +340,7 @@ const LocationTracking = () => {
           width={1140}
           height={340}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -352,7 +352,7 @@ const LocationTracking = () => {
           width={1140}
           height={340}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -364,7 +364,7 @@ const LocationTracking = () => {
           width={1140}
           height={340}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -376,7 +376,7 @@ const LocationTracking = () => {
           width={1140}
           height={340}
           quality={95}
-          placeholder="blurred"
+          placeholder="tracedSVG"
         />
       );
     }
@@ -469,7 +469,7 @@ const LocationTracking = () => {
             width={455}
             height={500}
             quality={90}
-            placeholder="blurred"
+            placeholder="tracedSVG"
             title={Intl.formatMessage({
               id: 'pages.productLocationTracking.thirdSectionTitle',
             })}

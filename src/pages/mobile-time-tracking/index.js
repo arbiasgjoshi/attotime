@@ -122,7 +122,7 @@ const TimeTrackingApp = () => {
         src="../../images/time-tracking/Time tracking for field workers@2x.png"
         alt="Time tracking for field workers"
         width={1140}
-        placeholder="blurred"
+        placeholder="tracedSVG"
       />
       <Divider />
       <AnyDevice
@@ -171,7 +171,7 @@ const TimeTrackingApp = () => {
       <StaticImage
         quality={97}
         src="../../images/time-tracking/Time tracking for any industry@2x.png"
-        placeholder="blurred"
+        placeholder="tracedSVG"
         width={1140}
         alt="Time tracking for any industry"
       />

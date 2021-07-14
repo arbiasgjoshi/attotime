@@ -165,7 +165,7 @@ const Painting = () => {
             src="../../../images/painting/Say goodbye to paper timesheets@2x.png"
             quality={96}
             width={1209}
-            placeholder="blurred"
+            placeholder="tracedSVG"
           />
           <Divider className="style3" />
           <ImagesBox
