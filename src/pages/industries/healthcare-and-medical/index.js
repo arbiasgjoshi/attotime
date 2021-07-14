@@ -168,7 +168,7 @@ const HomeHealthcare = () => {
             src="../../../images/healthcare/Say goodbye to paper timesheets@2x.png"
             alt="Say goodbye to paper timesheets"
             quality={96}
-            placeholder="none"
+            placeholder="blurred"
           />
           <Divider className="style3" />
           <ImagesBox

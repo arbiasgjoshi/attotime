@@ -38,7 +38,7 @@ const ProductCard = ({
           width="438"
           height="597"
           quality={95}
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -50,7 +50,7 @@ const ProductCard = ({
           width="438"
           height="597"
           quality={95}
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -62,7 +62,7 @@ const ProductCard = ({
           width="438"
           height="597"
           quality={95}
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -74,7 +74,7 @@ const ProductCard = ({
           width="438"
           height="597"
           quality={95}
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -87,7 +87,7 @@ const ProductCard = ({
           quality={95}
           width="531"
           height="650"
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -99,7 +99,7 @@ const ProductCard = ({
           quality={95}
           width="531"
           height="650"
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -111,7 +111,7 @@ const ProductCard = ({
           quality={95}
           width="531"
           height="650"
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -123,7 +123,7 @@ const ProductCard = ({
           quality={95}
           width="531"
           height="650"
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -136,7 +136,7 @@ const ProductCard = ({
           quality={95}
           width="471"
           height="597"
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -148,7 +148,7 @@ const ProductCard = ({
           quality={95}
           width="471"
           height="597"
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -160,7 +160,7 @@ const ProductCard = ({
           quality={95}
           width="471"
           height="597"
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -172,7 +172,7 @@ const ProductCard = ({
           quality={95}
           width="471"
           height="597"
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -185,7 +185,7 @@ const ProductCard = ({
           quality={95}
           width="408"
           height="597"
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -197,7 +197,7 @@ const ProductCard = ({
           quality={95}
           width="408"
           height="597"
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -209,7 +209,7 @@ const ProductCard = ({
           quality={95}
           width="408"
           height="597"
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
@@ -221,7 +221,7 @@ const ProductCard = ({
           quality={95}
           width="408"
           height="597"
-          placeholder="none"
+          placeholder="blurred"
         />
       );
     }
