@@ -7,11 +7,12 @@ import { inputWrapper, defaultInput } from '@components/atoms/input/input.module
 import Button from '@components/atoms/button';
 import { useIntl } from 'gatsby-plugin-react-intl';
 
-import { formWrapper } from './form.module.scss';
+import { formWrapper, errorMessage } from './form.module.scss';
 
 const SubscribeForm = ({ placeholder, onSuccessRes }) => {
   const Intl = useIntl();
   const [stopLoad, setStopLoad] = useState(false);
+  const [error, setError] = useState(null);
 
   const validationSchema = yup.object().shape({
     email: yup.string().email('This field must be a valid email').required('Required'),
@@ -29,7 +30,11 @@ const SubscribeForm = ({ placeholder, onSuccessRes }) => {
       .then((response) => response.json())
       .then((data) => {
         setStopLoad(true);
-        onSuccessRes(data);
+        if (!data.error) {
+          onSuccessRes(data);
+        } else {
+          setError(data.error);
+        }
       });
   };
 
@@ -57,6 +62,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes }) => {
               onBlur={handleBlur}
             />
           </div>
+          {error && <span className={errorMessage}>{error}</span>}
           <Button
             btnText={Intl.formatMessage({ id: 'pages.miscellaneous.startFreeTrial' })}
             btnStyle="black"
