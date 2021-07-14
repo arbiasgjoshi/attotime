@@ -298,7 +298,7 @@ const Footer = () => {
                         key={app.id}
                         className={linkWrap}
                       >
-                        <img src={app.src} alt="Mobile" width="19" />
+                        <img src={app.src} alt="Mobile" width="19" height="23" />
                         <p>{app.name}</p>
                       </a>
                     ))}
@@ -330,6 +330,7 @@ const Footer = () => {
       />
       {/* Google Tag Manager */}
       <script
+        defer
         dangerouslySetInnerHTML={{
           __html: `
                 (function (w, d, s, l, i) {
@@ -363,6 +364,7 @@ const Footer = () => {
 
       {/* <!-- Helpscout --> */}
       <script
+        defer
         dangerouslySetInnerHTML={{
           __html: `
               !function (e, t, n) {
@@ -381,6 +383,7 @@ const Footer = () => {
         }}
       />
       <script
+        defer
         dangerouslySetInnerHTML={{
           __html: `
               window.Beacon('init', 'f0351335-a50d-4bb8-9d06-9b9bf4ad4e12')
