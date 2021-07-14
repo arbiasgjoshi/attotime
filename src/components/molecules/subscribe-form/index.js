@@ -29,8 +29,8 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
     };
     fetch('/confirmation', requestOptions)
       .then((response) => response.json())
-      .catch(() => {
-        console.error('Error is here:');
+      .catch((error) => {
+        console.error(error);
         setStopLoad(!stopLoad);
       })
       .then((data) => {
@@ -53,14 +53,6 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
 
   return (
     <>
-      <button
-        onClick={() => {
-          console.log('im clicking here', stopLoad);
-          setStopLoad(!stopLoad);
-        }}
-      >
-        Click me
-      </button>
       <Formik
         initialValues={{
           email: '',

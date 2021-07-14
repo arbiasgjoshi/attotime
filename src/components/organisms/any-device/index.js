@@ -12,7 +12,7 @@ const AnyDevice = ({ title, description, image, bigDescStyle = false, list, styl
         <p className={bigDescStyle && styles.bigStyle}>{description}</p>
       </div>
       <div className={styles.imageContainer}>
-        <img src={image} alt={title} />
+        <img src={image} alt={title} width="538" height="459" />
       </div>
     </div>
     <div className={styles.secondRow}>
