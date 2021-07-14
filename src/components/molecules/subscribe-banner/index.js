@@ -66,6 +66,7 @@ const SubscribeBanner = ({
           width={1140}
           height={470}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -78,6 +79,7 @@ const SubscribeBanner = ({
           width={1140}
           height={470}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -90,6 +92,7 @@ const SubscribeBanner = ({
           width={1140}
           height={470}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -102,6 +105,7 @@ const SubscribeBanner = ({
           width={1140}
           height={470}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );

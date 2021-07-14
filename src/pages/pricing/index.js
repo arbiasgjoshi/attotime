@@ -391,6 +391,7 @@ const Pricing = () => {
           src="../../images/view-all-features@2x.png"
           width={1140}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           height={170}
           placeholder="blurred"
         />
@@ -437,6 +438,7 @@ const Pricing = () => {
         src="../../images/pricing-time-tracking-for-field-workers.png"
         width={1140}
         quality={96}
+        formats={['auto', 'webp', 'avif']}
         placeholder="blurred"
         height={460}
       />

@@ -27,6 +27,7 @@ const ImagesBox = ({
               height={463}
               placeholder="blurred"
               quality={96}
+              formats={['auto', 'webp', 'avif']}
             />
           </div>
           <div className={styles.imagesContainer}>
@@ -39,6 +40,7 @@ const ImagesBox = ({
                 height={842}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
             <div className={styles.imageBox2}>
@@ -50,6 +52,7 @@ const ImagesBox = ({
                 height={749}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
               {/* boxImage3 */}
               <StaticImage
@@ -58,6 +61,7 @@ const ImagesBox = ({
                 width={378}
                 placeholder="blurred"
                 quality={97}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
           </div>
@@ -76,6 +80,7 @@ const ImagesBox = ({
               height={463}
               placeholder="blurred"
               quality={96}
+              formats={['auto', 'webp', 'avif']}
             />
           </div>
           <div className={styles.imagesContainer}>
@@ -88,6 +93,7 @@ const ImagesBox = ({
                 height={842}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
             <div className={styles.imageBox2}>
@@ -99,6 +105,7 @@ const ImagesBox = ({
                 height={749}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
               {/* boxImage3 */}
               <StaticImage
@@ -107,6 +114,7 @@ const ImagesBox = ({
                 width={378}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
           </div>
@@ -126,6 +134,7 @@ const ImagesBox = ({
               height={463}
               placeholder="blurred"
               quality={96}
+              formats={['auto', 'webp', 'avif']}
             />
           </div>
           <div className={styles.imagesContainer}>
@@ -138,6 +147,7 @@ const ImagesBox = ({
                 height={842}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
             <div className={styles.imageBox2}>
@@ -149,6 +159,7 @@ const ImagesBox = ({
                 height={749}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
               {/* boxImage3 */}
               <StaticImage
@@ -157,6 +168,7 @@ const ImagesBox = ({
                 width={378}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
           </div>
@@ -176,6 +188,7 @@ const ImagesBox = ({
               height={463}
               placeholder="blurred"
               quality={96}
+              formats={['auto', 'webp', 'avif']}
             />
           </div>
           <div className={styles.imagesContainer}>
@@ -188,6 +201,7 @@ const ImagesBox = ({
                 height={842}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
             <div className={styles.imageBox2}>
@@ -199,6 +213,7 @@ const ImagesBox = ({
                 height={749}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
               {/* boxImage3 */}
               <StaticImage
@@ -207,6 +222,7 @@ const ImagesBox = ({
                 width={378}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
           </div>
@@ -226,6 +242,7 @@ const ImagesBox = ({
               height={463}
               placeholder="blurred"
               quality={96}
+              formats={['auto', 'webp', 'avif']}
             />
           </div>
           <div className={styles.imagesContainer}>
@@ -238,6 +255,7 @@ const ImagesBox = ({
                 height={842}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
             <div className={styles.imageBox2}>
@@ -249,6 +267,7 @@ const ImagesBox = ({
                 height={749}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
               {/* boxImage3 */}
               <StaticImage
@@ -257,6 +276,7 @@ const ImagesBox = ({
                 width={378}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
           </div>
@@ -276,6 +296,7 @@ const ImagesBox = ({
               height={463}
               placeholder="blurred"
               quality={96}
+              formats={['auto', 'webp', 'avif']}
             />
           </div>
           <div className={styles.imagesContainer}>
@@ -288,6 +309,7 @@ const ImagesBox = ({
                 height={842}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
             <div className={styles.imageBox2}>
@@ -299,6 +321,7 @@ const ImagesBox = ({
                 height={749}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
               {/* boxImage3 */}
               <StaticImage
@@ -308,6 +331,7 @@ const ImagesBox = ({
                 height={856}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
           </div>
@@ -327,6 +351,7 @@ const ImagesBox = ({
               height={463}
               placeholder="blurred"
               quality={96}
+              formats={['auto', 'webp', 'avif']}
             />
           </div>
           <div className={styles.imagesContainer}>
@@ -339,6 +364,7 @@ const ImagesBox = ({
                 height={842}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
             <div className={styles.imageBox2}>
@@ -350,6 +376,7 @@ const ImagesBox = ({
                 height={749}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
               {/* boxImage3 */}
               <StaticImage
@@ -358,6 +385,7 @@ const ImagesBox = ({
                 width={378}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
           </div>
@@ -377,6 +405,7 @@ const ImagesBox = ({
               height={463}
               placeholder="blurred"
               quality={96}
+              formats={['auto', 'webp', 'avif']}
             />
           </div>
           <div className={styles.imagesContainer}>
@@ -389,6 +418,7 @@ const ImagesBox = ({
                 height={842}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
             <div className={styles.imageBox2}>
@@ -400,6 +430,7 @@ const ImagesBox = ({
                 height={749}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
               {/* boxImage3 */}
               <StaticImage
@@ -408,6 +439,7 @@ const ImagesBox = ({
                 width={378}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
           </div>
@@ -427,6 +459,7 @@ const ImagesBox = ({
               height={463}
               placeholder="blurred"
               quality={96}
+              formats={['auto', 'webp', 'avif']}
             />
             <StaticImage
               src="../../../images/time-clock/Location tracking@2x.png"
@@ -435,6 +468,7 @@ const ImagesBox = ({
               height={270}
               placeholder="blurred"
               quality={96}
+              formats={['auto', 'webp', 'avif']}
             />
           </div>
           <div className={styles.imagesContainer}>
@@ -447,6 +481,7 @@ const ImagesBox = ({
                 height={842}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
             <div className={styles.imageBox2}>
@@ -458,6 +493,7 @@ const ImagesBox = ({
                 height={445}
                 placeholder="blurred"
                 quality={96}
+                formats={['auto', 'webp', 'avif']}
               />
               {/* boxImage3 */}
               <StaticImage
@@ -466,6 +502,7 @@ const ImagesBox = ({
                 width={378}
                 placeholder="blurred"
                 quality={97}
+                formats={['auto', 'webp', 'avif']}
               />
             </div>
           </div>

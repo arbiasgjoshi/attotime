@@ -125,6 +125,7 @@ const EmployeeTimesheetApp = () => {
         <StaticImage
           width={1220}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           src="../../images/timesheets/Ready-made professional timesheets@2x.png"
           placeholder="blurred"
           alt="Ready-made professional timesheets"
@@ -200,6 +201,7 @@ const EmployeeTimesheetApp = () => {
         width={1140}
         alt="Time tracking for field workers"
         quality={96}
+        formats={['auto', 'webp', 'avif']}
         placeholder="blurred"
       />
       <Divider className="style11" />
@@ -226,6 +228,7 @@ const EmployeeTimesheetApp = () => {
         src="../../images/timesheets/Time tracking for any industry@2x.png"
         alt="Time tracking for any industry"
         quality={96}
+        formats={['auto', 'webp', 'avif']}
         placeholder="blurred"
       />
       <Divider />

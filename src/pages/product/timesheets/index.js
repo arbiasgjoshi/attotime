@@ -234,6 +234,7 @@ const Timesheets = () => {
           alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -245,6 +246,7 @@ const Timesheets = () => {
           alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -256,6 +258,7 @@ const Timesheets = () => {
           alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -267,6 +270,7 @@ const Timesheets = () => {
           alt="Everything you need to keep track of your employees’ time"
           width={1220}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );

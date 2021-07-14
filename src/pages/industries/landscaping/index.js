@@ -112,6 +112,7 @@ const Landscaping = () => {
             src="../../../images/landscaping/Ditch paper timesheets and switch to Atto@2x.png"
             width={1140}
             quality={96}
+            formats={['auto', 'webp', 'avif']}
             placeholder="blurred"
           />
           <Divider className="style3" />
@@ -181,6 +182,7 @@ const Landscaping = () => {
         <Divider className="style4" />
         <StaticImage
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           width={1140}
           height={241}
           style={{ marginBottom: '0.2rem' }}

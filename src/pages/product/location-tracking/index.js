@@ -276,6 +276,7 @@ const LocationTracking = () => {
       width={500}
       height={600}
       quality={96}
+      formats={['auto', 'webp', 'avif']}
       placeholder="blurred"
     />
   );
@@ -289,6 +290,7 @@ const LocationTracking = () => {
           width={500}
           height={600}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -301,6 +303,7 @@ const LocationTracking = () => {
           width={500}
           height={600}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -313,6 +316,7 @@ const LocationTracking = () => {
           width={500}
           height={600}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -325,6 +329,7 @@ const LocationTracking = () => {
           width={500}
           height={600}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -340,6 +345,7 @@ const LocationTracking = () => {
           width={1140}
           height={340}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -352,6 +358,7 @@ const LocationTracking = () => {
           width={1140}
           height={340}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -364,6 +371,7 @@ const LocationTracking = () => {
           width={1140}
           height={340}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );
@@ -376,6 +384,7 @@ const LocationTracking = () => {
           width={1140}
           height={340}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
         />
       );

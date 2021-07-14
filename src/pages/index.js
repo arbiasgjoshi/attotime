@@ -99,6 +99,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
           className={desktopImage}
         />
@@ -111,6 +112,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
           className={desktopImage}
         />
@@ -123,6 +125,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
           className={desktopImage}
         />
@@ -135,6 +138,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={1140}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
           className={desktopImage}
         />
@@ -150,6 +154,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={434}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
           className={mobileImage}
         />
@@ -162,6 +167,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={434}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
           className={mobileImage}
         />
@@ -174,6 +180,7 @@ const Home = () => {
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={434}
           quality={96}
+          formats={['auto', 'webp', 'avif']}
           placeholder="blurred"
           className={mobileImage}
         />
@@ -185,6 +192,7 @@ const Home = () => {
         alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
         width={434}
         quality={96}
+        formats={['auto', 'webp', 'avif']}
         placeholder="blurred"
         className={mobileImage}
       />

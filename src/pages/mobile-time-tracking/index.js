@@ -119,6 +119,7 @@ const TimeTrackingApp = () => {
       <Divider />
       <StaticImage
         quality={97}
+        formats={['auto', 'webp', 'avif']}
         src="../../images/time-tracking/Time tracking for field workers@2x.png"
         alt="Time tracking for field workers"
         width={1140}
@@ -170,6 +171,7 @@ const TimeTrackingApp = () => {
       <Divider />
       <StaticImage
         quality={97}
+        formats={['auto', 'webp', 'avif']}
         src="../../images/time-tracking/Time tracking for any industry@2x.png"
         placeholder="blurred"
         width={1140}
