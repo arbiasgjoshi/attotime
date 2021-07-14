@@ -158,8 +158,7 @@ const WorkHoursTracker = () => {
       <div className={imageWrapper}>
         <StaticImage
           width={1220}
-          quality={96}
-          formats={['auto', 'webp', 'avif']}
+          quality={98}
           src="../../images/work-hours-tracker/Ready-made professional timesheets@2x.png"
           placeholder="blurred"
           alt="Ready-made professional timesheets"
@@ -184,8 +183,7 @@ const WorkHoursTracker = () => {
       <Divider className="style3" />
       <StaticImage
         src="../../images/work-hours-tracker/Time tracking for any industry@2x.png"
-        quality={96}
-        formats={['auto', 'webp', 'avif']}
+        quality={98}
         width={1140}
         height={445}
         alt="Time tracking for any industry"
@@ -198,8 +196,7 @@ const WorkHoursTracker = () => {
         src="../../images/work-hours-tracker/Time tracking for field workers@2x.png"
         width={1140}
         height={509}
-        quality={96}
-        formats={['auto', 'webp', 'avif']}
+        quality={98}
         placeholder="blurred"
       />
       <Divider />

@@ -260,7 +260,6 @@ const Footer = () => {
               src="../../../images/logo@3x.png"
               alt="footer-logo"
               quality={100}
-              formats={['auto', 'webp', 'avif']}
               width={86}
               placeholder="blurred"
             />

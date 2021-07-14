@@ -276,7 +276,6 @@ const LocationTracking = () => {
       width={500}
       height={600}
       quality={96}
-      formats={['auto', 'webp', 'avif']}
       placeholder="blurred"
     />
   );
@@ -289,8 +288,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={500}
           height={600}
-          quality={96}
-          formats={['auto', 'webp', 'avif']}
+          quality={98}
           placeholder="blurred"
         />
       );
@@ -302,8 +300,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={500}
           height={600}
-          quality={96}
-          formats={['auto', 'webp', 'avif']}
+          quality={98}
           placeholder="blurred"
         />
       );
@@ -315,8 +312,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={500}
           height={600}
-          quality={96}
-          formats={['auto', 'webp', 'avif']}
+          quality={98}
           placeholder="blurred"
         />
       );
@@ -328,8 +324,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={500}
           height={600}
-          quality={96}
-          formats={['auto', 'webp', 'avif']}
+          quality={98}
           placeholder="blurred"
         />
       );
@@ -344,8 +339,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={1140}
           height={340}
-          quality={96}
-          formats={['auto', 'webp', 'avif']}
+          quality={98}
           placeholder="blurred"
         />
       );
@@ -357,8 +351,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={1140}
           height={340}
-          quality={96}
-          formats={['auto', 'webp', 'avif']}
+          quality={98}
           placeholder="blurred"
         />
       );
@@ -370,8 +363,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={1140}
           height={340}
-          quality={96}
-          formats={['auto', 'webp', 'avif']}
+          quality={98}
           placeholder="blurred"
         />
       );
@@ -383,8 +375,7 @@ const LocationTracking = () => {
           alt={Intl.formatMessage({ id: 'pages.productLocationTracking.secondSectionTitle' })}
           width={1140}
           height={340}
-          quality={96}
-          formats={['auto', 'webp', 'avif']}
+          quality={98}
           placeholder="blurred"
         />
       );
