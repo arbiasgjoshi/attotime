@@ -26,7 +26,6 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
   };
 
   const signUpTrial = (val) => {
-    console.log('we are submitting stuff here');
     const requestOptions = {
       method: 'POST',
       headers: {
@@ -34,7 +33,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
       },
       body: JSON.stringify({ email: val }),
     };
-    fetch('/confirmation', requestOptions)
+    fetch('http://127.0.0.1:8001/confirmation', requestOptions)
       .then((response) => response.json())
       .then((data) => {
         setLoader(false);
@@ -68,7 +67,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
           signUpTrial(values.email);
         }}
       >
-        {({ values, handleSubmit, handleChange, handleBlur, errors }) => (
+        {({ values, handleSubmit, isValid, handleChange, handleBlur, errors }) => (
           <form method="POST" className={formWrapper}>
             <div className={inputWrapper}>
               <input
@@ -84,8 +83,10 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
             {console.log(errors)}
             <button
               onClick={() => {
-                handleSubmit();
-                toggleButtonAnimations();
+                if (isValid) {
+                  handleSubmit();
+                  toggleButtonAnimations();
+                }
               }}
               disabled={disabled}
               className={`${defaultBtn} ${blackStyle}`}
