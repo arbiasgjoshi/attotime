@@ -4,24 +4,32 @@ import { Formik } from 'formik';
 import * as yup from 'yup';
 
 import { inputWrapper, defaultInput, inputError } from '@components/atoms/input/input.module.scss';
-import Button from '@components/atoms/button';
+import { defaultBtn, blackStyle } from '@components/atoms/button/button.module.scss';
 import { useIntl } from 'gatsby-plugin-react-intl';
 
-import { formWrapper, errorMessage } from './form.module.scss';
+import { formWrapper } from './form.module.scss';
 
 const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted }) => {
   const Intl = useIntl();
+  // const [stopLoad, setStopLoad] = useState(false);
   const [disabled, setDisabled] = useState(false);
-  const [stopLoad, setStopLoad] = useState(false);
+  const [loader, setLoader] = useState(false);
   const [hasError, setHasError] = useState(false);
 
   const validationSchema = yup.object().shape({
     email: yup.string().email('This field must be a valid email').required('Required'),
   });
 
+  const toggleButtonAnimations = () => {
+    setLoader(true);
+    setDisabled(true);
+  };
+
   const signUpTrial = (val) => {
+    console.log('we are submitting stuff here');
     const requestOptions = {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -29,12 +37,10 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
     };
     fetch('/confirmation', requestOptions)
       .then((response) => response.json())
-      .catch((error) => {
-        console.error(error);
-        setStopLoad(!stopLoad);
-      })
       .then((data) => {
-        setStopLoad(!stopLoad);
+        setLoader(false);
+        setDisabled(false);
+
         if (data && !data.error) {
           setHasError(false);
           onSuccessRes(data);
@@ -48,7 +54,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
   };
 
   useEffect(() => {
-    setStopLoad(true);
+    setLoader(false);
   }, [sucessfullyDeleted]);
 
   return (
@@ -63,8 +69,8 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
           signUpTrial(values.email);
         }}
       >
-        {({ values, handleSubmit, handleChange, isValid, isSubmitting, handleBlur, errors }) => (
-          <form method="POST" onSubmit={handleSubmit} className={formWrapper}>
+        {({ values, handleSubmit, handleChange, handleBlur, errors }) => (
+          <form method="POST" className={formWrapper}>
             <div className={inputWrapper}>
               <input
                 placeholder={placeholder}
@@ -76,15 +82,178 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
                 onBlur={handleBlur}
               />
             </div>
-            {console.log(isValid, isSubmitting)}
-            <Button
-              btnText={Intl.formatMessage({ id: 'pages.miscellaneous.startFreeTrial' })}
-              btnStyle="black"
-              disabled={!isValid && isSubmitting}
-              hasLoader
-              // onClick={() => setDisabled(true)}
-              stopLoader={stopLoad}
-            />
+            {console.log(errors)}
+            <button
+              onClick={() => {
+                handleSubmit();
+                toggleButtonAnimations();
+              }}
+              disabled={disabled}
+              className={`${defaultBtn} ${blackStyle}`}
+            >
+              {loader ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{
+                    margin: 'auto',
+                    background: 'transparent',
+                    display: 'block',
+                    shapeRendering: ' auto',
+                  }}
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 100 100"
+                  preserveAspectRatio="xMidYMid"
+                >
+                  <g transform="rotate(0 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                      <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        keyTimes="0;1"
+                        dur="1s"
+                        begin="-0.9166666666666666s"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </rect>
+                  </g>
+                  <g transform="rotate(30 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                      <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        keyTimes="0;1"
+                        dur="1s"
+                        begin="-0.8333333333333334s"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </rect>
+                  </g>
+                  <g transform="rotate(60 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                      <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        keyTimes="0;1"
+                        dur="1s"
+                        begin="-0.75s"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </rect>
+                  </g>
+                  <g transform="rotate(90 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                      <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        keyTimes="0;1"
+                        dur="1s"
+                        begin="-0.6666666666666666s"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </rect>
+                  </g>
+                  <g transform="rotate(120 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                      <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        keyTimes="0;1"
+                        dur="1s"
+                        begin="-0.5833333333333334s"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </rect>
+                  </g>
+                  <g transform="rotate(150 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                      <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        keyTimes="0;1"
+                        dur="1s"
+                        begin="-0.5s"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </rect>
+                  </g>
+                  <g transform="rotate(180 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                      <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        keyTimes="0;1"
+                        dur="1s"
+                        begin="-0.4166666666666667s"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </rect>
+                  </g>
+                  <g transform="rotate(210 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                      <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        keyTimes="0;1"
+                        dur="1s"
+                        begin="-0.3333333333333333s"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </rect>
+                  </g>
+                  <g transform="rotate(240 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                      <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        keyTimes="0;1"
+                        dur="1s"
+                        begin="-0.25s"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </rect>
+                  </g>
+                  <g transform="rotate(270 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                      <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        keyTimes="0;1"
+                        dur="1s"
+                        begin="-0.16666666666666666s"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </rect>
+                  </g>
+                  <g transform="rotate(300 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                      <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        keyTimes="0;1"
+                        dur="1s"
+                        begin="-0.08333333333333333s"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </rect>
+                  </g>
+                  <g transform="rotate(330 50 50)">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#ffffff">
+                      <animate
+                        attributeName="opacity"
+                        values="1;0"
+                        keyTimes="0;1"
+                        dur="1s"
+                        begin="0s"
+                        repeatCount="indefinite"
+                      ></animate>
+                    </rect>
+                  </g>
+                </svg>
+              ) : (
+                Intl.formatMessage({ id: 'pages.miscellaneous.startFreeTrial' })
+              )}
+            </button>
           </form>
         )}
       </Formik>
