@@ -33,7 +33,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ val }),
+      body: JSON.stringify(val),
     };
     fetch('/confirmation', requestOptions)
       .then((response) => response.json())
