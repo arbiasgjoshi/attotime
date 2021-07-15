@@ -51,10 +51,9 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
           }
         }
       })
-      .catch((error) => {
+      .catch(() => {
         setLoader(false);
         setDisabled(false);
-        console.log(error);
       });
   };
 
