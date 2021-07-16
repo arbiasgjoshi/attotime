@@ -29,7 +29,6 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
     console.log(val);
     const requestOptions = {
       method: 'POST',
-      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json',
       },
