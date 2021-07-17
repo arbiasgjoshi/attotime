@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { LiveChatLoaderProvider, HelpScout } from 'react-live-chat-loader';
 import { Link, useIntl } from 'gatsby-plugin-react-intl';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -321,7 +321,7 @@ const Footer = () => {
           providerKey="f0351335-a50d-4bb8-9d06-9b9bf4ad4e12"
           provider="helpScout"
         >
-          <HelpScout />
+          <HelpScout horizontalPosition="right" color="#00b9cb" icon="message" />
         </LiveChatLoaderProvider>
       </footer>
       {cookieScripts(Intl.locale)}
