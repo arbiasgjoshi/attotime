@@ -72,7 +72,7 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
         }}
       >
         {({ values, isValid, handleSubmit, handleChange, handleBlur, errors }) => (
-          <form method="POST" onSubmit={handleSubmit} className={formWrapper}>
+          <form method="POST" className={formWrapper}>
             <div className={inputWrapper}>
               <input
                 placeholder={placeholder}
