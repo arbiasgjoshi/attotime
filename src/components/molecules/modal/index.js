@@ -14,9 +14,11 @@ import {
   pushButton,
   pushAround,
 } from './modal.module.scss';
+// import { toggleDeleteInvite } from '../../../helpers';
 
 function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
   const Intl = useIntl();
+  const [disabled, setDisabled] = useState(false);
 
   const stateSucceeded = (val) => {
     setFormValues(val);
@@ -174,6 +176,11 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
     return 'Setup New Account';
   };
 
+  const toggleDeleteInvite = (data) => {
+    deleteInvite({ email: data?.email, action: 'delete' });
+    setDisabled(true);
+  };
+
   const renderModalTypes = (data) => {
     if (data?.message === 'Signup Succeeded' || data?.message === '__Signup Succeeded') {
       return (
@@ -204,8 +211,9 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
             <p className={pushAround}>{orLabel(Intl.locale)}</p>
             <Button
               btnStyle="gray"
+              disabled={disabled}
               btnText={buttonLabelTwo(Intl.locale)}
-              onBtnClick={() => deleteInvite({ email: data?.email, action: 'delete' })}
+              onBtnClick={() => toggleDeleteInvite()}
             />
           </div>
         </>

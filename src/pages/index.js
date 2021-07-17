@@ -1,26 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { lazy, Suspense, useState, useEffect } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Slider from 'react-slick';
 import { useIntl } from 'gatsby-plugin-react-intl';
 
-import Icon from '@components/atoms/icon';
-import Button from '@components/atoms/button';
-import Divider from '@components/atoms/divider';
-import EmailForm from '@components/atoms/email-form';
-import Number from '@components/atoms/number-card';
 import HeaderComponent from '@components/molecules/header';
 import Seo from '@components/molecules/seo';
-import Modal from '@components/molecules/modal';
-import FooterComponent from '@components/molecules/footer';
+import Icon from '@components/atoms/icon';
+import Divider from '@components/atoms/divider';
 import Title from '@components/molecules/title';
 import MainTitle from '@components/molecules/main-title-card';
-import CommentCard from '@components/molecules/comment-card';
+import EmailForm from '@components/atoms/email-form';
+
+import Modal from '@components/molecules/modal';
+import FooterComponent from '@components/molecules/footer';
+import VideoCheckList from '@components/organisms/video-checklist';
 import CarouselComponent from '@components/molecules/carousel';
 import FeatureTabs from '@components/organisms/feature-tabs';
-import FreeTrial from '@components/organisms/free-trial';
 import Story from '@components/organisms/story';
+import CommentCard from '@components/molecules/comment-card';
 import Services from '@components/organisms/services';
-import VideoCheckList from '@components/organisms/video-checklist';
+import FreeTrial from '@components/organisms/free-trial';
+import Number from '@components/atoms/number-card';
+
+import { deleteInvitation } from '@helpers';
 
 import { container, formRotated } from '@styles/main.module.scss';
 import '@styles/includes/slick-carousel.scss';
@@ -188,21 +190,15 @@ const Home = () => {
     );
   };
 
-  const toggleDeleteInvite = (data) => {
-    const requestOptions = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email: data.email }),
-    };
-    fetch('/delete-invite', requestOptions)
-      .then((response) => response.json())
-      .then((res) => {
-        setDeleted(true);
-        setValues(res);
-        openModal();
-      });
+  const toggleDeleteInvite = async (val) => {
+    try {
+      const response = await deleteInvitation(val);
+      console.log(response);
+      setDeleted(true);
+      setValues(response);
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   const formSuccessState = (val) => {

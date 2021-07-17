@@ -88,7 +88,8 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
             <button
               type="submit"
               aria-label="Submit Form"
-              onClick={() => {
+              onClick={(e) => {
+                e.preventDefault();
                 if (isValid) {
                   handleSubmit();
                   if (!errors) {

@@ -125,13 +125,7 @@ const Video = ({ placeholder, videoUrl }) => {
           <span className={`${videoBackground} ${leftAligned}`} />
           {switchPlaceholder(placeholder)}
           <span className={`${videoBackground} ${rightAligned}`} />
-          <div
-            className={playIcon}
-            role="button"
-            aria-checked="true"
-            aria-label="Play Video"
-            tabIndex="-1"
-          >
+          <div className={playIcon} role="button" aria-label="Play Video" tabIndex="-1">
             <Icon iconClass="play" fSize={11} />
           </div>
           <div className={watchButton}>
