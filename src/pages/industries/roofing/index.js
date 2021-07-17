@@ -23,7 +23,6 @@ import image6 from '@images/roofing/Forecast your wage bill ahead of payday to a
 
 import { oldList, newList, roofingSteps } from '@data/industries';
 import { checkList1, firstList, accordionList1, accordionList2 } from '@data/industries/roofing.js';
-// import { FooterLinks } from '@locale/en.js';
 import {
   container,
   industryPadding,
@@ -31,8 +30,6 @@ import {
   background,
   oldVsNewGradient,
 } from '@styles/main.module.scss';
-
-// import localeData from '@locale/en';
 
 const Roofing = () => {
   const Intl = useIntl();

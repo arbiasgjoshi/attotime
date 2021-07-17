@@ -28,7 +28,6 @@ import {
   accordionList2,
 } from '@data/industries/home-and-healthcare.js';
 import { oldList, newList, healthSteps } from '@data/industries';
-// import { FooterLinks } from '@locale/en.js';
 import {
   container,
   industryPadding,
@@ -36,8 +35,6 @@ import {
   background,
   oldVsNewGradient,
 } from '@styles/main.module.scss';
-
-// import localeData from '@locale/en';
 
 const HomeHealthcare = () => {
   const Intl = useIntl();

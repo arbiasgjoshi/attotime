@@ -37,8 +37,6 @@ import { oldList, newList, cleanersSteps } from '@data/industries';
 import image5 from '@images/cleaning/See who’s nearby and available to respond to urgent cleaning jobs@2x.png';
 import image6 from '@images/cleaning/Keep a handle on your biggest cost – your cleaners’ wages@2x.png';
 
-// import { FooterLinks } from '@locale/en.js';
-
 const Cleaning = () => {
   const Intl = useIntl();
 

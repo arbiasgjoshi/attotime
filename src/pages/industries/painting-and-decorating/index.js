@@ -30,7 +30,6 @@ import {
   accordionList2,
 } from '@data/industries/painting.js';
 import { oldList, newList, painterSteps } from '@data/industries';
-// import { FooterLinks } from '@locale/en.js';
 import {
   container,
   industryPadding,

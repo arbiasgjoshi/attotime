@@ -49,8 +49,6 @@ import {
 } from '@data/third-phase/work-hours.js';
 import { buttonContainer } from './work-hours-tracker.module.scss';
 
-// import localeData from '@locale/en';
-
 const WorkHoursTracker = () => {
   const Intl = useIntl();
   const [showDialog, setShowDialog] = useState(false);

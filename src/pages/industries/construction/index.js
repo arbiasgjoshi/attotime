@@ -31,8 +31,6 @@ import {
 } from '@data/industries/construction.js';
 
 import { steps, oldList, newList } from '@data/industries';
-
-// import { FooterLinks } from '@locale/en.js';
 import { topImageMask, bottomImageMask, greenBackground } from './construction.module.scss';
 
 const Construction = () => {

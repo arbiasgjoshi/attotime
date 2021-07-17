@@ -213,7 +213,7 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
               btnStyle="gray"
               disabled={disabled}
               btnText={buttonLabelTwo(Intl.locale)}
-              onBtnClick={() => toggleDeleteInvite()}
+              onBtnClick={() => toggleDeleteInvite(data)}
             />
           </div>
         </>

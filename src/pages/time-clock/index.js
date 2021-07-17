@@ -32,8 +32,6 @@ import { workListContainer, featureCardWithBanner } from './time-clock.module.sc
 
 import { checkList, commonQuestionsList } from '../../data/third-phase/time-clock.js';
 
-// import localeData from '@locale/en';
-
 const TimeClock = () => {
   const Intl = useIntl();
   const [showDialog, setShowDialog] = useState(false);
