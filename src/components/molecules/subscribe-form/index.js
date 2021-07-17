@@ -49,10 +49,18 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
           }
         }
       })
-      .catch(() => {
+      .catch((err) => {
         setLoader(false);
         setDisabled(false);
       });
+  };
+
+  const toggleSubmit = (e, submit, valid) => {
+    e.preventDefault();
+    if (valid) {
+      submit();
+      toggleButtonAnimations();
+    }
   };
 
   useEffect(() => {
@@ -84,19 +92,10 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
                 onBlur={handleBlur}
               />
             </div>
-            {/* <Button btnText="Submit" /> */}
             <button
               type="submit"
               aria-label="Submit Form"
-              onClick={(e) => {
-                e.preventDefault();
-                if (isValid) {
-                  handleSubmit();
-                  if (!errors) {
-                    toggleButtonAnimations();
-                  }
-                }
-              }}
+              onClick={(e) => toggleSubmit(e, handleSubmit, isValid)}
               disabled={disabled || !isValid}
               className={`${defaultBtn} ${blackStyle}`}
             >

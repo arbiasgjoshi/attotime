@@ -73,6 +73,14 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes, onToggleModal 
       });
   };
 
+  const toggleSubmit = (e, submit, valid) => {
+    e.preventDefault();
+    if (valid) {
+      submit();
+      toggleButtonAnimations();
+    }
+  };
+
   return (
     <>
       <h4 className={mobileOnly}>{description}</h4>
@@ -105,15 +113,7 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes, onToggleModal 
                 </div>
                 <div className={desktopBtn}>
                   <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      if (isValid) {
-                        handleSubmit();
-                        if (!errors) {
-                          toggleButtonAnimations();
-                        }
-                      }
-                    }}
+                    onClick={(e) => toggleSubmit(e, handleSubmit, isValid)}
                     disabled={disabled}
                     className={`${defaultBtn} ${blackStyle}`}
                   >
