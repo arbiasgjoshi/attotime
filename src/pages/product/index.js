@@ -17,31 +17,9 @@ import FooterComponent from '@components/molecules/footer';
 
 import { container, imageFormWrapper, imageWrapper } from '@styles/main.module.scss';
 
-import authorImage from '@images/en/overview/Time tracking app review@2x.png';
-
 import icon from '@images/easy-to-use.png';
 import icon2 from '@images/All_in_one@2x.png';
 import icon3 from '@images/Time_saving@2x.png';
-
-import imgLocaleOneEn from '@images/en/overview/Atto - time and location tracking app generating timesheets@2x.png';
-import imgLocaleOneDe from '@images/de/overview/DE_Atto - time and location tracking app generating timesheet@2x.png';
-import imgLocaleOneEs from '@images/es/overview/ES_Atto - time and location tracking app generating timesheets@2x.png';
-import imgLocaleOneFr from '@images/fr/overview/FR_Atto - time and location tracking app generating timesheets@2x.png';
-
-import imgLocaleTwoEn from '@images/en/overview/Know where your team is in real-time@2x.png';
-import imgLocaleTwoDe from '@images/de/overview/DE_Know where your team is in real-time@2x.png';
-import imgLocaleTwoEs from '@images/es/overview/ES_Know where your team is in real-time@2x.png';
-import imgLocaleTwoFr from '@images/fr/overview/FR_Know where your team is in real-time@2x.png';
-
-import imgLocaleThreeEn from '@images/en/overview/Stay in the loop as work happens@2x.png';
-import imgLocaleThreeDe from '@images/de/overview/DE_Stay in the loop as work happens@2x.png';
-import imgLocaleThreeEs from '@images/es/overview/ES_Stay in the loop as work happens@2x.png';
-import imgLocaleThreeFr from '@images/fr/overview/FR_Stay in the loop as work happens@2x.png';
-
-import imgLocaleFourEn from '@images/en/overview/Relax with timesheets on time, every time@2x.png';
-import imgLocaleFourDe from '@images/de/overview/DE_Relax with timesheets on time, every time@2x.png';
-import imgLocaleFourEs from '@images/es/overview/ES_Relax with timesheets on time, every time@2x.png';
-import imgLocaleFourFr from '@images/fr/overview/FR_Relax with timesheets on time, every time@2x.png';
 
 import { productContainer } from './product.module.scss';
 

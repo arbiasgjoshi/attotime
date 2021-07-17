@@ -65,7 +65,7 @@ const CustomSelect = () => {
     <div
       className={selectDropdown}
       onKeyDown={() => toggleDropdown()}
-      role="menu"
+      role="listbox"
       tabIndex="0"
       onClick={() => toggleDropdown()}
     >
@@ -77,8 +77,10 @@ const CustomSelect = () => {
         {languages.map((lang, ix) => (
           <button
             className={buttonClass(lang)}
+            aria-selected={item.name === selected && true}
             onClick={() => changeLocale(lang.path)}
             type="button"
+            role="option"
             key={ix}
           >
             {lang.name}

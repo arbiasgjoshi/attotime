@@ -490,7 +490,12 @@ const HeaderComponent = ({ headerStyle }) => {
           </Link>
         </div>
         <div className={rightNavButtons}>
-          <a href="https://app.attotime.com/login" target="_blank" className={login}>
+          <a
+            href="https://app.attotime.com/login"
+            rel="noreferrer"
+            target="_blank"
+            className={login}
+          >
             {Intl.formatMessage({ id: 'header.menu.login' })}
           </a>
           <Button
