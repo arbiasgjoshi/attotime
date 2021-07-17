@@ -41,17 +41,17 @@ const Product = () => {
       body: JSON.stringify({ email: data.email }),
     };
     fetch('/delete-invite', requestOptions)
-      .then((response) => response.json())
-      .then((res) => {
-        setDeleted(true);
-        setValues(res);
-        openModal();
+      .then((res) => res.json())
+      .then((data) => {
+        closeModal();
+        setValues(data);
+        setTimeout(() => openModal(), 2000);
       });
   };
 
   const formSuccessState = (val) => {
-    closeModal();
     if (val?.action !== 'delete') {
+      closeModal();
       setValues(val);
       setTimeout(() => {
         openModal();

@@ -190,20 +190,27 @@ const Home = () => {
     );
   };
 
-  const toggleDeleteInvite = async (val) => {
-    try {
-      const response = await deleteInvitation(val);
-      console.log(response);
-      setDeleted(true);
-      setValues(response);
-    } catch (e) {
-      console.log(e);
-    }
+  const toggleDeleteInvite = (data) => {
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email: data.email }),
+    };
+    fetch('/delete-invite', requestOptions)
+      .then((res) => res.json())
+      .then((data) => {
+        closeModal();
+        setDeleted(true);
+        setValues(data);
+        setTimeout(() => openModal(), 2000);
+      });
   };
 
   const formSuccessState = (val) => {
-    closeModal();
     if (val?.action !== 'delete') {
+      closeModal();
       setValues(val);
       setTimeout(() => {
         openModal();

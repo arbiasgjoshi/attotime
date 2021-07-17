@@ -419,8 +419,8 @@ const HeaderComponent = ({ headerStyle }) => {
   };
 
   const formSuccessState = (val) => {
-    closeModal();
     if (val?.action !== 'delete') {
+      closeModal();
       setValues(val);
     } else {
       toggleDeleteInvite(val);
@@ -447,7 +447,6 @@ const HeaderComponent = ({ headerStyle }) => {
         close={closeModal}
         showDialog={showDialog}
         hasValues={values}
-        onDelete={toggleDeleteInvite}
         setFormValues={(formValues) => formSuccessState(formValues)}
       />
       <div className={container}>

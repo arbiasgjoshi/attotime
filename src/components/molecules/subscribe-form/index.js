@@ -25,7 +25,6 @@ const SubscribeForm = ({ placeholder, onSuccessRes, onError, sucessfullyDeleted 
   };
 
   const signUpTrial = (val) => {
-    console.log(val);
     const requestOptions = {
       method: 'POST',
       headers: {

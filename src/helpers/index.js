@@ -23,7 +23,5 @@ export const deleteInvitation = (data) => {
     },
     body: JSON.stringify({ email: data.email }),
   };
-  fetch('/delete-invite', requestOptions)
-    .then((response) => response.json())
-    .then((res) => res);
+  fetch('/delete-invite', requestOptions);
 };

@@ -14,7 +14,6 @@ import {
   pushButton,
   pushAround,
 } from './modal.module.scss';
-// import { toggleDeleteInvite } from '../../../helpers';
 
 function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
   const Intl = useIntl();
