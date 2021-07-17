@@ -90,7 +90,7 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes, onToggleModal 
               signUpTrial(values);
             }}
           >
-            {({ values, handleSubmit, handleChange, handleBlur, errors }) => (
+            {({ values, handleSubmit, handleChange, isValid, handleBlur, errors }) => (
               <form method="POST">
                 <div className={inputWrapper}>
                   <input
@@ -105,9 +105,14 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes, onToggleModal 
                 </div>
                 <div className={desktopBtn}>
                   <button
-                    onClick={() => {
-                      handleSubmit();
-                      toggleButtonAnimations();
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (isValid) {
+                        handleSubmit();
+                        if (!errors) {
+                          toggleButtonAnimations();
+                        }
+                      }
                     }}
                     disabled={disabled}
                     className={`${defaultBtn} ${blackStyle}`}
