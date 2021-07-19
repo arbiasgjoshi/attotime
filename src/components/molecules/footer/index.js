@@ -263,7 +263,7 @@ const Footer = () => {
           <HelpScout horizontalPosition="right" color="#00b9cb" icon="message" />
         </LiveChatLoaderProvider>
       </footer>
-      <Helmet>
+      <Helmet defer>
         {/* English cookie footer */}
         {Intl.locale === 'en' && (
           <script>
