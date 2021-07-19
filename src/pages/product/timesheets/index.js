@@ -553,6 +553,8 @@ const Timesheets = () => {
             id: 'pages.productLocationTracking.bottomFeatureOneDesc',
           })}
           icon={icon20}
+          imageWidth={30}
+          imageHeight={33}
           path="/product/time-tracking"
         />
 
@@ -564,6 +566,8 @@ const Timesheets = () => {
             id: 'pages.productTimeTracking.bottomFeatureOneDesc',
           })}
           icon={icon21}
+          imageWidth={27}
+          imageHeight={32}
           path="/product/location-tracking"
         />
 
@@ -575,6 +579,8 @@ const Timesheets = () => {
             id: 'pages.productTimeTracking.bottomFeatureTwoDesc',
           })}
           icon={icon22}
+          imageWidth={42}
+          imageHeight={44}
           path="/product/team-activity"
         />
       </div>
