@@ -1,32 +1,18 @@
 import React, { useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useIntl } from 'gatsby-plugin-react-intl';
+import loadable from '@loadable/component';
 
-import Divider from '@components/atoms/divider';
 import Seo from '@components/molecules/seo';
-import Modal from '@components/molecules/modal';
+import Divider from '@components/atoms/divider';
 import Title from '@components/molecules/title';
 import Header from '@components/molecules/header';
-import Footer from '@components/molecules/footer';
-import IconCard from '@components/molecules/icon-card';
 import MainTitleCard from '@components/molecules/main-title-card';
-import LearnMoreCard from '@components/molecules/learn-more-card';
-import Story from '@components/organisms/story';
-import FeaturesList from '@components/organisms/features-list';
-import ListArticle from '@components/organisms/list-article';
-import SubscribeBanner from '@components/molecules/subscribe-banner';
-import IconCardList from '@components/organisms/icon-card-list';
-import GrowthNumbers from '@components/organisms/growth-numbers';
-import VideoCheckList from '@components/organisms/video-checklist';
-import Services from '@components/organisms/services';
-
-// import imgOne from '@images/en/timesheets/Estimate your Employees’ Wages@2x.png';
-// import imgThree from '@images/timesheets-inbox2x.png';
-import imgTwo from '@images/en/timesheets/Sync with Payroll and Accounting Software@2x.png';
 
 import icon from '@images/accurate.png';
 import icon2 from '@images/trustworthy.png';
 import icon3 from '@images/instantly-available@2x.png';
+import imgTwo from '@images/en/timesheets/Sync with Payroll and Accounting Software@2x.png';
 
 import AllTimesheets from '@images/All_featres_TimesheetsAndroid.svg';
 import AllFeatureEmail from '@images/All_featres_emailAndroid.svg';
@@ -59,6 +45,19 @@ import {
   learnMoreContainer,
   readyMadeTitle,
 } from '../product.module.scss';
+
+const IconCard = loadable(() => import('@components/molecules/icon-card'));
+const Modal = loadable(() => import('@components/molecules/modal'));
+const Footer = loadable(() => import('@components/molecules/footer'));
+const LearnMoreCard = loadable(() => import('@components/molecules/learn-more-card'));
+const Story = loadable(() => import('@components/organisms/story'));
+const FeaturesList = loadable(() => import('@components/organisms/features-list'));
+const ListArticle = loadable(() => import('@components/organisms/list-article'));
+const SubscribeBanner = loadable(() => import('@components/molecules/subscribe-banner'));
+const IconCardList = loadable(() => import('@components/organisms/icon-card-list'));
+const GrowthNumbers = loadable(() => import('@components/organisms/growth-numbers'));
+const VideoCheckList = loadable(() => import('@components/organisms/video-checklist'));
+const Services = loadable(() => import('@components/organisms/services'));
 
 const Timesheets = () => {
   const Intl = useIntl();

@@ -1,7 +1,8 @@
-import React, { lazy, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Slider from 'react-slick';
 import { useIntl } from 'gatsby-plugin-react-intl';
+import loadable from '@loadable/component';
 
 import HeaderComponent from '@components/molecules/header';
 import Seo from '@components/molecules/seo';
@@ -14,7 +15,6 @@ import EmailForm from '@components/atoms/email-form';
 import Story from '@components/organisms/story';
 import CommentCard from '@components/molecules/comment-card';
 import Number from '@components/atoms/number-card';
-import ThreeDots from '@components/atoms/three-dots';
 
 import { container, formRotated } from '@styles/main.module.scss';
 import '@styles/includes/slick-carousel.scss';
@@ -25,15 +25,14 @@ import {
   carouselWrapper,
 } from '@components/molecules/carousel/carousel.module.scss';
 import { sliderWrapper, numbers, desktopImage, mobileImage } from './homepage.module.scss';
-import { Suspense } from 'react';
 
-const VideoCheckList = lazy(() => import('@components/organisms/video-checklist'));
-const Modal = lazy(() => import('@components/molecules/modal'));
-const FeatureTabs = lazy(() => import('@components/organisms/feature-tabs'));
-const Services = lazy(() => import('@components/organisms/services'));
-const CarouselComponent = lazy(() => import('@components/molecules/carousel'));
-const FreeTrial = lazy(() => import('@components/organisms/free-trial'));
-const FooterComponent = lazy(() => import('@components/molecules/footer'));
+const VideoCheckList = loadable(() => import('@components/organisms/video-checklist'));
+const Modal = loadable(() => import('@components/molecules/modal'));
+const FeatureTabs = loadable(() => import('@components/organisms/feature-tabs'));
+const Services = loadable(() => import('@components/organisms/services'));
+const CarouselComponent = loadable(() => import('@components/molecules/carousel'));
+const FreeTrial = loadable(() => import('@components/organisms/free-trial'));
+const FooterComponent = loadable(() => import('@components/molecules/footer'));
 
 const SampleNextArrow = (props) => {
   // eslint-disable-next-line react/prop-types
@@ -252,14 +251,12 @@ const Home = () => {
         description={Intl.formatMessage({ id: 'pages.homepage.metaDescription' })}
       />
       <HeaderComponent />
-      <Suspense fallback={<ThreeDots />}>
-        <Modal
-          close={closeModal}
-          showDialog={showDialog}
-          hasValues={values}
-          setFormValues={(formValues) => formSuccessState(formValues)}
-        />
-      </Suspense>
+      <Modal
+        close={closeModal}
+        showDialog={showDialog}
+        hasValues={values}
+        setFormValues={(formValues) => formSuccessState(formValues)}
+      />
 
       <MainTitle
         title={Intl.formatMessage({ id: 'pages.homepage.title' })}
@@ -307,10 +304,8 @@ const Home = () => {
         </Slider>
       </div>
       <Divider className="style4" />
-      <Suspense fallback={<ThreeDots />}>
-        <FeatureTabs />
-        <Divider />
-      </Suspense>
+      <FeatureTabs />
+      <Divider />
       <Title
         maxWidth={840}
         maxDescriptionWidth={766}
@@ -319,25 +314,21 @@ const Home = () => {
         marginBottom="2rem"
       />
       <Divider className="style3" />
-      <Suspense fallback={<ThreeDots />}>
-        <VideoCheckList
-          list={titleList}
-          videoUrl="https://player.vimeo.com/video/563662750?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          placeholder="home"
-          cardStyle="centerAligned"
-        />
-        <Divider />
-      </Suspense>
+      <VideoCheckList
+        list={titleList}
+        videoUrl="https://player.vimeo.com/video/563662750?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        placeholder="home"
+        cardStyle="centerAligned"
+      />
+      <Divider />
       <Title
         title={Intl.formatMessage({ id: 'pages.homepage.thirdSectionTitle' })}
         description={Intl.formatMessage({ id: 'pages.homepage.thirdSectionDesc' })}
         maxDescriptionWidth={700}
       />
-      <Suspense fallback={<ThreeDots />}>
-        <Divider className="style2" />
-        <Services />
-        <Divider className="style8" />
-      </Suspense>
+      <Divider className="style2" />
+      <Services />
+      <Divider className="style8" />
       <div className={numbers}>
         <Number
           title="1.2M +"
@@ -359,15 +350,14 @@ const Home = () => {
       <Divider />
       <Title title={Intl.formatMessage({ id: 'pages.homepage.fourthSectionTitle' })} />
       <Divider className="style9" />
-      <Suspense fallback={<ThreeDots />}>
-        <CarouselComponent large>
-          <Story
-            className="homepage"
-            img="homepage"
-            paragraph={Intl.formatMessage({ id: 'pages.homepage.reviews.bottomReview' })}
-            author="Julia Conner – Pennprojects, LLC"
-          />
-          {/* <Story
+      <CarouselComponent large>
+        <Story
+          className="homepage"
+          img="homepage"
+          paragraph={Intl.formatMessage({ id: 'pages.homepage.reviews.bottomReview' })}
+          author="Julia Conner – Pennprojects, LLC"
+        />
+        {/* <Story
           className="homepage"
           img={authorImage}
           paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
@@ -379,20 +369,19 @@ const Home = () => {
           paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
           author="Robert Bennet - DPA Cleaning Services, Inc."
         /> */}
-        </CarouselComponent>
-        <Divider />
-        <FreeTrial
-          title={Intl.formatMessage({ id: 'pages.homepage.subscribeTitle' })}
-          description={Intl.formatMessage({ id: 'pages.homepage.subscribeDesc' })}
-          list={checkList}
-          onToggleModal={() => openModal()}
-          onSuccessRes={(val) => {
-            setValues(val);
-            showDialog();
-          }}
-        />
-        <FooterComponent />
-      </Suspense>
+      </CarouselComponent>
+      <Divider />
+      <FreeTrial
+        title={Intl.formatMessage({ id: 'pages.homepage.subscribeTitle' })}
+        description={Intl.formatMessage({ id: 'pages.homepage.subscribeDesc' })}
+        list={checkList}
+        onToggleModal={() => openModal()}
+        onSuccessRes={(val) => {
+          setValues(val);
+          showDialog();
+        }}
+      />
+      <FooterComponent />
     </div>
   );
 };
