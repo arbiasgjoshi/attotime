@@ -11,7 +11,6 @@ import Title from '@components/molecules/title';
 import MainTitle from '@components/molecules/main-title-card';
 import EmailForm from '@components/atoms/email-form';
 
-import FooterComponent from '@components/molecules/footer';
 import Story from '@components/organisms/story';
 import CommentCard from '@components/molecules/comment-card';
 import Number from '@components/atoms/number-card';
@@ -34,6 +33,7 @@ const FeatureTabs = lazy(() => import('@components/organisms/feature-tabs'));
 const Services = lazy(() => import('@components/organisms/services'));
 const CarouselComponent = lazy(() => import('@components/molecules/carousel'));
 const FreeTrial = lazy(() => import('@components/organisms/free-trial'));
+const FooterComponent = lazy(() => import('@components/molecules/footer'));
 
 const SampleNextArrow = (props) => {
   // eslint-disable-next-line react/prop-types
@@ -391,8 +391,8 @@ const Home = () => {
             showDialog();
           }}
         />
+        <FooterComponent />
       </Suspense>
-      <FooterComponent />
     </div>
   );
 };
