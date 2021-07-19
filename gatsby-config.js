@@ -73,7 +73,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
+      resolve: `gatsby-plugin-google-tagmanager-delayed`,
       options: {
         id: 'GTM-NV2DTP3',
         defaultDataLayer: { platform: 'gatsby' },
