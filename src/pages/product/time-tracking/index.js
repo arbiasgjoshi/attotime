@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { useIntl } from 'gatsby-plugin-react-intl';
+import loadable from '@loadable/component';
 
 import Divider from '@components/atoms/divider';
 import Seo from '@components/molecules/seo';
-import Modal from '@components/molecules/modal';
 import Header from '@components/molecules/header';
-import Footer from '@components/molecules/footer';
-import VideoCheckList from '@components/organisms/video-checklist';
 import MainTitleCard from '@components/molecules/main-title-card';
+import Title from '@components/molecules/title';
 import FeatureCard from '@components/molecules/feature-card';
 import LearnMoreCard from '@components/molecules/learn-more-card';
 import IconCard from '@components/molecules/icon-card';
-import Title from '@components/molecules/title';
 import CheckList from '@components/molecules/check-list';
 import IconCardList from '@components/organisms/icon-card-list';
 import FeaturesList from '@components/organisms/features-list';
@@ -20,6 +18,7 @@ import GrowthNumbers from '@components/organisms/growth-numbers';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
 import SubscribeBanner from '@components/molecules/subscribe-banner';
+
 import { container, imageWrapper } from '@styles/main.module.scss';
 
 import WebTracking from '@images/web-time-tracking.svg';
@@ -100,6 +99,10 @@ import {
   timeTrackingContainer,
   commonProblemsContainer,
 } from './time-tracking.module.scss';
+
+const VideoCheckList = loadable(() => import('@components/organisms/video-checklist'));
+const Modal = loadable(() => import('@components/molecules/modal'));
+const Footer = loadable(() => import('@components/molecules/footer'));
 
 const TimeTracking = () => {
   const Intl = useIntl();

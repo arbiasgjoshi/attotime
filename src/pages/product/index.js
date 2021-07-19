@@ -8,19 +8,21 @@ import MainTitleCard from '@components/molecules/main-title-card';
 import Seo from '@components/molecules/seo';
 import Divider from '@components/atoms/divider';
 import EmailForm from '@components/atoms/email-form';
+import Story from '@components/organisms/story';
+import IconCardList from '@components/organisms/icon-card-list';
+import SubscribeBanner from '@components/molecules/subscribe-banner';
+import ProductCard from '@components/organisms/product-card';
+import GrowthNumbers from '@components/organisms/growth-numbers';
+
 import { container, imageFormWrapper, imageWrapper } from '@styles/main.module.scss';
 import icon from '@images/easy-to-use.png';
 import icon2 from '@images/All_in_one@2x.png';
 import icon3 from '@images/Time_saving@2x.png';
+
 import { productContainer } from './product.module.scss';
 
 const Modal = loadable(() => import('@components/molecules/modal'));
 const FooterComponent = loadable(() => import('@components/molecules/footer'));
-const SubscribeBanner = loadable(() => import('@components/molecules/subscribe-banner'));
-const ProductCard = loadable(() => import('@components/organisms/product-card'));
-const GrowthNumbers = loadable(() => import('@components/organisms/growth-numbers'));
-const IconCardList = loadable(() => import('@components/organisms/icon-card-list'));
-const Story = loadable(() => import('@components/organisms/story'));
 
 const Product = () => {
   const Intl = useIntl();

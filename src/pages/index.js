@@ -11,6 +11,10 @@ import Divider from '@components/atoms/divider';
 import Title from '@components/molecules/title';
 import MainTitle from '@components/molecules/main-title-card';
 import EmailForm from '@components/atoms/email-form';
+import FeatureTabs from '@components/organisms/feature-tabs';
+import Services from '@components/organisms/services';
+import CarouselComponent from '@components/molecules/carousel';
+import FreeTrial from '@components/organisms/free-trial';
 
 import Story from '@components/organisms/story';
 import CommentCard from '@components/molecules/comment-card';
@@ -28,10 +32,6 @@ import { sliderWrapper, numbers, desktopImage, mobileImage } from './homepage.mo
 
 const VideoCheckList = loadable(() => import('@components/organisms/video-checklist'));
 const Modal = loadable(() => import('@components/molecules/modal'));
-const FeatureTabs = loadable(() => import('@components/organisms/feature-tabs'));
-const Services = loadable(() => import('@components/organisms/services'));
-const CarouselComponent = loadable(() => import('@components/molecules/carousel'));
-const FreeTrial = loadable(() => import('@components/organisms/free-trial'));
 const FooterComponent = loadable(() => import('@components/molecules/footer'));
 
 const SampleNextArrow = (props) => {

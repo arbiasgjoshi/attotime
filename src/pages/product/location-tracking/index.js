@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+import { useIntl } from 'gatsby-plugin-react-intl';
+import loadable from '@loadable/component';
 
 import Divider from '@components/atoms/divider';
 import Seo from '@components/molecules/seo';
-import Modal from '@components/molecules/modal';
-import { useIntl } from 'gatsby-plugin-react-intl';
 import Title from '@components/molecules/title';
 import Header from '@components/molecules/header';
-import Footer from '@components/molecules/footer';
 import CheckList from '@components/molecules/check-list';
 import MainTitleCard from '@components/molecules/main-title-card';
 import LearnMoreCard from '@components/molecules/learn-more-card';
@@ -18,7 +17,6 @@ import Cover from '@components/organisms/growth-numbers/cover';
 import FeaturesList from '@components/organisms/features-list';
 import ListArticle from '@components/organisms/list-article';
 import Services from '@components/organisms/services';
-import VideoCheckList from '@components/organisms/video-checklist';
 
 import Timer from '@images/timer.svg';
 import Flag from '@images/flag.svg';
@@ -37,6 +35,10 @@ import { container } from '@styles/main.module.scss';
 
 import { teamActivityContainer, learnMoreContainer } from '../product.module.scss';
 import { privacyContainer, imageContainer } from './gps-location-tracking.module.scss';
+
+const Modal = loadable(() => import('@components/molecules/modal'));
+const VideoCheckList = loadable(() => import('@components/organisms/video-checklist'));
+const Footer = loadable(() => import('@components/molecules/footer'));
 
 const LocationTracking = () => {
   const Intl = useIntl();
