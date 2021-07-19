@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState, useEffect } from 'react';
+import React, { lazy, useState, useEffect } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import Slider from 'react-slick';
 import { useIntl } from 'gatsby-plugin-react-intl';
@@ -11,18 +11,11 @@ import Title from '@components/molecules/title';
 import MainTitle from '@components/molecules/main-title-card';
 import EmailForm from '@components/atoms/email-form';
 
-import Modal from '@components/molecules/modal';
 import FooterComponent from '@components/molecules/footer';
-import VideoCheckList from '@components/organisms/video-checklist';
-import CarouselComponent from '@components/molecules/carousel';
-import FeatureTabs from '@components/organisms/feature-tabs';
 import Story from '@components/organisms/story';
 import CommentCard from '@components/molecules/comment-card';
-import Services from '@components/organisms/services';
-import FreeTrial from '@components/organisms/free-trial';
 import Number from '@components/atoms/number-card';
-
-import { deleteInvitation } from '@helpers';
+import ThreeDots from '@components/atoms/three-dots';
 
 import { container, formRotated } from '@styles/main.module.scss';
 import '@styles/includes/slick-carousel.scss';
@@ -33,6 +26,14 @@ import {
   carouselWrapper,
 } from '@components/molecules/carousel/carousel.module.scss';
 import { sliderWrapper, numbers, desktopImage, mobileImage } from './homepage.module.scss';
+import { Suspense } from 'react';
+
+const VideoCheckList = lazy(() => import('@components/organisms/video-checklist'));
+const Modal = lazy(() => import('@components/molecules/modal'));
+const FeatureTabs = lazy(() => import('@components/organisms/feature-tabs'));
+const Services = lazy(() => import('@components/organisms/services'));
+const CarouselComponent = lazy(() => import('@components/molecules/carousel'));
+const FreeTrial = lazy(() => import('@components/organisms/free-trial'));
 
 const SampleNextArrow = (props) => {
   // eslint-disable-next-line react/prop-types
@@ -251,12 +252,14 @@ const Home = () => {
         description={Intl.formatMessage({ id: 'pages.homepage.metaDescription' })}
       />
       <HeaderComponent />
-      <Modal
-        close={closeModal}
-        showDialog={showDialog}
-        hasValues={values}
-        setFormValues={(formValues) => formSuccessState(formValues)}
-      />
+      <Suspense fallback={<ThreeDots />}>
+        <Modal
+          close={closeModal}
+          showDialog={showDialog}
+          hasValues={values}
+          setFormValues={(formValues) => formSuccessState(formValues)}
+        />
+      </Suspense>
 
       <MainTitle
         title={Intl.formatMessage({ id: 'pages.homepage.title' })}
@@ -304,8 +307,10 @@ const Home = () => {
         </Slider>
       </div>
       <Divider className="style4" />
-      <FeatureTabs />
-      <Divider />
+      <Suspense fallback={<ThreeDots />}>
+        <FeatureTabs />
+        <Divider />
+      </Suspense>
       <Title
         maxWidth={840}
         maxDescriptionWidth={766}
@@ -314,21 +319,25 @@ const Home = () => {
         marginBottom="2rem"
       />
       <Divider className="style3" />
-      <VideoCheckList
-        list={titleList}
-        videoUrl="https://player.vimeo.com/video/563662750?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-        placeholder="home"
-        cardStyle="centerAligned"
-      />
-      <Divider />
+      <Suspense fallback={<ThreeDots />}>
+        <VideoCheckList
+          list={titleList}
+          videoUrl="https://player.vimeo.com/video/563662750?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          placeholder="home"
+          cardStyle="centerAligned"
+        />
+        <Divider />
+      </Suspense>
       <Title
         title={Intl.formatMessage({ id: 'pages.homepage.thirdSectionTitle' })}
         description={Intl.formatMessage({ id: 'pages.homepage.thirdSectionDesc' })}
         maxDescriptionWidth={700}
       />
-      <Divider className="style2" />
-      <Services />
-      <Divider className="style8" />
+      <Suspense fallback={<ThreeDots />}>
+        <Divider className="style2" />
+        <Services />
+        <Divider className="style8" />
+      </Suspense>
       <div className={numbers}>
         <Number
           title="1.2M +"
@@ -350,14 +359,15 @@ const Home = () => {
       <Divider />
       <Title title={Intl.formatMessage({ id: 'pages.homepage.fourthSectionTitle' })} />
       <Divider className="style9" />
-      <CarouselComponent large>
-        <Story
-          className="homepage"
-          img="homepage"
-          paragraph={Intl.formatMessage({ id: 'pages.homepage.reviews.bottomReview' })}
-          author="Julia Conner – Pennprojects, LLC"
-        />
-        {/* <Story
+      <Suspense fallback={<ThreeDots />}>
+        <CarouselComponent large>
+          <Story
+            className="homepage"
+            img="homepage"
+            paragraph={Intl.formatMessage({ id: 'pages.homepage.reviews.bottomReview' })}
+            author="Julia Conner – Pennprojects, LLC"
+          />
+          {/* <Story
           className="homepage"
           img={authorImage}
           paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
@@ -369,18 +379,19 @@ const Home = () => {
           paragraph="“Atto has saved us $1,000’s on payroll and taken away the stress of running a business.”"
           author="Robert Bennet - DPA Cleaning Services, Inc."
         /> */}
-      </CarouselComponent>
-      <Divider />
-      <FreeTrial
-        title={Intl.formatMessage({ id: 'pages.homepage.subscribeTitle' })}
-        description={Intl.formatMessage({ id: 'pages.homepage.subscribeDesc' })}
-        list={checkList}
-        onToggleModal={() => openModal()}
-        onSuccessRes={(val) => {
-          setValues(val);
-          showDialog();
-        }}
-      />
+        </CarouselComponent>
+        <Divider />
+        <FreeTrial
+          title={Intl.formatMessage({ id: 'pages.homepage.subscribeTitle' })}
+          description={Intl.formatMessage({ id: 'pages.homepage.subscribeDesc' })}
+          list={checkList}
+          onToggleModal={() => openModal()}
+          onSuccessRes={(val) => {
+            setValues(val);
+            showDialog();
+          }}
+        />
+      </Suspense>
       <FooterComponent />
     </div>
   );
