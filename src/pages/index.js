@@ -148,6 +148,7 @@ const Home = () => {
           src="../images/DE_Mobile Time tracking, simplified@2x.png"
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={434}
+          height={516}
           quality={98}
           placeholder="none"
           className={mobileImage}
@@ -160,6 +161,7 @@ const Home = () => {
           src="../images/FR_Mobile Time tracking, simplified@2x.png"
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={434}
+          height={516}
           quality={98}
           placeholder="none"
           className={mobileImage}
@@ -172,6 +174,7 @@ const Home = () => {
           src="../images/ES_Mobile Time tracking, simplified@2x.png"
           alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
           width={434}
+          height={516}
           quality={98}
           placeholder="none"
           className={mobileImage}
@@ -183,6 +186,7 @@ const Home = () => {
         src="../images/Mobile Time tracking, simplified@2x.png"
         alt={Intl.formatMessage({ id: 'pages.homepage.title' })}
         width={434}
+        height={516}
         quality={98}
         placeholder="none"
         className={mobileImage}
