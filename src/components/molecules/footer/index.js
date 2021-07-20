@@ -204,7 +204,8 @@ const Footer = () => {
               alt="footer-logo"
               quality={100}
               width={86}
-              placeholder="blurred"
+              height={29}
+              placeholder="none"
             />
             <p>{Intl.formatMessage({ id: 'pages.miscellaneous.footerText' })}</p>
 
