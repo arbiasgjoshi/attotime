@@ -10,7 +10,6 @@ import Header from '@components/molecules/header';
 import CheckList from '@components/molecules/check-list';
 import MainTitleCard from '@components/molecules/main-title-card';
 import LearnMoreCard from '@components/molecules/learn-more-card';
-import SubscribeBanner from '@components/molecules/subscribe-banner';
 import Story from '@components/organisms/story';
 import IconCardList from '@components/organisms/icon-card-list';
 import Cover from '@components/organisms/growth-numbers/cover';
@@ -39,6 +38,7 @@ import { privacyContainer, imageContainer } from './gps-location-tracking.module
 const Modal = loadable(() => import('@components/molecules/modal'));
 const VideoCheckList = loadable(() => import('@components/organisms/video-checklist'));
 const Footer = loadable(() => import('@components/molecules/footer'));
+const SubscribeBanner = loadable(() => import('@components/molecules/subscribe-banner'));
 
 const LocationTracking = () => {
   const Intl = useIntl();

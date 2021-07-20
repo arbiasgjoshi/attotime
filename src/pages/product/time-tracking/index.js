@@ -17,13 +17,12 @@ import FeaturesList from '@components/organisms/features-list';
 import GrowthNumbers from '@components/organisms/growth-numbers';
 import Services from '@components/organisms/services';
 import Story from '@components/organisms/story';
-import SubscribeBanner from '@components/molecules/subscribe-banner';
 
 import { container, imageWrapper } from '@styles/main.module.scss';
 
-import WebTracking from '@images/web-time-tracking.svg';
-import MobileTracking from '@images/mobile_time_tracking.svg';
-import KioskTracking from '@images/kiosk-time-tracking.svg';
+import WebTracking from '@images/web-time-tracking.png';
+import MobileTracking from '@images/mobile_time_tracking@2x.png';
+import KioskTracking from '@images/kiosk-time-tracking.png';
 
 import Timer from '@images/timer.svg';
 import Flag from '@images/flag.svg';
@@ -103,6 +102,7 @@ import {
 const VideoCheckList = loadable(() => import('@components/organisms/video-checklist'));
 const Modal = loadable(() => import('@components/molecules/modal'));
 const Footer = loadable(() => import('@components/molecules/footer'));
+const SubscribeBanner = loadable(() => import('@components/molecules/subscribe-banner'));
 
 const TimeTracking = () => {
   const Intl = useIntl();
@@ -831,7 +831,7 @@ const TimeTracking = () => {
             description={Intl.formatMessage({
               id: 'pages.productTimeTracking.imageIconFeatureDescOne',
             })}
-            logo={<WebTracking />}
+            logo={<img src={WebTracking} alt="Web Time Tracking" height="36" width="42" />}
             imagePadding=".8rem 2.9rem .797rem .1rem"
           />
         </div>
@@ -844,7 +844,7 @@ const TimeTracking = () => {
             description={Intl.formatMessage({
               id: 'pages.productTimeTracking.imageIconFeatureDescTwo',
             })}
-            logo={<MobileTracking />}
+            logo={<img src={MobileTracking} alt="Mobile Tracking" height="41" width="38" />}
             imagePadding=".5rem 3.24rem .587rem 0"
           />
         </div>
@@ -859,7 +859,7 @@ const TimeTracking = () => {
             description={Intl.formatMessage({
               id: 'pages.productTimeTracking.imageIconFeatureDescThree',
             })}
-            logo={<KioskTracking />}
+            logo={<img src={KioskTracking} alt="Kiosk Tracking" height="33" width="41" />}
             imagePadding=".9rem 2.5rem .85rem .4rem"
             comingSoon
           />

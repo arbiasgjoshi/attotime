@@ -10,7 +10,6 @@ import Divider from '@components/atoms/divider';
 import EmailForm from '@components/atoms/email-form';
 import Story from '@components/organisms/story';
 import IconCardList from '@components/organisms/icon-card-list';
-import SubscribeBanner from '@components/molecules/subscribe-banner';
 import ProductCard from '@components/organisms/product-card';
 import GrowthNumbers from '@components/organisms/growth-numbers';
 
@@ -23,6 +22,7 @@ import { productContainer } from './product.module.scss';
 
 const Modal = loadable(() => import('@components/molecules/modal'));
 const FooterComponent = loadable(() => import('@components/molecules/footer'));
+const SubscribeBanner = loadable(() => import('@components/molecules/subscribe-banner'));
 
 const Product = () => {
   const Intl = useIntl();
