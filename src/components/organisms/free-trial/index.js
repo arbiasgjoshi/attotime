@@ -74,13 +74,13 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes, onToggleModal 
   };
 
   const toggleSubmit = (e, submit, valid, err) => {
-    e.preventDefault();
     if (valid) {
       submit();
       if (!err) {
         toggleButtonAnimations();
       }
     }
+    e.preventDefault();
   };
 
   return (
@@ -96,11 +96,12 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes, onToggleModal 
             }}
             validationSchema={validationSchema}
             autoComplete="off"
+            enableReinitialize
             onSubmit={(values) => {
               signUpTrial(values);
             }}
           >
-            {({ values, handleSubmit, handleChange, isValid, handleBlur, errors }) => (
+            {({ values, isValid, dirty, handleSubmit, handleChange, handleBlur, errors }) => (
               <form method="POST">
                 <div className={inputWrapper}>
                   <input
@@ -118,7 +119,7 @@ const FreeTrial = ({ title, description, list = [], onSuccessRes, onToggleModal 
                     onClick={(e) => {
                       toggleSubmit(e, handleSubmit, isValid, errors.email ? errors.email : false);
                     }}
-                    disabled={disabled}
+                    disabled={disabled || !isValid || !dirty}
                     type="button"
                     className={`${defaultBtn} ${blackStyle}`}
                   >

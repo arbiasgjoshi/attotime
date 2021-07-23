@@ -109,7 +109,6 @@ const Video = ({ placeholder, videoUrl }) => {
       {!play && (
         <motion.div
           key="content"
-          style={{ overflow: 'hidden' }}
           initial="open"
           animate="collapsed"
           exit="open"
