@@ -63,7 +63,15 @@ const Blog = () => {
   const [articles, setArticles] = useState([]);
   const [featured, setFeatured] = useState([]);
 
-  const fetcher = () => fetch(`https://app.attotime.com/api/v2/blog`).then((res) => res.json());
+  const headers = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  };
+
+  const fetcher = () =>
+    fetch(`https://app.attotime.com/api/v2/blog`, headers).then((res) => res.json());
   const { data, error } = useSWR(['/listContentCreationStreams', tags], fetcher);
 
   useEffect(() => {
