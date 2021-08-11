@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+import useSWR from 'swr';
+import { useLocation } from '@reach/router';
+// import { Link } from '@reach/router';
 
 import Icon from '@components/atoms/icon';
 import Divider from '@components/atoms/divider';
@@ -30,42 +33,62 @@ const titleList = [
   'Pay a fair wage',
 ];
 
-const BlogTemplate = () => (
-  <div className={`${blogTemplateContainer} ${container}`}>
-    <Header />
-    <div style={{ display: 'flex', paddingRight: '10rem' }}>
-      <div className={goBackContainer}>
-        <Link to="/blog">
-          <div className={iconWrapper}>
-            <Icon iconClass="arrow-left" fSize={1.6} />
-          </div>
-        </Link>
-        <p>All posts</p>{' '}
+const BlogTemplate = () => {
+  const location = useLocation();
+  const [article, setArticle] = useState([]);
+  const [related, setRelated] = useState([]);
+
+  const slug = location.search.replaceAll('?slug=', '');
+  console.log(slug);
+
+  const fetcher = () =>
+    fetch(`https://app.attotime.com/api/v2/blog/${slug}`).then((res) => {
+      return res.json();
+    });
+  const { data, error } = useSWR('/article-search', fetcher);
+
+  useEffect(() => {
+    if (data) {
+      setArticle(data.article);
+      setRelated(data.article.related);
+    }
+  }, [data, error]);
+  return (
+    <div className={`${blogTemplateContainer} ${container}`}>
+      <Header />
+      <div style={{ display: 'flex', paddingRight: '10rem' }}>
+        <div className={goBackContainer}>
+          <Link to="/blog">
+            <div className={iconWrapper}>
+              <Icon iconClass="arrow-left" fSize={1.6} />
+            </div>
+          </Link>
+          <p>All posts</p>
+        </div>
+        <BlogTitle
+          smallTitle="Published March 18, 2021 in Productivity   ·   2 min read"
+          title={article.title}
+          // author="By Nick Blackeye"
+        />
       </div>
-      <BlogTitle
-        smallTitle="Published March 18, 2021 in Productivity   ·   2 min read"
-        title="7 tips that will help you manage contracted jobs successfully"
-        author="By Nick Blackeye"
-      />
-    </div>
-    <Divider className="style5" />
-    <StaticImage
-      quality={96}
-      width={1140}
-      height={450}
-      src="../../images/browser5.jpeg"
-      placeholder="none"
-    />
-    <Divider className="style2" />
-    <div className={contentWrapper}>
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <TableOfContent list={titleList} />
+      <Divider className="style5" />
+      <img src={article.cover_image} width={1140} height={450} />
+      {/* <StaticImage
+        quality={96}
+        src="../../images/browser5.jpeg"
+        placeholder="none"
+      /> */}
+      <Divider className="style2" />
+      <div className={contentWrapper}>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          {/* <TableOfContent list={titleList} /> */}
+        </div>
+        {/* {article && <Content content={article.body} />} */}
       </div>
-      <Content />
+      <Divider className="style5" />
+      <Footer />
     </div>
-    <Divider className="style5" />
-    <Footer />
-  </div>
-);
+  );
+};
 
 export default BlogTemplate;
