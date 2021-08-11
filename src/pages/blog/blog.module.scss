@@ -48,3 +48,51 @@
     margin-right: 0;
   }
 }
+
+.featurdArticle:hover {
+  > div {
+    h2 {
+      color: #00b9cb;
+    }
+  }
+}
+
+.paginationWrapper {
+  @include flex-align(center, center);
+
+  @include min(tablet) {
+    margin: 0 29.7rem;
+  }
+
+  .pagination {
+    margin: 0.4rem 4rem;
+    @include flex-align(center, center);
+    li {
+      margin: 0 2rem;
+    }
+    .pageLink {
+      width: 4rem;
+      height: 4rem;
+      @include flex-align(center, center);
+      font-size: 20px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 100%;
+      color: #00b9cb;
+
+      &.selected {
+        background-color: #e6f8fa;
+      }
+    }
+
+    .pageLink:hover {
+      border-radius: 50%;
+      background-color: #e6f8fa;
+      color: #00b9cb;
+    }
+  }
+
+  button {
+    width: 12rem !important;
+  }
+}

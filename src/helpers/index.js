@@ -1,3 +1,5 @@
+import * as dayjs from 'dayjs';
+
 export const isBrowser = () => typeof window !== 'undefined';
 
 export const placeholders = [
@@ -25,3 +27,4 @@ export const deleteInvitation = (data) => {
   };
   fetch('/delete-invite', requestOptions);
 };
+export const formatDate = (date) => dayjs(date).format('MMM DD, YYYY');

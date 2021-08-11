@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from '@reach/router';
+import { formatDate } from '@helpers';
 import {
   cardWrapper,
   smallTitleWrapper,
@@ -7,22 +9,22 @@ import {
   horizontalLine,
 } from './blog-card.module.scss';
 
-const BlogCard = ({ image, smallTitle, title, description }) => {
+const BlogCard = ({ image, slug, smallTitle, date, title, description }) => {
   return (
-    <div className={cardWrapper}>
+    <Link to={`/blog-template?slug=${slug}`} className={cardWrapper}>
       <div className={smallTitleWrapper}>
         <div className={horizontalLine}></div>
-        <p>{smallTitle}</p>
+        <p>{formatDate(date) + ` · ` + smallTitle}</p>
       </div>
       <div className={imageWrapper}>
-        <img src={image} alt="" />
+        <img src={image} alt={title} />
       </div>
       <div className={textContainer}>
         <div className={horizontalLine}></div>
         <h4>{title}</h4>
         <p>{description}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 

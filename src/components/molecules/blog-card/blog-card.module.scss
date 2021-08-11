@@ -87,4 +87,12 @@
       margin-bottom: 2rem;
     }
   }
+
+  &:hover {
+    .textContainer {
+      h4 {
+        color: #0a9ead;
+      }
+    }
+  }
 }

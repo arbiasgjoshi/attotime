@@ -2,66 +2,52 @@ import React, { useEffect, useState } from 'react';
 
 import HeaderComponent from '@components/molecules/header';
 import Seo from '@components/molecules/seo';
-import { useIntl } from 'gatsby-plugin-react-intl';
 import useSWR from 'swr';
+import { Link } from '@reach/router';
 
 // import { FooterLinks } from '@locale/en.js';
+import { formatDate } from '@helpers';
 import FooterComponent from '@components/molecules/footer';
 import Divider from '@components/atoms/divider';
 import { container } from '@styles/main.module.scss';
-import Button from '@components/atoms/button';
 import MainTitle from '@components/molecules/main-title-card';
-import BlogList from '@components/organisms/blog-list';
 import mainHeader from '@images/workwise_blog.png';
+import Button from '@components/atoms/button';
+import BlogList from '@components/organisms/blog-list';
 import Newsletter from '@components/molecules/newsletter';
-import { StaticImage } from 'gatsby-plugin-image';
-
-import { buttonList } from './blog.module.scss';
-
-// import browser1 from '@images/browser1.jpeg';
-// import browser2 from '@images/browser2.jpeg';
-// import browser3 from '@images/browser3.jpeg';
-// import browser4 from '@images/browser4.jpeg';
+import {
+  buttonList,
+  featurdArticle,
+  paginationWrapper,
+  pagination,
+  pageLink,
+  selected,
+} from './blog.module.scss';
 import Title from '@components/molecules/title';
-
-// const list = ['All', 'Weekly Digest', 'Insights', 'Productivity', 'Timesheets', 'Team Management'];
-// const blogList = [
-//   {
-//     smallTitle: 'March 18, 2021   ·   Productivity',
-//     title: 'Employee Scheduling  ·  5 tips to make scheduling easier',
-//     description:
-//       'Employee scheduling can cause inefficiencies if not maintained properly. We have noted a few tips that will help you create the ideal employee …',
-//     image: browser1,
-//   },
-//   {
-//     smallTitle: 'March 17, 2021   ·   Insights',
-//     title: 'The Art of Time Mastery. How to Manage Time Efficiently',
-//     description:
-//       'The art of time mastery is designed to help business owners identify flaws in their time management strategies. Learn what the art of time mastery is and…',
-//     image: browser2,
-//   },
-//   {
-//     title: '30-60-90 Day Plan  ·  An updated step-by-step guide',
-//     smallTitle: 'March 4, 2021   ·   Timesheets',
-//     description:
-//       'The 90-day work plan is a forecast that is used to set goals and strategize the first few months of a new project. Take a look at our updated step-by-step guide …',
-//     image: browser3,
-//   },
-//   {
-//     title: 'When should I offer PTO to employees?',
-//     smallTitle: 'February 10, 2021   ·   Team Management',
-//     description:
-//       'If you’re an employer, you know how important paid time off is to your employees. You have single-handedly witnessed the happiness in …',
-//     image: browser4,
-//   },
-// ];
+// import { StaticImage } from 'gatsby-plugin-image';
+// import { useIntl } from 'gatsby-plugin-react-intl';
 
 const Blog = () => {
-  const [activeItem, setActiveItem] = useState(null);
-  const Intl = useIntl();
-  const [tags, settags] = useState([]);
+  const [tags, setTags] = useState([{ id: 0, name: 'All' }]);
+  const [seoTitle, setSeotitle] = useState(
+    'workwise by Atto | Thoughts and ideas on the future of work'
+  );
+  const [activeItem, setActiveItem] = useState('All');
   const [articles, setArticles] = useState([]);
   const [featured, setFeatured] = useState([]);
+  // Fetch Data
+  const [pageData, setPagData] = useState(null);
+  const [pages, setPages] = useState([]);
+  const [pageIndex, setPageIndex] = useState(1);
+
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const [blogsPerPage] = useState(4);
+
+  // const indexOfLastPost = currentPage * blogsPerPage;
+  // const indexOfFirstPost = indexOfLastPost - blogsPerPage;
+  // const currentPosts = blogs.slice(indexOfFirstPost, indexOfLastPost);
+
+  // const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   const headers = {
     method: 'GET',
@@ -71,46 +57,116 @@ const Blog = () => {
   };
 
   const fetcher = () =>
-    fetch(`https://app.attotime.com/api/v2/blog`, headers).then((res) => res.json());
-  const { data, error } = useSWR(['/listContentCreationStreams', tags], fetcher);
+    fetch(
+      `https://app.attotime.com/api/v2/blog` +
+        `${activeItem !== 'All' ? '?tag=' + activeItem : ''}` +
+        `${pageIndex && `${activeItem !== 'All' ? `&` : '?'}page=` + pageIndex}`
+    ).then((res) => {
+      return res.json();
+    });
+  const { data, error } = useSWR(['/api/v2/blog', pageIndex, activeItem], fetcher);
+
+  const populatePages = () => {};
 
   useEffect(() => {
-    if (data && data.length === 0) {
-      // setNoChannel(true);
-      console.log(data);
+    if (data && Object.keys(data).length > 0) {
+      const otherTags = [...tags, ...data.tags];
+      if (tags.length === 1) {
+        setTags(otherTags);
+      }
+      // set fetch data
+      setPageIndex(data.paginator.current_page);
+      setPagData(data.paginator);
+
+      // set pagination data
+      let noPages = [];
+      for (let i = 1; i <= data.paginator.last_page; i++) {
+        noPages.push(i);
+      }
+      setPages(noPages);
+
+      // set article data
+      setFeatured(data.cover_article);
+      setArticles(Object.values(data.articles));
+      setSeotitle(data.seo.title);
     }
   }, [data, error]);
 
+  const handlePrevious = () => {
+    console.log(pageData);
+    if (pageData.prev_page_url) {
+      setPageIndex(pageIndex - 1);
+    }
+  };
+  const handleNext = () => {
+    console.log(pageData);
+    if (pageData.next_page_url) {
+      setPageIndex(pageIndex + 1);
+    }
+  };
+
+  const changeTag = (val) => {
+    setActiveItem(val);
+    setPageIndex(1);
+  };
+
   return (
     <div className={container}>
-      <Seo title="Attotime - Landing Page" />
+      <Seo title={seoTitle} />
       <HeaderComponent />
       <MainTitle image={mainHeader} subtitle="Thoughts and ideas on the future of work" />
-      {/* <div className={buttonList}>
-        {list.map((title, idx) => (
-          <Button
-            btnText={title}
-            key={idx}
-            btnStyle={activeItem === title ? 'activeBlogItem' : 'noStyle'}
-            onBtnClick={() => setActiveItem(title)}
+      <div className={buttonList}>
+        {tags &&
+          tags.map((tag) => (
+            <Button
+              btnText={tag.name}
+              key={tag.id}
+              btnStyle={activeItem === tag.name ? 'activeBlogItem' : 'noStyle'}
+              onBtnClick={() => changeTag(tag.name)}
+            />
+          ))}
+      </div>
+      {featured && (
+        <Link to={`/blog-template?slug=${featured?.slug}`} className={featurdArticle}>
+          <img src={featured?.cover_image} width={1140} height={450} alt={featured?.title} />
+          <Title
+            maxWidth={780}
+            // smallTitle="Published March 27, 2021 in Productivity   ·   2 min read   ·   by Nick Blackeye"
+            smallTitle={`Published at ${formatDate(featured?.published_at)}`}
+            title={featured?.title}
           />
-        ))}
-      </div> */}
-      {/* <StaticImage
-        quality={96}
-        width={1140}
-        height={450}
-        src="../../images/browser5.jpeg"
-        placeholder="none"
-      />
-      <Title
-        maxWidth={780}
-        smallTitle="Published March 27, 2021 in Productivity   ·   2 min read   ·   by Nick Blackeye"
-        title="7 tips that will help you manage contracted jobs successfully"
-      /> */}
+        </Link>
+      )}
       <Divider className="style4" />
-      {/* <BlogList list={blogList} /> */}
+      {articles && <BlogList list={articles} />}
       <Divider />
+
+      {pageData && (
+        <nav className={paginationWrapper}>
+          <Button btnText="Previous" btnStyle="teal" onBtnClick={handlePrevious} />
+          <ul className={pagination}>
+            {pages.map((page) => (
+              <>
+                <li key={page} className="page-item">
+                  <a
+                    onClick={() => setPageIndex(page)}
+                    className={`${pageLink} ${pageIndex === page && selected}`}
+                  >
+                    {page}
+                  </a>
+                </li>
+              </>
+            ))}
+          </ul>
+          <Button
+            btnText="Next"
+            btnStyle="teal"
+            disabled={pageIndex === pageData.last_page}
+            onBtnClick={handleNext}
+          />
+        </nav>
+      )}
+
       {/* <Newsletter /> */}
       <Divider className="style2" />
       <FooterComponent />
