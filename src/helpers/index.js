@@ -25,7 +25,7 @@ export const deleteInvitation = (data) => {
     },
     body: JSON.stringify({ email: data.email }),
   };
-  fetch('/delete-invite', requestOptions);
+  fetch('https://staging.attotime.com/delete-invite', requestOptions);
 };
 
 export const formatDate = (date) => dayjs(date).format('MMM DD, YYYY');
