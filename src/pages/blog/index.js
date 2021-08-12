@@ -6,7 +6,7 @@ import useSWR from 'swr';
 import { Link } from '@reach/router';
 
 // import { FooterLinks } from '@locale/en.js';
-import { formatDate } from '@helpers';
+import { formatDate, paginationList } from '@helpers';
 import FooterComponent from '@components/molecules/footer';
 import Divider from '@components/atoms/divider';
 import { container } from '@styles/main.module.scss';
@@ -14,18 +14,17 @@ import MainTitle from '@components/molecules/main-title-card';
 import mainHeader from '@images/workwise_blog.png';
 import Button from '@components/atoms/button';
 import BlogList from '@components/organisms/blog-list';
-import Newsletter from '@components/molecules/newsletter';
+// import Newsletter from '@components/molecules/newsletter';
 import {
   buttonList,
   featurdArticle,
   paginationWrapper,
   pagination,
   pageLink,
+  dotStyle,
   selected,
 } from './blog.module.scss';
 import Title from '@components/molecules/title';
-// import { StaticImage } from 'gatsby-plugin-image';
-// import { useIntl } from 'gatsby-plugin-react-intl';
 
 const Blog = () => {
   const [tags, setTags] = useState([{ id: 0, name: 'All' }]);
@@ -40,21 +39,7 @@ const Blog = () => {
   const [pages, setPages] = useState([]);
   const [pageIndex, setPageIndex] = useState(1);
 
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const [blogsPerPage] = useState(4);
-
-  // const indexOfLastPost = currentPage * blogsPerPage;
-  // const indexOfFirstPost = indexOfLastPost - blogsPerPage;
-  // const currentPosts = blogs.slice(indexOfFirstPost, indexOfLastPost);
-
-  // const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
-  const headers = {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  };
+  const [loader, setLoader] = useState(true);
 
   const fetcher = () =>
     fetch(
@@ -66,40 +51,12 @@ const Blog = () => {
     });
   const { data, error } = useSWR(['/api/v2/blog', pageIndex, activeItem], fetcher);
 
-  const populatePages = () => {};
-
-  useEffect(() => {
-    if (data && Object.keys(data).length > 0) {
-      const otherTags = [...tags, ...data.tags];
-      if (tags.length === 1) {
-        setTags(otherTags);
-      }
-      // set fetch data
-      setPageIndex(data.paginator.current_page);
-      setPagData(data.paginator);
-
-      // set pagination data
-      let noPages = [];
-      for (let i = 1; i <= data.paginator.last_page; i++) {
-        noPages.push(i);
-      }
-      setPages(noPages);
-
-      // set article data
-      setFeatured(data.cover_article);
-      setArticles(Object.values(data.articles));
-      setSeotitle(data.seo.title);
-    }
-  }, [data, error]);
-
   const handlePrevious = () => {
-    console.log(pageData);
     if (pageData.prev_page_url) {
       setPageIndex(pageIndex - 1);
     }
   };
   const handleNext = () => {
-    console.log(pageData);
     if (pageData.next_page_url) {
       setPageIndex(pageIndex + 1);
     }
@@ -109,6 +66,30 @@ const Blog = () => {
     setActiveItem(val);
     setPageIndex(1);
   };
+
+  useEffect(() => {
+    if (data && Object.keys(data).length > 0) {
+      setLoader(false);
+      const otherTags = [...tags, ...data.tags];
+
+      if (tags.length === 1) {
+        setTags(otherTags);
+      }
+
+      // set fetch data
+      setPageIndex(data.paginator.current_page);
+      setPagData(data.paginator);
+
+      const paginationItems = paginationList(data.paginator.current_page, data.paginator.limit);
+      setPages(paginationItems);
+      console.log(Object.values(data.articles));
+
+      // set article data
+      setFeatured(data.cover_article);
+      setArticles(Object.values(data.articles));
+      setSeotitle(data.seo.title);
+    }
+  }, [data, error]);
 
   return (
     <div className={container}>
@@ -143,17 +124,28 @@ const Blog = () => {
 
       {pageData && (
         <nav className={paginationWrapper}>
-          <Button btnText="Previous" btnStyle="teal" onBtnClick={handlePrevious} />
+          <Button
+            btnText="Previous"
+            btnStyle="teal"
+            disabled={pageIndex === pageData.current_page}
+            onBtnClick={handlePrevious}
+          />
           <ul className={pagination}>
             {pages.map((page) => (
               <>
                 <li key={page} className="page-item">
-                  <a
-                    onClick={() => setPageIndex(page)}
-                    className={`${pageLink} ${pageIndex === page && selected}`}
-                  >
-                    {page}
-                  </a>
+                  {page !== '...' ? (
+                    <a
+                      onClick={() => (page !== '...' ? setPageIndex(page) : null)}
+                      className={`${pageLink} ${page === '...' && dotStyle} ${
+                        pageIndex === page && selected
+                      }`}
+                    >
+                      {page}
+                    </a>
+                  ) : (
+                    <span>{page}</span>
+                  )}
                 </li>
               </>
             ))}

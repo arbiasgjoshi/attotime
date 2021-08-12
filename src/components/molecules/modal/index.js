@@ -190,7 +190,9 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
         setFormValues({});
       }
     }
-    close();
+    if (hasValues?.message !== 'Signup Succeeded' || hasValues?.message !== '__Signup Succeeded') {
+      close();
+    }
   };
 
   const renderModalTypes = (data) => {
@@ -203,6 +205,7 @@ function ModalDialog({ showDialog, setFormValues, close, hasValues }) {
             <p>{confirmDesc(Intl.locale, data)}</p>
             <Button
               btnStyle="gray"
+              customClass="continue-signup"
               btnText={confirmButton(Intl.locale)}
               onBtnClick={() => close()}
             />

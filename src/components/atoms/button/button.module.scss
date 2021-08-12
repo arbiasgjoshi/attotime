@@ -11,7 +11,7 @@
   text-align: center;
   transition: ease all 0.15s;
 
-  &:hover {
+  &:not(:disabled):hover {
     background-color: #262626;
   }
 
@@ -20,7 +20,7 @@
     background-color: #fff;
     border: 2px solid #efefef;
 
-    &:hover {
+    &:not(:disabled):hover {
       background-color: var(--color-20);
     }
   }
@@ -35,9 +35,14 @@
     max-width: 100%;
     background-color: var(--primary-color);
 
-    &:hover {
+    &:not(:disabled):hover {
       background-color: #0a9ead;
     }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
   }
 
   &.wideStyle {

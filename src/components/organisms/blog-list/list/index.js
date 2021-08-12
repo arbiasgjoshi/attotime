@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import BlogCard from '@components/molecules/blog-card';
 
@@ -19,5 +20,9 @@ const List = ({ list }) => (
     ))}
   </div>
 );
+
+List.propTypes = {
+  list: PropTypes.arrayOf({}),
+};
 
 export default List;

@@ -52,6 +52,11 @@ const BlogTemplate = () => {
       setArticle(data.article);
       setRelated(data.article.related);
     }
+
+    return () => {
+      setArticle([]);
+      setRelated([]);
+    };
   }, [data, error]);
   return (
     <div className={`${blogTemplateContainer} ${container}`}>

@@ -71,23 +71,32 @@
       margin: 0 2rem;
     }
     .pageLink {
+      @include flex-align(center, center);
       width: 4rem;
       height: 4rem;
-      @include flex-align(center, center);
       font-size: 20px;
       text-align: center;
+      color: #00b9cb;
       line-height: 40px;
       border-radius: 100%;
-      color: #00b9cb;
 
       &.selected {
         background-color: #e6f8fa;
       }
+
+      &:hover {
+        border-radius: 50%;
+        background-color: #e6f8fa;
+        color: #00b9cb;
+      }
     }
 
-    .pageLink:hover {
-      border-radius: 50%;
-      background-color: #e6f8fa;
+    span {
+      @include flex-align(center, center);
+      width: 4rem;
+      height: 4rem;
+      font-size: 20px;
+      text-align: center;
       color: #00b9cb;
     }
   }
