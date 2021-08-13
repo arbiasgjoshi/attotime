@@ -14,12 +14,18 @@ import MainTitle from '@components/molecules/main-title-card';
 import mainHeader from '@images/workwise_blog.png';
 import Button from '@components/atoms/button';
 import BlogList from '@components/organisms/blog-list';
+import Loader from 'react-loader-spinner';
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 // import Newsletter from '@components/molecules/newsletter';
 import {
+  blogStyle,
+  loadingContent,
+  loaderWrap,
   buttonList,
   featurdArticle,
   paginationWrapper,
   pagination,
+  disabledPagination,
   pageLink,
   dotStyle,
   selected,
@@ -43,7 +49,7 @@ const Blog = () => {
 
   const fetcher = () =>
     fetch(
-      `https://app.attotime.com/api/v2/blog` +
+      `https://staging.attotime.com/api/v2/blog` +
         `${activeItem !== 'All' ? '?tag=' + activeItem : ''}` +
         `${pageIndex && `${activeItem !== 'All' ? `&` : '?'}page=` + pageIndex}`
     ).then((res) => {
@@ -63,13 +69,20 @@ const Blog = () => {
   };
 
   const changeTag = (val) => {
+    // if (articles && featured) {
+    setLoader(true);
+    // }
     setActiveItem(val);
     setPageIndex(1);
   };
 
+  const changePage = (val) => {
+    setLoader(true);
+    setPageIndex(val);
+  };
+
   useEffect(() => {
     if (data && Object.keys(data).length > 0) {
-      setLoader(false);
       const otherTags = [...tags, ...data.tags];
 
       if (tags.length === 1) {
@@ -80,22 +93,35 @@ const Blog = () => {
       setPageIndex(data.paginator.current_page);
       setPagData(data.paginator);
 
+      // construct pagination
       const paginationItems = paginationList(data.paginator.current_page, data.paginator.limit);
-      setPages(paginationItems);
-      console.log(Object.values(data.articles));
+      if (data.paginator.total_count > 0) {
+        setPages(paginationItems);
+      } else {
+        setPages([]);
+      }
 
       // set article data
       setFeatured(data.cover_article);
       setArticles(Object.values(data.articles));
       setSeotitle(data.seo.title);
+
+      setTimeout(() => {
+        setLoader(false);
+      }, 500);
     }
   }, [data, error]);
 
   return (
-    <div className={container}>
+    <div className={`${container} ${blogStyle} ${loader && loadingContent}`}>
       <Seo title={seoTitle} />
       <HeaderComponent />
       <MainTitle image={mainHeader} subtitle="Thoughts and ideas on the future of work" />
+      {loader ? (
+        <div className={loaderWrap}>
+          <Loader type="ThreeDots" color="#00b9cb" height={80} width={80} timeout={2000} />
+        </div>
+      ) : null}
       <div className={buttonList}>
         {tags &&
           tags.map((tag) => (
@@ -112,8 +138,7 @@ const Blog = () => {
           <img src={featured?.cover_image} width={1140} height={450} alt={featured?.title} />
           <Title
             maxWidth={780}
-            // smallTitle="Published March 27, 2021 in Productivity   ·   2 min read   ·   by Nick Blackeye"
-            smallTitle={`Published at ${formatDate(featured?.published_at)}`}
+            smallTitle={`Published at ${featured?.date}`}
             title={featured?.title}
           />
         </Link>
@@ -123,7 +148,7 @@ const Blog = () => {
       <Divider />
 
       {pageData && (
-        <nav className={paginationWrapper}>
+        <nav className={`${paginationWrapper} ${loader ? disabledPagination : null}`}>
           <Button
             btnText="Previous"
             btnStyle="teal"
@@ -136,7 +161,7 @@ const Blog = () => {
                 <li key={page} className="page-item">
                   {page !== '...' ? (
                     <a
-                      onClick={() => (page !== '...' ? setPageIndex(page) : null)}
+                      onClick={() => (page !== '...' ? changePage(page) : null)}
                       className={`${pageLink} ${page === '...' && dotStyle} ${
                         pageIndex === page && selected
                       }`}

@@ -20,8 +20,23 @@
     }
   }
 
+  .loadingArticle {
+    min-height: 50vh;
+    @include flex-align(center, center);
+  }
+
   .contentWrapper {
     display: flex;
     // justify-content: space-between;
+
+    p {
+      font-family: 'Charter BT W01 Roman';
+    }
+
+    h2 {
+      font-weight: 600;
+      margin-top: 7rem;
+      margin-bottom: 2rem;
+    }
   }
 }

@@ -7,14 +7,14 @@ import { listWrapper } from './list.module.scss';
 
 const List = ({ list }) => (
   <div className={listWrapper}>
-    {list.map(({ title, seo_description, slug, published_at, tags, cover_image }, idx) => (
+    {list.map(({ title, seo_description, slug, published_at, tag, cover_image }, idx) => (
       <BlogCard
         title={title}
         description={seo_description}
         key={idx}
         date={published_at}
         slug={slug}
-        smallTitle={tags[0].name}
+        smallTitle={tag}
         image={cover_image}
       />
     ))}
