@@ -94,7 +94,7 @@ const Blog = () => {
       setPagData(data.paginator);
 
       // construct pagination
-      const paginationItems = paginationList(data.paginator.current_page, data.paginator.limit);
+      const paginationItems = paginationList(data.paginator.current_page, data.paginator.last_page);
       if (data.paginator.total_count > 0) {
         setPages(paginationItems);
       } else {

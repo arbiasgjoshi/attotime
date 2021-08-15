@@ -58,7 +58,6 @@ const BlogTemplate = ({ location }) => {
   useEffect(() => {
     if (data) {
       setArticle(data.article);
-      // setRelated(data.article.related);
     }
 
     return () => {
